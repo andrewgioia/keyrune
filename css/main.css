@@ -1,0 +1,15 @@
+body {
+    background: #fff;
+    color: #333;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+        Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #E6E2D7;
+    color: #333;
+    margin: 0;
+}
