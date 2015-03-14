@@ -20,14 +20,11 @@ Feel free to edit the source files and compile Keyrune to fit your needs. Curren
 
 ## License
 
-All images are copyright Wizards of the Coast
-* [http://magicthegathering.com](http://magicthegathering.com)
+All set symbol images are copyright Wizards of the Coast ([http://magicthegathering.com](http://magicthegathering.com))
 
-The Keyrune font is licensed under the the SIL OFL 1.1
-* [http://scripts.sil.org/OFL](http://scripts.sil.org/OFL)
+The Keyrune font is licensed under the the SIL OFL 1.1 ([http://scripts.sil.org/OFL](http://scripts.sil.org/OFL))
 
-Keyrune CSS, LESS, and Sass files are licensed under the MIT License:
-* [http://opensource.org/licenses/mit-license.html](http://opensource.org/licenses/mit-license.html)
+Keyrune CSS, LESS, and Sass files are licensed under the MIT License ([http://opensource.org/licenses/mit-license.html](http://opensource.org/licenses/mit-license.html))
 
 Attribution is **greatly appreciated** but not required!
 
