@@ -46,6 +46,14 @@ section#banner {
         margin-left: 15px;
     }
 
+    section#banner .logo {
+        color: #333;
+        float: left;
+        font-family: Beleren;
+        font-size: 18px;
+        margin-top: -2px;
+    }
+
 header {
     background: #E6E2D7;
     border-bottom: 1px solid #CFCDC7;
@@ -78,8 +86,13 @@ h1 {
     font-size: 64px;
     font-weight: lighter;
     padding: 0 0 20px;
-    text-shadow: 0 2px 0 #fff;
+    text-shadow: 0 1px 0 #fff;
 }
+
+    h1.sub {
+        font-size: 48px;
+        padding: 0 0 15px;
+    }
 
 h2 {
     color: #444;
@@ -91,20 +104,26 @@ h2 {
     text-shadow: 0 1px 0 #fff;
 }
 
+    h2.sub {
+        font-size: 26px;
+        padding: 0 0 20px;
+    }
+
 h3 {
+    color: #444;
+    font-size: 19px;
+    font-weight: normal;
+    line-height: 1.6em;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+h4 {
     color: #61605B;
     font-family: Beleren;
     font-size: 24px;
     font-weight: lighter;
     margin: 15px 0 5px;
-    text-align: left;
-}
-
-h4 {
-    color: #444;
-    font-size: 18px;
-    font-weight: normal;
-    line-height: 1.6em;
     text-align: left;
 }
 
@@ -114,12 +133,7 @@ main {
 }
 
     main section.content {
-        padding: 10px 0 10px;
-    }
-
-    main h2 {
-        font-size: 24px;
-        padding: 0 0 5px;
+        padding: 0 0 10px;
     }
 
 blockquote,
@@ -168,8 +182,46 @@ blockquote {
             border-bottom-color: #222;
         }
 
+    .button.dl.float-right {
+        margin-top: -10px;
+    }
+
+.icons {
+    padding: 10px 0 0;
+}
+
+.icon {
+    border-radius: 3px;
+    display: inline-block;
+    width: 24.5%;
+}
+
+    .icon span {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+    .icon:hover {
+        background: #eee;
+    }
+
+    .icon .ss {
+        font-size: 22px;
+        margin-right: 5px;
+        margin-top: -2px;
+    }
+
+    .icon em {
+        color: #999;
+        font-style: normal;
+    }
+
 footer {
     border-top: 1px solid #eee;
     margin-top: 20px;
     padding: 30px 0 50px;
+}
+
+.float-right {
+    float: right;
 }
