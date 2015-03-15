@@ -51,7 +51,7 @@ header {
     border-bottom: 1px solid #CFCDC7;
     color: #333;
     margin: 0;
-    padding: 20px 0 15px;
+    padding: 25px 0 15px;
 }
 
     .bigicon {
@@ -66,7 +66,8 @@ header {
     }
 
 p {
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 1.6em;
     margin: 20px 0;
 }
 
@@ -76,7 +77,7 @@ h1 {
     font-family: Beleren;
     font-size: 64px;
     font-weight: lighter;
-    padding: 0 0 15px;
+    padding: 0 0 20px;
     text-shadow: 0 2px 0 #fff;
 }
 
@@ -91,10 +92,12 @@ h2 {
 }
 
 h3 {
-    color: #333;
-    font-size: 20px;
-    font-weight: normal;
-    margin: 15px 0 10px;
+    color: #61605B;
+    font-family: Beleren;
+    font-size: 24px;
+    font-weight: lighter;
+    margin: 15px 0 5px;
+    text-align: left;
 }
 
 h4 {
@@ -102,6 +105,7 @@ h4 {
     font-size: 18px;
     font-weight: normal;
     line-height: 1.6em;
+    text-align: left;
 }
 
 main {
@@ -109,11 +113,27 @@ main {
     padding: 20px 0 25px;
 }
 
+    main section.content {
+        padding: 10px 0 10px;
+    }
+
     main h2 {
         font-size: 24px;
-        margin: 30px 0 0;
         padding: 0 0 5px;
     }
+
+blockquote,
+code {
+    font-family: Inconsolate, 'Courier New', Courier, monospace;
+}
+
+blockquote {
+    background: #EFEDE8;
+    border-bottom: 1px solid #E0DCCD;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 4px;
+}
 
 .button {
     background: #008eae;
