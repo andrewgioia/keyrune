@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Beleren';
-    src: url( '../fonts/Beleren.eot' );
-    src: url( '../fonts/Beleren.woff' ) format( 'woff' ),
-         url( '../fonts/Beleren.ttf' ) format( 'truetype' ),
-         url( '../fonts/Beleren.svg' ) format( 'svg' );
+    src: url( '../fonts/beleren.eot' );
+    src: url( '../fonts/beleren.woff' ) format( 'woff' ),
+         url( '../fonts/beleren.ttf' ) format( 'truetype' ),
+         url( '../fonts/beleren.svg' ) format( 'svg' );
     font-weight: normal;
     font-style: normal;
  }
