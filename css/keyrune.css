@@ -40,16 +40,16 @@
 }
 /**
  * Rarity colors */
-.common {
-  color: #444;
+.ss-common {
+  color: #333;
 }
-.uncommon {
+.ss-uncommon {
   color: #7795A1;
 }
-.rare {
+.ss-rare {
   color: #A58E4A;
 }
-.mythic {
+.ss-mythic {
   color: #A2472A;
 }
 /**
