@@ -31,3 +31,7 @@ Attribution is **greatly appreciated** but not required!
 ## Changelog
 
 * v0.1 - initial font creation and CSS/LESS files for all sets up to Fate Reforged
+
+## Todo
+
+* Normalize all icons so that the default sizes are much closer; thin icons right now are disproportionately smaller than  squarer ones like MMQ.
