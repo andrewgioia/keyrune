@@ -193,12 +193,14 @@ blockquote {
 .icon {
     border-radius: 3px;
     display: inline-block;
+    overflow: hidden;
     width: 24.5%;
 }
 
     .icon span {
         display: inline-block;
-        padding: 10px 15px;
+        padding: 9px 15px;
+        white-space: nowrap;
     }
 
     .icon:hover {
