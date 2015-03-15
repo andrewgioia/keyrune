@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Beleren';
+    src: url( '../fonts/Beleren.eot' );
+    src: url( '../fonts/Beleren.woff' ) format( 'woff' ),
+         url( '../fonts/Beleren.ttf' ) format( 'truetype' ),
+         url( '../fonts/Beleren.svg' ) format( 'svg' );
+    font-weight: normal;
+    font-style: normal;
+ }
+
 body {
     background: #fff;
     color: #333;
@@ -8,8 +18,138 @@ body {
     padding: 0;
 }
 
+.wrapper {
+    max-width: 1080px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+a {
+     color: #008eae;
+     text-decoration: none;
+ }
+
+     a:hover {
+         color: #166075;
+     }
+
+section#banner {
+    background: #D5D2C8;
+    color: #555;
+    padding: 10px 0;
+    text-align: right;
+    text-shadow: 0 1px 0 #E6E2D7;
+}
+
+    section#banner .item {
+        display: inline-block;
+        margin-left: 15px;
+    }
+
 header {
     background: #E6E2D7;
+    border-bottom: 1px solid #CFCDC7;
     color: #333;
     margin: 0;
+    padding: 20px 0 15px;
+}
+
+    .bigicon {
+        float: right;
+        font-size: 240px;
+        line-height: 200px;
+        text-shadow: 0 2px 0 #fff;
+    }
+
+    header .vs {
+        margin-left: 5px;
+    }
+
+p {
+    line-height: 1.5em;
+    margin: 20px 0;
+}
+
+h1 {
+    color: #444;
+    margin: 0;
+    font-family: Beleren;
+    font-size: 64px;
+    font-weight: lighter;
+    padding: 0 0 15px;
+    text-shadow: 0 2px 0 #fff;
+}
+
+h2 {
+    color: #444;
+    font-family: Beleren;
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0;
+    padding: 0 0 30px;
+    text-shadow: 0 1px 0 #fff;
+}
+
+h3 {
+    color: #333;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 15px 0 10px;
+}
+
+h4 {
+    color: #444;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.6em;
+}
+
+main {
+    margin: 0;
+    padding: 20px 0 25px;
+}
+
+    main h2 {
+        font-size: 24px;
+        margin: 30px 0 0;
+        padding: 0 0 5px;
+    }
+
+.button {
+    background: #008eae;
+    border-bottom: 2px solid #166075;
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px 18px 9px;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 #333;
+}
+
+    .button:hover {
+        background: #00809F;
+        border-bottom-color: #155A6E;
+        color: #fff;
+    }
+
+    .button .ss {
+        margin-right: 5px;
+        position: relative;
+        top: -2px;
+    }
+
+    .button.vs {
+        background: #666;
+        border-bottom-color: #333;
+    }
+
+        .button.vs:hover {
+            background: #555;
+            border-bottom-color: #222;
+        }
+
+footer {
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    padding: 30px 0 50px;
 }
