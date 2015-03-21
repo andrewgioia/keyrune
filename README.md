@@ -1,4 +1,4 @@
-# Keyrune v0.1
+# Keyrune v0.2
 
 ## The Magic: the Gathering set symbol font!
 
@@ -31,7 +31,8 @@ Attribution is **greatly appreciated** but not required!
 ## Changelog
 
 * v0.1 - initial font creation and CSS/LESS files for all sets up to Fate Reforged
+* v0.2 - all fonts are fluid width now so they will scale correctly without scaled padding
 
 ## Todo
 
-* Normalize all icons so that the default sizes are much closer; thin icons right now are disproportionately smaller than  squarer ones like MMQ.
+* Add fixed width class to force all set symbols to an identical fixed width
