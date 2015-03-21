@@ -18,11 +18,11 @@
     "*.json",
     "*.md"
   ],
-  "_release": "cc07053943",
+  "_release": "cb8a2fa161",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "cc07053943316927705e298280032671e77b98bc"
+    "commit": "cb8a2fa16152cc833f8cc2d71f617dd96ac3eac1"
   },
   "_source": "git://github.com/andrewgioia/keyrune.git",
   "_target": "*",

@@ -64,8 +64,9 @@ header {
 
     .bigicon {
         float: right;
-        font-size: 240px;
+        font-size: 272px;
         line-height: 200px;
+        margin-top: -10px;
         text-shadow: 0 2px 0 #fff;
     }
 
@@ -77,6 +78,14 @@ p {
     font-size: 16px;
     line-height: 1.6em;
     margin: 20px 0;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    margin: 0 0 10px;
 }
 
 h1 {
@@ -207,19 +216,29 @@ blockquote {
 
     .icon span {
         display: inline-block;
-        padding: 9px 15px;
+        padding: 9px 10px;
         white-space: nowrap;
     }
 
     .icon:hover {
         background: #eee;
+        position: relative;
+        margin-top: -4px;
+        margin-bottom: -5px;
     }
 
     .icon .ss {
         font-size: 22px;
         margin-right: 5px;
         margin-top: -2px;
+        text-align: right;
+        width: 32px;
     }
+
+        .icon:hover .ss {
+            font-size: 32px;
+            text-shadow: 0 1px 0 #fff;
+        }
 
     .icon em {
         color: #999;
