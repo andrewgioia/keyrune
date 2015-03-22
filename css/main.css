@@ -254,6 +254,7 @@ blockquote {
 
     .example .each {
         display: block;
+        padding-bottom: 2px;
     }
 
 .explanation {
