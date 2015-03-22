@@ -41,16 +41,56 @@
 /**
  * Rarity colors */
 .ss-common {
-  color: #333;
+  color: #1A1718;
+}
+.ss-common.ss-grad {
+  /* webkit outline/gradient */
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #302b2c), color-stop(50%, #474040), color-stop(100%, #302b2c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #302b2c 1%, #474040 50%, #302b2c 100%);
+  /* Chrome10+,Safari5.1+ */
+  -webkit-text-stroke: 0.03em #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .ss-uncommon {
-  color: #7795A1;
+  color: #707883;
+}
+.ss-uncommon.ss-grad {
+  /* webkit outline/gradient */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #5a6572), color-stop(50%, #9e9e9e), color-stop(100%, #5a6572));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #5a6572 0%, #9e9e9e 50%, #5a6572 100%);
+  /* Chrome10+,Safari5.1+ */
+  -webkit-text-stroke: 0.03em #111;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .ss-rare {
   color: #A58E4A;
 }
+.ss-rare.ss-grad {
+  /* webkit outline/gradient */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #876a3b), color-stop(50%, #dfbd6b), color-stop(100%, #876a3b));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #876a3b 0%, #dfbd6b 50%, #876a3b 100%);
+  /* Chrome10+,Safari5.1+ */
+  -webkit-text-stroke: 0.03em #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .ss-mythic {
-  color: #A2472A;
+  color: #BF4427;
+}
+.ss-mythic.ss-grad {
+  /* webkit outline/gradient */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #b21f0f), color-stop(50%, #f38300), color-stop(100%, #b21f0f));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #b21f0f 0%, #f38300 50%, #b21f0f 100%);
+  /* Chrome10+,Safari5.1+ */
+  -webkit-text-stroke: 0.03em #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /**
  * Fixed width */
