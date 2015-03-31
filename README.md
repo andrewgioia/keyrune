@@ -1,4 +1,4 @@
-# Keyrune v1.0
+# Keyrune v1.0.1
 
 ## The Magic: the Gathering set symbol font!
 
@@ -33,6 +33,7 @@ Attribution is **greatly appreciated** but not required!
 * v0.1 - initial font creation and CSS/LESS files for all sets up to Fate Reforged
 * v0.2 - all fonts are fluid width now so they will scale correctly without scaled padding; fixed width class added
 * v1.0 - public launch via /r/magicTCG! added Dragons of Tarkir (DTK)
+* v1.0.1 - Tempest Remastered added (non major set version)
 
 ## Todo
 
