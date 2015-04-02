@@ -34,7 +34,8 @@ Attribution is **greatly appreciated** but not required!
 * v0.2 - all fonts are fluid width now so they will scale correctly without scaled padding; fixed width class added
 * v1.0 - public launch via /r/magicTCG! added Dragons of Tarkir (DTK)
 * v1.0.1 - Tempest Remastered added (non major set version)
+* v1.0.2 - Modern Masters 2015 added
 
 ## Todo
 
-* Add Modern Masters 2015 icon
+Nothing yet.
