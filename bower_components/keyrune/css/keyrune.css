@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=1.0.1');
-  src: url('../fonts/keyrune.eot?#iefix&v=1.0.1') format('embedded-opentype'), url('../fonts/keyrune.woff?v=1.0.1') format('woff'), url('../fonts/keyrune.ttf?v=1.0.1') format('truetype'), url('../fonts/keyrune.svg?v=1.0.1#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=1.0.2');
+  src: url('../fonts/keyrune.eot?#iefix&v=1.0.2') format('embedded-opentype'), url('../fonts/keyrune.woff?v=1.0.2') format('woff'), url('../fonts/keyrune.ttf?v=1.0.2') format('truetype'), url('../fonts/keyrune.svg?v=1.0.2#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -431,6 +431,9 @@
 }
 .ss-mma:before {
   content: "\e663";
+}
+.ss-mm2:before {
+  content: "\e695";
 }
 /**
  * Beginner */
