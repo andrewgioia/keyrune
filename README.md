@@ -1,4 +1,4 @@
-# Keyrune v1.0.1
+# Keyrune v1.1.0
 
 ## The Magic: the Gathering set symbol font!
 
@@ -35,6 +35,7 @@ Attribution is **greatly appreciated** but not required!
 * v1.0 - public launch via /r/magicTCG! added Dragons of Tarkir (DTK)
 * v1.0.1 - Tempest Remastered added (non major set version)
 * v1.0.2 - Modern Masters 2015 added
+* v1.1.0 - Woff2 support added; Vintage Masters icon added
 
 ## Todo
 
