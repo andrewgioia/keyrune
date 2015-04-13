@@ -1,4 +1,4 @@
-# Keyrune v1.1.0
+# Keyrune v1.2.0
 
 ## The Magic: the Gathering set symbol font!
 
@@ -18,6 +18,10 @@ To use Keyrune, move the font files to your `/fonts` directory and include the k
 
 Feel free to edit the source files and compile Keyrune to fit your needs. Currently LESS is supported, with Sass coming soon.
 
+## Using Keyrune on the Desktop
+
+To copy Keyrune symbols into your desktop software (or access to vectors directly), go to the [http://andrewgioia.github.io/Keyrune/cheatsheet.html](Cheatsheet)] on the documentation site, copy the character (not the unicode representation), and then paste it into your desktop application after installing keyrune.otf.
+
 ## License
 
 All set symbol images are copyright Wizards of the Coast ([http://magicthegathering.com](http://magicthegathering.com))
@@ -36,6 +40,7 @@ Attribution is **greatly appreciated** but not required!
 * v1.0.1 - Tempest Remastered added (non major set version)
 * v1.0.2 - Modern Masters 2015 added
 * v1.1.0 - Woff2 support added; Vintage Masters icon added
+* v1.2.0 - Cheatsheet added to documentation site; variables changed in LESS files to be Keyrune specific
 
 ## Todo
 
