@@ -20,7 +20,7 @@ Feel free to edit the source files and compile Keyrune to fit your needs. Curren
 
 ## Using Keyrune on the Desktop
 
-To copy Keyrune symbols into your desktop software (or access to vectors directly), go to the [http://andrewgioia.github.io/Keyrune/cheatsheet.html](Cheatsheet)] on the documentation site, copy the character (not the unicode representation), and then paste it into your desktop application after installing keyrune.otf.
+To copy Keyrune symbols into your desktop software (or access to vectors directly), go to the [Cheatsheet](http://andrewgioia.github.io/Keyrune/cheatsheet.html)] on the documentation site, copy the character (not the unicode representation), and then paste it into your desktop application after installing keyrune.otf.
 
 ## License
 
