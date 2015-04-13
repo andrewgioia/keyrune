@@ -246,6 +246,34 @@ blockquote {
         font-style: normal;
     }
 
+.vectors {
+    padding: 10px 0 0;
+}
+
+.utf {
+    display: inline-block;
+    width: 25%;
+    float: left;
+    padding: 6px 0;
+}
+
+    .utf i {
+        display: inline-block;
+        font-family: keyrune;
+        font-style: normal;
+        font-size: 1.25em;
+        vertical-align: top;
+        padding: 0 5px 0 0;
+        text-align: center;
+        width: 1.25em;
+    }
+
+    .utf code {
+        background-color: #f5f5f5;
+        color: #555;
+        margin-left: 3px;
+    }
+
 .example {
     font-size: 16px;
     padding: 15px 0 0;
