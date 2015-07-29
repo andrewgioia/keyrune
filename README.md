@@ -1,4 +1,4 @@
-# Keyrune v1.3.0
+# Keyrune v1.3.1
 
 ## The Magic: the Gathering set symbol font!
 
@@ -42,7 +42,8 @@ Attribution is **greatly appreciated** but not required!
 * v1.1.0 - Woff2 support added; Vintage Masters icon added
 * v1.2.0 - Cheatsheet added to documentation site; variables changed in LESS files to be Keyrune specific
 * v1.3.0 - Magic Origins icon added
+* v1.3.1 - Duel Decks: Zendikar v. Eldrazi added
 
 ## Todo
 
-* Add next announced Dual Deck and Back to Zendikar
+* Add Battle for Zendikar
