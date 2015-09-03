@@ -1,0 +1,19 @@
+{
+    "name": "keyrune",
+    "description": "Keyrune",
+    "version": "1.2.0",
+    "keywords": [],
+    "homepage": "http://andrewgioia.com",
+    "dependencies": {},
+    "devDependencies": {},
+    "license": ["OFL-1.1", "MIT"],
+    "main": [
+        "./css/keyrune.css",
+        "./fonts/*"
+    ],
+    "ignore": [
+        "*/.*",
+        "*.json",
+        "*.md"
+    ]
+}
