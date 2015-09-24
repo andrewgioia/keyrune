@@ -1,4 +1,4 @@
-# Keyrune v1.4.0
+# Keyrune v1.4.1
 
 ## The Magic: the Gathering set symbol font!
 
@@ -44,6 +44,7 @@ Attribution is **greatly appreciated** but not required!
 * v1.3.0 - Magic Origins icon added
 * v1.3.1 - Duel Decks: Zendikar v. Eldrazi added
 * v1.4.0 - Battle for Zendikar added
+* v1.4.1 - Zendikar Expeditions added
 
 ## Todo
 
