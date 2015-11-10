@@ -1,4 +1,4 @@
-# Keyrune v1.4.1
+# Keyrune v1.4.2
 
 ## The Magic: the Gathering set symbol font!
 
@@ -45,6 +45,7 @@ Attribution is **greatly appreciated** but not required!
 * v1.3.1 - Duel Decks: Zendikar v. Eldrazi added
 * v1.4.0 - Battle for Zendikar added
 * v1.4.1 - Zendikar Expeditions added
+* v1.4.2 - Commander 2015 added
 
 ## Todo
 
