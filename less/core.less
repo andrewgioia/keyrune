@@ -11,4 +11,8 @@
     /* Better font rendering  */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* default if the set does not exist yet, or setcode does not match */
+    &:before {
+      content: "\e684";
+    }
 }
