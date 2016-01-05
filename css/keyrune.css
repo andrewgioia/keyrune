@@ -612,3 +612,46 @@
 .ss-unh:before {
   content: "\e692";
 }
+.ss-border:after {
+  content: "";
+  position: absolute;
+  left: -0.05em;
+  top: .0em;
+  color: #fff;
+  font-size: 1.15em;
+  z-index: -1;
+  background: #fff;
+  -webkit-text-stroke: 0.05em #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-border.ss-van:after {
+  content: "\e655";
+}
+.ss-border.ss-hop:after {
+  content: "\e656";
+}
+.ss-border.ss-arc:after {
+  content: "\e657";
+}
+.ss-border.ss-cmd:after {
+  content: "\e658";
+}
+.ss-border.ss-pc2:after {
+  content: "\e659";
+}
+.ss-border.ss-cm1:after {
+  content: "\e65a";
+}
+.ss-border.ss-c13:after {
+  content: "\e65b";
+}
+.ss-border.ss-cns:after {
+  content: "\e65c";
+}
+.ss-border.ss-c14:after {
+  content: "\e65d";
+}
+.ss-border.ss-c15:after {
+  content: "\e900";
+}

@@ -46,7 +46,8 @@ Attribution is **greatly appreciated** but not required!
 * v1.4.0 - Battle for Zendikar added
 * v1.4.1 - Zendikar Expeditions added
 * v1.4.2 - Commander 2015 added
+* v1.4.3 - Beginning of white border add-on with .ss-border class; renamed font to Keyrune for desktop.
 
 ## Todo
 
-* Nothing yet!
+* Add Oath of the Gatewatch
