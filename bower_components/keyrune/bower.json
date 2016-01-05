@@ -1,19 +1,35 @@
 {
     "name": "keyrune",
-    "description": "Keyrune",
-    "version": "1.4.2",
-    "keywords": [],
-    "homepage": "http://andrewgioia.com",
+    "homepage": "http://andrewgioia.github.io/Keyrune",
+    "version": "1.4.3",
+    "authors": [
+        "Andrew Gioia <andrewgioia@gmail.com>"
+    ],
+    "description": "Magic: the Gathering set symbol pictographic font",
+    "main": [
+      "css/keyrune.css"
+    ],
+    "keywords": [
+        "keyrune",
+        "mtg",
+        "set",
+        "set symbol",
+        "set code",
+        "magic",
+        "gathering",
+        "font"
+    ],
     "dependencies": {},
     "devDependencies": {},
-    "license": ["OFL-1.1", "MIT"],
-    "main": [
-        "./css/keyrune.css",
-        "./fonts/*"
+    "license": [
+        "OFL-1.1",
+        "MIT"
     ],
     "ignore": [
         "*/.*",
         "*.json",
-        "*.md"
+        "*.md",
+        "node_modules",
+        "bower_components"
     ]
 }

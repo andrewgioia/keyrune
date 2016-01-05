@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=1.4.2');
-  src: url('../fonts/keyrune.eot?#iefix&v=1.4.2') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=1.4.2') format('woff2'), url('../fonts/keyrune.woff?v=1.4.2') format('woff'), url('../fonts/keyrune.ttf?v=1.4.2') format('truetype'), url('../fonts/keyrune.svg?v=1.4.2#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=1.4.3');
+  src: url('../fonts/keyrune.eot?#iefix&v=1.4.3') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=1.4.3') format('woff2'), url('../fonts/keyrune.woff?v=1.4.3') format('woff'), url('../fonts/keyrune.ttf?v=1.4.3') format('truetype'), url('../fonts/keyrune.svg?v=1.4.3#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -20,6 +20,10 @@
   /* Better font rendering  */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* default if the set does not exist yet, or setcode does not match */
+}
+.ss:before {
+  content: "\e684";
 }
 /**
  * Larger sizes */
@@ -611,4 +615,47 @@
 }
 .ss-unh:before {
   content: "\e692";
+}
+.ss-border:after {
+  content: "";
+  position: absolute;
+  left: -0.05em;
+  top: .0em;
+  color: #fff;
+  font-size: 1.15em;
+  z-index: -1;
+  background: #fff;
+  -webkit-text-stroke: 0.05em #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-border.ss-van:after {
+  content: "\e655";
+}
+.ss-border.ss-hop:after {
+  content: "\e656";
+}
+.ss-border.ss-arc:after {
+  content: "\e657";
+}
+.ss-border.ss-cmd:after {
+  content: "\e658";
+}
+.ss-border.ss-pc2:after {
+  content: "\e659";
+}
+.ss-border.ss-cm1:after {
+  content: "\e65a";
+}
+.ss-border.ss-c13:after {
+  content: "\e65b";
+}
+.ss-border.ss-cns:after {
+  content: "\e65c";
+}
+.ss-border.ss-c14:after {
+  content: "\e65d";
+}
+.ss-border.ss-c15:after {
+  content: "\e900";
 }
