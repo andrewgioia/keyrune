@@ -1,7 +1,7 @@
 {
     "name": "keyrune",
     "homepage": "http://andrewgioia.github.io/Keyrune",
-    "version": "1.4.2",
+    "version": "1.4.3",
     "authors": [
         "Andrew Gioia <andrewgioia@gmail.com>"
     ],
@@ -12,7 +12,7 @@
     "keywords": [
         "keyrune",
         "mtg",
-        "set"
+        "set",
         "set symbol",
         "set code",
         "magic",
