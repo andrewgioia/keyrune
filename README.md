@@ -1,4 +1,4 @@
-# Keyrune v1.4.2
+# Keyrune v1.5
 
 ## The Magic: the Gathering set symbol font!
 
@@ -47,7 +47,8 @@ Attribution is **greatly appreciated** but not required!
 * v1.4.1 - Zendikar Expeditions added
 * v1.4.2 - Commander 2015 added
 * v1.4.3 - Beginning of white border add-on with .ss-border class; renamed font to Keyrune for desktop.
+* v1.5.0 - Oath of the Gatewatch and Shadows Over Innistrad added
 
 ## Todo
 
-* Add Oath of the Gatewatch
+* Nothing yet!
