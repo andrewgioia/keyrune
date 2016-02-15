@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=1.5');
-  src: url('../fonts/keyrune.eot?#iefix&v=1.5') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=1.5') format('woff2'), url('../fonts/keyrune.woff?v=1.5') format('woff'), url('../fonts/keyrune.ttf?v=1.5') format('truetype'), url('../fonts/keyrune.svg?v=1.5#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=1.5.1');
+  src: url('../fonts/keyrune.eot?#iefix&v=1.5.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=1.5.1') format('woff2'), url('../fonts/keyrune.woff?v=1.5.1') format('woff'), url('../fonts/keyrune.ttf?v=1.5.1') format('truetype'), url('../fonts/keyrune.svg?v=1.5.1#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -17,10 +17,8 @@
   speak: none;
   text-transform: none;
   vertical-align: middle;
-  /* Better font rendering  */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* default if the set does not exist yet, or setcode does not match */
 }
 .ss:before {
   content: "\e684";
@@ -455,6 +453,9 @@
 }
 .ss-mm2:before {
   content: "\e695";
+}
+.ss-ema:before {
+  content: "\e903";
 }
 /**
  * Beginner */
