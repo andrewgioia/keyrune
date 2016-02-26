@@ -1,4 +1,4 @@
-# Keyrune v1.5.1
+# Keyrune v1.5.2
 
 ## The Magic: the Gathering set symbol font!
 
@@ -49,6 +49,7 @@ Attribution is **greatly appreciated** but not required!
 * v1.4.3 - Beginning of white border add-on with .ss-border class; renamed font to Keyrune for desktop
 * v1.5.0 - Oath of the Gatewatch and Shadows Over Innistrad added
 * v1.5.1 - Eternal Masters added
+* v1.5.2 - Conspiracy 2: Take the Crown added
 
 ## Todo
 
