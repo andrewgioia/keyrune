@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=1.5.2');
-  src: url('../fonts/keyrune.eot?#iefix&v=1.5.2') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=1.5.2') format('woff2'), url('../fonts/keyrune.woff?v=1.5.2') format('woff'), url('../fonts/keyrune.ttf?v=1.5.2') format('truetype'), url('../fonts/keyrune.svg?v=1.5.2#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=1.5.3');
+  src: url('../fonts/keyrune.eot?#iefix&v=1.5.3') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=1.5.3') format('woff2'), url('../fonts/keyrune.woff?v=1.5.3') format('woff'), url('../fonts/keyrune.ttf?v=1.5.3') format('truetype'), url('../fonts/keyrune.svg?v=1.5.3#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -549,6 +549,12 @@
 }
 .ss-v14:before {
   content: "\e67e";
+}
+.ss-v15:before {
+  content: "\e905";
+}
+.ss-v16:before {
+  content: "\e906";
 }
 /**
  * Premium Deck Series */
