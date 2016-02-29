@@ -31,11 +31,11 @@
     "node_modules",
     "bower_components"
   ],
-  "_release": "18a2979bd9",
+  "_release": "7d6a6102ef",
   "_resolution": {
     "type": "branch",
     "branch": "master",
-    "commit": "18a2979bd96ede77dbb6062bf56b67a3f1381316"
+    "commit": "7d6a6102ef3a1ebaa185ccdda0dc66f44d05270b"
   },
   "_source": "git://github.com/andrewgioia/keyrune.git",
   "_target": "*",
