@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=1.5.3');
-  src: url('../fonts/keyrune.eot?#iefix&v=1.5.3') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=1.5.3') format('woff2'), url('../fonts/keyrune.woff?v=1.5.3') format('woff'), url('../fonts/keyrune.ttf?v=1.5.3') format('truetype'), url('../fonts/keyrune.svg?v=1.5.3#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=1.5.4');
+  src: url('../fonts/keyrune.eot?#iefix&v=1.5.4') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=1.5.4') format('woff2'), url('../fonts/keyrune.woff?v=1.5.4') format('woff'), url('../fonts/keyrune.ttf?v=1.5.4') format('truetype'), url('../fonts/keyrune.svg?v=1.5.4#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -476,6 +476,9 @@
 }
 .ss-s00:before {
   content: "\e668";
+}
+.ss-w16:before {
+  content: "\e907";
 }
 /**
  * Duel Decks */
