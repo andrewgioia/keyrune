@@ -1,4 +1,4 @@
-# Keyrune v1.5.4
+# Keyrune v1.5.5
 
 ## The Magic: the Gathering set symbol font!
 
@@ -52,6 +52,7 @@ Attribution is **greatly appreciated** but not required!
 * v1.5.2 - Conspiracy 2: Take the Crown added
 * v1.5.3 - FTV: Angels and FTV: Lore
 * v1.5.4 - Welcome Deck 2016
+* v1.5.5 - Duel Deck: Blessed vs. Cursed added
 
 ## Todo
 
