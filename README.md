@@ -53,6 +53,7 @@ Attribution is **greatly appreciated** but not required!
 * v1.5.3 - FTV: Angels and FTV: Lore
 * v1.5.4 - Welcome Deck 2016
 * v1.5.5 - Duel Deck: Blessed vs. Cursed added
+* v1.5.6 - Added forgotten Salvat 2005 and 2011 (inserts into MTG Encyclopedias)
 
 ## Todo
 
