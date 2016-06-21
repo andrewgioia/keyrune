@@ -1,4 +1,4 @@
-# Keyrune v1.5.5
+# Keyrune v1.6.0
 
 ## The Magic: the Gathering set symbol font!
 
@@ -54,7 +54,9 @@ Attribution is **greatly appreciated** but not required!
 * v1.5.4 - Welcome Deck 2016
 * v1.5.5 - Duel Deck: Blessed vs. Cursed added
 * v1.5.6 - Added forgotten Salvat 2005 and 2011 (inserts into MTG Encyclopedias)
+* v1.6.0 - Eldritch Moon icon added (based on low-res WOTC graphic)
 
 ## Todo
 
-* Waiting for official set symbol for Eldritch Moon
+* Need to update EMN with higher res base graphic
+* New [Coming Soon](http://magic.wizards.com/en/game-info/products/coming-soon) product page has symbols but not the necessary higher res versions
