@@ -59,14 +59,19 @@ header {
     border-bottom: 1px solid #CFCDC7;
     color: #333;
     margin: 0;
+    overflow-y: hidden;
     padding: 25px 0 15px;
 }
 
+    header.main {
+        height: 272px;
+    }
+
     .bigicon {
         float: right;
-        font-size: 272px;
+        font-size: 450px;
         line-height: 200px;
-        margin-top: -10px;
+        margin-top: -100px;
         text-shadow: 0 2px 0 #fff;
     }
 
