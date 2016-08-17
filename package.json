@@ -20,9 +20,9 @@
     "dependencies": {},
     "devDependencies": {},
     "license": "(OFL-1.1 AND MIT)",
-    "main": "./css/keyrune.css",
+    "main": "css/keyrune.css",
     "files": [
-        "./fonts/*"
+        "fonts/*"
     ],
     "ignore": [
         "*/.*",
