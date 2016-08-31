@@ -1,4 +1,4 @@
-# Keyrune v1.6.1
+# Keyrune v1.6.2
 
 ## The Magic: the Gathering set symbol font!
 
@@ -56,7 +56,9 @@ Attribution is **greatly appreciated** but not required!
 * v1.5.6 - Added forgotten Salvat 2005 and 2011 (inserts into MTG Encyclopedias)
 * v1.6.0 - Eldritch Moon icon added (based on low-res WOTC graphic)
 * v1.6.1 - Updated EMN with the official high-res source image
+* v1.6.2 - Added Legendary Cube icon; unfortunately there's no official set code
 
 ## Todo
 
 * New [Coming Soon](http://magic.wizards.com/en/game-info/products/coming-soon) product page has symbols but not the necessary higher res versions
+* Figure out what the Legendary Cube official set code is; currently using `xLCU`
