@@ -406,6 +406,13 @@
 .ss-emn:before {
   content: "\e90b";
 }
+/* Kaladesh Block */
+.ss-kld:before {
+  content: "\e90e";
+}
+.ss-aer:before {
+  content: "\e90f";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -441,6 +448,12 @@
 .ss-cn2:before {
   content: "\e904";
 }
+.ss-c16:before {
+  content: "\e910";
+}
+.ss-pca:before {
+  content: "\e911";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -466,6 +479,9 @@
 }
 .ss-ema:before {
   content: "\e903";
+}
+.ss-mm3:before {
+  content: "\e912";
 }
 /**
  * Beginner */
@@ -539,6 +555,9 @@
 }
 .ss-ddq:before {
   content: "\e908";
+}
+.ss-ddr:before {
+  content: "\e90d";
 }
 /**
  * From the Vault */

@@ -1,4 +1,4 @@
-# Keyrune v1.6.2
+# Keyrune v1.7.0
 
 ## The Magic: the Gathering set symbol font!
 
@@ -57,6 +57,7 @@ Attribution is **greatly appreciated** but not required!
 * v1.6.0 - Eldritch Moon icon added (based on low-res WOTC graphic)
 * v1.6.1 - Updated EMN with the official high-res source image
 * v1.6.2 - Added Legendary Cube icon; unfortunately there's no official set code
+* v1.7.0 - Lots of new sets! Kaladesh, Aether Revolt, Modern Masters 2017, Plancechase Anthology, Commander 2016, and Duel Decks: Nissa v. Ob Nixilis added
 
 ## Todo
 
