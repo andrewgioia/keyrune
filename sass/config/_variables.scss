@@ -1,0 +1,54 @@
+// _variables.scss
+
+// Table of Contents: ===========================
+// 1. Global
+// 2. Keyrune
+// 3. Symbol Sizes
+// 4. Rarity Colors
+// 5. Set Symbol
+// 6. MtG Setlist
+
+// 1. Global ====================================
+$global_font_path:  '../fonts' !default;
+$global_font_size:  14px !default;
+
+// 2. Keyrune ===================================
+$keyrune_font_face:               "Keyrune" !default;
+$keyrune_version:                 '1.7.2' !default;
+$keyrune_prefix:                  'ss' !default;
+
+// 3. Symbol Sizes ==============================
+$symbol_sizes: (
+  '2x': 2em,
+  '3x': 3em,
+  '4x': 4em,
+  '5x': 5em,
+  '6x': 6em
+) !default;
+
+// 4. Rarity Colors =============================
+$rarity_palette: (
+  ('common', #1a1718, #302b2c, #474040, #000),
+  ('uncommon', #707883, #5a6572, #9e9e9e, #111),
+  ('rare', #a58e4a, #876a3b, #dfbd6b, #333),
+  ('mythic', #bf4427, #b21f0f, #f38300, #333)
+) !default;
+
+// 5. Set Symbol ================================
+$setsymbol_display:                 inline-block !default;
+$setsymbol_font:                    normal normal normal $global_font_size/1 $keyrune_font_face !default;
+$setsymbol_font_size:               inherit !default;
+$setsymbol_line_height:             1em !default;
+$setsymbol_text_rendering:          auto !default;
+$setsymbol_transform:               translate(0, 0) !default;
+$setsymbol_speak:                   none !default;
+$setsymbol_text_transform:          none !default;
+$setsymbol_vertical_align:          middle !default;
+$setsymbol_webkit_font_smoothing:   antialiased !default;
+$setsymbol_moz_font_smoothing:      grayscale !default;
+$setsymbol_default_content:         "\e684" !default;
+
+// MtG Setlist ===================================
+$mtg_setlist: (
+
+) !default;

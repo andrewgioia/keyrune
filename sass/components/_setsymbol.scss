@@ -1,0 +1,27 @@
+// set symbol class
+.#{$keyrune_prefix} {
+  display: $setsymbol_display;
+  font: $setsymbol_font;
+  font-size: $setsymbol_font_size;
+  line-height: $setsymbol_line_height;
+  text-rendering: $setsymbol_text_rendering;
+  transform: $setsymbol_transform;
+  speak: $setsymbol_speak;
+  text-transform: $setsymbol_text_transform;
+  vertical-align: $setsymbol_vertical_align;
+  // Better font rendering
+  -webkit-font-smoothing: $setsymbol_webkit_font_smoothing;
+  -moz-font-smoothing: $setsymbol_moz_font_smoothing;
+
+  // default symbol if the set does not exist yet, or setcode does not match
+  &:before {
+    content: $setsymbol_default_content;
+  }
+}
+
+// set symbol size modifier classes
+@each $size in $symbol_sizes {
+  .#{$keyrune_prefix}.#{nth($size, 1)} {
+    font-size: #{nth($size, 2)}
+  }
+}
