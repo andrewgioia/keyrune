@@ -1,0 +1,19 @@
+// TODO: Fix background color leaking on gradient class.
+// TODO: Fix text-stroke issue on non-gradient classes.
+@each $scheme in $rarity_palette {
+  .#{$keyrune_prefix}.#{$keyrune_prefix}-#{nth($scheme, 1)} {
+    color: #{nth($scheme, 2)};
+
+    &.#{$keyrune_prefix}-grad {
+      background: gradient(linear, left top, right top, color-stop(1%, #{nth($scheme, 3)}), color-stop(50%, #{nth($scheme, 4)}), color-stop(100%, #{nth($scheme, 3)}));
+      background: linear-gradient(left, #{nth($scheme, 3)} 1%, #{nth($scheme, 4)} 50%, #{nth($scheme, 3)} 100%);
+      text-stroke: 0.03em #{nth($scheme, 5)};
+      background-clip: text;
+      text-fill-color: transparent;
+
+      &.#{$keyrune_prefix}-no-border {
+        text-stroke: 0;
+      }
+    }
+  }
+}
