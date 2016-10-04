@@ -9,7 +9,8 @@
     },
     "contributors": [
         "JayGray <weber.joerg.h@gmail.com>",
-        "ardeay"
+        "ardeay",
+        "Jordan Brauer <jbrauer.inc@gmail.com>"
     ],
     "repository" : {
         "type": "git",
@@ -18,7 +19,17 @@
     "keywords": [],
     "homepage": "http://andrewgioia.com",
     "dependencies": {},
-    "devDependencies": {},
+    "devDependencies": {
+      "gulp": "^3.9.1",
+      "gulp-autoprefixer": "^3.1.0",
+      "gulp-sass": "^2.3.2",
+      "gulp-cssnano": "^2.1.2",
+      "gulp-notify": "^2.2.0",
+      "gulp-rename": "^1.2.2",
+      "merge-stream": "^1.0.0",
+      "run-sequence": "^1.2.2",
+      "del": "^2.2.1"
+    },
     "license": "(OFL-1.1 AND MIT)",
     "main": "css/keyrune.css",
     "ignore": [
