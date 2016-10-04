@@ -1,47 +1,45 @@
 {
-    "name": "keyrune",
-    "description": "Keyrune",
-    "version": "1.7.2",
-    "author": {
-        "name": "Andrew Gioia",
-        "email": "andrewgioia@gmail.com",
-        "url": "http://andrewgioia.com"
-    },
-    "contributors": [
-        "JayGray <weber.joerg.h@gmail.com>",
-        "ardeay",
-        "Jordan Brauer <jbrauer.inc@gmail.com>"
-    ],
-    "repository" : {
-        "type": "git",
-        "url": "https://github.com/andrewgioia/Keyrune.git"
-    },
-    "keywords": [],
-    "homepage": "http://andrewgioia.com",
-    "dependencies": {},
-    "devDependencies": {
-      "gulp": "^3.9.1",
-      "gulp-autoprefixer": "^3.1.0",
-      "gulp-sass": "^2.3.2",
-      "gulp-cssnano": "^2.1.2",
-      "gulp-notify": "^2.2.0",
-      "gulp-rename": "^1.2.2",
-      "merge-stream": "^1.0.0",
-      "run-sequence": "^1.2.2",
-      "del": "^2.2.1"
-    },
-    "license": "(OFL-1.1 AND MIT)",
-    "main": "css/keyrune.css",
-    "ignore": [
-        "*/.*",
-        "*.json",
-        "*.md"
-    ],
-    "bugs": {
-        "url" : "https://github.com/andrewgioia/Keyrune/issues",
-        "email" : "andrewgioia@gmail.com"
-    },
-    "engines": {
-        "node" : "*"
-    }
+  "name": "keyrune",
+  "description": "Keyrune",
+  "version": "1.7.2",
+  "author": {
+    "name": "Andrew Gioia",
+    "email": "andrewgioia@gmail.com",
+    "url": "http://andrewgioia.com"
+  },
+  "contributors": [
+    "JayGray <weber.joerg.h@gmail.com>",
+    "ardeay",
+    "Jordan Brauer <jbrauer.inc@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andrewgioia/Keyrune.git"
+  },
+  "keywords": [],
+  "homepage": "http://andrewgioia.com",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+  },
+  "license": "(OFL-1.1 AND MIT)",
+  "main": "css/keyrune.css",
+  "ignore": [
+    "*/.*",
+    "*.json",
+    "*.md"
+  ],
+  "bugs": {
+    "url": "https://github.com/andrewgioia/Keyrune/issues",
+    "email": "andrewgioia@gmail.com"
+  },
+  "engines": {
+    "node": "*"
+  }
 }

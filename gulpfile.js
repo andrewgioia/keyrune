@@ -9,7 +9,7 @@ var gulp          = require('gulp'),               // task runner/manager (even 
     notify        = require('gulp-notify'),        // notifies us when a gulp task is completed through a system notifcation
     rename        = require('gulp-rename'),        // allows us to rename files (adding prefixes and suffixes is the main use here).
     autoprefixer  = require('gulp-autoprefixer'),  // great for catching those annoying vendor prefixes on css attributets and values.
-    minify       = require('gulp-cssnano'),       // minify our compiled css. sass can do this natively (kind of), so this is used in conjunction with gulp-sass.
+    minify        = require('gulp-cssnano'),       // minify our compiled css. sass can do this natively (kind of), so this is used in conjunction with gulp-sass.
     del           = require('del');                // del is used to cleanup cache and build files.
 
 /*
