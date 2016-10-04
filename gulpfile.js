@@ -9,15 +9,21 @@ var gulp          = require('gulp'),               // task runner/manager (even 
     notify        = require('gulp-notify'),        // notifies us when a gulp task is completed through a system notifcation
     rename        = require('gulp-rename'),        // allows us to rename files (adding prefixes and suffixes is the main use here).
     autoprefixer  = require('gulp-autoprefixer'),  // great for catching those annoying vendor prefixes on css attributets and values.
-    minify        = require('gulp-cssnano'),       // minify our compiled css. sass can do this natively (kind of), so this is used in conjunction with gulp-sass.
-    merge         = require('merge-stream'),       // used to merge multiple streams into a single stream for node.
-    runseq        = require('run-sequence'),       // runs a sequence of gulp tasks. this is used because gulp.run is deprecated.
+    minify       = require('gulp-cssnano'),       // minify our compiled css. sass can do this natively (kind of), so this is used in conjunction with gulp-sass.
     del           = require('del');                // del is used to cleanup cache and build files.
 
 /*
  * Variables ====================================
  * | silly, long, reused paths/dirs go here if needed.
  */
+var $supported = [
+  'last 2 versions',
+  'safari >= 8',
+  'ie >= 10',
+  'ff >= 20',
+  'ios 6',
+  'android 4'
+];
 
 /*
  * Gulp Tasks ===================================
@@ -28,21 +34,36 @@ var gulp          = require('gulp'),               // task runner/manager (even 
  * Build CSS Task -------------------------------
  * | $ gulp build
  * |
- * | compiles scss into css,
- * | autoprefix necessary css attributes/values,
- * | minify prefixed css,
- * | rename minified file with a '.min' suffix,
- * | place into ./css directory
+ * | 1. compiles scss into css,
+ * | 2. autoprefix necessary css attributes/values,
+ * | 3. place compiled file into ./css directory
+ * | 4. minify prefixed css,
+ * | 5. rename minified file with a '.min' suffix,
+ * | 6. place minified file into ./css directory
+ * | 7. notify on task completion
  */
 gulp.task('build', function() {
   return gulp.src('./sass/**/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('./css'))
-    .pipe(autoprefixer({ browsers: ['last 2 versions'], cascade: false }))
-    .pipe(minify())
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(gulp.dest('./css'))
-    .pipe(notify({ onLast: true, message: 'build task complete' }));
+    .pipe(sass({              // 1.
+      outputStyle: 'expanded'
+    }).on('error', sass.logError))
+    .pipe(autoprefixer({      // 2.
+      browsers: $supported,
+      add: true,
+      cascade: false
+    }))
+    .pipe(gulp.dest('./css')) // 3.
+    .pipe(minify({            // 4.
+      discardUnused: { fontFace: false }
+    }))
+    .pipe(rename({            // 5.
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./css')) // 6.
+    .pipe(notify({            // 7.
+      onLast: true,
+      message: 'build task complete!'
+    }));
 });
 
 /*
