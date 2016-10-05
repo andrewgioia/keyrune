@@ -1,10 +1,16 @@
 // keyrune.scss
 
-// Config ==============
+// Config ======================================
+//
 @import 'config/variables';
 //@import 'config/settings'; // used for other users to overwrite default styles.
 
-// Components ==========
+// Components ==================================
+//
 @import 'components/typography';
 @import 'components/setsymbol';
 @import 'components/rarities';
+
+// Helpers =====================================
+//
+@import 'components/helpers';

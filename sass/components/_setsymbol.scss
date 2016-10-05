@@ -1,4 +1,7 @@
-// set symbol class
+// _setsymbol.scss
+
+/** Setsymbol Base Class ========================
+ */
 .#{$keyrune_prefix} {
   display: $setsymbol_display;
   font: $setsymbol_font;
@@ -17,25 +20,20 @@
   &:before {
     content: "#{$setsymbol_default_content}";
   }
-
-  // set symbol size modifiers
-  @each $size in $symbol_sizes {
-    &.#{$keyrune_prefix}-#{nth($size, 1)} {
-      font-size: #{nth($size, 2)};
-    }
-  }
 }
 
-// set symbol glyphs
-// Originally, this was inside of the .#{$keyrune_prefix} class above,
-// and used a '&' parent selector.
-// However, the loop caused a strange
-// interatction and printed all of the the set name comments above all
-// of the set glyh classes; making a giant block of comments on top of
-// a huge list of classes.
-//
-// Temporary solution for proper selector specificity was to prefix the
-// class with the same variable as the main .ss class above.
+/** Setsymbol Glyphs ============================
+ * | Originally, this was inside of the .#{$keyrune_prefix} class above,
+ * | and used a '&' parent selector.
+ * | However, the loop caused a strange
+ * | interatction and printed all of the the set name comments above all
+ * | of the set glyh classes; making a giant block of comments on top of
+ * | a huge list of classes.
+ * |
+ * | Temporary solution for proper selector specificity was to prefix the
+ * | class with the same variable as the main .ss class above. Not really
+ * | best practice (DRY, etc...) but fixes weird compilation.
+ */
 @each $set in $mtg_setlist {
   /* #{nth($set, 1)} */
   .#{$keyrune_prefix}.#{$keyrune_prefix}-#{nth($set, 2)}:before {

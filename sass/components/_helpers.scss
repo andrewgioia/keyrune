@@ -1,0 +1,48 @@
+// _helpers.scss
+
+/** Setsymbol Size Modifiers ====================
+ */
+@each $size in $setsymbol_sizes {
+  .#{$keyrune_prefix}.#{$keyrune_prefix}-#{nth($size, 1)} {
+    font-size: #{nth($size, 2)};
+  }
+}
+
+.#{$keyrune_prefix}.#{$keyrune_prefix}-fw {
+  width: $setsymbol_fixed_size_width;
+  text-align: $setsymbol_fixed_size_text_align;
+}
+
+/** Setsymbol No Border =========================
+ * | This class can remain a singleton since it is generic, making
+ * | it a helper class.
+ */
+.#{$keyrune_prefix}.#{$keyrune_prefix}-no-border {
+  -webkit-text-stroke: $setsymbol_no_border;
+  text-stroke: $setsymbol_no_border;
+}
+
+/** Setsymbol Border ============================
+ */
+.#{$keyrune_prefix}.#{$keyrune_prefix}-border {
+  &:after {
+    content: $setsymbol_border_after_content;
+    position: $setsymbol_border_after_position;
+    left: $setsymbol_border_after_left;
+    top: $setsymbol_border_after_top;
+    color: $setsymbol_border_after_color;
+    font-size: $setsymbol_border_after_font_size;
+    z-index: $setsymbol_border_after_z_index;
+    background: $setsymbol_border_after_background;
+    -webkit-text-stroke: $setsymbol_border_after_text_stroke;
+    -webkit-background-clip: $setsymbol_border_after_background_clip;
+    -webkit-text-fill-color: $setsymbol_border_after_text_fill_color;
+  }
+
+  @each $set in $mtg_setlist_borders {
+    /* #{nth($set, 1)} */
+    .#{$keyrune_prefix}.#{$keyrune_prefix}-#{nth($set, 2)}:after {
+      content: "#{nth($set, 3)}";
+    }
+  }
+}
