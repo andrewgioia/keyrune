@@ -73,8 +73,8 @@ gulp.task('build:css', function() {
  */
 gulp.task('gen:config', function() {
   return gulp.src('./sass/config/_variables.scss')
-    .pipe(rename('config/_settings.scss'))
-    .pipe(gulp.dest('./sass'))
+    .pipe(rename('_settings.scss'))
+    .pipe(gulp.dest('./sass/config'))
     .pipe(notify({
       onLast: true,
       message: 'generated config file successfully!'
