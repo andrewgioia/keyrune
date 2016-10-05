@@ -1,5 +1,9 @@
 # Keyrune v1.7.2
 
+__Note:__
+
+This is the SASS (`.scss`) version of Keyrune. If you are looking for the LESS version, please got to the [master branch](https://github.com/andrewgioia/Keyrune/tree/master).
+
 ## The Magic: the Gathering set symbol font!
 
 Keyrune is the first suite of complete Magic: the Gathering expansion and set symbols as a pictographic font. You can use this font anywhere you want to display set symbols&mdash;in your MtG app or website, documents, card images, anything!
@@ -65,3 +69,6 @@ Attribution is **greatly appreciated** but not required!
 
 * New [Coming Soon](http://magic.wizards.com/en/game-info/products/coming-soon) product page has symbols but not the necessary higher res versions
 * Figure out what the Legendary Cube official set code is; currently using `xLCU`
+* Look into tying a universal `.json` (modified version of mtg.json perhaps) file into the project to allow SASS and JavaScript to share variables.
+  * This will be useful for programmatically generating a complete glossary page (gh-pages) of icons. (similar to other font-package documentation pages [font-awesome, glyph-icons, google-md, etc]).
+* 
