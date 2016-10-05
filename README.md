@@ -71,4 +71,5 @@ Attribution is **greatly appreciated** but not required!
 * Figure out what the Legendary Cube official set code is; currently using `xLCU`
 * Look into tying a universal `.json` (modified version of mtg.json perhaps) file into the project to allow SASS and JavaScript to share variables.
   * This will be useful for programmatically generating a complete glossary page (gh-pages) of icons. (similar to other font-package documentation pages [font-awesome, glyph-icons, google-md, etc]).
-* 
+* Add a changelog generator to the project(?), reducing the amount of maintenance required to add new sets/features. :)
+* Integrate with Mana symbol font project(?) into a singular MtG font package (LESS, and SASS versions).
