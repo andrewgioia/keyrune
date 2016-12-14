@@ -1,4 +1,4 @@
-# Keyrune v1.8.0
+# Keyrune v2.0.0
 
 ## The Magic: the Gathering set symbol font!
 
@@ -34,6 +34,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v2.0.0 - Keyrune, now with sass! Thanks to @jordanbrauer
 * v1.8.0 - Amonkhet icon added; re-organized Readme with new updates at top
 * v1.7.2 - Added Kaladesh Inventions icon (labeled as MP1)
 * v1.7.1 - Cleaned up icon files to remove any with multiple paths; fixed UNH icon
