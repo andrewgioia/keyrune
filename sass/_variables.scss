@@ -1,0 +1,279 @@
+// _variables.scss
+
+// #.
+$keyrune_version: '1.8.0' !default;
+$keyrune_font_path:  '../fonts' !default;
+
+// #. Keyrune Font ==============================
+//
+$keyrune_font_style: normal !default;
+$keyrune_font_variant: normal !default;
+$keyrune_font_weight: normal !default;
+$keyrune_font_size:  14px !default;
+$keyrune_font_face: 'Keyrune' !default;
+$keyrune_font: $keyrune_font_style $keyrune_font_variant $keyrune_font_weight $keyrune_font_size/1 $keyrune_font_face !default;
+
+$keyrune_prefix: 'ss' !default;
+
+$keyrune_default_content: "\e684" !default;
+
+$keyrune_background_clip: text !default;
+$keyrune_text_fill: transparent !default;
+
+// 4. Keyrune Colors ============================
+//
+$black: #000 !default;
+$white: #fff !default;
+
+$keyrune_palette: (
+  ('common', #1a1718, #302b2c, #474040, #000),
+  ('uncommon', #707883, #5a6572, #9e9e9e, #111),
+  ('rare', #a58e4a, #876a3b, #dfbd6b, #333),
+  ('mythic', #bf4427, #b21f0f, #f38300, #333)
+) !default;
+
+// #. Set Symbol Sizes ===============================
+//
+$keyrune_sizes: (
+  '2x': 2em,
+  '3x': 3em,
+  '4x': 4em,
+  '5x': 5em,
+  '6x': 6em,
+  'fw': calc(18em / #{$keyrune_font_size})
+) !default;
+
+// NOTE: not really sure what to call this array. I notice it is for special borders of sorts, so setlist_borders it is.
+$mtg_setlist_borders: (
+  ("Vanguard", 'van', "\e655"),
+  ("Archenemy", 'arc', "\e657"),
+  ("Commander", 'cmd', "\e658"),
+  ("Commander's Arsenal", 'cm1', "\e65a"),
+  ("Commander 2013", 'c13', "\e65b"),
+  ("Commander 2014", 'c14', "\e65d"),
+  ("Commander 2015", 'c15', "\e900"),
+  ("Planechase 2009", 'hop', "\e656"),
+  ("Planechase 2012", 'pc2', "\e659"),
+  ("Conspiracy", 'cns', "\e65c")
+) !default;
+
+// 6. MtG Setlist ==============================
+// Legend/Key:
+// ("Set_Name", 'Set_Code', "Set_Glyph"),
+//
+$mtg_setlist: (
+  // # Core Sets
+  ("Alpha", 'lea', "\e600"),
+  ("Beta", 'leb', "\e601"),
+  ("Unlimited", '2ed', "\e602"),
+  ("Revised", '3ed', "\e603"),
+  ("4th Edition", '4ed', "\e604"),
+  ("Summer Magic", 'psum', "\e605"),
+  ("5th Edition", '5ed', "\e606"),
+  ("6th Edition", '6ed', "\e607"),
+  ("7th Edition", '7ed', "\e608"),
+  ("8th Edition", '8ed', "\e609"),
+  ("9th Edition", '9ed', "\e60a"),
+  ("10th Edition", '10e', "\e60b"),
+  ("Magic 2010", 'm10', "\e60c"),
+  ("Magic 2011", 'm11', "\e60d"),
+  ("Magic 2012", 'm12', "\e60e"),
+  ("Magic 2013", 'm13', "\e60f"),
+  ("Magic 2014", 'm14', "\e610"),
+  ("Magic 2015", 'm15', "\e611"),
+  ("Core background", 'bcore', "\e612"),
+  ("Magic Origins", 'ori', "\e697"),
+  // # Expansion Sets
+  // Artifact block
+  ("Arabian Nights", 'arn', "\e613"),
+  ("Antiquities", 'atq', "\e614"),
+  ("Legends", 'leg', "\e615"),
+  // Wizards block
+  ("The Dark", 'drk', "\e616"),
+  ("Fallen Empires", 'fem', "\e617"),
+  ("Homelands", 'hml', "\e618"),
+  // Ice Age block
+  ("Ice Age", 'ice', "\e619"),
+  ("Alliances", 'all', "\e61a"),
+  ("Coldsnap", 'csp', "\e61b"),
+  // Mirage block
+  ("Mirage", 'mir', "\e61c"),
+  ("Visions", 'vis', "\e61d"),
+  ("Weatherlight", 'wth', "\e61e"),
+  // Tempest block
+  ("Tempest", 'tmp', "\e61f"),
+  ("Stronghold", 'sth', "\e620"),
+  ("Exodus", 'exo', "\e621"),
+  // Urza's block
+  ("Urza's Saga", 'usg', "\e622"),
+  ("Urza's Legacy", 'ulg', "\e623"),
+  ("Urza's Destiny", 'uds', "\e624"),
+  // Mercadian block
+  ("Mercadian Masque", 'mmq', "\e625"),
+  ("Nemesis", 'nms', "\e626"),
+  ("Prophecy", 'pcy', "\e627"),
+  // Invasion block
+  ("Invasion", 'inv', "\e628"),
+  ("Planeshift", 'pls', "\e629"),
+  ("Apocalypse", 'apc', "\e62a"),
+  // Odyssey block
+  ("Odyssey", 'ody', "\e62b"),
+  ("Torment", 'tor', "\e62c"),
+  ("Judgement", 'jud', "\e62d"),
+  // Onslaught block
+  ("Onslaught", 'ons', "\e62e"),
+  ("Legions", 'lgn', "\e62f"),
+  ("Scourge", 'scg', "\e630"),
+  // Mirrodin block
+  ("Mirrodin", 'mrd', "\e631"),
+  ("Darksteel", 'dst', "\e632"),
+  ("5th Dawn", '5dn', "\e633"),
+  // Kamigawa block
+  ("Champions of Kamigawa", 'chk', "\e634"),
+  ("Betrayers of Kamigawa", 'bok', "\e635"),
+  ("Saviors of Kamigawa", 'sok', "\e636"),
+  // Ravnica block
+  ("Ravnica", 'rav', "\e637"),
+  ("Guildpact", 'gpt', "\e638"),
+  ("Dissension", 'dis', "\e639"),
+  // Time Spiral block
+  ("Time Spiral", 'tsp', "\e63a"),
+  ("Planeshift", 'plc', "\e63b"),
+  ("Future Sight", 'fut', "\e63c"),
+  // Lorwyn block
+  ("Lorwyn", 'lrw', "\e63d"),
+  ("Morningtide", 'mor', "\e63e"),
+  // Shadowmoor block
+  ("Shadowmoor", 'shm', "\e63f"),
+  ("Eventide", 'eve', "\e640"),
+  // Alara block
+  ("Shards of Alara", 'ala', "\e641"),
+  ("Conflux", 'con', "\e642"),
+  ("Alara Reborn", 'arb', "\e643"),
+  // Zendikar block
+  ("Zendikar", 'zen', "\e644"),
+  ("Worldwake", 'wwk', "\e645"),
+  ("Rise of Eldrazi", 'roe', "\e646"),
+  // Scars block
+  ("Scars of Mirrodin", 'som', "\e647"),
+  ("Mirrodin Besieged", 'mbs', "\e648"),
+  ("New Phyrexia", 'nph', "\e649"),
+  // Innistrad block
+  ("Innistrad", 'isd', "\e64a"),
+  ("Dark Ascension", 'dka', "\e64b"),
+  ("Avacyn Restored", 'avr', "\e64c"),
+  // Return to Ravnica block
+  ("Return to Ravnica", 'rtr', "\e64d"),
+  ("Gatecrash", 'gtc', "\e64e"),
+  ("Dragon's Maze", 'dgm', "\e64f"),
+  // Theros block
+  ("Theros", 'ths', "\e650"),
+  ("Born of the Gods", 'bng', "\e651"),
+  ("Journey into Nyx", 'jou', "\e652"),
+  // Khans block
+  ("Khans of Tarkir", 'ktk', "\e653"),
+  ("Fate Reforged", 'frf', "\e654"),
+  ("Dragons of Tarkir", 'dtk', "\e693"),
+  // Return to Zendikar block
+  ("Battle for Zendikar", 'bfz', "\e699"),
+  ("Oath of the Gatewatch", 'ogw', "\e901"),
+  // Return to Innistrad block
+  ("Shadows Over Innistrad", 'soi', "\e902"),
+  ("Eldritch Moon", 'emn', "\e90b"),
+  // Kaladesh block
+  ("Kaladesh", 'kld', "\e90e"),
+  ("Aether Revolt", 'aer', "\e90f"),
+  // Amonkhet block
+  ("Amonkhet", "akh", "\e914"),
+  // # Commander Sets
+  ("Vanguard", 'van', "\e655"),
+  ("Planechase 2009", 'hop', "\e656"),
+  ("Archenemy", 'arc', "\e657"),
+  ("Commander", 'cmd', "\e658"),
+  ("Planechase 2012", 'pc2', "\e659"),
+  ("Commander's Arsenal", 'cm1', "\e65a"),
+  ("Commander 2013", 'c13', "\e65b"),
+  ("Conspiracy", 'cns', "\e65c"),
+  ("Commander 2014", 'c14', "\e65d"),
+  ("Commander 2015", 'c15', "\e900"),
+  ("Conspiracy 2, Take", 'cn2', "\e904"),
+  ("Commander 2016", 'c16', "\e910"),
+  ("Planechase", 'pca', "\e911"),
+  // # Reprint Sets
+  ("Chronicles", 'chr', "\e65e"),
+  ("Anthologies", 'ath', "\e65f"),
+  ("Battle Royale", 'brb', "\e660"),
+  ("Beatdown", 'btd', "\e661"),
+  ("Deckmasters", 'dkm', "\e662"),
+  ("Modern Masters", 'mma', "\e663"),
+  ("Modern Masters 2015", 'mm2', "\e695"),
+  ("Eternal Masters", 'ema', "\e903"),
+  ("Modern Masters 2017", 'mm3', "\e912"),
+  // # Beginner Sets
+  ("Portal", 'por', "\e664"),
+  ("Portal 2", 'po2', "\e665"),
+  ("Portal 3 Kingdoms", 'ptk', "\e666"),
+  ("Starter 1999", 's99', "\e667"),
+  ("Starter 2000", 's00', "\e668"),
+  ("Welcome Deck 2016", 'w16', "\e907"),
+  // # Duel Decks
+  ("Elves vs. Goblins", 'evg', "\e669"),
+  ("Jace vs. Chandra", 'dd2', "\e66a"),
+  ("Divine vs. Demonic", 'ddc', "\e66b"),
+  ("Garruk vs. Liliana", 'ddd', "\e66c"),
+  ("Phyrexia vs.", 'dde', "\e66d"),
+  ("Elspeth vs.", 'ddf', "\e66e"),
+  ("Knights vs. Dragons", 'ddg', "\e66f"),
+  ("Ajani vs. Nicol", 'ddh', "\e670"),
+  ("Venser vs. Koth", 'ddi', "\e671"),
+  ("Izzet vs. Golgari", 'ddj', "\e672"),
+  ("Sorin vs. Tibalt", 'ddk', "\e673"),
+  ("Heroes vs. Monsters", 'ddl', "\e674"),
+  ("Jace vs. Vraska", 'ddm', "\e675"),
+  ("Speed vs. Cunning", 'ddn', "\e676"),
+  ("Kiora vs. Elspeth", 'ddo', "\e677"),
+  ("Zendikar vs.", 'ddp', "\e698"),
+  ("Blessed vs. Cursed", 'ddq', "\e908"),
+  ("Nissa vs. Ob", 'ddr', "\e90d"),
+  // # From the Vault
+  ("Dragons", 'drb', "\e678"),
+  ("Exiled", 'v09', "\e679"),
+  ("Relics", 'v10', "\e67a"),
+  ("Legends", 'v11', "\e67b"),
+  ("Realms", 'v12', "\e67c"),
+  ("Twenty", 'v13', "\e67d"),
+  ("Annihilation", 'v14', "\e67e"),
+  ("Angels", 'v15', "\e905"),
+  ("Lore", 'v16', "\e906"),
+  // # Premium Deck Series
+  ("Slivers", 'h09', "\e67f"),
+  ("Fire & Lightning", 'pd2', "\e680"),
+  ("Graveborn", 'pd3', "\e681"),
+  ("Modern Event Deck", 'md1', "\e682"),
+  // # Promotional
+  ("Guru", 'pgru', "\e683"),
+  ("Magic symbol", 'pmtg1', "\e684"),
+  ("Magic symbol", 'pmtg2', "\e685"),
+  ("Leaf", 'pleaf', "\e686"),
+  ("Media Insert", 'pmei', "\e687"),
+  ("DCI (Arena)", 'parl', "\e688"),
+  ("Dragons", 'dpa', "\e689"),
+  ("Book Insert", 'pbook', "\e68a"),
+  ("Astral", 'past', "\e68b"),
+  ("Arena logo", 'parl2', "\e68c"),
+  ("Zendikar", 'exp', "\e69a"),
+  ("Salvat 2005", 'psalvat05', "\e909"),
+  ("Salvat 2011", 'psalvat11', "\e90a"),
+  ("Masterpieces,", 'mp1', "\e913"),
+  // # Online Only
+  ("Masters Edition", 'med', "\e68d"),
+  ("Masters Edition II", 'me2', "\e68e"),
+  ("Masters Edition III", 'me3', "\e68f"),
+  ("Masters Edition IV", 'me4', "\e690"),
+  ("Tempest Remastered", 'tpr', "\e694"),
+  ("Vintage Masters", 'vma', "\e696"),
+  ("Legendary Cube", 'xlcu', "\e90c"),
+  // # The Unsets
+  ("Unglued", 'ugl', "\e691"),
+  ("Unhinged", 'unh', "\e692")
+) !default;
