@@ -1,8 +1,4 @@
-# Keyrune v1.7.2
-
-__Note:__
-
-This is the SASS (`.scss`) version of Keyrune. If you are looking for the LESS version, please got to the [master branch](https://github.com/andrewgioia/Keyrune/tree/master).
+# Keyrune v1.8.0
 
 ## The Magic: the Gathering set symbol font!
 
@@ -38,38 +34,35 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
-* v0.1 - initial font creation and CSS/LESS files for all sets up to Fate Reforged
-* v0.2 - all fonts are fluid width now so they will scale correctly without scaled padding; fixed width class added
-* v1.0 - public launch via /r/magicTCG! added Dragons of Tarkir (DTK)
-* v1.0.1 - Tempest Remastered added (non major set version)
-* v1.0.2 - Modern Masters 2015 added
-* v1.1.0 - Woff2 support added; Vintage Masters icon added
-* v1.2.0 - Cheatsheet added to documentation site; variables changed in LESS files to be Keyrune specific
-* v1.3.0 - Magic Origins icon added
-* v1.3.1 - Duel Decks: Zendikar v. Eldrazi added
-* v1.4.0 - Battle for Zendikar added
-* v1.4.1 - Zendikar Expeditions added
-* v1.4.2 - Commander 2015 added
-* v1.4.3 - Beginning of white border add-on with .ss-border class; renamed font to Keyrune for desktop
-* v1.5.0 - Oath of the Gatewatch and Shadows Over Innistrad added
-* v1.5.1 - Eternal Masters added
-* v1.5.2 - Conspiracy 2: Take the Crown added
-* v1.5.3 - FTV: Angels and FTV: Lore
-* v1.5.4 - Welcome Deck 2016
-* v1.5.5 - Duel Deck: Blessed vs. Cursed added
-* v1.5.6 - Added forgotten Salvat 2005 and 2011 (inserts into MTG Encyclopedias)
-* v1.6.0 - Eldritch Moon icon added (based on low-res WOTC graphic)
-* v1.6.1 - Updated EMN with the official high-res source image
-* v1.6.2 - Added Legendary Cube icon; unfortunately there's no official set code
-* v1.7.0 - Lots of new sets! Kaladesh, Aether Revolt, Modern Masters 2017, Plancechase Anthology, Commander 2016, and Duel Decks: Nissa v. Ob Nixilis added
-* v1.7.1 - Cleaned up icon files to remove any with multiple paths; fixed UNH icon
+* v1.8.0 - Amonkhet icon added; re-organized Readme with new updates at top
 * v1.7.2 - Added Kaladesh Inventions icon (labeled as MP1)
+* v1.7.1 - Cleaned up icon files to remove any with multiple paths; fixed UNH icon
+* v1.7.0 - Lots of new sets! Kaladesh, Aether Revolt, Modern Masters 2017, Planechase Anthology, Commander 2016, and Duel Decks: Nissa v. Ob Nixilis added
+* v1.6.2 - Added Legendary Cube icon; unfortunately there's no official set code
+* v1.6.1 - Updated EMN with the official high-res source image
+* v1.6.0 - Eldritch Moon icon added (based on low-res WOTC graphic)
+* v1.5.6 - Added forgotten Salvat 2005 and 2011 (inserts into MTG Encyclopedias)
+* v1.5.5 - Duel Deck: Blessed vs. Cursed added
+* v1.5.4 - Welcome Deck 2016
+* v1.5.3 - FTV: Angels and FTV: Lore
+* v1.5.2 - Conspiracy 2: Take the Crown added
+* v1.5.1 - Eternal Masters added
+* v1.5.0 - Oath of the Gatewatch and Shadows Over Innistrad added
+* v1.4.3 - Beginning of white border add-on with .ss-border class; renamed font to Keyrune for desktop
+* v1.4.2 - Commander 2015 added
+* v1.4.1 - Zendikar Expeditions added
+* v1.4.0 - Battle for Zendikar added
+* v1.3.1 - Duel Decks: Zendikar v. Eldrazi added
+* v1.3.0 - Magic Origins icon added
+* v1.2.0 - Cheatsheet added to documentation site; variables changed in LESS files to be Keyrune specific
+* v1.1.0 - Woff2 support added; Vintage Masters icon added
+* v1.0.2 - Modern Masters 2015 added
+* v1.0.1 - Tempest Remastered added (non major set version)
+* v1.0.0 - public launch via /r/magicTCG! added Dragons of Tarkir (DTK)
+* v0.2.0 - all fonts are fluid width now so they will scale correctly without scaled padding; fixed width class added
+* v0.1.0 - initial font creation and CSS/LESS files for all sets up to Fate Reforged
 
 ## Todo
 
 * New [Coming Soon](http://magic.wizards.com/en/game-info/products/coming-soon) product page has symbols but not the necessary higher res versions
 * Figure out what the Legendary Cube official set code is; currently using `xLCU`
-* Look into tying a universal `.json` (modified version of mtg.json perhaps) file into the project to allow SASS and JavaScript to share variables.
-  * This will be useful for programmatically generating a complete glossary page (gh-pages) of icons. (similar to other font-package documentation pages [font-awesome, glyph-icons, google-md, etc]).
-* Add a changelog generator to the project(?), reducing the amount of maintenance required to add new sets/features. :)
-* Integrate with Mana symbol font project(?) into a singular MtG font package (LESS, and SASS versions).
