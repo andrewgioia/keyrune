@@ -1,0 +1,26 @@
+.@{ss-prefix}-border {
+    &:after {
+        content: "";
+        position: absolute;
+        left: -.05em;
+        top: .0em;
+        color: #fff;
+        font-size: 1.15em;
+        z-index: -1;
+        background: #fff;
+        -webkit-text-stroke: 0.05em #fff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.@{ss-prefix}-van:after { content: "\e655"; } // Vanguard
+    &.@{ss-prefix}-hop:after { content: "\e656"; } // Planechase 2009
+    &.@{ss-prefix}-arc:after { content: "\e657"; } // Archenemy
+    &.@{ss-prefix}-cmd:after { content: "\e658"; } // Commander
+    &.@{ss-prefix}-pc2:after { content: "\e659"; } // Planechase 2012
+    &.@{ss-prefix}-cm1:after { content: "\e65a"; } // Commander's Arsenal
+    &.@{ss-prefix}-c13:after { content: "\e65b"; } // Commander 2013
+    &.@{ss-prefix}-cns:after { content: "\e65c"; } // Conspiracy
+    &.@{ss-prefix}-c14:after { content: "\e65d"; } // Commander 2014
+    &.@{ss-prefix}-c15:after { content: "\e900"; } // Commander 2015
+}
