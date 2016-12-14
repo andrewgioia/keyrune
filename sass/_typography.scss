@@ -1,0 +1,16 @@
+// _typography.scss
+
+/** Keyrune Font-Family =========================
+ * | Concatenation is purely for readability purposes.
+ */
+@font-face {
+  font-family: "#{$keyrune_font_face}";
+  src:url('#{$keyrune_font_path}' + '/keyrune.eot?v=' + '#{$keyrune_version}');
+  src:url('#{$keyrune_font_path}' + '/keyrune.eot?#iefix&v=' + '#{$keyrune_version}') format('embedded-opentype'),
+      url('#{$keyrune_font_path}' + '/keyrune.woff2?v=' + '#{$keyrune_version}') format('woff2'),
+      url('#{$keyrune_font_path}' + '/keyrune.woff?v=' + '#{$keyrune_version}') format('woff'),
+      url('#{$keyrune_font_path}' + '/keyrune.ttf?v=' + '#{$keyrune_version}') format('truetype'),
+      url('#{$keyrune_font_path}' + '/keyrune.svg?v=' + '#{$keyrune_version}' + '#keyrune') format('svg');
+  font-weight: $keyrune_font_weight;
+  font-style: $keyrune_font_style;
+}
