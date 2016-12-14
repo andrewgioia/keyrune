@@ -1,1051 +1,691 @@
-@charset "UTF-8";
-/** Keyrune Font-Family =========================
- * | Concatenation is purely for readability purposes.
- * |
- * | TODO: Might come back and create a function to fetch font formats from an array. benefit is shorter syntax.
- */
+/**
+ * Global */
 @font-face {
-  font-family: "Keyrune";
-  src: url("../fonts/keyrune.eot?v=1.7.2");
-  src: url("../fonts/keyrune.eot?#iefix&v=1.7.2") format("embedded-opentype"), url("../fonts/keyrune.woff2?v=1.7.2") format("woff2"), url("../fonts/keyrune.woff?v=1.7.2") format("woff"), url("../fonts/keyrune.ttf?v=1.7.2") format("truetype"), url("../fonts/keyrune.svg?v=1.7.2#keyrune") format("svg");
+  font-family: 'Keyrune';
+  src: url('../fonts/keyrune.eot?v=1.8.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=1.8.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=1.8.0') format('woff2'), url('../fonts/keyrune.woff?v=1.8.0') format('woff'), url('../fonts/keyrune.ttf?v=1.8.0') format('truetype'), url('../fonts/keyrune.svg?v=1.8.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
-/** Setsymbol Base Class ========================
- */
 .ss {
   display: inline-block;
-  font: normal normal normal 14px "Keyrune";
+  font: normal normal normal 14px/1 Keyrune;
   font-size: inherit;
   line-height: 1em;
   text-rendering: auto;
-  -webkit-transform: translate(0, 0);
   transform: translate(0, 0);
   speak: none;
   text-transform: none;
   vertical-align: middle;
   -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
-
 .ss:before {
-  content: "";
-}
-
-/** Setsymbol Glyphs ============================
- * | Originally, this was inside of the .ss class above,
- * | and used a '&' parent selector.
- * | However, the loop caused a strange
- * | interatction and printed all of the the set name comments above all
- * | of the set glyh classes; making a giant block of comments on top of
- * | a huge list of classes.
- * |
- * | Temporary solution for proper selector specificity was to prefix the
- * | class with the same variable as the main .ss class above. Not really
- * | best practice (DRY, etc...) but fixes weird compilation.
- */
-/* Alpha */
-.ss.ss-lea:before {
-  content: "";
-}
-
-/* Beta */
-.ss.ss-leb:before {
-  content: "";
-}
-
-/* Unlimited */
-.ss.ss-2ed:before {
-  content: "";
-}
-
-/* Revised */
-.ss.ss-3ed:before {
-  content: "";
-}
-
-/* 4th Edition */
-.ss.ss-4ed:before {
-  content: "";
-}
-
-/* Summer Magic */
-.ss.ss-psum:before {
-  content: "";
-}
-
-/* 5th Edition */
-.ss.ss-5ed:before {
-  content: "";
-}
-
-/* 6th Edition */
-.ss.ss-6ed:before {
-  content: "";
-}
-
-/* 7th Edition */
-.ss.ss-7ed:before {
-  content: "";
-}
-
-/* 8th Edition */
-.ss.ss-8ed:before {
-  content: "";
-}
-
-/* 9th Edition */
-.ss.ss-9ed:before {
-  content: "";
-}
-
-/* 10th Edition */
-.ss.ss-10e:before {
-  content: "";
-}
-
-/* Magic 2010 */
-.ss.ss-m10:before {
-  content: "";
-}
-
-/* Magic 2011 */
-.ss.ss-m11:before {
-  content: "";
-}
-
-/* Magic 2012 */
-.ss.ss-m12:before {
-  content: "";
-}
-
-/* Magic 2013 */
-.ss.ss-m13:before {
-  content: "";
-}
-
-/* Magic 2014 */
-.ss.ss-m14:before {
-  content: "";
-}
-
-/* Magic 2015 */
-.ss.ss-m15:before {
-  content: "";
-}
-
-/* Core background */
-.ss.ss-bcore:before {
-  content: "";
-}
-
-/* Magic Origins */
-.ss.ss-ori:before {
-  content: "";
-}
-
-/* Arabian Nights */
-.ss.ss-arn:before {
-  content: "";
-}
-
-/* Antiquities */
-.ss.ss-atq:before {
-  content: "";
-}
-
-/* Legends */
-.ss.ss-leg:before {
-  content: "";
-}
-
-/* The Dark */
-.ss.ss-drk:before {
-  content: "";
-}
-
-/* Fallen Empires */
-.ss.ss-fem:before {
-  content: "";
-}
-
-/* Homelands */
-.ss.ss-hml:before {
-  content: "";
-}
-
-/* Ice Age */
-.ss.ss-ice:before {
-  content: "";
-}
-
-/* Alliances */
-.ss.ss-all:before {
-  content: "";
-}
-
-/* Coldsnap */
-.ss.ss-csp:before {
-  content: "";
-}
-
-/* Mirage */
-.ss.ss-mir:before {
-  content: "";
-}
-
-/* Visions */
-.ss.ss-vis:before {
-  content: "";
-}
-
-/* Weatherlight */
-.ss.ss-wth:before {
-  content: "";
-}
-
-/* Tempest */
-.ss.ss-tmp:before {
-  content: "";
-}
-
-/* Stronghold */
-.ss.ss-sth:before {
-  content: "";
-}
-
-/* Exodus */
-.ss.ss-exo:before {
-  content: "";
-}
-
-/* Urza's Saga */
-.ss.ss-usg:before {
-  content: "";
-}
-
-/* Urza's Legacy */
-.ss.ss-ulg:before {
-  content: "";
-}
-
-/* Urza's Destiny */
-.ss.ss-uds:before {
-  content: "";
-}
-
-/* Mercadian Masque */
-.ss.ss-mmq:before {
-  content: "";
-}
-
-/* Nemesis */
-.ss.ss-nms:before {
-  content: "";
-}
-
-/* Prophecy */
-.ss.ss-pcy:before {
-  content: "";
-}
-
-/* Invasion */
-.ss.ss-inv:before {
-  content: "";
-}
-
-/* Planeshift */
-.ss.ss-pls:before {
-  content: "";
-}
-
-/* Apocalypse */
-.ss.ss-apc:before {
-  content: "";
-}
-
-/* Odyssey */
-.ss.ss-ody:before {
-  content: "";
-}
-
-/* Torment */
-.ss.ss-tor:before {
-  content: "";
-}
-
-/* Judgement */
-.ss.ss-jud:before {
-  content: "";
-}
-
-/* Onslaught */
-.ss.ss-ons:before {
-  content: "";
-}
-
-/* Legions */
-.ss.ss-lgn:before {
-  content: "";
-}
-
-/* Scourge */
-.ss.ss-scg:before {
-  content: "";
-}
-
-/* Mirrodin */
-.ss.ss-mrd:before {
-  content: "";
-}
-
-/* Darksteel */
-.ss.ss-dst:before {
-  content: "";
-}
-
-/* 5th Dawn */
-.ss.ss-5dn:before {
-  content: "";
-}
-
-/* Champions of */
-.ss.ss-chk:before {
-  content: "";
-}
-
-/* Betrayers of */
-.ss.ss-bok:before {
-  content: "";
-}
-
-/* Saviors of Kamigawa */
-.ss.ss-sok:before {
-  content: "";
-}
-
-/* Ravnica */
-.ss.ss-rav:before {
-  content: "";
-}
-
-/* Guildpact */
-.ss.ss-gpt:before {
-  content: "";
-}
-
-/* Dissension */
-.ss.ss-dis:before {
-  content: "";
-}
-
-/* Time Spiral */
-.ss.ss-tsp:before {
-  content: "";
-}
-
-/* Planeshift */
-.ss.ss-plc:before {
-  content: "";
-}
-
-/* Future Sight */
-.ss.ss-fut:before {
-  content: "";
-}
-
-/* Lorwyn */
-.ss.ss-lrw:before {
-  content: "";
-}
-
-/* Morningtide */
-.ss.ss-mor:before {
-  content: "";
-}
-
-/* Shadowmoor */
-.ss.ss-shm:before {
-  content: "";
-}
-
-/* Eventide */
-.ss.ss-eve:before {
-  content: "";
-}
-
-/* Shards of Alara */
-.ss.ss-ala:before {
-  content: "";
-}
-
-/* Conflux */
-.ss.ss-con:before {
-  content: "";
-}
-
-/* Alara Reborn */
-.ss.ss-arb:before {
-  content: "";
-}
-
-/* Zendikar */
-.ss.ss-zen:before {
-  content: "";
-}
-
-/* Worldwake */
-.ss.ss-wwk:before {
-  content: "";
-}
-
-/* Rise of Eldrazi */
-.ss.ss-roe:before {
-  content: "";
-}
-
-/* Scars of Mirrodin */
-.ss.ss-som:before {
-  content: "";
-}
-
-/* Mirrodin Besieged */
-.ss.ss-mbs:before {
-  content: "";
-}
-
-/* New Phyrexia */
-.ss.ss-nph:before {
-  content: "";
-}
-
-/* Innistrad */
-.ss.ss-isd:before {
-  content: "";
-}
-
-/* Dark Ascension */
-.ss.ss-dka:before {
-  content: "";
-}
-
-/* Avacyn Restored */
-.ss.ss-avr:before {
-  content: "";
-}
-
-/* Return to Ravnica */
-.ss.ss-rtr:before {
-  content: "";
-}
-
-/* Gatecrash */
-.ss.ss-gtc:before {
-  content: "";
-}
-
-/* Dragon's Maze */
-.ss.ss-dgm:before {
-  content: "";
-}
-
-/* Theros */
-.ss.ss-ths:before {
-  content: "";
-}
-
-/* Born of the Gods */
-.ss.ss-bng:before {
-  content: "";
-}
-
-/* Journey into Nyx */
-.ss.ss-jou:before {
-  content: "";
-}
-
-/* Khans of Tarkir */
-.ss.ss-ktk:before {
-  content: "";
-}
-
-/* Fate Reforged */
-.ss.ss-frf:before {
-  content: "";
-}
-
-/* Dragons of Tarkir */
-.ss.ss-dtk:before {
-  content: "";
-}
-
-/* Battle for Zendikar */
-.ss.ss-bfz:before {
-  content: "";
-}
-
-/* Oath of the */
-.ss.ss-ogw:before {
-  content: "";
-}
-
-/* Shadows Over */
-.ss.ss-soi:before {
-  content: "";
-}
-
-/* Eldritch Moon */
-.ss.ss-emn:before {
-  content: "";
-}
-
-/* Kaladesh */
-.ss.ss-kld:before {
-  content: "";
-}
-
-/* Aether Revolt */
-.ss.ss-aer:before {
-  content: "";
-}
-
-/* Vanguard */
-.ss.ss-van:before {
-  content: "";
-}
-
-/* Planechase 2009 */
-.ss.ss-hop:before {
-  content: "";
-}
-
-/* Archenemy */
-.ss.ss-arc:before {
-  content: "";
-}
-
-/* Commander */
-.ss.ss-cmd:before {
-  content: "";
-}
-
-/* Planechase 2012 */
-.ss.ss-pc2:before {
-  content: "";
-}
-
-/* Commander's Arsenal */
-.ss.ss-cm1:before {
-  content: "";
-}
-
-/* Commander 2013 */
-.ss.ss-c13:before {
-  content: "";
-}
-
-/* Conspiracy */
-.ss.ss-cns:before {
-  content: "";
-}
-
-/* Commander 2014 */
-.ss.ss-c14:before {
-  content: "";
-}
-
-/* Commander 2015 */
-.ss.ss-c15:before {
-  content: "";
-}
-
-/* Conspiracy 2, Take */
-.ss.ss-cn2:before {
-  content: "";
-}
-
-/* Commander 2016 */
-.ss.ss-c16:before {
-  content: "";
-}
-
-/* Planechase */
-.ss.ss-pca:before {
-  content: "";
-}
-
-/* Chronicles */
-.ss.ss-chr:before {
-  content: "";
-}
-
-/* Anthologies */
-.ss.ss-ath:before {
-  content: "";
-}
-
-/* Battle Royale */
-.ss.ss-brb:before {
-  content: "";
-}
-
-/* Beatdown */
-.ss.ss-btd:before {
-  content: "";
-}
-
-/* Deckmasters */
-.ss.ss-dkm:before {
-  content: "";
-}
-
-/* Modern Masters */
-.ss.ss-mma:before {
-  content: "";
-}
-
-/* Modern Masters 2015 */
-.ss.ss-mm2:before {
-  content: "";
-}
-
-/* Eternal Masters */
-.ss.ss-ema:before {
-  content: "";
-}
-
-/* Modern Masters 2017 */
-.ss.ss-mm3:before {
-  content: "";
-}
-
-/* Portal */
-.ss.ss-por:before {
-  content: "";
-}
-
-/* Portal 2 */
-.ss.ss-po2:before {
-  content: "";
-}
-
-/* Portal 3 Kingdoms */
-.ss.ss-ptk:before {
-  content: "";
-}
-
-/* Starter 1999 */
-.ss.ss-s99:before {
-  content: "";
-}
-
-/* Starter 2000 */
-.ss.ss-s00:before {
-  content: "";
-}
-
-/* Welcome Deck 2016 */
-.ss.ss-w16:before {
-  content: "";
-}
-
-/* Elves vs. Goblins */
-.ss.ss-evg:before {
-  content: "";
-}
-
-/* Jace vs. Chandra */
-.ss.ss-dd2:before {
-  content: "";
-}
-
-/* Divine vs. Demonic */
-.ss.ss-ddc:before {
-  content: "";
-}
-
-/* Garruk vs. Liliana */
-.ss.ss-ddd:before {
-  content: "";
-}
-
-/* Phyrexia vs. */
-.ss.ss-dde:before {
-  content: "";
-}
-
-/* Elspeth vs. */
-.ss.ss-ddf:before {
-  content: "";
-}
-
-/* Knights vs. Dragons */
-.ss.ss-ddg:before {
-  content: "";
-}
-
-/* Ajani vs. Nicol */
-.ss.ss-ddh:before {
-  content: "";
-}
-
-/* Venser vs. Koth */
-.ss.ss-ddi:before {
-  content: "";
-}
-
-/* Izzet vs. Golgari */
-.ss.ss-ddj:before {
-  content: "";
-}
-
-/* Sorin vs. Tibalt */
-.ss.ss-ddk:before {
-  content: "";
-}
-
-/* Heroes vs. Monsters */
-.ss.ss-ddl:before {
-  content: "";
-}
-
-/* Jace vs. Vraska */
-.ss.ss-ddm:before {
-  content: "";
-}
-
-/* Speed vs. Cunning */
-.ss.ss-ddn:before {
-  content: "";
-}
-
-/* Kiora vs. Elspeth */
-.ss.ss-ddo:before {
-  content: "";
-}
-
-/* Zendikar vs. */
-.ss.ss-ddp:before {
-  content: "";
-}
-
-/* Blessed vs. Cursed */
-.ss.ss-ddq:before {
-  content: "";
-}
-
-/* Nissa vs. Ob */
-.ss.ss-ddr:before {
-  content: "";
-}
-
-/* Dragons */
-.ss.ss-drb:before {
-  content: "";
-}
-
-/* Exiled */
-.ss.ss-v09:before {
-  content: "";
-}
-
-/* Relics */
-.ss.ss-v10:before {
-  content: "";
-}
-
-/* Legends */
-.ss.ss-v11:before {
-  content: "";
-}
-
-/* Realms */
-.ss.ss-v12:before {
-  content: "";
-}
-
-/* Twenty */
-.ss.ss-v13:before {
-  content: "";
-}
-
-/* Annihilation */
-.ss.ss-v14:before {
-  content: "";
-}
-
-/* Angels */
-.ss.ss-v15:before {
-  content: "";
-}
-
-/* Lore */
-.ss.ss-v16:before {
-  content: "";
-}
-
-/* Slivers */
-.ss.ss-h09:before {
-  content: "";
-}
-
-/* Fire & Lightning */
-.ss.ss-pd2:before {
-  content: "";
-}
-
-/* Graveborn */
-.ss.ss-pd3:before {
-  content: "";
-}
-
-/* Modern Event Deck */
-.ss.ss-md1:before {
-  content: "";
-}
-
-/* Guru */
-.ss.ss-pgru:before {
-  content: "";
-}
-
-/* Magic symbol */
-.ss.ss-pmtg1:before {
-  content: "";
-}
-
-/* Magic symbol */
-.ss.ss-pmtg2:before {
-  content: "";
-}
-
-/* Leaf */
-.ss.ss-pleaf:before {
-  content: "";
-}
-
-/* Media Insert */
-.ss.ss-pmei:before {
-  content: "";
-}
-
-/* DCI (Arena) */
-.ss.ss-parl:before {
-  content: "";
-}
-
-/* Dragons */
-.ss.ss-dpa:before {
-  content: "";
-}
-
-/* Book Insert */
-.ss.ss-pbook:before {
-  content: "";
-}
-
-/* Astral */
-.ss.ss-past:before {
-  content: "";
-}
-
-/* Arena logo */
-.ss.ss-parl2:before {
-  content: "";
-}
-
-/* Zendikar */
-.ss.ss-exp:before {
-  content: "";
-}
-
-/* Salvat 2005 */
-.ss.ss-psalvat05:before {
-  content: "";
-}
-
-/* Salvat 2011 */
-.ss.ss-psalvat11:before {
-  content: "";
-}
-
-/* Masterpieces, */
-.ss.ss-mp1:before {
-  content: "";
-}
-
-/* Masters Edition */
-.ss.ss-med:before {
-  content: "";
-}
-
-/* Masters Edition II */
-.ss.ss-me2:before {
-  content: "";
-}
-
-/* Masters Edition III */
-.ss.ss-me3:before {
-  content: "";
-}
-
-/* Masters Edition IV */
-.ss.ss-me4:before {
-  content: "";
-}
-
-/* Tempest Remastered */
-.ss.ss-tpr:before {
-  content: "";
-}
-
-/* Vintage Masters */
-.ss.ss-vma:before {
-  content: "";
-}
-
-/* Legendary Cube */
-.ss.ss-xlcu:before {
-  content: "";
-}
-
-/* Unglued */
-.ss.ss-ugl:before {
-  content: "";
-}
-
-/* Unhinged */
-.ss.ss-unh:before {
-  content: "";
-}
-
-/** Setsymbol Rarities ==========================
- * | Strangely enough, autoprefixer doesn't wanna prefix
- * | some of the things in here properly. Either way, I kept those
- * | hard-coded prefxed to ensure it to work!
- */
-/* common */
-.ss.ss-common {
-  color: #1a1718;
-}
-
-.ss.ss-common.ss-grad {
-  /* Chrome, Safari4+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #302b2c), color-stop(50%, #474040), color-stop(100%, #302b2c));
-  /* Chrome10+, Safari5.1+ */
-  background: -webkit-linear-gradient(left, #302b2c 0%, #474040 50%, #302b2c 100%);
-  -webkit-text-stroke: 0.03em #000;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-/* uncommon */
-.ss.ss-uncommon {
-  color: #707883;
-}
-
-.ss.ss-uncommon.ss-grad {
-  /* Chrome, Safari4+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #5a6572), color-stop(50%, #9e9e9e), color-stop(100%, #5a6572));
-  /* Chrome10+, Safari5.1+ */
-  background: -webkit-linear-gradient(left, #5a6572 0%, #9e9e9e 50%, #5a6572 100%);
-  -webkit-text-stroke: 0.03em #111;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-/* rare */
-.ss.ss-rare {
-  color: #a58e4a;
-}
-
-.ss.ss-rare.ss-grad {
-  /* Chrome, Safari4+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #876a3b), color-stop(50%, #dfbd6b), color-stop(100%, #876a3b));
-  /* Chrome10+, Safari5.1+ */
-  background: -webkit-linear-gradient(left, #876a3b 0%, #dfbd6b 50%, #876a3b 100%);
-  -webkit-text-stroke: 0.03em #333;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-/* mythic */
-.ss.ss-mythic {
-  color: #bf4427;
-}
-
-.ss.ss-mythic.ss-grad {
-  /* Chrome, Safari4+ */
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #b21f0f), color-stop(50%, #f38300), color-stop(100%, #b21f0f));
-  /* Chrome10+, Safari5.1+ */
-  background: -webkit-linear-gradient(left, #b21f0f 0%, #f38300 50%, #b21f0f 100%);
-  -webkit-text-stroke: 0.03em #333;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-}
-
-/** Setsymbol Size Modifiers ====================
- */
-.ss.ss-2x {
+  content: "\e684";
+}
+/**
+ * Larger sizes */
+.ss-2x {
   font-size: 2em;
 }
-
-.ss.ss-3x {
+.ss-3x {
   font-size: 3em;
 }
-
-.ss.ss-4x {
+.ss-4x {
   font-size: 4em;
 }
-
-.ss.ss-5x {
+.ss-5x {
   font-size: 5em;
 }
-
-.ss.ss-6x {
+.ss-6x {
   font-size: 6em;
 }
-
-.ss.ss-fw {
-  width: -webkit-calc(18em / 14px);
-  width: calc(18em / 14px);
+/**
+ * Rarity colors */
+.ss-common {
+  color: #1A1718;
+}
+.ss-common.ss-grad {
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #302b2c), color-stop(50%, #474040), color-stop(100%, #302b2c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #302b2c 1%, #474040 50%, #302b2c 100%);
+  -webkit-text-stroke: 0.03em #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-common.ss-grad.ss-no-border {
+  -webkit-text-stroke: 0;
+}
+.ss-uncommon {
+  color: #707883;
+}
+.ss-uncommon.ss-grad {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #5a6572), color-stop(50%, #9e9e9e), color-stop(100%, #5a6572));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #5a6572 0%, #9e9e9e 50%, #5a6572 100%);
+  -webkit-text-stroke: 0.03em #111;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-uncommon.ss-grad.ss-no-border {
+  -webkit-text-stroke: 0;
+}
+.ss-rare {
+  color: #A58E4A;
+}
+.ss-rare.ss-grad {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #876a3b), color-stop(50%, #dfbd6b), color-stop(100%, #876a3b));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #876a3b 0%, #dfbd6b 50%, #876a3b 100%);
+  -webkit-text-stroke: 0.03em #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-rare.ss-grad.ss-no-border {
+  -webkit-text-stroke: 0;
+}
+.ss-mythic {
+  color: #BF4427;
+}
+.ss-mythic.ss-grad {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #b21f0f), color-stop(50%, #f38300), color-stop(100%, #b21f0f));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #b21f0f 0%, #f38300 50%, #b21f0f 100%);
+  -webkit-text-stroke: 0.03em #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-mythic.ss-grad.ss-no-border {
+  -webkit-text-stroke: 0;
+}
+/**
+ * Fixed width */
+.ss-fw {
+  width: 1.2857142857142858em;
   text-align: center;
 }
-
-/** Setsymbol No Border =========================
- * | This class can remain a singleton since it is generic, making
- * | it a helper class.
- */
-.ss.ss-no-border {
-  -webkit-text-stroke: 0;
-  text-stroke: 0;
+/**
+ * Core */
+.ss-lea:before {
+  content: "\e600";
 }
-
-/** Setsymbol Border ============================
- */
-.ss.ss-border {
-  /* Vanguard */
-  /* Archenemy */
-  /* Commander */
-  /* Commander's Arsenal */
-  /* Commander 2013 */
-  /* Commander 2014 */
-  /* Commander 2015 */
-  /* Planechase 2009 */
-  /* Planechase 2012 */
-  /* Conspiracy */
+.ss-leb:before {
+  content: "\e601";
 }
-
-.ss.ss-border:after {
+.ss-2ed:before {
+  content: "\e602";
+}
+.ss-3ed:before {
+  content: "\e603";
+}
+.ss-4ed:before {
+  content: "\e604";
+}
+.ss-psum:before {
+  content: "\e605";
+}
+.ss-5ed:before {
+  content: "\e606";
+}
+.ss-6ed:before {
+  content: "\e607";
+}
+.ss-7ed:before {
+  content: "\e608";
+}
+.ss-8ed:before {
+  content: "\e609";
+}
+.ss-9ed:before {
+  content: "\e60a";
+}
+.ss-10e:before {
+  content: "\e60b";
+}
+.ss-m10:before {
+  content: "\e60c";
+}
+.ss-m11:before {
+  content: "\e60d";
+}
+.ss-m12:before {
+  content: "\e60e";
+}
+.ss-m13:before {
+  content: "\e60f";
+}
+.ss-m14:before {
+  content: "\e610";
+}
+.ss-m15:before {
+  content: "\e611";
+}
+.ss-bcore:before {
+  content: "\e612";
+}
+.ss-ori:before {
+  content: "\e697";
+}
+/**
+ * Expansions */
+/* Artifact Block */
+.ss-arn:before {
+  content: "\e613";
+}
+.ss-atq:before {
+  content: "\e614";
+}
+.ss-leg:before {
+  content: "\e615";
+}
+/* Wizards Block */
+.ss-drk:before {
+  content: "\e616";
+}
+.ss-fem:before {
+  content: "\e617";
+}
+.ss-hml:before {
+  content: "\e618";
+}
+/* Ice Age Block */
+.ss-ice:before {
+  content: "\e619";
+}
+.ss-all:before {
+  content: "\e61a";
+}
+.ss-csp:before {
+  content: "\e61b";
+}
+/* Mirage Block */
+.ss-mir:before {
+  content: "\e61c";
+}
+.ss-vis:before {
+  content: "\e61d";
+}
+.ss-wth:before {
+  content: "\e61e";
+}
+/* Tempest Block */
+.ss-tmp:before {
+  content: "\e61f";
+}
+.ss-sth:before {
+  content: "\e620";
+}
+.ss-exo:before {
+  content: "\e621";
+}
+/* Urza's Block */
+.ss-usg:before {
+  content: "\e622";
+}
+.ss-ulg:before {
+  content: "\e623";
+}
+.ss-uds:before {
+  content: "\e624";
+}
+/* Mercadian Block */
+.ss-mmq:before {
+  content: "\e625";
+}
+.ss-nms:before {
+  content: "\e626";
+}
+.ss-pcy:before {
+  content: "\e627";
+}
+/* Invasion Block */
+.ss-inv:before {
+  content: "\e628";
+}
+.ss-pls:before {
+  content: "\e629";
+}
+.ss-apc:before {
+  content: "\e62a";
+}
+/* Odyssey Block */
+.ss-ody:before {
+  content: "\e62b";
+}
+.ss-tor:before {
+  content: "\e62c";
+}
+.ss-jud:before {
+  content: "\e62d";
+}
+/* Onslaught Block */
+.ss-ons:before {
+  content: "\e62e";
+}
+.ss-lgn:before {
+  content: "\e62f";
+}
+.ss-scg:before {
+  content: "\e630";
+}
+/* Mirrodin Block */
+.ss-mrd:before {
+  content: "\e631";
+}
+.ss-dst:before {
+  content: "\e632";
+}
+.ss-5dn:before {
+  content: "\e633";
+}
+/* Kamigawa Block */
+.ss-chk:before {
+  content: "\e634";
+}
+.ss-bok:before {
+  content: "\e635";
+}
+.ss-sok:before {
+  content: "\e636";
+}
+/* Ravnica Block */
+.ss-rav:before {
+  content: "\e637";
+}
+.ss-gpt:before {
+  content: "\e638";
+}
+.ss-dis:before {
+  content: "\e639";
+}
+/* Time Spiral Block */
+.ss-tsp:before {
+  content: "\e63a";
+}
+.ss-plc:before {
+  content: "\e63b";
+}
+.ss-fut:before {
+  content: "\e63c";
+}
+/* Lorwyn Block */
+.ss-lrw:before {
+  content: "\e63d";
+}
+.ss-mor:before {
+  content: "\e63e";
+}
+/* Shadowmoor Block */
+.ss-shm:before {
+  content: "\e63f";
+}
+.ss-eve:before {
+  content: "\e640";
+}
+/* Alara Block */
+.ss-ala:before {
+  content: "\e641";
+}
+.ss-con:before {
+  content: "\e642";
+}
+.ss-arb:before {
+  content: "\e643";
+}
+/* Zendikar Block */
+.ss-zen:before {
+  content: "\e644";
+}
+.ss-wwk:before {
+  content: "\e645";
+}
+.ss-roe:before {
+  content: "\e646";
+}
+/* Scars Block */
+.ss-som:before {
+  content: "\e647";
+}
+.ss-mbs:before {
+  content: "\e648";
+}
+.ss-nph:before {
+  content: "\e649";
+}
+/* Innistrad Block */
+.ss-isd:before {
+  content: "\e64a";
+}
+.ss-dka:before {
+  content: "\e64b";
+}
+.ss-avr:before {
+  content: "\e64c";
+}
+/* RTR Block */
+.ss-rtr:before {
+  content: "\e64d";
+}
+.ss-gtc:before {
+  content: "\e64e";
+}
+.ss-dgm:before {
+  content: "\e64f";
+}
+/* Theros Block */
+.ss-ths:before {
+  content: "\e650";
+}
+.ss-bng:before {
+  content: "\e651";
+}
+.ss-jou:before {
+  content: "\e652";
+}
+/* Khans Block */
+.ss-ktk:before {
+  content: "\e653";
+}
+.ss-frf:before {
+  content: "\e654";
+}
+.ss-dtk:before {
+  content: "\e693";
+}
+/* Return to Zendikar Block */
+.ss-bfz:before {
+  content: "\e699";
+}
+.ss-ogw:before {
+  content: "\e901";
+}
+/* Return to Innistrad Block */
+.ss-soi:before {
+  content: "\e902";
+}
+.ss-emn:before {
+  content: "\e90b";
+}
+/* Kaladesh Block */
+.ss-kld:before {
+  content: "\e90e";
+}
+.ss-aer:before {
+  content: "\e90f";
+}
+/* Amonkhet Block */
+.ss-akh:before {
+  content: "\e914";
+}
+/**
+ * Command Zone */
+.ss-van:before {
+  content: "\e655";
+}
+.ss-hop:before {
+  content: "\e656";
+}
+.ss-arc:before {
+  content: "\e657";
+}
+.ss-cmd:before {
+  content: "\e658";
+}
+.ss-pc2:before {
+  content: "\e659";
+}
+.ss-cm1:before {
+  content: "\e65a";
+}
+.ss-c13:before {
+  content: "\e65b";
+}
+.ss-cns:before {
+  content: "\e65c";
+}
+.ss-c14:before {
+  content: "\e65d";
+}
+.ss-c15:before {
+  content: "\e900";
+}
+.ss-cn2:before {
+  content: "\e904";
+}
+.ss-c16:before {
+  content: "\e910";
+}
+.ss-pca:before {
+  content: "\e911";
+}
+/**
+ * Reprint */
+.ss-chr:before {
+  content: "\e65e";
+}
+.ss-ath:before {
+  content: "\e65f";
+}
+.ss-brb:before {
+  content: "\e660";
+}
+.ss-btd:before {
+  content: "\e661";
+}
+.ss-dkm:before {
+  content: "\e662";
+}
+.ss-mma:before {
+  content: "\e663";
+}
+.ss-mm2:before {
+  content: "\e695";
+}
+.ss-ema:before {
+  content: "\e903";
+}
+.ss-mm3:before {
+  content: "\e912";
+}
+/**
+ * Beginner */
+.ss-por:before {
+  content: "\e664";
+}
+.ss-po2:before {
+  content: "\e665";
+}
+.ss-ptk:before {
+  content: "\e666";
+}
+.ss-s99:before {
+  content: "\e667";
+}
+.ss-s00:before {
+  content: "\e668";
+}
+.ss-w16:before {
+  content: "\e907";
+}
+/**
+ * Duel Decks */
+.ss-evg:before {
+  content: "\e669";
+}
+.ss-dd2:before {
+  content: "\e66a";
+}
+.ss-ddc:before {
+  content: "\e66b";
+}
+.ss-ddd:before {
+  content: "\e66c";
+}
+.ss-dde:before {
+  content: "\e66d";
+}
+.ss-ddf:before {
+  content: "\e66e";
+}
+.ss-ddg:before {
+  content: "\e66f";
+}
+.ss-ddh:before {
+  content: "\e670";
+}
+.ss-ddi:before {
+  content: "\e671";
+}
+.ss-ddj:before {
+  content: "\e672";
+}
+.ss-ddk:before {
+  content: "\e673";
+}
+.ss-ddl:before {
+  content: "\e674";
+}
+.ss-ddm:before {
+  content: "\e675";
+}
+.ss-ddn:before {
+  content: "\e676";
+}
+.ss-ddo:before {
+  content: "\e677";
+}
+.ss-ddp:before {
+  content: "\e698";
+}
+.ss-ddq:before {
+  content: "\e908";
+}
+.ss-ddr:before {
+  content: "\e90d";
+}
+/**
+ * From the Vault */
+.ss-drb:before {
+  content: "\e678";
+}
+.ss-v09:before {
+  content: "\e679";
+}
+.ss-v10:before {
+  content: "\e67a";
+}
+.ss-v11:before {
+  content: "\e67b";
+}
+.ss-v12:before {
+  content: "\e67c";
+}
+.ss-v13:before {
+  content: "\e67d";
+}
+.ss-v14:before {
+  content: "\e67e";
+}
+.ss-v15:before {
+  content: "\e905";
+}
+.ss-v16:before {
+  content: "\e906";
+}
+/**
+ * Premium Deck Series */
+.ss-h09:before {
+  content: "\e67f";
+}
+.ss-pd2:before {
+  content: "\e680";
+}
+.ss-pd3:before {
+  content: "\e681";
+}
+.ss-md1:before {
+  content: "\e682";
+}
+/**
+ * Promotional */
+.ss-pgru:before {
+  content: "\e683";
+}
+.ss-pmtg1:before {
+  content: "\e684";
+}
+.ss-pmtg2:before {
+  content: "\e685";
+}
+.ss-pleaf:before {
+  content: "\e686";
+}
+.ss-pmei:before {
+  content: "\e687";
+}
+.ss-parl:before {
+  content: "\e688";
+}
+.ss-dpa:before {
+  content: "\e689";
+}
+.ss-pbook:before {
+  content: "\e68a";
+}
+.ss-past:before {
+  content: "\e68b";
+}
+.ss-parl2:before {
+  content: "\e68c";
+}
+.ss-exp:before {
+  content: "\e69a";
+}
+.ss-psalvat05:before {
+  content: "\e909";
+}
+.ss-psalvat11:before {
+  content: "\e90a";
+}
+.ss-mp1:before {
+  content: "\e913";
+}
+/**
+ * Online */
+.ss-med:before {
+  content: "\e68d";
+}
+.ss-me2:before {
+  content: "\e68e";
+}
+.ss-me3:before {
+  content: "\e68f";
+}
+.ss-me4:before {
+  content: "\e690";
+}
+.ss-tpr:before {
+  content: "\e694";
+}
+.ss-vma:before {
+  content: "\e696";
+}
+.ss-xlcu:before {
+  content: "\e90c";
+}
+/**
+ * Un-serious */
+.ss-ugl:before {
+  content: "\e691";
+}
+.ss-unh:before {
+  content: "\e692";
+}
+.ss-border:after {
   content: "";
   position: absolute;
   left: -0.05em;
-  top: 0em;
+  top: .0em;
   color: #fff;
   font-size: 1.15em;
   z-index: -1;
@@ -1054,43 +694,33 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
-.ss.ss-border .ss.ss-van:after {
-  content: "";
+.ss-border.ss-van:after {
+  content: "\e655";
 }
-
-.ss.ss-border .ss.ss-arc:after {
-  content: "";
+.ss-border.ss-hop:after {
+  content: "\e656";
 }
-
-.ss.ss-border .ss.ss-cmd:after {
-  content: "";
+.ss-border.ss-arc:after {
+  content: "\e657";
 }
-
-.ss.ss-border .ss.ss-cm1:after {
-  content: "";
+.ss-border.ss-cmd:after {
+  content: "\e658";
 }
-
-.ss.ss-border .ss.ss-c13:after {
-  content: "";
+.ss-border.ss-pc2:after {
+  content: "\e659";
 }
-
-.ss.ss-border .ss.ss-c14:after {
-  content: "";
+.ss-border.ss-cm1:after {
+  content: "\e65a";
 }
-
-.ss.ss-border .ss.ss-c15:after {
-  content: "";
+.ss-border.ss-c13:after {
+  content: "\e65b";
 }
-
-.ss.ss-border .ss.ss-hop:after {
-  content: "";
+.ss-border.ss-cns:after {
+  content: "\e65c";
 }
-
-.ss.ss-border .ss.ss-pc2:after {
-  content: "";
+.ss-border.ss-c14:after {
+  content: "\e65d";
 }
-
-.ss.ss-border .ss.ss-cns:after {
-  content: "";
+.ss-border.ss-c15:after {
+  content: "\e900";
 }
