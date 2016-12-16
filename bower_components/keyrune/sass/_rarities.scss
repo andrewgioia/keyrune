@@ -1,0 +1,25 @@
+// _rarities.scs
+
+/** Setsymbol Rarities ==========================
+ * | Strangely enough, autoprefixer doesn't wanna prefix
+ * | some of the things in here properly. Either way, I kept those
+ * | hard-coded prefxed to ensure it to work!
+ */
+@each $scheme in $keyrune_palette {
+  /* #{nth($scheme, 1)} */
+  .#{$keyrune_prefix}.#{$keyrune_prefix}-#{nth($scheme, 1)} {
+    color: #{nth($scheme, 2)};
+
+    &.#{$keyrune_prefix}-grad {
+      // webkit outline/gradient
+      /* Chrome, Safari4+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, #{nth($scheme, 3)}), color-stop(50%, #{nth($scheme, 4)}), color-stop(100%, #{nth($scheme, 3)}));
+      /* Chrome10+, Safari5.1+ */
+      background: -webkit-linear-gradient(left, #{nth($scheme, 3)} 0%, #{nth($scheme, 4)} 50%, #{nth($scheme, 3)} 100%);
+      -webkit-text-stroke: 0.03em #{nth($scheme, 5)};
+      -webkit-text-fill-color: $keyrune_text_fill;
+      -webkit-background-clip: $keyrune_background_clip;
+      background-clip: $keyrune_background_clip;
+    }
+  }
+}
