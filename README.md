@@ -36,6 +36,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v2.0.1 - Xbox Media Promo symbol from original Duels of the Planeswalkers on Xbox
 * v2.0.0 - Keyrune, now with sass! Thanks to @jordanbrauer
 * v1.8.0 - Amonkhet icon added; re-organized Readme with new updates at top
 * v1.7.2 - Added Kaladesh Inventions icon (labeled as MP1)

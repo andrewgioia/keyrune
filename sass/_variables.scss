@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '2.0.0' !default;
+$keyrune_version: '2.0.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -265,6 +265,7 @@ $mtg_setlist: (
   ("Salvat 2005", 'psalvat05', "\e909"),
   ("Salvat 2011", 'psalvat11', "\e90a"),
   ("Masterpieces,", 'mp1', "\e913"),
+  ("Xbox Media Promo," 'pxbox', "\e915"),
   // # Online Only
   ("Masters Edition", 'med', "\e68d"),
   ("Masters Edition II", 'me2', "\e68e"),
