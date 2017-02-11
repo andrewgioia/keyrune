@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '2.1.0' !default;
+$keyrune_version: '2.1.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -198,7 +198,8 @@ $mtg_setlist: (
   ("Commander 2015", 'c15', "\e900"),
   ("Conspiracy 2, Take", 'cn2', "\e904"),
   ("Commander 2016", 'c16', "\e910"),
-  ("Planechase", 'pca', "\e911"),
+  ("Planechase Anthology", 'pca', "\e911"),
+  ("Commander Anthology", 'cma', "\e916"),
   // # Reprint Sets
   ("Chronicles", 'chr', "\e65e"),
   ("Anthologies", 'ath', "\e65f"),
@@ -237,6 +238,7 @@ $mtg_setlist: (
   ("Zendikar vs.", 'ddp', "\e698"),
   ("Blessed vs. Cursed", 'ddq', "\e908"),
   ("Nissa vs. Ob Nixilis", 'ddr', "\e90d"),
+  ("New Phyrexia vs. Mirrodin Pure", 'td2', "\e91c"),
   // # From the Vault
   ("Dragons", 'drb', "\e678"),
   ("Exiled", 'v09', "\e679"),
@@ -278,8 +280,9 @@ $mtg_setlist: (
   ("Tempest Remastered", 'tpr', "\e694"),
   ("Vintage Masters", 'vma', "\e696"),
   ("Legendary Cube", 'xlcu', "\e90c"),
+  ("Magic Online", 'modo', "\e91b"),
   ("Magic Online", 'pmodo', "\e91b"),
-  ("New Phyrexia vs. Mirrodin Pure", 'td2', "\e91c"),
+  ("Magic Duels", 'duels', "\e91d"),
   ("Magic Duels", 'xduels', "\e91d"),
   ("Magic Online Deck Series", 'xmods', "\e91e"),
   // # The Unsets
