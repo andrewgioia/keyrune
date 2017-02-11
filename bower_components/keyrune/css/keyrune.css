@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=2.0.1');
-  src: url('../fonts/keyrune.eot?#iefix&v=2.0.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=2.0.1') format('woff2'), url('../fonts/keyrune.woff?v=2.0.1') format('woff'), url('../fonts/keyrune.ttf?v=2.0.1') format('truetype'), url('../fonts/keyrune.svg?v=2.0.1#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=2.1.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=2.1.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=2.1.0') format('woff2'), url('../fonts/keyrune.woff?v=2.1.0') format('woff'), url('../fonts/keyrune.ttf?v=2.1.0') format('truetype'), url('../fonts/keyrune.svg?v=2.1.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -487,6 +487,12 @@
 .ss-mm3:before {
   content: "\e912";
 }
+.ss-xren:before {
+  content: "\e917";
+}
+.ss-xrin:before {
+  content: "\e918";
+}
 /**
  * Beginner */
 .ss-por:before {
@@ -653,6 +659,12 @@
 .ss-pxbox:before {
   content: "\e915";
 }
+.ss-pmps:before {
+  content: "\e919";
+}
+.ss-pmpu:before {
+  content: "\e91a";
+}
 /**
  * Online */
 .ss-med:before {
@@ -675,6 +687,18 @@
 }
 .ss-xlcu:before {
   content: "\e90c";
+}
+.ss-pmodo:before {
+  content: "\e91b";
+}
+.ss-td2:before {
+  content: "\e91c";
+}
+.ss-xduels:before {
+  content: "\e91d";
+}
+.ss-xmods:before {
+  content: "\e91e";
 }
 /**
  * Un-serious */
