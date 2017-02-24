@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '2.1.1' !default;
+$keyrune_version: '2.1.2' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -269,9 +269,9 @@ $mtg_setlist: (
   ("Salvat 2005", 'psalvat05', "\e909"),
   ("Salvat 2011", 'psalvat11', "\e90a"),
   ("Masterpieces", 'mp1', "\e913"),
-  ("Xbox Media Promo" 'pxbox', "\e915"),
-  ("Magic Premiere Shop" 'pmps', "\e919"),
-  ("Mirrodin Pure" 'pmpu', "\e91a"),
+  ("Xbox Media Promo", 'pxbox', "\e915"),
+  ("Magic Premiere Shop", 'pmps', "\e919"),
+  ("Mirrodin Pure", 'pmpu', "\e91a"),
   // # Online Only
   ("Masters Edition", 'med', "\e68d"),
   ("Masters Edition II", 'me2', "\e68e"),
@@ -279,12 +279,14 @@ $mtg_setlist: (
   ("Masters Edition IV", 'me4', "\e690"),
   ("Tempest Remastered", 'tpr', "\e694"),
   ("Vintage Masters", 'vma', "\e696"),
-  ("Legendary Cube", 'xlcu', "\e90c"),
+  //("Legendary Cube", 'xlcu', "\e90c"), not sure if we can include dupes here
+  ("Legendary Cube", 'pz1', "\e90c"),
   ("Magic Online", 'modo', "\e91b"),
   ("Magic Online", 'pmodo', "\e91b"),
   ("Magic Duels", 'duels', "\e91d"),
   ("Magic Duels", 'xduels', "\e91d"),
   ("Magic Online Deck Series", 'xmods', "\e91e"),
+  ("Treasure Chests", 'pz2', "\e91f"),
   // # The Unsets
   ("Unglued", 'ugl', "\e691"),
   ("Unhinged", 'unh', "\e692")
