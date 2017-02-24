@@ -1,4 +1,4 @@
-# Keyrune v2.1.1
+# Keyrune v2.1.2
 
 ## The Magic: the Gathering set symbol font!
 
@@ -36,6 +36,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v2.1.2 - Magic Online Treasure Chest added, thanks to @csuhta
 * v2.1.1 - Commander Anthology
 * v2.1.0 - A whole slew of new promo and digital symbols thanks to @fenhl
 * v2.0.1 - Xbox Media Promo symbol from original Duels of the Planeswalkers on Xbox
