@@ -93,6 +93,10 @@ li {
     margin: 0 0 10px;
 }
 
+ol li {
+    line-height: 1.6em;
+}
+
 h1 {
     color: #444;
     margin: 0;
