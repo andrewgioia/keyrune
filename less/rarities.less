@@ -76,3 +76,18 @@
         }
     }
 }
+
+.@{ss-prefix}-foil {
+    color: #a6dced;
+    &.@{ss-prefix}-grad {
+        // webkit outline/gradient
+        background: -webkit-linear-gradient(-45deg, #ea8d66 0%,#ea8d66 10%,#fdef8a 17%,#8bcc93 33%,#a6dced 50%,#6f75aa 67%,#e599c2 83%,#eeeeee 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #ea8d66 0%,#ea8d66 15%,#fdef8a 28%,#8bcc93 42%,#a6dced 55%,#6f75aa 68%,#e599c2 84%,#e599c2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        -webkit-text-stroke: 0.03em #333;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &.@{ss-prefix}-no-border {
+            -webkit-text-stroke: 0;
+        }
+    }
+}
