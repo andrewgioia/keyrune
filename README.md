@@ -1,4 +1,4 @@
-# Keyrune v2.1.4
+# Keyrune v2.1.5
 
 ## The Magic: the Gathering set symbol font!
 
@@ -38,6 +38,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v2.1.5 - FTV: Vaults icon added (April Fools 2009 set); Archenemy: Nicol Bolas is now the same exact glyph as Archenemy
 * v2.1.4 - Timeshifted rarity added
 * v2.1.3 - Archenemy: Nicol Bolas added
 * v2.1.2 - Magic Online Treasure Chest added, thanks to @csuhta
