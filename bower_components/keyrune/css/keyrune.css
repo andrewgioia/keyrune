@@ -66,6 +66,7 @@
   -webkit-text-stroke: 0.03em #111;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-clip: text !default;
 }
 .ss-uncommon.ss-grad.ss-no-border {
   -webkit-text-stroke: 0;
@@ -113,6 +114,21 @@
   -webkit-text-fill-color: transparent;
 }
 .ss-timeshifted.ss-grad.ss-no-border {
+  -webkit-text-stroke: 0;
+}
+.ss-foil {
+  color: #a6dced;
+}
+.ss-foil.ss-grad {
+  background: -webkit-linear-gradient(-45deg, #ea8d66 0%, #ea8d66 10%, #fdef8a 17%, #8bcc93 33%, #a6dced 50%, #6f75aa 67%, #e599c2 83%, #eeeeee 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ea8d66 0%, #ea8d66 15%, #fdef8a 28%, #8bcc93 42%, #a6dced 55%, #6f75aa 68%, #e599c2 84%, #e599c2 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-text-stroke: 0.03em #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-foil.ss-grad.ss-no-border {
   -webkit-text-stroke: 0;
 }
 /**
@@ -682,6 +698,7 @@
 .ss-psalvat11:before {
   content: "\e90a";
 }
+.ss-mps:before,
 .ss-mp1:before {
   content: "\e913";
 }

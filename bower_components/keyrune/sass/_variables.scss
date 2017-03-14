@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '2.1.5' !default;
+$keyrune_version: '2.1.6' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -271,7 +271,8 @@ $mtg_setlist: (
   ("Zendikar", 'exp', "\e69a"),
   ("Salvat 2005", 'psalvat05', "\e909"),
   ("Salvat 2011", 'psalvat11', "\e90a"),
-  ("Masterpieces", 'mp1', "\e913"),
+  ("Kaladesh Inventions", 'mp1', "\e913"),
+  ("Kaladesh Inventions", 'mps', "\e913"),
   ("Xbox Media Promo", 'pxbox', "\e915"),
   ("Magic Premiere Shop", 'pmps', "\e919"),
   ("Mirrodin Pure", 'pmpu', "\e91a"),
