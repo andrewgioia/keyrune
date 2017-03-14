@@ -51,7 +51,23 @@
     &.@{ss-prefix}-grad {
         // webkit outline/gradient
         background: -webkit-gradient(linear, left top, right top, color-stop(0%,#b21f0f), color-stop(50%,#f38300), color-stop(100%,#b21f0f)); /* Chrome,Safari4+ */
-        background: -webkit-linear-gradient(left, #b21f0f 0%,#f38300 50%,#b21f0f 100%); // Chrome10+,Safari5.1+
+        background: -webkit-linear-gradient(left, #b21f0f 0%,#f38300 50%,#b21f0f 100%); // Chrome10+, Safari5.1+
+        -webkit-text-stroke: 0.03em #333;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        &.@{ss-prefix}-no-border {
+            -webkit-text-stroke: 0;
+        }
+    }
+}
+
+.@{ss-prefix}-timeshifted {
+    color: #652978;
+    &.@{ss-prefix}-grad {
+        // webkit outline/gradient
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,#652978), color-stop(50%,#c09ac5), color-stop(100%,#652978)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(-45deg, #652978 0%,#c09ac5 50%,#652978 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, #652978 0%,#c09ac5 50%,#652978 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         -webkit-text-stroke: 0.03em #333;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
