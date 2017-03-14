@@ -1,4 +1,4 @@
-# Keyrune v2.1.3
+# Keyrune v2.1.4
 
 ## The Magic: the Gathering set symbol font!
 
@@ -38,6 +38,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v2.1.4 - Timeshifted rarity added
 * v2.1.3 - Archenemy: Nicol Bolas added
 * v2.1.2 - Magic Online Treasure Chest added, thanks to @csuhta
 * v2.1.1 - Commander Anthology

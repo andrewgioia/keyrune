@@ -1,6 +1,6 @@
 // _helpers.scss
 
-/** Setsymbol Size Modifiers ====================
+/** Set Symbol Size Modifiers ====================
  */
 @each $size in $keyrune_sizes {
   .#{$keyrune_prefix}.#{$keyrune_prefix}-#{nth($size, 1)} {
@@ -8,7 +8,7 @@
   }
 }
 
-/** Setsymbol No Border =========================
+/** Set Symbol No Border =========================
  * | This class can remain a singleton since it is generic, making
  * | it a helper class.
  */
@@ -17,7 +17,7 @@
   text-stroke: 0;
 }
 
-/** Setsymbol Border ============================
+/** Set Symbol Border ============================
  */
 .#{$keyrune_prefix}.#{$keyrune_prefix}-border {
   &:after {

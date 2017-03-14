@@ -1,6 +1,6 @@
 // _keyrune.scss
 
-/** Setsymbol Base Class ========================
+/** Set Symbol Base Class ========================
  */
 .#{$keyrune_prefix} {
   display: inline-block;
@@ -22,7 +22,7 @@
   }
 }
 
-/** Setsymbol Glyphs ============================
+/** Set Symbol Glyphs ============================
  * | Originally, this was inside of the .#{$keyrune_prefix} class above,
  * | and used a '&' parent selector.
  * | However, the loop caused a strange
