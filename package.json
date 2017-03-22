@@ -1,7 +1,7 @@
 {
   "name": "keyrune",
   "description": "Keyrune",
-  "version": "2.1.6",
+  "version": "2.2.0",
   "author": {
     "name": "Andrew Gioia",
     "email": "andrewgioia@gmail.com",
@@ -10,7 +10,8 @@
   "contributors": [
     "JayGray <weber.joerg.h@gmail.com>",
     "ardeay",
-    "Jordan Brauer <jbrauer.inc@gmail.com>"
+    "Jordan Brauer <jbrauer.inc@gmail.com>",
+    "Corey Csuhta <@csuhta>"
   ],
   "repository": {
     "type": "git",
