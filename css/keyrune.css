@@ -264,7 +264,8 @@
 .ss-mmq:before {
   content: "\e625";
 }
-.ss-nms:before {
+.ss-nms:before,
+.ss-nem:before {
   content: "\e626";
 }
 .ss-pcy:before {
