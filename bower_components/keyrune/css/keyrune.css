@@ -264,6 +264,7 @@
 .ss-mmq:before {
   content: "\e625";
 }
+.ss-nem:before,
 .ss-nms:before {
   content: "\e626";
 }
@@ -536,6 +537,7 @@
 .ss-por:before {
   content: "\e664";
 }
+.ss-p02:before,
 .ss-po2:before {
   content: "\e665";
 }
@@ -712,6 +714,9 @@
 }
 .ss-pmpu:before {
   content: "\e91a";
+}
+.ss-mp2:before {
+  content: "\e922";
 }
 /**
  * Online */

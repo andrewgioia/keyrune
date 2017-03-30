@@ -45,7 +45,7 @@
                 </a>
             </div>
             <p>
-                Current version 2.2.0 includes all sets to Amonkhet.
+                Current version 2.2.2 includes all sets to Amonkhet.
             </p>
         </div>
     </header>
@@ -57,12 +57,31 @@
             </section>
             <section class="content">
                 <h4>Using Keyrune in your project</h4>
-                <p>Keyrune is CSS and font package you can use in your project to easily display MTG set symbols as font icons. You can download the source and manually include it in your application, or include it via Bower or Composer (project name "keyrune" for both).</p>
+                <p>Keyrune is CSS and font package you can use in your project to easily display MTG set symbols as font icons. You can download the source and manually include it in your application, or include it via Bower or NPM (project name "keyrune" for both).</p>
                 <p>Each set symbol has its own font character. Display them in a manner similar to <a href="http://fontawesome.io">Font Awesome</a> using the <code>&lt;i class="ss ss-exp"&gt;&lt;/i&gt;</code> element. Class name codes are based on the expansion codes from <a href="http://mtgjson.com">MTG JSON</a>.</p>
+                <h5>Including Keyrune in your project</h5>
                 <p>To use Keyrune, move the font files to your /fonts directory and include the <code>keyrune.css</code> stylesheet in your <code>&lt;head&gt;</code>:</p>
                 <blockquote>
                     &lt;<span class="e">link</span> <span class="a">href</span>=<span class="v">"css/keyrune.css"</span> <span class="a">rel</span>=<span class="v">"stylesheet"</span> <span class="a">type</span>=<span class="v">"text/css"</span> /&gt;
                 </blockquote>
+                <p><strong>New!</strong> You can also now use Keyrune via CDN thanks to the amazing <a href="http://jsdelivr.com">jsDelivr</a> project! Include the latest CSS file and (currently) reference the font files via @font-face (we're working on removing this requirement as jsDelivr flattens the directory structure):</p>
+                <blockquote>
+                    &lt;<span class="e">link</span> <span class="a">href</span>="<span class="v">//cdn.jsdelivr.net/keyrune/latest/keyrune.min.css</span>" <span class="a">rel</span>="<span class="v">stylesheet</span>" <span class="a">type</span>="<span class="v">text/css</span>" /&gt;<br />
+                    &lt;<span class="e">style</span> <span class="a">type</span>="<span class="v">text/css</span>"&gt;<br />
+                    &nbsp;&nbsp;<span class="a">@font-face</span> {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-family: '<span class="e">Keyrune</span>';<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;src: <span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.eot</span>');<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;src: <span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.eot?#iefix</span>') <span class="v">format</span>('<span class="e">embedded-opentype</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.woff2</span>') <span class="v">format</span>('<span class="e">woff2</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.woff</span>') <span class="v">format</span>('<span class="e">woff</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.ttf</span>') <span class="v">format</span>('<span class="e">truetype</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.svg</span>') <span class="v">format</span>('<span class="e">svg</span>');<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-weight: <span class="o">normal</span>;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-style: <span class="o">normal</span>;<br />
+                    &nbsp;&nbsp;}<br />
+                    &lt;/<span class="e">style</span>&gt;
+                </blockquote>
+                <h5>Creating icons in your project</h5>
                 <p>Insert set symbol icons by using the <code>.ss</code> class and then the set code class, such as <code>.ss-mor</code> for Morningtide: <i class="ss ss-mor"></i></p>
                 <blockquote>
                     &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-mor"</span>&gt;&lt;/<span class="e">i</span>&gt;

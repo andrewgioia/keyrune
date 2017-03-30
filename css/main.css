@@ -145,6 +145,11 @@ h4 {
     text-align: left;
 }
 
+h5 {
+    font-size: 17px;
+    margin: 15px 0 5px;
+}
+
 main {
     margin: 0;
     padding: 20px 0 25px;
@@ -319,3 +324,4 @@ footer {
 .e { color: #63A35C; }
 .a { color: #795DA3; }
 .v { color: #183691; }
+.o { color: #ED8C5A; }
