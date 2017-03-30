@@ -1,4 +1,4 @@
-# Keyrune v2.2.1
+# Keyrune v2.2.2
 
 ## The Magic: the Gathering set symbol font!
 
@@ -10,10 +10,32 @@ Keyrune is the first suite of complete Magic: the Gathering expansion and set sy
 
 Each set symbol has its own font character. Display them in a manner similar to [Font Awesome](http://fontawesome.io) using the `<i class="ss ss-exp"></i>` element. Class name codes are based on the expansion codes from [MTG JSON](http://mtgjson.com).
 
-To use Keyrune, move the font files to your `/fonts` directory and include the keyrune.css stylesheet in your `<head>`:
+To use Keyrune via source, NPM, or Bower, move the font files to your `/fonts` directory and include the keyrune.css stylesheet in your `<head>`:
 
 ```html
 <link href="css/keyrune.css" rel="stylesheet" type="text/css" />
+```
+
+**NEW:** you can now include Keyrune via CDN thanks to the amazing [jdDelivr](http://jsdelivr.com) project! To include the latest version:
+
+```html
+<link href="//cdn.jsdelivr.net/keyrune/latest/keyrune.css" rel="stylesheet" type="text/css" />
+```
+
+**Note:** jsDelivr does not maintain the directory structure and we're working on resolving this; for now you should also include the font files separately via `@font-face`, e.g.:
+
+```css
+@font-face {
+  font-family: 'Keyrune';
+  src: url('//cdn.jsdelivr.net/keyrune/latest/keyrune.eot');
+  src: url('//cdn.jsdelivr.net/keyrune/latest/keyrune.eot?#iefix') format('embedded-opentype'),
+    url('//cdn.jsdelivr.net/keyrune/latest/keyrune.woff2') format('woff2'),
+    url('//cdn.jsdelivr.net/keyrune/latest/keyrune.woff') format('woff'),
+    url('//cdn.jsdelivr.net/keyrune/latest/keyrune.ttf') format('truetype'),
+    url('//cdn.jsdelivr.net/keyrune/latest/keyrune.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 ```
 
 ## Editing the Source
@@ -38,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v2.2.2 - Adding Amonkhet Invocation symbol; correcting Portal: Second Age set code and leaving alias
 * v2.2.1 - Adding alias for Nemesis
 * v2.2.0 - Duel Deck: Mind vs. Might added thanks to @csuhta
 * v2.1.6 - Foil rarity added; corrected Kaladesh Inventions code to mps (mp1 alias remains)

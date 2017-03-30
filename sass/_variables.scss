@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '2.1.6' !default;
+$keyrune_version: '2.2.2' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -217,6 +217,7 @@ $mtg_setlist: (
   ("Rinascimento", 'xrin', "\e918"),
   // # Beginner Sets
   ("Portal", 'por', "\e664"),
+  ("Portal 2", 'p02', "\e665"),
   ("Portal 2", 'po2', "\e665"),
   ("Portal 3 Kingdoms", 'ptk', "\e666"),
   ("Starter 1999", 's99', "\e667"),
@@ -277,6 +278,7 @@ $mtg_setlist: (
   ("Xbox Media Promo", 'pxbox', "\e915"),
   ("Magic Premiere Shop", 'pmps', "\e919"),
   ("Mirrodin Pure", 'pmpu', "\e91a"),
+  ("Amonkhet Invocations", 'mp2', "\e922"),
   // # Online Only
   ("Masters Edition", 'med', "\e68d"),
   ("Masters Edition II", 'me2', "\e68e"),
