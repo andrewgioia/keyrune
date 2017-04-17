@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '2.2.2' !default;
+$keyrune_version: '2.2.3' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -223,6 +223,7 @@ $mtg_setlist: (
   ("Starter 1999", 's99', "\e667"),
   ("Starter 2000", 's00', "\e668"),
   ("Welcome Deck 2016", 'w16', "\e907"),
+  ("Welcome Deck 2017", 'w17', "\e923"),
   // # Duel Decks
   ("Elves vs. Goblins", 'evg', "\e669"),
   ("Jace vs. Chandra", 'dd2', "\e66a"),

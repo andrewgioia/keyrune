@@ -1,4 +1,4 @@
-# Keyrune v2.2.2
+# Keyrune v2.2.3
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v2.2.3 - Adding Welcome Deck 2017 symbol
 * v2.2.2 - Adding Amonkhet Invocation symbol; correcting Portal: Second Age set code and leaving alias
 * v2.2.1 - Adding alias for Nemesis
 * v2.2.0 - Duel Deck: Mind vs. Might added thanks to @csuhta
