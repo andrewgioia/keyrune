@@ -16,23 +16,23 @@ To use Keyrune via source, NPM, or Bower, move the font files to your `/fonts` d
 <link href="css/keyrune.css" rel="stylesheet" type="text/css" />
 ```
 
-**NEW:** you can now include Keyrune via CDN thanks to the amazing [jdDelivr](http://jsdelivr.com) project! To include the latest version:
+**NEW:** you can now include Keyrune via CDN thanks to the amazing [jdDelivr](http://jsdelivr.com) project! To include the latest version, reference:
 
 ```html
-<link href="//cdn.jsdelivr.net/keyrune/latest/keyrune.css" rel="stylesheet" type="text/css" />
+<link href="//cdn.jsdelivr.net/keyrune/latest/css/keyrune.css" rel="stylesheet" type="text/css" />
 ```
 
-**Note:** jsDelivr does not maintain the directory structure and we're working on resolving this; for now you should also include the font files separately via `@font-face`, e.g.:
+**Note:** as of v2.2.3 jsDelivr now DOES maintain the directory structure. **You no longer need to explicitly include the font-family via `@font-face`**, but if you still would like to here is the css ruleset:
 
 ```css
 @font-face {
   font-family: 'Keyrune';
-  src: url('//cdn.jsdelivr.net/keyrune/latest/keyrune.eot');
-  src: url('//cdn.jsdelivr.net/keyrune/latest/keyrune.eot?#iefix') format('embedded-opentype'),
-    url('//cdn.jsdelivr.net/keyrune/latest/keyrune.woff2') format('woff2'),
-    url('//cdn.jsdelivr.net/keyrune/latest/keyrune.woff') format('woff'),
-    url('//cdn.jsdelivr.net/keyrune/latest/keyrune.ttf') format('truetype'),
-    url('//cdn.jsdelivr.net/keyrune/latest/keyrune.svg') format('svg');
+  src: url('//cdn.jsdelivr.net/keyrune/latest/fonts/keyrune.eot');
+  src: url('//cdn.jsdelivr.net/keyrune/latest/fonts/keyrune.eot?#iefix') format('embedded-opentype'),
+    url('//cdn.jsdelivr.net/keyrune/latest/fonts/keyrune.woff2') format('woff2'),
+    url('//cdn.jsdelivr.net/keyrune/latest/fonts/keyrune.woff') format('woff'),
+    url('//cdn.jsdelivr.net/keyrune/latest/fonts/keyrune.ttf') format('truetype'),
+    url('//cdn.jsdelivr.net/keyrune/latest/fonts/keyrune.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
