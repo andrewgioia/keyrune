@@ -1,7 +1,7 @@
 {
   "name": "keyrune",
   "homepage": "http://andrewgioia.github.io/Keyrune",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "authors": [
     "Andrew Gioia <andrewgioia@gmail.com>"
   ],
@@ -32,11 +32,11 @@
     "node_modules",
     "bower_components"
   ],
-  "_release": "2.2.2",
+  "_release": "2.2.3",
   "_resolution": {
     "type": "version",
-    "tag": "v2.2.2",
-    "commit": "b5d1d69baab484bc6296bcc30c43609481e69ee1"
+    "tag": "v2.2.3",
+    "commit": "da3c62f5f6854c68a8993b19479bb6c4a704f0f9"
   },
   "_source": "https://github.com/andrewgioia/keyrune.git",
   "_target": "*",
