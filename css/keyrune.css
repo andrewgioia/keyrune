@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=2.2.3');
-  src: url('../fonts/keyrune.eot?#iefix&v=2.2.3') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=2.2.3') format('woff2'), url('../fonts/keyrune.woff?v=2.2.3') format('woff'), url('../fonts/keyrune.ttf?v=2.2.3') format('truetype'), url('../fonts/keyrune.svg?v=2.2.3#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=2.3.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=2.3.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=2.3.0') format('woff2'), url('../fonts/keyrune.woff?v=2.3.0') format('woff'), url('../fonts/keyrune.ttf?v=2.3.0') format('truetype'), url('../fonts/keyrune.svg?v=2.3.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -449,6 +449,9 @@
 /* Amonkhet Block */
 .ss-akh:before {
   content: "\e914";
+}
+.ss-hou:before {
+  content: "\e924";
 }
 /**
  * Command Zone */

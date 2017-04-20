@@ -1,4 +1,4 @@
-# Keyrune v2.2.3
+# Keyrune v2.3.0
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v2.3.0 - Adding Hour of Devastation symbol (awaiting higher resolution source)
 * v2.2.3 - Adding Welcome Deck 2017 symbol
 * v2.2.2 - Adding Amonkhet Invocation symbol; correcting Portal: Second Age set code and leaving alias
 * v2.2.1 - Adding alias for Nemesis
