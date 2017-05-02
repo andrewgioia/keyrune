@@ -37,7 +37,7 @@
                 <i class="ss ss-pmtg2"></i>
                 Download
             </a>
-            <h2 class="sub">Complete 192 Magic set symbol font icons</h2>
+            <h2 class="sub">Complete 199 Magic set symbol font icons</h2>
         </div>
     </header>
 
@@ -45,7 +45,7 @@
         <div class="wrapper">
             <section>
                 <h3>
-                    View the full list of 192 set and expansion symbols below, for all sets and special edition products up to <strong>Hour of Devastation</strong>. To use the symbols on your desktop or just get the vectors, check out the <a href="cheatsheet.html">Cheatsheet</a>.
+                    View the full list of 199 set and expansion symbols below, for all sets and special edition products up to <strong>Hour of Devastation</strong>. To use the symbols on your desktop or just get the vectors, check out the <a href="cheatsheet.html">Cheatsheet</a>.
                 </h3>
             </section>
             <section class="content">
@@ -136,6 +136,9 @@
                     </div>
                     <div class="icon" id="ice" name="Ice Age" data-name="Ice Age" data-class="ice" data-unicode="e619" data-added="v0.1.0">
                         <span class="name"><i class="ss ss-ice"></i> Ice Age <em>(ice)</em></span>
+                    </div>
+                    <div class="icon" id="ice2" name="Ice Age (Original)" data-name="Ice Ag (Original)" data-class="ice2" data-unicode="e925" data-added="v3.0.0">
+                        <span class="name"><i class="ss ss-ice2"></i> Ice Age (Original) <em>(ice2)</em></span>
                     </div>
                     <div class="icon" id="all" name="Alliances" data-name="Alliances" data-class="all" data-unicode="e61a" data-added="v0.1.0">
                         <span class="name"><i class="ss ss-all"></i> Alliances <em>(all)</em></span>
@@ -682,6 +685,29 @@
                     </div>
                 </div>
             </section>
+            <section class="content">
+                <h4>Unofficial Symbols</h4>
+                <div class="icons">
+                    <div class="icon" id="xcle" name="Collector's Edition" data-name="Collector's Edition" data-class="xcle" data-unicode="e926" data-added="v3.0.0">
+                        <span class="name"><i class="ss ss-xcle"></i> Collector's Edition <em>(xcle)</em></span>
+                    </div>
+                    <div class="icon" id="xice" name="International Collector's Edition" data-name="International Collector's Edition" data-class="xice" data-unicode="e927" data-added="v3.0.0">
+                        <span class="name"><i class="ss ss-xice"></i> International Collector's Edition <em>(xice)</em></span>
+                    </div>
+                    <div class="icon" id="x2ps" name="Two Player Introductory Set" data-name="Two Player Introductory Set" data-class="x2ps" data-unicode="e928" data-added="v3.0.0">
+                        <span class="name"><i class="ss ss-x2ps"></i> Two Player Introductory Set <em>(x2ps)</em></span>
+                    </div>
+                    <div class="icon" id="x4ea" name="Alternate 4th Edition" data-name="Alternate 4th Edition" data-class="x4ea" data-unicode="e929" data-added="v3.0.0">
+                        <span class="name"><i class="ss ss-x4ea"></i> Alternate 4th Edition <em>(x4ea)</em></span>
+                    </div>
+                    <div class="icon" id="papac" name="APAC Lands" data-name="APAC Lands" data-class="papac" data-unicode="e92a" data-added="v3.0.0">
+                        <span class="name"><i class="ss ss-papac"></i> APAC Lands <em>(papac)</em></span>
+                    </div>
+                    <div class="icon" id="peuro" name="Euro Lands" data-name="Euro Lands" data-class="peuro" data-unicode="e92b" data-added="v3.0.0">
+                        <span class="name"><i class="ss ss-peuro"></i> Euro Lands <em>(peuro)</em></span>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -803,7 +829,9 @@
             if ( results && results[2] ) {
                 icon = decodeURIComponent( results[2].replace(/\+/g, " ") );
             }
-            loadModal( icon );
+            if ( icon.length > 0 ) {
+                loadModal( icon );
+            }
 
             // load modal from icon clicks
             $( 'main' ).on( 'click', '.icon', function (e) {

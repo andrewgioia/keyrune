@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '2.3.0' !default;
+$keyrune_version: '3.0.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -95,6 +95,7 @@ $mtg_setlist: (
   ("Homelands", 'hml', "\e618"),
   // Ice Age block
   ("Ice Age", 'ice', "\e619"),
+  ("Ice Age (Original)", 'ice2', "\e925"),
   ("Alliances", 'all', "\e61a"),
   ("Coldsnap", 'csp', "\e61b"),
   // Mirage block
@@ -298,5 +299,12 @@ $mtg_setlist: (
   ("Treasure Chests", 'pz2', "\e91f"),
   // # The Unsets
   ("Unglued", 'ugl', "\e691"),
-  ("Unhinged", 'unh', "\e692")
+  ("Unhinged", 'unh', "\e692"),
+  // # Unofficial
+  ("Collector's Edition", 'xcle', "\e926"),
+  ("International Collector's Edition", 'xice', "\e927"),
+  ("Two Player Introductory Set", 'x2ps', "\e928"),
+  ("Alternate 4th Edition", 'x4ea', "\e929"),
+  ("APAC Lands", 'papac', "\e92a"),
+  ("Euro Lands", 'peuro', "\e92b")
 ) !default;
