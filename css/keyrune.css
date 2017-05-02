@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=2.3.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=2.3.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=2.3.0') format('woff2'), url('../fonts/keyrune.woff?v=2.3.0') format('woff'), url('../fonts/keyrune.ttf?v=2.3.0') format('truetype'), url('../fonts/keyrune.svg?v=2.3.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.0.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.0.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.0.0') format('woff2'), url('../fonts/keyrune.woff?v=3.0.0') format('woff'), url('../fonts/keyrune.ttf?v=3.0.0') format('truetype'), url('../fonts/keyrune.svg?v=3.0.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -223,6 +223,9 @@
 /* Ice Age Block */
 .ss-ice:before {
   content: "\e619";
+}
+.ss-ice2:before {
+  content: "\e925";
 }
 .ss-all:before {
   content: "\e61a";
@@ -769,6 +772,26 @@
 }
 .ss-unh:before {
   content: "\e692";
+}
+/**
+ * Unofficial */
+.ss-xcle:before {
+  content: "\e926";
+}
+.ss-xice:before {
+  content: "\e927";
+}
+.ss-x2ps:before {
+  content: "\e928";
+}
+.ss-x4ea:before {
+  content: "\e929";
+}
+.ss-papac:before {
+  content: "\e92a";
+}
+.ss-peuro:before {
+  content: "\e92b";
 }
 .ss-border:after {
   content: "";
