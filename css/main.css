@@ -226,12 +226,17 @@ blockquote {
     display: inline-block;
     overflow: hidden;
     width: 24.5%;
+    cursor: pointer;
 }
 
-    .icon span {
+    .icon .name {
         display: inline-block;
         padding: 9px 10px;
         white-space: nowrap;
+    }
+
+    .icon .info {
+        display: none;
     }
 
     .icon:hover {
@@ -251,7 +256,7 @@ blockquote {
 
         .icon:hover .ss {
             font-size: 32px;
-            text-shadow: 0 1px 0 #fff;
+            /*text-shadow: 0 1px 0 #fff;*/
         }
 
     .icon em {
@@ -309,6 +314,9 @@ footer {
     padding: 10px 0 30px;
 }
 
+
+/* Utilities */
+
 .float-left {
     float: left;
 }
@@ -321,7 +329,118 @@ footer {
     clear: both;
 }
 
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .e { color: #63A35C; }
 .a { color: #795DA3; }
 .v { color: #183691; }
 .o { color: #ED8C5A; }
+
+
+/* Icon modal */
+
+#overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,.4);
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: none;
+}
+
+#modal {
+    height: 320px;
+    width: 760px;
+    position: fixed;
+    padding: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,.9);
+    border-radius: 5px;
+    box-shadow: 0 5px 35px #444;
+    z-index: 200;
+}
+
+    #iconPreview .ss {
+        font-size: 300px;
+        margin: 0 40px 0 0;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        vertical-align: top;
+        float: left;
+    }
+
+    #iconMeta {
+        float: left;
+    }
+
+    #iconMeta h3 {
+        font-size: 24px;
+        margin: 10px 0 20px;
+        padding: 0 0 5px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    #iconMeta #setCode {
+        font-size: 16px;
+        color: #777;
+    }
+
+    #metaInfo {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        #metaInfo li {
+            padding: 0 0 5px;
+            color: #333;
+        }
+
+        #metaInfo strong {
+            color: #777;
+            display: inline-block;
+            width: 75px;
+        }
+
+    #toggleRarity {
+        list-style: none;
+        margin: 25px 0 10px;
+        padding: 0;
+        width: 400px;
+    }
+
+        #toggleRarity a {
+            border: 1px solid #CFCDC7;
+            display: block;
+            float: left;
+            padding: 6px 10px 7px;
+            margin: 0 0 0 -1px;
+        }
+
+            #toggleRarity a.left {
+                border-radius: 4px 0 0 4px;
+            }
+
+            #toggleRarity a.right {
+                border-radius: 0 4px 4px 0;
+            }
+
+            #toggleRarity a.active {
+                background: #E6E2D7;
+                color: #444;
+            }
+
+    #closeModalContainer {
+        position: absolute;
+        top: 18px;
+        right: 20px;
+    }
