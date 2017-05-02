@@ -78,8 +78,8 @@
                     <div class="icon" id="7ed" name="Seventh Edition" data-name="Seventh Edition" data-class="7ed" data-unicode="e608" data-added="v0.1.0">
                         <span class="name"><i class="ss ss-7ed"></i> Seventh Edition <em>(7ed)</em></span>
                     </div>
-                    <div class="icon" id="8ed" name="Eigth Edition" data-name="Eigth Edition" data-class="8ed" data-unicode="e609" data-added="v0.1.0">
-                        <span class="name"><i class="ss ss-8ed"></i> Eigth Edition <em>(8ed)</em></span>
+                    <div class="icon" id="8ed" name="Eighth Edition" data-name="Eighth Edition" data-class="8ed" data-unicode="e609" data-added="v0.1.0">
+                        <span class="name"><i class="ss ss-8ed"></i> Eighth Edition <em>(8ed)</em></span>
                     </div>
                     <div class="icon" id="9ed" name="Ninth Edition" data-name="Ninth Edition" data-class="9ed" data-unicode="e60a" data-added="v0.1.0">
                         <span class="name"><i class="ss ss-9ed"></i> Ninth Edition <em>(9ed)</em></span>
@@ -766,6 +766,10 @@
                 // show the modal
                 $( '#overlay' ).show();
                 $( '#modal' ).show();
+
+                // update the url query string
+                var newurl = window.location.origin + window.location.pathname + '?icon='+icon;
+                window.history.pushState( {path:newurl}, '', newurl );
             }
 
             // toggle rarity controls
@@ -785,6 +789,7 @@
             // close modal button
             $( '#closeModal' ).on( 'click', function( e ) {
                 $( '#overlay' ).hide();
+                $( '#toggleGradient' ).prop( 'checked', false );
                 $( '#modal' ).hide();
             });
 
