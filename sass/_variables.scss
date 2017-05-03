@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.0.0' !default;
+$keyrune_version: '3.0.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -282,6 +282,7 @@ $mtg_setlist: (
   ("Magic Premiere Shop", 'pmps', "\e919"),
   ("Mirrodin Pure", 'pmpu', "\e91a"),
   ("Amonkhet Invocations", 'mp2', "\e922"),
+  ("IDW Promo", 'pidw', "\e92c"),
   // # Online Only
   ("Masters Edition", 'med', "\e68d"),
   ("Masters Edition II", 'me2', "\e68e"),

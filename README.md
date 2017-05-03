@@ -1,4 +1,4 @@
-# Keyrune v3.0.0
+# Keyrune v3.0.1
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.0.1 - Adding IDW Promo icon and clenaing up some core set icons
 * v3.0.0 - [Big update!](https://github.com/andrewgioia/Keyrune/milestone/1) Many symbols were compared and corrected to the original card version, 6 unofficial icons added, and new preview on doc site
 * v2.3.0 - Adding Hour of Devastation symbol (awaiting higher resolution source)
 * v2.2.3 - Adding Welcome Deck 2017 symbol
