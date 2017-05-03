@@ -784,7 +784,7 @@
                 $( '#iconPreview i' ).removeClass().addClass( 'ss ss-fw ss-common ss-'+icon );
                 $( '#setName' ).html( name );
                 $( '#setCode' ).html( '('+icon+')' );
-                $( '#metaInfo .html span' ).html( '.ss-'+icon );
+                $( '#metaInfo .html span' ).html( 'ss-'+icon );
                 $( '#metaInfo .class span' ).html( classname );
                 $( '#metaInfo .unicode span' ).html( unicode );
                 $( '#metaInfo .added span' ).html( added );
@@ -816,6 +816,8 @@
             $( '#closeModal' ).on( 'click', function( e ) {
                 $( '#overlay' ).hide();
                 $( '#toggleGradient' ).prop( 'checked', false );
+                $( '#toggleRarity a.active' ).removeClass( 'active' );
+                $( '#toggleRarity a[data-rarity="common"]' ).addClass( 'active' );
                 $( '#modal' ).hide();
             });
 
