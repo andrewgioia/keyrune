@@ -1,4 +1,4 @@
-# Keyrune v3.0.2
+# Keyrune v3.0.3
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.0.3 - Adding new (correct) Archenemy: Nicol Bolas symbol with confirmed set code (e01)
 * v3.0.2 - Fixing BRB path issue
 * v3.0.1 - Adding IDW Promo icon and clenaing up some core set icons
 * v3.0.0 - [Big update!](https://github.com/andrewgioia/Keyrune/milestone/1) Many symbols were compared and corrected to the original card version, 6 unofficial icons added, and new preview on doc site

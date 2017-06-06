@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.0.2' !default;
+$keyrune_version: '3.0.3' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -204,7 +204,8 @@ $mtg_setlist: (
   ("Commander 2016", 'c16', "\e910"),
   ("Planechase Anthology", 'pca', "\e911"),
   ("Commander Anthology", 'cma', "\e916"),
-  ("Archenemy: Nicol Bolas", 'ann', "\e657"),
+  ("Archenemy: Nicol Bolas", 'e01', "\e92d"),
+  ("Archenemy: Nicol Bolas", 'ann', "\e92d"),
   // # Reprint Sets
   ("Chronicles", 'chr', "\e65e"),
   ("Anthologies", 'ath', "\e65f"),
