@@ -64,18 +64,21 @@
                 <blockquote>
                     &lt;<span class="e">link</span> <span class="a">href</span>=<span class="v">"css/keyrune.css"</span> <span class="a">rel</span>=<span class="v">"stylesheet"</span> <span class="a">type</span>=<span class="v">"text/css"</span> /&gt;
                 </blockquote>
-                <p><strong>New!</strong> You can also now use Keyrune via CDN thanks to the amazing <a href="http://jsdelivr.com">jsDelivr</a> project! Include the latest CSS file and (currently) reference the font files via @font-face (we're working on removing this requirement as jsDelivr flattens the directory structure):</p>
+                <p><strong>New!</strong> You can also now use Keyrune via CDN thanks to the amazing <a href="http://jsdelivr.com">jsDelivr</a> project! Include the latest version, reference:</p>
                 <blockquote>
-                    &lt;<span class="e">link</span> <span class="a">href</span>="<span class="v">//cdn.jsdelivr.net/keyrune/latest/keyrune.min.css</span>" <span class="a">rel</span>="<span class="v">stylesheet</span>" <span class="a">type</span>="<span class="v">text/css</span>" /&gt;<br />
+                    &lt;<span class="e">link</span> <span class="a">href</span>=<span class="v">"//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.css"</span> <span class="a">rel</span>=<span class="v">"stylesheet"</span> <span class="a">type</span>=<span class="v">"text/css"</span> /&gt;
+                </blockquote>
+                <p><strong>Note:</strong> as of v3.1.1 (June 2017) the URL structure at jsDelivr changed to the above. Also, you do not need to explicitly include the font-family via @font-face, but if you still would like to here is the css ruleset:</p>                <blockquote>
+                    &lt;<span class="e">link</span> <span class="a">href</span>="<span class="v">//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.min.css</span>" <span class="a">rel</span>="<span class="v">stylesheet</span>" <span class="a">type</span>="<span class="v">text/css</span>" /&gt;<br />
                     &lt;<span class="e">style</span> <span class="a">type</span>="<span class="v">text/css</span>"&gt;<br />
                     &nbsp;&nbsp;<span class="a">@font-face</span> {<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;font-family: '<span class="e">Keyrune</span>';<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;src: <span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.eot</span>');<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;src: <span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.eot?#iefix</span>') <span class="v">format</span>('<span class="e">embedded-opentype</span>'),<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.woff2</span>') <span class="v">format</span>('<span class="e">woff2</span>'),<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.woff</span>') <span class="v">format</span>('<span class="e">woff</span>'),<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.ttf</span>') <span class="v">format</span>('<span class="e">truetype</span>'),<br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/keyrune/latest/keyrune.svg</span>') <span class="v">format</span>('<span class="e">svg</span>');<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;src: <span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.eot</span>');<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;src: <span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.eot?#iefix</span>') <span class="v">format</span>('<span class="e">embedded-opentype</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.woff2</span>') <span class="v">format</span>('<span class="e">woff2</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.woff</span>') <span class="v">format</span>('<span class="e">woff</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.ttf</span>') <span class="v">format</span>('<span class="e">truetype</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.svg</span>') <span class="v">format</span>('<span class="e">svg</span>');<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;font-weight: <span class="o">normal</span>;<br />
                     &nbsp;&nbsp;&nbsp;&nbsp;font-style: <span class="o">normal</span>;<br />
                     &nbsp;&nbsp;}<br />
