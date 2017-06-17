@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.0.3' !default;
+$keyrune_version: '3.1.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -189,6 +189,9 @@ $mtg_setlist: (
   // Amonkhet block
   ("Amonkhet", "akh", "\e914"),
   ("Hour of Devastation", "hou", "\e924"),
+  // Ixalan block
+  ("Ixalan", "xln", "\e92e"),
+  ("Rivals of Ixalan", "rix", "\e92f"),
   // # Commander Sets
   ("Vanguard", 'van', "\e655"),
   ("Planechase 2009", 'hop', "\e656"),
@@ -206,6 +209,7 @@ $mtg_setlist: (
   ("Commander Anthology", 'cma', "\e916"),
   ("Archenemy: Nicol Bolas", 'e01', "\e92d"),
   ("Archenemy: Nicol Bolas", 'ann', "\e92d"),
+  ("Explorers of Ixalan", 'e02', "\e931"),
   // # Reprint Sets
   ("Chronicles", 'chr', "\e65e"),
   ("Anthologies", 'ath', "\e65f"),
@@ -291,7 +295,7 @@ $mtg_setlist: (
   ("Masters Edition IV", 'me4', "\e690"),
   ("Tempest Remastered", 'tpr', "\e694"),
   ("Vintage Masters", 'vma', "\e696"),
-  //("Legendary Cube", 'xlcu', "\e90c"), not sure if we can include dupes here
+  ("Legendary Cube", 'xlcu', "\e90c"),
   ("Legendary Cube", 'pz1', "\e90c"),
   ("Magic Online", 'modo', "\e91b"),
   ("Magic Online", 'pmodo', "\e91b"),
@@ -302,6 +306,7 @@ $mtg_setlist: (
   // # The Unsets
   ("Unglued", 'ugl', "\e691"),
   ("Unhinged", 'unh', "\e692"),
+  ("Unstable", 'ust', "\e930"),
   // # Unofficial
   ("Collector's Edition", 'xcle', "\e926"),
   ("International Collector's Edition", 'xice', "\e927"),

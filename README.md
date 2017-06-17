@@ -1,4 +1,4 @@
-# Keyrune v3.0.3
+# Keyrune v3.1.1
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,8 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.1.1 - Minor corrections for versioning
+* v3.1.0 - Slew of new icons for Ixalan, Rivals of Ixalan, Explorers of Ixalan, and Unstable; corrected Hour of Devastation icon based on official release
 * v3.0.3 - Adding new (correct) Archenemy: Nicol Bolas symbol with confirmed set code (e01)
 * v3.0.2 - Fixing BRB path issue
 * v3.0.1 - Adding IDW Promo icon and clenaing up some core set icons
