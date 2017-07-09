@@ -1,4 +1,16 @@
 *.log
 .DS_Store
-node_modules/
 push_instructions.txt
+!node_modules/
+node_modules/*
+!node_modules/keyrune
+node_modules/keyrune/*
+!node_modules/keyrune/css
+!node_modules/keyrune/css/*
+!node_modules/keyrune/fonts
+!node_modules/keyrune/fonts/*
+!node_modules/zepto
+node_modules/zepto/*
+!node_modules/zepto/dist
+node_modules/zepto/dist/*
+!node_modules/zepto/dist/zepto.min.js

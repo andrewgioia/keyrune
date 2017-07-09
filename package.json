@@ -1,0 +1,30 @@
+{
+  "name": "keyrune-docs",
+  "version": "1.0.0",
+  "description": "Keyrune documentation website",
+  "main": "index.html",
+  "dependencies": {
+    "less": "^2.7.1",
+    "keyrune": "*",
+    "zepto": "*"
+  },
+  "devDependencies": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewgioia/Keyrune.git#gh-pages"
+  },
+  "keywords": [
+    "keyrune",
+    "magic",
+    "gathering",
+    "icon",
+    "font"
+  ],
+  "author": "Andrew Gioia <andrewgioia@gmail.com>",
+  "license": "SIL OFL 1.1",
+  "bugs": {
+    "url": "https://github.com/andrewgioia/Keyrune/issues"
+  },
+  "homepage": "https://andrewgioia.github.io/Keyrune"
+}
