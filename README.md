@@ -1,4 +1,4 @@
-# Keyrune v3.1.2
+# Keyrune v3.1.3
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.1.3 - Correcting the set code for Dragon*Con
 * v3.1.2 - Added Dragon*Con promo symbol for Nalathni Dragon
 * v3.1.1 - Minor corrections for versioning and updates to readme for jsDelivr
 * v3.1.0 - Slew of new icons for Ixalan, Rivals of Ixalan, Explorers of Ixalan, and Unstable; corrected Hour of Devastation icon based on official release
