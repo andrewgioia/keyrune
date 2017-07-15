@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.1.3');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.1.3') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.1.3') format('woff2'), url('../fonts/keyrune.woff?v=3.1.3') format('woff'), url('../fonts/keyrune.ttf?v=3.1.3') format('truetype'), url('../fonts/keyrune.svg?v=3.1.3#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.1.4');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.1.4') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.1.4') format('woff2'), url('../fonts/keyrune.woff?v=3.1.4') format('woff'), url('../fonts/keyrune.ttf?v=3.1.4') format('truetype'), url('../fonts/keyrune.svg?v=3.1.4#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -514,6 +514,9 @@
 .ss-e02:before {
   content: "\e931";
 }
+.ss-c17:before {
+  content: "\e934";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -548,6 +551,9 @@
 }
 .ss-xrin:before {
   content: "\e918";
+}
+.ss-ima:before {
+  content: "\e935";
 }
 /**
  * Beginner */
@@ -634,6 +640,9 @@
 }
 .ss-dds:before {
   content: "\e921";
+}
+.ss-ddt:before {
+  content: "\e933";
 }
 /**
  * From the Vault */

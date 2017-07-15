@@ -1,6 +1,6 @@
 {
   "name": "keyrune-docs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Keyrune documentation website",
   "main": "index.html",
   "dependencies": {
@@ -20,7 +20,7 @@
     "font"
   ],
   "author": "Andrew Gioia <andrewgioia@gmail.com>",
-  "license": "SIL OFL 1.1",
+  "license": "OFL 1.1",
   "bugs": {
     "url": "https://github.com/andrewgioia/Keyrune/issues"
   },
