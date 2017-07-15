@@ -1,4 +1,4 @@
-# Keyrune v3.1.3
+# Keyrune v3.1.4
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.1.4 - New icons for Iconic Masters (IMA), Commander 2017 (C17), and Merfolk vs. Goblins (DDT), based on low-res version from Coming Soon
 * v3.1.3 - Correcting the set code for Dragon*Con
 * v3.1.2 - Added Dragon*Con promo symbol for Nalathni Dragon
 * v3.1.1 - Minor corrections for versioning and updates to readme for jsDelivr
@@ -112,5 +113,5 @@ Attribution is **greatly appreciated** but not required!
 
 ## Todo
 
-* New [Coming Soon](http://magic.wizards.com/en/game-info/products/coming-soon) product page has symbols but not the necessary higher res versions
+* Update IMA, C17, and DDT from [Coming Soon](http://magic.wizards.com/en/game-info/products/coming-soon) product page after official high-res versions are released
 * Figure out what the Legendary Cube official set code is; currently using `xLCU`

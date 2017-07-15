@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.1.3' !default;
+$keyrune_version: '3.1.4' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -210,6 +210,7 @@ $mtg_setlist: (
   ("Archenemy: Nicol Bolas", 'e01', "\e92d"),
   ("Archenemy: Nicol Bolas", 'ann', "\e92d"),
   ("Explorers of Ixalan", 'e02', "\e931"),
+  ("Commander 2017", 'c17', "\e934"),
   // # Reprint Sets
   ("Chronicles", 'chr', "\e65e"),
   ("Anthologies", 'ath', "\e65f"),
@@ -222,6 +223,7 @@ $mtg_setlist: (
   ("Modern Masters 2017", 'mm3', "\e912"),
   ("Renaissance", 'xren', "\e917"),
   ("Rinascimento", 'xrin', "\e918"),
+  ("Iconic Masters", 'ima', "\e935"),
   // # Beginner Sets
   ("Portal", 'por', "\e664"),
   ("Portal 2", 'p02', "\e665"),
@@ -251,6 +253,7 @@ $mtg_setlist: (
   ("Blessed vs. Cursed", 'ddq', "\e908"),
   ("Nissa vs. Ob Nixilis", 'ddr', "\e90d"),
   ("New Phyrexia vs. Mirrodin Pure", 'td2', "\e91c"),
+  ("Merfolk vs. Goblins", 'ddt', "\e933"),
   // # From the Vault
   ("Dragons", 'drb', "\e678"),
   ("Exiled", 'v09', "\e679"),
