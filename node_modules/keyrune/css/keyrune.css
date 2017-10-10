@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.1.4');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.1.4') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.1.4') format('woff2'), url('../fonts/keyrune.woff?v=3.1.4') format('woff'), url('../fonts/keyrune.ttf?v=3.1.4') format('truetype'), url('../fonts/keyrune.svg?v=3.1.4#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.1.5');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.1.5') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.1.5') format('woff2'), url('../fonts/keyrune.woff?v=3.1.5') format('woff'), url('../fonts/keyrune.ttf?v=3.1.5') format('truetype'), url('../fonts/keyrune.svg?v=3.1.5#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -753,6 +753,9 @@
 .ss-pdrc:before {
   content: "\e932";
 }
+.ss-pheart:before {
+  content: "\e936";
+}
 /**
  * Online */
 .ss-med:before {
@@ -821,6 +824,9 @@
 }
 .ss-peuro:before {
   content: "\e92b";
+}
+.ss-pfnm:before {
+  content: "\e937";
 }
 .ss-border:after {
   content: "";
