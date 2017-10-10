@@ -1,4 +1,4 @@
-# Keyrune v3.1.4
+# Keyrune v3.1.5
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.1.5 - Updated IMA and C17 with official hi-res versions; added FNM as an unofficial symbol (pFNM) and the heart symbol on Phoenix Heart (pHEART)
 * v3.1.4 - New icons for Iconic Masters (IMA), Commander 2017 (C17), and Merfolk vs. Goblins (DDT), based on low-res version from Coming Soon
 * v3.1.3 - Correcting the set code for Dragon*Con
 * v3.1.2 - Added Dragon*Con promo symbol for Nalathni Dragon
