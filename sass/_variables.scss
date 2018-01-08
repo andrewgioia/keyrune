@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.1.7' !default;
+$keyrune_version: '3.1.8' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -296,6 +296,8 @@ $mtg_setlist: (
   ("Phoenix Heart Celebration", 'pheart', "\e936"),
   ("HasCon 2017", 'h17', "\e938"),
   ("Duelist Extra Pulled", 'pdep', "\e93a"),
+  ("Sega Dreamcast", 'psega', "\e93b"),
+  ("The Sorcerer's Apprentice", 'ptsa', "\e93c"),
   // # Online Only
   ("Masters Edition", 'med', "\e68d"),
   ("Masters Edition II", 'me2', "\e68e"),

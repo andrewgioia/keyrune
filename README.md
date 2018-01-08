@@ -1,4 +1,4 @@
-# Keyrune v3.1.7
+# Keyrune v3.1.8
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.1.8 - New promo symbols for Sega Dreamcast cards (issue 59) and The Sorcerer's Apprentice movie cards (issue 60)
 * v3.1.7 - Added the symbol used in The Duelist's "Extra Pulled" fantasy card column (issue 58)
 * v3.1.6 - Added FTV: Transform and HasCon 2017 promo symbols
 * v3.1.5 - Updated IMA and C17 with official hi-res versions; added FNM as an unofficial symbol (pFNM) and the heart symbol on Phoenix Heart (pHEART)
