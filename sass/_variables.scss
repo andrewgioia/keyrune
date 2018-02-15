@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.1.10' !default;
+$keyrune_version: '3.2.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -192,6 +192,8 @@ $mtg_setlist: (
   // Ixalan block
   ("Ixalan", "xln", "\e92e"),
   ("Rivals of Ixalan", "rix", "\e92f"),
+  // Dominaria block
+  ("Dominaria", "dom", "\e93f"),
   // # Commander Sets
   ("Vanguard", 'van', "\e655"),
   ("Planechase 2009", 'hop', "\e656"),
@@ -211,6 +213,7 @@ $mtg_setlist: (
   ("Archenemy: Nicol Bolas", 'ann', "\e92d"),
   ("Explorers of Ixalan", 'e02', "\e931"),
   ("Commander 2017", 'c17', "\e934"),
+  ("Commander Anthology 2", 'cm2', "\e940"),
   // # Reprint Sets
   ("Chronicles", 'chr', "\e65e"),
   ("Anthologies", 'ath', "\e65f"),
