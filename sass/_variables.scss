@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.1.8' !default;
+$keyrune_version: '3.1.9' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -224,6 +224,7 @@ $mtg_setlist: (
   ("Renaissance", 'xren', "\e917"),
   ("Rinascimento", 'xrin', "\e918"),
   ("Iconic Masters", 'ima', "\e935"),
+  ("Masters 25", 'a25', "\e93d"),
   // # Beginner Sets
   ("Portal", 'por', "\e664"),
   ("Portal 2", 'p02', "\e665"),

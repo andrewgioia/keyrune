@@ -1,4 +1,4 @@
-# Keyrune v3.1.8
+# Keyrune v3.1.9
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.1.9 - Official Masters 25 icon added
 * v3.1.8 - New promo symbols for Sega Dreamcast cards (issue 59) and The Sorcerer's Apprentice movie cards (issue 60)
 * v3.1.7 - Added the symbol used in The Duelist's "Extra Pulled" fantasy card column (issue 58)
 * v3.1.6 - Added FTV: Transform and HasCon 2017 promo symbols
