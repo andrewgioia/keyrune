@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.1.9');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.1.9') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.1.9') format('woff2'), url('../fonts/keyrune.woff?v=3.1.9') format('woff'), url('../fonts/keyrune.ttf?v=3.1.9') format('truetype'), url('../fonts/keyrune.svg?v=3.1.9#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.1.10');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.1.10') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.1.10') format('woff2'), url('../fonts/keyrune.woff?v=3.1.10') format('woff'), url('../fonts/keyrune.ttf?v=3.1.10') format('truetype'), url('../fonts/keyrune.svg?v=3.1.10#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -646,6 +646,9 @@
 }
 .ss-ddt:before {
   content: "\e933";
+}
+.ss-ddu:before {
+  content: "\e93e";
 }
 /**
  * From the Vault */
