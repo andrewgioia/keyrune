@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.1.10');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.1.10') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.1.10') format('woff2'), url('../fonts/keyrune.woff?v=3.1.10') format('woff'), url('../fonts/keyrune.ttf?v=3.1.10') format('truetype'), url('../fonts/keyrune.svg?v=3.1.10#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.2.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.2.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.2.0') format('woff2'), url('../fonts/keyrune.woff?v=3.2.0') format('woff'), url('../fonts/keyrune.ttf?v=3.2.0') format('truetype'), url('../fonts/keyrune.svg?v=3.2.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -463,6 +463,10 @@
 .ss-rix:before {
   content: "\e92f";
 }
+/* Dominaria Block */
+.ss-dom:before {
+  content: "\e93f";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -516,6 +520,9 @@
 }
 .ss-c17:before {
   content: "\e934";
+}
+.ss-cm2:before {
+  content: "\e940";
 }
 /**
  * Reprint */
