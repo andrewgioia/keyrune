@@ -8,6 +8,13 @@
   }
 }
 
+/** Set Symbol Fix Width =========================
+ */
+.#{$keyrune_prefix}-fw {
+  width: calc(18em / #{$keyrune_font_size / ($keyrune_font_size * 0 + 1)});
+  text-align: center;
+}
+
 /** Set Symbol No Border =========================
  * | This class can remain a singleton since it is generic, making
  * | it a helper class.
