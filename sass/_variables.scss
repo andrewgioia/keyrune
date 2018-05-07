@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.2.0' !default;
+$keyrune_version: '3.2.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -83,6 +83,7 @@ $mtg_setlist: (
   ("Magic 2015", 'm15', "\e611"),
   ("Core background", 'bcore', "\e612"),
   ("Magic Origins", 'ori', "\e697"),
+  ("Magic 2019", 'm19', "\e941"),
   // # Expansion Sets
   // Artifact block
   ("Arabian Nights", 'arn', "\e613"),
@@ -213,6 +214,7 @@ $mtg_setlist: (
   ("Explorers of Ixalan", 'e02', "\e931"),
   ("Commander 2017", 'c17', "\e934"),
   ("Commander Anthology 2", 'cm2', "\e940"),
+  ("Battlebond", 'bbd', "\e942"),
   // # Reprint Sets
   ("Chronicles", 'chr', "\e65e"),
   ("Anthologies", 'ath', "\e65f"),
@@ -256,6 +258,7 @@ $mtg_setlist: (
   ("Blessed vs. Cursed", 'ddq', "\e908"),
   ("Nissa vs. Ob Nixilis", 'ddr', "\e90d"),
   ("New Phyrexia vs. Mirrodin Pure", 'td2', "\e91c"),
+  ("Mind vs. Might", 'dds', "\e921"),
   ("Merfolk vs. Goblins", 'ddt', "\e933"),
   ("Elves vs. Inventors", 'ddu', "\e93e"),
   // # From the Vault

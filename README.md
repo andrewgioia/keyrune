@@ -1,4 +1,4 @@
-# Keyrune v3.2.0
+# Keyrune v3.2.1
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.2.1 - Official Dominaria symbol replaced for DOM, drawn BBD and M19 symbols added, fixed mixing DDS in scss version
 * v3.2.0 - Dominaria and Commander Anthology 2 icons drawn from low-resolution versions
 * v3.1.10 - Final Duel Deck: Elves vs. Inventors added
 * v3.1.9 - Official Masters 25 icon added
