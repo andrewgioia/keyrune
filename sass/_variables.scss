@@ -40,8 +40,7 @@ $keyrune_sizes: (
   '3x': 3em,
   '4x': 4em,
   '5x': 5em,
-  '6x': 6em,
-  'fw': calc(18em / #{$keyrune_font_size})
+  '6x': 6em
 ) !default;
 
 // NOTE: not really sure what to call this array. I notice it is for special borders of sorts, so setlist_borders it is.
