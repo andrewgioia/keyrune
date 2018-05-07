@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.2.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.2.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.2.0') format('woff2'), url('../fonts/keyrune.woff?v=3.2.0') format('woff'), url('../fonts/keyrune.ttf?v=3.2.0') format('truetype'), url('../fonts/keyrune.svg?v=3.2.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.2.1');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.2.1') format('woff2'), url('../fonts/keyrune.woff?v=3.2.1') format('woff'), url('../fonts/keyrune.ttf?v=3.2.1') format('truetype'), url('../fonts/keyrune.svg?v=3.2.1#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -197,6 +197,9 @@
 }
 .ss-ori:before {
   content: "\e697";
+}
+.ss-m19:before {
+  content: "\e941";
 }
 /**
  * Expansions */
@@ -523,6 +526,9 @@
 }
 .ss-cm2:before {
   content: "\e940";
+}
+.ss-bbd:before {
+  content: "\e942";
 }
 /**
  * Reprint */
