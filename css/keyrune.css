@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.2.1');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.2.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.2.1') format('woff2'), url('../fonts/keyrune.woff?v=3.2.1') format('woff'), url('../fonts/keyrune.ttf?v=3.2.1') format('truetype'), url('../fonts/keyrune.svg?v=3.2.1#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.2.2');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.2.2') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.2.2') format('woff2'), url('../fonts/keyrune.woff?v=3.2.2') format('woff'), url('../fonts/keyrune.ttf?v=3.2.2') format('truetype'), url('../fonts/keyrune.svg?v=3.2.2#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -713,6 +713,16 @@
   content: "\e682";
 }
 /**
+ * Signature Spellbook */
+.ss-ss1:before {
+  content: "\e944";
+}
+/**
+ * Global Series */
+.ss-gs1:before {
+  content: "\e945";
+}
+/**
  * Promotional */
 .ss-pgru:before {
   content: "\e683";
@@ -789,6 +799,9 @@
 }
 .ss-ptsa:before {
   content: "\e93c";
+}
+.ss-parl3:before {
+  content: "\e943";
 }
 /**
  * Online */
