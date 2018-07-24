@@ -4,7 +4,7 @@
   "description": "Keyrune documentation website",
   "main": "index.html",
   "dependencies": {
-    "keyrune": "^3.2.3",
+    "keyrune": "^3.2.4",
     "zepto": "*"
   },
   "devDependencies": {},
