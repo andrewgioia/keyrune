@@ -1,4 +1,4 @@
-# Keyrune v3.2.2
+# Keyrune v3.2.3
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.2.3 - Commander 2018 added, replaced DDT with official source image
 * v3.2.2 - New MTGO Arena, Signature Series: Jace, and Global Series: Jiang Yanggu & Mu Yanling symbols added
 * v3.2.1 - Official Dominaria symbol replaced for DOM, drawn BBD and M19 symbols added, fixed mixing DDS in scss version
 * v3.2.0 - Dominaria and Commander Anthology 2 icons drawn from low-resolution versions
@@ -122,5 +123,5 @@ Attribution is **greatly appreciated** but not required!
 
 ## Todo
 
-* Update IMA, C17, and DDT from [Coming Soon](http://magic.wizards.com/en/game-info/products/coming-soon) product page after official high-res versions are released
-* Figure out what the Legendary Cube official set code is; currently using `xLCU`
+* Update C18 with officially released source image
+* Validate all class names to handle official set codes, MODO codes, and MTGJson/community fallbacks
