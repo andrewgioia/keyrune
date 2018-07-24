@@ -1,4 +1,4 @@
-# Keyrune v3.2.3
+# Keyrune v3.2.4
 
 ## The Magic: the Gathering set symbol font!
 
@@ -60,6 +60,7 @@ Attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
+* v3.2.4 - Gatherer-style ABUR symbols added
 * v3.2.3 - Commander 2018 added, replaced DDT with official source image
 * v3.2.2 - New MTGO Arena, Signature Series: Jace, and Global Series: Jiang Yanggu & Mu Yanling symbols added
 * v3.2.1 - Official Dominaria symbol replaced for DOM, drawn BBD and M19 symbols added, fixed mixing DDS in scss version

@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.2.3' !default;
+$keyrune_version: '3.2.4' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -84,6 +84,10 @@ $mtg_setlist: (
   ("Core background", 'bcore', "\e612"),
   ("Magic Origins", 'ori', "\e697"),
   ("Magic 2019", 'm19', "\e941"),
+  ("Alpha (MODO)", '1e', "\e947"),
+  ("Beta (MODO)", '2e', "\e948"),
+  ("Unlimited (MODO)", '2u', "\e949"),
+  ("Revised (MODO)", '3e', "\e94a"),
   // # Expansion Sets
   // Artifact block
   ("Arabian Nights", 'arn', "\e613"),
