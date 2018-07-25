@@ -50,13 +50,7 @@ If you're having trouble and want step-by-step instructions and a [sample Word d
 
 ## License
 
-All set symbol images are copyright Wizards of the Coast ([http://magicthegathering.com](http://magicthegathering.com))
-
-The Keyrune font is licensed under the the SIL OFL 1.1 ([http://scripts.sil.org/OFL](http://scripts.sil.org/OFL))
-
-Keyrune CSS, LESS, and Sass files are licensed under the MIT License ([http://opensource.org/licenses/mit-license.html](http://opensource.org/licenses/mit-license.html))
-
-Attribution is **greatly appreciated** but not required!
+All set symbol images are trademarks of Wizards of the Coast ([http://magicthegathering.com](http://magicthegathering.com)). Please see the LICENSE.md file for a complete description of the licenses that Keyrune is distributed under. Public attribution is **greatly appreciated** but not required!
 
 ## Changelog
 
