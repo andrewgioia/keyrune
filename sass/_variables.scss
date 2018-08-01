@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.2.4' !default;
+$keyrune_version: '3.2.5' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -315,6 +315,7 @@ $mtg_setlist: (
   ("Sega Dreamcast", 'psega', "\e93b"),
   ("The Sorcerer's Apprentice", 'ptsa', "\e93c"),
   ("Arena (MTGO)", 'parl3', "\e943"),
+  ("2016 Heroes of the Realm", 'htr', "\e687"),
   // # Online Only
   ("Masters Edition", 'med', "\e68d"),
   ("Masters Edition II", 'me2', "\e68e"),

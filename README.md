@@ -1,4 +1,4 @@
-# Keyrune v3.2.4
+# Keyrune v3.2.5
 
 ## The Magic: the Gathering set symbol font!
 
@@ -54,6 +54,7 @@ All set symbol images are trademarks of Wizards of the Coast ([http://magicthega
 
 ## Changelog
 
+* v3.2.4 - Assigning pMEI to now added 2016 Heroes promo set
 * v3.2.4 - Gatherer-style ABUR symbols added
 * v3.2.3 - Commander 2018 added, replaced DDT with official source image
 * v3.2.2 - New MTGO Arena, Signature Series: Jace, and Global Series: Jiang Yanggu & Mu Yanling symbols added
