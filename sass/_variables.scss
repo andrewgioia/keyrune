@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.2.5' !default;
+$keyrune_version: '3.3.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -198,6 +198,9 @@ $mtg_setlist: (
   ("Rivals of Ixalan", "rix", "\e92f"),
   // Dominaria block
   ("Dominaria", "dom", "\e93f"),
+  // Guilds of Ravnica block
+  ("Guilds of Ravnica", "grn", "\e94b"),
+  ("Guild Kits", "gk1", "\e94b"),
   // # Commander Sets
   ("Vanguard", 'van', "\e655"),
   ("Planechase 2009", 'hop', "\e656"),
@@ -287,6 +290,8 @@ $mtg_setlist: (
   ("Jace", 'ss1', "\e944"),
   // # Global Series
   ("Jiang Yanggu & Mu Yanling", 'gs1', "\e945"),
+  // # Other Supplemental Products
+  ("Game Night", 'gnt', "\e94d"),
   // # Promotional
   ("Guru", 'pgru', "\e683"),
   ("Magic symbol", 'pmtg1', "\e684"),
@@ -316,8 +321,9 @@ $mtg_setlist: (
   ("The Sorcerer's Apprentice", 'ptsa', "\e93c"),
   ("Arena (MTGO)", 'parl3', "\e943"),
   ("2016 Heroes of the Realm", 'htr', "\e687"),
+  ("Mythic Edition", 'med', "\e94c"),
   // # Online Only
-  ("Masters Edition", 'med', "\e68d"),
+  ("Masters Edition", 'me1', "\e68d"),
   ("Masters Edition II", 'me2', "\e68e"),
   ("Masters Edition III", 'me3', "\e68f"),
   ("Masters Edition IV", 'me4', "\e690"),
