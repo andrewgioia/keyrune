@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.3.0' !default;
+$keyrune_version: '3.3.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -290,6 +290,17 @@ $mtg_setlist: (
   ("Jace", 'ss1', "\e944"),
   // # Global Series
   ("Jiang Yanggu & Mu Yanling", 'gs1', "\e945"),
+  // # Guild Kits
+  ("Azorius", 'azorius', "\e94e"),
+  ("Boros", 'boros', "\e94f"),
+  ("Dimir", 'dimir', "\e950"),
+  ("Golgari", 'golgari', "\e951"),
+  ("Gruul", 'gruul', "\e952"),
+  ("Izzet", 'izzet', "\e953"),
+  ("Orzhov", 'orzhov', "\e954"),
+  ("Rakdos", 'rakdos', "\e955"),
+  ("Selesnya", 'selesnya', "\e956"),
+  ("Simic", 'simic', "\e957"),
   // # Other Supplemental Products
   ("Game Night", 'gnt', "\e94d"),
   // # Promotional

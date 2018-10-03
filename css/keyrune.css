@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.3.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.3.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.3.0') format('woff2'), url('../fonts/keyrune.woff?v=3.3.0') format('woff'), url('../fonts/keyrune.ttf?v=3.3.0') format('truetype'), url('../fonts/keyrune.svg?v=3.3.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.3.1');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.3.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.3.1') format('woff2'), url('../fonts/keyrune.woff?v=3.3.1') format('woff'), url('../fonts/keyrune.ttf?v=3.3.1') format('truetype'), url('../fonts/keyrune.svg?v=3.3.1#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -741,6 +741,38 @@
  * Global Series */
 .ss-gs1:before {
   content: "\e945";
+}
+/**
+ * Guild Kits */
+.ss-azorius:before {
+  content: "\e94e";
+}
+.ss-boros:before {
+  content: "\e94f";
+}
+.ss-dimir:before {
+  content: "\e950";
+}
+.ss-golgari:before {
+  content: "\e951";
+}
+.ss-gruul:before {
+  content: "\e952";
+}
+.ss-izzet:before {
+  content: "\e953";
+}
+.ss-orzhov:before {
+  content: "\e954";
+}
+.ss-rakdos:before {
+  content: "\e955";
+}
+.ss-selesnya:before {
+  content: "\e956";
+}
+.ss-simic:before {
+  content: "\e957";
 }
 /**
  * Other Supplemental Products */

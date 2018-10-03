@@ -2,7 +2,7 @@
 
 Keyrune is free, open source, and GPL-friendly. You can use it for commercial or open source projects, arts and crafts projects, or whatever you want. Because Keyrune is made up of different parts, there are different licenses that apply to each.
 
-## Individual licenses 
+## Individual licenses
 
 * Icons: CC BY 4.0 License (https://creativecommons.org/licenses/by-sa/4.0/)
 Keyrune's glyphs, including the packaged SVG files, are distrubuted under the Creative Commons BY-SA 4.0 license. The underlying symbols that these glyphs are based on are trademarks of Wizards of the Coast. Keyrune's glyphs are distributed for the express purpose of identifying Wizards of the Coast products (i.e., card sets and expansions), as provided in the Wizards Play Network Marketing Material Policy (https://wpn.wizards.com/en/document/wizards-play-network-marketing-materials-policy). The use of these trademarks does not indicate endorsement of Wizards of the Coast or trademark holder by Keyrune, nor vice versa.
