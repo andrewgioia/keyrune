@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.3.2' !default;
+$keyrune_version: '3.3.3' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -201,6 +201,7 @@ $mtg_setlist: (
   // Guilds of Ravnica block
   ("Guilds of Ravnica", "grn", "\e94b"),
   ("Guild Kits", "gk1", "\e94b"),
+  ("Ravnica Allegiance", "rna", "\e959"),
   // # Commander Sets
   ("Vanguard", 'van', "\e655"),
   ("Planechase 2009", 'hop', "\e656"),

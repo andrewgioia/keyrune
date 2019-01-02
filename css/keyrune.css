@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.3.2');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.3.2') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.3.2') format('woff2'), url('../fonts/keyrune.woff?v=3.3.2') format('woff'), url('../fonts/keyrune.ttf?v=3.3.2') format('truetype'), url('../fonts/keyrune.svg?v=3.3.2#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.3.3');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.3.3') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.3.3') format('woff2'), url('../fonts/keyrune.woff?v=3.3.3') format('woff'), url('../fonts/keyrune.ttf?v=3.3.3') format('truetype'), url('../fonts/keyrune.svg?v=3.3.3#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -486,6 +486,9 @@
 .ss-grn:before,
 .ss-gk1:before {
   content: "\e94b";
+}
+.ss-rna:before {
+  content: "\e959";
 }
 /**
  * Command Zone */
