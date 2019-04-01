@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.3.3' !default;
+$keyrune_version: '3.4.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -200,8 +200,10 @@ $mtg_setlist: (
   ("Dominaria", "dom", "\e93f"),
   // Guilds of Ravnica block
   ("Guilds of Ravnica", "grn", "\e94b"),
-  ("Guild Kits", "gk1", "\e94b"),
+  ("GRN Guild Kits", "gk1", "\e94b"),
   ("Ravnica Allegiance", "rna", "\e959"),
+  ("RNA Guild Kits", "gk2", "\e959"),
+  ("War of the Spark", "war", "\e95a"),
   // # Commander Sets
   ("Vanguard", 'van', "\e655"),
   ("Planechase 2009", 'hop', "\e656"),
@@ -239,6 +241,7 @@ $mtg_setlist: (
   ("Iconic Masters", 'ima', "\e935"),
   ("Masters 25", 'a25', "\e93d"),
   ("Ultimate Masters", 'uma', "\e958"),
+  ("Modern Horizons", 'mh1', "\e95b"),
   // # Beginner Sets
   ("Portal", 'por', "\e664"),
   ("Portal 2", 'p02', "\e665"),

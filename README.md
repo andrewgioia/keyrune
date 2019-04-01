@@ -1,4 +1,4 @@
-# Keyrune v3.3.3
+# Keyrune v3.4.0
 
 ## The Magic: the Gathering set symbol font!
 
@@ -54,6 +54,7 @@ All set symbol images are trademarks of Wizards of the Coast ([http://magicthega
 
 ## Changelog
 
+* v3.4.0 - War of the Spark and Modern Horizons unofficial icons added, GK2 alias
 * v3.3.3 - Ravnica Allegiance added (official symbol)
 * v3.3.2 - Ultimate Masters icon added
 * v3.3.1 - All 10 guilds added as Guild Kit symbols
