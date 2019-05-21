@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.4.0' !default;
+$keyrune_version: '3.4.2' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -293,6 +293,7 @@ $mtg_setlist: (
   ("Modern Event Deck", 'md1', "\e682"),
   // # Signature Spellbook
   ("Jace", 'ss1', "\e944"),
+  ("Gideon", 'ss2', "\e95c"),
   // # Global Series
   ("Jiang Yanggu & Mu Yanling", 'gs1', "\e945"),
   // # Guild Kits

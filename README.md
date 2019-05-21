@@ -1,4 +1,4 @@
-# Keyrune v3.4.1
+# Keyrune v3.4.2
 
 ## The Magic: the Gathering set symbol font!
 
@@ -54,6 +54,7 @@ All set symbol images are trademarks of Wizards of the Coast ([http://magicthega
 
 ## Changelog
 
+* v3.4.2 - Signature Spellbook: Gideon added, Mirage symbol corrected
 * v3.4.1 - Fixed issue with desktop version not updating (version numbers must be present in ttf on some systems)
 * v3.4.0 - War of the Spark and Modern Horizons unofficial icons added, GK2 alias
 * v3.3.3 - Ravnica Allegiance added (official symbol)
