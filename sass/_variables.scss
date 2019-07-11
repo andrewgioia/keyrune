@@ -1,7 +1,7 @@
 // _variables.scss
 
 // #.
-$keyrune_version: '3.4.2' !default;
+$keyrune_version: '3.4.3' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // #. Keyrune Font ==============================
@@ -84,6 +84,7 @@ $mtg_setlist: (
   ("Core background", 'bcore', "\e612"),
   ("Magic Origins", 'ori', "\e697"),
   ("Magic 2019", 'm19', "\e941"),
+  ("Magic 2020", 'm20', "\e95d"),
   ("Alpha (MODO)", '1e', "\e947"),
   ("Beta (MODO)", '2e', "\e948"),
   ("Unlimited (MODO)", '2u', "\e949"),
