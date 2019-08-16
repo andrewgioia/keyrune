@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.4.3');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.4.3') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.4.3') format('woff2'), url('../fonts/keyrune.woff?v=3.4.3') format('woff'), url('../fonts/keyrune.ttf?v=3.4.3') format('truetype'), url('../fonts/keyrune.svg?v=3.4.3#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.5.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.5.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.5.0') format('woff2'), url('../fonts/keyrune.woff?v=3.5.0') format('woff'), url('../fonts/keyrune.ttf?v=3.5.0') format('truetype'), url('../fonts/keyrune.svg?v=3.5.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -497,6 +497,10 @@
 .ss-war:before {
   content: "\e95a";
 }
+/* Eldraine Block */
+.ss-eld:before {
+  content: "\e95e";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -559,6 +563,9 @@
 }
 .ss-c18:before {
   content: "\e946";
+}
+.ss-c19:before {
+  content: "\e95f";
 }
 /**
  * Reprint */

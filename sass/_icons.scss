@@ -1,0 +1,28 @@
+/**
+ * Sets */
+.#{$keyrune_prefix} {
+    display: inline-block;
+    font: $keyrune_font;
+    font-size: inherit;
+    line-height: 1em;
+    text-rendering: auto;
+    transform: translate(0, 0);
+    speak: none;
+    text-transform: none;
+    vertical-align: middle;
+    // Better font rendering
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+
+    // default symbol if the set does not exist yet, or setcode does not match
+    &:before {
+        content: "#{$keyrune_default_content}";
+    }
+
+    @each $set, $code, $glyph in $keyrune_sets {
+        // comments are evaluated at top when here for some reason
+        &-#{$code}:before { /* #{$set} */
+            content: ss-content($glyph);
+        }
+    }
+}

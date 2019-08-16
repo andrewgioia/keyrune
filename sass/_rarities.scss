@@ -1,30 +1,27 @@
-// _rarities.scs
+/**
+ * Rarities */
 
-/** Set Symbol Rarities ==========================
- * | Strangely enough, autoprefixer doesn't wanna prefix
- * | some of the things in here properly. Either way, I kept those
- * | hard-coded prefxed to ensure it to work!
- */
-@each $scheme in $keyrune_palette {
-  /* #{nth($scheme, 1)} */
-  .#{$keyrune_prefix}.#{$keyrune_prefix}-#{nth($scheme, 1)} {
-    color: #{nth($scheme, 2)};
+// hard-prefixing some of these to ensure they get included
 
-    &.#{$keyrune_prefix}-grad {
-      // webkit outline/gradient
-      /* Chrome, Safari4+ */
-      background: -webkit-gradient(linear, left top, right top, color-stop(0%, #{nth($scheme, 3)}), color-stop(50%, #{nth($scheme, 4)}), color-stop(100%, #{nth($scheme, 3)}));
-      /* Chrome10+, Safari5.1+ */
-      background: -webkit-linear-gradient(left, #{nth($scheme, 3)} 0%, #{nth($scheme, 4)} 50%, #{nth($scheme, 3)} 100%);
-      -webkit-text-stroke: 0.03em #{nth($scheme, 5)};
-      -webkit-text-fill-color: $keyrune_text_fill;
-      -webkit-background-clip: $keyrune_background_clip;
-      background-clip: $keyrune_background_clip;
+@each $rarity, $text, $left, $right, $stroke in $keyrune_palette {
+    /* #{$rarity} */
+    .#{$keyrune_prefix}.#{$keyrune_prefix}-#{$rarity} {
+        color: $text;
+        &.#{$keyrune_prefix}-grad {
+            // webkit outline/gradient
+            /* Chrome, Safari4+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%, #{$left}), color-stop(50%, #{$right}), color-stop(100%, #{$left}));
+            /* Chrome10+, Safari5.1+ */
+            background: -webkit-linear-gradient(left, #{$left} 0%, #{$right} 50%, #{$left} 100%);
+            -webkit-text-stroke: 0.03em #{$stroke};
+            -webkit-text-fill-color: $keyrune_text_fill;
+            -webkit-background-clip: $keyrune_background_clip;
+            background-clip: $keyrune_background_clip;
+        }
     }
-  }
 }
 
-/* Hard coding foil rarity for now because it's so much more complex */
+// hard coding foil rarity for now because it's so much more complex
 .#{$keyrune_prefix}-foil {
     color: #a6dced;
     &.#{$keyrune_prefix}-grad {

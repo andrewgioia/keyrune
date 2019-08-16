@@ -1,50 +1,47 @@
-// _helpers.scss
-
-/** Set Symbol Size Modifiers ====================
- */
-@each $size in $keyrune_sizes {
-  .#{$keyrune_prefix}.#{$keyrune_prefix}-#{nth($size, 1)} {
-    font-size: #{nth($size, 2)};
-  }
-}
-
-/** Set Symbol Fix Width =========================
- */
-.#{$keyrune_prefix}-fw {
-  width: calc(18em / #{$keyrune_font_size / ($keyrune_font_size * 0 + 1)});
-  text-align: center;
-}
-
-/** Set Symbol No Border =========================
- * | This class can remain a singleton since it is generic, making
- * | it a helper class.
- */
-.#{$keyrune_prefix}.#{$keyrune_prefix}-no-border {
-  -webkit-text-stroke: 0;
-  text-stroke: 0;
-}
-
-/** Set Symbol Border ============================
- */
-.#{$keyrune_prefix}.#{$keyrune_prefix}-border {
-  &:after {
-    content: "";
-    position: absolute;
-    left: -0.05em;
-    top: 0.0em;
-    z-index: -1;
-    color: $white;
-    font-size: 1.15em;
-    background: $white;
-    -webkit-text-stroke: 0.05em $white;
-    -webkit-background-clip: $keyrune_background_clip;
-    -webkit-text-fill-color: $keyrune_text_fill;
-  }
-
-  @each $set in $mtg_setlist_borders {
-    /* #{nth($set, 1)} */
-    .#{$keyrune_prefix}.#{$keyrune_prefix}-#{nth($set, 2)}:after {
-      content: "#{nth($set, 3)}";
+/**
+ * Sizes */
+@each $class, $size in $keyrune_sizes {
+    .#{$keyrune_prefix}.#{$keyrune_prefix}-#{$class} {
+        font-size: #{$size};
     }
-  }
+}
+
+/**
+ * Fixed width */
+.#{$keyrune_prefix}.#{$keyrune_prefix}-fw {
+    width: calc(18em / #{$keyrune_font_size / ($keyrune_font_size * 0 + 1)});
+    text-align: center;
+}
+
+/**
+ * Force no border */
+.#{$keyrune_prefix}.#{$keyrune_prefix}-no-border {
+    -webkit-text-stroke: 0;
+    text-stroke: 0;
+}
+
+/**
+ * Icon borders */
+.#{$keyrune_prefix}.#{$keyrune_prefix}-border {
+    &:after {
+        content: "";
+        position: absolute;
+        left: -0.05em;
+        top: 0.0em;
+        z-index: -1;
+        color: $white;
+        font-size: 1.15em;
+        background: $white;
+        -webkit-text-stroke: 0.05em $white;
+        -webkit-background-clip: $keyrune_background_clip;
+        -webkit-text-fill-color: $keyrune_text_fill;
+    }
+
+    // adding a white version of the symbol for these problem sets,
+    // instead of using the generic text-stroke above
+    @each $set, $code, $glyph in $border-corrections {
+        &.#{$keyrune_prefix}-#{$code}:after { /* #{$set} */
+            content: ss-content($glyph);
+        }
+    }
 }
