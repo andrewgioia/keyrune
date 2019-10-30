@@ -1,4 +1,4 @@
-# Keyrune v3.5.0
+# Keyrune v3.6.0
 
 ## The Magic: the Gathering set symbol font!
 
@@ -54,6 +54,7 @@ All set symbol images are trademarks of Wizards of the Coast ([http://magicthega
 
 ## Changelog
 
+* v3.6.0 - Big 2020 update: unofficials for Theros: Beyond Death, Ikoria: Lair of Behemoths, Core 2021, Zendikar Rising, promo PTG, and Game Night 2019; ELD updated with official
 * v3.5.0 - Throne of Eldraine (unofficial) and Commander 2019 added; SCSS files cleaned up and tested; SVG files now distributed with project
 * v3.4.3 - Magic 2020 (finally) added, sorry everyone. M19 symbol updated to M20 style it should have been.
 * v3.4.2 - Signature Spellbook: Gideon added, Mirage symbol corrected

@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.5.0' !default;
+$keyrune_version: '3.6.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -79,6 +79,7 @@ $keyrune_sets: (
     ("Beta (MODO)", "2e", "\e948"),
     ("Unlimited (MODO)", "2u", "\e949"),
     ("Revised (MODO)", "3e", "\e94a"),
+    ("Core 2021", "m21", "\e960"),
     //
     // Artifact block
     ("Arabian Nights", "arn", "\e613"),
@@ -197,8 +198,12 @@ $keyrune_sets: (
     ("War of the Spark", "war", "\e95a"),
     // Eldraine block
     ("Throne of Eldraine", "eld", "\e95e"),
+    // 2020 sets
+    ("Theros: Beyond Death", "thb", "\e961"),
+    ("Ikoria: Lair of Behemoths", "xikr", "\e962"),
+    ("Zendikar Rising", "xznr", "\e963"),
     //
-    // command zone
+    // Command zone
     ("Vanguard", "van", "\e655"),
     ("Planechase 2009", "hop", "\e656"),
     ("Archenemy", "arc", "\e657"),
@@ -222,7 +227,7 @@ $keyrune_sets: (
     ("Commander 2018", "c18", "\e946"),
     ("Commander 2019", "c19", "\e95f"),
     //
-    // reprint
+    // Reprint sets
     ("Chronicles", "chr", "\e65e"),
     ("Anthologies", "ath", "\e65f"),
     ("Battle Royale", "brb", "\e660"),
@@ -239,7 +244,7 @@ $keyrune_sets: (
     ("Ultimate Masters", "uma", "\e958"),
     ("Modern Horizons", "mh1", "\e95b"),
     //
-    // beginner
+    // Beginner
     ("Portal", "por", "\e664"),
     ("Portal 2", "p02", "\e665"),
     ("Portal 2", "po2", "\e665"),
@@ -249,7 +254,7 @@ $keyrune_sets: (
     ("Welcome Deck 2016", "w16", "\e907"),
     ("Welcome Deck 2017", "w17", "\e923"),
     //
-    // duel decks
+    // Duel Decks
     ("Elves vs. Goblins", "evg", "\e669"),
     ("Jace vs. Chandra", "dd2", "\e66a"),
     ("Divine vs. Demonic", "ddc", "\e66b"),
@@ -273,7 +278,7 @@ $keyrune_sets: (
     ("Merfolk vs. Goblins", "ddt", "\e933"),
     ("Elves vs. Inventors", "ddu", "\e93e"),
     //
-    // from the vault
+    // From the Vaults
     ("Dragons", "drb", "\e678"),
     ("Exiled", "v09", "\e679"),
     ("Relics", "v10", "\e67a"),
@@ -286,20 +291,20 @@ $keyrune_sets: (
     ("Vaults", "v0x", "\e920"),
     ("Transform", "v17", "\e939"),
     //
-    // premium deck series
+    // Premium Deck Series
     ("Slivers", "h09", "\e67f"),
     ("Fire & Lightning", "pd2", "\e680"),
     ("Graveborn", "pd3", "\e681"),
     ("Modern Event Deck", "md1", "\e682"),
     //
-    // signature spellbook
+    // Signature Spellbook
     ("Jace", "ss1", "\e944"),
     ("Gideon", "ss2", "\e95c"),
     //
-    // global series
+    // Global Series
     ("Jiang Yanggu & Mu Yanling", "gs1", "\e945"),
     //
-    // guild kits
+    // Guild Kits
     ("Azorius", "azorius", "\e94e"),
     ("Boros", "boros", "\e94f"),
     ("Dimir", "dimir", "\e950"),
@@ -311,10 +316,11 @@ $keyrune_sets: (
     ("Selesnya", "selesnya", "\e956"),
     ("Simic", "simic", "\e957"),
     //
-    // other supplemental products
+    // Other supplemental products
     ("Game Night", "gnt", "\e94d"),
+    ("Game Night 2019", "gn2", "\e964"),
     //
-    // promos
+    // Promos
     ("Guru", "pgru", "\e683"),
     ("Magic symbol", "pmtg1", "\e684"),
     ("Magic symbol", "pmtg2", "\e685"),
@@ -344,8 +350,9 @@ $keyrune_sets: (
     ("Arena (MTGO)", "parl3", "\e943"),
     ("2016 Heroes of the Realm", "htr", "\e687"),
     ("Mythic Edition", "med", "\e94c"),
+    ("Ponies: the Galloping", "ptg", "\e965"),
     //
-    // online only
+    // Online only sets
     ("Masters Edition", "me1", "\e68d"),
     ("Masters Edition II", "me2", "\e68e"),
     ("Masters Edition III", "me3", "\e68f"),
@@ -361,12 +368,12 @@ $keyrune_sets: (
     ("Magic Online Deck Series", "xmods", "\e91e"),
     ("Treasure Chests", "pz2", "\e91f"),
     //
-    // unsets
+    // Unsets
     ("Unglued", "ugl", "\e691"),
     ("Unhinged", "unh", "\e692"),
     ("Unstable", "ust", "\e930"),
     //
-    // unoffocial
+    // Unoffocial
     ("Collector's Edition", "xcle", "\e926"),
     ("International Collector's Edition", "xice", "\e927"),
     ("Two Player Introductory Set", "x2ps", "\e928"),

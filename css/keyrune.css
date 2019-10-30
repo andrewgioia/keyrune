@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.5.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.5.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.5.0') format('woff2'), url('../fonts/keyrune.woff?v=3.5.0') format('woff'), url('../fonts/keyrune.ttf?v=3.5.0') format('truetype'), url('../fonts/keyrune.svg?v=3.5.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.6.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.6.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.6.0') format('woff2'), url('../fonts/keyrune.woff?v=3.6.0') format('woff'), url('../fonts/keyrune.ttf?v=3.6.0') format('truetype'), url('../fonts/keyrune.svg?v=3.6.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -215,6 +215,9 @@
 }
 .ss-3e:before {
   content: "\e94a";
+}
+.ss-m21:before {
+  content: "\e960";
 }
 /**
  * Expansions */
@@ -500,6 +503,16 @@
 /* Eldraine Block */
 .ss-eld:before {
   content: "\e95e";
+}
+/* 2020 Sets */
+.ss-thb:before {
+  content: "\e961";
+}
+.ss-xikr:before {
+  content: "\e962";
+}
+.ss-xznr:before {
+  content: "\e963";
 }
 /**
  * Command Zone */
@@ -805,6 +818,9 @@
 .ss-gnt:before {
   content: "\e94d";
 }
+.ss-gn2:before {
+  content: "\e964";
+}
 /**
  * Promotional */
 .ss-pgru:before {
@@ -891,6 +907,9 @@
 }
 .ss-med:before {
   content: "\e94c";
+}
+.ss-ptg:before {
+  content: "\e965";
 }
 /**
  * Online */
