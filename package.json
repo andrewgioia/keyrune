@@ -34,8 +34,5 @@
   },
   "engines": {
     "node": "*"
-  },
-  "publishConfig": { 
-    "registry": "https://npm.pkg.github.com/@andrewgioia" 
   }
 }
