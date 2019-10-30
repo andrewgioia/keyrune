@@ -1,17 +1,18 @@
 {
   "name": "keyrune",
   "description": "Keyrune",
-  "version": "3.6.0",
+  "version": "3.6.1",
   "author": {
     "name": "Andrew Gioia",
     "email": "andrewgioia@gmail.com",
     "url": "http://andrewgioia.com"
   },
   "contributors": [
+    "Mike Gioia <mikegioia@gmail.com>",
     "JayGray <weber.joerg.h@gmail.com>",
     "ardeay",
     "Jordan Brauer <jbrauer.inc@gmail.com>",
-    "Corey Csuhta <@csuhta>"
+    "Corey Csuhta"
   ],
   "repository": {
     "type": "git",
@@ -21,7 +22,7 @@
   "homepage": "http://andrewgioia.com",
   "dependencies": {},
   "devDependencies": {},
-  "license": "(OFL-1.1 AND MIT)",
+  "license": "(OFL-1.1 AND GPL-3.0-only)",
   "main": "css/keyrune.css",
   "ignore": [
     "*/.*",
