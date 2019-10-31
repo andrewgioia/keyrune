@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.6.0' !default;
+$keyrune_version: '3.6.2' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -226,6 +226,11 @@ $keyrune_sets: (
     ("Battlebond", "bbd", "\e942"),
     ("Commander 2018", "c18", "\e946"),
     ("Commander 2019", "c19", "\e95f"),
+    ("Ikoria: Commander 2020", "c20", "\e966"),
+    ("Zendikar Rising: Commander Decks", "znc", "\e967"),
+    ("Commander Collection: Green", "cc1", "\e968"),
+    ("Commander Legends", "cmr", "\e969"),
+    ("Commander Legends Decks", "cmc", "\e969"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),

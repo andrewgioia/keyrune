@@ -9,12 +9,19 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
-### [3.6.1] 2019-10-30
+### [3.6.2] 2019-10-31 Symbols for 2020 Commander products 👻
 
-* Fonts now issued under OFL 1.1 and package under GPL 3.0.
-* CHANGELOG.md file added and changes removed from README.md.
+* **Added:** Ikoria: Commander Decks (C20), for release 4/24/20
+* **Added:** Zendikar Rising: Commander Decks (ZNC), for release 2020 Q3
+* **Added:** Commander Collection: Green (CC1), for release 2020 Q3
+* **Added:** Commander Legends (CMR) and its accompanying decks (CMC), for release 2020 Q4
 
-### [3.6.0] 2019-10-30
+### [3.6.1] 2019-10-30 License revisions
+
+* **Added:** CHANGELOG.md file added and changes removed from README.md.
+* **Changed:** Fonts now issued under OFL 1.1 and package under GPL 3.0.
+
+### [3.6.0] 2019-10-30 Unofficial symbols for 2020 main sets
 
 * **Added:** Unofficial symbols for Theros: Beyond Death (THB), Ikoria: Lair of Behemoths (placeholder xIKR), Core 2021 (placeholder M21), Zendikar Rising (placeholder xZNR), promo Ponies: the Gathering (PTG), and Game Night 2019 (GN2).
 * **Changed:** ELD updated with official symbols.
