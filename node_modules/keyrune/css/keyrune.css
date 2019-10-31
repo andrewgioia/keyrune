@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.6.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.6.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.6.0') format('woff2'), url('../fonts/keyrune.woff?v=3.6.0') format('woff'), url('../fonts/keyrune.ttf?v=3.6.0') format('truetype'), url('../fonts/keyrune.svg?v=3.6.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.6.2');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.6.2') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.6.2') format('woff2'), url('../fonts/keyrune.woff?v=3.6.2') format('woff'), url('../fonts/keyrune.ttf?v=3.6.2') format('truetype'), url('../fonts/keyrune.svg?v=3.6.2#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -579,6 +579,19 @@
 }
 .ss-c19:before {
   content: "\e95f";
+}
+.ss-c20:before {
+  content: "\e966";
+}
+.ss-znc:before {
+  content: "\e967";
+}
+.ss-cc1:before {
+  content: "\e968";
+}
+.ss-cmr:before,
+.ss-cmc:before {
+  content: "\e969";
 }
 /**
  * Reprint */

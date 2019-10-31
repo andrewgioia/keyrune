@@ -369,6 +369,10 @@ footer {
     display: none;
 }
 
+    #iconPreview {
+        float: left;
+        width: 340px;
+    }
     #iconPreview .ss {
         font-size: 300px;
         margin: 0 40px 0 0;
@@ -381,15 +385,15 @@ footer {
 
     #iconMeta {
         float: left;
+        width: 420px;
     }
-
     #iconMeta h3 {
         font-size: 24px;
+        line-height: 1.2em;
         margin: 10px 0 20px;
         padding: 0 0 5px;
         border-bottom: 1px solid #ddd;
     }
-
     #iconMeta #setCode {
         font-size: 16px;
         color: #777;
