@@ -9,6 +9,12 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.6.3] 2019-12-04 Judge Academy 2020 and Historic Anthology symbols 
+
+* **Added:** Judge Academy 2020 Promo (J20) set symbol, announced today ([#110](https://github.com/andrewgioia/Keyrune/issues/110))
+* **Added:** Historic Anthology (HA1) set symbol, Arena only currently; the code is unofficial ([#108](https://github.com/andrewgioia/Keyrune/issues/108))
+* **Added:** new aliases for Secret Lair Drop Series (SLD) and Heroes of the Realm 2017 (HTR17), for the PMEI symbol ([#109](https://github.com/andrewgioia/Keyrune/issues/109))
+
 ### [3.6.2] 2019-10-31 Symbols for 2020 Commander products 👻
 
 * **Added:** Ikoria: Commander Decks (C20), for release 4/24/20
