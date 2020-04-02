@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.6.3' !default;
+$keyrune_version: '3.6.5' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -380,6 +380,7 @@ $keyrune_sets: (
     ("Unglued", "ugl", "\e691"),
     ("Unhinged", "unh", "\e692"),
     ("Unstable", "ust", "\e930"),
+    ("Unsanctioned", "und", "\e96c"),
     //
     // Unoffocial
     ("Collector's Edition", "xcle", "\e926"),

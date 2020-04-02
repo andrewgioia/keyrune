@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.6.5] 2020-04-02 Unsanctioned
+
+* **Added:** Unsanctioned (UND) set symbol added, traced from low-ish resolution image on Gatherer ([#112](https://github.com/andrewgioia/Keyrune/issues/112))
+
 ### [3.6.4] 2020-04-02 Ikoria: Lair of Behemoths has the correct set code 
 
 * **Changed:** xIKR is now corrected to IKO as the set code for Ikoria: Lair of Behemoths.
