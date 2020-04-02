@@ -5,9 +5,15 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 * Validate all class names to handle official set codes, MODO codes, and MTGJson/community fallbacks
+* Replace IKO with official symbol trace
+* Change xZNR to official set code and replace with symbol trace when final
 * Update this changelog for better formatting 
 
 ## Versions 
+
+### [3.6.4] 2020-04-02 Ikoria: Lair of Behemoths has the correct set code 
+
+* **Changed:** xIKR is now corrected to IKO as the set code for Ikoria: Lair of Behemoths.
 
 ### [3.6.3] 2019-12-04 Judge Academy 2020 and Historic Anthology symbols 
 
