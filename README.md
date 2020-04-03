@@ -8,4 +8,4 @@ Copyright (c) 2019 Andrew Gioia.
 
 Please see [Keyrune's license file](https://github.com/andrewgioia/Keyrune/blob/master/LICENSE.md) for a full description of the licenses that the Keyrune software and project files are distributed under.
 
-The packaged fonts in this repository are distributed under the OFL 1.1 license. All other files are distrbuted under the GPL 3.0 license.
+The packaged fonts in this repository are distributed under the OFL 1.1 license. All other files are distributed under the GPL 3.0 license.
