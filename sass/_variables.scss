@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.6.5' !default;
+$keyrune_version: '3.6.6' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -248,6 +248,8 @@ $keyrune_sets: (
     ("Masters 25", "a25", "\e93d"),
     ("Ultimate Masters", "uma", "\e958"),
     ("Modern Horizons", "mh1", "\e95b"),
+    ("Double Masters", "2xm", "\e96e"),
+    ("Jumpstart", "jmp", "\e96f"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
@@ -305,6 +307,7 @@ $keyrune_sets: (
     // Signature Spellbook
     ("Jace", "ss1", "\e944"),
     ("Gideon", "ss2", "\e95c"),
+    ("Chandra", "ss3", "\e96d"),
     //
     // Global Series
     ("Jiang Yanggu & Mu Yanling", "gs1", "\e945"),

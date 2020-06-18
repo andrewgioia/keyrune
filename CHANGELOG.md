@@ -11,6 +11,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.6.6] 2020-06-17 Core 2021, Jumpstart, Double Masters, Signature Spellbook: Chandra
+
+* **Added:** Long overdue, sorry! Core Set 2021 (M21) and Jumpstart symbols added ([#123](https://github.com/andrewgioia/Keyrune/issues/123))
+* **Added:** Signature Spellbook: Chandra (SS3) set symbol ([#124](https://github.com/andrewgioia/Keyrune/issues/124))
+* **Added:** Double Masters (2XM) set symbol added ([#121](https://github.com/andrewgioia/Keyrune/issues/121))
+* **Fixed:** I had the symbol (a while ago) for Jumpstart as M21 oddly, that's now fixed
+
 ### [3.6.5] 2020-04-02 Unsanctioned
 
 * **Added:** Unsanctioned (UND) set symbol added, traced from low-ish resolution image on Gatherer ([#112](https://github.com/andrewgioia/Keyrune/issues/112))
