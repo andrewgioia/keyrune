@@ -10,7 +10,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewgioia/Keyrune.git#gh-pages"
+    "url": "git+https://github.com/andrewgioia/keyrune.git#gh-pages"
+  },
+  "scripts": {
+    "build": "npm install && cp node_modules/keyrune/css/keyrune.min.css css/ && cp node_modules/keyrune/fonts/* fonts/ && cp node_modules/zepto/dist/zepto.min.js js/"
   },
   "keywords": [
     "keyrune",
@@ -22,7 +25,7 @@
   "author": "Andrew Gioia <andrew@gioia.email>",
   "license": "(OFL-1.1 OR GPL-3.0-only)",
   "bugs": {
-    "url": "https://github.com/andrewgioia/Keyrune/issues"
+    "url": "https://github.com/andrewgioia/keyrune/issues"
   },
-  "homepage": "https://andrewgioia.github.io/Keyrune"
+  "homepage": "https://andrewgioia.github.io/keyrune"
 }
