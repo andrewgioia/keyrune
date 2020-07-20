@@ -2,7 +2,7 @@
 
 ## The Magic: the Gathering set symbol font!
 
-**Check it out:** our documentation page is online at [andrewgioia.github.io/Keyrune](https://andrewgioia.github.io/Keyrune)!
+**Heads up:** the documentation page has been moved to [keyrune.andrewgioia.com](https://keyrune.andrewgioia.com)!
 
 Keyrune is the first suite of complete Magic: the Gathering expansion and set symbols as a pictographic font. You can use this font anywhere you want to display set symbols&mdash;in your MtG app or website, documents, card images, anything!
 
