@@ -4,7 +4,7 @@
   "description": "Keyrune documentation website",
   "main": "index.html",
   "dependencies": {
-    "keyrune": "^3.6.6",
+    "keyrune": "^3.6.7",
     "zepto": "*"
   },
   "devDependencies": {},
@@ -27,5 +27,5 @@
   "bugs": {
     "url": "https://github.com/andrewgioia/keyrune/issues"
   },
-  "homepage": "https://andrewgioia.github.io/keyrune"
+  "homepage": "https://keyrune.andrewgioia.com"
 }
