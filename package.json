@@ -4,8 +4,8 @@
   "description": "Keyrune documentation website",
   "main": "index.html",
   "dependencies": {
-    "keyrune": "^3.6.7",
-    "zepto": "*"
+    "keyrune": "^3.6.8",
+    "zepto": "^1.2.0"
   },
   "devDependencies": {},
   "repository": {
