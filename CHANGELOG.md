@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.6.8] 2020-08-28 Adds all missing SVGs
+
+* **Fixed:** Forgot to add some SVGs, that folder is current now
+
 ### [3.6.7] 2020-08-28 Amonkhet Remastered, Mystery Booster
 
 * **Added:** Arena's Amonkhet Remastered (AKR) added ([#132](https://github.com/andrewgioia/keyrune/issues/132))
