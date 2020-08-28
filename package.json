@@ -1,11 +1,11 @@
 {
   "name": "keyrune",
   "description": "Keyrune",
-  "version": "3.6.6",
+  "version": "3.6.7",
   "author": {
     "name": "Andrew Gioia",
-    "email": "andrewgioia@gmail.com",
-    "url": "http://andrewgioia.com"
+    "email": "andrew@gioia.email",
+    "url": "https://andrewgioia.com"
   },
   "contributors": [
     "Mike Gioia <mikegioia@gmail.com>",
@@ -16,22 +16,29 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrewgioia/Keyrune.git"
+    "url": "https://github.com/andrewgioia/keyrune.git"
   },
   "keywords": [],
-  "homepage": "http://andrewgioia.com",
+  "homepage": "https://keyrune.andrewgioia.com",
   "dependencies": {},
   "devDependencies": {},
   "license": "(OFL-1.1 AND GPL-3.0-only)",
   "main": "css/keyrune.css",
+  "scripts": {
+    "less": "lessc less/keyrune.less css/keyrune.css",
+    "lessmin": "lessc --clean-css less/keyrune.less css/keyrune.min.css",
+    "sass": "sass sass/keyrune.scss css/keyrune.css --style=expanded",
+    "sassmin": "sass sass/keyrune.scss css/keyrune.css --style=compressed",
+    "watch": "sass --no-source-map --watch sass/keyrune.scss css/keyrune.css --style=expanded"
+  },
   "ignore": [
     "*/.*",
     "*.json",
     "*.md"
   ],
   "bugs": {
-    "url": "https://github.com/andrewgioia/Keyrune/issues",
-    "email": "andrewgioia@gmail.com"
+    "url": "https://github.com/andrewgioia/keyrune/issues",
+    "email": "andrew@gioia.email"
   },
   "engines": {
     "node": "*"

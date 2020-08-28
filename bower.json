@@ -1,9 +1,9 @@
 {
     "name": "keyrune",
     "homepage": "http://andrewgioia.github.io/Keyrune",
-    "version": "3.6.6",
+    "version": "3.6.7",
     "authors": [
-        "Andrew Gioia <andrewgioia@gmail.com>"
+        "Andrew Gioia <andrew@gioia.email>"
     ],
     "description": "Magic: the Gathering set symbol pictographic font",
     "main": [

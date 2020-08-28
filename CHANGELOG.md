@@ -11,6 +11,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.6.7] 2020-08-28 Amonkhet Remastered, Mystery Booster
+
+* **Added:** Arena's Amonkhet Remastered (AKR) added ([#132](https://github.com/andrewgioia/keyrune/issues/132))
+* **Added:** Mystery Booster (MB1) uses Scryfall's planeswalker symbol ([#130https://github.com/andrewgioia/keyrune/issues/130]())
+* **Changed:** aliases for Secret Lair sets (SLU and SLD) added to `.pmei` ([#131](https://github.com/andrewgioia/keyrune/issues/131))
+* **Fixed:** Zendikar Rising set code fixed to ZNR ([#135](https://github.com/andrewgioia/keyrune/issues/135))
+
 ### [3.6.6] 2020-06-17 Core 2021, Jumpstart, Double Masters, Signature Spellbook: Chandra
 
 * **Added:** Long overdue, sorry! Core Set 2021 (M21) and Jumpstart symbols added ([#123](https://github.com/andrewgioia/Keyrune/issues/123))

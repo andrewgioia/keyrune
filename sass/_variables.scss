@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.6.6' !default;
+$keyrune_version: '3.6.7' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -201,7 +201,7 @@ $keyrune_sets: (
     // 2020 sets
     ("Theros: Beyond Death", "thb", "\e961"),
     ("Ikoria: Lair of Behemoths", "iko", "\e962"),
-    ("Zendikar Rising", "xznr", "\e963"),
+    ("Zendikar Rising", "znr", "\e963"),
     //
     // Command zone
     ("Vanguard", "van", "\e655"),
@@ -250,6 +250,7 @@ $keyrune_sets: (
     ("Modern Horizons", "mh1", "\e95b"),
     ("Double Masters", "2xm", "\e96e"),
     ("Jumpstart", "jmp", "\e96f"),
+    ("Mystery Booster", "mb1", "\e971"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
@@ -362,6 +363,11 @@ $keyrune_sets: (
     ("Heroes of the Realm 2017", "htr17", "\e687"),
     ("Judge Academy 2020", "j20", "\e96a"),
     //
+    // Secret Lairs
+    ("Secret Lair: Ultimate Edition", "slu", "\e687"),
+    ("Secret Lair Drop", "sld", "\e687"),
+    ("Secret Lair Drop Promos", "psld", "\e687"),
+    //
     // Online only sets
     ("Masters Edition", "me1", "\e68d"),
     ("Masters Edition II", "me2", "\e68e"),
@@ -378,6 +384,7 @@ $keyrune_sets: (
     ("Magic Online Deck Series", "xmods", "\e91e"),
     ("Treasure Chests", "pz2", "\e91f"),
     ("Historic Anthology 1", "ha1", "\e96b"),
+    ("Amonkhet Remastered", "akr", "\e970"),
     //
     // Unsets
     ("Unglued", "ugl", "\e691"),

@@ -511,7 +511,7 @@
 .ss-iko:before {
   content: "\e962";
 }
-.ss-xznr:before {
+.ss-znr:before {
   content: "\e963";
 }
 /**
@@ -645,6 +645,9 @@
 }
 .ss-jmp:before {
   content: "\e96f";
+}
+.ss-mb1:before {
+  content: "\e971";
 }
 /**
  * Beginner */
@@ -936,6 +939,17 @@
   content: "\e96a";
 }
 /**
+ * Secret Lairs */
+.ss-slu:before {
+  content: "\e687";
+}
+.ss-sld:before {
+  content: "\e687";
+}
+.ss-psld:before {
+  content: "\e687";
+}
+/**
  * Online */
 .ss-me1:before {
   content: "\e68d";
@@ -975,6 +989,9 @@
 }
 .ss-ha1:before {
   content: "\e96b";
+}
+.ss-akr:before {
+  content: "\e970";
 }
 /**
  * Un-serious */
