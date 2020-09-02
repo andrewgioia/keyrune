@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.6.8' !default;
+$keyrune_version: '3.7.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -50,6 +50,12 @@ $border-corrections: (
     ("Conspiracy", "cns", "\e65c")
 ) !default;
 
+// dual-layered symbols (work in progress)
+$dual-layered: (
+    'xdnd': '\e973',
+    'xin4': '\e979'
+) !default;
+
 // sets
 $keyrune_sets: (
     // core sets
@@ -80,6 +86,7 @@ $keyrune_sets: (
     ("Unlimited (MODO)", "2u", "\e949"),
     ("Revised (MODO)", "3e", "\e94a"),
     ("Core 2021", "m21", "\e960"),
+    ("DnD Adventures in the Forgotten Realms", "xdnd", "\e972"),
     //
     // Artifact block
     ("Arabian Nights", "arn", "\e613"),
@@ -202,6 +209,9 @@ $keyrune_sets: (
     ("Theros: Beyond Death", "thb", "\e961"),
     ("Ikoria: Lair of Behemoths", "iko", "\e962"),
     ("Zendikar Rising", "znr", "\e963"),
+    // 2021 sets
+    ("Kaldheim", "xkld", "\e974"),
+    ("Strixhaven: School of Mages", "xssm", "\e975"),
     //
     // Command zone
     ("Vanguard", "van", "\e655"),
@@ -251,6 +261,7 @@ $keyrune_sets: (
     ("Double Masters", "2xm", "\e96e"),
     ("Jumpstart", "jmp", "\e96f"),
     ("Mystery Booster", "mb1", "\e971"),
+    ("Modern Horizons 2", "mh2", "\e97b"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
@@ -328,6 +339,9 @@ $keyrune_sets: (
     // Other supplemental products
     ("Game Night", "gnt", "\e94d"),
     ("Game Night 2019", "gn2", "\e964"),
+    ("Time Spiral Remastered", "tsr", "\e976"),
+    ("Innistrad Vampires", "xin3", "\e977"),
+    ("Innistrad Werewolves", "xin4", "\e978"),
     //
     // Promos
     ("Guru", "pgru", "\e683"),
@@ -362,6 +376,7 @@ $keyrune_sets: (
     ("Ponies: the Galloping", "ptg", "\e965"),
     ("Heroes of the Realm 2017", "htr17", "\e687"),
     ("Judge Academy 2020", "j20", "\e96a"),
+    ("Zendikar Rising Expeditions", "zne", "\e97a"),
     //
     // Secret Lairs
     ("Secret Lair: Ultimate Edition", "slu", "\e687"),

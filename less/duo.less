@@ -1,0 +1,47 @@
+/**
+ * Handling for set symbols that use an inner and outer layer, like M21
+ *
+ * The inner layer is what gets colorized and is the traditional "set symbol"
+ * The outer layer takes over as the border, and is white for common cards
+ * but black for uncommon, rare, and mythic.
+ */
+
+.@{ss-prefix}-duo {
+
+    // base border styles
+    &::after {
+        color: #000;
+        content: '';
+        display: block;
+        font-size: 1em;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    // set default inner to white unless a rarity is declared
+    color: #fff;
+
+    // Dungeons & Dragons: Adventures in the Forgotten Realms
+    &.@{ss-prefix}-xdnd::after {
+        content: "\e973";
+    }
+
+    // Innistrad Werewolves
+    &.@{ss-prefix}-xin4::after {
+        content: "\e979";
+    }
+
+    // rarity border colors
+    &.@{ss-prefix}-common {
+        color: #fff;
+    }
+    &.@{ss-prefix}-uncommon::after,
+    &.@{ss-prefix}-rare::after,
+    &.@{ss-prefix}-mythic::after {
+        color: #000;
+    }
+
+}

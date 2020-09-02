@@ -45,3 +45,42 @@
         }
     }
 }
+
+/**
+ * Dual-layered symbols */
+.#{$keyrune_prefix}.#{$keyrune_prefix}-duo {
+
+    // base border styles
+    &::after {
+        color: #000;
+        content: '';
+        display: block;
+        font-size: 1em;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+    // set default inner to white unless a rarity is declared
+    color: #fff;
+
+    // sets
+    @each $code, $glyph in $dual-layered {
+        &.#{$keyrune_prefix}-#{$code}::after {
+            content: ss-content($glyph);
+        }
+    }
+
+    // rarity border colors
+    &.#{$keyrune_prefix}-common {
+        color: #fff;
+    }
+    &.#{$keyrune_prefix}-uncommon::after,
+    &.#{$keyrune_prefix}-rare::after,
+    &.#{$keyrune_prefix}-mythic::after {
+        color: #000;
+    }
+
+}
