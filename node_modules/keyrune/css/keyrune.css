@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.6.8');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.6.8') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.6.8') format('woff2'), url('../fonts/keyrune.woff?v=3.6.8') format('woff'), url('../fonts/keyrune.ttf?v=3.6.8') format('truetype'), url('../fonts/keyrune.svg?v=3.6.8#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.7.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.7.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.7.0') format('woff2'), url('../fonts/keyrune.woff?v=3.7.0') format('woff'), url('../fonts/keyrune.ttf?v=3.7.0') format('truetype'), url('../fonts/keyrune.svg?v=3.7.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -39,6 +39,41 @@
 }
 .ss-6x {
   font-size: 6em;
+}
+/**
+ * Handling for set symbols that use an inner and outer layer, like M21
+ *
+ * The inner layer is what gets colorized and is the traditional "set symbol"
+ * The outer layer takes over as the border, and is white for common cards
+ * but black for uncommon, rare, and mythic.
+ */
+.ss-duo {
+  color: #fff;
+}
+.ss-duo::after {
+  color: #000;
+  content: '';
+  display: block;
+  font-size: 1em;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ss-duo.ss-xdnd::after {
+  content: "\e973";
+}
+.ss-duo.ss-xin4::after {
+  content: "\e979";
+}
+.ss-duo.ss-common {
+  color: #fff;
+}
+.ss-duo.ss-uncommon::after,
+.ss-duo.ss-rare::after,
+.ss-duo.ss-mythic::after {
+  color: #000;
 }
 /**
  * Rarity colors */
@@ -218,6 +253,9 @@
 }
 .ss-m21:before {
   content: "\e960";
+}
+.ss-xdnd:before {
+  content: "\e972";
 }
 /**
  * Expansions */
@@ -514,6 +552,13 @@
 .ss-znr:before {
   content: "\e963";
 }
+/* 2021 Sets */
+.ss-xkld:before {
+  content: "\e974";
+}
+.ss-xssm:before {
+  content: "\e975";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -648,6 +693,9 @@
 }
 .ss-mb1:before {
   content: "\e971";
+}
+.ss-mh2:before {
+  content: "\e97b";
 }
 /**
  * Beginner */
@@ -846,6 +894,15 @@
 .ss-gn2:before {
   content: "\e964";
 }
+.ss-tsr:before {
+  content: "\e976";
+}
+.ss-xin3:before {
+  content: "\e977";
+}
+.ss-xin4:before {
+  content: "\e978";
+}
 /**
  * Promotional */
 .ss-pgru:before {
@@ -937,6 +994,9 @@
 }
 .ss-j20:before {
   content: "\e96a";
+}
+.ss-zne:before {
+  content: "\e97a";
 }
 /**
  * Secret Lairs */

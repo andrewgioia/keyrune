@@ -355,7 +355,6 @@ footer {
 }
 
 #modal {
-    height: 320px;
     width: 760px;
     position: fixed;
     padding: 30px;
