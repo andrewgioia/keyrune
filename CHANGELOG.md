@@ -11,6 +11,20 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.7.0] 2020-09-02 2021 symbols and new dual-layered support!
+
+This is a big update with all of the recently announced 2021 sets (major thanks to @csuhta and @scryfall). This also begins support for the dual-layered symbols (like M21, though that hasn't been fixed yet) where the border and fill are 2 separate layers.
+
+* **Added:** Modern Horizons 2 (MH2) ([#136](https://github.com/andrewgioia/keyrune/issues/136))
+* **Added:** Zendikar Rising Expeditions (ZNE) ([#142](https://github.com/andrewgioia/keyrune/issues/142))
+* **Added:** Time Spiral Remastered (TSR) ([#138](https://github.com/andrewgioia/keyrune/issues/138))
+* **Added:** Kaldheim (preliminary code xKLD) ([#139](https://github.com/andrewgioia/keyrune/issues/139))
+* **Added:** Dungeons & Dragons: Adventures in the Forgotten Realms (preliminary code xDND) ([#137](https://github.com/andrewgioia/keyrune/issues/137))
+* **Added:** Strixhaven: School of Mages (preliminary code xSSM) ([#144](https://github.com/andrewgioia/keyrune/issues/144))
+* **Added:** Innistrad Vampires (preliminary code xIN3) ([#140](https://github.com/andrewgioia/keyrune/issues/140))
+* **Added:** Innistrad Werewolves (preliminary code xIN4) ([#141](https://github.com/andrewgioia/keyrune/issues/141))
+* **Added:** new support for 2 dual-layered symbols, xDND and xIN4. Now if you add `.ss-duo` to these symboles they'll use the border glyph to properly represent these print layers (where the inner is the gradient/colorized portion and the border is black or white) (partly addressing [#119](https://github.com/andrewgioia/keyrune/issues/119))
+
 ### [3.6.8] 2020-08-28 Adds all missing SVGs
 
 * **Fixed:** Forgot to add some SVGs, that folder is current now
