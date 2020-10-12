@@ -40,13 +40,13 @@ To use Keyrune via source, NPM, or Bower, move the font files to your `/fonts` d
 
 ## Editing the Source
 
-Feel free to edit the source files and compile Keyrune to fit your needs. Currently LESS is supported, with Sass coming soon.
+Feel free to edit the source files and compile Keyrune to fit your needs. Both LESS and Sass are supported.
 
 ## Using Keyrune on the Desktop
 
-To copy Keyrune symbols into your desktop software (or access to vectors directly), go to the [Cheatsheet](http://andrewgioia.github.io/Keyrune/cheatsheet.html) on the documentation site, copy the character (not the unicode representation), and then paste it into your desktop application after installing keyrune.ttf.
+To copy Keyrune symbols into your desktop software (or access to vectors directly), go to the [Cheatsheet](https://keyrune.andrewgioia.com/cheatsheet.html) on the documentation site, copy the character (not the unicode representation), and then paste it into your desktop application after installing keyrune.ttf.
 
-If you're having trouble and want step-by-step instructions and a [sample Word document](https://www.dropbox.com/s/gp45uuuejfy089n/Keyrune_desktop_example.docx?dl=1) to use, head on over to the [documentation page](https://andrewgioia.github.io/Keyrune)!
+If you're having trouble and want step-by-step instructions and a [sample Word document](https://www.dropbox.com/s/gp45uuuejfy089n/Keyrune_desktop_example.docx?dl=1) to use, head on over to the [documentation page](https://keyrune.andrewgioia.com/)!
 
 ## License
 
