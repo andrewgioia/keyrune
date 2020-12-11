@@ -553,9 +553,11 @@
   content: "\e963";
 }
 /* 2021 Sets */
+.ss-xkld:before,
 .ss-khm:before {
   content: "\e974";
 }
+.ss-xssm:before,
 .ss-stx:before {
   content: "\e975";
 }

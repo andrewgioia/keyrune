@@ -21,7 +21,9 @@
   "keywords": [],
   "homepage": "https://keyrune.andrewgioia.com",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "zepto": "^1.2.0"
+  },
   "license": "(OFL-1.1 AND GPL-3.0-only)",
   "main": "css/keyrune.css",
   "scripts": {
