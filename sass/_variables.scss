@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.7.0' !default;
+$keyrune_version: '3.7.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -210,8 +210,8 @@ $keyrune_sets: (
     ("Ikoria: Lair of Behemoths", "iko", "\e962"),
     ("Zendikar Rising", "znr", "\e963"),
     // 2021 sets
-    ("Kaldheim", "xkld", "\e974"),
-    ("Strixhaven: School of Mages", "xssm", "\e975"),
+    ("Kaldheim", "khm", "\e974"),
+    ("Strixhaven: School of Mages", "stx", "\e975"),
     //
     // Command zone
     ("Vanguard", "van", "\e655"),
@@ -400,6 +400,7 @@ $keyrune_sets: (
     ("Treasure Chests", "pz2", "\e91f"),
     ("Historic Anthology 1", "ha1", "\e96b"),
     ("Amonkhet Remastered", "akr", "\e970"),
+    ("Kaladesh Remastered", "klr", "\e97c"),
     //
     // Unsets
     ("Unglued", "ugl", "\e691"),

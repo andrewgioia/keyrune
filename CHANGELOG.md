@@ -11,6 +11,11 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.7.1] 2020-12-11 Kaladesh Remastered
+
+* **Added:** Kaladesh Remastered (KLR) ([#151](https://github.com/andrewgioia/keyrune/issues/151))
+* **Fixed:** Set codes for Kaldheim (KHM) and Strixhaven (STX) are now official ([#149](https://github.com/andrewgioia/keyrune/issues/149))
+
 ### [3.7.0] 2020-09-02 2021 symbols and new dual-layered support!
 
 This is a big update with all of the recently announced 2021 sets (major thanks to @csuhta and @scryfall). This also begins support for the dual-layered symbols (like M21, though that hasn't been fixed yet) where the border and fill are 2 separate layers.
