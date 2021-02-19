@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.7.1' !default;
+$keyrune_version: '3.7.2' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -241,6 +241,7 @@ $keyrune_sets: (
     ("Commander Collection: Green", "cc1", "\e968"),
     ("Commander Legends", "cmr", "\e969"),
     ("Commander Legends Decks", "cmc", "\e969"),
+    ("Kaldheim Commander", "khc", "\e97d"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),

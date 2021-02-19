@@ -11,6 +11,11 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.7.2] 2021-02-19 Kaldheim Commander
+
+* **Added:** Kaldheim Commander (KHC) ([#152](https://github.com/andrewgioia/keyrune/issues/152))
+* **Fixed:** MP1 had an errant stroke in the SVG, this is removed now! ([#154](https://github.com/andrewgioia/keyrune/issues/154))
+
 ### [3.7.1] 2020-12-11 Kaladesh Remastered
 
 * **Added:** Kaladesh Remastered (KLR) ([#151](https://github.com/andrewgioia/keyrune/issues/151))
