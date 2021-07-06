@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.7.2' !default;
+$keyrune_version: '3.8.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -52,7 +52,8 @@ $border-corrections: (
 
 // dual-layered symbols (work in progress)
 $dual-layered: (
-    'xdnd': '\e973',
+    'afr': '\e973',
+    'c21': '\e97f',
     'xin4': '\e979'
 ) !default;
 
@@ -86,7 +87,8 @@ $keyrune_sets: (
     ("Unlimited (MODO)", "2u", "\e949"),
     ("Revised (MODO)", "3e", "\e94a"),
     ("Core 2021", "m21", "\e960"),
-    ("DnD Adventures in the Forgotten Realms", "xdnd", "\e972"),
+    ("Adventures in the Forgotten Realms", "xdnd", "\e972"),
+    ("Adventures in the Forgotten Realms", "afr", "\e972"),
     //
     // Artifact block
     ("Arabian Nights", "arn", "\e613"),
@@ -242,6 +244,8 @@ $keyrune_sets: (
     ("Commander Legends", "cmr", "\e969"),
     ("Commander Legends Decks", "cmc", "\e969"),
     ("Kaldheim Commander", "khc", "\e97d"),
+    ("Commander 2021", "c21", "\e97e"),
+
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
@@ -263,6 +267,7 @@ $keyrune_sets: (
     ("Jumpstart", "jmp", "\e96f"),
     ("Mystery Booster", "mb1", "\e971"),
     ("Modern Horizons 2", "mh2", "\e97b"),
+    ("Strixhaven: Mystical Archives", "sta", "\e980"),
     //
     // Beginner
     ("Portal", "por", "\e664"),

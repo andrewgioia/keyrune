@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.7.2');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.7.2') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.7.2') format('woff2'), url('../fonts/keyrune.woff?v=3.7.2') format('woff'), url('../fonts/keyrune.ttf?v=3.7.2') format('truetype'), url('../fonts/keyrune.svg?v=3.7.2#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.8.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.8.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.8.0') format('woff2'), url('../fonts/keyrune.woff?v=3.8.0') format('woff'), url('../fonts/keyrune.ttf?v=3.8.0') format('truetype'), url('../fonts/keyrune.svg?v=3.8.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -61,13 +61,17 @@
   top: 0;
   width: 100%;
 }
-.ss-duo.ss-xdnd::after {
+.ss-duo.ss-xdnd::after,
+.ss-duo.ss-afr::after {
   content: "\e973";
+}
+.ss-duo.ss-c21::after {
+  content: "\e97f";
 }
 .ss-duo.ss-xin4::after {
   content: "\e979";
 }
-.ss-duo.ss-common {
+.ss-duo.ss-common:after {
   color: #fff;
 }
 .ss-duo.ss-uncommon::after,
@@ -254,7 +258,8 @@
 .ss-m21:before {
   content: "\e960";
 }
-.ss-xdnd:before {
+.ss-xdnd:before,
+.ss-afr:before {
   content: "\e972";
 }
 /**
@@ -643,6 +648,9 @@
 .ss-khc:before {
   content: "\e97d";
 }
+.ss-c21:before {
+  content: "\e97e";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -701,6 +709,9 @@
 }
 .ss-mh2:before {
   content: "\e97b";
+}
+.ss-sta:before {
+  content: "\e980";
 }
 /**
  * Beginner */

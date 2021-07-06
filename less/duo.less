@@ -24,9 +24,15 @@
     // set default inner to white unless a rarity is declared
     color: #fff;
 
-    // Dungeons & Dragons: Adventures in the Forgotten Realms
-    &.@{ss-prefix}-xdnd::after {
+    // Adventures in the Forgotten Realms
+    &.@{ss-prefix}-xdnd::after,
+    &.@{ss-prefix}-afr::after {
         content: "\e973";
+    }
+
+    // Commander 2021
+    &.@{ss-prefix}-c21::after {
+        content: "\e97f";
     }
 
     // Innistrad Werewolves
@@ -35,7 +41,7 @@
     }
 
     // rarity border colors
-    &.@{ss-prefix}-common {
+    &.@{ss-prefix}-common:after {
         color: #fff;
     }
     &.@{ss-prefix}-uncommon::after,
