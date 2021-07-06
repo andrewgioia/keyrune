@@ -1,7 +1,7 @@
 {
   "name": "keyrune",
   "description": "Keyrune",
-  "version": "3.8.0",
+  "version": "3.8.1",
   "author": {
     "name": "Andrew Gioia",
     "email": "andrew@gioia.email",
@@ -31,7 +31,8 @@
     "lessmin": "lessc --clean-css less/keyrune.less css/keyrune.min.css",
     "sass": "sass sass/keyrune.scss css/keyrune.css --style=expanded",
     "sassmin": "sass sass/keyrune.scss css/keyrune.css --style=compressed",
-    "watch": "sass --no-source-map --watch sass/keyrune.scss css/keyrune.css --style=expanded"
+    "watch": "sass --no-source-map --watch sass/keyrune.scss css/keyrune.css --style=expanded",
+    "build": "cp fonts/* docs/fonts && cp css/keyrune.min.css docs/assets/keyrune.min.css"
   },
   "ignore": [
     "*/.*",
