@@ -11,6 +11,21 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.8.2] 2021-07-15 Forgotten Realms Commander
+
+* **Added:** Adventures in the Forgotten Realms Commander (AFC) set symbol ([#163](https://github.com/andrewgioia/keyrune/issues/163))
+
+### [3.8.1] 2021-07-06 Adds mising SVGs and corrects CDN
+
+* **Fixed:** added missing SVG files for recent set symbols
+* **Fixed:** the @latest url scheme in the CDN wasn't working well (caching issues), assets are loaded locally now for faster visual updates after releases ([#162](https://github.com/andrewgioia/keyrune/issues/162))
+
+### [3.8.0] 2021-07-06 Strixhaven Mystical Archives and Commander 2021
+
+* **Added:** Strixhaven Mystical Archive (STA) set symbol ([#156](https://github.com/andrewgioia/keyrune/issues/156))
+* **Added:** Commander 2021 (C21) set symbol ([#161](https://github.com/andrewgioia/keyrune/issues/161))
+* **Fixed:** dual-layer typo corrected
+
 ### [3.7.2] 2021-02-19 Kaldheim Commander
 
 * **Added:** Kaldheim Commander (KHC) ([#152](https://github.com/andrewgioia/keyrune/issues/152))

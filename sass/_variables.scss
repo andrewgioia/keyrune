@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.8.1' !default;
+$keyrune_version: '3.8.2' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -54,7 +54,8 @@ $border-corrections: (
 $dual-layered: (
     'afr': '\e973',
     'c21': '\e97f',
-    'xin4': '\e979'
+    'xin4': '\e979',
+    'afc': '\e982'
 ) !default;
 
 // sets
@@ -245,6 +246,7 @@ $keyrune_sets: (
     ("Commander Legends Decks", "cmc", "\e969"),
     ("Kaldheim Commander", "khc", "\e97d"),
     ("Commander 2021", "c21", "\e97e"),
+    ("Forgotten Realms Commander", "afc", "\e981"),
 
     //
     // Reprint sets
