@@ -17,6 +17,14 @@
             -webkit-text-fill-color: $keyrune_text_fill;
             -webkit-background-clip: $keyrune_background_clip;
             background-clip: $keyrune_background_clip;
+
+            &.#{$keyrune-prefix}-no-border,
+            &.#{$keyrune-prefix}-duo {
+                -webkit-text-stroke: 0;
+            }
+            &.#{$keyrune-prefix}-duo::after {
+                -webkit-text-fill-color: inherit;
+            }
         }
     }
 }
@@ -32,5 +40,13 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: $keyrune_background_clip;
+
+        &.#{$keyrune-prefix}-no-border,
+        &.#{$keyrune-prefix}-duo {
+            -webkit-text-stroke: 0;
+        }
+        &.#{$keyrune-prefix}-duo::after {
+            -webkit-text-fill-color: inherit;
+        }
     }
 }

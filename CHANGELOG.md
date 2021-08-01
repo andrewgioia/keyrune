@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.8.3] 2021-07-31 Jumpstart: Historic Horizons
+
+* **Added:** preliminary trace of a very low res source J21 symbol
+
 ### [3.8.2] 2021-07-15 Forgotten Realms Commander
 
 * **Added:** Adventures in the Forgotten Realms Commander (AFC) set symbol ([#163](https://github.com/andrewgioia/keyrune/issues/163))

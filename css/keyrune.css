@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.8.2');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.8.2') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.8.2') format('woff2'), url('../fonts/keyrune.woff?v=3.8.2') format('woff'), url('../fonts/keyrune.ttf?v=3.8.2') format('truetype'), url('../fonts/keyrune.svg?v=3.8.2#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.8.3');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.8.3') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.8.3') format('woff2'), url('../fonts/keyrune.woff?v=3.8.3') format('woff'), url('../fonts/keyrune.ttf?v=3.8.3') format('truetype'), url('../fonts/keyrune.svg?v=3.8.3#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -71,6 +71,9 @@
 .ss-duo.ss-c21::after {
   content: "\e97f";
 }
+.ss-duo.ss-j21::after {
+  content: "\e984";
+}
 .ss-duo.ss-xin4::after {
   content: "\e979";
 }
@@ -95,7 +98,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss-common.ss-grad.ss-no-border {
+.ss-common.ss-grad.ss-no-border,
+.ss-common.ss-grad.ss-duo {
   -webkit-text-stroke: 0;
 }
 .ss-uncommon {
@@ -109,8 +113,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss-uncommon.ss-grad.ss-no-border {
+.ss-uncommon.ss-grad.ss-no-border,
+.ss-uncommon.ss-grad.ss-duo {
   -webkit-text-stroke: 0;
+}
+.ss-uncommon.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
 }
 .ss-rare {
   color: #A58E4A;
@@ -123,8 +131,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss-rare.ss-grad.ss-no-border {
+.ss-rare.ss-grad.ss-no-border,
+.ss-rare.ss-grad.ss-duo {
   -webkit-text-stroke: 0;
+}
+.ss-rare.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
 }
 .ss-mythic {
   color: #BF4427;
@@ -137,8 +149,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss-mythic.ss-grad.ss-no-border {
+.ss-mythic.ss-grad.ss-no-border,
+.ss-mythic.ss-grad.ss-duo {
   -webkit-text-stroke: 0;
+}
+.ss-mythic.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
 }
 .ss-timeshifted {
   color: #652978;
@@ -154,8 +170,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss-timeshifted.ss-grad.ss-no-border {
+.ss-timeshifted.ss-grad.ss-no-border,
+.ss-timeshifted.ss-grad.ss-duo {
   -webkit-text-stroke: 0;
+}
+.ss-timeshifted.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
 }
 .ss-foil {
   color: #a6dced;
@@ -169,8 +189,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss-foil.ss-grad.ss-no-border {
+.ss-foil.ss-grad.ss-no-border,
+.ss-foil.ss-grad.ss-duo {
   -webkit-text-stroke: 0;
+}
+.ss-foil.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
 }
 /**
  * Fixed width */
@@ -718,6 +742,9 @@
 }
 .ss-sta:before {
   content: "\e980";
+}
+.ss-j21:before {
+  content: "\e983";
 }
 /**
  * Beginner */
