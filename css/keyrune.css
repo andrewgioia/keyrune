@@ -74,7 +74,7 @@
 .ss-duo.ss-j21::after {
   content: "\e984";
 }
-.ss-duo.ss-xin4::after {
+.ss-duo.ss-mid::after {
   content: "\e979";
 }
 .ss-duo.ss-common:after {
@@ -946,10 +946,10 @@
 .ss-tsr:before {
   content: "\e976";
 }
-.ss-xin3:before {
+.ss-vow:before {
   content: "\e977";
 }
-.ss-xin4:before {
+.ss-mid:before {
   content: "\e978";
 }
 /**

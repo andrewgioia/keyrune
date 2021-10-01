@@ -56,7 +56,7 @@ $dual-layered: (
     'afr': '\e973',
     'c21': '\e97f',
     'j21': '\e984',
-    'xin4': '\e979'
+    'mid': '\e979'
 ) !default;
 
 // sets
@@ -216,6 +216,8 @@ $keyrune_sets: (
     // 2021 sets
     ("Kaldheim", "khm", "\e974"),
     ("Strixhaven: School of Mages", "stx", "\e975"),
+    ("Innistrad Werewolves", "mid", "\e978"),
+    ("Innistrad Vampires", "vow", "\e977"),    
     //
     // Command zone
     ("Vanguard", "van", "\e655"),
@@ -350,8 +352,6 @@ $keyrune_sets: (
     ("Game Night", "gnt", "\e94d"),
     ("Game Night 2019", "gn2", "\e964"),
     ("Time Spiral Remastered", "tsr", "\e976"),
-    ("Innistrad Vampires", "xin3", "\e977"),
-    ("Innistrad Werewolves", "xin4", "\e978"),
     //
     // Promos
     ("Guru", "pgru", "\e683"),
