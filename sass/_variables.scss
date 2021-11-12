@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.8.3' !default;
+$keyrune_version: '3.8.4' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -55,6 +55,7 @@ $dual-layered: (
     'afc': '\e982',
     'afr': '\e973',
     'c21': '\e97f',
+    'cc2': '\e988',
     'j21': '\e984',
     'mid': '\e979'
 ) !default;
@@ -216,8 +217,8 @@ $keyrune_sets: (
     // 2021 sets
     ("Kaldheim", "khm", "\e974"),
     ("Strixhaven: School of Mages", "stx", "\e975"),
-    ("Innistrad Werewolves", "mid", "\e978"),
-    ("Innistrad Vampires", "vow", "\e977"),    
+    ("Innistrad: Midnight Hunt", "mid", "\e978"),
+    ("Innistrad: Crimson Vow", "vow", "\e977"),
     //
     // Command zone
     ("Vanguard", "van", "\e655"),
@@ -251,6 +252,9 @@ $keyrune_sets: (
     ("Commander 2021", "c21", "\e97e"),
     ("Forgotten Realms Commander", "afc", "\e981"),
     ("Jumpstart: Historic Horizons", "afc", "\e983"),
+    ("Innistrad: Midnight Hunt Commander", "mic", "\e985"),
+    ("Innistrad: Crimson Vow Commander", "voc", "\e986"),
+    ("Commander Collection: Black", "cc2", "\e987"),
 
     //
     // Reprint sets

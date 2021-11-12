@@ -11,6 +11,14 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.8.4] 2021-11-12 Innistrad sets and cleanup
+
+* **Added:** Innistrad: Midnight Hunt Commander (MIC) set symbol ([#167](https://github.com/andrewgioia/keyrune/issues/167))
+* **Added:** Innistrad: Crimson Vow Commander (VOC) set symbol ([#171](https://github.com/andrewgioia/keyrune/issues/171))
+* **Added:** Commander Collection: Black (CC2) set symbol ([#166](https://github.com/andrewgioia/keyrune/issues/166))
+* **Fixed:** Individual SVG filenames corrected and missing images added ([#168](https://github.com/andrewgioia/keyrune/issues/168))
+* **Fixed:** CDN now at latest and font has the corrected/latest version
+
 ### [3.8.3] 2021-07-31 Jumpstart: Historic Horizons
 
 * **Added:** preliminary trace of a very low res source J21 symbol
