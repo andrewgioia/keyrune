@@ -1,4 +1,4 @@
-# Keyrune v3.8.4
+# Keyrune v3.9.0
 
 ## The Magic: the Gathering set symbol font!
 

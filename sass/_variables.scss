@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.8.4' !default;
+$keyrune_version: '3.9.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -219,6 +219,8 @@ $keyrune_sets: (
     ("Strixhaven: School of Mages", "stx", "\e975"),
     ("Innistrad: Midnight Hunt", "mid", "\e978"),
     ("Innistrad: Crimson Vow", "vow", "\e977"),
+    // 2022 sets
+    ("Kamigawa: Neon Dynasty", "neo", "\e98c"),
     //
     // Command zone
     ("Vanguard", "van", "\e655"),

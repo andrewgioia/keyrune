@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.8.4');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.8.4') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.8.4') format('woff2'), url('../fonts/keyrune.woff?v=3.8.4') format('woff'), url('../fonts/keyrune.ttf?v=3.8.4') format('truetype'), url('../fonts/keyrune.svg?v=3.8.4#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.9.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.9.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.9.0') format('woff2'), url('../fonts/keyrune.woff?v=3.9.0') format('woff'), url('../fonts/keyrune.ttf?v=3.9.0') format('truetype'), url('../fonts/keyrune.svg?v=3.9.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -602,6 +602,10 @@
 .ss-vow:before {
   content: "\e977";
 }
+/* 2022 Sets */
+.ss-neo:before {
+  content: "\e98c";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -1117,6 +1121,9 @@
 .ss-klr:before {
   content: "\e97c";
 }
+.ss-y22:before {
+  content: "\e989";
+}
 /**
  * Un-serious */
 .ss-ugl:before {
@@ -1130,6 +1137,9 @@
 }
 .ss-und:before {
   content: "\e96c";
+}
+.ss-unf:before {
+  content: "\e98a";
 }
 /**
  * Unofficial */

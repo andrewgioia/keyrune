@@ -1,7 +1,7 @@
 {
   "name": "keyrune",
   "description": "Keyrune",
-  "version": "3.8.4",
+  "version": "3.9.0",
   "author": {
     "name": "Andrew Gioia",
     "email": "andrew@gioia.email",
@@ -32,7 +32,8 @@
     "sass": "sass sass/keyrune.scss css/keyrune.css --style=expanded",
     "sassmin": "sass sass/keyrune.scss css/keyrune.css --style=compressed",
     "watch": "sass --no-source-map --watch sass/keyrune.scss css/keyrune.css --style=expanded",
-    "build": "cp fonts/* docs/fonts && cp css/keyrune.min.css docs/assets/keyrune.min.css"
+    "build": "cp fonts/* docs/fonts && cp css/keyrune.min.css docs/assets/keyrune.min.css",
+    "rename": "for f in `find fonts/*`; do mv -v \"$f\" \"`echo $f | tr '[A-Z]' '[a-z]'`\"; done"
   },
   "ignore": [
     "*/.*",

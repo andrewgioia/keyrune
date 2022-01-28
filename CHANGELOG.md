@@ -11,6 +11,12 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.9.0] 2022-01-26 Kamigawa: Neon Dynasty, Unfinity, and Alchemy 2022
+
+* **Added:** Kamigawa, Neon Dynasty (NEO) set symbol ([#178](https://github.com/andrewgioia/keyrune/issues/178))
+* **Added:** Unfinity (UNF) set symbol ([#175](https://github.com/andrewgioia/keyrune/issues/175))
+* **Added:** Alchemy 2022 (Y22) set symbol ([#176](https://github.com/andrewgioia/keyrune/issues/176))
+
 ### [3.8.4] 2021-11-12 Innistrad sets and cleanup
 
 * **Added:** Innistrad: Midnight Hunt Commander (MIC) set symbol ([#167](https://github.com/andrewgioia/keyrune/issues/167))
