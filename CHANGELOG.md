@@ -5,11 +5,14 @@ All notable changes to this project will be documented in this file.
 ## Unreleased
 
 * Validate all class names to handle official set codes, MODO codes, and MTGJson/community fallbacks
-* Replace IKO with official symbol trace
-* Change xZNR to official set code and replace with symbol trace when final
 * Update this changelog for better formatting 
 
 ## Versions 
+
+### [3.9.1] 2022-03-25 Kamigawa Commander and Streets of New Capenna
+
+* **Added:** Kamigawa, Neon Dynasty Commander (NEC) set symbol ([#180](https://github.com/andrewgioia/keyrune/issues/180))
+* **Added:** Streets of New Capenna (SNC) set symbol ([#184](https://github.com/andrewgioia/keyrune/issues/184))
 
 ### [3.9.0] 2022-01-26 Kamigawa: Neon Dynasty, Unfinity, and Alchemy 2022
 
