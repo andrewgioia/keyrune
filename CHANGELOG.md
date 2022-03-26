@@ -4,10 +4,16 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+* Support apparent "tri-layered" symbols, like SNC and CBL where there's a rarity layer, a fixed white layer, and a border. These are unlike the dual-layered symbols like AFR and MID.
 * Validate all class names to handle official set codes, MODO codes, and MTGJson/community fallbacks
 * Update this changelog for better formatting 
 
 ## Versions 
+
+### [3.9.2] 2022-03-26 Commander Legends: Battle for Baldur's Gate and Streets of New Capenna Commander
+
+* **Added:** Commander Legends: Battle for Baldur's Gate (CBL) set symbol, along with it's white insert dual-layered symbol ([#186](https://github.com/andrewgioia/keyrune/issues/186))
+* **Added:** Streets of New Capenna Commander (NNC) set symbol and 2 additional dual-layered symbols as an alternate ([#184](https://github.com/andrewgioia/keyrune/issues/184))
 
 ### [3.9.1] 2022-03-25 Kamigawa Commander and Streets of New Capenna
 

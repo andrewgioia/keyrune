@@ -38,6 +38,11 @@
         content: "\e97f";
     }
 
+    // Commander Legends: Battle for Baldur's Gate
+    &.@{ss-prefix}-cbl::after {
+        content: "\e992";
+    }
+
     // Commander Collection: Black
     &.@{ss-prefix}-cc2::after {
         content: "\e988";
@@ -53,14 +58,31 @@
         content: "\e979";
     }
 
+    // Streets of New Capenna: Commander
+    // uses 2 separate glyphs to construct this
+    &.@{ss-prefix}-nnc {
+        &::before {
+            content: "\e98f";
+        }
+        &::after {
+            content: "\e990";
+        }
+    }
+
     // rarity border colors
     &.@{ss-prefix}-common:after {
         color: #fff;
     }
-    &.@{ss-prefix}-uncommon::after,
-    &.@{ss-prefix}-rare::after,
-    &.@{ss-prefix}-mythic::after {
-        color: #000;
+    &.@{ss-prefix}-uncommon,
+    &.@{ss-prefix}-rare,
+    &.@{ss-prefix}-mythic {
+        &::after {
+            color: #000;
+        }
+        // exceptions
+        &.@{ss-prefix}-cbl::after {
+            color: #fff;
+        }
     }
 
 }

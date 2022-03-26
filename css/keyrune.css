@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.9.1');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.9.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.9.1') format('woff2'), url('../fonts/keyrune.woff?v=3.9.1') format('woff'), url('../fonts/keyrune.ttf?v=3.9.1') format('truetype'), url('../fonts/keyrune.svg?v=3.9.1#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.9.2');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.9.2') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.9.2') format('woff2'), url('../fonts/keyrune.woff?v=3.9.2') format('woff'), url('../fonts/keyrune.ttf?v=3.9.2') format('truetype'), url('../fonts/keyrune.svg?v=3.9.2#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -71,6 +71,9 @@
 .ss-duo.ss-c21::after {
   content: "\e97f";
 }
+.ss-duo.ss-cbl::after {
+  content: "\e992";
+}
 .ss-duo.ss-cc2::after {
   content: "\e988";
 }
@@ -80,6 +83,12 @@
 .ss-duo.ss-mid::after {
   content: "\e979";
 }
+.ss-duo.ss-nnc::before {
+  content: "\e98f";
+}
+.ss-duo.ss-nnc::after {
+  content: "\e990";
+}
 .ss-duo.ss-common:after {
   color: #fff;
 }
@@ -87,6 +96,11 @@
 .ss-duo.ss-rare::after,
 .ss-duo.ss-mythic::after {
   color: #000;
+}
+.ss-duo.ss-uncommon.ss-cbl::after,
+.ss-duo.ss-rare.ss-cbl::after,
+.ss-duo.ss-mythic.ss-cbl::after {
+  color: #fff;
 }
 /**
  * Rarity colors */
@@ -708,6 +722,12 @@
 }
 .ss-nec:before {
   content: "\e98d";
+}
+.ss-nnc:before {
+  content: "\e98e";
+}
+.ss-cbl:before {
+  content: "\e991";
 }
 /**
  * Reprint */

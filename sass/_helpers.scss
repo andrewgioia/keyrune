@@ -73,6 +73,11 @@
         }
     }
 
+    // manual corrections
+    &.#{$keyrune_prefix}-nnc::before {
+        content: "\e98f";
+    }
+
     // rarity border colors
     &.#{$keyrune_prefix}-common {
         color: #fff;

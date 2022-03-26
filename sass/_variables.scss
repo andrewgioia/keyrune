@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.9.1' !default;
+$keyrune_version: '3.9.2' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -55,9 +55,11 @@ $dual-layered: (
     'afc': '\e982',
     'afr': '\e973',
     'c21': '\e97f',
+    'cbl': '\e992',
     'cc2': '\e988',
     'j21': '\e984',
-    'mid': '\e979'
+    'mid': '\e979',
+    'nnc': '\e990'
 ) !default;
 
 // sets
@@ -259,7 +261,8 @@ $keyrune_sets: (
     ("Innistrad: Crimson Vow Commander", "voc", "\e986"),
     ("Commander Collection: Black", "cc2", "\e987"),
     ("Kamigawa: Neon Dynasty Commander", "nec", "\e98d"),
-
+    ("Streets of New Capenna Commander", "nnc", "\e98e"),
+    ("Commander Legends: Battle for Baldur's Gate", "cbl", "\e991"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
