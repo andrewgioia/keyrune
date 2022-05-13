@@ -83,10 +83,10 @@
 .ss-duo.ss-mid::after {
   content: "\e979";
 }
-.ss-duo.ss-nnc::before {
+.ss-duo.ss-ncc::before {
   content: "\e98f";
 }
-.ss-duo.ss-nnc::after {
+.ss-duo.ss-ncc::after {
   content: "\e990";
 }
 .ss-duo.ss-common:after {
