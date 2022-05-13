@@ -10,6 +10,17 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.10.0] 2022-05-13 Summer 2022 set symbols and typo fixes
+
+* **Added:** Dominaria United (DMU) set symbol
+* **Added:** Dominaria United Commander (DMC) set symbol
+* **Added:** Double Masters 2022 (2X2) set symbol
+* **Added:** Universes Beyond: Warhammer 40,000 (40K) set symbol
+* **Fixed:** Set code for New Capenna Commander is now NCC, not NNC
+* **Fixed:** Set code for Commander Legends: Baldur's Gate corrected to CLB (thanks to @arjenbrandenburgh in [PR #187](https://github.com/andrewgioia/keyrune/pull/187))
+* **Fixed:** SaSS reference to J21 is no longer AFR (thanks to @ThePieBandit in [PR #185](https://github.com/andrewgioia/keyrune/pull/185))
+* **Changed:** .ss-border now uses ::marker pseudo-element for a third glyph layer; this is an experimental test for the future 4.0 release that will normalize all symbol sizes and add 1-3 layer support to correctly represent them
+
 ### [3.9.2] 2022-03-26 Commander Legends: Battle for Baldur's Gate and Streets of New Capenna Commander
 
 * **Added:** Commander Legends: Battle for Baldur's Gate (CBL) set symbol, along with it's white insert dual-layered symbol ([#186](https://github.com/andrewgioia/keyrune/issues/186))

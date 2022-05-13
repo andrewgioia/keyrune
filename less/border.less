@@ -1,5 +1,5 @@
 .@{ss-prefix}-border {
-    &:after {
+    &:not(.ss-duo)::after {
         content: "";
         position: absolute;
         left: -.05em;
@@ -23,4 +23,35 @@
     &.@{ss-prefix}-cns:after { content: "\e65c"; } // Conspiracy
     &.@{ss-prefix}-c14:after { content: "\e65d"; } // Commander 2014
     &.@{ss-prefix}-c15:after { content: "\e900"; } // Commander 2015
+
+    // experimental ::marker for 3 layer icons
+    &.@{ss-prefix}-40k {
+        display: list-item;
+        list-style-position: inside;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker {
+            content: "\e99a";
+            color: #000;
+        }
+    }
+
+    &.@{ss-prefix}-dmc {
+        display: list-item;
+        list-style-position: inside;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker {
+            content: "\e996";
+            color: #000;
+        }
+    }
 }

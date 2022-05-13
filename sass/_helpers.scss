@@ -77,6 +77,12 @@
     &.#{$keyrune_prefix}-ncc::before {
         content: "\e98f";
     }
+    &.#{$keyrune_prefix}-40k::before {
+        content: "\e999";
+    }
+    &.#{$keyrune_prefix}-dmc::before {
+        content: "\e995";
+    }
 
     // rarity border colors
     &.#{$keyrune_prefix}-common {

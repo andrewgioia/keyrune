@@ -45,7 +45,7 @@
         <div class="wrapper">
             <section>
                 <h3>
-                    View the full list of 291 set and expansion symbols below, for all sets and special edition products up to <strong>Streets of New Capenna</strong> and <strong>Commander Legends: Battle for Baldur's Gate</strong>. To use the symbols on your desktop or just get the vectors, check out the <a href="cheatsheet.html">Cheatsheet</a>.
+                    View the full list of 294 set and expansion symbols below, for all sets and special edition products up to <strong>Dominaria United</strong> and <strong>Warhammer 40,000</strong>. To use the symbols on your desktop or just get the vectors, check out the <a href="cheatsheet.html">Cheatsheet</a>.
                 </h3>
                 <p style="margin: -15px 0 25px;">
                     <strong>Note:</strong> you can now link directly to a preview of each symbol's by adding the symbol code at the end of the url like this: <a href="https://keyrune.andrewgioia.com/icons.html?icon=ody">https://keyrune.andrewgioia.com/icons.html?icon=ody</a>.
@@ -419,6 +419,9 @@
                     <div class="icon" id="snc" name="Streets of New Capenna" data-name="Streets of New Capenna" data-class="snc" data-unicode="e98b" data-added="v3.9.1">
                         <span class="name"><i class="ss ss-snc"></i> Streets of New Capenna <em>(snc)</em></span>
                     </div>
+                    <div class="icon" id="dmu" name="Dominaria United" data-name="Dominaria United" data-class="dmu" data-unicode="e993" data-added="v3.10.0">
+                        <span class="name"><i class="ss ss-dmu"></i> Dominaria United <em>(dmu)</em></span>
+                    </div>
                 </div>
             </section>
             <section class="content">
@@ -529,6 +532,12 @@
                     <div class="icon" id="clb" name="Commander Legends: Battle for Baldur's Gate" data-name="Commander Legends: Battle for Baldur's Gate" data-class="clb" data-unicode="e991" data-added="v3.9.2" data-duo="true">
                         <span class="name"><i class="ss ss-clb ss-duo ss-common"></i> Commander Legends: Battle for Baldur's Gate <em>(clb)</em></span>
                     </div>
+                    <div class="icon" id="dmc" name="Dominaria United Commander" data-name="Dominaria United Commander" data-class="dmc" data-unicode="e994" data-added="v3.10.0" data-duo="true">
+                        <span class="name"><i class="ss ss-dmc ss-common"></i> Dominaria United Commander <em>(dmc)</em></span>
+                    </div>
+                    <div class="icon" id="40k" name="Warhammer 40K" data-name="Warhammer 40K" data-class="40k" data-unicode="e998" data-added="v3.10.0" data-duo="true">
+                        <span class="name"><i class="ss ss-40k ss-common"></i> Warhammer 40K <em>(40k)</em></span>
+                    </div>
                 </div>
             </section>
             <section class="content">
@@ -596,6 +605,9 @@
                     </div>
                     <div class="icon" id="j21" name="Jumpstart: Historic Horizons" data-name="Jumpstart: Historic Horizons" data-class="j21" data-unicode="e983" data-added="v3.8.3" data-duo="true">
                         <span class="name"><i class="ss ss-j21 ss-duo"></i> Jumpstart: Historic Horizons <em>(j21)</em></span>
+                    </div>
+                    <div class="icon" id="2x2" name="Double Masters 2022" data-name="Double Masters 2022" data-class="2x2" data-unicode="e99c" data-added="v3.10.0">
+                        <span class="name"><i class="ss ss-2x2"></i> Double Masters 2022 <em>(2x2)</em></span>
                     </div>
                 </div>
             </section>
@@ -1083,6 +1095,9 @@
             <div id="withGradient">
                 <input type="checkbox" name="withGradient" id="toggleGradient" /> Show rarity gradient
             </div>
+            <div id="withBorder">
+                <input type="checkbox" name="withBorder" id="toggleBorder" /> Show experimental border
+            </div>
         </div>
     </div>
 
@@ -1116,7 +1131,7 @@
 
                 // show the modal
                 $( '#overlay' ).show();
-                $( '#modal' ).show();
+                $( '#modal' ).addClass('open');
 
                 // update the url query string
                 var newurl = window.location.origin + window.location.pathname + '?icon='+icon;
@@ -1132,18 +1147,25 @@
                 $( '#toggleRarity a.active' ).removeClass( 'active' );
                 $( this ).addClass( 'active' );
             });
+
             // gradient toggle
             $( '#toggleGradient' ).on( 'click', function( e ) {
                 $( '#iconPreview i' ).toggleClass( 'ss-grad' );
+            });
+
+            // border toggle
+            $( '#toggleBorder' ).on( 'click', function( e ) {
+                $( '#iconPreview i' ).toggleClass( 'ss-border' );
             });
 
             // close modal button
             $( '#closeModal' ).on( 'click', function( e ) {
                 $( '#overlay' ).hide();
                 $( '#toggleGradient' ).prop( 'checked', false );
+                $( '#toggleBorder' ).prop( 'checked', false );
                 $( '#toggleRarity a.active' ).removeClass( 'active' );
                 $( '#toggleRarity a[data-rarity="common"]' ).addClass( 'active' );
-                $( '#modal' ).hide();
+                $( '#modal' ).removeClass('open');
             });
 
             // get icon from url, if there is one

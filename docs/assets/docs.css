@@ -367,23 +367,23 @@ footer {
     display: none;
 }
 
+    #modal.open {
+        display:  flex;
+        flex-direction: row;
+    }
+
     #iconPreview {
-        float: left;
-        width: 340px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 30px;
+        width: 320px;
     }
     #iconPreview .ss {
         font-size: 300px;
-        margin: 0 40px 0 0;
-        width: 300px;
-        height: 300px;
-        text-align: center;
-        vertical-align: top;
-        float: left;
     }
 
     #iconMeta {
-        float: left;
-        width: 420px;
     }
     #iconMeta h3 {
         font-size: 24px;
@@ -441,6 +441,10 @@ footer {
                 background: #E6E2D7;
                 color: #445566;
             }
+
+    #withGradient {
+        padding: 0 0 5px;
+    }
 
     #closeModalContainer {
         position: absolute;

@@ -24,6 +24,23 @@
     // set default inner to white unless a rarity is declared
     color: #fff;
 
+    /**
+     * white sections are ::after
+     * color sections are ::before */
+
+    // Warhammer 40K
+    // 2 glyphs b/c we have a custom color glyph
+    &.@{ss-prefix}-40k {
+        &::before {
+            content: "\e999";
+            width: 100%;
+        }
+        &::after {
+            content: "\e99b";
+            color: #fff !important;
+        }
+    }
+
     // Adventures in the Forgotten Realms
     &.@{ss-prefix}-xdnd::after,
     &.@{ss-prefix}-afr::after {
@@ -46,6 +63,19 @@
     // Commander Collection: Black
     &.@{ss-prefix}-cc2::after {
         content: "\e988";
+    }
+
+    // Dominaria United Commander
+    // 2 glyphs b/c we have a custom color glyph
+    &.@{ss-prefix}-dmc {
+        &::before {
+            content: "\e995";
+            width: 100%;
+        }
+        &::after {
+            content: "\e997";
+            color: #fff !important;
+        }
     }
 
     // Jumpstart: Historic Horizons
