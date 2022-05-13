@@ -71,7 +71,7 @@
 .ss-duo.ss-c21::after {
   content: "\e97f";
 }
-.ss-duo.ss-cbl::after {
+.ss-duo.ss-clb::after {
   content: "\e992";
 }
 .ss-duo.ss-cc2::after {
@@ -97,9 +97,9 @@
 .ss-duo.ss-mythic::after {
   color: #000;
 }
-.ss-duo.ss-uncommon.ss-cbl::after,
-.ss-duo.ss-rare.ss-cbl::after,
-.ss-duo.ss-mythic.ss-cbl::after {
+.ss-duo.ss-uncommon.ss-clb::after,
+.ss-duo.ss-rare.ss-clb::after,
+.ss-duo.ss-mythic.ss-clb::after {
   color: #fff;
 }
 /**
@@ -726,7 +726,7 @@
 .ss-nnc:before {
   content: "\e98e";
 }
-.ss-cbl:before {
+.ss-clb:before {
   content: "\e991";
 }
 /**
