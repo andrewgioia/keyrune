@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.10.0' !default;
+$keyrune_version: '3.11.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -227,6 +227,7 @@ $keyrune_sets: (
     ("Kamigawa: Neon Dynasty", "neo", "\e98c"),
     ("Streets of New Capenna", "snc", "\e98b"),
     ("Dominaria United", "dmu", "\e993"),
+    ("The Brothers' War", "bro", "\e99d"),
     //
     // Command zone
     ("Vanguard", "van", "\e655"),
@@ -268,6 +269,7 @@ $keyrune_sets: (
     ("Commander Legends: Battle for Baldur's Gate", "clb", "\e991"),
     ("Dominaria United Commander", "dmc", "\e994"),
     ("Warhammer 40K", "40k", "\e998"),
+    ("The Brothers' War Commander", "brc", "\e99f"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
@@ -291,6 +293,7 @@ $keyrune_sets: (
     ("Modern Horizons 2", "mh2", "\e97b"),
     ("Strixhaven: Mystical Archives", "sta", "\e980"),
     ("Double Masters 2022", "2x2", "\e99c"),
+    ("The Brothers' War Retro Artifacts", "brr", "\e9a0"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
@@ -404,6 +407,7 @@ $keyrune_sets: (
     ("Heroes of the Realm 2017", "htr17", "\e687"),
     ("Judge Academy 2020", "j20", "\e96a"),
     ("Zendikar Rising Expeditions", "zne", "\e97a"),
+    ("The Brothers' War Transformers", "bot", "\e99e"),
     //
     // Secret Lairs
     ("Secret Lair: Ultimate Edition", "slu", "\e687"),

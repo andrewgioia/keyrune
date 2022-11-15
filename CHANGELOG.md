@@ -10,6 +10,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.11.0] 2022-11-15 Brothers' War sets
+
+* **Added:** The Brothers' War (BRO) set symbol ([#195](https://github.com/andrewgioia/keyrune/issues/195))
+* **Added:** The Brothers' War Commander (BRC) set symbol ([#195](https://github.com/andrewgioia/keyrune/issues/195))
+* **Added:** The Brothers' War Retro Artifacts (BRR) set symbol ([#195](https://github.com/andrewgioia/keyrune/issues/195))
+* **Added:** The Brothers' War Transformers (BOT) set symbol ([#195](https://github.com/andrewgioia/keyrune/issues/195))
+
 ### [3.10.0] 2022-05-13 Summer 2022 set symbols and typo fixes
 
 * **Added:** Dominaria United (DMU) set symbol

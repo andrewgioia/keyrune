@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.10.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.10.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.10.0') format('woff2'), url('../fonts/keyrune.woff?v=3.10.0') format('woff'), url('../fonts/keyrune.ttf?v=3.10.0') format('truetype'), url('../fonts/keyrune.svg?v=3.10.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.11.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.11.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.11.0') format('woff2'), url('../fonts/keyrune.woff?v=3.11.0') format('woff'), url('../fonts/keyrune.ttf?v=3.11.0') format('truetype'), url('../fonts/keyrune.svg?v=3.11.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -645,6 +645,9 @@
 .ss-dmu:before {
   content: "\e993";
 }
+.ss-bro:before {
+  content: "\e99d";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -757,6 +760,9 @@
 .ss-40k:before {
   content: "\e998";
 }
+.ss-brc:before {
+  content: "\e99f";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -824,6 +830,9 @@
 }
 .ss-2x2:before {
   content: "\e99c";
+}
+.ss-brr:before {
+  content: "\e9a0";
 }
 /**
  * Beginner */
@@ -1119,6 +1128,9 @@
 }
 .ss-zne:before {
   content: "\e97a";
+}
+.ss-bot:before {
+  content: "\e99e";
 }
 /**
  * Secret Lairs */
