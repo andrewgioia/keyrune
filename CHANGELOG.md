@@ -10,6 +10,18 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.12.0] 2023-02-03 Phyrexia: All Will Be One
+
+This was _very late_ and I apologize to everyone relying on this project. Some of these were slated for v3.11.1 but I just pushed them into v3.12.0.
+
+* **Added:** Phyrexia: All Will Be One (ONE) and ONE Commander (ONC) set symbols ([#198](https://github.com/andrewgioia/keyrune/issues/198))
+* **Added:** March of the Machines (MAT) set symbol ([#198](https://github.com/andrewgioia/keyrune/issues/198))
+* **Added:** Alchemy: Dominaria (YDMU) set symbol ([#196](https://github.com/andrewgioia/keyrune/issues/198))
+* **Added:** Dominaria Remastered (DMR) set symbol ([#194](https://github.com/andrewgioia/keyrune/issues/194))
+* **Added:** Game Night 2022 (GN3) set symbol ([#192](https://github.com/andrewgioia/keyrune/issues/192))
+* **Added:** Alchemy Horizons: Baldur's Gate (HBG) set symbol ([#193](https://github.com/andrewgioia/keyrune/issues/193))
+* **Added:** Alchemy: Dominaria (YDMU) set symbol (the A23 symbol) ([#196](https://github.com/andrewgioia/keyrune/issues/196))
+
 ### [3.11.0] 2022-11-15 Brothers' War sets
 
 * **Added:** The Brothers' War (BRO) set symbol ([#195](https://github.com/andrewgioia/keyrune/issues/195))
