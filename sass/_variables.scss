@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.12.0' !default;
+$keyrune_version: '3.12.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -61,7 +61,8 @@ $dual-layered: (
     'dmc': '\e997',
     'j21': '\e984',
     'mid': '\e979',
-    'ncc': '\e990'
+    'ncc': '\e990',
+    'scd': '\e9ac'
 ) !default;
 
 // sets
@@ -264,7 +265,6 @@ $keyrune_sets: (
     ("Kaldheim Commander", "khc", "\e97d"),
     ("Commander 2021", "c21", "\e97e"),
     ("Forgotten Realms Commander", "afc", "\e981"),
-    ("Jumpstart: Historic Horizons", "j21", "\e983"),
     ("Innistrad: Midnight Hunt Commander", "mic", "\e985"),
     ("Innistrad: Crimson Vow Commander", "voc", "\e986"),
     ("Commander Collection: Black", "cc2", "\e987"),
@@ -276,6 +276,7 @@ $keyrune_sets: (
     ("The Brothers' War Commander", "brc", "\e99f"),
     ("Phyrexia: All Will Be One Commander", "onc", "\e9a8"),
     ("March of the Machines Commander", "moc", "\e9a9"),
+    ("Starter Commander Decks", "scd", "\e9ab"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
@@ -298,8 +299,10 @@ $keyrune_sets: (
     ("Mystery Booster", "mb1", "\e971"),
     ("Modern Horizons 2", "mh2", "\e97b"),
     ("Strixhaven: Mystical Archives", "sta", "\e980"),
+    ("Jumpstart: Historic Horizons", "j21", "\e983"),
     ("Double Masters 2022", "2x2", "\e99c"),
     ("The Brothers' War Retro Artifacts", "brr", "\e9a0"),
+    ("Jumpstart 2022", "j22", "\e9ad"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
@@ -457,7 +460,8 @@ $keyrune_sets: (
     ("Alternate 4th Edition", "x4ea", "\e929"),
     ("APAC Lands", "papac", "\e92a"),
     ("Euro Lands", "peuro", "\e92b"),
-    ("Friday Night Magic", "pfnm", "\e937")
+    ("Friday Night Magic", "pfnm", "\e937"),
+    ("30th Anniversary Edition", "30a", "\e9aa")
 ) !default;
 
 // display glyph correctly

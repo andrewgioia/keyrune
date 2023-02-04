@@ -11,6 +11,12 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.12.1] 2023-02-04 Hotfix for missing supplementals
+
+* **Added:** Jumpstart 2022 (J22) set symbol
+* **Added:** Commander Starter Decks (SCD) set symbol; includes inner white layer
+* **Added:** 30th Anniversary Edition (30A) alternate symbol; @todo draw official text symbol used on the cards
+
 ### [3.12.0] 2023-02-03 Phyrexia: All Will Be One
 
 This was _very late_ and I apologize to everyone relying on this project. Some of these were slated for v3.11.1 but I just pushed them into v3.12.0.
@@ -23,6 +29,7 @@ This was _very late_ and I apologize to everyone relying on this project. Some o
 * **Added:** Alchemy Horizons: Baldur's Gate (HBG) set symbol ([#193](https://github.com/andrewgioia/keyrune/issues/193))
 * **Added:** Alchemy: Dominaria (YDMU) set symbol (the A23 symbol) ([#196](https://github.com/andrewgioia/keyrune/issues/196))
 * **Fixed:** Alchemy 2022 (A22) set symbol corrected with Beleren font for the "22." Unsure what font was used in the previous glyph or how that even happened.
+* Happy birthday, James!
 
 ### [3.11.0] 2022-11-15 Brothers' War sets
 
