@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.11.0' !default;
+$keyrune_version: '3.12.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -228,6 +228,10 @@ $keyrune_sets: (
     ("Streets of New Capenna", "snc", "\e98b"),
     ("Dominaria United", "dmu", "\e993"),
     ("The Brothers' War", "bro", "\e99d"),
+    // 2023 sets
+    ("Phyrexia: All Will Be One", "one", "\e9a1"),
+    ("March of the Machines", "mom", "\e9a2"),
+    ("March of the Machines: The Aftermath", "mat", "\e9a3"),
     //
     // Command zone
     ("Vanguard", "van", "\e655"),
@@ -270,6 +274,8 @@ $keyrune_sets: (
     ("Dominaria United Commander", "dmc", "\e994"),
     ("Warhammer 40K", "40k", "\e998"),
     ("The Brothers' War Commander", "brc", "\e99f"),
+    ("Phyrexia: All Will Be One Commander", "onc", "\e9a8"),
+    ("March of the Machines Commander", "moc", "\e9a9"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
@@ -372,6 +378,8 @@ $keyrune_sets: (
     ("Game Night", "gnt", "\e94d"),
     ("Game Night 2019", "gn2", "\e964"),
     ("Time Spiral Remastered", "tsr", "\e976"),
+    ("Dominaria Remastered", "dmr", "\e9a4"),
+    ("Game Night: Free for All", "gn3", "\e9a5"),
     //
     // Promos
     ("Guru", "pgru", "\e683"),
@@ -432,6 +440,9 @@ $keyrune_sets: (
     ("Historic Anthology 1", "ha1", "\e96b"),
     ("Amonkhet Remastered", "akr", "\e970"),
     ("Kaladesh Remastered", "klr", "\e97c"),
+    ("Alchemy 2022", "y22", "\e989"),
+    ("Alchemy Horizons: Baldur's Gate", "hbg", "\e9a6"),
+    ("Alchemy: Dominaria", "ydmu", "\e9a7"),
     //
     // Unsets
     ("Unglued", "ugl", "\e691"),

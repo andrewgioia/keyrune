@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.11.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.11.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.11.0') format('woff2'), url('../fonts/keyrune.woff?v=3.11.0') format('woff'), url('../fonts/keyrune.ttf?v=3.11.0') format('truetype'), url('../fonts/keyrune.svg?v=3.11.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.12.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.12.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.12.0') format('woff2'), url('../fonts/keyrune.woff?v=3.12.0') format('woff'), url('../fonts/keyrune.ttf?v=3.12.0') format('truetype'), url('../fonts/keyrune.svg?v=3.12.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -648,6 +648,16 @@
 .ss-bro:before {
   content: "\e99d";
 }
+/* 2023 Sets */
+.ss-one:before {
+  content: "\e9a1";
+}
+.ss-mom:before {
+  content: "\e9a2";
+}
+.ss-mat:before {
+  content: "\e9a3";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -762,6 +772,12 @@
 }
 .ss-brc:before {
   content: "\e99f";
+}
+.ss-onc:before {
+  content: "\e9a8";
+}
+.ss-moc:before {
+  content: "\e9a9";
 }
 /**
  * Reprint */
@@ -1034,6 +1050,12 @@
 .ss-tsr:before {
   content: "\e976";
 }
+.ss-dmr:before {
+  content: "\e9a4";
+}
+.ss-gn3:before {
+  content: "\e9a5";
+}
 /**
  * Promotional */
 .ss-pgru:before {
@@ -1192,6 +1214,12 @@
 }
 .ss-y22:before {
   content: "\e989";
+}
+.ss-hbg:before {
+  content: "\e9a6";
+}
+.ss-ydmu:before {
+  content: "\e9a7";
 }
 /**
  * Un-serious */

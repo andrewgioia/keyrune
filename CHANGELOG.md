@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file.
 
 ## Unreleased
 
+* Update ONC once official, higher resolution image comes out.
 * Support apparent "tri-layered" symbols, like SNC and CBL where there's a rarity layer, a fixed white layer, and a border. These are unlike the dual-layered symbols like AFR and MID.
 * Validate all class names to handle official set codes, MODO codes, and MTGJson/community fallbacks
 * Update this changelog for better formatting 
@@ -14,13 +15,14 @@ All notable changes to this project will be documented in this file.
 
 This was _very late_ and I apologize to everyone relying on this project. Some of these were slated for v3.11.1 but I just pushed them into v3.12.0.
 
-* **Added:** Phyrexia: All Will Be One (ONE) and ONE Commander (ONC) set symbols ([#198](https://github.com/andrewgioia/keyrune/issues/198))
-* **Added:** March of the Machines (MAT) set symbol ([#198](https://github.com/andrewgioia/keyrune/issues/198))
-* **Added:** Alchemy: Dominaria (YDMU) set symbol ([#196](https://github.com/andrewgioia/keyrune/issues/198))
+* **Added:** Phyrexia: All Will Be One (ONE) and ONE Commander (ONC) set symbols ([#198](https://github.com/andrewgioia/keyrune/issues/198)). ONC awaiting official WOTC image for tracing and update.
+* **Added:** March of the Machines (MOM) and MOM Commander (MOC) set symbols. Note that MOM doesn't look very good because of the size of the border on the print version; this will become much better in v4 when borders are integrated as glyphs.
+* **Added:** March of the Machines: The Aftermath (MAT) set symbol ([#198](https://github.com/andrewgioia/keyrune/issues/198))
 * **Added:** Dominaria Remastered (DMR) set symbol ([#194](https://github.com/andrewgioia/keyrune/issues/194))
-* **Added:** Game Night 2022 (GN3) set symbol ([#192](https://github.com/andrewgioia/keyrune/issues/192))
+* **Added:** Game Night: Free for All (GN3) set symbol ([#192](https://github.com/andrewgioia/keyrune/issues/192))
 * **Added:** Alchemy Horizons: Baldur's Gate (HBG) set symbol ([#193](https://github.com/andrewgioia/keyrune/issues/193))
 * **Added:** Alchemy: Dominaria (YDMU) set symbol (the A23 symbol) ([#196](https://github.com/andrewgioia/keyrune/issues/196))
+* **Fixed:** Alchemy 2022 (A22) set symbol corrected with Beleren font for the "22." Unsure what font was used in the previous glyph or how that even happened.
 
 ### [3.11.0] 2022-11-15 Brothers' War sets
 
