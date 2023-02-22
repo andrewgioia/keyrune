@@ -1,0 +1,145 @@
+aside {
+    margin-top: 1rem;
+    text-align: center;
+    width: min(91.66667%, 900px);
+
+    > p.big {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding: 0 0.5rem;
+    }
+}
+@media only screen and (min-width: 768px) {
+    aside > p.big {
+        font-size: 1.3rem;
+        padding: 0;
+    }
+}
+
+dialog {
+    background: var(--bg-content);
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--text-default);
+    padding: 0;
+    width: calc(100% - 3rem);
+}
+@media only screen and (min-width: 768px) {
+    dialog {
+        border-radius: 2rem;
+        width: min(91.6667%, 1440px);
+    }
+}
+
+#explode {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    > div.explode-inner {
+        width: 100%;
+    }
+
+    > div.explode-text {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    #explode {
+        flex-direction: row;
+        margin-top: 6rem;
+
+        > div.explode-inner {
+            width: 50%;
+        }
+
+        > div.explode-text {
+            padding-left: 0;
+            padding-right: 3rem;
+        }
+    }
+}
+
+//
+// isometric icon
+
+div.isometric {
+    align-self: stretch;
+    display: flex;
+    font-family: keyrune;
+    height: 12rem;
+    justify-content: center;
+    margin: 0;
+    perspective: 50rem;
+    position: relative;
+    width: 100%;
+
+    svg {
+        position: absolute;
+
+        &.border {
+            z-index: 1;
+        }
+        &.rarity {
+            z-index: 2;
+        }
+        &.inner {
+            z-index: 3;
+        }
+    }
+
+    &.explode {
+        svg.border {
+            animation: explode-border 16s ease-in-out infinite;
+        }
+        svg.rarity {
+            animation: explode-rarity 16s ease-in-out infinite;
+        }
+        svg.inner {
+            animation: explode-inner 16s ease-in-out infinite;
+        }
+    }
+}
+@keyframes explode-border {
+    0%, 40%, 100% {
+        transform: scale(1.4);
+    }
+    50%, 90% {
+        transform: translateX(-20%) translateY(-4%) rotateY(37.5deg) scale(1);
+    }
+}
+@keyframes explode-rarity {
+    0%, 40%, 100% {
+        transform: scale(1.4);
+    }
+    50%, 90% {
+        transform: translateX(2.5%) translateY(2.5%) rotateY(37.5deg) scale(1);
+    }
+}
+@keyframes explode-inner {
+    0%, 40%, 100% {
+        transform: scale(1.4);
+    }
+    50%, 90% {
+        transform: translateX(25%) translateY(10%) rotateY(37.5deg) scale(1);
+    }
+}
+@media only screen and (min-width: 1025px) {
+    div.isometric {
+        height: 100%;
+    }
+}
+
+//
+// features
+
+.feature {
+    grid-column: span 6 / span 6;
+}
+@media only screen and (min-width: 768px) {
+    .feature { grid-column: span 3 / span 3; }
+}
+@media only screen and (min-width: 1025px) {
+    .feature { grid-column: span 2 / span 2; }
+}

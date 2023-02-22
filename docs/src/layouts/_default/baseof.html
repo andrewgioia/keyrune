@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="generator" content="Hand crafted">
+    <script type="text/javascript" src='{{ "assets/js/first.js" | relURL }}'></script>
+    <link rel="stylesheet" type="text/css" href='{{ "assets/css/docs.css" | relURL }}'>
+    <link rel="stylesheet" type="text/css" href='{{ "assets/css/keyrune.css" | relURL }}'>
+    <script type="text/javascript" src='{{ "assets/js/zepto.js" | relURL }}'></script>
+    <script type="text/javascript" src='{{ "assets/js/zepto.fx.js" | relURL }}'></script>
+    <script type="text/javascript" src='{{ "assets/js/glitz.js" | relURL }}'></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+  <body>
+    {{ block "header" . }}
+    {{ end }}
+    {{ block "main" . }}
+    {{ end }}
+    {{ block "footer" . }}
+    {{ end }}
+    {{ block "modal" . }}
+    {{ end }}
+  </body>
+</html>

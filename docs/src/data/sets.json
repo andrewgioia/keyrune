@@ -1,0 +1,1100 @@
+{
+  "core": {
+    "order": 0,
+    "name": "Core Sets",
+    "description": "Base sets of tournament cards with larger pools of mostly reprints.",
+    "sets": {
+      "lea": {
+        "code": "lea",
+        "name": "Limited Edition Alpha",
+        "display": "Alpha",
+        "nicknames": [
+          "Alpha"
+        ],
+        "rarity": "e000",
+        "border": "e001",
+        "inner": "e002",
+        "release": "1993-08-05",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "core",
+          "alpha",
+          "limited"
+        ]
+      },
+      "leb": {
+        "code": "leb",
+        "name": "Limited Edition Beta",
+        "display": "Beta",
+        "nicknames": [
+          "Beta"
+        ],
+        "rarity": "e003",
+        "border": "e004",
+        "inner": "e005",
+        "release": "1993-10-04",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "core",
+          "beta",
+          "limited"
+        ]
+      },
+      "2ed": {
+        "code": "2ed",
+        "name": "Unlimited",
+        "display": "Unlimited",
+        "nicknames": [
+          "2nd Edition"
+        ],
+        "rarity": "e006",
+        "border": "e007",
+        "inner": "e008",
+        "release": "1993-12-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "core",
+          "unlimited",
+          "second"
+        ]
+      },
+      "3ed": {
+        "code": "3ed",
+        "name": "Revised",
+        "display": "Revised",
+        "nicknames": [
+          "3rd Edition"
+        ],
+        "rarity": "e015",
+        "border": "e016",
+        "inner": "e017",
+        "release": "1994-04-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "core",
+          "revised",
+          "third",
+          "3e"
+        ]
+      },
+      "4ed": {
+        "code": "4ed",
+        "name": "Fourth Edition",
+        "display": "Fourth Edition",
+        "nicknames": [
+          "4th Edition"
+        ],
+        "rarity": "e033",
+        "border": "e034",
+        "inner": false,
+        "release": "1995-04-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "4e": {
+            "code": "4e",
+            "name": "Gatherer code",
+            "release": "1995-04-01"
+          }
+        },
+        "tags": [
+          "core",
+          "fourth",
+          "4th",
+          "4e"
+        ]
+      },
+      "5ed": {
+        "code": "5ed",
+        "name": "Fifth Edition",
+        "display": "Fifth Edition",
+        "nicknames": [
+          "5th Edition"
+        ],
+        "rarity": "e054",
+        "border": "e055",
+        "inner": false,
+        "release": "1997-03-24",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "5e": {
+            "code": "5e",
+            "name": "Gatherer code",
+            "release": "1997-03-24"
+          }
+        },
+        "tags": [
+          "core",
+          "fifth",
+          "5th",
+          "5e"
+        ]
+      },
+      "6ed": {
+        "code": "6ed",
+        "name": "Classic Sixth Edition",
+        "display": "Sixth Edition",
+        "nicknames": [
+          "Sixth Edition",
+          "6th Edition"
+        ],
+        "rarity": "e07e",
+        "border": "e07f",
+        "inner": false,
+        "release": "1999-04-21",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "6e": {
+            "code": "6e",
+            "name": "Gatherer code",
+            "release": "1999-04-21"
+          }
+        },
+        "tags": [
+          "core",
+          "sixth",
+          "6th",
+          "6e"
+        ]
+      }
+    }
+  },
+  "expansion": {
+    "order": 1,
+    "name": "Expansions",
+    "description": "Expert-level tournament sets.",
+    "sets": {
+      "arn": {
+        "code": "arn",
+        "name": "Arabian Nights",
+        "display": "Arabian Nights",
+        "nicknames": false,
+        "rarity": "e00f",
+        "border": "e010",
+        "inner": "e011",
+        "release": "1993-12-17",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "an": {
+            "code": "an",
+            "name": "Gatherer code",
+            "release": "1993-12-17"
+          }
+        },
+        "tags": [
+          "arabian",
+          "nights",
+          "scimitar",
+          "an"
+        ]
+      },
+      "atq": {
+        "code": "atq",
+        "name": "Antiquities",
+        "display": "Antiquities",
+        "nicknames": false,
+        "rarity": "e012",
+        "border": "e013",
+        "inner": false,
+        "release": "1994-03-04",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "aq": {
+            "code": "aq",
+            "name": "Gatherer code",
+            "release": "1994-03-04"
+          }
+        },
+        "tags": [
+          "antiquities",
+          "anvil",
+          "aq"
+        ]
+      },
+      "leg": {
+        "code": "leg",
+        "name": "Legends",
+        "display": "Legends",
+        "nicknames": false,
+        "rarity": "e01b",
+        "border": "e01c",
+        "inner": "e01d",
+        "release": "1994-06-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "le": {
+            "code": "le",
+            "name": "Gatherer code",
+            "release": "1994-06-01"
+          }
+        },
+        "tags": [
+          "legends",
+          "column"
+        ]
+      },
+      "drk": {
+        "code": "drk",
+        "name": "The Dark",
+        "display": "The Dark",
+        "nicknames": false,
+        "rarity": "e024",
+        "border": "e025",
+        "inner": false,
+        "release": "1994-08-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "dk": {
+            "code": "dk",
+            "name": "Gatherer code",
+            "release": "1994-08-01"
+          }
+        },
+        "tags": [
+          "dark",
+          "moon"
+        ]
+      },
+      "fem": {
+        "code": "fem",
+        "name": "Fallen Empires",
+        "display": "Fallen Empires",
+        "nicknames": false,
+        "rarity": "e02a",
+        "border": "e02b",
+        "inner": false,
+        "release": "1994-11-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "fe": {
+            "code": "fe",
+            "name": "Gatherer code",
+            "release": "1994-11-01"
+          }
+        },
+        "tags": [
+          "fallen",
+          "empires",
+          "crown"
+        ]
+      },
+      "ice": {
+        "code": "ice",
+        "name": "Ice Age",
+        "display": "Ice Age",
+        "nicknames": false,
+        "rarity": "e039",
+        "border": "e03a",
+        "inner": "e03b",
+        "release": "1995-06-03",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "ia": {
+            "code": "ia",
+            "name": "Gatherer code",
+            "release": "1995-06-03"
+          }
+        },
+        "tags": [
+          "ice",
+          "age",
+          "snow",
+          "snowflake"
+        ]
+      },
+      "hml": {
+        "code": "hml",
+        "name": "Homelands",
+        "display": "Homelands",
+        "nicknames": false,
+        "rarity": "e045",
+        "border": "e046",
+        "inner": "e047",
+        "release": "1995-10-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "hm": {
+            "code": "hm",
+            "name": "Gatherer code",
+            "release": "1995-10-01"
+          }
+        },
+        "tags": [
+          "homelands",
+          "globe"
+        ]
+      },
+      "all": {
+        "code": "all",
+        "name": "Alliances",
+        "display": "Alliances",
+        "nicknames": false,
+        "rarity": "e048",
+        "border": "e049",
+        "inner": "e04a",
+        "release": "1996-06-10",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "al": {
+            "code": "al",
+            "name": "Gatherer code",
+            "release": "1996-06-10"
+          }
+        },
+        "tags": [
+          "alliances",
+          "flag"
+        ]
+      },
+      "mir": {
+        "code": "mir",
+        "name": "Mirage",
+        "display": "Mirage",
+        "nicknames": false,
+        "rarity": "e04b",
+        "border": "e04c",
+        "inner": false,
+        "release": "1996-10-08",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "mi": {
+            "code": "mi",
+            "name": "Gatherer code",
+            "release": "1996-10-08"
+          }
+        },
+        "tags": [
+          "mirage",
+          "jamuraa",
+          "palm",
+          "tree"
+        ]
+      },
+      "vis": {
+        "code": "vis",
+        "name": "Mirage",
+        "display": "Mirage",
+        "nicknames": false,
+        "rarity": "e051",
+        "border": "e052",
+        "inner": "e053",
+        "release": "1997-02-03",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "vi": {
+            "code": "vi",
+            "name": "Gatherer code",
+            "release": "1997-02-03"
+          }
+        },
+        "tags": [
+          "visions",
+          "jamuraa",
+          "banner"
+        ]
+      },
+      "wth": {
+        "code": "wth",
+        "name": "Weatherlight",
+        "display": "Weatherlight",
+        "nicknames": false,
+        "rarity": "e060",
+        "border": "e061",
+        "inner": "e062",
+        "release": "1997-06-09",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "weatherlight",
+          "book",
+          "jamuraa"
+        ]
+      },
+      "tmp": {
+        "code": "tmp",
+        "name": "Tempest",
+        "display": "Tempest",
+        "nicknames": false,
+        "rarity": "e063",
+        "border": "e064",
+        "inner": false,
+        "release": "1997-10-14",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "te": {
+            "code": "te",
+            "name": "Gatherer code",
+            "release": "1997-10-14"
+          }
+        },
+        "tags": [
+          "tempest",
+          "rath",
+          "lightning",
+          "bolt"
+        ]
+      },
+      "sth": {
+        "code": "sth",
+        "name": "Stronghold",
+        "display": "Stronghold",
+        "nicknames": false,
+        "rarity": "e066",
+        "border": "e067",
+        "inner": false,
+        "release": "1998-03-02",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "st": {
+            "code": "st",
+            "name": "Gatherer code",
+            "release": "1998-03-02"
+          }
+        },
+        "tags": [
+          "stronghold",
+          "rath",
+          "door",
+          "gate"
+        ]
+      },
+      "exo": {
+        "code": "exo",
+        "name": "Exodus",
+        "display": "Exodus",
+        "nicknames": false,
+        "rarity": "e069",
+        "border": "e06a",
+        "inner": false,
+        "release": "1998-06-15",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "st": {
+            "code": "ex",
+            "name": "Gatherer code",
+            "release": "1998-06-15"
+          }
+        },
+        "tags": [
+          "exodus",
+          "rath",
+          "bridge"
+        ]
+      }
+    }
+  },
+  "command": {
+    "order": 2,
+    "name": "Command Zone",
+    "description": "Commander/EDH, Planechase, and other sets that use the command zone.",
+    "sets": {
+      "past": {
+        "code": "pvan",
+        "name": "Vanguard",
+        "display": "Vanguard",
+        "nicknames": false,
+        "rarity": "e05d",
+        "border": "e05e",
+        "inner": false,
+        "release": "1997-05-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "vanguard",
+          "feather"
+        ]
+      }
+    }
+  },
+  "reprint": {
+    "order": 3,
+    "name": "Reprints",
+    "description": "Sets that contain only reprinted cards.",
+    "sets": {
+      "sum": {
+        "code": "sum",
+        "name": "Summer Magic",
+        "display": "Summer Magic (Edgar)",
+        "nicknames": false,
+        "rarity": "e01e",
+        "border": "e01f",
+        "inner": false,
+        "release": "1994-06-21",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "summer"
+        ]
+      },
+      "fbb": {
+        "code": "fbb",
+        "name": "Foreign Black Border",
+        "display": "Foreign Black Border",
+        "nicknames": [
+          "3rd Edition FBB",
+          "Revised FBB",
+          "FBB"
+        ],
+        "rarity": "e018",
+        "border": "e019",
+        "inner": "e01a",
+        "release": "1995-04-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "3edfbb": {
+            "code": "3edfbb",
+            "name": "Alternate",
+            "release": "1995-04-01"
+          }
+        },
+        "tags": [
+          "foreign",
+          "black",
+          "border"
+        ]
+      },
+      "4bb": {
+        "code": "4bb",
+        "name": "Fourth Edition Foreign Black Border",
+        "display": "Fourth Edition FBB",
+        "nicknames": [
+          "4th Edition FBB",
+          "FBB"
+        ],
+        "rarity": "e036",
+        "border": "e037",
+        "inner": "",
+        "release": "1995-04-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "4edfbb": {
+            "code": "4edfbb",
+            "name": "Alternate",
+            "release": "1995-04-01"
+          }
+        },
+        "tags": [
+          "foreign",
+          "black",
+          "border"
+        ]
+      },
+      "chr": {
+        "code": "chr",
+        "name": "Chronicles",
+        "display": "Chronicles",
+        "nicknames": false,
+        "rarity": "e03c",
+        "border": "e03d",
+        "inner": false,
+        "release": "1995-07-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "ch": {
+            "code": "ch",
+            "name": "Gatherer code",
+            "release": "1995-07-01"
+          }
+        },
+        "tags": [
+          "chronicles"
+        ]
+      },
+      "ren": {
+        "code": "ren",
+        "name": "Renaissance",
+        "display": "Renaissance",
+        "nicknames": false,
+        "rarity": "e03f",
+        "border": "e040",
+        "inner": false,
+        "release": "1995-08-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "renaissance",
+          "custom"
+        ]
+      },
+      "rin": {
+        "code": "rin",
+        "name": "Rinascimento",
+        "display": "Rinascimento",
+        "nicknames": false,
+        "rarity": "e042",
+        "border": "e043",
+        "inner": false,
+        "release": "1995-08-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "renaissance",
+          "rinascimento",
+          "italian",
+          "custom"
+        ]
+      }
+    }
+  },
+  "supplemental": {
+    "order": 4,
+    "name": "Supplemental Sets",
+    "description": "All other non-Standard printed sets designed to supplement the game.",
+    "sets": {}
+  },
+  "digital": {
+    "order": 5,
+    "name": "Digital Sets",
+    "description": "Digital-only sets and releases with no print companion.",
+    "sets": {
+      "past": {
+        "code": "past",
+        "name": "Astral Cards",
+        "display": "Astral Cards",
+        "nicknames": [
+          "Astral"
+        ],
+        "rarity": "e057",
+        "border": "e058",
+        "inner": false,
+        "release": "1997-04-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "astral"
+        ]
+      }
+    }
+  },
+  "beginner": {
+    "order": 6,
+    "name": "Beginner Sets",
+    "description": "Preconfigured sets and decks geared towards new players.",
+    "sets": {
+      "itp": {
+        "code": "itp",
+        "name": "Introductory Two-Player Set",
+        "display": "Introductory 2-Player Set",
+        "nicknames": false,
+        "rarity": "e04e",
+        "border": "e04f",
+        "inner": false,
+        "release": "1996-12-31",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "x2ps": {
+            "code": "x2ps",
+            "name": "Backwards compatibility",
+            "release": "1996-12-31"
+          }
+        },
+        "tags": [
+          "introductory",
+          "beginner",
+          "starter",
+          "2ps"
+        ]
+      },
+      "por": {
+        "code": "por",
+        "name": "Portal",
+        "display": "Portal",
+        "nicknames": false,
+        "rarity": "e05a",
+        "border": "e05b",
+        "inner": "e05c",
+        "release": "1997-05-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "portal",
+          "beginner"
+        ]
+      },
+      "p02": {
+        "code": "por",
+        "name": "Portal Second Age",
+        "display": "Portal Second Age",
+        "nicknames": [
+          "Portal 2"
+        ],
+        "rarity": "e06c",
+        "border": "e06d",
+        "inner": false,
+        "release": "1998-06-24",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "portal",
+          "second",
+          "beginner"
+        ]
+      }
+    }
+  },
+  "premium": {
+    "order": 7,
+    "name": "Premium Sets",
+    "description": "Collectable, foil, or other special printed sets.",
+    "sets": {
+      "ced": {
+        "code": "ced",
+        "name": "Collectors' Edition",
+        "display": "Collectors' Edition",
+        "nicknames": [
+          "CE"
+        ],
+        "rarity": "e009",
+        "border": "e00a",
+        "inner": "e00b",
+        "release": "1993-12-10",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases":  {
+          "ce": {
+            "code": "ce",
+            "name": "Gatherer code",
+            "release": "1993-12-10"
+          }
+        },
+        "tags": [
+          "collector",
+          "collectors"
+        ]
+      },
+      "cei": {
+        "code": "cei",
+        "name": "International Collectors' Edition",
+        "display": "Intl. Collectors' Edition",
+        "nicknames": [
+          "IE",
+          "ICE",
+          "Intl. Collectors' Edition"
+        ],
+        "rarity": "e00c",
+        "border": "e00d",
+        "inner": "e00e",
+        "release": "1993-12-10",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "ie": {
+            "code": "ie",
+            "name": "Gatherer code",
+            "release": "1993-12-10"
+          }
+        },
+        "tags": [
+          "international",
+          "collector",
+          "collectors"
+        ]
+      }
+    }
+  },
+  "promo": {
+    "order": 8,
+    "name": "Promos",
+    "description": "Promotional sets or cards included in other media or advertisements.",
+    "sets": {
+      "pdrc": {
+        "code": "pdrc",
+        "name": "Dragon Con",
+        "display": "Dragon Con",
+        "nicknames": false,
+        "rarity": "e021",
+        "border": "e022",
+        "inner": false,
+        "release": "1994-07-15",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "dragon",
+          "con",
+          "dragoncon"
+        ]
+      },
+      "phpr": {
+        "code": "phpr",
+        "name": "HarperPrism Book Promos",
+        "display": "HarperPrism Book Promos",
+        "nicknames": [
+          "Book Inserts",
+          "Book Promos"
+        ],
+        "rarity": "e027",
+        "border": "e028",
+        "inner": false,
+        "release": "1994-09-01",
+        "subgroup": false,
+        "version":"4.0.0",
+        "aliases": {
+          "pleaf": {
+            "code": "pbook",
+            "name": "Book Promo",
+            "release": "1994-09-01"
+          }
+        },
+        "tags": [
+          "harper",
+          "prism",
+          "book"
+        ]
+      },
+      "pmei": {
+        "code": "pmei",
+        "name": "Media Inserts",
+        "display": "Media Inserts",
+        "nicknames": [
+          "Leaf Promos",
+          "Media Promos"
+        ],
+        "rarity": "e02d",
+        "border": "e02e",
+        "inner": false,
+        "release": "1995-01-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "pleaf": {
+            "code": "pleaf",
+            "name": "Leaf Promo",
+            "release": "1995-01-01"
+          }
+        },
+        "tags": [
+          "media",
+          "insert",
+          "leaf"
+        ]
+      },
+      "pmtg": {
+        "code": "pmtg",
+        "name": "Default Promo",
+        "display": "Default Promo",
+        "nicknames": [
+          "MTG Logo Promo"
+        ],
+        "rarity": "e030",
+        "border": "e031",
+        "inner": false,
+        "release": "1995-01-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "plgm": {
+            "code": "plgm",
+            "name": "DCI Legends Membership",
+            "release": "1995-01-01"
+          },
+          "parl": {
+            "code": "parl",
+            "name": "Arena League 1996",
+            "release": "1996-08-02"
+          }
+        },
+        "tags": [
+          "dci",
+          "dci legends",
+          "membership"
+        ]
+      }
+    }
+  },
+  "standalone": {
+    "order": 9,
+    "name": "Standalone Sets",
+    "description": "Experimental, out-of-world, draft inovative, or other releases that can be played on their own.",
+    "sets": {
+      "ugl": {
+        "code": "ugl",
+        "name": "Unglued",
+        "display": "Unglued",
+        "nicknames": false,
+        "rarity": "e06f",
+        "border": "e070",
+        "inner": false,
+        "release": "1998-08-11",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "unglued",
+          "acorn"
+        ]
+      }
+    }
+  },
+  "alternative": {
+    "order": 10,
+    "name": "Alternatives",
+    "description": "Other official versions of set symbols used by WOTC.",
+    "sets": {
+      "legchr": {
+        "code": "legchr",
+        "name": "Legends (Chronicles)",
+        "display": "Legends (Chronicles)",
+        "nicknames": [
+          "Legends (CHR Alternative)"
+        ],
+        "rarity": "f8f6",
+        "border": "f8f5",
+        "inner": false,
+        "release": "1995-07-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "leg2": {
+            "code": "leg2",
+            "name": "Short alternate code",
+            "release": "1995-07-01"
+          }
+        },
+        "tags": [
+          "legends",
+          "chronicles",
+          "alternative"
+        ]
+      },
+      "pgc98": {
+        "code": "pgc98",
+        "name": "Gen Con 1998 Oversized Promo",
+        "display": "Gen Con 98 Promo",
+        "nicknames": [
+          "Oversized 90s Promo",
+          "Gen Con 98 Oversized Promo"
+        ],
+        "rarity": "f8f4",
+        "border": "f8f3",
+        "inner": false,
+        "release": "1996-04-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "oversized",
+          "gen con",
+          "[[Incoming!|o90p]]"
+        ]
+      },
+      "po": {
+        "code": "po",
+        "name": "Portal (Gatherer)",
+        "display": "Portal (Gatherer)",
+        "nicknames": [
+          "Portal (Gatherer Alternative)"
+        ],
+        "rarity": "f8f2",
+        "border": "f8f1",
+        "inner": "f8f0",
+        "release": "1997-05-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "por2": {
+            "code": "por2",
+            "name": "Standardized code",
+            "release": "1997-05-01"
+          }
+        },
+        "tags": [
+          "portal",
+          "gatherer",
+          "alternative"
+        ]
+      },
+      "wl": {
+        "code": "wl",
+        "name": "Weatherlight (Gatherer)",
+        "display": "Weatherlight (Gatherer)",
+        "nicknames": [
+          "Weatherlight (Gatherer Alternative)"
+        ],
+        "rarity": "f8ef",
+        "border": "f8ee",
+        "inner": false,
+        "release": "1997-06-09",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": {
+          "por2": {
+            "code": "wth2",
+            "name": "Standardized code",
+            "release": "1997-06-09"
+          }
+        },
+        "tags": [
+          "weatherlight",
+          "gatherer",
+          "alternative"
+        ]
+      }
+    }
+  },
+  "unofficial": {
+    "order": 11,
+    "name": "Unofficial",
+    "description": "Home grown symbols to fill in gaps and other game needs.",
+    "sets": {
+      "palp": {
+        "code": "palp",
+        "name": "Asia Pacific Land Program",
+        "display": "APAC Lands",
+        "nicknames": [
+          "APAC Lands",
+          "APAC",
+          "APAC Promos"
+        ],
+        "rarity": "e072",
+        "border": "e073",
+        "inner": false,
+        "release": "1998-09-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "aliases": false,
+        "tags": [
+          "apac",
+          "asia",
+          "pacific",
+          "lands"
+        ]
+      }
+    }
+  }
+}

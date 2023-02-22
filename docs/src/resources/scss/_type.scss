@@ -1,0 +1,155 @@
+h1 {
+    font-family: Beleren;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+@media only screen and (min-width: 1025px) {
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: Beleren;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p,
+li,
+span {
+    font-weight: 500;
+    line-height: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    > a {
+        text-decoration: underline;
+        -webkit-text-underline-position: from-font;
+        text-underline-position: from-font;
+
+        &[target="blank"] {
+            &::after {
+                content: "\2197";
+                display: inline-block;
+                //font-family: keyrune;
+                margin-left: 0.1rem;
+                position: relative;
+                text-decoration: none;
+                top: 0;
+                transition: top 100ms ease-in-out;
+            }
+            &:hover::after {
+                top: -3px;
+            }
+        }
+    }
+
+    &.big {
+        font-size: 1.15rem;
+        font-weight: 400;
+        line-height: 1.875rem;
+    }
+}
+@media only screen and (min-width: 1025px) {
+    p.big {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+}
+
+a,
+button {
+    color: inherit;
+    text-decoration: none;
+
+    &.button {
+        background: var(--bg-button);
+        border: 2px solid #{map.get($keyrune-ui, "black", "900")};
+        border-radius: 0.625rem;
+        box-shadow: 3px 3px 0 0 #{map.get($keyrune-ui, "black", "900")};
+        color: var(--text-default);
+        font-size: 1.25rem;
+        padding: 0.75rem 1.5rem 0.8rem;
+        position: relative;
+        //transition: background 125ms ease-in-out;
+
+        &:focus,
+        &:active {
+            box-shadow: none;
+            top: 3px;
+            left: 3px;
+        }
+
+        &:hover {
+            background: var(--bg-hover);
+        }
+    }
+
+    &.bubble {
+        position: relative;
+
+        > img,
+        > svg {
+            position: relative;
+            z-index: 1;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: calc(100% + 2rem);
+            height: calc(100% + 2rem);
+            border-radius: 1rem;
+            background: #{map.get($keyrune-ui, "black", "500")};
+            top: -1rem;
+            left: -1rem;
+            z-index: 0;
+            transform: scale(0.5);
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        &:hover::before {
+            opacity: 1;
+            animation: bubble 200ms ease-in-out;
+            transform: scale(1);
+        }
+
+        &.light {
+            &::before {
+                background: var(--bg-hover);
+            }
+            &::before {
+
+            }
+        }
+    }
+}
+@keyframes bubble {
+    0% {
+        transform: scale(0.5);
+    }
+    80% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

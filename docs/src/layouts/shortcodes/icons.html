@@ -1,0 +1,46 @@
+{{- range sort .Site.Data.sets "order" "asc" -}}
+    {{- if isset . "sets" -}}
+        {{- $group := . -}}
+<div class="set-group" data-id="{{ $group.order }}" data-count="{{ len $group.sets }} ">
+    <div class="set-group-info sticky">
+        <h2 class="my-4 pr-8">
+            {{ .name }}
+        </h2>
+        <p class="mb-6 pr-8">
+            {{ .description }}
+        </p>
+    </div>
+    <div class="set-group-icons">
+        <div class="set-group-grid grid pt-2">
+        {{- range $index, $set := sort $group.sets "release" "asc" -}}
+            <figure
+                class="grid-span-1 checkerboard"
+                data-code="{{ $set.code }}"
+                data-name="{{ $set.name }}"
+                data-tags="{{ $set.tags | jsonify }}"
+                data-order="{{ $group.order }}"
+                data-group="{{ $group.name }}"
+                data-rarity="{{ $set.rarity }}"
+                data-border="{{ $set.border }}"
+                data-inner="{{ $set.inner }}"
+                data-version="{{ $set.version }}"
+                data-aliases="{{ $set.aliases | jsonify }}"
+            >
+                <i class="ss ss-rarity-common ss-{{ $set.code }} ss-fw"></i>
+                <span class="icon-code">{{ $set.code }}</span>
+                <span class="icon-name">{{ $set.display }}</span>
+            </figure>
+        {{- end -}}
+        </div>
+    </div>
+</div>
+    {{- end -}}
+{{- end -}}
+<div id="search-empty" class="flex flex-col w-full text-center pt-8 hidden">
+    <p class="big mb-0">
+        No set symbols matched your search!
+    </p>
+    <p>
+        <a href="/sets" class="clear search-link" data-q="">Clear it</a> or try a cool one like <a href="?q=tmp" class="search-link" data-q="tmp">TMP</a> 😎
+    </p>
+</div>

@@ -1,0 +1,25 @@
+$keyrune-aliases: (
+    legchr: ("leg2"),
+    wl: ("wth2"),
+    pmei: ("pleaf"), // legacy support
+    pmtg: ("plgm", "parl"), // originally was plgm, but upgrading this to pmtg b/c of its ubiquity
+    po: ("por2"),
+    pvan: ("van"), // legacy support
+);
+
+$keyrune-complete-aliases: (
+    past: ("pmic"),
+    //
+    // shooting star
+    pmei: ("o90p", "pcel", "olep"),
+    //
+    // m in circle
+    pmtg: ("ptc", "rqs", "pred", "wc97", "jgp", "wc98"),
+    //
+    // expansion tokens
+    exo: ("pexo"),
+    sth: ("psth"),
+    tmp: ("ptmp"),
+    ugl: ("tugl"),
+    vis: ("mgb")
+);

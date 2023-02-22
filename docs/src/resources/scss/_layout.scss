@@ -1,0 +1,394 @@
+$keyrune-ui: (
+    "black": (
+        "100": "#ddd",
+        "300": "#3a3a3a",
+        "500": "#202124",
+        "600": "#18191b",
+        "700": "#131417",
+        "900": "#000",
+    ),
+    "blue": (
+        "300": "#29c9ff", //#74c0fc
+        "500": "#0060e4",
+    ),
+    "tan": (
+        "100": "#f2f1f1",
+        "300": "#e0dfde",
+        "500": "#d2d1cf",
+        "700": "#8e8d88",
+        "900": "#575754",
+    ),
+    "white": "#fff",
+);
+
+$keyrune-ui-font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+:root {
+    --bg-body:       #{map.get($keyrune-ui, "white")};          // default page background
+    --bg-hover:      #{map.get($keyrune-ui, "tan", "100")};     // slightly darker page accent
+    --bg-content:    #{map.get($keyrune-ui, "tan", "300")};     // contrast background for white boxes
+    --bg-accent:     #{map.get($keyrune-ui, "tan", "500")};     // slightly darker content accent
+    --bg-border:     #{map.get($keyrune-ui, "black", "900")};   // top border
+    --bg-button:     #{map.get($keyrune-ui, "white")};          // button background
+    --bg-active:     #{map.get($keyrune-ui, "tan", "500")};     // button active state background
+    --icon-default:  #{map.get($keyrune-ui, "black", "700")};   // default .ss rarity color
+    --link-default:  #{map.get($keyrune-ui, "blue", "500")};    // primary brand color
+    --text-default:  #{map.get($keyrune-ui, "black", "900")};   // default body text color
+    --text-accent:   #{map.get($keyrune-ui, "tan", "700")};     // alternate body text color
+    --text-contrast: #{map.get($keyrune-ui, "white")};          // opposite of body text color
+    --svg-border:    #{map.get($keyrune-ui, "white")};          // exploding svg border color
+    --rgba-fg:       rgba(255,255,255,0.916667);
+    --rgba-modal:    rgba(0, 0, 0, 0.75);
+
+    &[data-mode="dark"] {
+        --bg-body:       #{map.get($keyrune-ui, "black", "500")};
+        --bg-hover:      #{map.get($keyrune-ui, "black", "700")};
+        --bg-content:    #{map.get($keyrune-ui, "black", "300")};
+        --bg-accent:     #{map.get($keyrune-ui, "tan", "700")};
+        --bg-border:     #{map.get($keyrune-ui, "tan", "900")};
+        --bg-button:     #{map.get($keyrune-ui, "black", "600")};
+        --bg-active:     #{map.get($keyrune-ui, "blue", "300")};
+        --icon-default:  #{map.get($keyrune-ui, "black", "900")};
+        --link-default:  #{map.get($keyrune-ui, "blue", "300")};
+        --text-default:  #{map.get($keyrune-ui, "white")};
+        --text-accent:   #{map.get($keyrune-ui, "tan", "500")};
+        --text-contrast: #{map.get($keyrune-ui, "black", "100")};
+        --svg-border:    #{map.get($keyrune-ui, "tan", "900")};
+        --rgba-fg:       rgba(0,0,0,0.9);
+        --rgba-modal:    rgba(0, 0, 0, 0.5);
+    }
+}
+
+@font-face {
+    font-family: 'Beleren';
+    src: url( '../font/beleren.eot' );
+    src: url( '../font/beleren.woff' ) format( 'woff' ),
+         url( '../font/beleren.ttf' ) format( 'truetype' ),
+         url( '../font/beleren.svg' ) format( 'svg' );
+    font-weight: normal;
+
+    font-style: normal;
+}
+
+html {
+    font-family: #{$keyrune-ui-font-family};
+    font-size: 16px;
+}
+
+body {
+    align-items: center;
+    background: var(--bg-body);
+    border-top: 5px solid var(--bg-border);
+    color: var(--text-default);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    //transition: background 100ms ease-in-out, color 100ms ease-in-out;
+}
+
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    justify-content: space-between;
+    width: 100%;
+
+    mark {
+        background: transparent;
+        color: var(--text-default);
+        flex-shrink: 0;
+        font-family: Beleren;
+        font-size: 1.5rem;
+        margin-left: 1.5rem;
+
+        i {
+            color: var(--text-default) !important;
+        }
+
+        b {
+            border: 0.1rem solid var(--text-default);
+            border-radius: 0.35rem;
+            font-family: #{$keyrune-ui-font-family};
+            font-size: 0.75rem;
+            font-weight: normal;
+            margin: 0 0 0 0.5rem;
+            padding: 0.2rem 0.4rem;
+            position: relative;
+            top: -0.2rem;
+        }
+    }
+
+    menu {
+        flex-grow: 1;
+    }
+
+    #toggle-nav {
+        position: absolute;
+        right: 1.5rem;
+        z-index: 20;
+
+        svg {
+            .line {
+                opacity: 1;
+                transform: rotate(0) translateY(0) translateX(0);
+                transform-origin: 1em 1em;
+                transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+
+                &.top {
+                    transform-origin: 6px 6px;
+                }
+
+                &.bot {
+                    transform-origin: 3px 17px;
+                }
+            }
+
+            &.closed {
+                .line.top {
+                    transform: rotate(45deg) scale(1.1);
+                }
+                .line.mid {
+                    opacity: 0;
+                }
+                .line.bot {
+                    transform: rotate(-45deg) scale(1.1);
+                }
+            }
+        }
+    }
+
+    nav {
+        transform: translateY(-100%);
+        flex-direction: column;
+        margin-right: 2.5rem;
+
+        > a {
+            align-items: center;
+            color: var(--text-default);
+            display: flex;
+            margin: 0 1rem;
+
+            > svg {
+                margin-right: 0.5rem;
+            }
+
+            > span {
+                text-decoration: underline transparent;
+                transition: text-decoration 150ms ease-in-out;
+                -webkit-text-underline-position: from-font;
+                text-underline-position: under-font;
+            }
+
+            &:hover span {
+                text-decoration-color: var(--text-default);
+            }
+        }
+
+        &.mobile {
+            background: var(--rgba-fg);
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 1rem;
+            padding-bottom: 2.5rem;
+            width: 100%;
+            z-index: 10;
+            border-radius: 0 0 2rem 2rem;
+            transform: translateY(0);
+            transition: transform 200ms ease-in-out;
+
+            > a {
+                font-size: 1.75rem;
+                padding: 0.5rem 1rem;
+
+                > span {
+                    padding-left: 0.5rem;
+                }
+            }
+
+            #hide-nav {
+                right: 0;
+                position: absolute;
+                top: 1rem;
+            }
+
+            #mode {
+                margin-top: 1rem;
+                text-align: center;
+
+                label.toggle {
+                    height: 2.5rem;
+                    width: 8rem;
+                    border-radius: 1.5rem;
+
+                    &::after {
+                        font-size: 1.33rem;
+                        width: 3rem;
+                        height: 2.1rem;
+                    }
+                }
+                input.toggle:checked + label::after {
+                    left: calc(100% - 0.25rem);
+                }
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    #toggle-nav {
+        display: none;
+    }
+    header {
+        mark {
+            margin-left: 2.5rem;
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+            transform: none;
+        }
+    }
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+section {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    width: min(83.3333%, 1200px);
+}
+
+footer {
+    background-color: #{map.get($keyrune-ui, "black", "700")};
+    color: #{map.get($keyrune-ui, "white")};
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+    width: 100%;
+
+    &.border {
+        border-top: 1px solid #{map.get($keyrune-ui, "black", "300")};
+    }
+
+    menu {
+        li {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    iframe html body {
+        background: var(--bg-body);
+    }
+}
+
+//
+// dark/light toggle
+
+#mode {
+    height: 2rem;
+
+    input.toggle {
+        height: 0;
+        width: 0;
+        visibility: hidden;
+
+        &:checked + label {
+            background: var(--bg-body);
+
+            &::after {
+                content: "\e024";
+                left: calc(100% - 0.2rem);
+                transform: translateX(-100%);
+            }
+        }
+    }
+
+    label.toggle {
+        cursor: pointer;
+        width: 4rem;
+        height: 1.75rem;
+        border: 2px solid var(--bg-accent);
+        display: inline-flex;
+        border-radius: 1rem;
+        position: relative;
+        transition: border-color 150ms ease-in-out;
+
+        &:hover {
+            border-color: var(--text-accent);
+        }
+
+        &::after {
+            content: "\e012";
+            color: var(--text-default);
+            font-family: keyrune;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 0.2rem;
+            left: 0.2rem;
+            width: 1.75rem;
+            height: 1.35rem;
+            background: var(--bg-content);
+            border-radius: 1rem;
+            transition: all 300ms ease-in-out;
+        }
+
+        &:active::after {
+            width: 2rem;
+        }
+    }
+}
+:root[data-mode="dark"] {
+    #mode label::after {
+        content: "\e024";
+        left: calc(100% - 0.2rem);
+        transform: translateX(-100%);
+    }
+}
+
+//
+// design stuff
+
+.angle {
+    &-top {
+        &::before {
+            content: '';
+            display: block;
+            height: 4rem;
+            background: var(--bg-body);
+            position: absolute;
+            top: 0;
+            width: 100%;
+            clip-path: polygon(0% 0%, 100% 0, 100% 0, 0% 100%);
+        }
+    }
+}
+
+.checkerboard {
+    background-image:
+        linear-gradient(45deg, var(--bg-hover) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--bg-hover) 75%),
+        linear-gradient(45deg, transparent 75%, var(--bg-hover) 75%),
+        linear-gradient(45deg, var(--bg-hover) 25%, transparent 25%);
+    background-size: 1.5rem 1.5rem;
+    background-position: 0 0, 0 0, -0.75rem -0.75rem, 0.75rem 0.75rem;
+}
+
+.bg {
+    &-accent { background-color: var(--bg-accent); }
+    &-black { background-color: #{map.get($keyrune-ui, "black", "700")}; }
+    &-content { background-color: var(--bg-content); }
+}

@@ -1,0 +1,15 @@
+@use    "sass:map";
+
+:root {
+    --border-default:  #{map.get($keyrune-colors, "white")};
+    --border-contrast: #{map.get($keyrune-colors, "black", "700")};
+    --rarity-default:  #{map.get($keyrune-colors, "black", "700")};
+    --inner-default:   #{map.get($keyrune-colors, "white")};
+
+    &[data-mode='dark'] {
+        --border-default:  #{map.get($keyrune-colors, "black", "100")};
+        --border-contrast:  #{map.get($keyrune-colors, "black", "900")};
+        --rarity-default: #{map.get($keyrune-colors, "black", "900")};
+        --inner-default:   #{map.get($keyrune-colors, "white")};
+    }
+}

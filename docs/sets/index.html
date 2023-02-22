@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Keyrune</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <meta name="generator" content="Hand crafted">
+    <script type="text/javascript" src='/assets/js/first.js'></script>
+    <link rel="stylesheet" type="text/css" href='/assets/css/docs.css'>
+    <link rel="stylesheet" type="text/css" href='/assets/css/keyrune.css'>
+    <script type="text/javascript" src='/assets/js/zepto.js'></script>
+    <script type="text/javascript" src='/assets/js/zepto.fx.js'></script>
+    <script type="text/javascript" src='/assets/js/glitz.js'></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+  <body>
+    
+<header>
+    <mark class="flex flex-row flex-align-center flex-justify-start">
+        <a href="/" class="flex flex-row flex-align-center flex-justify-start mr-1">
+            <i class="ss ss-leg relative mr-2"></i>
+            <span>Keyrune</span>
+        </a>
+        <a href="https://github.com/andrewgioia/keyrune/archive/refs/heads/master.zip" target="blank">
+            <b>4.0.0</b>
+        </a>
+    </mark>
+    <a href="javascript:;" data-nav="mobile" id="toggle-nav">
+        <svg id="toggle-nav-svg" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6" class="line top"></line>
+            <line x1="4" y1="12" x2="20" y2="12" class="line mid"></line>
+            <line x1="4" y1="18" x2="20" y2="18" class="line bot"></line>
+        </svg>
+    </a>
+    <nav>
+        <a href="sets">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+              <polyline points="2 17 12 22 22 17"></polyline>
+              <polyline points="2 12 12 17 22 12"></polyline>
+            </svg>
+            <span>
+                Sets
+            </span>
+        </a>
+        <a href="docs">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+            </svg>
+            <span>
+                Documentation
+            </span>
+        </a>
+        <a href="examples">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 4V2"></path>
+              <path d="M15 16v-2"></path>
+              <path d="M8 9h2"></path>
+              <path d="M20 9h2"></path>
+              <path d="M17.8 11.8 19 13"></path>
+              <path d="M15 9h0"></path>
+              <path d="M17.8 6.2 19 5"></path>
+              <path d="m3 21 9-9"></path>
+              <path d="M12.2 6.2 11 5"></path>
+            </svg>
+            <span>
+                Examples
+            </span>
+        </a>
+        <a href="https://github.com/andrewgioia/keyrune" target="blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
+            <span>
+                GitHub
+            </span>
+        </a>
+
+        <div id="mode" class="ml-2">
+            <input class="toggle" type="checkbox" id="switch" />
+            <label class="toggle" for="switch"></label>
+        </div>
+
+    </nav>
+</header>
+
+    
+<main aria-role="main">
+    <aside>
+    <form id="search" action="/sets" method="get" class="mt-8 flex flex-col flex-align-center">
+        <div class="input-wrapper w-full relative flex flex-row">
+            <input id="icon-filter" name="q" type="text" value="" placeholder="Search for a set symbol...">
+            <button class="button hidden md:block" type="submit">
+                Search
+            </button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="clear hidden search-link" data-q="">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="search">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </div>
+        <span class="flex flex-row flex-align-center flex-justify-between w-full mt-4">
+            <span class="search-left">Version 4.0.0 contains 44 <span class="hidden sm:inline">unique</span> icons.</span>
+            <span class="search-right hidden md:inline pr-8">Try <a href="?q=leg" class="search-link" data-q="leg">LEG</a> or <a href="?q=dragon" class="search-link" data-q="dragon">Dragon</a>!</span>
+        </span>
+    </form>
+</aside>
+<section id="icon-menu" class="mt-12 flex flex-row flex-justify-between w-wide">
+    <div class="flex flex-row flex-justify-start w-full">
+        <menu id="icon-rarity" class="flex flex-row group">
+            <li>
+                <input type="radio" name="rarity" value="common" id="rarity_common" data-class="ss-rarity-common" autocomplete="off" checked>
+                <label for="rarity_common" class="left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 480 480" fill="#000">
+                        <path d="M76.084 233.472c32.743.6 66.086 9.848 90.981 31.943 38.842 32.943 56.938 85.032 59.388 134.772-41.791 2.449-81.733-20.196-106.478-52.889-24.995-32.893-38.142-73.285-43.891-113.826zM314.734 263.465c24.395-21.245 57.239-29.043 88.932-29.293-7.549 55.138-30.794 112.026-77.384 145.319-20.696 15.847-47.24 21.446-72.885 20.546 2-50.889 20.246-104.078 61.337-136.572z"/>
+                        <path d="M0 326.652c27.944-5.799 58.338-8.798 85.932-.5 15.647 16.247 26.045 37.043 43.191 51.99 16.797 16.746 39.642 24.444 61.137 33.243-51.089 2.049-105.328-6.299-147.519-37.143C25.095 361.895 11.498 344.749 0 326.652zM396.517 325.453c27.245-7.149 55.939-4.15 83.483-.5-13.047 29.693-40.492 50.339-68.486 65.036-38.292 16.997-80.883 24.245-122.724 22.295 25.345-11.547 52.889-21.595 71.185-43.69 13.197-13.498 20.696-32.594 36.542-43.141zM240.411 67.406c9.095 113.171 14.161 127.959 17.311 136.752 4.164.275 8.331.546 12.486.949 2.058-5.379 1.543-5.816 4.128-16.599 5.504-22.959 10.206-85.849 10.992-90.052 4.049 30.719 6.02 49.969 8.808 69.137 1.288 8.797 2.705 17.584 4.594 26.299 1.275 5.692 2.635 11.404 4.932 16.855 3.865 1.043 7.7 2.188 11.416 3.595 1.164-2.36 2.04-4.825 2.864-7.293 2.077-6.414 3.516-12.974 4.775-19.545 7.193-45.814 7.357-49.301 8.517-52.438 7.511 64.209 9.074 81.156 10.495 98.112-10.891 3.646-21.19 8.651-30.606 14.706-12.598 8.107-23.565 18.13-32.655 29.309a145.967 145.967 0 0 0-22.363 38.106c-6.77 17.051-10.589 34.923-12.65 52.876-.666 5.513-1.076 11.045-1.709 16.558-.23 1.472-.27 3.025-1.072 4.365h-.396c-.735-.991-.78-2.215-.987-3.346-.486-3.658-.756-7.335-1.137-11.002-.957-9.885-2.317-19.748-4.403-29.5-3.423-15.951-8.598-31.704-16.674-46.322-9.236-16.766-21.947-32.137-37.875-44.403a137.479 137.479 0 0 0-40.031-21.355c2.022-23.601 4.16-47.2 6.637-70.769 3.795-27.076 3.918-27.058 3.979-27.048 3.582 19.723 4.793 30.573 6.572 41.585 1.416 8.825 3.013 17.644 5.445 26.301 1.095 3.764 2.288 7.526 4.025 11.105 3.716-1.417 7.594-2.43 11.422-3.605 1.391-.426 1.498-.045 3.408-10.445 4.93-26.846 14.804-103.264 14.935-101.92 7.466 76.397 9.956 86.065 11.82 95.266.838 3.884 1.787 7.703 3.289 11.437 4.156-.331 8.311-.668 12.475-.913 3.117-8.667 4.899-15.997 6.008-25.038 9.434-76.926 11.085-113.454 11.225-111.72z"/>
+                    </svg>
+                </label>
+            </li>
+            <li>
+                <input type="radio" name="rarity" value="uncommon" id="rarity_uncommon" data-class="ss-rarity-uncommon" autocomplete="off">
+                <label for="rarity_uncommon" class="center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 480 480" fill="#707883">
+                        <path d="M76.084 233.472c32.743.6 66.086 9.848 90.981 31.943 38.842 32.943 56.938 85.032 59.388 134.772-41.791 2.449-81.733-20.196-106.478-52.889-24.995-32.893-38.142-73.285-43.891-113.826zM314.734 263.465c24.395-21.245 57.239-29.043 88.932-29.293-7.549 55.138-30.794 112.026-77.384 145.319-20.696 15.847-47.24 21.446-72.885 20.546 2-50.889 20.246-104.078 61.337-136.572z"/>
+                        <path d="M0 326.652c27.944-5.799 58.338-8.798 85.932-.5 15.647 16.247 26.045 37.043 43.191 51.99 16.797 16.746 39.642 24.444 61.137 33.243-51.089 2.049-105.328-6.299-147.519-37.143C25.095 361.895 11.498 344.749 0 326.652zM396.517 325.453c27.245-7.149 55.939-4.15 83.483-.5-13.047 29.693-40.492 50.339-68.486 65.036-38.292 16.997-80.883 24.245-122.724 22.295 25.345-11.547 52.889-21.595 71.185-43.69 13.197-13.498 20.696-32.594 36.542-43.141zM240.411 67.406c9.095 113.171 14.161 127.959 17.311 136.752 4.164.275 8.331.546 12.486.949 2.058-5.379 1.543-5.816 4.128-16.599 5.504-22.959 10.206-85.849 10.992-90.052 4.049 30.719 6.02 49.969 8.808 69.137 1.288 8.797 2.705 17.584 4.594 26.299 1.275 5.692 2.635 11.404 4.932 16.855 3.865 1.043 7.7 2.188 11.416 3.595 1.164-2.36 2.04-4.825 2.864-7.293 2.077-6.414 3.516-12.974 4.775-19.545 7.193-45.814 7.357-49.301 8.517-52.438 7.511 64.209 9.074 81.156 10.495 98.112-10.891 3.646-21.19 8.651-30.606 14.706-12.598 8.107-23.565 18.13-32.655 29.309a145.967 145.967 0 0 0-22.363 38.106c-6.77 17.051-10.589 34.923-12.65 52.876-.666 5.513-1.076 11.045-1.709 16.558-.23 1.472-.27 3.025-1.072 4.365h-.396c-.735-.991-.78-2.215-.987-3.346-.486-3.658-.756-7.335-1.137-11.002-.957-9.885-2.317-19.748-4.403-29.5-3.423-15.951-8.598-31.704-16.674-46.322-9.236-16.766-21.947-32.137-37.875-44.403a137.479 137.479 0 0 0-40.031-21.355c2.022-23.601 4.16-47.2 6.637-70.769 3.795-27.076 3.918-27.058 3.979-27.048 3.582 19.723 4.793 30.573 6.572 41.585 1.416 8.825 3.013 17.644 5.445 26.301 1.095 3.764 2.288 7.526 4.025 11.105 3.716-1.417 7.594-2.43 11.422-3.605 1.391-.426 1.498-.045 3.408-10.445 4.93-26.846 14.804-103.264 14.935-101.92 7.466 76.397 9.956 86.065 11.82 95.266.838 3.884 1.787 7.703 3.289 11.437 4.156-.331 8.311-.668 12.475-.913 3.117-8.667 4.899-15.997 6.008-25.038 9.434-76.926 11.085-113.454 11.225-111.72z"/>
+                    </svg>
+                </label>
+            </li>
+            <li>
+                <input type="radio" name="rarity" value="rare" id="rarity_rare" data-class="ss-rarity-rare" autocomplete="off">
+                <label for="rarity_rare" class="center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 480 480" fill="#b7a066">
+                        <path d="M76.084 233.472c32.743.6 66.086 9.848 90.981 31.943 38.842 32.943 56.938 85.032 59.388 134.772-41.791 2.449-81.733-20.196-106.478-52.889-24.995-32.893-38.142-73.285-43.891-113.826zM314.734 263.465c24.395-21.245 57.239-29.043 88.932-29.293-7.549 55.138-30.794 112.026-77.384 145.319-20.696 15.847-47.24 21.446-72.885 20.546 2-50.889 20.246-104.078 61.337-136.572z"/>
+                        <path d="M0 326.652c27.944-5.799 58.338-8.798 85.932-.5 15.647 16.247 26.045 37.043 43.191 51.99 16.797 16.746 39.642 24.444 61.137 33.243-51.089 2.049-105.328-6.299-147.519-37.143C25.095 361.895 11.498 344.749 0 326.652zM396.517 325.453c27.245-7.149 55.939-4.15 83.483-.5-13.047 29.693-40.492 50.339-68.486 65.036-38.292 16.997-80.883 24.245-122.724 22.295 25.345-11.547 52.889-21.595 71.185-43.69 13.197-13.498 20.696-32.594 36.542-43.141zM240.411 67.406c9.095 113.171 14.161 127.959 17.311 136.752 4.164.275 8.331.546 12.486.949 2.058-5.379 1.543-5.816 4.128-16.599 5.504-22.959 10.206-85.849 10.992-90.052 4.049 30.719 6.02 49.969 8.808 69.137 1.288 8.797 2.705 17.584 4.594 26.299 1.275 5.692 2.635 11.404 4.932 16.855 3.865 1.043 7.7 2.188 11.416 3.595 1.164-2.36 2.04-4.825 2.864-7.293 2.077-6.414 3.516-12.974 4.775-19.545 7.193-45.814 7.357-49.301 8.517-52.438 7.511 64.209 9.074 81.156 10.495 98.112-10.891 3.646-21.19 8.651-30.606 14.706-12.598 8.107-23.565 18.13-32.655 29.309a145.967 145.967 0 0 0-22.363 38.106c-6.77 17.051-10.589 34.923-12.65 52.876-.666 5.513-1.076 11.045-1.709 16.558-.23 1.472-.27 3.025-1.072 4.365h-.396c-.735-.991-.78-2.215-.987-3.346-.486-3.658-.756-7.335-1.137-11.002-.957-9.885-2.317-19.748-4.403-29.5-3.423-15.951-8.598-31.704-16.674-46.322-9.236-16.766-21.947-32.137-37.875-44.403a137.479 137.479 0 0 0-40.031-21.355c2.022-23.601 4.16-47.2 6.637-70.769 3.795-27.076 3.918-27.058 3.979-27.048 3.582 19.723 4.793 30.573 6.572 41.585 1.416 8.825 3.013 17.644 5.445 26.301 1.095 3.764 2.288 7.526 4.025 11.105 3.716-1.417 7.594-2.43 11.422-3.605 1.391-.426 1.498-.045 3.408-10.445 4.93-26.846 14.804-103.264 14.935-101.92 7.466 76.397 9.956 86.065 11.82 95.266.838 3.884 1.787 7.703 3.289 11.437 4.156-.331 8.311-.668 12.475-.913 3.117-8.667 4.899-15.997 6.008-25.038 9.434-76.926 11.085-113.454 11.225-111.72z"/>
+                    </svg>
+                </label>
+            </li>
+            <li>
+                <input type="radio" name="rarity" value="mythic" id="rarity_mythic" data-class="ss-rarity-mythic" autocomplete="off">
+                <label for="rarity_mythic" class="center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 480 480" fill="#bf4427">
+                        <path d="M76.084 233.472c32.743.6 66.086 9.848 90.981 31.943 38.842 32.943 56.938 85.032 59.388 134.772-41.791 2.449-81.733-20.196-106.478-52.889-24.995-32.893-38.142-73.285-43.891-113.826zM314.734 263.465c24.395-21.245 57.239-29.043 88.932-29.293-7.549 55.138-30.794 112.026-77.384 145.319-20.696 15.847-47.24 21.446-72.885 20.546 2-50.889 20.246-104.078 61.337-136.572z"/>
+                        <path d="M0 326.652c27.944-5.799 58.338-8.798 85.932-.5 15.647 16.247 26.045 37.043 43.191 51.99 16.797 16.746 39.642 24.444 61.137 33.243-51.089 2.049-105.328-6.299-147.519-37.143C25.095 361.895 11.498 344.749 0 326.652zM396.517 325.453c27.245-7.149 55.939-4.15 83.483-.5-13.047 29.693-40.492 50.339-68.486 65.036-38.292 16.997-80.883 24.245-122.724 22.295 25.345-11.547 52.889-21.595 71.185-43.69 13.197-13.498 20.696-32.594 36.542-43.141zM240.411 67.406c9.095 113.171 14.161 127.959 17.311 136.752 4.164.275 8.331.546 12.486.949 2.058-5.379 1.543-5.816 4.128-16.599 5.504-22.959 10.206-85.849 10.992-90.052 4.049 30.719 6.02 49.969 8.808 69.137 1.288 8.797 2.705 17.584 4.594 26.299 1.275 5.692 2.635 11.404 4.932 16.855 3.865 1.043 7.7 2.188 11.416 3.595 1.164-2.36 2.04-4.825 2.864-7.293 2.077-6.414 3.516-12.974 4.775-19.545 7.193-45.814 7.357-49.301 8.517-52.438 7.511 64.209 9.074 81.156 10.495 98.112-10.891 3.646-21.19 8.651-30.606 14.706-12.598 8.107-23.565 18.13-32.655 29.309a145.967 145.967 0 0 0-22.363 38.106c-6.77 17.051-10.589 34.923-12.65 52.876-.666 5.513-1.076 11.045-1.709 16.558-.23 1.472-.27 3.025-1.072 4.365h-.396c-.735-.991-.78-2.215-.987-3.346-.486-3.658-.756-7.335-1.137-11.002-.957-9.885-2.317-19.748-4.403-29.5-3.423-15.951-8.598-31.704-16.674-46.322-9.236-16.766-21.947-32.137-37.875-44.403a137.479 137.479 0 0 0-40.031-21.355c2.022-23.601 4.16-47.2 6.637-70.769 3.795-27.076 3.918-27.058 3.979-27.048 3.582 19.723 4.793 30.573 6.572 41.585 1.416 8.825 3.013 17.644 5.445 26.301 1.095 3.764 2.288 7.526 4.025 11.105 3.716-1.417 7.594-2.43 11.422-3.605 1.391-.426 1.498-.045 3.408-10.445 4.93-26.846 14.804-103.264 14.935-101.92 7.466 76.397 9.956 86.065 11.82 95.266.838 3.884 1.787 7.703 3.289 11.437 4.156-.331 8.311-.668 12.475-.913 3.117-8.667 4.899-15.997 6.008-25.038 9.434-76.926 11.085-113.454 11.225-111.72z"/>
+                    </svg>
+                </label>
+            </li>
+            <li>
+                <input type="radio" name="rarity" value="foil" id="rarity_foil" data-class="ss-rarity-foil" autocomplete="off">
+                <label for="rarity_foil" class="right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 480 480" fill="#00afc9" class="foil">
+                        <path d="M76.084 233.472c32.743.6 66.086 9.848 90.981 31.943 38.842 32.943 56.938 85.032 59.388 134.772-41.791 2.449-81.733-20.196-106.478-52.889-24.995-32.893-38.142-73.285-43.891-113.826zM314.734 263.465c24.395-21.245 57.239-29.043 88.932-29.293-7.549 55.138-30.794 112.026-77.384 145.319-20.696 15.847-47.24 21.446-72.885 20.546 2-50.889 20.246-104.078 61.337-136.572z"/>
+                        <path d="M0 326.652c27.944-5.799 58.338-8.798 85.932-.5 15.647 16.247 26.045 37.043 43.191 51.99 16.797 16.746 39.642 24.444 61.137 33.243-51.089 2.049-105.328-6.299-147.519-37.143C25.095 361.895 11.498 344.749 0 326.652zM396.517 325.453c27.245-7.149 55.939-4.15 83.483-.5-13.047 29.693-40.492 50.339-68.486 65.036-38.292 16.997-80.883 24.245-122.724 22.295 25.345-11.547 52.889-21.595 71.185-43.69 13.197-13.498 20.696-32.594 36.542-43.141zM240.411 67.406c9.095 113.171 14.161 127.959 17.311 136.752 4.164.275 8.331.546 12.486.949 2.058-5.379 1.543-5.816 4.128-16.599 5.504-22.959 10.206-85.849 10.992-90.052 4.049 30.719 6.02 49.969 8.808 69.137 1.288 8.797 2.705 17.584 4.594 26.299 1.275 5.692 2.635 11.404 4.932 16.855 3.865 1.043 7.7 2.188 11.416 3.595 1.164-2.36 2.04-4.825 2.864-7.293 2.077-6.414 3.516-12.974 4.775-19.545 7.193-45.814 7.357-49.301 8.517-52.438 7.511 64.209 9.074 81.156 10.495 98.112-10.891 3.646-21.19 8.651-30.606 14.706-12.598 8.107-23.565 18.13-32.655 29.309a145.967 145.967 0 0 0-22.363 38.106c-6.77 17.051-10.589 34.923-12.65 52.876-.666 5.513-1.076 11.045-1.709 16.558-.23 1.472-.27 3.025-1.072 4.365h-.396c-.735-.991-.78-2.215-.987-3.346-.486-3.658-.756-7.335-1.137-11.002-.957-9.885-2.317-19.748-4.403-29.5-3.423-15.951-8.598-31.704-16.674-46.322-9.236-16.766-21.947-32.137-37.875-44.403a137.479 137.479 0 0 0-40.031-21.355c2.022-23.601 4.16-47.2 6.637-70.769 3.795-27.076 3.918-27.058 3.979-27.048 3.582 19.723 4.793 30.573 6.572 41.585 1.416 8.825 3.013 17.644 5.445 26.301 1.095 3.764 2.288 7.526 4.025 11.105 3.716-1.417 7.594-2.43 11.422-3.605 1.391-.426 1.498-.045 3.408-10.445 4.93-26.846 14.804-103.264 14.935-101.92 7.466 76.397 9.956 86.065 11.82 95.266.838 3.884 1.787 7.703 3.289 11.437 4.156-.331 8.311-.668 12.475-.913 3.117-8.667 4.899-15.997 6.008-25.038 9.434-76.926 11.085-113.454 11.225-111.72z"/>
+                    </svg>
+                </label>
+            </li>
+        </menu>
+        <menu id="icon-extras" class="hidden md:flex flex-row">
+            <li>
+                <input type="checkbox" name="border" value="border" id="extras_border" data-class="ss-border" autocomplete="off">
+                <label for="extras_border" class="mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                    </svg>
+                </label>
+            </li>
+            <li>
+                <input type="checkbox" name="inner" value="inner" id="extras_inner" data-class="ss-inner" autocomplete="off">
+                <label for="extras_inner" class="mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="4"></circle>
+                    </svg>
+                </label>
+            </li>
+            <li>
+                <input type="checkbox" name="gradient" value="gradient" id="extras_gradient" data-class="ss-rarity-gradient" autocomplete="off" disabled="disabled">
+                <label for="extras_gradient" class="disabled" disabled="disabled">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5.5,3.5 L19.5,3.5 C20.605,3.5 21.5,4.395 21.5,5.5 L21.5,19.5 C21.5,20.605 20.605,21.5 19.5,21.5 L5.5,21.5 C4.395,21.5 3.5,20.605 3.5,19.5 L3.5,5.5 C3.5,4.395 4.395,3.5 5.5,3.5 z"></path>
+                        <path d="M16.344,21.5 L21.5,16.344"></path>
+                        <path d="M12.344,21.5 L21.5,12.344"></path>
+                        <path d="M7.344,21.5 L21.5,7.344"></path>
+                        <path d="M3.656,18.188 L18.344,3.5"></path>
+                    </svg>
+                </label>
+            </li>
+        </menu>
+    </div>
+    <div class="hidden md:flex flex-row flex-justify-end">
+        <menu id="icon-transparent" class="flex flex-row">
+            <li>
+                <input type="checkbox" name="transparent" value="true" id="transparent" autocomplete="off" checked>
+                <label for="transparent" class="mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19,2 C20.657,2 22,3.343 22,5 L22,19 C22,20.657 20.657,22 19,22 L5,22 C3.343,22 2,20.657 2,19 L2,5 C2,3.343 3.343,2 5,2 L19,2 z M4,14.667 L9.333,14.667 L9.333,20 L14.667,20 L14.667,14.667 L20,14.667 L20,9.333 L14.667,9.333 L14.667,4 L9.333,4 L9.333,9.333 L4,9.333 L4,14.667 z M14.667,9.333 L14.667,14.667 L9.333,14.667 L9.333,9.333 L14.667,9.333 z"></path>
+                    </svg>
+                </label>
+            </li>
+        </menu>
+        <menu id="icon-density" class="flex flex-row group">
+            <li>
+                <input type="radio" name="density" value="roomy" id="size_roomy" autocomplete="off" checked>
+                <label for="size_roomy" class="left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                </label>
+            </li>
+            <li>
+                <input type="radio" name="density" value="normal" id="size_normal" autocomplete="off">
+                <label for="size_normal" class="center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="3" y1="9" x2="21" y2="9"></line>
+                        <line x1="3" y1="15" x2="21" y2="15"></line>
+                        <line x1="9" y1="3" x2="9" y2="21"></line>
+                        <line x1="15" y1="3" x2="15" y2="21"></line>
+                    </svg>
+                </label>
+            </li>
+            <li>
+                <input type="radio" name="density" value="dense" id="size_dense" autocomplete="off">
+                <label for="size_dense" class="right">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="8" y1="6" x2="21" y2="6"></line>
+                        <line x1="8" y1="12" x2="21" y2="12"></line>
+                        <line x1="8" y1="18" x2="21" y2="18"></line>
+                        <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                        <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                        <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                    </svg>
+                </label>
+            </li>
+        </menu>
+    </div>
+</section>
+<section id="results" class="bg-content mt-8 pt-8 pb-16 flex flex-col flex-align-center">
+    <div id="icons" class="w-wide" data-density="roomy">
+        <div class="set-group" data-id="0" data-count="7 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Core Sets
+                </h2>
+                <p class="mb-6 pr-8">
+                    Base sets of tournament cards with larger pools of mostly reprints.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="lea"
+                        data-name="Limited Edition Alpha"
+                        data-tags="[&#34;core&#34;,&#34;alpha&#34;,&#34;limited&#34;]"
+                        data-order="0"
+                        data-group="Core Sets"
+                        data-rarity="e000"
+                        data-border="e001"
+                        data-inner="e002"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-lea ss-fw"></i>
+                        <span class="icon-code">lea</span>
+                        <span class="icon-name">Alpha</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="leb"
+                        data-name="Limited Edition Beta"
+                        data-tags="[&#34;core&#34;,&#34;beta&#34;,&#34;limited&#34;]"
+                        data-order="0"
+                        data-group="Core Sets"
+                        data-rarity="e003"
+                        data-border="e004"
+                        data-inner="e005"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-leb ss-fw"></i>
+                        <span class="icon-code">leb</span>
+                        <span class="icon-name">Beta</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="2ed"
+                        data-name="Unlimited"
+                        data-tags="[&#34;core&#34;,&#34;unlimited&#34;,&#34;second&#34;]"
+                        data-order="0"
+                        data-group="Core Sets"
+                        data-rarity="e006"
+                        data-border="e007"
+                        data-inner="e008"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-2ed ss-fw"></i>
+                        <span class="icon-code">2ed</span>
+                        <span class="icon-name">Unlimited</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="3ed"
+                        data-name="Revised"
+                        data-tags="[&#34;core&#34;,&#34;revised&#34;,&#34;third&#34;,&#34;3e&#34;]"
+                        data-order="0"
+                        data-group="Core Sets"
+                        data-rarity="e015"
+                        data-border="e016"
+                        data-inner="e017"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-3ed ss-fw"></i>
+                        <span class="icon-code">3ed</span>
+                        <span class="icon-name">Revised</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="4ed"
+                        data-name="Fourth Edition"
+                        data-tags="[&#34;core&#34;,&#34;fourth&#34;,&#34;4th&#34;,&#34;4e&#34;]"
+                        data-order="0"
+                        data-group="Core Sets"
+                        data-rarity="e033"
+                        data-border="e034"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;4e&#34;:{&#34;code&#34;:&#34;4e&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1995-04-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-4ed ss-fw"></i>
+                        <span class="icon-code">4ed</span>
+                        <span class="icon-name">Fourth Edition</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="5ed"
+                        data-name="Fifth Edition"
+                        data-tags="[&#34;core&#34;,&#34;fifth&#34;,&#34;5th&#34;,&#34;5e&#34;]"
+                        data-order="0"
+                        data-group="Core Sets"
+                        data-rarity="e054"
+                        data-border="e055"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;5e&#34;:{&#34;code&#34;:&#34;5e&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1997-03-24&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-5ed ss-fw"></i>
+                        <span class="icon-code">5ed</span>
+                        <span class="icon-name">Fifth Edition</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="6ed"
+                        data-name="Classic Sixth Edition"
+                        data-tags="[&#34;core&#34;,&#34;sixth&#34;,&#34;6th&#34;,&#34;6e&#34;]"
+                        data-order="0"
+                        data-group="Core Sets"
+                        data-rarity="e07e"
+                        data-border="e07f"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;6e&#34;:{&#34;code&#34;:&#34;6e&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1999-04-21&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-6ed ss-fw"></i>
+                        <span class="icon-code">6ed</span>
+                        <span class="icon-name">Sixth Edition</span>
+                    </figure></div>
+            </div>
+        </div><div class="set-group" data-id="1" data-count="14 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Expansions
+                </h2>
+                <p class="mb-6 pr-8">
+                    Expert-level tournament sets.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="arn"
+                        data-name="Arabian Nights"
+                        data-tags="[&#34;arabian&#34;,&#34;nights&#34;,&#34;scimitar&#34;,&#34;an&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e00f"
+                        data-border="e010"
+                        data-inner="e011"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;an&#34;:{&#34;code&#34;:&#34;an&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1993-12-17&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-arn ss-fw"></i>
+                        <span class="icon-code">arn</span>
+                        <span class="icon-name">Arabian Nights</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="atq"
+                        data-name="Antiquities"
+                        data-tags="[&#34;antiquities&#34;,&#34;anvil&#34;,&#34;aq&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e012"
+                        data-border="e013"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;aq&#34;:{&#34;code&#34;:&#34;aq&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1994-03-04&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-atq ss-fw"></i>
+                        <span class="icon-code">atq</span>
+                        <span class="icon-name">Antiquities</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="leg"
+                        data-name="Legends"
+                        data-tags="[&#34;legends&#34;,&#34;column&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e01b"
+                        data-border="e01c"
+                        data-inner="e01d"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;le&#34;:{&#34;code&#34;:&#34;le&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1994-06-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-leg ss-fw"></i>
+                        <span class="icon-code">leg</span>
+                        <span class="icon-name">Legends</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="drk"
+                        data-name="The Dark"
+                        data-tags="[&#34;dark&#34;,&#34;moon&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e024"
+                        data-border="e025"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;dk&#34;:{&#34;code&#34;:&#34;dk&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1994-08-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-drk ss-fw"></i>
+                        <span class="icon-code">drk</span>
+                        <span class="icon-name">The Dark</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="fem"
+                        data-name="Fallen Empires"
+                        data-tags="[&#34;fallen&#34;,&#34;empires&#34;,&#34;crown&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e02a"
+                        data-border="e02b"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;fe&#34;:{&#34;code&#34;:&#34;fe&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1994-11-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-fem ss-fw"></i>
+                        <span class="icon-code">fem</span>
+                        <span class="icon-name">Fallen Empires</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="ice"
+                        data-name="Ice Age"
+                        data-tags="[&#34;ice&#34;,&#34;age&#34;,&#34;snow&#34;,&#34;snowflake&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e039"
+                        data-border="e03a"
+                        data-inner="e03b"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;ia&#34;:{&#34;code&#34;:&#34;ia&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1995-06-03&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-ice ss-fw"></i>
+                        <span class="icon-code">ice</span>
+                        <span class="icon-name">Ice Age</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="hml"
+                        data-name="Homelands"
+                        data-tags="[&#34;homelands&#34;,&#34;globe&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e045"
+                        data-border="e046"
+                        data-inner="e047"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;hm&#34;:{&#34;code&#34;:&#34;hm&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1995-10-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-hml ss-fw"></i>
+                        <span class="icon-code">hml</span>
+                        <span class="icon-name">Homelands</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="all"
+                        data-name="Alliances"
+                        data-tags="[&#34;alliances&#34;,&#34;flag&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e048"
+                        data-border="e049"
+                        data-inner="e04a"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;al&#34;:{&#34;code&#34;:&#34;al&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1996-06-10&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-all ss-fw"></i>
+                        <span class="icon-code">all</span>
+                        <span class="icon-name">Alliances</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="mir"
+                        data-name="Mirage"
+                        data-tags="[&#34;mirage&#34;,&#34;jamuraa&#34;,&#34;palm&#34;,&#34;tree&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e04b"
+                        data-border="e04c"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;mi&#34;:{&#34;code&#34;:&#34;mi&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1996-10-08&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-mir ss-fw"></i>
+                        <span class="icon-code">mir</span>
+                        <span class="icon-name">Mirage</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="vis"
+                        data-name="Mirage"
+                        data-tags="[&#34;visions&#34;,&#34;jamuraa&#34;,&#34;banner&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e051"
+                        data-border="e052"
+                        data-inner="e053"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;vi&#34;:{&#34;code&#34;:&#34;vi&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1997-02-03&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-vis ss-fw"></i>
+                        <span class="icon-code">vis</span>
+                        <span class="icon-name">Mirage</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="wth"
+                        data-name="Weatherlight"
+                        data-tags="[&#34;weatherlight&#34;,&#34;book&#34;,&#34;jamuraa&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e060"
+                        data-border="e061"
+                        data-inner="e062"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-wth ss-fw"></i>
+                        <span class="icon-code">wth</span>
+                        <span class="icon-name">Weatherlight</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="tmp"
+                        data-name="Tempest"
+                        data-tags="[&#34;tempest&#34;,&#34;rath&#34;,&#34;lightning&#34;,&#34;bolt&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e063"
+                        data-border="e064"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;te&#34;:{&#34;code&#34;:&#34;te&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1997-10-14&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-tmp ss-fw"></i>
+                        <span class="icon-code">tmp</span>
+                        <span class="icon-name">Tempest</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="sth"
+                        data-name="Stronghold"
+                        data-tags="[&#34;stronghold&#34;,&#34;rath&#34;,&#34;door&#34;,&#34;gate&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e066"
+                        data-border="e067"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;st&#34;:{&#34;code&#34;:&#34;st&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1998-03-02&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-sth ss-fw"></i>
+                        <span class="icon-code">sth</span>
+                        <span class="icon-name">Stronghold</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="exo"
+                        data-name="Exodus"
+                        data-tags="[&#34;exodus&#34;,&#34;rath&#34;,&#34;bridge&#34;]"
+                        data-order="1"
+                        data-group="Expansions"
+                        data-rarity="e069"
+                        data-border="e06a"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;st&#34;:{&#34;code&#34;:&#34;ex&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1998-06-15&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-exo ss-fw"></i>
+                        <span class="icon-code">exo</span>
+                        <span class="icon-name">Exodus</span>
+                    </figure></div>
+            </div>
+        </div><div class="set-group" data-id="2" data-count="1 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Command Zone
+                </h2>
+                <p class="mb-6 pr-8">
+                    Commander/EDH, Planechase, and other sets that use the command zone.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="pvan"
+                        data-name="Vanguard"
+                        data-tags="[&#34;vanguard&#34;,&#34;feather&#34;]"
+                        data-order="2"
+                        data-group="Command Zone"
+                        data-rarity="e05d"
+                        data-border="e05e"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-pvan ss-fw"></i>
+                        <span class="icon-code">pvan</span>
+                        <span class="icon-name">Vanguard</span>
+                    </figure></div>
+            </div>
+        </div><div class="set-group" data-id="3" data-count="6 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Reprints
+                </h2>
+                <p class="mb-6 pr-8">
+                    Sets that contain only reprinted cards.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="sum"
+                        data-name="Summer Magic"
+                        data-tags="[&#34;summer&#34;]"
+                        data-order="3"
+                        data-group="Reprints"
+                        data-rarity="e01e"
+                        data-border="e01f"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-sum ss-fw"></i>
+                        <span class="icon-code">sum</span>
+                        <span class="icon-name">Summer Magic (Edgar)</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="fbb"
+                        data-name="Foreign Black Border"
+                        data-tags="[&#34;foreign&#34;,&#34;black&#34;,&#34;border&#34;]"
+                        data-order="3"
+                        data-group="Reprints"
+                        data-rarity="e018"
+                        data-border="e019"
+                        data-inner="e01a"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;3edfbb&#34;:{&#34;code&#34;:&#34;3edfbb&#34;,&#34;name&#34;:&#34;Alternate&#34;,&#34;release&#34;:&#34;1995-04-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-fbb ss-fw"></i>
+                        <span class="icon-code">fbb</span>
+                        <span class="icon-name">Foreign Black Border</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="4bb"
+                        data-name="Fourth Edition Foreign Black Border"
+                        data-tags="[&#34;foreign&#34;,&#34;black&#34;,&#34;border&#34;]"
+                        data-order="3"
+                        data-group="Reprints"
+                        data-rarity="e036"
+                        data-border="e037"
+                        data-inner=""
+                        data-version="4.0.0"
+                        data-aliases="{&#34;4edfbb&#34;:{&#34;code&#34;:&#34;4edfbb&#34;,&#34;name&#34;:&#34;Alternate&#34;,&#34;release&#34;:&#34;1995-04-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-4bb ss-fw"></i>
+                        <span class="icon-code">4bb</span>
+                        <span class="icon-name">Fourth Edition FBB</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="chr"
+                        data-name="Chronicles"
+                        data-tags="[&#34;chronicles&#34;]"
+                        data-order="3"
+                        data-group="Reprints"
+                        data-rarity="e03c"
+                        data-border="e03d"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;ch&#34;:{&#34;code&#34;:&#34;ch&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1995-07-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-chr ss-fw"></i>
+                        <span class="icon-code">chr</span>
+                        <span class="icon-name">Chronicles</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="rin"
+                        data-name="Rinascimento"
+                        data-tags="[&#34;renaissance&#34;,&#34;rinascimento&#34;,&#34;italian&#34;,&#34;custom&#34;]"
+                        data-order="3"
+                        data-group="Reprints"
+                        data-rarity="e042"
+                        data-border="e043"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-rin ss-fw"></i>
+                        <span class="icon-code">rin</span>
+                        <span class="icon-name">Rinascimento</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="ren"
+                        data-name="Renaissance"
+                        data-tags="[&#34;renaissance&#34;,&#34;custom&#34;]"
+                        data-order="3"
+                        data-group="Reprints"
+                        data-rarity="e03f"
+                        data-border="e040"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-ren ss-fw"></i>
+                        <span class="icon-code">ren</span>
+                        <span class="icon-name">Renaissance</span>
+                    </figure></div>
+            </div>
+        </div><div class="set-group" data-id="4" data-count="0 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Supplemental Sets
+                </h2>
+                <p class="mb-6 pr-8">
+                    All other non-Standard printed sets designed to supplement the game.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"></div>
+            </div>
+        </div><div class="set-group" data-id="5" data-count="1 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Digital Sets
+                </h2>
+                <p class="mb-6 pr-8">
+                    Digital-only sets and releases with no print companion.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="past"
+                        data-name="Astral Cards"
+                        data-tags="[&#34;astral&#34;]"
+                        data-order="5"
+                        data-group="Digital Sets"
+                        data-rarity="e057"
+                        data-border="e058"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-past ss-fw"></i>
+                        <span class="icon-code">past</span>
+                        <span class="icon-name">Astral Cards</span>
+                    </figure></div>
+            </div>
+        </div><div class="set-group" data-id="6" data-count="3 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Beginner Sets
+                </h2>
+                <p class="mb-6 pr-8">
+                    Preconfigured sets and decks geared towards new players.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="itp"
+                        data-name="Introductory Two-Player Set"
+                        data-tags="[&#34;introductory&#34;,&#34;beginner&#34;,&#34;starter&#34;,&#34;2ps&#34;]"
+                        data-order="6"
+                        data-group="Beginner Sets"
+                        data-rarity="e04e"
+                        data-border="e04f"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;x2ps&#34;:{&#34;code&#34;:&#34;x2ps&#34;,&#34;name&#34;:&#34;Backwards compatibility&#34;,&#34;release&#34;:&#34;1996-12-31&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-itp ss-fw"></i>
+                        <span class="icon-code">itp</span>
+                        <span class="icon-name">Introductory 2-Player Set</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="por"
+                        data-name="Portal"
+                        data-tags="[&#34;portal&#34;,&#34;beginner&#34;]"
+                        data-order="6"
+                        data-group="Beginner Sets"
+                        data-rarity="e05a"
+                        data-border="e05b"
+                        data-inner="e05c"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-por ss-fw"></i>
+                        <span class="icon-code">por</span>
+                        <span class="icon-name">Portal</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="por"
+                        data-name="Portal Second Age"
+                        data-tags="[&#34;portal&#34;,&#34;second&#34;,&#34;beginner&#34;]"
+                        data-order="6"
+                        data-group="Beginner Sets"
+                        data-rarity="e06c"
+                        data-border="e06d"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-por ss-fw"></i>
+                        <span class="icon-code">por</span>
+                        <span class="icon-name">Portal Second Age</span>
+                    </figure></div>
+            </div>
+        </div><div class="set-group" data-id="7" data-count="2 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Premium Sets
+                </h2>
+                <p class="mb-6 pr-8">
+                    Collectable, foil, or other special printed sets.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="ced"
+                        data-name="Collectors&#39; Edition"
+                        data-tags="[&#34;collector&#34;,&#34;collectors&#34;]"
+                        data-order="7"
+                        data-group="Premium Sets"
+                        data-rarity="e009"
+                        data-border="e00a"
+                        data-inner="e00b"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;ce&#34;:{&#34;code&#34;:&#34;ce&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1993-12-10&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-ced ss-fw"></i>
+                        <span class="icon-code">ced</span>
+                        <span class="icon-name">Collectors&#39; Edition</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="cei"
+                        data-name="International Collectors&#39; Edition"
+                        data-tags="[&#34;international&#34;,&#34;collector&#34;,&#34;collectors&#34;]"
+                        data-order="7"
+                        data-group="Premium Sets"
+                        data-rarity="e00c"
+                        data-border="e00d"
+                        data-inner="e00e"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;ie&#34;:{&#34;code&#34;:&#34;ie&#34;,&#34;name&#34;:&#34;Gatherer code&#34;,&#34;release&#34;:&#34;1993-12-10&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-cei ss-fw"></i>
+                        <span class="icon-code">cei</span>
+                        <span class="icon-name">Intl. Collectors&#39; Edition</span>
+                    </figure></div>
+            </div>
+        </div><div class="set-group" data-id="8" data-count="4 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Promos
+                </h2>
+                <p class="mb-6 pr-8">
+                    Promotional sets or cards included in other media or advertisements.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="pdrc"
+                        data-name="Dragon Con"
+                        data-tags="[&#34;dragon&#34;,&#34;con&#34;,&#34;dragoncon&#34;]"
+                        data-order="8"
+                        data-group="Promos"
+                        data-rarity="e021"
+                        data-border="e022"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-pdrc ss-fw"></i>
+                        <span class="icon-code">pdrc</span>
+                        <span class="icon-name">Dragon Con</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="phpr"
+                        data-name="HarperPrism Book Promos"
+                        data-tags="[&#34;harper&#34;,&#34;prism&#34;,&#34;book&#34;]"
+                        data-order="8"
+                        data-group="Promos"
+                        data-rarity="e027"
+                        data-border="e028"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;pleaf&#34;:{&#34;code&#34;:&#34;pbook&#34;,&#34;name&#34;:&#34;Book Promo&#34;,&#34;release&#34;:&#34;1994-09-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-phpr ss-fw"></i>
+                        <span class="icon-code">phpr</span>
+                        <span class="icon-name">HarperPrism Book Promos</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="pmei"
+                        data-name="Media Inserts"
+                        data-tags="[&#34;media&#34;,&#34;insert&#34;,&#34;leaf&#34;]"
+                        data-order="8"
+                        data-group="Promos"
+                        data-rarity="e02d"
+                        data-border="e02e"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;pleaf&#34;:{&#34;code&#34;:&#34;pleaf&#34;,&#34;name&#34;:&#34;Leaf Promo&#34;,&#34;release&#34;:&#34;1995-01-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-pmei ss-fw"></i>
+                        <span class="icon-code">pmei</span>
+                        <span class="icon-name">Media Inserts</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="pmtg"
+                        data-name="Default Promo"
+                        data-tags="[&#34;dci&#34;,&#34;dci legends&#34;,&#34;membership&#34;]"
+                        data-order="8"
+                        data-group="Promos"
+                        data-rarity="e030"
+                        data-border="e031"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;parl&#34;:{&#34;code&#34;:&#34;parl&#34;,&#34;name&#34;:&#34;Arena League 1996&#34;,&#34;release&#34;:&#34;1996-08-02&#34;},&#34;plgm&#34;:{&#34;code&#34;:&#34;plgm&#34;,&#34;name&#34;:&#34;DCI Legends Membership&#34;,&#34;release&#34;:&#34;1995-01-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-pmtg ss-fw"></i>
+                        <span class="icon-code">pmtg</span>
+                        <span class="icon-name">Default Promo</span>
+                    </figure></div>
+            </div>
+        </div><div class="set-group" data-id="9" data-count="1 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Standalone Sets
+                </h2>
+                <p class="mb-6 pr-8">
+                    Experimental, out-of-world, draft inovative, or other releases that can be played on their own.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="ugl"
+                        data-name="Unglued"
+                        data-tags="[&#34;unglued&#34;,&#34;acorn&#34;]"
+                        data-order="9"
+                        data-group="Standalone Sets"
+                        data-rarity="e06f"
+                        data-border="e070"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-ugl ss-fw"></i>
+                        <span class="icon-code">ugl</span>
+                        <span class="icon-name">Unglued</span>
+                    </figure></div>
+            </div>
+        </div><div class="set-group" data-id="10" data-count="4 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Alternatives
+                </h2>
+                <p class="mb-6 pr-8">
+                    Other official versions of set symbols used by WOTC.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="legchr"
+                        data-name="Legends (Chronicles)"
+                        data-tags="[&#34;legends&#34;,&#34;chronicles&#34;,&#34;alternative&#34;]"
+                        data-order="10"
+                        data-group="Alternatives"
+                        data-rarity="f8f6"
+                        data-border="f8f5"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;leg2&#34;:{&#34;code&#34;:&#34;leg2&#34;,&#34;name&#34;:&#34;Short alternate code&#34;,&#34;release&#34;:&#34;1995-07-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-legchr ss-fw"></i>
+                        <span class="icon-code">legchr</span>
+                        <span class="icon-name">Legends (Chronicles)</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="pgc98"
+                        data-name="Gen Con 1998 Oversized Promo"
+                        data-tags="[&#34;oversized&#34;,&#34;gen con&#34;,&#34;[[Incoming!|o90p]]&#34;]"
+                        data-order="10"
+                        data-group="Alternatives"
+                        data-rarity="f8f4"
+                        data-border="f8f3"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-pgc98 ss-fw"></i>
+                        <span class="icon-code">pgc98</span>
+                        <span class="icon-name">Gen Con 98 Promo</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="po"
+                        data-name="Portal (Gatherer)"
+                        data-tags="[&#34;portal&#34;,&#34;gatherer&#34;,&#34;alternative&#34;]"
+                        data-order="10"
+                        data-group="Alternatives"
+                        data-rarity="f8f2"
+                        data-border="f8f1"
+                        data-inner="f8f0"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;por2&#34;:{&#34;code&#34;:&#34;por2&#34;,&#34;name&#34;:&#34;Standardized code&#34;,&#34;release&#34;:&#34;1997-05-01&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-po ss-fw"></i>
+                        <span class="icon-code">po</span>
+                        <span class="icon-name">Portal (Gatherer)</span>
+                    </figure><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="wl"
+                        data-name="Weatherlight (Gatherer)"
+                        data-tags="[&#34;weatherlight&#34;,&#34;gatherer&#34;,&#34;alternative&#34;]"
+                        data-order="10"
+                        data-group="Alternatives"
+                        data-rarity="f8ef"
+                        data-border="f8ee"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="{&#34;por2&#34;:{&#34;code&#34;:&#34;wth2&#34;,&#34;name&#34;:&#34;Standardized code&#34;,&#34;release&#34;:&#34;1997-06-09&#34;}}"
+                    >
+                        <i class="ss ss-rarity-common ss-wl ss-fw"></i>
+                        <span class="icon-code">wl</span>
+                        <span class="icon-name">Weatherlight (Gatherer)</span>
+                    </figure></div>
+            </div>
+        </div><div class="set-group" data-id="11" data-count="1 ">
+            <div class="set-group-info sticky">
+                <h2 class="my-4 pr-8">
+                    Unofficial
+                </h2>
+                <p class="mb-6 pr-8">
+                    Home grown symbols to fill in gaps and other game needs.
+                </p>
+            </div>
+            <div class="set-group-icons">
+                <div class="set-group-grid grid pt-2"><figure
+                        class="grid-span-1 checkerboard"
+                        data-code="palp"
+                        data-name="Asia Pacific Land Program"
+                        data-tags="[&#34;apac&#34;,&#34;asia&#34;,&#34;pacific&#34;,&#34;lands&#34;]"
+                        data-order="11"
+                        data-group="Unofficial"
+                        data-rarity="e072"
+                        data-border="e073"
+                        data-inner="false"
+                        data-version="4.0.0"
+                        data-aliases="false"
+                    >
+                        <i class="ss ss-rarity-common ss-palp ss-fw"></i>
+                        <span class="icon-code">palp</span>
+                        <span class="icon-name">APAC Lands</span>
+                    </figure></div>
+            </div>
+        </div><div id="search-empty" class="flex flex-col w-full text-center pt-8 hidden">
+            <p class="big mb-0">
+                No set symbols matched your search!
+            </p>
+            <p>
+                <a href="/sets" class="clear search-link" data-q="">Clear it</a> or try a cool one like <a href="?q=tmp" class="search-link" data-q="tmp">TMP</a> 😎
+            </p>
+        </div>
+    </div>
+</section>
+</main>
+
+    
+<footer>
+    <div class="w-wide flex flex-col sm:flex-row">
+        <div class="w-full sm:w-1/5 flex flex-col">
+            <h4 class="mt-0 mb-4">
+                Keyrune.css
+            </h4>
+            <p class="mt-1 mb-6 pr-12 relative top-px">
+                An MTG icon font built with &hearts; by <a href="https://andrewgioia.com">Andrew Gioia</a>.
+            </p>
+            <a href="https://www.jsdelivr.com/package/npm/keyrune" class="mb-4">
+                <img src="https://data.jsdelivr.com/v1/package/npm/keyrune/badge">
+            </a>
+            <a class="github-button" href="https://github.com/andrewgioia/keyrune" data-icon="octicon-star" data-show-count="true" aria-label="Star andrewgioia/keyrune on GitHub" class="mb-8">
+                Star
+            </a>
+        </div>
+        <div class="w-full sm:w-1/5 flex flex-col">
+            <h5 class="mt-1 mb-4">
+                Project
+            </h5>
+            <menu class="flex flex-row flex-wrap sm:list mb-8 mt-1">
+                <li class="flex flex-row flex-align-center flex-justify-start">
+                    <i class="ss ss-leg ss-white w-4 mr-2"></i>
+                    <a href="/" class="mr-4">Overview</a>
+                </li>
+                <li class="flex flex-row flex-align-center flex-justify-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="top-px relative w-4 mr-2">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                    <a href="/sets" class="mr-4">Set symbols</a>
+                </li>
+                <li class="flex flex-row flex-align-center flex-justify-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="top-px relative w-4 mr-2">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                    </svg>
+                    <a href="/docs" class="mr-4">Documentation</a>
+                </li>
+                <li class="flex flex-row flex-align-center flex-justify-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="top-px relative w-4 mr-2">
+                        <path d="M15 4V2"></path>
+                        <path d="M15 16v-2"></path>
+                        <path d="M8 9h2"></path>
+                        <path d="M20 9h2"></path>
+                        <path d="M17.8 11.8 19 13"></path>
+                        <path d="M15 9h0"></path>
+                        <path d="M17.8 6.2 19 5"></path>
+                        <path d="m3 21 9-9"></path>
+                        <path d="M12.2 6.2 11 5"></path>
+                    </svg>
+                    <a href="https://andrewgioia.keyrune.com/examples" class="mr-4">Examples</a>
+                </li>
+                <li class="flex flex-row flex-align-center flex-justify-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="top-px relative w-4 mr-2">
+                        <path d="M6 20h4"></path>
+                        <path d="M14 10h4"></path>
+                        <path d="M6 14h2v6"></path>
+                        <path d="M14 4h2v6"></path>
+                        <rect x="6" y="4" width="4" height="6"></rect>
+                        <rect x="14" y="14" width="4" height="6"></rect>
+                    </svg>
+                    <a href="/cheatsheet" class="mr-4">Cheatsheet</a>
+                </li>
+                <li class="flex flex-row flex-align-center flex-justify-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="top-px relative w-4 mr-2">
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                        <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                    <a href="https://github.com/andrewgioia/keyrune" target="blank" class="mr-4">GitHub project</a>
+                </li>
+                <li class="flex flex-row flex-align-center flex-justify-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="top-px relative w-4 mr-2">
+                        <path d="m5.784 5.309-.956-.001c-2.112 0-3.825 1.68-3.825 3.754-.001 2.073 1.711 3.754 3.823 3.754l.956.001zm17.211 8.252c-.459 3.456-3.625 5.131-5.738 5.131l-5.737-.002c-2.112 0-4.681-1.581-5.736-5.133l.002-8.248 17.211.003zm-8.833-5.155V5.308zm-.638.134a1 1 0 0 0-1.366.366l-1.928 3.34a1 1 0 0 0 .366 1.366l3.34 1.928a1 1 0 0 0 1.366-.366l1.928-3.34a1 1 0 0 0-.366-1.366l-3.34-1.928z"></path>
+                    </svg>
+                    <a href="https://git.gioia.cloud/andrew/keyrune" target="blank" class="mr-4">Gitea mirror</a>
+                </li>
+            </menu>
+        </div>
+        <div class="w-full sm:w-3/5">
+            <h5 class="mt-1">
+                Licensing and terms of use
+            </h5>
+            <p>
+                Keyrune is free, unofficial "Fan Content" permitted under the Wizards of the Coast <a href="https://company.wizards.com/en/legal/fancontentpolicy" target="blank">Fan Content Policy</a>. The Magic: the Gathering&trade; set symbols themselves are copyright Wizards of the Coast, LLC, a subsidiary of Hasbro, Inc. Keyrune is not produced by, endorsed by, supported by, or affiliated with Wizards of the Coast, and I develop and distribute this project solely as a resource to enable other Fan Content.
+            </p>
+            <p>
+                The Keyrune font is licensed under the <a href="http://scripts.sil.org/OFL" target="blank">SIL OFL 1.1</a>. Please review the terms of that license for attribution, distribution, incorporation, and bundling requirements.
+            </p>
+            <p>
+                The source code and other project files, including CSS, SCSS, and his website, are licensed separately under the <a href="https://opensource.org/licenses/GPL-3.0" target="blank">GPL 3.0 License</a>. You're free to share or modify any of the source code or this website's design so long as you also distribute your project under the same license.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    
+    
+        <object id="icon">
+    <details open disabled>
+        <summary tabindex="-1">
+            <span class="name">Set name</span>
+        </summary>
+        <div class="details">
+            <a href="sets" class="close">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </a>
+
+            <div class="table flex flex-col p-8 w-full">
+                <div class="flex flex-col justify-start">
+                    <h2 class="name mt-0 mb-4">
+                        Set name
+                    </h2>
+                    <h3 class="class mt-0 mb-6">
+                        Set code
+                    </h3>
+                    <div class="grid grid-cols-6">
+                        <div class="grid-span-2 flex flex-col mb-6">
+                            <label>Added</label>
+                            <span class="version"></span>
+                        </div>
+                        <div class="grid-span-4 flex flex-col mb-6">
+                            <label>Group</label>
+                            <span class="group"></span>
+                        </div>
+                        <div class="grid-span-2 flex flex-col mb-4">
+                            <label>Glyphs</label>
+                            <ul class="glyphs m-0">
+                                <li class="rarity">
+                                    <i></i>
+                                    <span class="ml-2"></span>
+                                </li>
+                                <li class="border">
+                                    <i></i>
+                                    <span class="ml-2"></span>
+                                </li>
+                                <li class="inner">
+                                    <i></i>
+                                    <span class="ml-2"></span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="grid-span-4 flex flex-col mb-4">
+                            <label class="aliases">Aliases</label>
+                            <span class="aliases"></span>
+                        </div>
+                    </div>
+                    <div class="actions flex flex-row flex-align-center flex-justify-start mt-2 mb-4">
+                        <a href="javascript:;" id="copy-unicode" class="action-button unicode mr-6 flex-inline flex-align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <span class="text-sm ml-2">Copy unicode</span>
+                            <em>Unicode copied!</em>
+                        </a>
+                        <a href="javascript:;" id="copy-glyph" class="action-button glyph mr-6 flex-inline flex-align-center" data-tooltip="SVG copied!">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="16 18 22 12 16 6"></polyline>
+                                <polyline points="8 6 2 12 8 18"></polyline>
+                            </svg>
+                            <span class="text-sm ml-2">Copy SVG</span>
+                            <em>SVG copied!</em>
+                        </a>
+                        <a href="javascript:;" id="download-svg" class="action-button download flex-inline flex-align-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            <span class="text-sm ml-2">Download</span>
+                            <em>SVG downloaded!</em>
+                        </a>
+                    </div>
+                </div>
+                <div class="tags">
+                    Tags
+                </div>
+            </div>
+            <div class="icon checkerboard flex flex-col flex-shrink-0">
+                <i class="ss"></i>
+                <div id="icon-controls" class="icon-controls flex flex-row flex-align-center flex-justify-center flex-shrink-0">
+                    <menu id="icon-rarity-modal" class="flex flex-row group mr-2">
+                        <li>
+                            <label for="rarity_common" class="small left checked">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 480 480" fill="#000">
+                                    <path d="M76.084 233.472c32.743.6 66.086 9.848 90.981 31.943 38.842 32.943 56.938 85.032 59.388 134.772-41.791 2.449-81.733-20.196-106.478-52.889-24.995-32.893-38.142-73.285-43.891-113.826zM314.734 263.465c24.395-21.245 57.239-29.043 88.932-29.293-7.549 55.138-30.794 112.026-77.384 145.319-20.696 15.847-47.24 21.446-72.885 20.546 2-50.889 20.246-104.078 61.337-136.572z"/>
+                                    <path d="M0 326.652c27.944-5.799 58.338-8.798 85.932-.5 15.647 16.247 26.045 37.043 43.191 51.99 16.797 16.746 39.642 24.444 61.137 33.243-51.089 2.049-105.328-6.299-147.519-37.143C25.095 361.895 11.498 344.749 0 326.652zM396.517 325.453c27.245-7.149 55.939-4.15 83.483-.5-13.047 29.693-40.492 50.339-68.486 65.036-38.292 16.997-80.883 24.245-122.724 22.295 25.345-11.547 52.889-21.595 71.185-43.69 13.197-13.498 20.696-32.594 36.542-43.141zM240.411 67.406c9.095 113.171 14.161 127.959 17.311 136.752 4.164.275 8.331.546 12.486.949 2.058-5.379 1.543-5.816 4.128-16.599 5.504-22.959 10.206-85.849 10.992-90.052 4.049 30.719 6.02 49.969 8.808 69.137 1.288 8.797 2.705 17.584 4.594 26.299 1.275 5.692 2.635 11.404 4.932 16.855 3.865 1.043 7.7 2.188 11.416 3.595 1.164-2.36 2.04-4.825 2.864-7.293 2.077-6.414 3.516-12.974 4.775-19.545 7.193-45.814 7.357-49.301 8.517-52.438 7.511 64.209 9.074 81.156 10.495 98.112-10.891 3.646-21.19 8.651-30.606 14.706-12.598 8.107-23.565 18.13-32.655 29.309a145.967 145.967 0 0 0-22.363 38.106c-6.77 17.051-10.589 34.923-12.65 52.876-.666 5.513-1.076 11.045-1.709 16.558-.23 1.472-.27 3.025-1.072 4.365h-.396c-.735-.991-.78-2.215-.987-3.346-.486-3.658-.756-7.335-1.137-11.002-.957-9.885-2.317-19.748-4.403-29.5-3.423-15.951-8.598-31.704-16.674-46.322-9.236-16.766-21.947-32.137-37.875-44.403a137.479 137.479 0 0 0-40.031-21.355c2.022-23.601 4.16-47.2 6.637-70.769 3.795-27.076 3.918-27.058 3.979-27.048 3.582 19.723 4.793 30.573 6.572 41.585 1.416 8.825 3.013 17.644 5.445 26.301 1.095 3.764 2.288 7.526 4.025 11.105 3.716-1.417 7.594-2.43 11.422-3.605 1.391-.426 1.498-.045 3.408-10.445 4.93-26.846 14.804-103.264 14.935-101.92 7.466 76.397 9.956 86.065 11.82 95.266.838 3.884 1.787 7.703 3.289 11.437 4.156-.331 8.311-.668 12.475-.913 3.117-8.667 4.899-15.997 6.008-25.038 9.434-76.926 11.085-113.454 11.225-111.72z"/>
+                                </svg>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="rarity_uncommon" class="small center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 480 480" fill="#707883">
+                                    <path d="M76.084 233.472c32.743.6 66.086 9.848 90.981 31.943 38.842 32.943 56.938 85.032 59.388 134.772-41.791 2.449-81.733-20.196-106.478-52.889-24.995-32.893-38.142-73.285-43.891-113.826zM314.734 263.465c24.395-21.245 57.239-29.043 88.932-29.293-7.549 55.138-30.794 112.026-77.384 145.319-20.696 15.847-47.24 21.446-72.885 20.546 2-50.889 20.246-104.078 61.337-136.572z"/>
+                                    <path d="M0 326.652c27.944-5.799 58.338-8.798 85.932-.5 15.647 16.247 26.045 37.043 43.191 51.99 16.797 16.746 39.642 24.444 61.137 33.243-51.089 2.049-105.328-6.299-147.519-37.143C25.095 361.895 11.498 344.749 0 326.652zM396.517 325.453c27.245-7.149 55.939-4.15 83.483-.5-13.047 29.693-40.492 50.339-68.486 65.036-38.292 16.997-80.883 24.245-122.724 22.295 25.345-11.547 52.889-21.595 71.185-43.69 13.197-13.498 20.696-32.594 36.542-43.141zM240.411 67.406c9.095 113.171 14.161 127.959 17.311 136.752 4.164.275 8.331.546 12.486.949 2.058-5.379 1.543-5.816 4.128-16.599 5.504-22.959 10.206-85.849 10.992-90.052 4.049 30.719 6.02 49.969 8.808 69.137 1.288 8.797 2.705 17.584 4.594 26.299 1.275 5.692 2.635 11.404 4.932 16.855 3.865 1.043 7.7 2.188 11.416 3.595 1.164-2.36 2.04-4.825 2.864-7.293 2.077-6.414 3.516-12.974 4.775-19.545 7.193-45.814 7.357-49.301 8.517-52.438 7.511 64.209 9.074 81.156 10.495 98.112-10.891 3.646-21.19 8.651-30.606 14.706-12.598 8.107-23.565 18.13-32.655 29.309a145.967 145.967 0 0 0-22.363 38.106c-6.77 17.051-10.589 34.923-12.65 52.876-.666 5.513-1.076 11.045-1.709 16.558-.23 1.472-.27 3.025-1.072 4.365h-.396c-.735-.991-.78-2.215-.987-3.346-.486-3.658-.756-7.335-1.137-11.002-.957-9.885-2.317-19.748-4.403-29.5-3.423-15.951-8.598-31.704-16.674-46.322-9.236-16.766-21.947-32.137-37.875-44.403a137.479 137.479 0 0 0-40.031-21.355c2.022-23.601 4.16-47.2 6.637-70.769 3.795-27.076 3.918-27.058 3.979-27.048 3.582 19.723 4.793 30.573 6.572 41.585 1.416 8.825 3.013 17.644 5.445 26.301 1.095 3.764 2.288 7.526 4.025 11.105 3.716-1.417 7.594-2.43 11.422-3.605 1.391-.426 1.498-.045 3.408-10.445 4.93-26.846 14.804-103.264 14.935-101.92 7.466 76.397 9.956 86.065 11.82 95.266.838 3.884 1.787 7.703 3.289 11.437 4.156-.331 8.311-.668 12.475-.913 3.117-8.667 4.899-15.997 6.008-25.038 9.434-76.926 11.085-113.454 11.225-111.72z"/>
+                                </svg>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="rarity_rare" class="small center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 480 480" fill="#b7a066">
+                                    <path d="M76.084 233.472c32.743.6 66.086 9.848 90.981 31.943 38.842 32.943 56.938 85.032 59.388 134.772-41.791 2.449-81.733-20.196-106.478-52.889-24.995-32.893-38.142-73.285-43.891-113.826zM314.734 263.465c24.395-21.245 57.239-29.043 88.932-29.293-7.549 55.138-30.794 112.026-77.384 145.319-20.696 15.847-47.24 21.446-72.885 20.546 2-50.889 20.246-104.078 61.337-136.572z"/>
+                                    <path d="M0 326.652c27.944-5.799 58.338-8.798 85.932-.5 15.647 16.247 26.045 37.043 43.191 51.99 16.797 16.746 39.642 24.444 61.137 33.243-51.089 2.049-105.328-6.299-147.519-37.143C25.095 361.895 11.498 344.749 0 326.652zM396.517 325.453c27.245-7.149 55.939-4.15 83.483-.5-13.047 29.693-40.492 50.339-68.486 65.036-38.292 16.997-80.883 24.245-122.724 22.295 25.345-11.547 52.889-21.595 71.185-43.69 13.197-13.498 20.696-32.594 36.542-43.141zM240.411 67.406c9.095 113.171 14.161 127.959 17.311 136.752 4.164.275 8.331.546 12.486.949 2.058-5.379 1.543-5.816 4.128-16.599 5.504-22.959 10.206-85.849 10.992-90.052 4.049 30.719 6.02 49.969 8.808 69.137 1.288 8.797 2.705 17.584 4.594 26.299 1.275 5.692 2.635 11.404 4.932 16.855 3.865 1.043 7.7 2.188 11.416 3.595 1.164-2.36 2.04-4.825 2.864-7.293 2.077-6.414 3.516-12.974 4.775-19.545 7.193-45.814 7.357-49.301 8.517-52.438 7.511 64.209 9.074 81.156 10.495 98.112-10.891 3.646-21.19 8.651-30.606 14.706-12.598 8.107-23.565 18.13-32.655 29.309a145.967 145.967 0 0 0-22.363 38.106c-6.77 17.051-10.589 34.923-12.65 52.876-.666 5.513-1.076 11.045-1.709 16.558-.23 1.472-.27 3.025-1.072 4.365h-.396c-.735-.991-.78-2.215-.987-3.346-.486-3.658-.756-7.335-1.137-11.002-.957-9.885-2.317-19.748-4.403-29.5-3.423-15.951-8.598-31.704-16.674-46.322-9.236-16.766-21.947-32.137-37.875-44.403a137.479 137.479 0 0 0-40.031-21.355c2.022-23.601 4.16-47.2 6.637-70.769 3.795-27.076 3.918-27.058 3.979-27.048 3.582 19.723 4.793 30.573 6.572 41.585 1.416 8.825 3.013 17.644 5.445 26.301 1.095 3.764 2.288 7.526 4.025 11.105 3.716-1.417 7.594-2.43 11.422-3.605 1.391-.426 1.498-.045 3.408-10.445 4.93-26.846 14.804-103.264 14.935-101.92 7.466 76.397 9.956 86.065 11.82 95.266.838 3.884 1.787 7.703 3.289 11.437 4.156-.331 8.311-.668 12.475-.913 3.117-8.667 4.899-15.997 6.008-25.038 9.434-76.926 11.085-113.454 11.225-111.72z"/>
+                                </svg>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="rarity_mythic" class="small center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 480 480" fill="#bf4427">
+                                    <path d="M76.084 233.472c32.743.6 66.086 9.848 90.981 31.943 38.842 32.943 56.938 85.032 59.388 134.772-41.791 2.449-81.733-20.196-106.478-52.889-24.995-32.893-38.142-73.285-43.891-113.826zM314.734 263.465c24.395-21.245 57.239-29.043 88.932-29.293-7.549 55.138-30.794 112.026-77.384 145.319-20.696 15.847-47.24 21.446-72.885 20.546 2-50.889 20.246-104.078 61.337-136.572z"/>
+                                    <path d="M0 326.652c27.944-5.799 58.338-8.798 85.932-.5 15.647 16.247 26.045 37.043 43.191 51.99 16.797 16.746 39.642 24.444 61.137 33.243-51.089 2.049-105.328-6.299-147.519-37.143C25.095 361.895 11.498 344.749 0 326.652zM396.517 325.453c27.245-7.149 55.939-4.15 83.483-.5-13.047 29.693-40.492 50.339-68.486 65.036-38.292 16.997-80.883 24.245-122.724 22.295 25.345-11.547 52.889-21.595 71.185-43.69 13.197-13.498 20.696-32.594 36.542-43.141zM240.411 67.406c9.095 113.171 14.161 127.959 17.311 136.752 4.164.275 8.331.546 12.486.949 2.058-5.379 1.543-5.816 4.128-16.599 5.504-22.959 10.206-85.849 10.992-90.052 4.049 30.719 6.02 49.969 8.808 69.137 1.288 8.797 2.705 17.584 4.594 26.299 1.275 5.692 2.635 11.404 4.932 16.855 3.865 1.043 7.7 2.188 11.416 3.595 1.164-2.36 2.04-4.825 2.864-7.293 2.077-6.414 3.516-12.974 4.775-19.545 7.193-45.814 7.357-49.301 8.517-52.438 7.511 64.209 9.074 81.156 10.495 98.112-10.891 3.646-21.19 8.651-30.606 14.706-12.598 8.107-23.565 18.13-32.655 29.309a145.967 145.967 0 0 0-22.363 38.106c-6.77 17.051-10.589 34.923-12.65 52.876-.666 5.513-1.076 11.045-1.709 16.558-.23 1.472-.27 3.025-1.072 4.365h-.396c-.735-.991-.78-2.215-.987-3.346-.486-3.658-.756-7.335-1.137-11.002-.957-9.885-2.317-19.748-4.403-29.5-3.423-15.951-8.598-31.704-16.674-46.322-9.236-16.766-21.947-32.137-37.875-44.403a137.479 137.479 0 0 0-40.031-21.355c2.022-23.601 4.16-47.2 6.637-70.769 3.795-27.076 3.918-27.058 3.979-27.048 3.582 19.723 4.793 30.573 6.572 41.585 1.416 8.825 3.013 17.644 5.445 26.301 1.095 3.764 2.288 7.526 4.025 11.105 3.716-1.417 7.594-2.43 11.422-3.605 1.391-.426 1.498-.045 3.408-10.445 4.93-26.846 14.804-103.264 14.935-101.92 7.466 76.397 9.956 86.065 11.82 95.266.838 3.884 1.787 7.703 3.289 11.437 4.156-.331 8.311-.668 12.475-.913 3.117-8.667 4.899-15.997 6.008-25.038 9.434-76.926 11.085-113.454 11.225-111.72z"/>
+                                </svg>
+                            </label>
+                            <label for="rarity_foil" class="small right">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 480 480" fill="#00afc9">
+                                    <path d="M76.084 233.472c32.743.6 66.086 9.848 90.981 31.943 38.842 32.943 56.938 85.032 59.388 134.772-41.791 2.449-81.733-20.196-106.478-52.889-24.995-32.893-38.142-73.285-43.891-113.826zM314.734 263.465c24.395-21.245 57.239-29.043 88.932-29.293-7.549 55.138-30.794 112.026-77.384 145.319-20.696 15.847-47.24 21.446-72.885 20.546 2-50.889 20.246-104.078 61.337-136.572z"/>
+                                    <path d="M0 326.652c27.944-5.799 58.338-8.798 85.932-.5 15.647 16.247 26.045 37.043 43.191 51.99 16.797 16.746 39.642 24.444 61.137 33.243-51.089 2.049-105.328-6.299-147.519-37.143C25.095 361.895 11.498 344.749 0 326.652zM396.517 325.453c27.245-7.149 55.939-4.15 83.483-.5-13.047 29.693-40.492 50.339-68.486 65.036-38.292 16.997-80.883 24.245-122.724 22.295 25.345-11.547 52.889-21.595 71.185-43.69 13.197-13.498 20.696-32.594 36.542-43.141zM240.411 67.406c9.095 113.171 14.161 127.959 17.311 136.752 4.164.275 8.331.546 12.486.949 2.058-5.379 1.543-5.816 4.128-16.599 5.504-22.959 10.206-85.849 10.992-90.052 4.049 30.719 6.02 49.969 8.808 69.137 1.288 8.797 2.705 17.584 4.594 26.299 1.275 5.692 2.635 11.404 4.932 16.855 3.865 1.043 7.7 2.188 11.416 3.595 1.164-2.36 2.04-4.825 2.864-7.293 2.077-6.414 3.516-12.974 4.775-19.545 7.193-45.814 7.357-49.301 8.517-52.438 7.511 64.209 9.074 81.156 10.495 98.112-10.891 3.646-21.19 8.651-30.606 14.706-12.598 8.107-23.565 18.13-32.655 29.309a145.967 145.967 0 0 0-22.363 38.106c-6.77 17.051-10.589 34.923-12.65 52.876-.666 5.513-1.076 11.045-1.709 16.558-.23 1.472-.27 3.025-1.072 4.365h-.396c-.735-.991-.78-2.215-.987-3.346-.486-3.658-.756-7.335-1.137-11.002-.957-9.885-2.317-19.748-4.403-29.5-3.423-15.951-8.598-31.704-16.674-46.322-9.236-16.766-21.947-32.137-37.875-44.403a137.479 137.479 0 0 0-40.031-21.355c2.022-23.601 4.16-47.2 6.637-70.769 3.795-27.076 3.918-27.058 3.979-27.048 3.582 19.723 4.793 30.573 6.572 41.585 1.416 8.825 3.013 17.644 5.445 26.301 1.095 3.764 2.288 7.526 4.025 11.105 3.716-1.417 7.594-2.43 11.422-3.605 1.391-.426 1.498-.045 3.408-10.445 4.93-26.846 14.804-103.264 14.935-101.92 7.466 76.397 9.956 86.065 11.82 95.266.838 3.884 1.787 7.703 3.289 11.437 4.156-.331 8.311-.668 12.475-.913 3.117-8.667 4.899-15.997 6.008-25.038 9.434-76.926 11.085-113.454 11.225-111.72z"/>
+                                </svg>
+                            </label>
+                        </li>
+                    </menu>
+                    <menu id="preview-extras-modal" class="flex flex-row">
+                        <li>
+                            <label for="extras_border" class="small mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <circle cx="12" cy="12" r="10"></circle>
+                                </svg>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="extras_inner" class="small mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                </svg>
+                            </label>
+                        </li>
+                        <li>
+                            <label for="extras_gradient" class="small disabled" disabled="disabled">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5.5,3.5 L19.5,3.5 C20.605,3.5 21.5,4.395 21.5,5.5 L21.5,19.5 C21.5,20.605 20.605,21.5 19.5,21.5 L5.5,21.5 C4.395,21.5 3.5,20.605 3.5,19.5 L3.5,5.5 C3.5,4.395 4.395,3.5 5.5,3.5 z"></path>
+                                    <path d="M16.344,21.5 L21.5,16.344"></path>
+                                    <path d="M12.344,21.5 L21.5,12.344"></path>
+                                    <path d="M7.344,21.5 L21.5,7.344"></path>
+                                    <path d="M3.656,18.188 L18.344,3.5"></path>
+                                </svg>
+                            </label>
+                        </li>
+                    </menu>
+                </div>
+            </div>
+        </div>
+    </details>
+</object>
+    
+
+  </body>
+</html>

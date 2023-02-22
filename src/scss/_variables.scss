@@ -1,0 +1,281 @@
+// core
+$keyrune-font-family:       "keyrune" !default;
+$keyrune-font-path:         "../font" !default;
+$keyrune-prefix:            "ss" !default;
+$keyrune-version:           "4.0.38" !default;
+
+// build options
+$keyrune-include-aliases:   true;
+
+//
+$keyrune-colors: (
+    "black": (
+        "100": "#ddd",
+        "300": "#3a3a3a", // old "#4e4d4b",
+        "500": "#202124", // old "#393735",
+        "700": "#131417", // old "#282828",
+        "900": "#000",
+    ),
+    "white": "#fff",
+);
+
+// rarity colors
+$keyrune-rarities: (
+    "common": (
+        "solid": "#131417",
+        "left": "#131417",
+        "center": "#131417",
+        "right": "#131417",
+    ),
+    "common-alt": (
+        "solid": "#fff",
+    ),
+    "uncommon": (
+        "solid": "#707883",
+        "left": "#4d6572",
+        "center": "#c3dfeb",
+        "right": "#4d6572",
+    ),
+    "rare": (
+        "solid": "#b7a066",
+        "left": "#7f6f43",
+        "center": "#d9c287",
+        "right": "#7f6f43",
+    ),
+    "mythic": (
+        "solid": "#bf4427",
+        "left": "#ac392e",
+        "center": "#eb9d3d",
+        "right": "#ac392e",
+    )
+);
+
+// set symbols
+$keyrune-sets: (
+    lea: (
+        rarity: "\e000",
+        border: "\e001",
+        inner: "\e002",
+        print: 3
+    ),
+    leb: (
+        rarity: "\e003",
+        border: "\e004",
+        inner: "\e005",
+    ),
+    2ed: (
+        rarity: "\e006",
+        border: "\e007",
+        inner: "\e008",
+    ),
+    ced: (
+        rarity: "\e009",
+        border: "\e00a",
+        inner: "\e00b",
+    ),
+    cei: (
+        rarity: "\e00c",
+        border: "\e00d",
+        inner: "\e00e",
+    ),
+    arn: (
+        rarity: "\e00f",
+        border: "\e010",
+        inner: "\e011",
+    ),
+    atq: (
+        rarity: "\e012",
+        border: "\e013",
+        inner: "\f8ff", // empty
+    ),
+    3ed: (
+        rarity: "\e015",
+        border: "\e016",
+        inner: "\e017",
+    ),
+    fbb: (
+        rarity: "\e018",
+        border: "\e019",
+        inner: "\e01a",
+    ),
+    leg: (
+        rarity: "\e01b",
+        border: "\e01c",
+        inner: "\e01d",
+    ),
+    sum: (
+        rarity: "\e01e",
+        border: "\e01f",
+        inner: "\f8ff", // empty
+    ),
+    pdrc: (
+        rarity: "\e021",
+        border: "\e022",
+        inner: "\f8ff", // empty
+    ),
+    drk: (
+        rarity: "\e024",
+        border: "\e025",
+        inner: "\f8ff", // empty
+    ),
+    phpr: (
+        rarity: "\e027",
+        border: "\e028",
+        inner: "\f8ff", // empty
+    ),
+    fem: (
+        rarity: "\e02a",
+        border: "\e02b",
+        inner: "\f8ff", // empty
+    ),
+    pmei: (
+        rarity: "\e02d",
+        border: "\e02e",
+        inner: "\f8ff", // empty
+    ),
+    pmtg: (
+        rarity: "\e030",
+        border: "\e031",
+        inner: "\f8ff", // empty
+    ),
+    4ed: (
+        rarity: "\e033",
+        border: "\e034",
+        inner: "\f8ff", // empty
+    ),
+    4bb: (
+        rarity: "\e036",
+        border: "\e037",
+        inner: "\f8ff", // empty
+    ),
+    ice: (
+        rarity: "\e039",
+        border: "\e03a",
+        inner: "\e03b",
+    ),
+    chr: (
+        rarity: "\e03c",
+        border: "\e03d",
+        inner: "\f8ff", // empty
+    ),
+    ren: (
+        rarity: "\e03f",
+        border: "\e040",
+        inner: "\f8ff", // empty
+    ),
+    rin: (
+        rarity: "\e042",
+        border: "\e043",
+        inner: "\f8ff", // empty
+    ),
+    hml: (
+        rarity: "\e045",
+        border: "\e046",
+        inner: "\e047",
+    ),
+    all: (
+        rarity: "\e048",
+        border: "\e049",
+        inner: "\e04a",
+    ),
+    mir: (
+        rarity: "\e04b",
+        border: "\e04c",
+        inner: "\f8ff", // empty
+    ),
+    itp: (
+        rarity: "\e04e",
+        border: "\e04f",
+        inner: "\f8ff", // empty
+    ),
+    vis: (
+        rarity: "\e051",
+        border: "\e052",
+        inner: "\e053", // empty
+    ),
+    5ed: (
+        rarity: "\e054",
+        border: "\e055",
+        inner: "\f8ff", // empty
+    ),
+    past: (
+        rarity: "\e057",
+        border: "\e058",
+        inner: "\f8ff", // empty
+    ),
+    por: (
+        rarity: "\e05a",
+        border: "\e05b",
+        inner: "\e05c",
+    ),
+    pvan: (
+        rarity: "\e05d",
+        border: "\e05e",
+        inner: "\f8ff", // empty
+    ),
+    wth: (
+        rarity: "\e060",
+        border: "\e061",
+        inner: "\e062",
+    ),
+    tmp: (
+        rarity: "\e063",
+        border: "\e064",
+        inner: "\f8ff", // empty
+    ),
+    sth: (
+        rarity: "\e066",
+        border: "\e067",
+        inner: "\f8ff", // empty
+    ),
+    exo: (
+        rarity: "\e069",
+        border: "\e06a",
+        inner: "\f8ff", // empty
+    ),
+    p02: (
+        rarity: "\e06c",
+        border: "\e06d",
+        inner: "\f8ff", // empty
+    ),
+    ugl: (
+        rarity: "\e06f",
+        border: "\e070",
+        inner: "\f8ff", // empty
+    ),
+    palp: (
+        rarity: "\e072",
+        border: "\e073",
+        inner: "\f8ff", // empty
+    ),
+    //
+    // ...
+    //
+    6ed: (
+        rarity: "\e07e",
+        border: "\e07f",
+        inner: "\f8ff", // empty
+    ),
+    //
+    // backwards from the end for alternatives/oddities
+    legchr: (
+        rarity: "\f8f6",
+        border: "\f8f5",
+        inner: "\f8ff", // em
+    ),
+    pgc98: (
+        rarity: "\f8f4",
+        border: "\f8f3",
+        inner: "\f8ff", // em
+    ),
+    po: (
+        rarity: "\f8f2",
+        border: "\f8f1",
+        inner: "\f8f0",
+    ),
+    wl: (
+        rarity: "\f8ef",
+        border: "\f8ee",
+        inner: "\f8ff", // empty
+    ),
+);

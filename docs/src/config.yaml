@@ -1,0 +1,14 @@
+baseURL: https://keyrune4.lan
+disableKinds:
+    - taxonomy
+    - term
+    - RSS
+    - sitemap
+enableInlineShortcodes: true
+languageCode: en-us
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+publishDir: ../
+title: Keyrune

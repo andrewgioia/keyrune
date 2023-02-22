@@ -1,0 +1,8 @@
+{{- $scratch := newScratch -}}
+{{- $scratch.Set "count" 0 -}}
+{{- range $groups := .Site.Data.sets -}}
+    {{- range $sets := $groups.sets -}}
+        {{- $scratch.Add "count" 1 -}}
+    {{- end -}}
+{{- end -}}
+{{ $scratch.Get "count" }}

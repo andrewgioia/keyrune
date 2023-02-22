@@ -1,0 +1,25 @@
+//
+// output the correct glyphs for the 3 layers' pseudoelements
+//
+@mixin layers($layers) {
+    &::before {
+        content: glyph-content(map-get($layers, rarity));
+    }
+    &.#{$keyrune-prefix}-border {
+        &::after {
+            content: glyph-content(map-get($layers, border));
+        }
+    }
+    &.#{$keyrune-prefix}-inner {
+        &::marker {
+            content: glyph-content(map-get($layers, inner));
+        }
+    }
+}
+
+//
+// correctly parse the glyph's unicode for css
+//
+@function glyph_content($glyph) {
+    @return unquote("\"#{$glyph}\"");
+}

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html data-mode="">
+<head>
+    <title>Keyrune v4</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="../dist/css/keyrune.css"></head>
+    <link rel="stylesheet" href="./demo.css"></head>
+    <script src="./sets.js" ></script>
+</head>
+<body data-set="arn">
+    <header>
+        <nav>
+            <h1>Keyrune v4 <span>Demo</span></h1>
+            <menu>
+                <div id="mode">
+                    <sub>Dark</sub>
+                    <sup>Light</sup>
+                </div>
+                <div id="preview">
+                    <i class="ss ss-arn"></i>
+                    <select id="select">
+                        <optgroup label="Expansions">
+                            <option value="arn" selected="selected">
+                                Arabian Nights
+                            </option>
+                        </optgroup>
+                    </select>
+                </div>
+            </menu>
+        </nav>
+        <p>
+            Complete Magic: the Gathering set symbol pictographic font. Each symbol in v4 has been redrawn and normalized with 3 glyphs for the base rarity symbol, the border, and an optional fixed white layer that some symbols have. Use the demo tool here to see a detailed view by set, or <a href="all.html">view the full set at once</a>.
+        </p>
+    </header>
+    <main>
+        <section>
+            <aside>
+                <h2>
+                    Symbol layers
+                </h2>
+                <p>
+                    Each set symbol has 2 layers, the base symbol and a border, with an optional 3rd layer when there's a fixed white portion.
+                </p>
+            </aside>
+            <content>
+                <article>
+                    <figure>
+                        <i class="ss ss-arn" id="one"></i>
+                        <figcaption>Symbol</figcaption>
+                    </figure>
+                    <figure class="glyph">
+                        <i class="ss ss-arn ss-border text-black"></i>
+                        <figcaption>Border</figcaption>
+                    </figure>
+                    <figure class="glyph">
+                        <i class="ss ss-arn ss-inner"></i>
+                        <figcaption>Inner</figcaption>
+                    </figure>
+                </article>
+            </content>
+        </section>
+        <section>
+            <aside>
+                <h2>
+                    Border styles
+                </h2>
+                <p>
+                    Default and common rarity borders are white, and other rarities are black. Built-in classes let you override these as well, which you can see in the rarities below.
+                </p>
+            </aside>
+            <content>
+                <article>
+                    <figure>
+                        <i class="ss ss-arn"></i>
+                        <figcaption>No border</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-border"></i>
+                        <figcaption>White border</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-rarity-rare"></i>
+                        <figcaption>Black border</figcaption>
+                    </figure>
+                </article>
+            </content>
+        </section>
+        <section>
+            <aside>
+                <h2>
+                    Rarities
+                </h2>
+                <p>
+                    Common, uncommon, rare, mythic, and time-shifted rarity classes add color to the symbol glyph. Gradients are an optional class to more closely resemble the printed version in modern sets.
+                </p>
+                <p>
+                    Many of the very early set symbols <a href="https://scryfall.com/card/arn/76/library-of-alexandria">had no border</a> or <a href="https://scryfall.com/card/usg/321/gaeas-cradle">always used a white border</a>. While Keyrune applies the <abbr title="White border and black symbol at common, black border and colored symbols at other rarities">modern configuration</abbr> to all sets, it supports all border and color permutations.
+            </aside>
+            <content>
+                <article>
+                    <figure>
+                        <i class="ss ss-arn ss-border"></i>
+                        <figcaption>Common</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-inner"></i>
+                        <figcaption>Complete common</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-inner"></i>
+                        <figcaption>Common with inner but no border</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-rarity-uncommon"></i>
+                        <figcaption>Uncommon</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-rarity-uncommon ss-rarity-gradient"></i>
+                        <figcaption>Gradient uncommon</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-inner ss-rarity-uncommon ss-rarity-gradient"></i>
+                        <figcaption>Complete uncommon</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-rarity-rare"></i>
+                        <figcaption>Rare</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-rarity-rare ss-rarity-gradient"></i>
+                        <figcaption>Gradient rare</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-inner ss-rarity-rare ss-rarity-gradient"></i>
+                        <figcaption>Complete rare</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-rarity-mythic"></i>
+                        <figcaption>Mythic</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-rarity-mythic ss-rarity-gradient"></i>
+                        <figcaption>Gradient mythic</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-inner ss-rarity-mythic ss-rarity-gradient"></i>
+                        <figcaption>Complete mythic</figcaption>
+                    </figure>
+                </article>
+                <article>
+                    <figure>
+                        <i class="ss ss-arn ss-border ss-rarity-mythic ss-border-white"></i>
+                        <figcaption>Mythic with white border</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-rarity-rare ss-rarity-gradient ss-inner"></i>
+                        <figcaption>Gradient rare with inner only</figcaption>
+                    </figure>
+                    <figure>
+                        <i class="ss ss-arn ss-white"></i>
+                        <figcaption>White set symbol</figcaption>
+                    </figure>
+                </article>
+            </content>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2020 Andrew Gioia</p>
+        <p>
+            Keyrune websites: <a href="https://github.com/andrewgioia/keyrune">GitHub project</a>, <a href="https://git.gioia.cloud/andrew/keyrune">Gitea backup repo</a>, and <a href="https://keyrune.andrewgioia.com">Documentation and demo</a>
+        </p>
+    </footer>
+</body>
+
+<script type="text/javascript">
+
+    //
+    // populate the select box with the available sets, pulled from sets.json
+    let select = document.getElementById('select');
+    let html = "";
+    let selected = "";
+    for (var group in sets) {
+        html += '<optgroup label="' + group + '">'
+        for (var set in sets[group]) {
+            selected = (set == 'arn') ? ' selected="selected"' : '';
+            html += '<option value="' + set  + '"'+selected+'>' + sets[group][set] + '</option>'
+        }
+        html += '</optgroup>'
+    }
+    document.getElementById("select").innerHTML = html;
+
+    //
+    // change the icons everywhere if a set is selected
+    select.addEventListener('change', (event) => {
+        let currentset = document.body.dataset.set;
+        let currentclass = 'ss-'+currentset;
+        let newset = event.target.value;
+        let newclass = 'ss-'+newset;
+        let icons = document.querySelectorAll('.'+currentclass);
+        for(var i = 0; i < icons.length; i++) {
+            icons[i].classList.replace(currentclass, newclass);
+        }
+        document.body.dataset.set = newset;
+    });
+
+    //
+    // dark/light mode
+    let sup = document.getElementById('mode').querySelector('sup');
+    let sub = document.getElementById('mode').querySelector('sub');
+
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.dataset.mode = 'dark';
+        sub.classList.add('on');
+    }
+
+    sup.addEventListener('click', function (event) {
+        document.documentElement.dataset.mode = 'light';
+        sup.classList.add('on');
+        sub.classList.remove('on');
+    });
+
+    sub.addEventListener('click', function (event) {
+        document.documentElement.dataset.mode = 'dark';
+        sub.classList.add('on');
+        sup.classList.remove('on');
+    });
+
+</script>
+
+</html>

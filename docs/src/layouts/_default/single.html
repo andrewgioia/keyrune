@@ -1,0 +1,19 @@
+{{ define "header" }}
+{{ partial "header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<main aria-role="main">
+    {{ .Content }}
+</main>
+{{ end }}
+
+{{ define "footer" }}
+{{ partial "footer.html" . }}
+{{ end }}
+
+{{ define "modal" }}
+    {{ if isset .Params "modal" }}
+        {{ partial "modal.html" . }}
+    {{ end }}
+{{ end }}
