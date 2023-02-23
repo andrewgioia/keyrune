@@ -1,0 +1,23 @@
+{
+  "name": "keyrune4",
+  "version": "4.0.0",
+  "author": "Andrew Gioia",
+  "description": "Magic: the Gathering icon font",
+  "license": "(OFL-1.1 AND GPL-3.0-only)",
+  "homepage": "https://keyrune.andrewgioia.com",
+  "main": "dist/css/keyrune.css",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "build": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewgioia/keyrune.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrewgioia/keyrune/issues",
+    "email": "andrew@gioia.email"
+  },
+}

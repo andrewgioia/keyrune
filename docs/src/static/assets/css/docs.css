@@ -1500,7 +1500,7 @@ object details .tags a.card::before {
   transform: rotate(-20deg) translateY(-3px) translateX(6px);
 }
 object details .tags a.card:hover::before {
-  transform: rotate(-30deg) translateY(-3px) translateX(6px) scale(1.04);
+  transform: rotate(-30deg) translateY(-3px) translateX(6px) scale(1.05);
 }
 object.active {
   visibility: visible;
