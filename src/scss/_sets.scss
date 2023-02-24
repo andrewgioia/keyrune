@@ -1,0 +1,198 @@
+@font-face {
+    font-family: '#{$keyrune-font-family}';
+    src: url('#{$keyrune-font-path}/#{$keyrune-font-family}.eot?#{$keyrune-version}');
+    src: url('#{$keyrune-font-path}/#{$keyrune-font-family}.eot?#{$keyrune-version}#iefix') format('embedded-opentype'),
+         url('#{$keyrune-font-path}/#{$keyrune-font-family}.woff2?#{$keyrune-version}') format('woff2'),
+         url('#{$keyrune-font-path}/#{$keyrune-font-family}.ttf?#{$keyrune-version}') format('truetype'),
+         url('#{$keyrune-font-path}/#{$keyrune-font-family}.woff?#{$keyrune-version}') format('woff'),
+         url('#{$keyrune-font-path}/#{$keyrune-font-family}.svg?#{$keyrune-version}##{$keyrune-font-family}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+// default styles and set symbol definitions
+.#{$keyrune-prefix} {
+
+    // base styles
+    font-family: '#{$keyrune-font-family}' !important;
+    color: var(--icon-default);
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    position: relative;
+    text-transform: none;
+    line-height: 1;
+    display: inline-flex;
+
+    // better font rendering
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    // ::before is the symbol layer
+    // ::after is the border layer
+    // ::marker is the (experimental) inner layer
+    @each $set, $layers in $keyrune-sets {
+        &-#{$set} {
+            @include layers($layers);
+        }
+        // check for aliases and assign the same glyphs
+        @if ($keyrune-include-aliases) {
+            @if map-get($keyrune-aliases, $set) {
+                @each $alias in map-get($keyrune-aliases, $set) {
+                    &-#{$alias} {
+                        @include layers($layers);
+                    }
+                }
+            }
+        }
+        // check for complete set of aliases in full version
+        @if ($keyrune-include-everything) {
+            @if map-get($keyrune-aliases-complete, $set) {
+                @each $alias in map-get($keyrune-aliases-complete, $set) {
+                    &-#{$alias} {
+                        @include layers($layers);
+                    }
+                }
+            }
+        }
+    }
+
+    // accessory features
+    &.#{$keyrune-prefix} {
+
+        // border
+        &-border {
+
+            // default and common border styles
+            &::after {
+                color: var(--border-default);
+                position: absolute;
+                left: 0;
+            }
+
+            // rarities > common have a black border
+            &.#{$keyrune-prefix}-rarity-common-alt::after,
+            &.#{$keyrune-prefix}-rarity-uncommon::after,
+            &.#{$keyrune-prefix}-rarity-rare::after,
+            &.#{$keyrune-prefix}-rarity-mythic::after,
+            &.#{$keyrune-prefix}-rarity-foil::after,
+            &.#{$keyrune-prefix}-border-black::after {
+                color: var(--border-contrast);
+            }
+
+            // convenience class to force a white border
+            &-white::after {
+                color: var(--border-default) !important;
+            }
+        }
+
+        // inner
+        // requires advanced positional styles for glyphs taller than they are wide
+        &-inner {
+
+            // must be list-item for this to appear
+            display: list-item;
+            list-style-position: inside;
+
+            // set symbol must be absolutely positioned
+            &::before {
+                position: absolute;
+                left: 0;
+            }
+
+            // inner color
+            &::marker {
+                color: var(--inner-default);
+            }
+
+            // position via transforms for everything until there's a better way
+            &::before,
+            &::after,
+            &::marker {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        // rarity colors
+        &-rarity {
+
+            // rarity loop
+            @each $rarity, $colors in $keyrune-rarities {
+                &-#{$rarity} {
+                    // set the symbol's color
+                    &::before {
+                        color: #{map.get($colors, solid)};
+                    }
+                    // gradient alternative
+                    &.#{$keyrune-prefix}-rarity-gradient::before {
+                        background: linear-gradient(
+                            90deg,
+                            #{map.get($colors, left)} 0%,
+                            #{map.get($colors, center)} 50%,
+                            #{map.get($colors, right)} 100%);
+                        color: transparent;
+                        background-clip: text;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+                }
+            }
+
+            // special foil case
+            &-foil {
+                &::before {
+                    color: #00afc9;
+                }
+                &.#{$keyrune-prefix}-rarity-gradient::before {
+                    background: linear-gradient(
+                        135deg,
+                        #ea8d66 0%,
+                        #ea8d66 15%,
+                        #fdef8a 28%,
+                        #8bcc93 42%,
+                        #a6dced 55%,
+                        #6f75aa 68%,
+                        #e599c2 84%,
+                        #e599c2 100%);
+                    color: transparent;
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+
+        // fixed width
+        &-fw {
+
+            // set the width to the largest symbole, ARN, at 1.75em
+            width: 1.75em;
+            display: list-item;
+            list-style-position: inside;
+            text-align: center;
+
+            // if there is no inner, we need to hide the marker
+            &:not(.#{$keyrune-prefix}-inner) {
+                list-style: none;
+            }
+
+            // correction when there's a border and no inner
+            &.#{$keyrune-prefix}-border:not(.#{$keyrune-prefix}-inner)::after {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        // colors
+        &-white {
+            &::before,
+            &::after,
+            &::marker {
+                color: #{map.get($keyrune-colors, "white")};
+            }
+        }
+    }
+}

@@ -420,6 +420,33 @@
 .ss-palp.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-usg::before {
+  content: "\e075";
+}
+.ss-usg.ss-border::after {
+  content: "\e076";
+}
+.ss-usg.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-ath::before {
+  content: "\e078";
+}
+.ss-ath.ss-border::after {
+  content: "\e079";
+}
+.ss-ath.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-ulg::before {
+  content: "\e07b";
+}
+.ss-ulg.ss-border::after {
+  content: "\e07c";
+}
+.ss-ulg.ss-inner::marker {
+  content: "\f8ff";
+}
 .ss-6ed::before {
   content: "\e07e";
 }
@@ -427,6 +454,15 @@
   content: "\e07f";
 }
 .ss-6ed.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-uds::before {
+  content: "\e081";
+}
+.ss-uds.ss-border::after {
+  content: "\e082";
+}
+.ss-uds.ss-inner::marker {
   content: "\f8ff";
 }
 .ss-legchr::before {

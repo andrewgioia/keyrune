@@ -22,7 +22,7 @@ modal: true
         </div>
         <span class="flex flex-row flex-align-center flex-justify-between w-full mt-4">
             <span class="search-left">Version {{% data/version %}} contains {{% data/count %}} <span class="hidden sm:inline">unique</span> icons.</span>
-            <span class="search-right hidden md:inline pr-8">Try <a href="?q=leg" class="search-link" data-q="leg">LEG</a> or <a href="?q=dragon" class="search-link" data-q="dragon">Dragon</a>!</span>
+            <span class="search-right hidden md:inline pr-8">Try <a href="?q=leg" class="search-link" data-q="leg">LEG</a> or <a href="?q=dragon" class="search-link" data-q="dragon">Dragon</a> or <a href="?q=is:old" class="search-link" data-q="is:old">is:old</a>!</span>
         </span>
     </form>
 </aside>

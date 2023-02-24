@@ -17,6 +17,7 @@
         "release": "1993-08-05",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": false,
         "tags": [
           "core",
@@ -37,6 +38,7 @@
         "release": "1993-10-04",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": false,
         "tags": [
           "core",
@@ -57,6 +59,7 @@
         "release": "1993-12-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": false,
         "tags": [
           "core",
@@ -77,7 +80,14 @@
         "release": "1994-04-01",
         "subgroup": false,
         "version": "4.0.0",
-        "aliases": false,
+        "official": false,
+        "aliases": {
+          "3e": {
+            "code": "3e",
+            "name": "Gatherer code",
+            "release": "1994-04-01"
+          }
+        },
         "tags": [
           "core",
           "revised",
@@ -98,6 +108,7 @@
         "release": "1995-04-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "4e": {
             "code": "4e",
@@ -125,6 +136,7 @@
         "release": "1997-03-24",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "5e": {
             "code": "5e",
@@ -153,6 +165,7 @@
         "release": "1999-04-21",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "6e": {
             "code": "6e",
@@ -185,6 +198,7 @@
         "release": "1993-12-17",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "an": {
             "code": "an",
@@ -210,6 +224,7 @@
         "release": "1994-03-04",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "aq": {
             "code": "aq",
@@ -234,6 +249,7 @@
         "release": "1994-06-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "le": {
             "code": "le",
@@ -257,6 +273,7 @@
         "release": "1994-08-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "dk": {
             "code": "dk",
@@ -280,6 +297,7 @@
         "release": "1994-11-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "fe": {
             "code": "fe",
@@ -304,6 +322,7 @@
         "release": "1995-06-03",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "ia": {
             "code": "ia",
@@ -329,6 +348,7 @@
         "release": "1995-10-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "hm": {
             "code": "hm",
@@ -352,6 +372,7 @@
         "release": "1996-06-10",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "al": {
             "code": "al",
@@ -375,6 +396,7 @@
         "release": "1996-10-08",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "mi": {
             "code": "mi",
@@ -391,8 +413,8 @@
       },
       "vis": {
         "code": "vis",
-        "name": "Mirage",
-        "display": "Mirage",
+        "name": "Visions",
+        "display": "Visions",
         "nicknames": false,
         "rarity": "e051",
         "border": "e052",
@@ -400,6 +422,7 @@
         "release": "1997-02-03",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "vi": {
             "code": "vi",
@@ -424,6 +447,7 @@
         "release": "1997-06-09",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": false,
         "tags": [
           "weatherlight",
@@ -442,6 +466,7 @@
         "release": "1997-10-14",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "te": {
             "code": "te",
@@ -467,6 +492,7 @@
         "release": "1998-03-02",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "st": {
             "code": "st",
@@ -492,8 +518,9 @@
         "release": "1998-06-15",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
-          "st": {
+          "ex": {
             "code": "ex",
             "name": "Gatherer code",
             "release": "1998-06-15"
@@ -503,6 +530,81 @@
           "exodus",
           "rath",
           "bridge"
+        ]
+      },
+      "usg": {
+        "code": "usg",
+        "name": "Urza's Saga",
+        "display": "Urza's Saga",
+        "nicknames": false,
+        "rarity": "e075",
+        "border": "e076",
+        "inner": false,
+        "release": "1998-10-12",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "uz": {
+            "code": "uz",
+            "name": "Gatherer code",
+            "release": "1998-10-12"
+          }
+        },
+        "tags": [
+          "urza",
+          "artifact",
+          "gears"
+        ]
+      },
+      "ulg": {
+        "code": "ulg",
+        "name": "Urza's Legacy",
+        "display": "Urza's Legacy",
+        "nicknames": false,
+        "rarity": "e07b",
+        "border": "e07c",
+        "inner": false,
+        "release": "1999-02-15",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "gu": {
+            "code": "gu",
+            "name": "Gatherer code",
+            "release": "1999-02-15"
+          }
+        },
+        "tags": [
+          "urza",
+          "artifact",
+          "hammer"
+        ]
+      },
+      "uds": {
+        "code": "uds",
+        "name": "Urza's Destiny",
+        "display": "Urza's Destiny",
+        "nicknames": false,
+        "rarity": "e081",
+        "border": "e082",
+        "inner": false,
+        "release": "1999-06-07",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "cg": {
+            "code": "cg",
+            "name": "Gatherer code",
+            "release": "1999-06-07"
+          }
+        },
+        "tags": [
+          "urza",
+          "artifact",
+          "flask"
         ]
       }
     }
@@ -523,6 +625,7 @@
         "release": "1997-05-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": false,
         "tags": [
           "vanguard",
@@ -547,6 +650,7 @@
         "release": "1994-06-21",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": false,
         "tags": [
           "summer"
@@ -567,6 +671,7 @@
         "release": "1995-04-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": {
           "3edfbb": {
             "code": "3edfbb",
@@ -594,6 +699,7 @@
         "release": "1995-04-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": {
           "4edfbb": {
             "code": "4edfbb",
@@ -618,6 +724,7 @@
         "release": "1995-07-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": {
           "ch": {
             "code": "ch",
@@ -640,6 +747,7 @@
         "release": "1995-08-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": false,
         "tags": [
           "renaissance",
@@ -657,6 +765,7 @@
         "release": "1995-08-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": false,
         "tags": [
           "renaissance",
@@ -664,12 +773,30 @@
           "italian",
           "custom"
         ]
+      },
+      "ath": {
+        "code": "ath",
+        "name": "Anthologies",
+        "display": "Anthologies",
+        "nicknames": false,
+        "rarity": "e078",
+        "border": "e079",
+        "inner": false,
+        "release": "1998-11-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": false,
+        "tags": [
+          "book",
+          "custom"
+        ]
       }
     }
   },
   "supplemental": {
     "order": 4,
-    "name": "Supplemental Sets",
+    "name": "Supplemental",
     "description": "All other non-Standard printed sets designed to supplement the game.",
     "sets": {}
   },
@@ -691,6 +818,7 @@
         "release": "1997-04-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": false,
         "tags": [
           "astral"
@@ -714,6 +842,7 @@
         "release": "1996-12-31",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": {
           "x2ps": {
             "code": "x2ps",
@@ -746,7 +875,7 @@
         ]
       },
       "p02": {
-        "code": "por",
+        "code": "p02",
         "name": "Portal Second Age",
         "display": "Portal Second Age",
         "nicknames": [
@@ -758,6 +887,7 @@
         "release": "1998-06-24",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": false,
         "tags": [
           "portal",
@@ -785,6 +915,7 @@
         "release": "1993-12-10",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases":  {
           "ce": {
             "code": "ce",
@@ -812,6 +943,7 @@
         "release": "1993-12-10",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": {
           "ie": {
             "code": "ie",
@@ -843,6 +975,7 @@
         "release": "1994-07-15",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": false,
         "tags": [
           "dragon",
@@ -864,8 +997,9 @@
         "release": "1994-09-01",
         "subgroup": false,
         "version":"4.0.0",
+        "official": true,
         "aliases": {
-          "pleaf": {
+          "pbook": {
             "code": "pbook",
             "name": "Book Promo",
             "release": "1994-09-01"
@@ -891,6 +1025,7 @@
         "release": "1995-01-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "pleaf": {
             "code": "pleaf",
@@ -917,6 +1052,7 @@
         "release": "1995-01-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "plgm": {
             "code": "plgm",
@@ -934,12 +1070,34 @@
           "dci legends",
           "membership"
         ]
+      },
+      "pgc98": {
+        "code": "pgc98",
+        "name": "Gen Con 1998 Oversized Promo",
+        "display": "Gen Con 98 Promo",
+        "nicknames": [
+          "Oversized 90s Promo",
+          "Gen Con 98 Oversized Promo"
+        ],
+        "rarity": "f8f4",
+        "border": "f8f3",
+        "inner": false,
+        "release": "1996-04-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": false,
+        "tags": [
+          "oversized",
+          "gen con",
+          "[[Incoming!|o90p]]"
+        ]
       }
     }
   },
   "standalone": {
     "order": 9,
-    "name": "Standalone Sets",
+    "name": "Standalone",
     "description": "Experimental, out-of-world, draft inovative, or other releases that can be played on their own.",
     "sets": {
       "ugl": {
@@ -953,6 +1111,7 @@
         "release": "1998-08-11",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": false,
         "tags": [
           "unglued",
@@ -979,6 +1138,7 @@
         "release": "1995-07-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "leg2": {
             "code": "leg2",
@@ -990,27 +1150,6 @@
           "legends",
           "chronicles",
           "alternative"
-        ]
-      },
-      "pgc98": {
-        "code": "pgc98",
-        "name": "Gen Con 1998 Oversized Promo",
-        "display": "Gen Con 98 Promo",
-        "nicknames": [
-          "Oversized 90s Promo",
-          "Gen Con 98 Oversized Promo"
-        ],
-        "rarity": "f8f4",
-        "border": "f8f3",
-        "inner": false,
-        "release": "1996-04-01",
-        "subgroup": false,
-        "version": "4.0.0",
-        "aliases": false,
-        "tags": [
-          "oversized",
-          "gen con",
-          "[[Incoming!|o90p]]"
         ]
       },
       "po": {
@@ -1026,6 +1165,7 @@
         "release": "1997-05-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "por2": {
             "code": "por2",
@@ -1052,6 +1192,7 @@
         "release": "1997-06-09",
         "subgroup": false,
         "version": "4.0.0",
+        "official": true,
         "aliases": {
           "por2": {
             "code": "wth2",
@@ -1067,10 +1208,10 @@
       }
     }
   },
-  "unofficial": {
+  "custom": {
     "order": 11,
-    "name": "Unofficial",
-    "description": "Home grown symbols to fill in gaps and other game needs.",
+    "name": "Custom",
+    "description": "Symbols I've created to fill in gaps and other game needs. Other unofficial symbols are incorporated and tagged above.",
     "sets": {
       "palp": {
         "code": "palp",
@@ -1087,6 +1228,7 @@
         "release": "1998-09-01",
         "subgroup": false,
         "version": "4.0.0",
+        "official": false,
         "aliases": false,
         "tags": [
           "apac",

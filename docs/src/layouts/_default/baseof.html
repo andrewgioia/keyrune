@@ -10,10 +10,10 @@
     <meta name="generator" content="Hand crafted">
     <script type="text/javascript" src='{{ "assets/js/first.js" | relURL }}'></script>
     <!--<link rel="stylesheet" type="text/css" href='{{ "assets/css/docs.css" | relURL }}'>-->
-    {{ $options := (dict "targetPath" "static/assets/css/docs.css" "transpiler" "dartsass") }}
-    {{ $sass := resources.Get "scss/docs.scss" }}
-    {{ $style := $sass | resources.ToCSS $options }}
-    <link rel="stylesheet" type="text/css" href='{{ $style }}'>
+    {{- $options := (dict "targetPath" "assets/css/docs.css" "transpiler" "dartsass") -}}
+    {{- $sass := resources.Get "scss/docs.scss" -}}
+    {{- $style := $sass | resources.ToCSS $options -}}
+    <link rel="stylesheet" type="text/css" href='{{ $style.RelPermalink }}'>
     <link rel="stylesheet" type="text/css" href='{{ "assets/css/keyrune.css" | relURL }}'>
     <script type="text/javascript" src='{{ "assets/js/zepto.js" | relURL }}'></script>
     <script type="text/javascript" src='{{ "assets/js/zepto.fx.js" | relURL }}'></script>

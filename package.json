@@ -10,7 +10,13 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": ""
+    "build-default": "sass ./src/scss/keyrune.scss ./dist/css/keyrune.css",
+    "build-default-min": "sass ./src/scss/keyrune.scss ./dist/css/keyrune.min.css --style compressed",
+    "build-full": "sass ./src/scss/keyrune-full.scss ./dist/css/keyrune-full.css",
+    "build-full-min": "sass ./src/scss/keyrune-full.scss ./dist/css/keyrune-full.min.css --style compressed",
+    "copy-assets": "cp -p ./src/font/* ./dist/font && cp -p ./dist/css/keyrune.css* ./docs/assets/css && cp -p ./dist/font/keyrune.woff* ./docs/assets/font",
+    "build": "npm run -s build-default && npm run -s build-default-min && npm run -s build-full && npm run -s build-full-min && npm run -s copy-assets",
+    "watch": "sass --watch ./src/scss/keyrune.scss ./dist/css/keyrune.css"
   },
   "repository": {
     "type": "git",
@@ -19,5 +25,5 @@
   "bugs": {
     "url": "https://github.com/andrewgioia/keyrune/issues",
     "email": "andrew@gioia.email"
-  },
+  }
 }

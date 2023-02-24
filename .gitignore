@@ -2,4 +2,5 @@
 .orig
 node_modules/
 npm-debug.log
+docs/src/resources/
 push_instructions.txt

@@ -1,11 +1,12 @@
 // core
-$keyrune-font-family:       "keyrune" !default;
-$keyrune-font-path:         "../font" !default;
-$keyrune-prefix:            "ss" !default;
-$keyrune-version:           "4.0.38" !default;
+$keyrune-font-family:        "keyrune" !default;
+$keyrune-font-path:          "../font" !default;
+$keyrune-prefix:             "ss" !default;
+$keyrune-version:            "4.0.38" !default;
 
 // build options
-$keyrune-include-aliases:   true;
+$keyrune-include-aliases:    true;
+$keyrune-include-everything: false;
 
 //
 $keyrune-colors: (
@@ -248,12 +249,29 @@ $keyrune-sets: (
         border: "\e073",
         inner: "\f8ff", // empty
     ),
-    //
-    // ...
-    //
+    usg: (
+        rarity: "\e075",
+        border: "\e076",
+        inner: "\f8ff", // empty
+    ),
+    ath: (
+        rarity: "\e078",
+        border: "\e079",
+        inner: "\f8ff", // empty
+    ),
+    ulg: (
+        rarity: "\e07b",
+        border: "\e07c",
+        inner: "\f8ff", // empty
+    ),
     6ed: (
         rarity: "\e07e",
         border: "\e07f",
+        inner: "\f8ff", // empty
+    ),
+    uds: (
+        rarity: "\e081",
+        border: "\e082",
         inner: "\f8ff", // empty
     ),
     //

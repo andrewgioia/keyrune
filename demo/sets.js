@@ -23,17 +23,15 @@ sets = {
     "tmp": "Tempest",
     "sth": "Stronghold",
     "exo": "Exodus",
+    "usg": "Urza's Saga",
+    "ulg": "Urza's Legacy",
+    "uds": "Urza's Destiny",
   },
   "Command": {
     "pvan": "Vanguard",
   },
   "Reprint": {
-    "sum": "Summer Magic",
-    "fbb": "Foreign Black Border",
-    "4bb": "4th Edition Black Border",
     "chr": "Chronicles",
-    "ren": "Renaissance",
-    "rin": "Rinascimento",
   },
   "Supplemental": {},
   "Digital": {
@@ -58,7 +56,13 @@ sets = {
     "ugl": "Unglued",
   },
   "Unofficial": {
+    "sum": "Summer Magic",
+    "fbb": "Foreign Black Border",
+    "4bb": "4th Edition Black Border",
+    "ren": "Renaissance",
+    "rin": "Rinascimento",
     "palp": "Asia Pacific Land Program",
+    "ath": "Anthologies",
   },
   "Alternative": {
     "legchr": "Legends (Chronicles)",

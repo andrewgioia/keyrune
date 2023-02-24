@@ -1,0 +1,13 @@
+@function encodehex($string) {
+    @return '%23' + string.slice($string, 1, 6);
+}
+
+@function encodecolor($string) {
+    @if type-of($string) == 'color' and str-index(#{$string}, '#') == 1 {
+        $hex: str-slice(ie-hex-str($string), 4);
+        $string: unquote('#{$hex}');
+
+        @return '%23' + $string;
+    }
+    @return $string;
+}

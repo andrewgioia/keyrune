@@ -11,6 +11,11 @@ $keyrune-ui: (
         "300": "#29c9ff", //#74c0fc
         "500": "#0060e4",
     ),
+    "pink": (
+        "100": "#f4d4e9", // bg
+        "300": "#ed73be", // border
+        "500": "#df3ea2", // text
+    ),
     "tan": (
         "100": "#f2f1f1",
         "300": "#e0dfde",
@@ -68,7 +73,6 @@ $keyrune-ui-font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMa
          url( '../font/beleren.ttf' ) format( 'truetype' ),
          url( '../font/beleren.svg' ) format( 'svg' );
     font-weight: normal;
-
     font-style: normal;
 }
 

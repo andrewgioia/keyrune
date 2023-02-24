@@ -63,7 +63,10 @@ function filterIcons(q) {
     let code = '';
     let tags = Object;
     let group = '';
+    let release = '';
     let parent = '';
+    let is = '';
+    let modern = new Date('2003-08-28');
 
     // set the URL to show the param
     if (q.length > 0) {
@@ -79,13 +82,53 @@ function filterIcons(q) {
         code = $(this).data('code');
         tags = $(this).data('tags');
         group = $(this).data('order');
+        release = new Date($(this).data('release'));
+        official = $(this).data('official');
         parent = $('.set-group[data-id="'+group+'"]');
 
-        // show/hide icons based on query index
-        if (code.indexOf(q) >= 0 || Object.values(tags).indexOf(q) >= 0) {
-            $(this).removeClass('hidden');
-        } else {
+        // check if we have an is: query; [old, modern, official, custom]
+        if (q.substring(0, 3) == 'is:') {
+
+            // hide everything right away
             $(this).addClass('hidden');
+
+            // get the mode
+            is = q.split(':')[1];
+
+            // should this be a switch?
+            if (is == 'modern') {
+                if (release.getTime() >= modern.getTime()) {
+                    $(this).removeClass('hidden');
+                } else {
+                    $(this).addClass('hidden');
+                }
+            } else if (is == 'old') {
+                if (release.getTime() < modern.getTime()) {
+                    $(this).removeClass('hidden');
+                } else {
+                    $(this).addClass('hidden');
+                }
+            } else if (is == 'official') {
+                if (official) {
+                    $(this).removeClass('hidden');
+                } else {
+                    $(this).addClass('hidden');
+                }
+            } else if (is == 'custom') {
+                if (!official) {
+                    $(this).removeClass('hidden');
+                } else {
+                    $(this).addClass('hidden');
+                }
+            }
+        // otherwise check code/tags for the string
+        } else {
+            // show/hide icons based on query index
+            if (code.indexOf(q) >= 0 || Object.values(tags).indexOf(q) >= 0) {
+                $(this).removeClass('hidden');
+            } else {
+                $(this).addClass('hidden');
+            }
         }
 
         // poll for group's non-hidden count and hide it if there are none
@@ -124,6 +167,8 @@ function openModal(icon) {
     let tagp = '';
     let tagc = '';
     let group = icon.data('group');
+    let status = icon.data('official');
+    let statusl = (icon.data('official')) ? 'Official' : "Custom";
     let rarity = (icon.data('rarity')) ? icon.data('rarity') : 'n/a';
     let border = (icon.data('border')) ? icon.data('border') : 'n/a';
     let inner = (icon.data('inner')) ? icon.data('inner') : 'n/a';
@@ -153,6 +198,7 @@ function openModal(icon) {
     $('details div.table h2.name').html(name);
     $('details div.table h3.class').html(code);
     $('details div.table span.group').html(group);
+    $('details div.table span.official').data("official", status).html(statusl);
     $('details div.table li.rarity span').html(rarity);
     $('details div.table li.rarity i').html('&#x'+rarity);
     $('details div.table li.border').attr('class', 'border '+icon.data('border')+'');
