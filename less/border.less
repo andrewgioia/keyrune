@@ -24,6 +24,17 @@
     &.@{ss-prefix}-c14:after { content: "\e65d"; } // Commander 2014
     &.@{ss-prefix}-c15:after { content: "\e900"; } // Commander 2015
 
+    // corrections for various duo icons
+    // SIS: the regular symbol becomes the border now
+    &.@{ss-prefix}-sis {
+        &::before {
+            content: "\e9b3";
+        }
+        &::after {
+            content: "\e9b2";
+        }
+    }
+
     // experimental ::marker for 3 layer icons
     &.@{ss-prefix}-40k {
         display: list-item;

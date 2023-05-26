@@ -47,7 +47,8 @@ $border-corrections: (
     ("Commander 2015", "c15", "\e900"),
     ("Planechase 2009", "hop", "\e656"),
     ("Planechase 2012", "pc2", "\e659"),
-    ("Conspiracy", "cns", "\e65c")
+    ("Conspiracy", "cns", "\e65c"),
+    ("Shadows of the Past", "sis", "\e9b2")
 ) !default;
 
 // dual-layered symbols (work in progress)
@@ -60,6 +61,7 @@ $dual-layered: (
     'cc2': '\e988',
     'dmc': '\e997',
     'j21': '\e984',
+    'ltc': '\e9b8',
     'mid': '\e979',
     'ncc': '\e990',
     'scd': '\e9ac'
@@ -231,8 +233,9 @@ $keyrune_sets: (
     ("The Brothers' War", "bro", "\e99d"),
     // 2023 sets
     ("Phyrexia: All Will Be One", "one", "\e9a1"),
-    ("March of the Machines", "mom", "\e9a2"),
-    ("March of the Machines: The Aftermath", "mat", "\e9a3"),
+    ("March of the Machine", "mom", "\e9a2"),
+    ("March of the Machine: The Aftermath", "mat", "\e9a3"),
+    ("Wilds of Eldraine", "woe", "\e9ae"),
     //
     // Command zone
     ("Vanguard", "van", "\e655"),
@@ -277,6 +280,9 @@ $keyrune_sets: (
     ("Phyrexia: All Will Be One Commander", "onc", "\e9a8"),
     ("March of the Machines Commander", "moc", "\e9a9"),
     ("Starter Commander Decks", "scd", "\e9ab"),
+    ("Commander Masters", "cmm", "\e9b5"),
+    ("The Lord of the Rings: Tales of Middle-Earth Commander", "ltc", "\e9b6"),
+    ("Wilds of Eldraine Commander", "woc", "\e9b9"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
@@ -303,6 +309,7 @@ $keyrune_sets: (
     ("Double Masters 2022", "2x2", "\e99c"),
     ("The Brothers' War Retro Artifacts", "brr", "\e9a0"),
     ("Jumpstart 2022", "j22", "\e9ad"),
+    ("Multiverse Legends", "mul", "\e9ba"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
@@ -383,6 +390,8 @@ $keyrune_sets: (
     ("Time Spiral Remastered", "tsr", "\e976"),
     ("Dominaria Remastered", "dmr", "\e9a4"),
     ("Game Night: Free for All", "gn3", "\e9a5"),
+    ("The Lord of the Rings: Tales of Middle-Earth", "ltr", "\e9af"),
+    ("Universes Beyond: Doctor Who", "who", "\e9b0"),
     //
     // Promos
     ("Guru", "pgru", "\e683"),
@@ -446,6 +455,9 @@ $keyrune_sets: (
     ("Alchemy 2022", "y22", "\e989"),
     ("Alchemy Horizons: Baldur's Gate", "hbg", "\e9a6"),
     ("Alchemy: Dominaria", "ydmu", "\e9a7"),
+    ("Shadows Over Innistrad", "sir", "\e9b1"),
+    ("Shadows of the Past", "sis", "\e9b2"),
+    ("Explorer Anthology 1", "ea1", "\e9b4"),
     //
     // Unsets
     ("Unglued", "ugl", "\e691"),

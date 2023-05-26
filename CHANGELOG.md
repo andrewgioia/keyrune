@@ -11,6 +11,21 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.12.2] 2023-05-26 Spring 2023 updates
+
+* **Added:** Shadows Over Innistrad (SIR) set symbol ([#202](https://github.com/andrewgioia/keyrune/issues/202))
+* **Added:** Shadows of the Past (SIS) set symbol ([#202](https://github.com/andrewgioia/keyrune/issues/202))
+* **Added:** Multiverse Legends (MUL) set symbol ([#202](https://github.com/andrewgioia/keyrune/issues/202))
+* **Added:** Commander Masters (CMM) set symbol ([#202](https://github.com/andrewgioia/keyrune/issues/202))
+* **Added:** The Lord of the Rings: Tales of Middle-Earth (LTR) set symbol ([#203](https://github.com/andrewgioia/keyrune/issues/203))
+* **Added:** The Lord of the Rings: Tales of Middle-Earth Commander (LTC) set symbol ([#203](https://github.com/andrewgioia/keyrune/issues/203))
+* **Added:** Explorer Anthology (EA1) set symbol ([#203](https://github.com/andrewgioia/keyrune/issues/203))
+* **Added:** Wilds of Eldraine (WOE) set symbol ([#205](https://github.com/andrewgioia/keyrune/issues/205))
+* **Added:** Wilds of Eldraine Commander (WOC) set symbol ([#205](https://github.com/andrewgioia/keyrune/issues/205))
+* **Added:** Universes Beyond: Doctor Who (WHO) set symbol ([#205](https://github.com/andrewgioia/keyrune/issues/205))
+* **Fixed:** March of the Machine spelled correctly everywhere now ([#204](https://github.com/andrewgioia/keyrune/issues/204))
+* **Fixed:** Y22 cheatsheet symbol is now the correct symbol ([#200](https://github.com/andrewgioia/keyrune/issues/200))
+
 ### [3.12.1] 2023-02-04 Hotfix for missing supplementals
 
 * **Added:** Jumpstart 2022 (J22) set symbol

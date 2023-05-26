@@ -44,6 +44,14 @@
             content: ss-content($glyph);
         }
     }
+
+    // corrections for various duo icons
+    // SIS: the regular symbol becomes the border now
+    &.#{$keyrune_prefix}-sis {
+        &::before {
+            content: "\e9b3";
+        }
+    }
 }
 
 /**
@@ -82,6 +90,9 @@
     }
     &.#{$keyrune_prefix}-dmc::before {
         content: "\e995";
+    }
+    &.#{$keyrune_prefix}-ltc::before {
+        content: "\e9b7";
     }
 
     // rarity border colors

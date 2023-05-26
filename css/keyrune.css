@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.12.1');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.12.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.12.1') format('woff2'), url('../fonts/keyrune.woff?v=3.12.1') format('woff'), url('../fonts/keyrune.ttf?v=3.12.1') format('truetype'), url('../fonts/keyrune.svg?v=3.12.1#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.12.2');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.12.2') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.12.2') format('woff2'), url('../fonts/keyrune.woff?v=3.12.2') format('woff'), url('../fonts/keyrune.ttf?v=3.12.2') format('truetype'), url('../fonts/keyrune.svg?v=3.12.2#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -98,6 +98,14 @@
 }
 .ss-duo.ss-j21::after {
   content: "\e984";
+}
+.ss-duo.ss-ltc::before {
+  content: "\e9b7";
+  width: 100%;
+}
+.ss-duo.ss-ltc::after {
+  content: "\e9b8";
+  color: #fff !important;
 }
 .ss-duo.ss-mid::after {
   content: "\e979";
@@ -661,6 +669,9 @@
 .ss-mat:before {
   content: "\e9a3";
 }
+.ss-woe:before {
+  content: "\e9ae";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -785,6 +796,15 @@
 .ss-scd:before {
   content: "\e9ab";
 }
+.ss-cmm:before {
+  content: "\e9b5";
+}
+.ss-ltc:before {
+  content: "\e9b6";
+}
+.ss-woc:before {
+  content: "\e9b9";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -858,6 +878,9 @@
 }
 .ss-j22:before {
   content: "\e9ad";
+}
+.ss-mul:before {
+  content: "\e9ba";
 }
 /**
  * Beginner */
@@ -1065,6 +1088,12 @@
 .ss-gn3:before {
   content: "\e9a5";
 }
+.ss-ltr:before {
+  content: "\e9af";
+}
+.ss-who:before {
+  content: "\e9b0";
+}
 /**
  * Promotional */
 .ss-pgru:before {
@@ -1230,6 +1259,15 @@
 .ss-ydmu:before {
   content: "\e9a7";
 }
+.ss-sir:before {
+  content: "\e9b1";
+}
+.ss-sis:before {
+  content: "\e9b2";
+}
+.ss-ea1:before {
+  content: "\e9b4";
+}
 /**
  * Un-serious */
 .ss-ugl:before {
@@ -1315,6 +1353,12 @@
 }
 .ss-border.ss-c15:after {
   content: "\e900";
+}
+.ss-border.ss-sis::before {
+  content: "\e9b3";
+}
+.ss-border.ss-sis::after {
+  content: "\e9b2";
 }
 .ss-border.ss-40k {
   display: list-item;

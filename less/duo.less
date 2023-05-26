@@ -83,6 +83,19 @@
         content: "\e984";
     }
 
+    // Lord of the Rings Commander
+    // 2 glyphs b/c we have a custom color glyph
+    &.@{ss-prefix}-ltc {
+        &::before {
+            content: "\e9b7";
+            width: 100%;
+        }
+        &::after {
+            content: "\e9b8";
+            color: #fff !important;
+        }
+    }
+
     // Innistrad Werewolves
     &.@{ss-prefix}-mid::after {
         content: "\e979";
