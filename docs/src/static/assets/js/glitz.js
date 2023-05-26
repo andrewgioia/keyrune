@@ -121,6 +121,35 @@ function filterIcons(q) {
                     $(this).addClass('hidden');
                 }
             }
+
+        // check if after a date
+        } else if (q.substring(0, 6) == 'after:') {
+
+            // hide everything right away
+            $(this).addClass('hidden');
+
+            // get and check against the date
+            date = new Date(q.split(':')[1]);
+            if (release.getTime() > date.getTime()) {
+                $(this).removeClass('hidden');
+            } else {
+                $(this).addClass('hidden');
+            }
+
+        // check if before a date
+        } else if (q.substring(0, 7) == 'before:') {
+
+            // hide everything right away
+            $(this).addClass('hidden');
+
+            // get and check against the date
+            date = new Date(q.split(':')[1]);
+            if (release.getTime() < date.getTime()) {
+                $(this).removeClass('hidden');
+            } else {
+                $(this).addClass('hidden');
+            }
+
         // otherwise check code/tags for the string
         } else {
             // show/hide icons based on query index
