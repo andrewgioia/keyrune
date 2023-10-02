@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.12.1' !default;
+$keyrune_version: '3.12.3' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -64,7 +64,8 @@ $dual-layered: (
     'ltc': '\e9b8',
     'mid': '\e979',
     'ncc': '\e990',
-    'scd': '\e9ac'
+    'scd': '\e9ac',
+    'una': '\e9bf'
 ) !default;
 
 // sets
@@ -310,6 +311,8 @@ $keyrune_sets: (
     ("The Brothers' War Retro Artifacts", "brr", "\e9a0"),
     ("Jumpstart 2022", "j22", "\e9ad"),
     ("Multiverse Legends", "mul", "\e9ba"),
+    ("Wilds of Eldraine Enchanting Tales", "wot", "\e9c0"),
+    ("Battle Royale (alternate)", "br", "\e9c1"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
@@ -392,6 +395,7 @@ $keyrune_sets: (
     ("Game Night: Free for All", "gn3", "\e9a5"),
     ("The Lord of the Rings: Tales of Middle-Earth", "ltr", "\e9af"),
     ("Universes Beyond: Doctor Who", "who", "\e9b0"),
+    ("Ravnica Remastered", "rvr", "\e9bb"),
     //
     // Promos
     ("Guru", "pgru", "\e683"),
@@ -433,6 +437,7 @@ $keyrune_sets: (
     ("Secret Lair: Ultimate Edition", "slu", "\e687"),
     ("Secret Lair Drop", "sld", "\e687"),
     ("Secret Lair Drop Promos", "psld", "\e687"),
+    ("Secret Lair Logo", "sld2", "\e9bc"),
     //
     // Online only sets
     ("Masters Edition", "me1", "\e68d"),
@@ -464,6 +469,8 @@ $keyrune_sets: (
     ("Unhinged", "unh", "\e692"),
     ("Unstable", "ust", "\e930"),
     ("Unsanctioned", "und", "\e96c"),
+    ("Unfinity", "unf", "\e98a"),
+    ("Unfinity Acorns", "una", "\e9be"),
     //
     // Unoffocial
     ("Collector's Edition", "xcle", "\e926"),

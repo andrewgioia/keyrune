@@ -11,6 +11,18 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.12.3] 2023-10-02 WOE supplemental sets, early 2024 products, and some alternate symbols
+
+* **Added:** Wilds of Eldraine Enchanting Tales (WOT) set symbol ([#208](https://github.com/andrewgioia/keyrune/issues/208))
+* **Added:** Alchemy 2024 (Alchemy Wilds of Eldraine) (Y24) set symbol ([#209](https://github.com/andrewgioia/keyrune/issues/209))
+* **Added:** Ravnica Remastered (RVR) set symbol ([#210](https://github.com/andrewgioia/keyrune/issues/210))
+* **Added:** Battle Royale Box Set alternate symbole (BR) used in Gatherer ([#213](https://github.com/andrewgioia/keyrune/issues/213))
+* **Added:** Unfinity Acorn cards (UNA) alternate symbol ([#214](https://github.com/andrewgioia/keyrune/issues/214))
+* **Added:** Secret Lair logo as an alternate set symbol (SLD2) ([#206](https://github.com/andrewgioia/keyrune/issues/206))
+* **Changed:** Secret Lair (SLD) is now an alias for PMEI
+* **Fixed:** SVG for LTR is now in the SVG directory, as well as other missing ones ([#207](https://github.com/andrewgioia/keyrune/issues/207) [#211](https://github.com/andrewgioia/keyrune/issues/211))
+* **Fixed:** UNF is now in the Sass variables file, it was missing previously 
+
 ### [3.12.2] 2023-05-26 Spring 2023 updates
 
 * **Added:** Shadows Over Innistrad (SIR) set symbol ([#202](https://github.com/andrewgioia/keyrune/issues/202))
