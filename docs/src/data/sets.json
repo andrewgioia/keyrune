@@ -606,6 +606,31 @@
           "artifact",
           "flask"
         ]
+      },
+      "mmq": {
+        "code": "mmq",
+        "name": "Mercadian Masques",
+        "display": "Mercadian Masques",
+        "nicknames": false,
+        "rarity": "e08d",
+        "border": "e08e",
+        "inner": "e08f",
+        "release": "1999-10-04",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "mm": {
+            "code": "mm",
+            "name": "Gatherer code",
+            "release": "1999-10-04"
+          }
+        },
+        "tags": [
+          "mercadia",
+          "masques",
+          "mask"
+        ]
       }
     }
   },
@@ -914,6 +939,29 @@
           "starter",
           "beginner"
         ]
+      },
+      "ptk": {
+        "code": "ptk",
+        "name": "Portal Three Kingdoms",
+        "display": "Portal Three Kingdoms",
+        "nicknames": [
+          "Portal 3 Kingdoms"
+        ],
+        "rarity": "e087",
+        "border": "e088",
+        "inner": false,
+        "release": "1999-07-06",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": [
+          "p3k"
+        ],
+        "tags": [
+          "portal",
+          "kingdoms",
+          "beginner"
+        ]
       }
     }
   },
@@ -1117,6 +1165,28 @@
           "oversized",
           "gen con",
           "[[Incoming!|o90p]]"
+        ]
+      },
+      "pgru": {
+        "code": "pgru",
+        "name": "Guru",
+        "display": "Guru",
+        "nicknames": [
+          "Guru Program",
+          "Guru Lands"
+        ],
+        "rarity": "e08a",
+        "border": "e08b",
+        "inner": false,
+        "release": "1999-07-12",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": false,
+        "tags": [
+          "guru",
+          "program",
+          "lands"
         ]
       }
     }

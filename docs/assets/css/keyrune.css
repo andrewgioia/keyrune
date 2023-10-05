@@ -478,6 +478,33 @@
 .ss-s99.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-ptk::before {
+  content: "\e087";
+}
+.ss-ptk.ss-border::after {
+  content: "\e088";
+}
+.ss-ptk.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-pgru::before {
+  content: "\e08a";
+}
+.ss-pgru.ss-border::after {
+  content: "\e08b";
+}
+.ss-pgru.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-mmq::before {
+  content: "\e08d";
+}
+.ss-mmq.ss-border::after {
+  content: "\e08e";
+}
+.ss-mmq.ss-inner::marker {
+  content: "\e08f";
+}
 .ss-legchr::before {
   content: "\f8f6";
 }

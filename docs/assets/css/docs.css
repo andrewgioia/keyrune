@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --bg-body: #fff;
   --bg-hover: #f2f1f1;
@@ -1421,7 +1422,6 @@ object details .table ul.glyphs li.false {
 }
 object details .table ul.glyphs i {
   font-size: 1.2rem;
-  width: 1.75em;
 }
 object details .table ul.glyphs i::before, object details .table ul.glyphs i::after, object details .table ul.glyphs i::marker {
   color: var(--text-default);
@@ -1564,3 +1564,5 @@ object.active details {
     display: flex;
   }
 }
+
+/*# sourceMappingURL=docs.css.map */
