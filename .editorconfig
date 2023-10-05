@@ -1,0 +1,17 @@
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.{js,md,json,html,yml,css,scss}]
+charset = utf-8
+indent_style = space
+
+# 4 spaces for js, markdown, html, and css
+[*.{js,md,html,css,scss}]
+indent_size = 4
+
+# 2 spaces for yml, json, and configs
+[*.{yml,json,config.js}]
+indent_size = 2

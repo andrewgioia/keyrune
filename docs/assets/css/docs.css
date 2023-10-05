@@ -1228,11 +1228,14 @@ menu.group label.right {
     margin-bottom: 4rem;
   }
 }
-:root[data-mode=dark] #icons figure .ss.ss-rarity-common.ss-inner::before {
-  color: #000 !important;
+:root[data-mode=dark] #icons figure .ss.ss-rarity-common.ss-inner,
+:root[data-mode=dark] object details .details .icon i.ss.ss-rarity-common.ss-inner {
+  --ss-rarity: #000 !important;
 }
-:root[data-mode=dark] #icons figure .ss.ss-rarity-common.ss-border:not(.ss-inner)::after {
-  color: #000 !important;
+:root[data-mode=dark] #icons figure .ss.ss-rarity-common:not(.ss-inner),
+:root[data-mode=dark] object details .details .icon i.ss.ss-rarity-common:not(.ss-inner) {
+  --ss-rarity: #fff !important;
+  --ss-border: #000 !important;
 }
 
 form .input-wrapper svg {
@@ -1347,13 +1350,9 @@ object details .icon {
   padding: 2rem 0.5rem 1rem;
 }
 object details .icon i.ss {
-  color: var(--text-default);
   font-size: 8em;
   line-height: 1.75ex;
   padding-bottom: 1.5rem;
-}
-object details .icon i.ss.ss-rarity-common:not(.ss-inner)::before {
-  color: var(--text-default) !important;
 }
 object details .icon-controls {
   display: none;

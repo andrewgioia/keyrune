@@ -250,7 +250,7 @@ function openModal(icon) {
     });
     $('#copy-glyph').on('click', function() {
         navigator.clipboard.writeText($('details div.table li.rarity i').html()).then(function() {
-            $('#copy-glyph em').html('SVG copied!').animate('fadeup', 1200, 'ease-in-out');
+            $('#copy-glyph em').html('Glyph copied!').animate('fadeup', 1200, 'ease-in-out');
         }, function(err) {
             $('#copy-glyph em').html('Error copying').animate('fadeup', 1200, 'ease-in-out');
         });

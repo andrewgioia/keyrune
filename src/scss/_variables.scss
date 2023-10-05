@@ -2,7 +2,7 @@
 $keyrune-font-family:        "keyrune" !default;
 $keyrune-font-path:          "../font" !default;
 $keyrune-prefix:             "ss" !default;
-$keyrune-version:            "4.0.38" !default;
+$keyrune-version:            "4.0.57" !default;
 
 // build options
 $keyrune-include-aliases:    true;
@@ -38,16 +38,16 @@ $keyrune-rarities: (
         "right": "#4d6572",
     ),
     "rare": (
-        "solid": "#b7a066",
+        "solid": "#b7a066", // try this: #c5a86f
         "left": "#7f6f43",
         "center": "#d9c287",
         "right": "#7f6f43",
     ),
     "mythic": (
-        "solid": "#bf4427",
-        "left": "#ac392e",
-        "center": "#eb9d3d",
-        "right": "#ac392e",
+        "solid": "#d9640f", // "#e85627" (lighter but red), //"#e54424" (bit redder), //"#bf4427" (too dark),
+        "left": "#c2381a", //"#ac392e",
+        "center": "#f59700", //"#eb9d3d",
+        "right": "#c2381a", //"#ac392e",
     )
 );
 
@@ -272,6 +272,11 @@ $keyrune-sets: (
     uds: (
         rarity: "\e081",
         border: "\e082",
+        inner: "\f8ff", // empty
+    ),
+    s99: (
+        rarity: "\e084",
+        border: "\e085",
         inner: "\f8ff", // empty
     ),
     //

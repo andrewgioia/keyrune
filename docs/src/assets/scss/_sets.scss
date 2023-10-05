@@ -246,13 +246,16 @@ menu {
         }
     }
 }
-// common dark mode needs to be true black
+// common dark mode needs to swap white/black depending on inner status
 :root[data-mode="dark"] {
-    #icons figure .ss.ss-rarity-common.ss-inner::before {
-        color: #000 !important;
+    #icons figure .ss.ss-rarity-common.ss-inner,
+    object details .details .icon i.ss.ss-rarity-common.ss-inner {
+        --ss-rarity: #000 !important;
     }
-    #icons figure .ss.ss-rarity-common.ss-border:not(.ss-inner)::after {
-        color: #000 !important;
+    #icons figure .ss.ss-rarity-common:not(.ss-inner),
+    object details .details .icon i.ss.ss-rarity-common:not(.ss-inner) {
+        --ss-rarity: #fff !important;
+        --ss-border: #000 !important;
     }
 }
 
@@ -396,13 +399,13 @@ object {
             padding: 2rem 0.5rem 1rem;
 
             i.ss {
-                color: var(--text-default);
+                //color: var(--text-default);
                 font-size: 8em;
                 line-height: 1.75ex;
                 padding-bottom: 1.5rem;
 
                 &.ss-rarity-common:not(.ss-inner)::before {
-                    color: var(--text-default) !important;
+                    //color: var(--text-default) !important;
                 }
             }
 

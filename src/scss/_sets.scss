@@ -11,12 +11,12 @@
     font-display: block;
 }
 
-// default styles and set symbol definitions
+// default styles and set symbol definitions via icon font
 .#{$keyrune-prefix} {
 
     // base styles
     font-family: '#{$keyrune-font-family}' !important;
-    color: var(--icon-default);
+    color: var(--ss-rarity);
     speak: never;
     font-style: normal;
     font-weight: normal;
@@ -29,6 +29,11 @@
     // better font rendering
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    // pseudo defaults
+    &::before {
+        background: var(--ss-rarity-bg);
+    }
 
     // ::before is the symbol layer
     // ::after is the border layer
@@ -64,10 +69,9 @@
 
         // border
         &-border {
-
             // default and common border styles
             &::after {
-                color: var(--border-default);
+                color: var(--ss-border);
                 position: absolute;
                 left: 0;
             }
@@ -79,12 +83,12 @@
             &.#{$keyrune-prefix}-rarity-mythic::after,
             &.#{$keyrune-prefix}-rarity-foil::after,
             &.#{$keyrune-prefix}-border-black::after {
-                color: var(--border-contrast);
+                color: var(--ss-border-contrast);
             }
 
             // convenience class to force a white border
-            &-white::after {
-                color: var(--border-default) !important;
+            &-white {
+                --ss-border: #fff !important;
             }
         }
 
@@ -104,7 +108,7 @@
 
             // inner color
             &::marker {
-                color: var(--inner-default);
+                color: var(--ss-inner);
             }
 
             // position via transforms for everything until there's a better way
@@ -123,17 +127,16 @@
             @each $rarity, $colors in $keyrune-rarities {
                 &-#{$rarity} {
                     // set the symbol's color
-                    &::before {
-                        color: #{map.get($colors, solid)};
-                    }
+                    --ss-rarity: #{map.get($colors, solid)};
                     // gradient alternative
                     &.#{$keyrune-prefix}-rarity-gradient::before {
-                        background: linear-gradient(
-                            90deg,
-                            #{map.get($colors, left)} 0%,
-                            #{map.get($colors, center)} 50%,
-                            #{map.get($colors, right)} 100%);
-                        color: transparent;
+                        --ss-rarity-bg:
+                            linear-gradient(
+                                90deg,
+                                #{map.get($colors, left)} 0%,
+                                #{map.get($colors, center)} 50%,
+                                #{map.get($colors, right)} 100%);
+                        --ss-rarity: transparent;
                         background-clip: text;
                         -webkit-background-clip: text;
                         -webkit-text-fill-color: transparent;
@@ -143,21 +146,20 @@
 
             // special foil case
             &-foil {
-                &::before {
-                    color: #00afc9;
-                }
+                --ss-rarity: #00afc9;
                 &.#{$keyrune-prefix}-rarity-gradient::before {
-                    background: linear-gradient(
-                        135deg,
-                        #ea8d66 0%,
-                        #ea8d66 15%,
-                        #fdef8a 28%,
-                        #8bcc93 42%,
-                        #a6dced 55%,
-                        #6f75aa 68%,
-                        #e599c2 84%,
-                        #e599c2 100%);
-                    color: transparent;
+                    --ss-rarity-bg:
+                        linear-gradient(
+                            135deg,
+                            #ea8d66 0%,
+                            #ea8d66 15%,
+                            #fdef8a 28%,
+                            #8bcc93 42%,
+                            #a6dced 55%,
+                            #6f75aa 68%,
+                            #e599c2 84%,
+                            #e599c2 100%);
+                    --ss-rarity: transparent;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;

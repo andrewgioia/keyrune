@@ -10,13 +10,18 @@
     "doc": "docs"
   },
   "scripts": {
-    "build-default": "sass ./src/scss/keyrune.scss ./dist/css/keyrune.css",
-    "build-default-min": "sass ./src/scss/keyrune.scss ./dist/css/keyrune.min.css --style compressed",
-    "build-full": "sass ./src/scss/keyrune-full.scss ./dist/css/keyrune-full.css",
-    "build-full-min": "sass ./src/scss/keyrune-full.scss ./dist/css/keyrune-full.min.css --style compressed",
-    "copy-assets": "cp -p ./src/font/* ./dist/font && cp -p ./dist/css/keyrune.css* ./docs/assets/css && cp -p ./dist/font/keyrune.woff* ./docs/assets/font",
-    "build": "npm run -s build-default && npm run -s build-default-min && npm run -s build-full && npm run -s build-full-min && npm run -s copy-assets",
-    "watch": "sass --watch ./src/scss/keyrune.scss ./dist/css/keyrune.css"
+    "dist:base": "sass ./src/scss/keyrune.scss ./dist/css/keyrune.css && sass ./src/scss/keyrune.scss ./dist/css/keyrune.min.css --style compressed",
+    "dist:full": "sass ./src/scss/keyrune-full.scss ./dist/css/keyrune-full.css && sass ./src/scss/keyrune-full.scss ./dist/css/keyrune-full.min.css --style compressed",    
+    "dist:assets": "rsync -avzh ./src/font/* ./dist/font",
+    "dist": "npm run -s dist:base && npm run -s dist:full && npm run -s dist:assets",
+    "css:watch": "sass --watch ./src/scss/keyrune.scss ./dist/css/keyrune.css",
+    "docs:css": "sass ./src/scss/keyrune.scss ./docs/assets/css/keyrune.css && rsync -avzh ./src/font/* ./docs/assets/font/",
+    "docs:css:watch": "sass --watch ./src/scss/keyrune.scss ./docs/assets/css/keyrune.css",
+    "docs:content": "hugo -s ./docs/src",
+    "docs:content:watch": "hugo server -s ./docs/src -p 1314 -w",
+    "docs:assets": "rsync -avzh ./dist/css/keyrune.css* ./docs/assets/css && rsync -avzh ./dist/font/keyrune.woff* ./docs/assets/font",
+    "docs": "npm run -s docs:css && npm run -s docs:content && npm run -s docs:assets",
+    "rename": "for f in `find ./src/font/*`; do mv -v \"$f\" \"`echo $f | tr '[A-Z]' '[a-z]'`\"; done"
   },
   "repository": {
     "type": "git",

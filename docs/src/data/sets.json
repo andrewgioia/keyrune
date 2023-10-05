@@ -894,6 +894,26 @@
           "second",
           "beginner"
         ]
+      },
+      "s99": {
+        "code": "s99",
+        "name": "Starter 1999",
+        "display": "Starter 1999",
+        "nicknames": [
+          "Starter"
+        ],
+        "rarity": "e084",
+        "border": "e085",
+        "inner": false,
+        "release": "1999-07-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": false,
+        "tags": [
+          "starter",
+          "beginner"
+        ]
       }
     }
   },
@@ -1086,7 +1106,13 @@
         "subgroup": false,
         "version": "4.0.0",
         "official": true,
-        "aliases": false,
+        "aliases": {
+          "o98p": {
+            "code": "o98p",
+            "name": "Oversized 90's Promos",
+            "release": "1996-04-01"
+          }
+        },
         "tags": [
           "oversized",
           "gen con",

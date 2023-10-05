@@ -1,27 +1,28 @@
 :root {
-  --border-default: #fff;
-  --border-contrast: #131417;
-  --rarity-default: #131417;
-  --inner-default: #fff;
+  --ss-border: #fff;
+  --ss-border-contrast: #131417;
+  --ss-inner: #fff;
+  --ss-rarity: #131417;
+  --ss-rarity-bg: transparent;
 }
 :root[data-mode=dark] {
-  --border-default: #ddd;
-  --border-contrast: #000;
-  --rarity-default: #000;
-  --inner-default: #fff;
+  --ss-border: #ddd;
+  --ss-border-contrast: #000;
+  --ss-rarity: #000;
+  --ss-inner: #fff;
 }
 
 @font-face {
   font-family: "keyrune";
-  src: url("../font/keyrune.eot?4.0.38");
-  src: url("../font/keyrune.eot?4.0.38#iefix") format("embedded-opentype"), url("../font/keyrune.woff2?4.0.38") format("woff2"), url("../font/keyrune.ttf?4.0.38") format("truetype"), url("../font/keyrune.woff?4.0.38") format("woff"), url("../font/keyrune.svg?4.0.38#keyrune") format("svg");
+  src: url("../font/keyrune.eot?4.0.57");
+  src: url("../font/keyrune.eot?4.0.57#iefix") format("embedded-opentype"), url("../font/keyrune.woff2?4.0.57") format("woff2"), url("../font/keyrune.ttf?4.0.57") format("truetype"), url("../font/keyrune.woff?4.0.57") format("woff"), url("../font/keyrune.svg?4.0.57#keyrune") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 .ss {
   font-family: "keyrune" !important;
-  color: var(--icon-default);
+  color: var(--ss-rarity);
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -32,6 +33,9 @@
   display: inline-flex;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.ss::before {
+  background: var(--ss-rarity-bg);
 }
 .ss-lea::before {
   content: "\e000";
@@ -465,6 +469,15 @@
 .ss-uds.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-s99::before {
+  content: "\e084";
+}
+.ss-s99.ss-border::after {
+  content: "\e085";
+}
+.ss-s99.ss-inner::marker {
+  content: "\f8ff";
+}
 .ss-legchr::before {
   content: "\f8f6";
 }
@@ -529,15 +542,15 @@
   content: "\f8ff";
 }
 .ss.ss-border::after {
-  color: var(--border-default);
+  color: var(--ss-border);
   position: absolute;
   left: 0;
 }
 .ss.ss-border.ss-rarity-common-alt::after, .ss.ss-border.ss-rarity-uncommon::after, .ss.ss-border.ss-rarity-rare::after, .ss.ss-border.ss-rarity-mythic::after, .ss.ss-border.ss-rarity-foil::after, .ss.ss-border.ss-border-black::after {
-  color: var(--border-contrast);
+  color: var(--ss-border-contrast);
 }
-.ss.ss-border-white::after {
-  color: var(--border-default) !important;
+.ss.ss-border-white {
+  --ss-border: #fff !important;
 }
 .ss.ss-inner {
   display: list-item;
@@ -548,68 +561,103 @@
   left: 0;
 }
 .ss.ss-inner::marker {
-  color: var(--inner-default);
+  color: var(--ss-inner);
 }
 .ss.ss-inner::before, .ss.ss-inner::after, .ss.ss-inner::marker {
   left: 50%;
   transform: translateX(-50%);
 }
-.ss.ss-rarity-common::before {
-  color: #131417;
+.ss.ss-rarity-common {
+  --ss-rarity: #131417;
 }
 .ss.ss-rarity-common.ss-rarity-gradient::before {
-  background: linear-gradient(90deg, #131417 0%, #131417 50%, #131417 100%);
-  color: transparent;
+  --ss-rarity-bg:
+      linear-gradient(
+          90deg,
+          #131417 0%,
+          #131417 50%,
+          #131417 100%);
+  --ss-rarity: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss.ss-rarity-common-alt::before {
-  color: #fff;
+.ss.ss-rarity-common-alt {
+  --ss-rarity: #fff;
 }
 .ss.ss-rarity-common-alt.ss-rarity-gradient::before {
-  background: linear-gradient(90deg, 0%, 50%, 100%);
-  color: transparent;
+  --ss-rarity-bg:
+      linear-gradient(
+          90deg,
+           0%,
+           50%,
+           100%);
+  --ss-rarity: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss.ss-rarity-uncommon::before {
-  color: #707883;
+.ss.ss-rarity-uncommon {
+  --ss-rarity: #707883;
 }
 .ss.ss-rarity-uncommon.ss-rarity-gradient::before {
-  background: linear-gradient(90deg, #4d6572 0%, #c3dfeb 50%, #4d6572 100%);
-  color: transparent;
+  --ss-rarity-bg:
+      linear-gradient(
+          90deg,
+          #4d6572 0%,
+          #c3dfeb 50%,
+          #4d6572 100%);
+  --ss-rarity: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss.ss-rarity-rare::before {
-  color: #b7a066;
+.ss.ss-rarity-rare {
+  --ss-rarity: #b7a066;
 }
 .ss.ss-rarity-rare.ss-rarity-gradient::before {
-  background: linear-gradient(90deg, #7f6f43 0%, #d9c287 50%, #7f6f43 100%);
-  color: transparent;
+  --ss-rarity-bg:
+      linear-gradient(
+          90deg,
+          #7f6f43 0%,
+          #d9c287 50%,
+          #7f6f43 100%);
+  --ss-rarity: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss.ss-rarity-mythic::before {
-  color: #bf4427;
+.ss.ss-rarity-mythic {
+  --ss-rarity: #d9640f;
 }
 .ss.ss-rarity-mythic.ss-rarity-gradient::before {
-  background: linear-gradient(90deg, #ac392e 0%, #eb9d3d 50%, #ac392e 100%);
-  color: transparent;
+  --ss-rarity-bg:
+      linear-gradient(
+          90deg,
+          #c2381a 0%,
+          #f59700 50%,
+          #c2381a 100%);
+  --ss-rarity: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.ss.ss-rarity-foil::before {
-  color: #00afc9;
+.ss.ss-rarity-foil {
+  --ss-rarity: #00afc9;
 }
 .ss.ss-rarity-foil.ss-rarity-gradient::before {
-  background: linear-gradient(135deg, #ea8d66 0%, #ea8d66 15%, #fdef8a 28%, #8bcc93 42%, #a6dced 55%, #6f75aa 68%, #e599c2 84%, #e599c2 100%);
-  color: transparent;
+  --ss-rarity-bg:
+      linear-gradient(
+          135deg,
+          #ea8d66 0%,
+          #ea8d66 15%,
+          #fdef8a 28%,
+          #8bcc93 42%,
+          #a6dced 55%,
+          #6f75aa 68%,
+          #e599c2 84%,
+          #e599c2 100%);
+  --ss-rarity: transparent;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
