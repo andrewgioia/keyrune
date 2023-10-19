@@ -1,0 +1,15 @@
+// firefox specific fixes
+@-moz-document url-prefix() {
+    .#{$keyrune-prefix} {
+        // fnm's weird offset
+        &-fnm::before,
+        &-pfnm::before {
+            margin-left: -0.4%;
+        }
+        // 7ed offset
+        &-7ed::before,
+        &-7e::before {
+            margin-left: 0.5%;
+        }
+    }
+}

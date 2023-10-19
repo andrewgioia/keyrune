@@ -1,13 +1,16 @@
-@charset "UTF-8";
 :root {
-  --bg-body: #fff;
-  --bg-hover: #f2f1f1;
-  --bg-content: #e0dfde;
   --bg-accent: #d2d1cf;
+  --bg-active: #d2d1cf;
+  --bg-body: #fff;
   --bg-border: #000;
   --bg-button: #fff;
-  --bg-active: #d2d1cf;
-  --icon-default: #131417;
+  --bg-content: #f2f1f1;
+  --bg-card: #e0dfde;
+  --bg-card-hover: #d2d1cf;
+  --bg-dialog: #e0dfde;
+  --bg-hover: #f0eded;
+  --bg-shadow: #131417;
+  --icon-shadow: #fff;
   --link-default: #0060e4;
   --text-default: #000;
   --text-accent: #8e8d88;
@@ -17,18 +20,22 @@
   --rgba-modal: rgba(0, 0, 0, 0.75);
 }
 :root[data-mode=dark] {
-  --bg-body: #202124;
-  --bg-hover: #131417;
-  --bg-content: #3a3a3a;
   --bg-accent: #8e8d88;
+  --bg-active: #39b9e4;
+  --bg-body: #1e1f20;
   --bg-border: #575754;
   --bg-button: #18191b;
-  --bg-active: #29c9ff;
-  --icon-default: #000;
-  --link-default: #29c9ff;
+  --bg-content: #2a2a2b;
+  --bg-card: #1e1f20;
+  --bg-card-hover: #18191b;
+  --bg-dialog: #131417;
+  --bg-hover: #131417;
+  --bg-shadow: #000;
+  --icon-shadow: transparent;
+  --link-default: #39b9e4;
   --text-default: #fff;
   --text-accent: #d2d1cf;
-  --text-contrast: #ddd;
+  --text-contrast: #f2f1f1;
   --svg-border: #575754;
   --rgba-fg: rgba(0,0,0,0.9);
   --rgba-modal: rgba(0, 0, 0, 0.5);
@@ -220,7 +227,7 @@ footer {
   width: 100%;
 }
 footer.border {
-  border-top: 1px solid #3a3a3a;
+  border-top: 1px solid #2a2a2b;
 }
 footer menu li {
   margin-bottom: 0.5rem;
@@ -309,6 +316,34 @@ footer iframe html body {
 }
 .bg-content {
   background-color: var(--bg-content);
+}
+
+.tooltip {
+  font-style: normal;
+  display: flex;
+  width: auto;
+  margin: 0 auto;
+  background: var(--text-default);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  white-space: nowrap;
+  min-height: 1.5rem;
+  color: var(--bg-body);
+  transform: translateX(-50%) translateY(-50%);
+  margin-top: -1rem;
+  opacity: 0;
+  font-size: 1rem;
+  padding: 0.25rem 0.75rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  transition: top 250ms ease-in-out, opacity 250ms ease-in-out;
+}
+.tooltip-wrapper:not(.disabled):hover .tooltip {
+  top: -0.5rem;
+  opacity: 1;
+  transition-delay: 750ms;
 }
 
 .flex {
@@ -702,6 +737,10 @@ footer iframe html body {
     width: min(91.66667%, 1440px);
   }
 }
+.border-t-light {
+  border-top: 1px solid var(--bg-accent);
+}
+
 @media only screen and (min-width: 512px) {
   .xs\:inline {
     display: inline;
@@ -868,7 +907,7 @@ button.bubble::before {
   width: calc(100% + 2rem);
   height: calc(100% + 2rem);
   border-radius: 1rem;
-  background: #202124;
+  background: #1e1f20;
   top: -1rem;
   left: -1rem;
   z-index: 0;
@@ -915,7 +954,7 @@ aside > p.big {
   }
 }
 dialog {
-  background: var(--bg-content);
+  background: var(--bg-dialog);
   border: none;
   border-radius: 1.5rem;
   color: var(--text-default);
@@ -1072,6 +1111,10 @@ menu label.disabled, menu label[disabled=disabled] {
   cursor: not-allowed;
   opacity: 0.33;
 }
+menu label svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 menu input[type=radio]:checked + label,
 menu input[type=checkbox]:checked + label,
 menu label.checked {
@@ -1128,7 +1171,7 @@ menu.group label.right {
 }
 #icons figure {
   align-items: center;
-  background-color: var(--bg-body);
+  background-color: var(--bg-card);
   border-radius: 1rem;
   cursor: pointer;
   display: flex;
@@ -1139,7 +1182,7 @@ menu.group label.right {
   width: 100%;
 }
 #icons figure:hover {
-  background-color: var(--bg-hover);
+  background-color: var(--bg-card-hover);
   animation: hover 200ms;
 }
 #icons figure > .ss {
@@ -1148,6 +1191,9 @@ menu.group label.right {
 }
 #icons figure > .ss.ss-rarity-common:not(.ss-inner)::before {
   color: var(--text-default) !important;
+}
+#icons figure > .ss::before {
+  text-shadow: 0 0 2rem var(--icon-shadow);
 }
 #icons figure > span {
   margin: 0 0.5rem 1.25rem;
@@ -1203,13 +1249,36 @@ menu.group label.right {
   display: inline;
   margin: 1rem 1rem 1rem 0;
 }
+#icons[data-density=icon] div.grid {
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+#icons[data-density=icon] div.sticky {
+  padding-bottom: 1rem;
+}
+#icons[data-density=icon] figure {
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 0.75rem;
+}
+#icons[data-density=icon] figure > .ss {
+  font-size: 2rem;
+  margin: 1rem;
+}
+#icons[data-density=icon] figure > span.icon-name,
+#icons[data-density=icon] figure > span.icon-code {
+  display: none;
+}
+#icons[data-density=icon] .set-group-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 
 @keyframes hover {
   0% {
-    background-color: var(--bg-body);
+    background-color: var(--bg-card);
   }
   100% {
-    background-color: var(--bg-hover);
+    background-color: var(--bg-card-hover);
   }
 }
 @media only screen and (min-width: 1025px) {
@@ -1227,6 +1296,14 @@ menu.group label.right {
     grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 2rem;
     margin-bottom: 4rem;
+  }
+  #icons[data-density=icon] .set-group-grid {
+    grid-template-columns: repeat(8, minmax(0, 1fr));
+  }
+}
+@media only screen and (min-width: 1281px) {
+  #icons[data-density=icon] .set-group-grid {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
 }
 :root[data-mode=dark] #icons figure .ss.ss-rarity-common.ss-inner,
@@ -1253,7 +1330,7 @@ form .input-wrapper svg.clear {
 form input[type=text] {
   align-self: stretch;
   background: var(--bg-body);
-  border: 0.15rem solid var(--text-default);
+  border: 0.15rem solid var(--bg-border);
   box-shadow: inset 0 0.25rem 0 0 var(--bg-hover);
   height: 3.6rem;
   border-radius: 2rem;
@@ -1263,15 +1340,15 @@ form input[type=text] {
   width: calc(100% - 5.5rem);
 }
 form input[type=text]::placeholder {
-  color: var(--bg-accent);
+  color: var(--text-accent);
   font-size: 1.25rem;
 }
 form input[type=text]:focus {
   outline: none;
-  box-shadow: inset 0 0.25rem 0 0 var(--bg-hover), 0 0 0 1px var(--bg-body), 0 0 0 0.25rem #29c9ff;
+  box-shadow: inset 0 0.25rem 0 0 var(--bg-hover), 0 0 0 1px var(--bg-body), 0 0 0 0.25rem #39b9e4;
 }
 form button.button {
-  border-color: var(--text-default);
+  border-color: var(--bg-border);
   border-radius: 0 2rem 2rem 0;
   box-shadow: inset 0 0.25rem 0 0 var(--bg-hover);
   cursor: pointer;
@@ -1318,7 +1395,7 @@ object {
 }
 object details {
   background: var(--rgba-fg);
-  box-shadow: 0 0 12rem 0 var(--icon-default);
+  box-shadow: 0 0 12rem 0 var(--bg-shadow);
   display: flex;
   flex-direction: column;
   border-radius: 1.5rem;
@@ -1352,7 +1429,7 @@ object details .icon {
 }
 object details .icon i.ss {
   font-size: 8em;
-  line-height: 1.75ex;
+  line-height: 1;
   padding-bottom: 1.5rem;
 }
 object details .icon-controls {
@@ -1467,27 +1544,6 @@ object details .table .actions a.action-button span {
 object details .table .actions a.action-button:hover span {
   text-decoration-color: var(--text-default);
 }
-object details .table .actions a.action-button em {
-  font-style: normal;
-  display: flex;
-  width: auto;
-  margin: 0 auto;
-  background: var(--text-default);
-  position: absolute;
-  top: 0;
-  left: 50%;
-  white-space: nowrap;
-  min-height: 1.5rem;
-  color: var(--bg-body);
-  transform: translateX(-50%) translateY(-50%);
-  margin-top: -1rem;
-  opacity: 0;
-  font-size: 1rem;
-  padding: 0.25rem 0.75rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.5rem;
-}
 object details .tags {
   display: flex;
   font-size: 0.9rem;
@@ -1564,5 +1620,3 @@ object.active details {
     display: flex;
   }
 }
-
-/*# sourceMappingURL=docs.css.map */

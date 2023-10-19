@@ -1,81 +1,3 @@
-$keyrune-ui: (
-    "black": (
-        "100": "#ddd",
-        "300": "#3a3a3a",
-        "500": "#202124",
-        "600": "#18191b",
-        "700": "#131417",
-        "900": "#000",
-    ),
-    "blue": (
-        "300": "#29c9ff", //#74c0fc
-        "500": "#0060e4",
-    ),
-    "pink": (
-        "100": "#f4d4e9", // bg
-        "300": "#ed73be", // border
-        "500": "#df3ea2", // text
-    ),
-    "tan": (
-        "100": "#f2f1f1",
-        "300": "#e0dfde",
-        "500": "#d2d1cf",
-        "700": "#8e8d88",
-        "900": "#575754",
-    ),
-    "white": "#fff",
-);
-
-$keyrune-ui-font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
-    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-
-:root {
-    --bg-body:       #{map.get($keyrune-ui, "white")};          // default page background
-    --bg-hover:      #{map.get($keyrune-ui, "tan", "100")};     // slightly darker page accent
-    --bg-content:    #{map.get($keyrune-ui, "tan", "300")};     // contrast background for white boxes
-    --bg-accent:     #{map.get($keyrune-ui, "tan", "500")};     // slightly darker content accent
-    --bg-border:     #{map.get($keyrune-ui, "black", "900")};   // top border
-    --bg-button:     #{map.get($keyrune-ui, "white")};          // button background
-    --bg-active:     #{map.get($keyrune-ui, "tan", "500")};     // button active state background
-    --icon-default:  #{map.get($keyrune-ui, "black", "700")};   // default .ss rarity color
-    --link-default:  #{map.get($keyrune-ui, "blue", "500")};    // primary brand color
-    --text-default:  #{map.get($keyrune-ui, "black", "900")};   // default body text color
-    --text-accent:   #{map.get($keyrune-ui, "tan", "700")};     // alternate body text color
-    --text-contrast: #{map.get($keyrune-ui, "white")};          // opposite of body text color
-    --svg-border:    #{map.get($keyrune-ui, "white")};          // exploding svg border color
-    --rgba-fg:       rgba(255,255,255,0.916667);
-    --rgba-modal:    rgba(0, 0, 0, 0.75);
-
-    &[data-mode="dark"] {
-        --bg-body:       #{map.get($keyrune-ui, "black", "500")};
-        --bg-hover:      #{map.get($keyrune-ui, "black", "700")};
-        --bg-content:    #{map.get($keyrune-ui, "black", "300")};
-        --bg-accent:     #{map.get($keyrune-ui, "tan", "700")};
-        --bg-border:     #{map.get($keyrune-ui, "tan", "900")};
-        --bg-button:     #{map.get($keyrune-ui, "black", "600")};
-        --bg-active:     #{map.get($keyrune-ui, "blue", "300")};
-        --icon-default:  #{map.get($keyrune-ui, "black", "900")};
-        --link-default:  #{map.get($keyrune-ui, "blue", "300")};
-        --text-default:  #{map.get($keyrune-ui, "white")};
-        --text-accent:   #{map.get($keyrune-ui, "tan", "500")};
-        --text-contrast: #{map.get($keyrune-ui, "black", "100")};
-        --svg-border:    #{map.get($keyrune-ui, "tan", "900")};
-        --rgba-fg:       rgba(0,0,0,0.9);
-        --rgba-modal:    rgba(0, 0, 0, 0.5);
-    }
-}
-
-@font-face {
-    font-family: 'Beleren';
-    src: url( '../font/beleren.eot' );
-    src: url( '../font/beleren.woff' ) format( 'woff' ),
-         url( '../font/beleren.ttf' ) format( 'truetype' ),
-         url( '../font/beleren.svg' ) format( 'svg' );
-    font-weight: normal;
-    font-style: normal;
-}
-
 html {
     font-family: #{$keyrune-ui-font-family};
     font-size: 16px;
@@ -395,4 +317,35 @@ footer {
     &-accent { background-color: var(--bg-accent); }
     &-black { background-color: #{map.get($keyrune-ui, "black", "700")}; }
     &-content { background-color: var(--bg-content); }
+}
+
+// tooltips
+
+.tooltip {
+    font-style: normal;
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+    background: var(--text-default);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    white-space: nowrap;
+    min-height: 1.5rem;
+    color: var(--bg-body);
+    transform: translateX(-50%) translateY(-50%);
+    margin-top: -1rem;
+    opacity: 0;
+    font-size: 1rem;
+    padding: 0.25rem 0.75rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    transition: top 250ms ease-in-out, opacity 250ms ease-in-out;
+
+    &-wrapper:not(.disabled):hover .tooltip {
+        top: -0.5rem;
+        opacity: 1;
+        transition-delay: 750ms;
+    }
 }

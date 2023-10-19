@@ -186,6 +186,21 @@
                 left: 50%;
                 transform: translateX(-50%);
             }
+
+            &.#{$keyrune-prefix}-fw-square {
+                width: 1em;
+
+                &::before {
+                    transform: scale(.5714);
+                }
+
+                &.#{$keyrune-prefix}-border::after,
+                &.#{$keyrune-prefix}-inner::before, 
+                &.#{$keyrune-prefix}-inner::after, 
+                &.#{$keyrune-prefix}-inner::marker {
+                    transform: translateX(-50%) scale(.5714); // scale everything 1/1.75em
+                }
+            }
         }
 
         // colors

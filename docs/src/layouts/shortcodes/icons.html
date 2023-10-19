@@ -1,12 +1,12 @@
 {{- range sort .Site.Data.sets "order" "asc" -}}
     {{- if isset . "sets" -}}
         {{- $group := . -}}
-<div class="set-group" data-id="{{ $group.order }}" data-count="{{ len $group.sets }} ">
+<div class="set-group" data-id="{{ $group.order }}" data-count="{{ len $group.sets }}">
     <div class="set-group-info sticky">
         <h2 class="my-4 pr-8">
             {{ .name }}
         </h2>
-        <p class="mb-6 pr-8">
+        <p class="hidden md:block mb-6 pr-8">
             {{ .description }}
         </p>
     </div>
@@ -14,7 +14,7 @@
         <div class="set-group-grid grid pt-2">
         {{- range $index, $set := sort $group.sets "release" "asc" -}}
             <figure
-                class="grid-span-1 checkerboard"
+                class="grid-span-1"
                 data-code="{{ $set.code }}"
                 data-name="{{ $set.name }}"
                 data-tags="{{ $set.tags | jsonify }}"
@@ -28,7 +28,7 @@
                 data-version="{{ $set.version }}"
                 data-aliases="{{ $set.aliases | jsonify }}"
             >
-                <i class="ss ss-rarity-common ss-{{ $set.code }} ss-fw"></i>
+                <i class="ss ss-{{ $set.code }} ss-rarity-common ss-border ss-inner ss-fw"></i>
                 <span class="icon-code">{{ $set.code }}</span>
                 <span class="icon-name">{{ $set.display }}</span>
             </figure>

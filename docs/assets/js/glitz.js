@@ -243,20 +243,20 @@ function openModal(icon) {
     // specific function bindings
     $('#copy-unicode').on('click', function() {
         navigator.clipboard.writeText(rarity).then(function() {
-            $('#copy-unicode em').html('Unicode copied!').animate('fadeup', 1200, 'ease-in-out');
+            $('#copy-unicode .tooltip').html('Unicode copied!').animate('fadeup', 1200, 'ease-in-out');
         }, function(err) {
-            $('#copy-unicode em').html('Error copying').animate('fadeup', 1200, 'ease-in-out');
+            $('#copy-unicode .tooltip').html('Error copying').animate('fadeup', 1200, 'ease-in-out');
         });
     });
     $('#copy-glyph').on('click', function() {
         navigator.clipboard.writeText($('details div.table li.rarity i').html()).then(function() {
-            $('#copy-glyph em').html('Glyph copied!').animate('fadeup', 1200, 'ease-in-out');
+            $('#copy-glyph .tooltip').html('Glyph copied!').animate('fadeup', 1200, 'ease-in-out');
         }, function(err) {
-            $('#copy-glyph em').html('Error copying').animate('fadeup', 1200, 'ease-in-out');
+            $('#copy-glyph .tooltip').html('Error copying').animate('fadeup', 1200, 'ease-in-out');
         });
     });
     $('#download-svg').on('click', function() {
-        $('#download-svg em').html('Coming soon!').animate('fadeup', 1200, 'ease-in-out');
+        $('#download-svg .tooltip').html('Coming soon!').animate('fadeup', 1200, 'ease-in-out');
     });
 
     // show the modal
@@ -273,10 +273,8 @@ function closeModal() {
 // onload interactions
 
 Zepto(function($){
-
     //
     // mobile nav
-
     $('header').on('click', '#toggle-nav', function(e) {
         $('nav').toggleClass('mobile');
         $('#toggle-nav-svg').toggleClass('closed');
@@ -284,10 +282,10 @@ Zepto(function($){
 
     //
     // dark/light mode
-
     let toggle = $('#switch');
     let cookie = localStorage.getItem('mode');
 
+    // check for cookie
     if (cookie) {
         if (cookie == 'dark') {
             document.documentElement.dataset.mode = 'dark';
@@ -305,6 +303,7 @@ Zepto(function($){
         localStorage.setItem('mode', 'light');
     }
 
+    // click handling
     toggle.on('change', function() {
         if (toggle.prop('checked')) {
             document.documentElement.dataset.mode = 'dark';
@@ -317,14 +316,13 @@ Zepto(function($){
 
     //
     // filter icons if we have a ?q=, modal if we have an ?i=
-
     let url = new URLSearchParams(window.location.search);
-
+    // search query
     if (url.get('q')) {
         filterIcons(url.get('q'));
         $('#icon-filter').val(url.get('q'));
     }
-
+    // icon preview
     if (url.get('i')) {
         let icon = $('figure[data-code="'+url.get('i')+'"]');
         if (icon) {
@@ -334,14 +332,12 @@ Zepto(function($){
 
     //
     // live icon filter via search box
-
     $('#icon-filter').on('input', function() {
          filterIcons($(this).val());
     });
 
     //
     // icon filter clear button
-
     $('.search-link').on('click', function(e) {
         e.preventDefault();
         filterIcons($(this).data('q'));
@@ -350,27 +346,21 @@ Zepto(function($){
 
     //
     // icon display menus
-
     $('#icon-menu').on('change', 'input[type=radio][name="density"]', function() {
         $('#icons').data('density', $(this).val());
     });
-
     $('#icon-menu').on('change', 'input[type=radio][name="rarity"]', function() {
         iconsChangeRarity($(this).val());
     });
-
     $('#icon-menu').on('change', 'input[type=checkbox][name="border"]', function() {
         iconsToggleClass('ss-border', 'border');
     });
-
     $('#icon-menu').on('change', 'input[type=checkbox][name="inner"]', function() {
         iconsToggleClass('ss-inner', 'inner');
     });
-
     $('#icon-menu').on('change', 'input[type=checkbox][name="gradient"]', function() {
         iconsToggleClass('ss-rarity-gradient', 'gradient');
     });
-
     $('#icon-menu').on('change', 'input[type=checkbox][name="transparent"]', function() {
         $('#icons figure').each(function(index, figure) {
             $(figure).toggleClass('checkerboard');
@@ -379,7 +369,6 @@ Zepto(function($){
 
     //
     // icon modal
-
     $('#icons').on('click', 'figure', function() {
         openModal($(this));
     });

@@ -179,6 +179,34 @@
           "6th",
           "6e"
         ]
+      },
+      "7ed": {
+        "code": "7ed",
+        "name": "Seventh Edition",
+        "display": "Seventh Edition",
+        "nicknames": [
+          "7th Edition"
+        ],
+        "rarity": "e0b1",
+        "border": "e0b2",
+        "inner": false,
+        "release": "2001-04-11",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "7e": {
+            "code": "7e",
+            "name": "Gatherer code",
+            "release": "2001-04-11"
+          }
+        },
+        "tags": [
+          "core",
+          "seventh",
+          "7th",
+          "7e"
+        ]
       }
     }
   },
@@ -631,32 +659,118 @@
           "masques",
           "mask"
         ]
+      },
+      "nem": {
+        "code": "nem",
+        "name": "Nemesis",
+        "display": "Nemesis",
+        "nicknames": false,
+        "rarity": "e09c",
+        "border": "e09d",
+        "inner": false,
+        "release": "2000-02-14",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "mm": {
+            "code": "ne",
+            "name": "Gatherer code",
+            "release": "2000-02-14"
+          },
+          "nms": {
+            "code": "nms",
+            "name": "Keyrune v3 compatibility",
+            "release": "2000-02-14"
+          }
+        },
+        "tags": [
+          "nemesis",
+          "masques",
+          "axe"
+        ]
+      },
+      "pcy": {
+        "code": "pcy",
+        "name": "Prophecy",
+        "display": "Prophecy",
+        "nicknames": false,
+        "rarity": "e0a2",
+        "border": "e0a3",
+        "inner": "e0a4",
+        "release": "2000-06-05",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "py": {
+            "code": "py",
+            "name": "Gatherer code",
+            "release": "2000-06-05"
+          }
+        },
+        "tags": [
+          "prophecy",
+          "masques",
+          "crystals"
+        ]
+      },
+      "inv": {
+        "code": "inv",
+        "name": "Invasion",
+        "display": "Invasion",
+        "nicknames": false,
+        "rarity": "e0a8",
+        "border": "e0a9",
+        "inner": false,
+        "release": "2000-10-02",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "in": {
+            "code": "in",
+            "name": "Gatherer code",
+            "release": "2000-10-02"
+          }
+        },
+        "tags": [
+          "invasion",
+          "coalition"
+        ]
+      },
+      "pls": {
+        "code": "pls",
+        "name": "Planeshift",
+        "display": "Planeshift",
+        "nicknames": false,
+        "rarity": "e0ae",
+        "border": "e0af",
+        "inner": false,
+        "release": "2001-02-05",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "ps": {
+            "code": "ps",
+            "name": "Gatherer code",
+            "release": "2001-02-05"
+          }
+        },
+        "tags": [
+          "invasion",
+          "swirl",
+          "portal"
+        ]
       }
     }
   },
   "command": {
     "order": 2,
-    "name": "Command Zone",
-    "description": "Commander/EDH, Planechase, and other sets that use the command zone.",
+    "name": "Commander",
+    "description": "Commander/EDH sets and preconstucted decks.",
     "sets": {
-      "past": {
-        "code": "pvan",
-        "name": "Vanguard",
-        "display": "Vanguard",
-        "nicknames": false,
-        "rarity": "e05d",
-        "border": "e05e",
-        "inner": false,
-        "release": "1997-05-01",
-        "subgroup": false,
-        "version": "4.0.0",
-        "official": false,
-        "aliases": false,
-        "tags": [
-          "vanguard",
-          "feather"
-        ]
-      }
     }
   },
   "reprint": {
@@ -816,6 +930,56 @@
           "book",
           "custom"
         ]
+      },
+      "brb": {
+        "code": "brb",
+        "name": "battle Royal Box Set",
+        "display": "Battle Royale",
+        "nicknames": false,
+        "rarity": "e090",
+        "border": "e091",
+        "inner": false,
+        "release": "1999-11-12",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "br": {
+            "code": "br",
+            "name": "Gatherer code",
+            "release": "1999-11-12"
+          }
+        },
+        "tags": [
+          "battle",
+          "royale",
+          "box"
+        ]
+      },
+      "btd": {
+        "code": "btd",
+        "name": "Beatdown Box Set",
+        "display": "Beatdown",
+        "nicknames": false,
+        "rarity": "e0a5",
+        "border": "e0a6",
+        "inner": false,
+        "release": "2000-10-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "bd": {
+            "code": "bd",
+            "name": "Gatherer code",
+            "release": "2000-10-01"
+          }
+        },
+        "tags": [
+          "beatdown",
+          "box",
+          "spear"
+        ]
       }
     }
   },
@@ -954,12 +1118,41 @@
         "subgroup": false,
         "version": "4.0.0",
         "official": true,
-        "aliases": [
-          "p3k"
-        ],
+        "aliases": {
+          "p3k": {
+            "code": "p3k",
+            "name": "Keyrune v3 compatibility",
+            "release": "1999-07-06"
+          }
+        },
         "tags": [
           "portal",
           "kingdoms",
+          "beginner"
+        ]
+      },
+      "s00": {
+        "code": "s00",
+        "name": "Starter 2000",
+        "display": "Starter 2000",
+        "nicknames": false,
+        "rarity": "e09f",
+        "border": "e0a0",
+        "inner": false,
+        "release": "2000-04-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "p4": {
+            "code": "p4",
+            "name": "Gatherer code",
+            "release": "2000-04-01"
+          }
+        },
+        "tags": [
+          "starter",
+          "2000",
           "beginner"
         ]
       }
@@ -1147,8 +1340,8 @@
           "Oversized 90s Promo",
           "Gen Con 98 Oversized Promo"
         ],
-        "rarity": "f8f4",
-        "border": "f8f3",
+        "rarity": "f8f2",
+        "border": "f8f1",
         "inner": false,
         "release": "1996-04-01",
         "subgroup": false,
@@ -1165,6 +1358,30 @@
           "oversized",
           "gen con",
           "[[Incoming!|o90p]]"
+        ]
+      },
+      "palp": {
+        "code": "palp",
+        "name": "Asia Pacific Land Program",
+        "display": "APAC Lands",
+        "nicknames": [
+          "APAC Lands",
+          "APAC",
+          "APAC Promos"
+        ],
+        "rarity": "e072",
+        "border": "e073",
+        "inner": false,
+        "release": "1998-09-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": false,
+        "tags": [
+          "apac",
+          "asia",
+          "pacific",
+          "lands"
         ]
       },
       "pgru": {
@@ -1188,6 +1405,110 @@
           "program",
           "lands"
         ]
+      },
+      "fnm": {
+        "code": "fnm",
+        "name": "Friday Night Magic 2000",
+        "display": "Friday Night Magic",
+        "nicknames": [
+          "FNM",
+          "FNM Promos"
+        ],
+        "rarity": "e093",
+        "border": "e094",
+        "inner": "e095",
+        "release": "2000-01-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": {
+          "pfnm": {
+            "code": "pfnm",
+            "name": "Keyrune v3 compatibility",
+            "release": "2000-01-01"
+          }
+        },
+        "tags": [
+          "friday",
+          "night",
+          "fnm",
+          "2000"
+        ]
+      },
+      "pal00": {
+        "code": "pal00",
+        "name": "Arena League 2000",
+        "display": "Arena League 2000",
+        "nicknames": [
+          "Arena",
+          "Arena League"
+        ],
+        "rarity": "e096",
+        "border": "e097",
+        "inner": "false",
+        "release": "2000-01-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": {
+          "pal02": {
+            "code": "pal02",
+            "name": "Arena League 2002",
+            "release": "2002-01-01"
+          }
+        },
+        "tags": [
+          "arena",
+          "league",
+          "2000",
+          "2002"
+        ]
+      },
+      "pelp": {
+        "code": "pelp",
+        "name": "European Land Program",
+        "display": "Euro Lands",
+        "nicknames": [
+          "Euro Lands",
+          "Euro",
+          "Euro Promos"
+        ],
+        "rarity": "e099",
+        "border": "e09a",
+        "inner": false,
+        "release": "2000-02-05",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": false,
+        "tags": [
+          "euro",
+          "european",
+          "lands"
+        ]
+      },
+      "mpr": {
+        "code": "mpr",
+        "name": "Magic Player Rewards 2001",
+        "display": "Magic Player Rewards",
+        "nicknames": [
+          "MPR",
+          "Player Rewards",
+          "MPR 2001"
+        ],
+        "rarity": "e0ab",
+        "border": "e0ac",
+        "inner": false,
+        "release": "2001-01-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": false,
+        "tags": [
+          "player",
+          "rewards",
+          "custom"
+        ]
       }
     }
   },
@@ -1196,6 +1517,24 @@
     "name": "Standalone",
     "description": "Experimental, out-of-world, draft inovative, or other releases that can be played on their own.",
     "sets": {
+      "past": {
+        "code": "pvan",
+        "name": "Vanguard",
+        "display": "Vanguard",
+        "nicknames": false,
+        "rarity": "e05d",
+        "border": "e05e",
+        "inner": false,
+        "release": "1997-05-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": false,
+        "tags": [
+          "vanguard",
+          "feather"
+        ]
+      },
       "ugl": {
         "code": "ugl",
         "name": "Unglued",
@@ -1228,8 +1567,8 @@
         "nicknames": [
           "Legends (CHR Alternative)"
         ],
-        "rarity": "f8f6",
-        "border": "f8f5",
+        "rarity": "f8f4",
+        "border": "f8f3",
         "inner": false,
         "release": "1995-07-01",
         "subgroup": false,
@@ -1255,9 +1594,9 @@
         "nicknames": [
           "Portal (Gatherer Alternative)"
         ],
-        "rarity": "f8f2",
-        "border": "f8f1",
-        "inner": "f8f0",
+        "rarity": "f8f0",
+        "border": "f8ef",
+        "inner": "f8ee",
         "release": "1997-05-01",
         "subgroup": false,
         "version": "4.0.0",
@@ -1282,8 +1621,8 @@
         "nicknames": [
           "Weatherlight (Gatherer Alternative)"
         ],
-        "rarity": "f8ef",
-        "border": "f8ee",
+        "rarity": "f8ed",
+        "border": "f8ec",
         "inner": false,
         "release": "1997-06-09",
         "subgroup": false,
@@ -1301,6 +1640,29 @@
           "gatherer",
           "alternative"
         ]
+      },
+      "brbalt": {
+        "code": "brbalt",
+        "name": "Battle Royale Box Set (Alternative)",
+        "display": "Battle Royale (Alternative)",
+        "nicknames": [
+          "Battle Royale (Community)"
+        ],
+        "rarity": "f8eb",
+        "border": "f8ea",
+        "inner": false,
+        "release": "1999-11-12",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": false,
+        "tags": [
+          "battle",
+          "royale",
+          "box",
+          "axe",
+          "community"
+        ]
       }
     }
   },
@@ -1309,28 +1671,50 @@
     "name": "Custom",
     "description": "Symbols I've created to fill in gaps and other game needs. Other unofficial symbols are incorporated and tagged above.",
     "sets": {
-      "palp": {
-        "code": "palp",
-        "name": "Asia Pacific Land Program",
-        "display": "APAC Lands",
-        "nicknames": [
-          "APAC Lands",
-          "APAC",
-          "APAC Promos"
-        ],
-        "rarity": "e072",
-        "border": "e073",
+      "4eda": {
+        "code": "4eda",
+        "name": "Alternate Fourth Edition",
+        "display": "Alternate 4th Edition",
+        "nicknames": false,
+        "rarity": "f8f6",
+        "border": "f8f5",
         "inner": false,
-        "release": "1998-09-01",
+        "release": "1995-07-01",
+        "subgroup": "Core",
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "leg2": {
+            "code": "leg2",
+            "name": "Short alternate code",
+            "release": "1995-04-01"
+          }
+        },
+        "tags": [
+          "fourth",
+          "edition",
+          "alternate",
+          "error"
+        ]
+      },
+      "s00alt": {
+        "code": "s00alt",
+        "name": "Starter 2000 (Alternative)",
+        "display": "Starter 2000 (Alternative)",
+        "nicknames": false,
+        "rarity": "f8e9",
+        "border": "f8e8",
+        "inner": false,
+        "release": "2000-04-01",
         "subgroup": false,
         "version": "4.0.0",
-        "official": false,
+        "official": true,
         "aliases": false,
         "tags": [
-          "apac",
-          "asia",
-          "pacific",
-          "lands"
+          "starter",
+          "2000",
+          "beginner",
+          "alternate"
         ]
       }
     }

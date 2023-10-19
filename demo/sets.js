@@ -26,12 +26,20 @@ sets = {
     "usg": "Urza's Saga",
     "ulg": "Urza's Legacy",
     "uds": "Urza's Destiny",
+    "mmq": "Mercadian Masques",
   },
   "Command": {
     "pvan": "Vanguard",
   },
   "Reprint": {
+    "sum": "Summer Magic",
+    "fbb": "Foreign Black Border",
+    "4bb": "4th Edition Black Border",
     "chr": "Chronicles",
+    "ren": "Renaissance",
+    "rin": "Rinascimento",
+    "ath": "Anthologies",
+    "brb": "Battle Royale Box Set",
   },
   "Supplemental": {},
   "Digital": {
@@ -40,7 +48,9 @@ sets = {
   "Beginner": {
     "itp": "Introductory 2-Player Set",
     "por": "Portal",
-    "p02": "Portal Second Age"
+    "p02": "Portal Second Age",
+    "s99": "Starter 1999",
+    "ptk": "Portal Three Kingdoms",
   },
   "Premium": {
     "ced": "Collectors' Edition",
@@ -51,23 +61,18 @@ sets = {
     "phpr": "HarperPrism Book Promos",
     "pmei": "Media Inserts",
     "pmtg": "MTG Logo Promos",
+    "pgc98": "Gen Con 1998 Oversized Promo",
+    "palp": "Asia Pacific Land Program",
+    "pgru": "Guru",
+    "fnm": "Friday Night Magic",
   },
   "Standalone": {
     "ugl": "Unglued",
   },
-  "Unofficial": {
-    "sum": "Summer Magic",
-    "fbb": "Foreign Black Border",
-    "4bb": "4th Edition Black Border",
-    "ren": "Renaissance",
-    "rin": "Rinascimento",
-    "palp": "Asia Pacific Land Program",
-    "ath": "Anthologies",
-  },
   "Alternative": {
     "legchr": "Legends (Chronicles)",
-    "pgc98": "Gen Con 1998 Oversized Promo",
     "po": "Portal (Gatherer)",
     "wl": "Weatherlight (Gatherer)",
+    "brbalt": "Battle Royale (Alternate)",
   }
 }

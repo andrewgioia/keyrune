@@ -1,3 +1,19 @@
+// main menu wrapper
+
+#icon-menu {
+    background-color: rgba(255,255,255,0.7);
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    --webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+}
+:root[data-mode="dark"] {
+    #icon-menu {
+        background-color: rgba(30,31,32,0.7);
+    }
+}
+
 //
 // icon menu buttons
 
@@ -46,6 +62,11 @@ menu {
         &[disabled="disabled"] {
             cursor: not-allowed;
             opacity: 0.33;
+        }
+
+        svg {
+            width: 1.5rem;
+            height: 1.5rem;
         }
     }
 
@@ -99,14 +120,17 @@ menu {
 // icon grid
 
 #icons {
-
+    // container
     .set {
         &-group {
             display: flex;
             flex-direction: column;
 
             &-info {
-                background: var(--bg-content);
+                background-color: var(--bg-content);
+                height: 0%;
+                position: sticky;
+                top: 6.625rem;
                 z-index: 20;
             }
 
@@ -122,9 +146,10 @@ menu {
         }
     }
 
+    // icon cards
     figure {
         align-items: center;
-        background-color: var(--bg-body);
+        background-color: var(--bg-card);
         border-radius: 1rem;
         cursor: pointer;
         display: flex;
@@ -135,7 +160,7 @@ menu {
         width: 100%;
 
         &:hover {
-            background-color: var(--bg-hover);
+            background-color: var(--bg-card-hover);
             animation: hover 200ms;
         }
 
@@ -145,6 +170,10 @@ menu {
 
             &.ss-rarity-common:not(.ss-inner)::before {
                 color: var(--text-default) !important;
+            }
+
+            &::before {
+                text-shadow: 0 0 2rem var(--icon-shadow);
             }
         }
 
@@ -217,37 +246,79 @@ menu {
             }
         }
     }
+
+    &[data-density="icon"] {
+        div.grid {
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        div.sticky {
+            padding-bottom: 1rem;
+        }
+        figure {
+            flex-direction: row;
+            justify-content: center;
+            border-radius: 0.75rem;
+            > .ss {
+                font-size: 2rem;
+                margin: 1rem;
+            }
+            > span.icon-name,
+            > span.icon-code {
+                display: none;
+            }
+        }
+        .set-group-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+    }
 }
 @keyframes hover {
     0% {
-        background-color: var(--bg-body);
+        background-color: var(--bg-card);
     }
     100% {
-        background-color: var(--bg-hover);
+        background-color: var(--bg-card-hover);
     }
 }
 @media only screen and (min-width: 1025px) {
-    #icons .set {
-        &-group {
-            flex-direction: row;
+    #icons {
+        .set {
+            &-group {
+                flex-direction: row;
 
-            &-info {
-                width: 20%;
-                padding-bottom: 3rem;
+                &-info {
+                    width: 20%;
+                    padding-bottom: 3rem;
+                }
+                &-icons {
+                    width: 80%;
+                }
+                &-grid {
+                    grid-template-columns: repeat(6, minmax(0, 1fr));
+                    gap: 2rem;
+                    margin-bottom: 4rem;
+                }
             }
-            &-icons {
-                width: 80%;
-            }
-            &-grid {
-                grid-template-columns: repeat(6, minmax(0, 1fr));
-                gap: 2rem;
-                margin-bottom: 4rem;
+        }
+
+        &[data-density="icon"] {
+            .set-group-grid {
+                grid-template-columns: repeat(8, minmax(0, 1fr));
             }
         }
     }
 }
-// common dark mode needs to swap white/black depending on inner status
+@media only screen and (min-width: 1281px) {
+    #icons[data-density="icon"] {
+        .set-group-grid {
+            grid-template-columns: repeat(12, minmax(0, 1fr));
+        }
+    }
+}
+// dark mode alterations on figure cards
 :root[data-mode="dark"] {
+    // common dark mode needs to swap white/black depending on inner status
     #icons figure .ss.ss-rarity-common.ss-inner,
     object details .details .icon i.ss.ss-rarity-common.ss-inner {
         --ss-rarity: #000 !important;
@@ -283,7 +354,7 @@ form {
     input[type="text"] {
         align-self: stretch;
         background: var(--bg-body);
-        border: 0.15rem solid var(--text-default);
+        border: 0.15rem solid var(--bg-border);
         box-shadow: inset 0 0.25rem 0 0 var(--bg-hover);
         height: 3.6rem;
         border-radius: 2rem;
@@ -293,7 +364,7 @@ form {
         width: calc(100% - 5.5rem);
 
         &::placeholder {
-            color: var(--bg-accent);
+            color: var(--text-accent);
             font-size: 1.25rem;
         }
 
@@ -306,7 +377,7 @@ form {
     }
 
     button.button {
-        border-color: var(--text-default);
+        border-color: var(--bg-border);
         border-radius: 0 2rem 2rem 0;
         box-shadow: inset 0 0.25rem 0 0 var(--bg-hover);
         cursor: pointer;
@@ -359,8 +430,8 @@ object {
     z-index: 100;
 
     details {
-        background: var(--rgba-fg); //rgba(242,241,241,0.85);
-        box-shadow: 0 0 12rem 0 var(--icon-default);
+        background: var(--rgba-fg);
+        box-shadow: 0 0 12rem 0 var(--bg-shadow);
         display: flex;
         flex-direction: column;
         border-radius: 1.5rem;
@@ -401,7 +472,7 @@ object {
             i.ss {
                 //color: var(--text-default);
                 font-size: 8em;
-                line-height: 1.75ex;
+                line-height: 1;
                 padding-bottom: 1.5rem;
 
                 &.ss-rarity-common:not(.ss-inner)::before {
@@ -543,28 +614,6 @@ object {
 
                     &:hover span {
                         text-decoration-color: var(--text-default);
-                    }
-
-                    em {
-                        font-style: normal;
-                        display: flex;
-                        width: auto;
-                        margin: 0 auto;
-                        background: var(--text-default);
-                        position: absolute;
-                        top: 0;
-                        left: 50%;
-                        white-space: nowrap;
-                        min-height: 1.5rem;
-                        color: var(--bg-body);
-                        transform: translateX(-50%) translateY(-50%);
-                        margin-top: -1rem;
-                        opacity: 0;
-                        font-size: 1rem;
-                        padding: 0.25rem 0.75rem;
-                        align-items: center;
-                        justify-content: center;
-                        border-radius: 0.5rem;
                     }
                 }
             }

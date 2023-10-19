@@ -1,20 +1,35 @@
 $keyrune-aliases: (
     legchr: ("leg2"),
-    wl: ("wth2"),
+    nem: ("nms"), // legacy support
+    palp: ("papac"),
+    pelp: ("peuro"),
     pmei: ("pleaf"), // legacy support
     pmtg: ("plgm", "parl"), // originally was plgm, but upgrading this to pmtg b/c of its ubiquity
     po: ("por2"),
+    ptk: ("p3k"), // legacy support
     pvan: ("van"), // legacy support
+    wl: ("wth2")
 );
 
 $keyrune-aliases-complete: (
     // various promos
+    pal00: ("pal02"),
     past: ("pmic"),
     pgc98: ("o90p"),
     // shooting star
     pmei: ("o90p", "pcel", "olep"),
     // m in circle
     pmtg: ("ptc", "rqs", "pred", "wc97", "jgp", "wc98"),
+    // gatherer 2-letter codes
+    6ed: ("6e"),
+    7ed: ("7e"),
+    btd: ("bd"),
+    inv: ("in"),
+    mmq: ("mm"),
+    nem: ("ne"),
+    pcy: ("py"), 
+    pls: ("ps"),
+    s00: ("p4"),
     // expansion tokens
     exo: ("pexo"),
     sth: ("psth"),

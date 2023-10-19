@@ -38,7 +38,7 @@ $keyrune-rarities: (
         "right": "#4d6572",
     ),
     "rare": (
-        "solid": "#b7a066", // try this: #c5a86f
+        "solid": "#a48a37", //"#b7a066", // try this: #c5a86f
         "left": "#7f6f43",
         "center": "#d9c287",
         "right": "#7f6f43",
@@ -294,26 +294,101 @@ $keyrune-sets: (
         border: "\e08e",
         inner: "\e08f",
     ),
+    brb: (
+        rarity: "\e090",
+        border: "\e091",
+        inner: "\f8ff", // empty
+    ),
+    fnm: (
+        rarity: "\e093",
+        border: "\e094",
+        inner: "\e095",
+    ),
+    pal00: (
+        rarity: "\e096",
+        border: "\e097",
+        inner: "\f8ff", // empty
+    ),
+    pelp: (
+        rarity: "\e099",
+        border: "\e09a",
+        inner: "\f8ff", // empty
+    ),
+    nem: (
+        rarity: "\e09c",
+        border: "\e09d",
+        inner: "\f8ff", // empty
+    ),
+    s00: (
+        rarity: "\e09f",
+        border: "\e0a0",
+        inner: "\f8ff", // empty
+    ),
+    pcy: (
+        rarity: "\e0a2",
+        border: "\e0a3",
+        inner: "\e0a4",
+    ),
+    btd: (
+        rarity: "\e0a5",
+        border: "\e0a6",
+        inner: "\f8ff",
+    ),
+    inv: (
+        rarity: "\e0a8",
+        border: "\e0a9",
+        inner: "\f8ff",
+    ),
+    mpr: (
+        rarity: "\e0ab",
+        border: "\e0ac",
+        inner: "\f8ff",
+    ),
+    pls: (
+        rarity: "\e0ae",
+        border: "\e0af",
+        inner: "\f8ff",
+    ),
+    7ed: (
+        rarity: "\e0b1",
+        border: "\e0b2",
+        inner: "\f8ff",
+    ),
     //
     // backwards from the end for alternatives/oddities
-    legchr: (
+    4eda: (
         rarity: "\f8f6",
         border: "\f8f5",
         inner: "\f8ff", // em
     ),
-    pgc98: (
+    legchr: (
         rarity: "\f8f4",
         border: "\f8f3",
         inner: "\f8ff", // em
     ),
-    po: (
+    pgc98: (
         rarity: "\f8f2",
         border: "\f8f1",
-        inner: "\f8f0",
+        inner: "\f8ff", // em
+    ),
+    po: (
+        rarity: "\f8f0",
+        border: "\f8ef",
+        inner: "\f8ee",
     ),
     wl: (
-        rarity: "\f8ef",
-        border: "\f8ee",
+        rarity: "\f8ed",
+        border: "\f8ec",
+        inner: "\f8ff", // empty
+    ),
+    brbalt: (
+        rarity: "\f8eb",
+        border: "\f8ea",
+        inner: "\f8ff", // empty
+    ),
+    s00alt: (
+        rarity: "\f8e9",
+        border: "\f8e8",
         inner: "\f8ff", // empty
     ),
 );

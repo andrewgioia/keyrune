@@ -487,6 +487,15 @@
 .ss-ptk.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-p3k::before {
+  content: "\e087";
+}
+.ss-p3k.ss-border::after {
+  content: "\e088";
+}
+.ss-p3k.ss-inner::marker {
+  content: "\f8ff";
+}
 .ss-pgru::before {
   content: "\e08a";
 }
@@ -505,67 +514,112 @@
 .ss-mmq.ss-inner::marker {
   content: "\e08f";
 }
-.ss-legchr::before {
+.ss-brb::before {
+  content: "\e090";
+}
+.ss-brb.ss-border::after {
+  content: "\e091";
+}
+.ss-brb.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-fnm::before {
+  content: "\e093";
+}
+.ss-fnm.ss-border::after {
+  content: "\e094";
+}
+.ss-fnm.ss-inner::marker {
+  content: "\e095";
+}
+.ss-pal00::before {
+  content: "\e096";
+}
+.ss-pal00.ss-border::after {
+  content: "\e097";
+}
+.ss-pal00.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-4eda::before {
   content: "\f8f6";
 }
-.ss-legchr.ss-border::after {
+.ss-4eda.ss-border::after {
   content: "\f8f5";
+}
+.ss-4eda.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-legchr::before {
+  content: "\f8f4";
+}
+.ss-legchr.ss-border::after {
+  content: "\f8f3";
 }
 .ss-legchr.ss-inner::marker {
   content: "\f8ff";
 }
 .ss-leg2::before {
-  content: "\f8f6";
+  content: "\f8f4";
 }
 .ss-leg2.ss-border::after {
-  content: "\f8f5";
+  content: "\f8f3";
 }
 .ss-leg2.ss-inner::marker {
   content: "\f8ff";
 }
 .ss-pgc98::before {
-  content: "\f8f4";
+  content: "\f8f2";
 }
 .ss-pgc98.ss-border::after {
-  content: "\f8f3";
+  content: "\f8f1";
 }
 .ss-pgc98.ss-inner::marker {
   content: "\f8ff";
 }
 .ss-po::before {
-  content: "\f8f2";
+  content: "\f8f0";
 }
 .ss-po.ss-border::after {
-  content: "\f8f1";
-}
-.ss-po.ss-inner::marker {
-  content: "\f8f0";
-}
-.ss-por2::before {
-  content: "\f8f2";
-}
-.ss-por2.ss-border::after {
-  content: "\f8f1";
-}
-.ss-por2.ss-inner::marker {
-  content: "\f8f0";
-}
-.ss-wl::before {
   content: "\f8ef";
 }
-.ss-wl.ss-border::after {
+.ss-po.ss-inner::marker {
   content: "\f8ee";
+}
+.ss-por2::before {
+  content: "\f8f0";
+}
+.ss-por2.ss-border::after {
+  content: "\f8ef";
+}
+.ss-por2.ss-inner::marker {
+  content: "\f8ee";
+}
+.ss-wl::before {
+  content: "\f8ed";
+}
+.ss-wl.ss-border::after {
+  content: "\f8ec";
 }
 .ss-wl.ss-inner::marker {
   content: "\f8ff";
 }
 .ss-wth2::before {
-  content: "\f8ef";
+  content: "\f8ed";
 }
 .ss-wth2.ss-border::after {
-  content: "\f8ee";
+  content: "\f8ec";
 }
 .ss-wth2.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-brbalt::before {
+  content: "\f8eb";
+}
+.ss-brbalt.ss-border::after {
+  content: "\f8ea";
+}
+.ss-brbalt.ss-inner::marker {
   content: "\f8ff";
 }
 .ss.ss-border::after {
@@ -640,7 +694,7 @@
   -webkit-text-fill-color: transparent;
 }
 .ss.ss-rarity-rare {
-  --ss-rarity: #b7a066;
+  --ss-rarity: #a48a37;
 }
 .ss.ss-rarity-rare.ss-rarity-gradient::before {
   --ss-rarity-bg:
@@ -702,8 +756,23 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.ss.ss-fw.ss-fw-square {
+  width: 1em;
+}
+.ss.ss-fw.ss-fw-square::before {
+  transform: scale(0.5714);
+}
+.ss.ss-fw.ss-fw-square.ss-border::after, .ss.ss-fw.ss-fw-square.ss-inner::before, .ss.ss-fw.ss-fw-square.ss-inner::after, .ss.ss-fw.ss-fw-square.ss-inner::marker {
+  transform: translateX(-50%) scale(0.5714);
+}
 .ss.ss-white::before, .ss.ss-white::after, .ss.ss-white::marker {
   color: #fff;
+}
+
+@-moz-document url-prefix() {
+  .ss-fnm::before, .ss-pfnm::before {
+    margin-left: -0.4%;
+  }
 }
 
 /*# sourceMappingURL=keyrune.css.map */
