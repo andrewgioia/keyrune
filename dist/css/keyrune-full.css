@@ -559,6 +559,15 @@
 .ss-palp.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-papac::before {
+  content: "\e072";
+}
+.ss-papac.ss-border::after {
+  content: "\e073";
+}
+.ss-papac.ss-inner::marker {
+  content: "\f8ff";
+}
 .ss-usg::before {
   content: "\e075";
 }
@@ -593,6 +602,15 @@
   content: "\e07f";
 }
 .ss-6ed.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-6e::before {
+  content: "\e07e";
+}
+.ss-6e.ss-border::after {
+  content: "\e07f";
+}
+.ss-6e.ss-inner::marker {
   content: "\f8ff";
 }
 .ss-uds::before {
@@ -649,6 +667,15 @@
 .ss-mmq.ss-inner::marker {
   content: "\e08f";
 }
+.ss-mm::before {
+  content: "\e08d";
+}
+.ss-mm.ss-border::after {
+  content: "\e08e";
+}
+.ss-mm.ss-inner::marker {
+  content: "\e08f";
+}
 .ss-brb::before {
   content: "\e090";
 }
@@ -666,6 +693,186 @@
 }
 .ss-fnm.ss-inner::marker {
   content: "\e095";
+}
+.ss-pal00::before {
+  content: "\e096";
+}
+.ss-pal00.ss-border::after {
+  content: "\e097";
+}
+.ss-pal00.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-pal02::before {
+  content: "\e096";
+}
+.ss-pal02.ss-border::after {
+  content: "\e097";
+}
+.ss-pal02.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-pelp::before {
+  content: "\e099";
+}
+.ss-pelp.ss-border::after {
+  content: "\e09a";
+}
+.ss-pelp.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-peuro::before {
+  content: "\e099";
+}
+.ss-peuro.ss-border::after {
+  content: "\e09a";
+}
+.ss-peuro.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-nem::before {
+  content: "\e09c";
+}
+.ss-nem.ss-border::after {
+  content: "\e09d";
+}
+.ss-nem.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-nms::before {
+  content: "\e09c";
+}
+.ss-nms.ss-border::after {
+  content: "\e09d";
+}
+.ss-nms.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-ne::before {
+  content: "\e09c";
+}
+.ss-ne.ss-border::after {
+  content: "\e09d";
+}
+.ss-ne.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-s00::before {
+  content: "\e09f";
+}
+.ss-s00.ss-border::after {
+  content: "\e0a0";
+}
+.ss-s00.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-p4::before {
+  content: "\e09f";
+}
+.ss-p4.ss-border::after {
+  content: "\e0a0";
+}
+.ss-p4.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-pcy::before {
+  content: "\e0a2";
+}
+.ss-pcy.ss-border::after {
+  content: "\e0a3";
+}
+.ss-pcy.ss-inner::marker {
+  content: "\e0a4";
+}
+.ss-py::before {
+  content: "\e0a2";
+}
+.ss-py.ss-border::after {
+  content: "\e0a3";
+}
+.ss-py.ss-inner::marker {
+  content: "\e0a4";
+}
+.ss-btd::before {
+  content: "\e0a5";
+}
+.ss-btd.ss-border::after {
+  content: "\e0a6";
+}
+.ss-btd.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-bd::before {
+  content: "\e0a5";
+}
+.ss-bd.ss-border::after {
+  content: "\e0a6";
+}
+.ss-bd.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-inv::before {
+  content: "\e0a8";
+}
+.ss-inv.ss-border::after {
+  content: "\e0a9";
+}
+.ss-inv.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-in::before {
+  content: "\e0a8";
+}
+.ss-in.ss-border::after {
+  content: "\e0a9";
+}
+.ss-in.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-mpr::before {
+  content: "\e0ab";
+}
+.ss-mpr.ss-border::after {
+  content: "\e0ac";
+}
+.ss-mpr.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-pls::before {
+  content: "\e0ae";
+}
+.ss-pls.ss-border::after {
+  content: "\e0af";
+}
+.ss-pls.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-ps::before {
+  content: "\e0ae";
+}
+.ss-ps.ss-border::after {
+  content: "\e0af";
+}
+.ss-ps.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-7ed::before {
+  content: "\e0b1";
+}
+.ss-7ed.ss-border::after {
+  content: "\e0b2";
+}
+.ss-7ed.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-7e::before {
+  content: "\e0b1";
+}
+.ss-7e.ss-border::after {
+  content: "\e0b2";
+}
+.ss-7e.ss-inner::marker {
+  content: "\f8ff";
 }
 .ss-4eda::before {
   content: "\f8f6";
@@ -755,6 +962,15 @@
   content: "\f8ea";
 }
 .ss-brbalt.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-s00alt::before {
+  content: "\f8e9";
+}
+.ss-s00alt.ss-border::after {
+  content: "\f8e8";
+}
+.ss-s00alt.ss-inner::marker {
   content: "\f8ff";
 }
 .ss.ss-border::after {
@@ -890,6 +1106,15 @@
 .ss.ss-fw.ss-border:not(.ss-inner)::after {
   left: 50%;
   transform: translateX(-50%);
+}
+.ss.ss-fw.ss-fw-square {
+  width: 1em;
+}
+.ss.ss-fw.ss-fw-square::before {
+  transform: scale(0.5714);
+}
+.ss.ss-fw.ss-fw-square.ss-border::after, .ss.ss-fw.ss-fw-square.ss-inner::before, .ss.ss-fw.ss-fw-square.ss-inner::after, .ss.ss-fw.ss-fw-square.ss-inner::marker {
+  transform: translateX(-50%) scale(0.5714);
 }
 .ss.ss-white::before, .ss.ss-white::after, .ss.ss-white::marker {
   color: #fff;

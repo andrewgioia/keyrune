@@ -424,6 +424,15 @@
 .ss-palp.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-papac::before {
+  content: "\e072";
+}
+.ss-papac.ss-border::after {
+  content: "\e073";
+}
+.ss-papac.ss-inner::marker {
+  content: "\f8ff";
+}
 .ss-usg::before {
   content: "\e075";
 }
@@ -532,6 +541,114 @@
 .ss-fnm.ss-inner::marker {
   content: "\e095";
 }
+.ss-pal00::before {
+  content: "\e096";
+}
+.ss-pal00.ss-border::after {
+  content: "\e097";
+}
+.ss-pal00.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-pelp::before {
+  content: "\e099";
+}
+.ss-pelp.ss-border::after {
+  content: "\e09a";
+}
+.ss-pelp.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-peuro::before {
+  content: "\e099";
+}
+.ss-peuro.ss-border::after {
+  content: "\e09a";
+}
+.ss-peuro.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-nem::before {
+  content: "\e09c";
+}
+.ss-nem.ss-border::after {
+  content: "\e09d";
+}
+.ss-nem.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-nms::before {
+  content: "\e09c";
+}
+.ss-nms.ss-border::after {
+  content: "\e09d";
+}
+.ss-nms.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-s00::before {
+  content: "\e09f";
+}
+.ss-s00.ss-border::after {
+  content: "\e0a0";
+}
+.ss-s00.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-pcy::before {
+  content: "\e0a2";
+}
+.ss-pcy.ss-border::after {
+  content: "\e0a3";
+}
+.ss-pcy.ss-inner::marker {
+  content: "\e0a4";
+}
+.ss-btd::before {
+  content: "\e0a5";
+}
+.ss-btd.ss-border::after {
+  content: "\e0a6";
+}
+.ss-btd.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-inv::before {
+  content: "\e0a8";
+}
+.ss-inv.ss-border::after {
+  content: "\e0a9";
+}
+.ss-inv.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-mpr::before {
+  content: "\e0ab";
+}
+.ss-mpr.ss-border::after {
+  content: "\e0ac";
+}
+.ss-mpr.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-pls::before {
+  content: "\e0ae";
+}
+.ss-pls.ss-border::after {
+  content: "\e0af";
+}
+.ss-pls.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-7ed::before {
+  content: "\e0b1";
+}
+.ss-7ed.ss-border::after {
+  content: "\e0b2";
+}
+.ss-7ed.ss-inner::marker {
+  content: "\f8ff";
+}
 .ss-4eda::before {
   content: "\f8f6";
 }
@@ -611,6 +728,15 @@
   content: "\f8ea";
 }
 .ss-brbalt.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-s00alt::before {
+  content: "\f8e9";
+}
+.ss-s00alt.ss-border::after {
+  content: "\f8e8";
+}
+.ss-s00alt.ss-inner::marker {
   content: "\f8ff";
 }
 .ss.ss-border::after {
@@ -747,6 +873,15 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.ss.ss-fw.ss-fw-square {
+  width: 1em;
+}
+.ss.ss-fw.ss-fw-square::before {
+  transform: scale(0.5714);
+}
+.ss.ss-fw.ss-fw-square.ss-border::after, .ss.ss-fw.ss-fw-square.ss-inner::before, .ss.ss-fw.ss-fw-square.ss-inner::after, .ss.ss-fw.ss-fw-square.ss-inner::marker {
+  transform: translateX(-50%) scale(0.5714);
+}
 .ss.ss-white::before, .ss.ss-white::after, .ss.ss-white::marker {
   color: #fff;
 }
@@ -754,6 +889,9 @@
 @-moz-document url-prefix() {
   .ss-fnm::before, .ss-pfnm::before {
     margin-left: -0.4%;
+  }
+  .ss-7ed::before, .ss-7e::before {
+    margin-left: 0.5%;
   }
 }
 

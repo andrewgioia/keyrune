@@ -541,6 +541,9 @@ footer iframe html body {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-6 {
+  margin-top: 1.5rem;
+}
 .mt-8 {
   margin-top: 2rem;
 }
@@ -606,6 +609,9 @@ footer iframe html body {
 .pb-6 {
   padding-bottom: 1.5rem;
 }
+.pb-8 {
+  padding-bottom: 2rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -632,6 +638,9 @@ footer iframe html body {
 }
 .pt-2 {
   padding-top: 0.5rem;
+}
+.pt-6 {
+  padding-top: 1.5rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -674,12 +683,6 @@ footer iframe html body {
 
 .relative {
   position: relative;
-}
-
-.sticky {
-  height: 0%;
-  position: sticky;
-  top: 0;
 }
 
 .text-center {
@@ -1071,6 +1074,19 @@ div.isometric.explode svg.inner {
     grid-column: span 2/span 2;
   }
 }
+#icon-menu {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  --webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+:root[data-mode=dark] #icon-menu {
+  background-color: rgba(30, 31, 32, 0.7);
+}
+
 menu {
   list-style: none;
   margin: 0;
@@ -1159,7 +1175,10 @@ menu.group label.right {
   flex-direction: column;
 }
 #icons .set-group-info {
-  background: var(--bg-content);
+  background-color: var(--bg-content);
+  height: 0%;
+  position: sticky;
+  top: 6.625rem;
   z-index: 20;
 }
 #icons .set-group-grid {
