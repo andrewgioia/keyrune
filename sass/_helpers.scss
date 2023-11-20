@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 /**
  * Sizes */
 @each $class, $size in $keyrune_sizes {
