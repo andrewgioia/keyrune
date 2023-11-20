@@ -9,7 +9,7 @@
 /**
  * Fixed width */
 .#{$keyrune_prefix}.#{$keyrune_prefix}-fw {
-    width: calc(18em / #{$keyrune_font_size / ($keyrune_font_size * 0 + 1)});
+    width: calc(18em / #{math.div($keyrune_font_size, $keyrune_font_size * 0 + 1)});
     text-align: center;
 }
 
