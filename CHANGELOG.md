@@ -11,6 +11,10 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.13.1] 2023-11-21 Fixes Sass division syntax
+
+* **Merged:** Fix for Dart Sass 2.0.0 changes to division ([PR #221](https://github.com/andrewgioia/keyrune/pull/221)); thank you [@nogweii](https://github.com/nogweii)
+
 ### [3.13.0] 2023-11-21 Lost Caverns of Ixalan sets plus supplementals
 
 * **Added:** Lost Caverns of Ixalan (LCI), Lost Caverns of Ixalan Ccmmander (LCC), Jurassic World (REX), and Special Guests (SPG) set symbols added ([#216](https://github.com/andrewgioia/keyrune/issues/216))
