@@ -11,5 +11,10 @@
         &-7e::before {
             margin-left: 0.5%;
         }
+        // ody huge offset?
+        &-ody::before,
+        &-od::before {
+            margin-left: -1.3%;
+        }
     }
 }

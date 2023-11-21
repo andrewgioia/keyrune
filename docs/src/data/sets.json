@@ -763,6 +763,54 @@
           "swirl",
           "portal"
         ]
+      },
+      "apc": {
+        "code": "apc",
+        "name": "Apocalypse",
+        "display": "Apocalypse",
+        "nicknames": false,
+        "rarity": "e0b4",
+        "border": "e0b5",
+        "inner": false,
+        "release": "2001-06-04",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "ap": {
+            "code": "ap",
+            "name": "Gatherer code",
+            "release": "2001-06-04"
+          }
+        },
+        "tags": [
+          "invasion",
+          "yawgmoth",
+          "mask"
+        ]
+      },
+      "ody": {
+        "code": "ody",
+        "name": "Odyssey",
+        "display": "Odyssey",
+        "nicknames": false,
+        "rarity": "e0ba",
+        "border": "e0bb",
+        "inner": false,
+        "release": "2001-10-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "od": {
+            "code": "od",
+            "name": "Gatherer code",
+            "release": "2001-10-01"
+          }
+        },
+        "tags": [
+          "mirari"
+        ]
       }
     }
   },
@@ -979,6 +1027,27 @@
           "beatdown",
           "box",
           "spear"
+        ]
+      },
+      "dkm": {
+        "code": "dkm",
+        "name": "Deckmasters",
+        "display": "Deckmasters",
+        "nicknames": [
+          "Deckmasters 2001"
+        ],
+        "rarity": "e0bd",
+        "border": "e0be",
+        "inner": false,
+        "release": "2001-12-01",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": false,
+        "tags": [
+          "finkel",
+          "garfield",
+          "box"
         ]
       }
     }
@@ -1508,6 +1577,28 @@
           "player",
           "rewards",
           "custom"
+        ]
+      },
+      "psdg": {
+        "code": "psdg",
+        "name": "Sega Dreamcast Cards",
+        "display": "Sega Dreamcast Cards",
+        "nicknames": [
+          "Dreamcast Cards",
+          "Dreamcast Promos"
+        ],
+        "rarity": "e0b7",
+        "border": "e0b8",
+        "inner": false,
+        "release": "2001-06-28",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": false,
+        "tags": [
+          "sega",
+          "dreamcast",
+          "dc"
         ]
       }
     }
