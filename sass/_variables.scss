@@ -10,7 +10,7 @@ $keyrune_font_variant: normal !default;
 $keyrune_font_weight: normal !default;
 $keyrune_font_size:  14px !default;
 $keyrune_font_face: 'Keyrune' !default;
-$keyrune_font: $keyrune_font_style $keyrune_font_variant $keyrune_font_weight $keyrune_font_size/1 $keyrune_font_face !default;
+$keyrune_font: $keyrune_font_style $keyrune_font_variant $keyrune_font_weight calc($keyrune_font_size/1) $keyrune_font_face !default;
 $keyrune_prefix: 'ss' !default;
 $keyrune_default_content: "\e684" !default;
 $keyrune_background_clip: text !default;
