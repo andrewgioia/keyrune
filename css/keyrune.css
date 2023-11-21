@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.12.3');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.12.3') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.12.3') format('woff2'), url('../fonts/keyrune.woff?v=3.12.3') format('woff'), url('../fonts/keyrune.ttf?v=3.12.3') format('truetype'), url('../fonts/keyrune.svg?v=3.12.3#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.13.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.13.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.13.0') format('woff2'), url('../fonts/keyrune.woff?v=3.13.0') format('woff'), url('../fonts/keyrune.ttf?v=3.13.0') format('truetype'), url('../fonts/keyrune.svg?v=3.13.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -98,6 +98,14 @@
 }
 .ss-duo.ss-j21::after {
   content: "\e984";
+}
+.ss-duo.ss-khc::before {
+  content: "\e9c5";
+  width: 100%;
+}
+.ss-duo.ss-khc::after {
+  content: "\e9c6";
+  color: #fff !important;
 }
 .ss-duo.ss-ltc::before {
   content: "\e9b7";
@@ -676,6 +684,9 @@
 .ss-woe:before {
   content: "\e9ae";
 }
+.ss-lci:before {
+  content: "\e9c2";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -809,6 +820,9 @@
 .ss-woc:before {
   content: "\e9b9";
 }
+.ss-lcc:before {
+  content: "\e9c7";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -891,6 +905,9 @@
 }
 .ss-br:before {
   content: "\e9c1";
+}
+.ss-spg:before {
+  content: "\e9c8";
 }
 /**
  * Beginner */
@@ -1107,6 +1124,9 @@
 .ss-rvr:before {
   content: "\e9bb";
 }
+.ss-pip:before {
+  content: "\e9c3";
+}
 /**
  * Promotional */
 .ss-pgru:before {
@@ -1204,6 +1224,9 @@
 }
 .ss-bot:before {
   content: "\e99e";
+}
+.ss-rex:before {
+  content: "\e9c4";
 }
 /**
  * Secret Lairs */

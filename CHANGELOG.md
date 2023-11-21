@@ -11,6 +11,13 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.13.0] 2023-11-21 Lost Caverns of Ixalan sets plus supplementals
+
+* **Added:** Lost Caverns of Ixalan (LCI), Lost Caverns of Ixalan Ccmmander (LCC), Jurassic World (REX), and Special Guests (SPG) set symbols added ([#216](https://github.com/andrewgioia/keyrune/issues/216))
+* **Added:** Universes Beyond: Fallout (PIP) set symbol added ([#218](https://github.com/andrewgioia/keyrune/issues/218))
+* **Changed:** Kaldheim Commander now correctly has a dual-layered symbol variant to match the printed card ([#191](https://github.com/andrewgioia/keyrune/issues/191))
+* **Fixed:** CMM added to Cheatsheet, was missing ([#219](https://github.com/andrewgioia/keyrune/issues/219))
+
 ### [3.12.3] 2023-10-02 WOE supplemental sets, early 2024 products, and some alternate symbols
 
 * **Added:** Wilds of Eldraine Enchanting Tales (WOT) set symbol ([#208](https://github.com/andrewgioia/keyrune/issues/208))

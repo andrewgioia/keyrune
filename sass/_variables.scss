@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.12.3' !default;
+$keyrune_version: '3.13.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -61,6 +61,7 @@ $dual-layered: (
     'cc2': '\e988',
     'dmc': '\e997',
     'j21': '\e984',
+    'khc': '\e9c6',
     'ltc': '\e9b8',
     'mid': '\e979',
     'ncc': '\e990',
@@ -237,6 +238,7 @@ $keyrune_sets: (
     ("March of the Machine", "mom", "\e9a2"),
     ("March of the Machine: The Aftermath", "mat", "\e9a3"),
     ("Wilds of Eldraine", "woe", "\e9ae"),
+    ("Lost Caverns of Ixalan", "lci", "\e9c2"),
     //
     // Command zone
     ("Vanguard", "van", "\e655"),
@@ -284,6 +286,7 @@ $keyrune_sets: (
     ("Commander Masters", "cmm", "\e9b5"),
     ("The Lord of the Rings: Tales of Middle-Earth Commander", "ltc", "\e9b6"),
     ("Wilds of Eldraine Commander", "woc", "\e9b9"),
+    ("Lost Caverns of Ixalan Commander", "lcc", "\e9c7"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
@@ -313,6 +316,7 @@ $keyrune_sets: (
     ("Multiverse Legends", "mul", "\e9ba"),
     ("Wilds of Eldraine Enchanting Tales", "wot", "\e9c0"),
     ("Battle Royale (alternate)", "br", "\e9c1"),
+    ("Special Guests", "spg", "\e9c8"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
@@ -396,6 +400,7 @@ $keyrune_sets: (
     ("The Lord of the Rings: Tales of Middle-Earth", "ltr", "\e9af"),
     ("Universes Beyond: Doctor Who", "who", "\e9b0"),
     ("Ravnica Remastered", "rvr", "\e9bb"),
+    ("Universes Beyond: Fallout", "pip", "\e9c3"),
     //
     // Promos
     ("Guru", "pgru", "\e683"),
@@ -432,6 +437,7 @@ $keyrune_sets: (
     ("Judge Academy 2020", "j20", "\e96a"),
     ("Zendikar Rising Expeditions", "zne", "\e97a"),
     ("The Brothers' War Transformers", "bot", "\e99e"),
+    ("Jurassic World", "rex", "\e9c4"),
     //
     // Secret Lairs
     ("Secret Lair: Ultimate Edition", "slu", "\e687"),

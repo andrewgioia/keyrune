@@ -91,6 +91,9 @@
     &.#{$keyrune_prefix}-dmc::before {
         content: "\e995";
     }
+    &.#{$keyrune_prefix}-khc::before {
+        content: "\e9c5";
+    }
     &.#{$keyrune_prefix}-ltc::before {
         content: "\e9b7";
     }
