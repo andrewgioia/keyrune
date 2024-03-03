@@ -63,7 +63,9 @@ $dual-layered: (
     'j21': '\e984',
     'khc': '\e9c6',
     'ltc': '\e9b8',
+    'm3c': '\e9d1',
     'mid': '\e979',
+    'otc': '\e9d3',
     'ncc': '\e990',
     'scd': '\e9ac',
     'una': '\e9bf'
@@ -239,7 +241,10 @@ $keyrune_sets: (
     ("March of the Machine: The Aftermath", "mat", "\e9a3"),
     ("Wilds of Eldraine", "woe", "\e9ae"),
     ("Lost Caverns of Ixalan", "lci", "\e9c2"),
+    // 2024 Sets
     ("Murders at Karlov Manor", "mkm", "\e9c9"),
+    ("Outlaws of Thunder Junction", "otj", "\e9cc"),
+    ("Bloomburrow", "blb", "\e9cd"),
     //
     // Command zone
     ("Vanguard", "van", "\e655"),
@@ -289,6 +294,9 @@ $keyrune_sets: (
     ("Wilds of Eldraine Commander", "woc", "\e9b9"),
     ("Lost Caverns of Ixalan Commander", "lcc", "\e9c7"),
     ("Murders at Karlov Manor Commander", "mkc", "\e9ca"),
+    ("Outlaws of Thunder Junction Commander", "otc", "\e9d2"),
+    ("Bloomburrow Commander", "blb", "\e9d4"),
+    ("Modern Horizons 3 Commander", "m3c", "\e9d0"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
@@ -319,6 +327,8 @@ $keyrune_sets: (
     ("Wilds of Eldraine Enchanting Tales", "wot", "\e9c0"),
     ("Battle Royale (alternate)", "br", "\e9c1"),
     ("Special Guests", "spg", "\e9c8"),
+    ("Breaking News", "otp", "\e9d5"),
+    ("The Big Score", "big", "\e9d6"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
@@ -404,6 +414,8 @@ $keyrune_sets: (
     ("Ravnica Remastered", "rvr", "\e9bb"),
     ("Universes Beyond: Fallout", "pip", "\e9c3"),
     ("Ravnica: Clue Edition", "clu", "\e9cb"),
+    ("Universes Beyond: Assassin's Creed", "acr", "\e9ce"),
+    ("Modern Horizons 3", "mh3", "\e9cf"),
     //
     // Promos
     ("Guru", "pgru", "\e683"),

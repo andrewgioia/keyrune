@@ -8,7 +8,7 @@
 
 .@{ss-prefix}-duo {
 
-    // base border styles
+    // base styles
     &::after {
         color: #000;
         content: '';
@@ -110,9 +110,21 @@
         }
     }
 
+    // Modern Horizons 3 Commander
+    &.@{ss-prefix}-m3c::after {
+        content: "\e9d1";
+        color: #fff !important;
+    }
+
     // Innistrad Werewolves
     &.@{ss-prefix}-mid::after {
         content: "\e979";
+    }
+
+    // Outlaws of Thunder Junction Commander
+    &.@{ss-prefix}-otc::after {
+        content: "\e9d3";
+        color: #fff !important;
     }
 
     // Starter Commander Decks
