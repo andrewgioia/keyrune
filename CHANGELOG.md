@@ -11,6 +11,11 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.14.0] 2024-03-02 Murders at Karlov Manner and the 2024 announced sets
+
+* **Added:** Murders at Karlov Manor (MKM), MKM Commander (MKC), and Ravnica: Clue Edition (CLU) set symbols ([#223](https://github.com/andrewgioia/keyrune/issues/223))
+* **Added:** Outlaws of Thunder Junction (OTJ), OTJ Commander (OTC), Breaking News (OTP), The Big Score (BIG), Bloomburrow (BLB), BLB Commander (BLC), Universes Beyond: Assassin's Creed (ACR), Modern Horizons III (MH3), and MH3 Commander (M3C) ([#225](https://github.com/andrewgioia/keyrune/issues/225))
+
 ### [3.13.1] 2023-11-21 Fixes Sass division syntax
 
 * **Merged:** Fix for Dart Sass 2.0.0 changes to division ([PR #221](https://github.com/andrewgioia/keyrune/pull/221)); thank you [@nogweii](https://github.com/nogweii)
