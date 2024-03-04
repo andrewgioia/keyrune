@@ -11,6 +11,11 @@ All notable changes to this project will be documented in this file.
 
 ## Versions 
 
+### [3.14.1] 2024-03-04 Fixes docs for BIG, fixes .ttf for embedding
+
+* **Fixed:** Moved BIG to Expansions in docs ([#227](https://github.com/andrewgioia/keyrune/issues/227))
+* **Changed:** keyrune.ttf should have the correct font embeddability setting, need to test to confirm ([#201](https://github.com/andrewgioia/keyrune/issues/201))
+
 ### [3.14.0] 2024-03-02 Murders at Karlov Manner and the 2024 announced sets
 
 * **Added:** Murders at Karlov Manor (MKM), MKM Commander (MKC), and Ravnica: Clue Edition (CLU) set symbols ([#223](https://github.com/andrewgioia/keyrune/issues/223))
