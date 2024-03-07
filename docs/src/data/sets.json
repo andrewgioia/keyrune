@@ -811,6 +811,106 @@
         "tags": [
           "mirari"
         ]
+      },
+      "tor": {
+        "code": "tor",
+        "name": "Torment",
+        "display": "Torment",
+        "nicknames": false,
+        "rarity": "e0c0",
+        "border": "e0c1",
+        "inner": false,
+        "release": "2002-02-04",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": {
+          "to": {
+            "code": "to",
+            "name": "Gatherer code",
+            "release": "2002-02-04"
+          }
+        },
+        "tags": [
+          "dragon"
+        ]
+      },
+      "jud": {
+        "code": "jud",
+        "name": "Judgment",
+        "display": "Judgment",
+        "nicknames": false,
+        "rarity": "e0c3",
+        "border": "e0c4",
+        "inner": false,
+        "release": "2002-05-27",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": false,
+        "tags": [
+          "scales"
+        ]
+      },
+      "ons": {
+        "code": "ons",
+        "name": "Onslaught",
+        "display": "Onslaught",
+        "nicknames": false,
+        "rarity": "e0c9",
+        "border": "e0ca",
+        "inner": false,
+        "release": "2002-10-07",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": false,
+        "tags": [
+          "morph",
+          "creature",
+          "dominaria",
+          "otaria"
+        ]
+      },
+      "lgn": {
+        "code": "lgn",
+        "name": "Legions",
+        "display": "Legions",
+        "nicknames": false,
+        "rarity": "e0cc",
+        "border": "e0cd",
+        "inner": false,
+        "release": "2003-02-03",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": false,
+        "tags": [
+          "spear",
+          "shield",
+          "dominaria",
+          "otaria"
+        ]
+      },
+      "scg": {
+        "code": "scg",
+        "name": "Scourge",
+        "display": "Scourge",
+        "nicknames": false,
+        "rarity": "e0cf",
+        "border": "e0d0",
+        "inner": false,
+        "release": "2003-05-26",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": false,
+        "tags": [
+          "dragon",
+          "skull",
+          "dominaria",
+          "otaria"
+        ]
       }
     }
   },
@@ -1078,6 +1178,31 @@
         "version": "4.0.0",
         "official": true,
         "aliases": false,
+        "tags": [
+          "astral"
+        ]
+      },
+      "prm": {
+        "code": "prm",
+        "name": "Magic Online Promos",
+        "display": "Magic Online Promos",
+        "nicknames": [
+          "MODO Promos"
+        ],
+        "rarity": "e0c6",
+        "border": "e0c7",
+        "inner": false,
+        "release": "2002-06-24",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": {
+          "pmodo": {
+            "code": "pmodo",
+            "name": "Backwards compatibility",
+            "release": "2002-06-24"
+          }
+        },
         "tags": [
           "astral"
         ]

@@ -874,6 +874,123 @@
 .ss-7e.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-apc::before {
+  content: "\e0b4";
+}
+.ss-apc.ss-border::after {
+  content: "\e0b5";
+}
+.ss-apc.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-ap::before {
+  content: "\e0b4";
+}
+.ss-ap.ss-border::after {
+  content: "\e0b5";
+}
+.ss-ap.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-psdg::before {
+  content: "\e0b7";
+}
+.ss-psdg.ss-border::after {
+  content: "\e0b8";
+}
+.ss-psdg.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-psega::before {
+  content: "\e0b7";
+}
+.ss-psega.ss-border::after {
+  content: "\e0b8";
+}
+.ss-psega.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-ody::before {
+  content: "\e0ba";
+}
+.ss-ody.ss-border::after {
+  content: "\e0bb";
+}
+.ss-ody.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-od::before {
+  content: "\e0ba";
+}
+.ss-od.ss-border::after {
+  content: "\e0bb";
+}
+.ss-od.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-dkm::before {
+  content: "\e0bd";
+}
+.ss-dkm.ss-border::after {
+  content: "\e0be";
+}
+.ss-dkm.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-tor::before {
+  content: "\e0c0";
+}
+.ss-tor.ss-border::after {
+  content: "\e0c1";
+}
+.ss-tor.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-jud::before {
+  content: "\e0c3";
+}
+.ss-jud.ss-border::after {
+  content: "\e0c4";
+}
+.ss-jud.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-prm::before {
+  content: "\e0c6";
+}
+.ss-prm.ss-border::after {
+  content: "\e0c7";
+}
+.ss-prm.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-ons::before {
+  content: "\e0c9";
+}
+.ss-ons.ss-border::after {
+  content: "\e0ca";
+}
+.ss-ons.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-lgn::before {
+  content: "\e0cc";
+}
+.ss-lgn.ss-border::after {
+  content: "\e0cd";
+}
+.ss-lgn.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-scg::before {
+  content: "\e0cf";
+}
+.ss-scg.ss-border::after {
+  content: "\e0d0";
+}
+.ss-scg.ss-inner::marker {
+  content: "\f8ff";
+}
 .ss-4eda::before {
   content: "\f8f6";
 }
