@@ -14,8 +14,8 @@
 
 @font-face {
   font-family: "keyrune";
-  src: url("../font/keyrune.eot?4.0.57");
-  src: url("../font/keyrune.eot?4.0.57#iefix") format("embedded-opentype"), url("../font/keyrune.woff2?4.0.57") format("woff2"), url("../font/keyrune.ttf?4.0.57") format("truetype"), url("../font/keyrune.woff?4.0.57") format("woff"), url("../font/keyrune.svg?4.0.57#keyrune") format("svg");
+  src: url("../font/keyrune.eot?4.0.94");
+  src: url("../font/keyrune.eot?4.0.94#iefix") format("embedded-opentype"), url("../font/keyrune.woff2?4.0.94") format("woff2"), url("../font/keyrune.ttf?4.0.94") format("truetype"), url("../font/keyrune.woff?4.0.94") format("woff"), url("../font/keyrune.svg?4.0.94#keyrune") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -37,6 +37,9 @@
 .ss::before {
   background: var(--ss-rarity-bg);
 }
+.ss-lea {
+  --aspect-ratio: ;
+}
 .ss-lea::before {
   content: "\e000";
 }
@@ -45,6 +48,9 @@
 }
 .ss-lea.ss-inner::marker {
   content: "\e002";
+}
+.ss-leb {
+  --aspect-ratio: ;
 }
 .ss-leb::before {
   content: "\e003";
@@ -55,6 +61,9 @@
 .ss-leb.ss-inner::marker {
   content: "\e005";
 }
+.ss-2ed {
+  --aspect-ratio: ;
+}
 .ss-2ed::before {
   content: "\e006";
 }
@@ -63,6 +72,9 @@
 }
 .ss-2ed.ss-inner::marker {
   content: "\e008";
+}
+.ss-ced {
+  --aspect-ratio: ;
 }
 .ss-ced::before {
   content: "\e009";
@@ -73,6 +85,9 @@
 .ss-ced.ss-inner::marker {
   content: "\e00b";
 }
+.ss-cei {
+  --aspect-ratio: ;
+}
 .ss-cei::before {
   content: "\e00c";
 }
@@ -81,6 +96,9 @@
 }
 .ss-cei.ss-inner::marker {
   content: "\e00e";
+}
+.ss-arn {
+  --aspect-ratio: 1.75;
 }
 .ss-arn::before {
   content: "\e00f";
@@ -91,6 +109,9 @@
 .ss-arn.ss-inner::marker {
   content: "\e011";
 }
+.ss-atq {
+  --aspect-ratio: 1.029;
+}
 .ss-atq::before {
   content: "\e012";
 }
@@ -99,6 +120,9 @@
 }
 .ss-atq.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-3ed {
+  --aspect-ratio: ;
 }
 .ss-3ed::before {
   content: "\e015";
@@ -109,6 +133,9 @@
 .ss-3ed.ss-inner::marker {
   content: "\e017";
 }
+.ss-fbb {
+  --aspect-ratio: ;
+}
 .ss-fbb::before {
   content: "\e018";
 }
@@ -117,6 +144,9 @@
 }
 .ss-fbb.ss-inner::marker {
   content: "\e01a";
+}
+.ss-leg {
+  --aspect-ratio: ;
 }
 .ss-leg::before {
   content: "\e01b";
@@ -127,6 +157,9 @@
 .ss-leg.ss-inner::marker {
   content: "\e01d";
 }
+.ss-sum {
+  --aspect-ratio: ;
+}
 .ss-sum::before {
   content: "\e01e";
 }
@@ -135,6 +168,9 @@
 }
 .ss-sum.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-pdrc {
+  --aspect-ratio: ;
 }
 .ss-pdrc::before {
   content: "\e021";
@@ -145,6 +181,9 @@
 .ss-pdrc.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-drk {
+  --aspect-ratio: ;
+}
 .ss-drk::before {
   content: "\e024";
 }
@@ -153,6 +192,9 @@
 }
 .ss-drk.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-phpr {
+  --aspect-ratio: ;
 }
 .ss-phpr::before {
   content: "\e027";
@@ -163,6 +205,9 @@
 .ss-phpr.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-fem {
+  --aspect-ratio: ;
+}
 .ss-fem::before {
   content: "\e02a";
 }
@@ -171,6 +216,9 @@
 }
 .ss-fem.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-pmei {
+  --aspect-ratio: ;
 }
 .ss-pmei::before {
   content: "\e02d";
@@ -189,6 +237,9 @@
 }
 .ss-pleaf.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-pmtg {
+  --aspect-ratio: ;
 }
 .ss-pmtg::before {
   content: "\e030";
@@ -217,6 +268,9 @@
 .ss-parl.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-4ed {
+  --aspect-ratio: ;
+}
 .ss-4ed::before {
   content: "\e033";
 }
@@ -225,6 +279,9 @@
 }
 .ss-4ed.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-4bb {
+  --aspect-ratio: ;
 }
 .ss-4bb::before {
   content: "\e036";
@@ -235,6 +292,9 @@
 .ss-4bb.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-ice {
+  --aspect-ratio: ;
+}
 .ss-ice::before {
   content: "\e039";
 }
@@ -243,6 +303,9 @@
 }
 .ss-ice.ss-inner::marker {
   content: "\e03b";
+}
+.ss-chr {
+  --aspect-ratio: ;
 }
 .ss-chr::before {
   content: "\e03c";
@@ -253,6 +316,9 @@
 .ss-chr.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-ren {
+  --aspect-ratio: ;
+}
 .ss-ren::before {
   content: "\e03f";
 }
@@ -261,6 +327,9 @@
 }
 .ss-ren.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-rin {
+  --aspect-ratio: ;
 }
 .ss-rin::before {
   content: "\e042";
@@ -271,6 +340,9 @@
 .ss-rin.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-hml {
+  --aspect-ratio: ;
+}
 .ss-hml::before {
   content: "\e045";
 }
@@ -279,6 +351,9 @@
 }
 .ss-hml.ss-inner::marker {
   content: "\e047";
+}
+.ss-all {
+  --aspect-ratio: ;
 }
 .ss-all::before {
   content: "\e048";
@@ -289,6 +364,9 @@
 .ss-all.ss-inner::marker {
   content: "\e04a";
 }
+.ss-mir {
+  --aspect-ratio: ;
+}
 .ss-mir::before {
   content: "\e04b";
 }
@@ -297,6 +375,9 @@
 }
 .ss-mir.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-itp {
+  --aspect-ratio: ;
 }
 .ss-itp::before {
   content: "\e04e";
@@ -307,6 +388,9 @@
 .ss-itp.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-vis {
+  --aspect-ratio: ;
+}
 .ss-vis::before {
   content: "\e051";
 }
@@ -315,6 +399,9 @@
 }
 .ss-vis.ss-inner::marker {
   content: "\e053";
+}
+.ss-5ed {
+  --aspect-ratio: ;
 }
 .ss-5ed::before {
   content: "\e054";
@@ -325,6 +412,9 @@
 .ss-5ed.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-past {
+  --aspect-ratio: ;
+}
 .ss-past::before {
   content: "\e057";
 }
@@ -334,6 +424,9 @@
 .ss-past.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-por {
+  --aspect-ratio: ;
+}
 .ss-por::before {
   content: "\e05a";
 }
@@ -342,6 +435,9 @@
 }
 .ss-por.ss-inner::marker {
   content: "\e05c";
+}
+.ss-pvan {
+  --aspect-ratio: ;
 }
 .ss-pvan::before {
   content: "\e05d";
@@ -361,6 +457,9 @@
 .ss-van.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-wth {
+  --aspect-ratio: ;
+}
 .ss-wth::before {
   content: "\e060";
 }
@@ -369,6 +468,9 @@
 }
 .ss-wth.ss-inner::marker {
   content: "\e062";
+}
+.ss-tmp {
+  --aspect-ratio: ;
 }
 .ss-tmp::before {
   content: "\e063";
@@ -379,6 +481,9 @@
 .ss-tmp.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-sth {
+  --aspect-ratio: ;
+}
 .ss-sth::before {
   content: "\e066";
 }
@@ -387,6 +492,9 @@
 }
 .ss-sth.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-exo {
+  --aspect-ratio: ;
 }
 .ss-exo::before {
   content: "\e069";
@@ -397,6 +505,9 @@
 .ss-exo.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-p02 {
+  --aspect-ratio: ;
+}
 .ss-p02::before {
   content: "\e06c";
 }
@@ -406,6 +517,9 @@
 .ss-p02.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-ugl {
+  --aspect-ratio: ;
+}
 .ss-ugl::before {
   content: "\e06f";
 }
@@ -414,6 +528,9 @@
 }
 .ss-ugl.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-palp {
+  --aspect-ratio: ;
 }
 .ss-palp::before {
   content: "\e072";
@@ -433,6 +550,9 @@
 .ss-papac.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-usg {
+  --aspect-ratio: ;
+}
 .ss-usg::before {
   content: "\e075";
 }
@@ -441,6 +561,9 @@
 }
 .ss-usg.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-ath {
+  --aspect-ratio: ;
 }
 .ss-ath::before {
   content: "\e078";
@@ -451,6 +574,9 @@
 .ss-ath.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-ulg {
+  --aspect-ratio: ;
+}
 .ss-ulg::before {
   content: "\e07b";
 }
@@ -459,6 +585,9 @@
 }
 .ss-ulg.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-6ed {
+  --aspect-ratio: ;
 }
 .ss-6ed::before {
   content: "\e07e";
@@ -469,6 +598,9 @@
 .ss-6ed.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-uds {
+  --aspect-ratio: ;
+}
 .ss-uds::before {
   content: "\e081";
 }
@@ -478,6 +610,9 @@
 .ss-uds.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-s99 {
+  --aspect-ratio: ;
+}
 .ss-s99::before {
   content: "\e084";
 }
@@ -486,6 +621,9 @@
 }
 .ss-s99.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-ptk {
+  --aspect-ratio: ;
 }
 .ss-ptk::before {
   content: "\e087";
@@ -505,6 +643,9 @@
 .ss-p3k.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-pgru {
+  --aspect-ratio: ;
+}
 .ss-pgru::before {
   content: "\e08a";
 }
@@ -513,6 +654,9 @@
 }
 .ss-pgru.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-mmq {
+  --aspect-ratio: ;
 }
 .ss-mmq::before {
   content: "\e08d";
@@ -523,6 +667,9 @@
 .ss-mmq.ss-inner::marker {
   content: "\e08f";
 }
+.ss-brb {
+  --aspect-ratio: ;
+}
 .ss-brb::before {
   content: "\e090";
 }
@@ -531,6 +678,9 @@
 }
 .ss-brb.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-fnm {
+  --aspect-ratio: ;
 }
 .ss-fnm::before {
   content: "\e093";
@@ -541,6 +691,9 @@
 .ss-fnm.ss-inner::marker {
   content: "\e095";
 }
+.ss-pal00 {
+  --aspect-ratio: ;
+}
 .ss-pal00::before {
   content: "\e096";
 }
@@ -549,6 +702,9 @@
 }
 .ss-pal00.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-pelp {
+  --aspect-ratio: ;
 }
 .ss-pelp::before {
   content: "\e099";
@@ -568,6 +724,9 @@
 .ss-peuro.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-nem {
+  --aspect-ratio: ;
+}
 .ss-nem::before {
   content: "\e09c";
 }
@@ -586,6 +745,9 @@
 .ss-nms.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-s00 {
+  --aspect-ratio: ;
+}
 .ss-s00::before {
   content: "\e09f";
 }
@@ -594,6 +756,9 @@
 }
 .ss-s00.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-pcy {
+  --aspect-ratio: ;
 }
 .ss-pcy::before {
   content: "\e0a2";
@@ -604,6 +769,9 @@
 .ss-pcy.ss-inner::marker {
   content: "\e0a4";
 }
+.ss-btd {
+  --aspect-ratio: ;
+}
 .ss-btd::before {
   content: "\e0a5";
 }
@@ -612,6 +780,9 @@
 }
 .ss-btd.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-inv {
+  --aspect-ratio: ;
 }
 .ss-inv::before {
   content: "\e0a8";
@@ -622,6 +793,9 @@
 .ss-inv.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-mpr {
+  --aspect-ratio: ;
+}
 .ss-mpr::before {
   content: "\e0ab";
 }
@@ -630,6 +804,9 @@
 }
 .ss-mpr.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-pls {
+  --aspect-ratio: ;
 }
 .ss-pls::before {
   content: "\e0ae";
@@ -640,6 +817,9 @@
 .ss-pls.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-7ed {
+  --aspect-ratio: ;
+}
 .ss-7ed::before {
   content: "\e0b1";
 }
@@ -649,6 +829,9 @@
 .ss-7ed.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-apc {
+  --aspect-ratio: ;
+}
 .ss-apc::before {
   content: "\e0b4";
 }
@@ -657,6 +840,9 @@
 }
 .ss-apc.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-psdg {
+  --aspect-ratio: ;
 }
 .ss-psdg::before {
   content: "\e0b7";
@@ -676,6 +862,9 @@
 .ss-psega.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-ody {
+  --aspect-ratio: ;
+}
 .ss-ody::before {
   content: "\e0ba";
 }
@@ -684,6 +873,9 @@
 }
 .ss-ody.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-dkm {
+  --aspect-ratio: ;
 }
 .ss-dkm::before {
   content: "\e0bd";
@@ -694,6 +886,9 @@
 .ss-dkm.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-tor {
+  --aspect-ratio: ;
+}
 .ss-tor::before {
   content: "\e0c0";
 }
@@ -702,6 +897,9 @@
 }
 .ss-tor.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-jud {
+  --aspect-ratio: ;
 }
 .ss-jud::before {
   content: "\e0c3";
@@ -712,6 +910,9 @@
 .ss-jud.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-prm {
+  --aspect-ratio: ;
+}
 .ss-prm::before {
   content: "\e0c6";
 }
@@ -720,6 +921,9 @@
 }
 .ss-prm.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-ons {
+  --aspect-ratio: ;
 }
 .ss-ons::before {
   content: "\e0c9";
@@ -730,6 +934,9 @@
 .ss-ons.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-lgn {
+  --aspect-ratio: ;
+}
 .ss-lgn::before {
   content: "\e0cc";
 }
@@ -738,6 +945,9 @@
 }
 .ss-lgn.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-scg {
+  --aspect-ratio: ;
 }
 .ss-scg::before {
   content: "\e0cf";
@@ -748,6 +958,45 @@
 .ss-scg.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-8ed {
+  --aspect-ratio: 0.9583;
+}
+.ss-8ed::before {
+  content: "\e0d2";
+}
+.ss-8ed.ss-border::after {
+  content: "\e0d3";
+}
+.ss-8ed.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-mrd {
+  --aspect-ratio: 1.3958;
+}
+.ss-mrd::before {
+  content: "\e0d5";
+}
+.ss-mrd.ss-border::after {
+  content: "\e0d6";
+}
+.ss-mrd.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-8edalt {
+  --aspect-ratio: 0.9583;
+}
+.ss-8edalt::before {
+  content: "\f8e7";
+}
+.ss-8edalt.ss-border::after {
+  content: "\f8ff";
+}
+.ss-8edalt.ss-inner::marker {
+  content: "\f8ff";
+}
+.ss-4eda {
+  --aspect-ratio: ;
+}
 .ss-4eda::before {
   content: "\f8f6";
 }
@@ -756,6 +1005,9 @@
 }
 .ss-4eda.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-legchr {
+  --aspect-ratio: ;
 }
 .ss-legchr::before {
   content: "\f8f4";
@@ -775,6 +1027,9 @@
 .ss-leg2.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-pgc98 {
+  --aspect-ratio: ;
+}
 .ss-pgc98::before {
   content: "\f8f2";
 }
@@ -783,6 +1038,9 @@
 }
 .ss-pgc98.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-po {
+  --aspect-ratio: ;
 }
 .ss-po::before {
   content: "\f8f0";
@@ -802,6 +1060,9 @@
 .ss-por2.ss-inner::marker {
   content: "\f8ee";
 }
+.ss-wl {
+  --aspect-ratio: ;
+}
 .ss-wl::before {
   content: "\f8ed";
 }
@@ -820,6 +1081,9 @@
 .ss-wth2.ss-inner::marker {
   content: "\f8ff";
 }
+.ss-brbalt {
+  --aspect-ratio: ;
+}
 .ss-brbalt::before {
   content: "\f8eb";
 }
@@ -828,6 +1092,9 @@
 }
 .ss-brbalt.ss-inner::marker {
   content: "\f8ff";
+}
+.ss-s00alt {
+  --aspect-ratio: ;
 }
 .ss-s00alt::before {
   content: "\f8e9";
@@ -972,14 +1239,14 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.ss.ss-fw.ss-fw-square {
+.ss.ss-uw {
+  align-items: center;
+  display: inline-flex;
+  height: 1em;
   width: 1em;
 }
-.ss.ss-fw.ss-fw-square::before {
-  transform: scale(0.5714);
-}
-.ss.ss-fw.ss-fw-square.ss-border::after, .ss.ss-fw.ss-fw-square.ss-inner::before, .ss.ss-fw.ss-fw-square.ss-inner::after, .ss.ss-fw.ss-fw-square.ss-inner::marker {
-  transform: translateX(-50%) scale(0.5714);
+.ss.ss-uw::before, .ss.ss-uw::after {
+  font-size: calc(1em / var(--aspect-ratio));
 }
 .ss.ss-white::before, .ss.ss-white::after, .ss.ss-white::marker {
   color: #fff;
@@ -995,6 +1262,22 @@
   .ss-ody::before, .ss-od::before {
     margin-left: -1.3%;
   }
+}
+_::-webkit-full-page-media .ss-inner, _:future .ss-inner, :root .safari_only .ss-inner {
+  display: none !important;
+}
+
+.ss-8ed:not(.ss-border):not(.ss-inner)::before {
+  content: "\f8e7";
+}
+.ss-8ed.ss-rarity-common.ss-border::after {
+  --ss-border: var(--ss-border-contrast);
+}
+.ss-8ed.ss-rarity-common.ss-inner::marker {
+  --ss-inner: #fff;
+}
+.ss-8ed.ss-rarity-uncommon.ss-inner::marker, .ss-8ed.ss-rarity-rare.ss-inner::marker, .ss-8ed.ss-rarity-mythic.ss-inner::marker, .ss-8ed.ss-rarity-foil.ss-inner::marker {
+  --ss-inner: var(--ss-border-contrast);
 }
 
 /*# sourceMappingURL=keyrune.css.map */

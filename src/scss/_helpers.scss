@@ -1,6 +1,5 @@
 //
 // output the correct glyphs for the 3 layers' pseudoelements
-//
 @mixin layers($layers) {
     &::before {
         content: glyph-content(map-get($layers, rarity));
@@ -17,9 +16,12 @@
     }
 }
 
-//
+// return the css variable for the glyph's aspect ratio
+@mixin ratio($ratio) {
+    --aspect-ratio: #{$ratio};
+}
+
 // correctly parse the glyph's unicode for css
-//
 @function glyph_content($glyph) {
     @return unquote("\"#{$glyph}\"");
 }

@@ -18,3 +18,43 @@
         }
     }
 }
+
+// safari specific overrides
+_::-webkit-full-page-media, _:future, :root .safari_only {
+    .#{$keyrune-prefix}-inner {
+        display: none !important;
+    }
+}
+
+// set specific corrections
+//
+// 8ed alt
+.#{$keyrune-prefix}-8ed {
+
+    // if there's no border or inner, show the alternative version
+    &:not(.#{$keyrune-prefix}-border):not(.#{$keyrune-prefix}-inner) {
+        &::before {
+            content: "\f8e7";
+        }
+    }
+
+    // common: border is always black and inner is always white
+    &.#{$keyrune-prefix}-rarity-common {
+        &.#{$keyrune-prefix}-border::after {
+            --ss-border: var(--ss-border-contrast);
+        }
+        &.#{$keyrune-prefix}-inner::marker {
+            --ss-inner: #fff;
+        }
+    }
+
+    // uncommon, rare, mythic is black border and black inner
+    &.#{$keyrune-prefix}-rarity-uncommon,
+    &.#{$keyrune-prefix}-rarity-rare,
+    &.#{$keyrune-prefix}-rarity-mythic,
+    &.#{$keyrune-prefix}-rarity-foil {
+        &.#{$keyrune-prefix}-inner::marker {
+            --ss-inner: var(--ss-border-contrast);
+        }
+    }
+}

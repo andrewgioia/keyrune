@@ -2,7 +2,7 @@
 $keyrune-font-family:        "keyrune" !default;
 $keyrune-font-path:          "../font" !default;
 $keyrune-prefix:             "ss" !default;
-$keyrune-version:            "4.0.57" !default;
+$keyrune-version:            "4.0.94" !default;
 
 // build options
 $keyrune-include-aliases:    true;
@@ -57,7 +57,6 @@ $keyrune-sets: (
         rarity: "\e000",
         border: "\e001",
         inner: "\e002",
-        print: 3
     ),
     leb: (
         rarity: "\e003",
@@ -83,11 +82,13 @@ $keyrune-sets: (
         rarity: "\e00f",
         border: "\e010",
         inner: "\e011",
+        ratio: 1.75,
     ),
     atq: (
         rarity: "\e012",
         border: "\e013",
         inner: "\f8ff", // empty
+        ratio: 1.029,
     ),
     3ed: (
         rarity: "\e015",
@@ -404,8 +405,26 @@ $keyrune-sets: (
         border: "\e0d0",
         inner: "\f8ff", // empty
     ),
+    8ed: (
+        rarity: "\e0d2",
+        border: "\e0d3",
+        inner: "\f8ff", // empty
+        ratio: 0.9583,
+    ),
+    mrd: (
+        rarity: "\e0d5",
+        border: "\e0d6",
+        inner: "\f8ff", // empty
+        ratio: 1.3958,
+    ),
     //
     // backwards from the end for alternatives/oddities
+    8edalt: (
+        rarity: "\f8e7",
+        border: "\f8ff", // empty
+        inner: "\f8ff", // empty
+        ratio: 0.9583,
+    ),
     4eda: (
         rarity: "\f8f6",
         border: "\f8f5",

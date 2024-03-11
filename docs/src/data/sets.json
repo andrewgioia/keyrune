@@ -207,6 +207,27 @@
           "7th",
           "7e"
         ]
+      },
+      "8ed": {
+        "code": "8ed",
+        "name": "Eighth Edition",
+        "display": "Eighth Edition",
+        "nicknames": [
+          "8th Edition"
+        ],
+        "rarity": "e0d2",
+        "border": "e0d3",
+        "inner": "e0d4",
+        "release": "2003-07-28",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": false,
+        "tags": [
+          "core",
+          "eighth",
+          "8th"
+        ]
       }
     }
   },
@@ -910,6 +931,25 @@
           "skull",
           "dominaria",
           "otaria"
+        ]
+      },
+      "mrd": {
+        "code": "mrd",
+        "name": "Mirrodin",
+        "display": "Mirrodin",
+        "nicknames": false,
+        "rarity": "e0d5",
+        "border": "e0d6",
+        "inner": false,
+        "release": "2003-10-02",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": true,
+        "aliases": false,
+        "tags": [
+          "mirrodin",
+          "sword",
+          "kaldra"
         ]
       }
     }
@@ -1878,6 +1918,28 @@
           "box",
           "axe",
           "community"
+        ]
+      },
+      "8edalt": {
+        "code": "8edalt",
+        "name": "Eighth Edition (Alternative)",
+        "display": "Eighth Edition (Alternative)",
+        "nicknames": [
+          "8th Edition (Alternative)"
+        ],
+        "rarity": "f8e7",
+        "border": false,
+        "inner": false,
+        "release": "2003-07-28",
+        "subgroup": false,
+        "version": "4.0.0",
+        "official": false,
+        "aliases": false,
+        "tags": [
+          "alternative",
+          "eighth",
+          "8th",
+          "core"
         ]
       }
     }
