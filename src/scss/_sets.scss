@@ -1,43 +1,46 @@
-@font-face {
-    font-family: '#{$keyrune-font-family}';
-    src: url('#{$keyrune-font-path}/#{$keyrune-font-family}.eot?#{$keyrune-version}');
-    src: url('#{$keyrune-font-path}/#{$keyrune-font-family}.eot?#{$keyrune-version}#iefix') format('embedded-opentype'),
-         url('#{$keyrune-font-path}/#{$keyrune-font-family}.woff2?#{$keyrune-version}') format('woff2'),
-         url('#{$keyrune-font-path}/#{$keyrune-font-family}.ttf?#{$keyrune-version}') format('truetype'),
-         url('#{$keyrune-font-path}/#{$keyrune-font-family}.woff?#{$keyrune-version}') format('woff'),
-         url('#{$keyrune-font-path}/#{$keyrune-font-family}.svg?#{$keyrune-version}##{$keyrune-font-family}') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-}
-
-// default styles and set symbol definitions via icon font
+// default styles and set symbol definitions
 .#{$keyrune-prefix} {
 
+    // base variables
+    --ss-base-size: 24px;
+    --ss-aspect-ratio: 1;
+    --ss-height: var(--ss-base-size);
+    --ss-width: calc(var(--ss-aspect-ratio) * var(--ss-base-size));
+
     // base styles
-    font-family: '#{$keyrune-font-family}' !important;
-    color: var(--ss-rarity);
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
+    background: transparent; // turn this to ss-border when border is enabled
+    display: inline-block;
+    height: var(--ss-height);
+    mask-repeat: no-repeat;
+    mask-position: 50% 0;
     position: relative;
-    text-transform: none;
-    line-height: 1;
-    display: inline-flex;
+    width: var(--ss-width);
 
-    // better font rendering
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    // pseudo defaults
+    // rarity and inner pseudo-element defaults
+    &::before,
+    &::after {
+        bottom: 0;
+        content: '';
+        display: none;
+        height: 100%;
+        mask-position: 50% 0;
+        mask-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
     &::before {
-        background: var(--ss-rarity-bg);
+        background: var(--ss-rarity);
+        display: block;
+    }
+    &::after {
+        background: var(--ss-inner);
     }
 
-    // ::before is the symbol layer
-    // ::after is the border layer
-    // ::marker is the (experimental) inner layer
+    // set symbol iteration
+    //  i is the border (outermost) layer
+    //  i::before is the symbol layer
+    //  i::after is the inner white layer
     @each $set, $attributes in $keyrune-sets {
         &-#{$set} {
             @include ratio(map-get($attributes, ratio));
@@ -68,61 +71,40 @@
     // accessory features
     &.#{$keyrune-prefix} {
 
-        //
         // border
         &-border {
-            // default and common border styles
-            &::after {
-                color: var(--ss-border);
-                position: absolute;
-                left: 0;
+            // set the element background as the border color
+            background: var(--ss-border);
+
+            // show the ::before pseudo element
+            &::before {
+                display: inline-block;
             }
 
             // rarities > common have a black border
-            &.#{$keyrune-prefix}-rarity-common-alt::after,
-            &.#{$keyrune-prefix}-rarity-uncommon::after,
-            &.#{$keyrune-prefix}-rarity-rare::after,
-            &.#{$keyrune-prefix}-rarity-mythic::after,
-            &.#{$keyrune-prefix}-rarity-foil::after,
-            &.#{$keyrune-prefix}-border-black::after {
-                color: var(--ss-border-contrast);
+            &.#{$keyrune-prefix}-rarity-common-alt,
+            &.#{$keyrune-prefix}-rarity-uncommon,
+            &.#{$keyrune-prefix}-rarity-rare,
+            &.#{$keyrune-prefix}-rarity-mythic,
+            &.#{$keyrune-prefix}-rarity-foil,
+            &.#{$keyrune-prefix}-border-black {
+                background: var(--ss-border-contrast);
             }
 
             // convenience class to force a white border
             &-white {
                 --ss-border: #fff !important;
+                --ss-border-contrast: #fff !important;
             }
         }
 
-        //
         // inner (requires advanced positional styles for glyphs taller than they are wide)
         &-inner {
-
-            // must be list-item for this to appear
-            display: list-item;
-            list-style-position: inside;
-
-            // set symbol must be absolutely positioned
-            &::before {
-                position: absolute;
-                left: 0;
-            }
-
-            // inner color
-            &::marker {
-                color: var(--ss-inner);
-            }
-
-            // position via transforms for everything until there's a better way
-            &::before,
-            &::after,
-            &::marker {
-                left: 50%;
-                transform: translateX(-50%);
+            &::after {
+                display: inline-block;
             }
         }
 
-        //
         // rarity colors
         &-rarity {
 
@@ -132,17 +114,12 @@
                     // set the symbol's color
                     --ss-rarity: #{map.get($colors, solid)};
                     // gradient alternative
-                    &.#{$keyrune-prefix}-rarity-gradient::before {
-                        --ss-rarity-bg:
-                            linear-gradient(
-                                90deg,
-                                #{map.get($colors, left)} 0%,
-                                #{map.get($colors, center)} 50%,
-                                #{map.get($colors, right)} 100%);
-                        --ss-rarity: transparent;
-                        background-clip: text;
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
+                    &.#{$keyrune-prefix}-rarity-gradient {
+                        --ss-rarity: linear-gradient(
+                            90deg,
+                            #{map.get($colors, left)} 0%,
+                            #{map.get($colors, center)} 50%,
+                            #{map.get($colors, right)} 100%);
                     }
                 }
             }
@@ -150,22 +127,17 @@
             // special foil case
             &-foil {
                 --ss-rarity: #00afc9;
-                &.#{$keyrune-prefix}-rarity-gradient::before {
-                    --ss-rarity-bg:
-                        linear-gradient(
-                            135deg,
-                            #ea8d66 0%,
-                            #ea8d66 15%,
-                            #fdef8a 28%,
-                            #8bcc93 42%,
-                            #a6dced 55%,
-                            #6f75aa 68%,
-                            #e599c2 84%,
-                            #e599c2 100%);
-                    --ss-rarity: transparent;
-                    background-clip: text;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                &.#{$keyrune-prefix}-rarity-gradient {
+                    --ss-rarity: linear-gradient(
+                        135deg,
+                        #ea8d66 0%,
+                        #ea8d66 15%,
+                        #fdef8a 28%,
+                        #8bcc93 42%,
+                        #a6dced 55%,
+                        #6f75aa 68%,
+                        #e599c2 84%,
+                        #e599c2 100%);
                 }
             }
         }
@@ -173,23 +145,7 @@
         //
         // fixed width
         &-fw {
-
             // set the width to the largest symbole, ARN, at 1.75em
-            width: 1.75em;
-            display: list-item;
-            list-style-position: inside;
-            text-align: center;
-
-            // if there is no inner, we need to hide the marker
-            &:not(.#{$keyrune-prefix}-inner) {
-                list-style: none;
-            }
-
-            // correction when there's a border and no inner
-            &.#{$keyrune-prefix}-border:not(.#{$keyrune-prefix}-inner)::after {
-                left: 50%;
-                transform: translateX(-50%);
-            }
         }
 
         //
@@ -219,50 +175,6 @@
             &::marker {
                 color: #{map.get($keyrune-colors, "white")};
             }
-        }
-    }
-}
-
-.svg {
-    background-color: var(--ss-border);
-    mask-repeat: no-repeat;
-    mask-position: 50% 0;
-    width: 84px;
-    height: 48px;
-    display: block;
-    position: relative;
-    display: block;
-
-    &::before,
-    &::after {
-        display: block;
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        bottom: 0;
-        mask-repeat: no-repeat;
-        mask-position: 50% 0;
-    }
-
-    &::before {
-        background-color: var(--ss-rarity);  
-    }
-
-    &::after {
-        background-color: var(--ss-inner);  
-    }
-
-    &.#{$keyrune-prefix}-pcy {
-        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='M44.01 33.54a8.57 8.57 0 0 1 2.72 2.03A4.7 4.7 0 0 1 48 38.63c0 1.69-.9 2.62-1.9 3.1-.5.25-1.51.43-1.67.44-.57.08-6.37.8-9.19.1-2.56-.64-6.12-.34-10.26.82-4.8 1.36-7.63-.27-11.3-1.24-2.68-.71-5.03-.6-6.95-.52-1.53.08-2.83.12-3.89-.11a2.46 2.46 0 0 1-2.02-2.33 2.96 2.96 0 0 1 1.54-2.66c.84-.52 2.42-.92 5.55-.76L0 22.2l3.11-7.51 8.58 1.62 4.04 6.46.01-10.04L25.8 4.39l10.7 9.03-.62 12.19 2.8-2.82 7.64-.12.66 7.29-2.97 3.58Z'/%3E%3C/svg%3E%0A");
-
-        &::before {
-            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='m10.25 36.27-8.47-14.2L4.1 16.5l6.62 1.25 6.62 10.58.01-14.85 8.45-7 9.07 7.65-.8 15.57 5.3-5.33 5.5-.08.47 5.16-4.16 5s.62 0 1.54.28c1.46.46 3.7 2.1 3.7 3.9 0 1.81-2.16 1.96-2.16 1.96s-5.85.83-8.62.13c-2.77-.7-6.61-.42-11.08.84-4.46 1.25-7.06-.35-10.46-1.26-4.78-1.26-8.56-.13-10.9-.64-.94-.2-1.12-1.38 0-2.07.9-.54 2.72-.79 6.75-.35 0 0 .46-.83.3-.97Zm21.84-20.75-2.3-2.09L28.4 33.2s.3 2.65 2.62 2.1l1.07-19.78Zm5.08 17.26 1.08 1.12 4.31-4.73-.08-2.1-5.3 5.71ZM9.32 20.74l-2.92-.48 7.38 12.8s2.62 1.4 2.31-1.39L9.32 20.74Z'/%3E%3C/svg%3E%0A");
-        }
-
-        &::after {
-            mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='m37.17 32.78 5.31-5.7.08 2.09-4.3 4.73-1.09-1.12ZM9.32 20.74l6.77 10.93c.3 2.79-2.3 1.4-2.3 1.4l-7.4-12.81 2.93.48Zm22.77-5.22L31.02 35.3c-2.31.56-2.62-2.09-2.62-2.09l1.39-19.77 2.3 2.1Z'/%3E%3C/svg%3E%0A");
         }
     }
 }

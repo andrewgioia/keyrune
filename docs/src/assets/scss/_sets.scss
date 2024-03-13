@@ -164,16 +164,16 @@ menu {
             animation: hover 200ms;
         }
 
-        > .ss {
-            font-size: 3rem;
-            margin: 1rem 0;
+        figcaption {
+            filter: drop-shadow(0 0 1.2rem var(--ss-icon-shadow));
+            margin: 1rem 0 0.75rem;
 
-            &.ss-rarity-common:not(.ss-inner)::before {
-                color: var(--text-default) !important;
-            }
+            > .ss {
+                --ss-base-size: 3rem;
 
-            &::before {
-                text-shadow: 0 0 2rem var(--icon-shadow);
+                &.ss-rarity-common:not(.ss-inner)::before {
+                    --ss-rarity: var(--text-default) !important;
+                }
             }
         }
 
@@ -209,9 +209,9 @@ menu {
             padding-bottom: 2rem;
         }
         figure {
-            > .ss {
-                font-size: 2.25rem;
-                margin: 1rem 0 0.75rem;
+            figcaption > .ss {
+                --ss-base-size: 2.25rem;
+                margin: 1rem 0 0.5rem;
             }
             > span.icon-name {
                 display: none;
@@ -233,8 +233,8 @@ menu {
         }
         figure {
             flex-direction: row;
-            > .ss {
-                font-size: 1.5rem;
+            figcaption > .ss {
+                --ss-base-size: 1.5rem;
                 margin: 1rem;
             }
             > span.icon-name {
@@ -259,8 +259,8 @@ menu {
             flex-direction: row;
             justify-content: center;
             border-radius: 0.75rem;
-            > .ss {
-                font-size: 2rem;
+            figcaption > .ss {
+                --ss-base-size: 2rem;
                 margin: 1rem;
             }
             > span.icon-name,
@@ -467,13 +467,13 @@ object {
             align-items: center;
             display: flex;
             justify-content: space-between;
-            padding: 2rem 0.5rem 1rem;
+            padding: 2.5rem 0.5rem 1.5rem;
 
             i.ss {
                 //color: var(--text-default);
-                font-size: 8em;
+                --ss-base-size: 8rem;
                 line-height: 1;
-                padding-bottom: 1.5rem;
+                padding-bottom: 1rem;
 
                 &.ss-rarity-common:not(.ss-inner)::before {
                     //color: var(--text-default) !important;
@@ -694,7 +694,7 @@ object {
             width: calc(16 * 16px * 1.75);
 
             i.ss {
-                font-size: 16em;
+                --ss-base-size: 16rem;
             }
 
             &-controls {

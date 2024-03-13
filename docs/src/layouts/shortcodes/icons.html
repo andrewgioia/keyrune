@@ -28,7 +28,9 @@
                 data-version="{{ $set.version }}"
                 data-aliases="{{ $set.aliases | jsonify }}"
             >
-                <i class="ss ss-{{ $set.code }} ss-rarity-common ss-border ss-inner ss-fw"></i>
+                <figcaption>
+                    <i class="ss ss-{{ $set.code }} ss-rarity-common ss-border ss-inner ss-fw"></i>
+                </figcaption>
                 <span class="icon-code">{{ $set.code }}</span>
                 <span class="icon-name">{{ $set.display }}</span>
             </figure>

@@ -21,1223 +21,176 @@
   font-display: block;
 }
 .ss {
-  font-family: "keyrune" !important;
-  color: var(--ss-rarity);
-  speak: never;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
+  --ss-base-size: 24px;
+  --ss-aspect-ratio: 1;
+  --ss-height: var(--ss-base-size);
+  --ss-width: calc(var(--ss-aspect-ratio) * var(--ss-base-size));
+  background: transparent;
+  display: inline-block;
+  height: var(--ss-height);
+  mask-repeat: no-repeat;
+  mask-position: 50% 0;
   position: relative;
-  text-transform: none;
-  line-height: 1;
-  display: inline-flex;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: var(--ss-width);
+}
+.ss::before, .ss::after {
+  bottom: 0;
+  content: "";
+  display: none;
+  height: 100%;
+  mask-position: 50% 0;
+  mask-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 .ss::before {
-  background: var(--ss-rarity-bg);
-}
-.ss-lea {
-  --aspect-ratio: ;
-}
-.ss-lea::before {
-  content: "\e000";
-}
-.ss-lea.ss-border::after {
-  content: "\e001";
-}
-.ss-lea.ss-inner::marker {
-  content: "\e002";
-}
-.ss-leb {
-  --aspect-ratio: ;
-}
-.ss-leb::before {
-  content: "\e003";
-}
-.ss-leb.ss-border::after {
-  content: "\e004";
-}
-.ss-leb.ss-inner::marker {
-  content: "\e005";
-}
-.ss-2ed {
-  --aspect-ratio: ;
-}
-.ss-2ed::before {
-  content: "\e006";
-}
-.ss-2ed.ss-border::after {
-  content: "\e007";
-}
-.ss-2ed.ss-inner::marker {
-  content: "\e008";
-}
-.ss-ced {
-  --aspect-ratio: ;
-}
-.ss-ced::before {
-  content: "\e009";
-}
-.ss-ced.ss-border::after {
-  content: "\e00a";
-}
-.ss-ced.ss-inner::marker {
-  content: "\e00b";
-}
-.ss-cei {
-  --aspect-ratio: ;
-}
-.ss-cei::before {
-  content: "\e00c";
-}
-.ss-cei.ss-border::after {
-  content: "\e00d";
-}
-.ss-cei.ss-inner::marker {
-  content: "\e00e";
-}
-.ss-arn {
-  --aspect-ratio: 1.75;
-}
-.ss-arn::before {
-  content: "\e00f";
-}
-.ss-arn.ss-border::after {
-  content: "\e010";
-}
-.ss-arn.ss-inner::marker {
-  content: "\e011";
-}
-.ss-atq {
-  --aspect-ratio: 1.029;
-}
-.ss-atq::before {
-  content: "\e012";
-}
-.ss-atq.ss-border::after {
-  content: "\e013";
-}
-.ss-atq.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-3ed {
-  --aspect-ratio: ;
-}
-.ss-3ed::before {
-  content: "\e015";
-}
-.ss-3ed.ss-border::after {
-  content: "\e016";
-}
-.ss-3ed.ss-inner::marker {
-  content: "\e017";
-}
-.ss-fbb {
-  --aspect-ratio: ;
-}
-.ss-fbb::before {
-  content: "\e018";
-}
-.ss-fbb.ss-border::after {
-  content: "\e019";
-}
-.ss-fbb.ss-inner::marker {
-  content: "\e01a";
-}
-.ss-leg {
-  --aspect-ratio: ;
-}
-.ss-leg::before {
-  content: "\e01b";
-}
-.ss-leg.ss-border::after {
-  content: "\e01c";
-}
-.ss-leg.ss-inner::marker {
-  content: "\e01d";
-}
-.ss-sum {
-  --aspect-ratio: ;
-}
-.ss-sum::before {
-  content: "\e01e";
-}
-.ss-sum.ss-border::after {
-  content: "\e01f";
-}
-.ss-sum.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-pdrc {
-  --aspect-ratio: ;
-}
-.ss-pdrc::before {
-  content: "\e021";
-}
-.ss-pdrc.ss-border::after {
-  content: "\e022";
-}
-.ss-pdrc.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-drk {
-  --aspect-ratio: ;
-}
-.ss-drk::before {
-  content: "\e024";
-}
-.ss-drk.ss-border::after {
-  content: "\e025";
-}
-.ss-drk.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-phpr {
-  --aspect-ratio: ;
-}
-.ss-phpr::before {
-  content: "\e027";
-}
-.ss-phpr.ss-border::after {
-  content: "\e028";
-}
-.ss-phpr.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-fem {
-  --aspect-ratio: ;
-}
-.ss-fem::before {
-  content: "\e02a";
-}
-.ss-fem.ss-border::after {
-  content: "\e02b";
-}
-.ss-fem.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-pmei {
-  --aspect-ratio: ;
-}
-.ss-pmei::before {
-  content: "\e02d";
-}
-.ss-pmei.ss-border::after {
-  content: "\e02e";
-}
-.ss-pmei.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-pleaf::before {
-  content: "\e02d";
-}
-.ss-pleaf.ss-border::after {
-  content: "\e02e";
-}
-.ss-pleaf.ss-inner::marker {
-  content: "\f8ff";
+  background: var(--ss-rarity);
+  display: block;
+}
+.ss::after {
+  background: var(--ss-inner);
 }
 .ss-pmtg {
-  --aspect-ratio: ;
+  --aspect-ratio: 0.8125;
+  background: var(--ss-rarity);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 39 48'%3E%3Cpath fill-rule='nonzero' d='M19.5 6a18 18 0 0 1 16.67 24.8c.33.25.68.53 1 .86l.07.1.06.08c.13.23.2.47.2.72 0 .28-.09.55-.27.78-.36.46-1 .63-1.63.45l-.1-.04c-.24-.1-.47-.2-.7-.27a18 18 0 0 1-30.32.44c-.35.17-.7.37-1 .6a.84.84 0 0 1-.24.14c-.53.2-1.1.03-1.44-.43-.2-.25-.3-.57-.3-.9 0-.32.11-.73.28-.9.28-.28.3-.33 1.36-.93A18 18 0 0 1 19.5 6Zm-7.15 14.1-.42.8c-.04.1-.11.18-.3.39-.21.25-.5.41-.85.47.13.14.24.29.3.44a.4.4 0 0 1 .05.18s.02.05.03.22c.02.32-.16.63-.16.63-1.56 2.68-2.32 4.83-2.32 6.57 0 .25.03.5.06.77l.16.03.13.02c.6.16 1 .72 1 1.41v.15c-.05.69-.51 1.2-1.14 1.25h-.2a10.6 10.6 0 0 0-1.35-.08 15.34 15.34 0 0 0 24.56-.3c-.73-.02-1.51.02-2.4.18-.64.2-1.14.43-1.5.71l-.03.03a.8.8 0 0 1-.45.17h-.03c-.68.06-1.05-.21-1.24-.45a1.3 1.3 0 0 1-.3-.85c0-.23.06-.43.1-.56v-.04c.05-.2.2-.4.38-.5l.04-.02c.33-.2.74-.56 1.15-.92l.2-.18c.04-.05.13-.17.13-.6 0-.32-.06-.75-.18-1.37a28.75 28.75 0 0 0-3-6.73.74.74 0 0 0-.24-.27.94.94 0 0 1-.24.13l-.02.02.01-.01c-.07.03-.13.07-.2.09-.36.1-.76 0-.9-.05l-.07-.02.04.13.02.2v.06a9.78 9.78 0 0 1-.48 2.2c-.18.6-.34 1.1-.34 1.65 0 .45.12.91.36 1.39a27 27 0 0 1 1.31 2.97v.02c.02.06.03.13.03.2 0 .06 0 .11-.02.17v.04a2.4 2.4 0 0 1-.86 1.44l-2.26 2.07c-.56.52-.7.66-.84.75l-.23.15a.91.91 0 0 1-.26.1c-.26.07-.5.05-.74-.05-.54-.22-.9-.79-.9-1.46l.01.08a35.73 35.73 0 0 0-2.97-10.27c-.6-1.3-1.34-2.8-2.63-3.55Zm10.82 12.18s-.02.01 0 0ZM7.38 14.6A15.26 15.26 0 0 0 5 29.03l.01-.03a111.1 111.1 0 0 0 2.73-7.52c.17-.3.45-.5.8-.58a1.2 1.2 0 0 1-.34-.8v-.03c0-.15.04-.3.11-.42l.02-.03c.35-.58.72-1.3 1.07-2.63l.01-.18c0-.4-.02-.8-1.3-.98l-.09-.01a.81.81 0 0 1-.7-.81v-.09c0-.1.02-.21.06-.32ZM19.1 8.65a15.57 15.57 0 0 0-10.64 4.7c.16-.08.32-.15.48-.17h.19c1.88.18 3.13.28 4.85.07h.07c1.23-.04 2.36 1.72 4.8 6.05l.96 1.66.12-.3.02-.04a.92.92 0 0 1 .14-.25 1.2 1.2 0 0 1 1.23-.4c.1.02.19.06.29.1l-.03-.24v-.13c.07-.43.3-.67.45-.83l.13-.14.03-.03c.42-.43.78-.98 1.16-1.58l.13-.2c0-.2-.06-.45-.33-.8l-.91-.61-.54-.36a1.2 1.2 0 0 1-.53-1V14l.04-.21c0-.05.02-.08.03-.12.17-.52.64-1.07 1.3-1.07l1.32.1c.68.06 1.32.1 2.24.27 0 0-.01 0 0 0 .33.05.68.11 1 0 .64-.23 1.17-.2 1.57.11.35.28.53.7.53 1.28v.32l.03.62c.04.58.07 1.18.2 1.73 1.57 2.83 3.6 7.3 4.72 11.55A15.43 15.43 0 0 0 19.5 8.64l-.4.01Z'/%3E%3C/svg%3E%0A");
 }
 .ss-pmtg::before {
-  content: "\e030";
+  display: none !important;
 }
-.ss-pmtg.ss-border::after {
-  content: "\e031";
+.ss-pmtg.ss-inner::after {
+  display: none !important;
 }
-.ss-pmtg.ss-inner::marker {
-  content: "\f8ff";
+.ss-pmtg.ss-border:not(.ss-inner) {
+  mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 48 48' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect x='0' y='0' width='48' height='48' style='fill:white;'/%3E%3C/svg%3E%0A"), url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 48 48' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect x='0' y='0' width='48' height='48' style='fill:white;'/%3E%3C/svg%3E%0A");
+  mask-composite: subtract;
+}
+.ss-plgm {
+  background: var(--ss-rarity);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 39 48'%3E%3Cpath fill-rule='nonzero' d='M19.5 6a18 18 0 0 1 16.67 24.8c.33.25.68.53 1 .86l.07.1.06.08c.13.23.2.47.2.72 0 .28-.09.55-.27.78-.36.46-1 .63-1.63.45l-.1-.04c-.24-.1-.47-.2-.7-.27a18 18 0 0 1-30.32.44c-.35.17-.7.37-1 .6a.84.84 0 0 1-.24.14c-.53.2-1.1.03-1.44-.43-.2-.25-.3-.57-.3-.9 0-.32.11-.73.28-.9.28-.28.3-.33 1.36-.93A18 18 0 0 1 19.5 6Zm-7.15 14.1-.42.8c-.04.1-.11.18-.3.39-.21.25-.5.41-.85.47.13.14.24.29.3.44a.4.4 0 0 1 .05.18s.02.05.03.22c.02.32-.16.63-.16.63-1.56 2.68-2.32 4.83-2.32 6.57 0 .25.03.5.06.77l.16.03.13.02c.6.16 1 .72 1 1.41v.15c-.05.69-.51 1.2-1.14 1.25h-.2a10.6 10.6 0 0 0-1.35-.08 15.34 15.34 0 0 0 24.56-.3c-.73-.02-1.51.02-2.4.18-.64.2-1.14.43-1.5.71l-.03.03a.8.8 0 0 1-.45.17h-.03c-.68.06-1.05-.21-1.24-.45a1.3 1.3 0 0 1-.3-.85c0-.23.06-.43.1-.56v-.04c.05-.2.2-.4.38-.5l.04-.02c.33-.2.74-.56 1.15-.92l.2-.18c.04-.05.13-.17.13-.6 0-.32-.06-.75-.18-1.37a28.75 28.75 0 0 0-3-6.73.74.74 0 0 0-.24-.27.94.94 0 0 1-.24.13l-.02.02.01-.01c-.07.03-.13.07-.2.09-.36.1-.76 0-.9-.05l-.07-.02.04.13.02.2v.06a9.78 9.78 0 0 1-.48 2.2c-.18.6-.34 1.1-.34 1.65 0 .45.12.91.36 1.39a27 27 0 0 1 1.31 2.97v.02c.02.06.03.13.03.2 0 .06 0 .11-.02.17v.04a2.4 2.4 0 0 1-.86 1.44l-2.26 2.07c-.56.52-.7.66-.84.75l-.23.15a.91.91 0 0 1-.26.1c-.26.07-.5.05-.74-.05-.54-.22-.9-.79-.9-1.46l.01.08a35.73 35.73 0 0 0-2.97-10.27c-.6-1.3-1.34-2.8-2.63-3.55Zm10.82 12.18s-.02.01 0 0ZM7.38 14.6A15.26 15.26 0 0 0 5 29.03l.01-.03a111.1 111.1 0 0 0 2.73-7.52c.17-.3.45-.5.8-.58a1.2 1.2 0 0 1-.34-.8v-.03c0-.15.04-.3.11-.42l.02-.03c.35-.58.72-1.3 1.07-2.63l.01-.18c0-.4-.02-.8-1.3-.98l-.09-.01a.81.81 0 0 1-.7-.81v-.09c0-.1.02-.21.06-.32ZM19.1 8.65a15.57 15.57 0 0 0-10.64 4.7c.16-.08.32-.15.48-.17h.19c1.88.18 3.13.28 4.85.07h.07c1.23-.04 2.36 1.72 4.8 6.05l.96 1.66.12-.3.02-.04a.92.92 0 0 1 .14-.25 1.2 1.2 0 0 1 1.23-.4c.1.02.19.06.29.1l-.03-.24v-.13c.07-.43.3-.67.45-.83l.13-.14.03-.03c.42-.43.78-.98 1.16-1.58l.13-.2c0-.2-.06-.45-.33-.8l-.91-.61-.54-.36a1.2 1.2 0 0 1-.53-1V14l.04-.21c0-.05.02-.08.03-.12.17-.52.64-1.07 1.3-1.07l1.32.1c.68.06 1.32.1 2.24.27 0 0-.01 0 0 0 .33.05.68.11 1 0 .64-.23 1.17-.2 1.57.11.35.28.53.7.53 1.28v.32l.03.62c.04.58.07 1.18.2 1.73 1.57 2.83 3.6 7.3 4.72 11.55A15.43 15.43 0 0 0 19.5 8.64l-.4.01Z'/%3E%3C/svg%3E%0A");
 }
 .ss-plgm::before {
-  content: "\e030";
+  display: none !important;
 }
-.ss-plgm.ss-border::after {
-  content: "\e031";
+.ss-plgm.ss-inner::after {
+  display: none !important;
 }
-.ss-plgm.ss-inner::marker {
-  content: "\f8ff";
+.ss-plgm.ss-border:not(.ss-inner) {
+  mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 48 48' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect x='0' y='0' width='48' height='48' style='fill:white;'/%3E%3C/svg%3E%0A"), url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 48 48' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect x='0' y='0' width='48' height='48' style='fill:white;'/%3E%3C/svg%3E%0A");
+  mask-composite: subtract;
+}
+.ss-parl {
+  background: var(--ss-rarity);
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 39 48'%3E%3Cpath fill-rule='nonzero' d='M19.5 6a18 18 0 0 1 16.67 24.8c.33.25.68.53 1 .86l.07.1.06.08c.13.23.2.47.2.72 0 .28-.09.55-.27.78-.36.46-1 .63-1.63.45l-.1-.04c-.24-.1-.47-.2-.7-.27a18 18 0 0 1-30.32.44c-.35.17-.7.37-1 .6a.84.84 0 0 1-.24.14c-.53.2-1.1.03-1.44-.43-.2-.25-.3-.57-.3-.9 0-.32.11-.73.28-.9.28-.28.3-.33 1.36-.93A18 18 0 0 1 19.5 6Zm-7.15 14.1-.42.8c-.04.1-.11.18-.3.39-.21.25-.5.41-.85.47.13.14.24.29.3.44a.4.4 0 0 1 .05.18s.02.05.03.22c.02.32-.16.63-.16.63-1.56 2.68-2.32 4.83-2.32 6.57 0 .25.03.5.06.77l.16.03.13.02c.6.16 1 .72 1 1.41v.15c-.05.69-.51 1.2-1.14 1.25h-.2a10.6 10.6 0 0 0-1.35-.08 15.34 15.34 0 0 0 24.56-.3c-.73-.02-1.51.02-2.4.18-.64.2-1.14.43-1.5.71l-.03.03a.8.8 0 0 1-.45.17h-.03c-.68.06-1.05-.21-1.24-.45a1.3 1.3 0 0 1-.3-.85c0-.23.06-.43.1-.56v-.04c.05-.2.2-.4.38-.5l.04-.02c.33-.2.74-.56 1.15-.92l.2-.18c.04-.05.13-.17.13-.6 0-.32-.06-.75-.18-1.37a28.75 28.75 0 0 0-3-6.73.74.74 0 0 0-.24-.27.94.94 0 0 1-.24.13l-.02.02.01-.01c-.07.03-.13.07-.2.09-.36.1-.76 0-.9-.05l-.07-.02.04.13.02.2v.06a9.78 9.78 0 0 1-.48 2.2c-.18.6-.34 1.1-.34 1.65 0 .45.12.91.36 1.39a27 27 0 0 1 1.31 2.97v.02c.02.06.03.13.03.2 0 .06 0 .11-.02.17v.04a2.4 2.4 0 0 1-.86 1.44l-2.26 2.07c-.56.52-.7.66-.84.75l-.23.15a.91.91 0 0 1-.26.1c-.26.07-.5.05-.74-.05-.54-.22-.9-.79-.9-1.46l.01.08a35.73 35.73 0 0 0-2.97-10.27c-.6-1.3-1.34-2.8-2.63-3.55Zm10.82 12.18s-.02.01 0 0ZM7.38 14.6A15.26 15.26 0 0 0 5 29.03l.01-.03a111.1 111.1 0 0 0 2.73-7.52c.17-.3.45-.5.8-.58a1.2 1.2 0 0 1-.34-.8v-.03c0-.15.04-.3.11-.42l.02-.03c.35-.58.72-1.3 1.07-2.63l.01-.18c0-.4-.02-.8-1.3-.98l-.09-.01a.81.81 0 0 1-.7-.81v-.09c0-.1.02-.21.06-.32ZM19.1 8.65a15.57 15.57 0 0 0-10.64 4.7c.16-.08.32-.15.48-.17h.19c1.88.18 3.13.28 4.85.07h.07c1.23-.04 2.36 1.72 4.8 6.05l.96 1.66.12-.3.02-.04a.92.92 0 0 1 .14-.25 1.2 1.2 0 0 1 1.23-.4c.1.02.19.06.29.1l-.03-.24v-.13c.07-.43.3-.67.45-.83l.13-.14.03-.03c.42-.43.78-.98 1.16-1.58l.13-.2c0-.2-.06-.45-.33-.8l-.91-.61-.54-.36a1.2 1.2 0 0 1-.53-1V14l.04-.21c0-.05.02-.08.03-.12.17-.52.64-1.07 1.3-1.07l1.32.1c.68.06 1.32.1 2.24.27 0 0-.01 0 0 0 .33.05.68.11 1 0 .64-.23 1.17-.2 1.57.11.35.28.53.7.53 1.28v.32l.03.62c.04.58.07 1.18.2 1.73 1.57 2.83 3.6 7.3 4.72 11.55A15.43 15.43 0 0 0 19.5 8.64l-.4.01Z'/%3E%3C/svg%3E%0A");
 }
 .ss-parl::before {
-  content: "\e030";
+  display: none !important;
 }
-.ss-parl.ss-border::after {
-  content: "\e031";
+.ss-parl.ss-inner::after {
+  display: none !important;
 }
-.ss-parl.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-4ed {
-  --aspect-ratio: ;
-}
-.ss-4ed::before {
-  content: "\e033";
-}
-.ss-4ed.ss-border::after {
-  content: "\e034";
-}
-.ss-4ed.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-4bb {
-  --aspect-ratio: ;
-}
-.ss-4bb::before {
-  content: "\e036";
-}
-.ss-4bb.ss-border::after {
-  content: "\e037";
-}
-.ss-4bb.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-ice {
-  --aspect-ratio: ;
-}
-.ss-ice::before {
-  content: "\e039";
-}
-.ss-ice.ss-border::after {
-  content: "\e03a";
-}
-.ss-ice.ss-inner::marker {
-  content: "\e03b";
-}
-.ss-chr {
-  --aspect-ratio: ;
-}
-.ss-chr::before {
-  content: "\e03c";
-}
-.ss-chr.ss-border::after {
-  content: "\e03d";
-}
-.ss-chr.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-ren {
-  --aspect-ratio: ;
-}
-.ss-ren::before {
-  content: "\e03f";
-}
-.ss-ren.ss-border::after {
-  content: "\e040";
-}
-.ss-ren.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-rin {
-  --aspect-ratio: ;
-}
-.ss-rin::before {
-  content: "\e042";
-}
-.ss-rin.ss-border::after {
-  content: "\e043";
-}
-.ss-rin.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-hml {
-  --aspect-ratio: ;
-}
-.ss-hml::before {
-  content: "\e045";
-}
-.ss-hml.ss-border::after {
-  content: "\e046";
-}
-.ss-hml.ss-inner::marker {
-  content: "\e047";
-}
-.ss-all {
-  --aspect-ratio: ;
-}
-.ss-all::before {
-  content: "\e048";
-}
-.ss-all.ss-border::after {
-  content: "\e049";
-}
-.ss-all.ss-inner::marker {
-  content: "\e04a";
-}
-.ss-mir {
-  --aspect-ratio: ;
-}
-.ss-mir::before {
-  content: "\e04b";
-}
-.ss-mir.ss-border::after {
-  content: "\e04c";
-}
-.ss-mir.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-itp {
-  --aspect-ratio: ;
-}
-.ss-itp::before {
-  content: "\e04e";
-}
-.ss-itp.ss-border::after {
-  content: "\e04f";
-}
-.ss-itp.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-vis {
-  --aspect-ratio: ;
-}
-.ss-vis::before {
-  content: "\e051";
-}
-.ss-vis.ss-border::after {
-  content: "\e052";
-}
-.ss-vis.ss-inner::marker {
-  content: "\e053";
-}
-.ss-5ed {
-  --aspect-ratio: ;
-}
-.ss-5ed::before {
-  content: "\e054";
-}
-.ss-5ed.ss-border::after {
-  content: "\e055";
-}
-.ss-5ed.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-past {
-  --aspect-ratio: ;
-}
-.ss-past::before {
-  content: "\e057";
-}
-.ss-past.ss-border::after {
-  content: "\e058";
-}
-.ss-past.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-por {
-  --aspect-ratio: ;
-}
-.ss-por::before {
-  content: "\e05a";
-}
-.ss-por.ss-border::after {
-  content: "\e05b";
-}
-.ss-por.ss-inner::marker {
-  content: "\e05c";
-}
-.ss-pvan {
-  --aspect-ratio: ;
-}
-.ss-pvan::before {
-  content: "\e05d";
-}
-.ss-pvan.ss-border::after {
-  content: "\e05e";
-}
-.ss-pvan.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-van::before {
-  content: "\e05d";
-}
-.ss-van.ss-border::after {
-  content: "\e05e";
-}
-.ss-van.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-wth {
-  --aspect-ratio: ;
-}
-.ss-wth::before {
-  content: "\e060";
-}
-.ss-wth.ss-border::after {
-  content: "\e061";
-}
-.ss-wth.ss-inner::marker {
-  content: "\e062";
-}
-.ss-tmp {
-  --aspect-ratio: ;
-}
-.ss-tmp::before {
-  content: "\e063";
-}
-.ss-tmp.ss-border::after {
-  content: "\e064";
-}
-.ss-tmp.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-sth {
-  --aspect-ratio: ;
-}
-.ss-sth::before {
-  content: "\e066";
-}
-.ss-sth.ss-border::after {
-  content: "\e067";
-}
-.ss-sth.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-exo {
-  --aspect-ratio: ;
-}
-.ss-exo::before {
-  content: "\e069";
-}
-.ss-exo.ss-border::after {
-  content: "\e06a";
-}
-.ss-exo.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-p02 {
-  --aspect-ratio: ;
-}
-.ss-p02::before {
-  content: "\e06c";
-}
-.ss-p02.ss-border::after {
-  content: "\e06d";
-}
-.ss-p02.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-ugl {
-  --aspect-ratio: ;
-}
-.ss-ugl::before {
-  content: "\e06f";
-}
-.ss-ugl.ss-border::after {
-  content: "\e070";
-}
-.ss-ugl.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-palp {
-  --aspect-ratio: ;
-}
-.ss-palp::before {
-  content: "\e072";
-}
-.ss-palp.ss-border::after {
-  content: "\e073";
-}
-.ss-palp.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-papac::before {
-  content: "\e072";
-}
-.ss-papac.ss-border::after {
-  content: "\e073";
-}
-.ss-papac.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-usg {
-  --aspect-ratio: ;
-}
-.ss-usg::before {
-  content: "\e075";
-}
-.ss-usg.ss-border::after {
-  content: "\e076";
-}
-.ss-usg.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-ath {
-  --aspect-ratio: ;
-}
-.ss-ath::before {
-  content: "\e078";
-}
-.ss-ath.ss-border::after {
-  content: "\e079";
-}
-.ss-ath.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-ulg {
-  --aspect-ratio: ;
-}
-.ss-ulg::before {
-  content: "\e07b";
-}
-.ss-ulg.ss-border::after {
-  content: "\e07c";
-}
-.ss-ulg.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-6ed {
-  --aspect-ratio: ;
-}
-.ss-6ed::before {
-  content: "\e07e";
-}
-.ss-6ed.ss-border::after {
-  content: "\e07f";
-}
-.ss-6ed.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-uds {
-  --aspect-ratio: ;
-}
-.ss-uds::before {
-  content: "\e081";
-}
-.ss-uds.ss-border::after {
-  content: "\e082";
-}
-.ss-uds.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-s99 {
-  --aspect-ratio: ;
-}
-.ss-s99::before {
-  content: "\e084";
-}
-.ss-s99.ss-border::after {
-  content: "\e085";
-}
-.ss-s99.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-ptk {
-  --aspect-ratio: ;
-}
-.ss-ptk::before {
-  content: "\e087";
-}
-.ss-ptk.ss-border::after {
-  content: "\e088";
-}
-.ss-ptk.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-p3k::before {
-  content: "\e087";
-}
-.ss-p3k.ss-border::after {
-  content: "\e088";
-}
-.ss-p3k.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-pgru {
-  --aspect-ratio: ;
-}
-.ss-pgru::before {
-  content: "\e08a";
-}
-.ss-pgru.ss-border::after {
-  content: "\e08b";
-}
-.ss-pgru.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-mmq {
-  --aspect-ratio: ;
-}
-.ss-mmq::before {
-  content: "\e08d";
-}
-.ss-mmq.ss-border::after {
-  content: "\e08e";
-}
-.ss-mmq.ss-inner::marker {
-  content: "\e08f";
-}
-.ss-brb {
-  --aspect-ratio: ;
-}
-.ss-brb::before {
-  content: "\e090";
-}
-.ss-brb.ss-border::after {
-  content: "\e091";
-}
-.ss-brb.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-fnm {
-  --aspect-ratio: ;
-}
-.ss-fnm::before {
-  content: "\e093";
-}
-.ss-fnm.ss-border::after {
-  content: "\e094";
-}
-.ss-fnm.ss-inner::marker {
-  content: "\e095";
-}
-.ss-pal00 {
-  --aspect-ratio: ;
-}
-.ss-pal00::before {
-  content: "\e096";
-}
-.ss-pal00.ss-border::after {
-  content: "\e097";
-}
-.ss-pal00.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-pelp {
-  --aspect-ratio: ;
-}
-.ss-pelp::before {
-  content: "\e099";
-}
-.ss-pelp.ss-border::after {
-  content: "\e09a";
-}
-.ss-pelp.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-peuro::before {
-  content: "\e099";
-}
-.ss-peuro.ss-border::after {
-  content: "\e09a";
-}
-.ss-peuro.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-nem {
-  --aspect-ratio: ;
-}
-.ss-nem::before {
-  content: "\e09c";
-}
-.ss-nem.ss-border::after {
-  content: "\e09d";
-}
-.ss-nem.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-nms::before {
-  content: "\e09c";
-}
-.ss-nms.ss-border::after {
-  content: "\e09d";
-}
-.ss-nms.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-s00 {
-  --aspect-ratio: ;
-}
-.ss-s00::before {
-  content: "\e09f";
-}
-.ss-s00.ss-border::after {
-  content: "\e0a0";
-}
-.ss-s00.ss-inner::marker {
-  content: "\f8ff";
+.ss-parl.ss-border:not(.ss-inner) {
+  mask-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 48 48' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect x='0' y='0' width='48' height='48' style='fill:white;'/%3E%3C/svg%3E%0A"), url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 48 48' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Crect x='0' y='0' width='48' height='48' style='fill:white;'/%3E%3C/svg%3E%0A");
+  mask-composite: subtract;
 }
 .ss-pcy {
-  --aspect-ratio: ;
+  --aspect-ratio: 1;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='M44.01 33.54a8.57 8.57 0 0 1 2.72 2.03A4.7 4.7 0 0 1 48 38.63c0 1.69-.9 2.62-1.9 3.1-.5.25-1.51.43-1.67.44-.57.08-6.37.8-9.19.1-2.56-.64-6.12-.34-10.26.82-4.8 1.36-7.63-.27-11.3-1.24-2.68-.71-5.03-.6-6.95-.52-1.53.08-2.83.12-3.89-.11a2.46 2.46 0 0 1-2.02-2.33 2.96 2.96 0 0 1 1.54-2.66c.84-.52 2.42-.92 5.55-.76L0 22.2l3.11-7.51 8.58 1.62 4.04 6.46.01-10.04L25.8 4.39l10.7 9.03-.62 12.19 2.8-2.82 7.64-.12.66 7.29-2.97 3.58Z'/%3E%3C/svg%3E%0A");
 }
 .ss-pcy::before {
-  content: "\e0a2";
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='m10.25 36.27-8.47-14.2L4.1 16.5l6.62 1.25 6.62 10.58.01-14.85 8.45-7 9.07 7.65-.8 15.57 5.3-5.33 5.5-.08.47 5.16-4.16 5s.62 0 1.54.28c1.46.46 3.7 2.1 3.7 3.9 0 1.81-2.16 1.96-2.16 1.96s-5.85.83-8.62.13c-2.77-.7-6.61-.42-11.08.84-4.46 1.25-7.06-.35-10.46-1.26-4.78-1.26-8.56-.13-10.9-.64-.94-.2-1.12-1.38 0-2.07.9-.54 2.72-.79 6.75-.35 0 0 .46-.83.3-.97Zm21.84-20.75-2.3-2.09L28.4 33.2s.3 2.65 2.62 2.1l1.07-19.78Zm5.08 17.26 1.08 1.12 4.31-4.73-.08-2.1-5.3 5.71ZM9.32 20.74l-2.92-.48 7.38 12.8s2.62 1.4 2.31-1.39L9.32 20.74Z'/%3E%3C/svg%3E%0A");
 }
-.ss-pcy.ss-border::after {
-  content: "\e0a3";
+.ss-pcy.ss-inner::before {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='m10.25 36.27-8.47-14.2L4.1 16.5l6.62 1.25 6.62 10.58.01-14.85 8.45-7 9.07 7.65-.8 15.57 5.3-5.33 5.5-.08.47 5.16-4.16 5s.62 0 1.54.28c1.46.46 3.7 2.1 3.7 3.9 0 1.81-2.16 1.96-2.16 1.96s-5.85.83-8.62.13c-2.77-.7-6.61-.42-11.08.84-4.46 1.25-7.06-.35-10.46-1.26-4.78-1.26-8.56-.13-10.9-.64-.94-.2-1.12-1.38 0-2.07.9-.54 2.72-.79 6.75-.35 0 0 .46-.83.3-.97Z'/%3E%3C/svg%3E%0A");
 }
-.ss-pcy.ss-inner::marker {
-  content: "\e0a4";
+.ss-pcy.ss-inner::after {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='m37.17 32.78 5.31-5.7.08 2.09-4.3 4.73-1.09-1.12ZM9.32 20.74l6.77 10.93c.3 2.79-2.3 1.4-2.3 1.4l-7.4-12.81 2.93.48Zm22.77-5.22L31.02 35.3c-2.31.56-2.62-2.09-2.62-2.09l1.39-19.77 2.3 2.1Z'/%3E%3C/svg%3E%0A");
 }
-.ss-btd {
-  --aspect-ratio: ;
+.ss-pcy.ss-border:not(.ss-inner) {
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='M44.01 33.54a8.57 8.57 0 0 1 2.72 2.03A4.7 4.7 0 0 1 48 38.63c0 1.69-.9 2.62-1.9 3.1-.5.25-1.51.43-1.67.44-.57.08-6.37.8-9.19.1-2.56-.64-6.12-.34-10.26.82-4.8 1.36-7.63-.27-11.3-1.24-2.68-.71-5.03-.6-6.95-.52-1.53.08-2.83.12-3.89-.11a2.46 2.46 0 0 1-2.02-2.33 2.96 2.96 0 0 1 1.54-2.66c.84-.52 2.42-.92 5.55-.76L0 22.2l3.11-7.51 8.58 1.62 4.04 6.46.01-10.04L25.8 4.39l10.7 9.03-.62 12.19 2.8-2.82 7.64-.12.66 7.29-2.97 3.58Z'/%3E%3C/svg%3E%0A"), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='m37.17 32.78 5.31-5.7.08 2.09-4.3 4.73-1.09-1.12ZM9.32 20.74l6.77 10.93c.3 2.79-2.3 1.4-2.3 1.4l-7.4-12.81 2.93.48Zm22.77-5.22L31.02 35.3c-2.31.56-2.62-2.09-2.62-2.09l1.39-19.77 2.3 2.1Z'/%3E%3C/svg%3E%0A");
+  mask-composite: subtract;
 }
-.ss-btd::before {
-  content: "\e0a5";
+.ss.ss-border {
+  background: var(--ss-border);
 }
-.ss-btd.ss-border::after {
-  content: "\e0a6";
+.ss.ss-border::before {
+  display: inline-block;
 }
-.ss-btd.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-inv {
-  --aspect-ratio: ;
-}
-.ss-inv::before {
-  content: "\e0a8";
-}
-.ss-inv.ss-border::after {
-  content: "\e0a9";
-}
-.ss-inv.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-mpr {
-  --aspect-ratio: ;
-}
-.ss-mpr::before {
-  content: "\e0ab";
-}
-.ss-mpr.ss-border::after {
-  content: "\e0ac";
-}
-.ss-mpr.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-pls {
-  --aspect-ratio: ;
-}
-.ss-pls::before {
-  content: "\e0ae";
-}
-.ss-pls.ss-border::after {
-  content: "\e0af";
-}
-.ss-pls.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-7ed {
-  --aspect-ratio: ;
-}
-.ss-7ed::before {
-  content: "\e0b1";
-}
-.ss-7ed.ss-border::after {
-  content: "\e0b2";
-}
-.ss-7ed.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-apc {
-  --aspect-ratio: ;
-}
-.ss-apc::before {
-  content: "\e0b4";
-}
-.ss-apc.ss-border::after {
-  content: "\e0b5";
-}
-.ss-apc.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-psdg {
-  --aspect-ratio: ;
-}
-.ss-psdg::before {
-  content: "\e0b7";
-}
-.ss-psdg.ss-border::after {
-  content: "\e0b8";
-}
-.ss-psdg.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-psega::before {
-  content: "\e0b7";
-}
-.ss-psega.ss-border::after {
-  content: "\e0b8";
-}
-.ss-psega.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-ody {
-  --aspect-ratio: ;
-}
-.ss-ody::before {
-  content: "\e0ba";
-}
-.ss-ody.ss-border::after {
-  content: "\e0bb";
-}
-.ss-ody.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-dkm {
-  --aspect-ratio: ;
-}
-.ss-dkm::before {
-  content: "\e0bd";
-}
-.ss-dkm.ss-border::after {
-  content: "\e0be";
-}
-.ss-dkm.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-tor {
-  --aspect-ratio: ;
-}
-.ss-tor::before {
-  content: "\e0c0";
-}
-.ss-tor.ss-border::after {
-  content: "\e0c1";
-}
-.ss-tor.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-jud {
-  --aspect-ratio: ;
-}
-.ss-jud::before {
-  content: "\e0c3";
-}
-.ss-jud.ss-border::after {
-  content: "\e0c4";
-}
-.ss-jud.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-prm {
-  --aspect-ratio: ;
-}
-.ss-prm::before {
-  content: "\e0c6";
-}
-.ss-prm.ss-border::after {
-  content: "\e0c7";
-}
-.ss-prm.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-ons {
-  --aspect-ratio: ;
-}
-.ss-ons::before {
-  content: "\e0c9";
-}
-.ss-ons.ss-border::after {
-  content: "\e0ca";
-}
-.ss-ons.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-lgn {
-  --aspect-ratio: ;
-}
-.ss-lgn::before {
-  content: "\e0cc";
-}
-.ss-lgn.ss-border::after {
-  content: "\e0cd";
-}
-.ss-lgn.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-scg {
-  --aspect-ratio: ;
-}
-.ss-scg::before {
-  content: "\e0cf";
-}
-.ss-scg.ss-border::after {
-  content: "\e0d0";
-}
-.ss-scg.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-8ed {
-  --aspect-ratio: 0.9583;
-}
-.ss-8ed::before {
-  content: "\e0d2";
-}
-.ss-8ed.ss-border::after {
-  content: "\e0d3";
-}
-.ss-8ed.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-mrd {
-  --aspect-ratio: 1.3958;
-}
-.ss-mrd::before {
-  content: "\e0d5";
-}
-.ss-mrd.ss-border::after {
-  content: "\e0d6";
-}
-.ss-mrd.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-8edalt {
-  --aspect-ratio: 0.9583;
-}
-.ss-8edalt::before {
-  content: "\f8e7";
-}
-.ss-8edalt.ss-border::after {
-  content: "\f8ff";
-}
-.ss-8edalt.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-4eda {
-  --aspect-ratio: ;
-}
-.ss-4eda::before {
-  content: "\f8f6";
-}
-.ss-4eda.ss-border::after {
-  content: "\f8f5";
-}
-.ss-4eda.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-legchr {
-  --aspect-ratio: ;
-}
-.ss-legchr::before {
-  content: "\f8f4";
-}
-.ss-legchr.ss-border::after {
-  content: "\f8f3";
-}
-.ss-legchr.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-leg2::before {
-  content: "\f8f4";
-}
-.ss-leg2.ss-border::after {
-  content: "\f8f3";
-}
-.ss-leg2.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-pgc98 {
-  --aspect-ratio: ;
-}
-.ss-pgc98::before {
-  content: "\f8f2";
-}
-.ss-pgc98.ss-border::after {
-  content: "\f8f1";
-}
-.ss-pgc98.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-po {
-  --aspect-ratio: ;
-}
-.ss-po::before {
-  content: "\f8f0";
-}
-.ss-po.ss-border::after {
-  content: "\f8ef";
-}
-.ss-po.ss-inner::marker {
-  content: "\f8ee";
-}
-.ss-por2::before {
-  content: "\f8f0";
-}
-.ss-por2.ss-border::after {
-  content: "\f8ef";
-}
-.ss-por2.ss-inner::marker {
-  content: "\f8ee";
-}
-.ss-wl {
-  --aspect-ratio: ;
-}
-.ss-wl::before {
-  content: "\f8ed";
-}
-.ss-wl.ss-border::after {
-  content: "\f8ec";
-}
-.ss-wl.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-wth2::before {
-  content: "\f8ed";
-}
-.ss-wth2.ss-border::after {
-  content: "\f8ec";
-}
-.ss-wth2.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-brbalt {
-  --aspect-ratio: ;
-}
-.ss-brbalt::before {
-  content: "\f8eb";
-}
-.ss-brbalt.ss-border::after {
-  content: "\f8ea";
-}
-.ss-brbalt.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss-s00alt {
-  --aspect-ratio: ;
-}
-.ss-s00alt::before {
-  content: "\f8e9";
-}
-.ss-s00alt.ss-border::after {
-  content: "\f8e8";
-}
-.ss-s00alt.ss-inner::marker {
-  content: "\f8ff";
-}
-.ss.ss-border::after {
-  color: var(--ss-border);
-  position: absolute;
-  left: 0;
-}
-.ss.ss-border.ss-rarity-common-alt::after, .ss.ss-border.ss-rarity-uncommon::after, .ss.ss-border.ss-rarity-rare::after, .ss.ss-border.ss-rarity-mythic::after, .ss.ss-border.ss-rarity-foil::after, .ss.ss-border.ss-border-black::after {
-  color: var(--ss-border-contrast);
+.ss.ss-border.ss-rarity-common-alt, .ss.ss-border.ss-rarity-uncommon, .ss.ss-border.ss-rarity-rare, .ss.ss-border.ss-rarity-mythic, .ss.ss-border.ss-rarity-foil, .ss.ss-border.ss-border-black {
+  background: var(--ss-border-contrast);
 }
 .ss.ss-border-white {
   --ss-border: #fff !important;
+  --ss-border-contrast: #fff !important;
 }
-.ss.ss-inner {
-  display: list-item;
-  list-style-position: inside;
-}
-.ss.ss-inner::before {
-  position: absolute;
-  left: 0;
-}
-.ss.ss-inner::marker {
-  color: var(--ss-inner);
-}
-.ss.ss-inner::before, .ss.ss-inner::after, .ss.ss-inner::marker {
-  left: 50%;
-  transform: translateX(-50%);
+.ss.ss-inner::after {
+  display: inline-block;
 }
 .ss.ss-rarity-common {
   --ss-rarity: #131417;
 }
-.ss.ss-rarity-common.ss-rarity-gradient::before {
-  --ss-rarity-bg:
-      linear-gradient(
-          90deg,
-          #131417 0%,
-          #131417 50%,
-          #131417 100%);
-  --ss-rarity: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.ss.ss-rarity-common.ss-rarity-gradient {
+  --ss-rarity: linear-gradient(
+      90deg,
+      #131417 0%,
+      #131417 50%,
+      #131417 100%);
 }
 .ss.ss-rarity-common-alt {
   --ss-rarity: #fff;
 }
-.ss.ss-rarity-common-alt.ss-rarity-gradient::before {
-  --ss-rarity-bg:
-      linear-gradient(
-          90deg,
-           0%,
-           50%,
-           100%);
-  --ss-rarity: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.ss.ss-rarity-common-alt.ss-rarity-gradient {
+  --ss-rarity: linear-gradient(
+      90deg,
+       0%,
+       50%,
+       100%);
 }
 .ss.ss-rarity-uncommon {
   --ss-rarity: #707883;
 }
-.ss.ss-rarity-uncommon.ss-rarity-gradient::before {
-  --ss-rarity-bg:
-      linear-gradient(
-          90deg,
-          #4d6572 0%,
-          #c3dfeb 50%,
-          #4d6572 100%);
-  --ss-rarity: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.ss.ss-rarity-uncommon.ss-rarity-gradient {
+  --ss-rarity: linear-gradient(
+      90deg,
+      #4d6572 0%,
+      #c3dfeb 50%,
+      #4d6572 100%);
 }
 .ss.ss-rarity-rare {
   --ss-rarity: #a48a37;
 }
-.ss.ss-rarity-rare.ss-rarity-gradient::before {
-  --ss-rarity-bg:
-      linear-gradient(
-          90deg,
-          #7f6f43 0%,
-          #d9c287 50%,
-          #7f6f43 100%);
-  --ss-rarity: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.ss.ss-rarity-rare.ss-rarity-gradient {
+  --ss-rarity: linear-gradient(
+      90deg,
+      #7f6f43 0%,
+      #d9c287 50%,
+      #7f6f43 100%);
 }
 .ss.ss-rarity-mythic {
   --ss-rarity: #d9640f;
 }
-.ss.ss-rarity-mythic.ss-rarity-gradient::before {
-  --ss-rarity-bg:
-      linear-gradient(
-          90deg,
-          #c2381a 0%,
-          #f59700 50%,
-          #c2381a 100%);
-  --ss-rarity: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.ss.ss-rarity-mythic.ss-rarity-gradient {
+  --ss-rarity: linear-gradient(
+      90deg,
+      #c2381a 0%,
+      #f59700 50%,
+      #c2381a 100%);
 }
 .ss.ss-rarity-foil {
   --ss-rarity: #00afc9;
 }
-.ss.ss-rarity-foil.ss-rarity-gradient::before {
-  --ss-rarity-bg:
-      linear-gradient(
-          135deg,
-          #ea8d66 0%,
-          #ea8d66 15%,
-          #fdef8a 28%,
-          #8bcc93 42%,
-          #a6dced 55%,
-          #6f75aa 68%,
-          #e599c2 84%,
-          #e599c2 100%);
-  --ss-rarity: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.ss.ss-fw {
-  width: 1.75em;
-  display: list-item;
-  list-style-position: inside;
-  text-align: center;
-}
-.ss.ss-fw:not(.ss-inner) {
-  list-style: none;
-}
-.ss.ss-fw.ss-border:not(.ss-inner)::after {
-  left: 50%;
-  transform: translateX(-50%);
+.ss.ss-rarity-foil.ss-rarity-gradient {
+  --ss-rarity: linear-gradient(
+      135deg,
+      #ea8d66 0%,
+      #ea8d66 15%,
+      #fdef8a 28%,
+      #8bcc93 42%,
+      #a6dced 55%,
+      #6f75aa 68%,
+      #e599c2 84%,
+      #e599c2 100%);
 }
 .ss.ss-uw {
   align-items: center;
@@ -1250,43 +203,6 @@
 }
 .ss.ss-white::before, .ss.ss-white::after, .ss.ss-white::marker {
   color: #fff;
-}
-
-.svg {
-  background-color: var(--ss-border);
-  mask-repeat: no-repeat;
-  mask-position: 50% 0;
-  width: 84px;
-  height: 48px;
-  display: block;
-  position: relative;
-  display: block;
-}
-.svg::before, .svg::after {
-  display: block;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  mask-repeat: no-repeat;
-  mask-position: 50% 0;
-}
-.svg::before {
-  background-color: var(--ss-rarity);
-}
-.svg::after {
-  background-color: var(--ss-inner);
-}
-.svg.ss-pcy {
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='M44.01 33.54a8.57 8.57 0 0 1 2.72 2.03A4.7 4.7 0 0 1 48 38.63c0 1.69-.9 2.62-1.9 3.1-.5.25-1.51.43-1.67.44-.57.08-6.37.8-9.19.1-2.56-.64-6.12-.34-10.26.82-4.8 1.36-7.63-.27-11.3-1.24-2.68-.71-5.03-.6-6.95-.52-1.53.08-2.83.12-3.89-.11a2.46 2.46 0 0 1-2.02-2.33 2.96 2.96 0 0 1 1.54-2.66c.84-.52 2.42-.92 5.55-.76L0 22.2l3.11-7.51 8.58 1.62 4.04 6.46.01-10.04L25.8 4.39l10.7 9.03-.62 12.19 2.8-2.82 7.64-.12.66 7.29-2.97 3.58Z'/%3E%3C/svg%3E%0A");
-}
-.svg.ss-pcy::before {
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='m10.25 36.27-8.47-14.2L4.1 16.5l6.62 1.25 6.62 10.58.01-14.85 8.45-7 9.07 7.65-.8 15.57 5.3-5.33 5.5-.08.47 5.16-4.16 5s.62 0 1.54.28c1.46.46 3.7 2.1 3.7 3.9 0 1.81-2.16 1.96-2.16 1.96s-5.85.83-8.62.13c-2.77-.7-6.61-.42-11.08.84-4.46 1.25-7.06-.35-10.46-1.26-4.78-1.26-8.56-.13-10.9-.64-.94-.2-1.12-1.38 0-2.07.9-.54 2.72-.79 6.75-.35 0 0 .46-.83.3-.97Zm21.84-20.75-2.3-2.09L28.4 33.2s.3 2.65 2.62 2.1l1.07-19.78Zm5.08 17.26 1.08 1.12 4.31-4.73-.08-2.1-5.3 5.71ZM9.32 20.74l-2.92-.48 7.38 12.8s2.62 1.4 2.31-1.39L9.32 20.74Z'/%3E%3C/svg%3E%0A");
-}
-.svg.ss-pcy::after {
-  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' fill-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='2' clip-rule='evenodd' viewBox='0 0 48 48'%3E%3Cpath d='m37.17 32.78 5.31-5.7.08 2.09-4.3 4.73-1.09-1.12ZM9.32 20.74l6.77 10.93c.3 2.79-2.3 1.4-2.3 1.4l-7.4-12.81 2.93.48Zm22.77-5.22L31.02 35.3c-2.31.56-2.62-2.09-2.62-2.09l1.39-19.77 2.3 2.1Z'/%3E%3C/svg%3E%0A");
 }
 
 @-moz-document url-prefix() {

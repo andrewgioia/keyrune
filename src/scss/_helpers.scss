@@ -1,17 +1,46 @@
-//
 // output the correct glyphs for the 3 layers' pseudoelements
 @mixin layers($layers) {
-    &::before {
-        content: glyph-content(map-get($layers, rarity));
-    }
-    &.#{$keyrune-prefix}-border {
-        &::after {
-            content: glyph-content(map-get($layers, border));
+    @if (map-get($layers, border)) {
+        // always mask the border on the element itself and the rarity on the ::before
+        mask-image: url(svg_content(map-get($layers, border), map-get($layers, viewbox)));
+        &::before {
+            mask-image: url(svg_content(map-get($layers, rarity), map-get($layers, viewbox)));
+        }
+    } @else {
+        background: var(--ss-rarity);
+        mask-image: url(svg_content(map-get($layers, rarity), map-get($layers, viewbox)));
+        &::before {
+            display: none !important;
         }
     }
+
+    // inner layer
     &.#{$keyrune-prefix}-inner {
-        &::marker {
-            content: glyph-content(map-get($layers, inner));
+        @if (map-get($layers, inner)) {
+            // mask the filled rarity on the before
+            &::before{
+                mask-image: url(svg_content(map-get($layers, filled), map-get($layers, viewbox)));
+            }
+            // mask the inner on the ::after
+            &::after {
+                mask-image: url(svg_content(map-get($layers, inner), map-get($layers, viewbox)));
+            }
+        } @else {
+            &::after {
+                display: none !important;
+            }
+        }
+        
+    }
+
+    // border layer
+    &.#{$keyrune-prefix}-border {
+        // if there's no inner, composite subtract it out of the element's mask
+        &:not(.#{$keyrune-prefix}-inner) {
+            mask-image: 
+                url(svg_content(map-get($layers, border), map-get($layers, viewbox))),
+                url(svg_content(map-get($layers, inner), map-get($layers, viewbox)));
+            mask-composite: subtract;
         }
     }
 }
@@ -22,6 +51,10 @@
 }
 
 // correctly parse the glyph's unicode for css
-@function glyph_content($glyph) {
-    @return unquote("\"#{$glyph}\"");
+@function svg_content($svg, $viewbox) {
+    @if $svg {
+        @return unquote("\"#{$keyrune-svg-tag-open}#{$viewbox}#{$keyrune-svg-tag-inner}#{$svg}#{$keyrune-svg-tag-close}\"");
+    } @else {
+        @return unquote("\"#{$keyrune-svg-empty}\"");
+    }
 }

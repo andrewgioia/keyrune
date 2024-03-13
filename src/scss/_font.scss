@@ -1,0 +1,12 @@
+@font-face {
+    font-family: '#{$keyrune-font-family}';
+    src: url('#{$keyrune-font-path}/#{$keyrune-font-family}.eot?#{$keyrune-version}');
+    src: url('#{$keyrune-font-path}/#{$keyrune-font-family}.eot?#{$keyrune-version}#iefix') format('embedded-opentype'),
+         url('#{$keyrune-font-path}/#{$keyrune-font-family}.woff2?#{$keyrune-version}') format('woff2'),
+         url('#{$keyrune-font-path}/#{$keyrune-font-family}.ttf?#{$keyrune-version}') format('truetype'),
+         url('#{$keyrune-font-path}/#{$keyrune-font-family}.woff?#{$keyrune-version}') format('woff'),
+         url('#{$keyrune-font-path}/#{$keyrune-font-family}.svg?#{$keyrune-version}##{$keyrune-font-family}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
