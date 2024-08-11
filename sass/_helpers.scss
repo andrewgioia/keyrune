@@ -73,9 +73,10 @@
         width: 100%;
     }
 
-    // set default inner to white unless a rarity is declared
-    color: #fff;
-
+    & {
+        // set default inner to white unless a rarity is declared
+        color: #fff;   
+    }
     // sets
     @each $code, $glyph in $dual-layered {
         &.#{$keyrune_prefix}-#{$code}::after {
