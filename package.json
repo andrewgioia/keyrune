@@ -20,7 +20,9 @@
   },
   "keywords": [],
   "homepage": "https://keyrune.andrewgioia.com",
-  "dependencies": {},
+  "dependencies": {
+    "lessc": "^1.0.2"
+  },
   "devDependencies": {
     "zepto": "^1.2.0"
   },
