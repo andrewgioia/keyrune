@@ -23,3 +23,12 @@ After you have added a new set icon, update the codebase and generate the new `k
     Replace `fdn` with the short code of the new icon.
 
     > A data attribute with the version is present, but i don't know how it's working. If you have info about it, please add it in this doc here. 🙏
+
+You can open each html file in your browser to see the changes. Or use tools like `Live Server` in Visual Studio Code.
+Normally you can see the changes in the `./cheatsheet.html` and `./icons.html` .
+
+![cheatsheet.html](./images/cheatsheet-html.png) ![icons.html](./images/icons-html.png)
+
+Yaay! You have successfully updated the documentation. 🎉
+
+You can now commit your changes and create a pull request.
