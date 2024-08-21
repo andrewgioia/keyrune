@@ -8,6 +8,7 @@ All notable changes to this project will be documented in this file.
 * Support apparent "tri-layered" symbols, like SNC and CBL where there's a rarity layer, a fixed white layer, and a border. These are unlike the dual-layered symbols like AFR and MID.
 * Validate all class names to handle official set codes, MODO codes, and MTGJson/community fallbacks
 * Update this changelog for better formatting 
+* Review DSK and FDN SVG files to make sure they're single layer, and update docs if needed
 
 ## Versions
 
