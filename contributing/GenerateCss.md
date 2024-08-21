@@ -1,25 +1,25 @@
 # Generate CSS
 
-> exemple with the set icon of the set "Fondation" (FDN)
+> Example with the set icon of the set "Foundation" (FDN)
 
 ## Steps
 
-Generate the CSS file with the following command:
+Generate the CSS files with the following commands:
 
 ```bash
-npm run lessmin && npm run sassmin
+npm run less && npm run lessmin
 ```
-or for debug purpose you can run 
+If you prefer to use the Sass source, run these instead:
 
 ```bash
-npm run less && npm run sass
+npm run sass && npm run sassmin
 ```
 
 2 files will be generated in the `css` folder: `keyrune.css` and `keyrune.min.css`.
 
 ![generate-css](./images/generate-css.png)
 
-Yaay 🎉 you have generate the CSS file! Now you can use the new icon in the website. Follow the [Usage inside README.md](../README.md#usage)
+Yaay 🎉 you have generated the CSS files! Now you can use the new icon(s) that were added, if any. Follow the [Usage inside README.md](../README.md#usage)
 
 ---
 **Go to the next step: [Update the documentation](./UpdateDocumentation.md)**

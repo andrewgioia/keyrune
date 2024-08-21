@@ -1,12 +1,12 @@
 # Update Fonts
 
-> exemple with the set icon of the set "Fondation" (FDN)
+> Example with the set icon of the set "Foundation" (FDN)
 
 ## Steps
 
 1. Search for the icon you want to add (from scryfall.com: https://svgs.scryfall.io/sets/fdn.svg) and download it (inspect DOM and copy/paste in a blank file). Save it in a temporary folder in your desktop.
 
-2. On icomoon, click on the "Import Icons" button. Select the previously downloaded icon. It will be added in a "Untilited Set".
+2. In Icomoon, click on the "Import Icons" button. Select the previously downloaded icon. It will be added in a "Untilited Set".
 
     ![import-icon](./images/import-icon.png)
 
