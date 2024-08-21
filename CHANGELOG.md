@@ -8,8 +8,20 @@ All notable changes to this project will be documented in this file.
 * Support apparent "tri-layered" symbols, like SNC and CBL where there's a rarity layer, a fixed white layer, and a border. These are unlike the dual-layered symbols like AFR and MID.
 * Validate all class names to handle official set codes, MODO codes, and MTGJson/community fallbacks
 * Update this changelog for better formatting 
+* Review DSK and FDN SVG files to make sure they're single layer, and update docs if needed
 
-## Versions 
+## Versions
+
+### [3.15.0] 2024-08-21 FDN, DSK, and other fixes
+
+Major thanks to @Horsty80 for the PR and patience! Thanks to @HeliumOctahelide as well for contributions.
+
+* **Added:** Duskmourne set symbol (DSK) ([#232](https://github.com/andrewgioia/keyrune/issues/232))
+* **Added:** Foundations set symbol (FND) ([#233](https://github.com/andrewgioia/keyrune/issues/233))
+* **Added:** Map to MH2 retro frame set code ([#239](https://github.com/andrewgioia/keyrune/pull/239))
+* **Fixed:** BLB now correctly displayed, no longer showing BLC ([#234](https://github.com/andrewgioia/keyrune/issues/234))
+* **Changed:** Development dependendies in `package.json` for lessc, sass, and clean-css.
+* **Added:** New contributing guide beginnings
 
 ### [3.14.1] 2024-03-04 Fixes docs for BIG, fixes .ttf for embedding
 
