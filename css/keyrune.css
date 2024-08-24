@@ -1,1 +1,1487 @@
-﻿@font-face{font-family:"Keyrune";src:url("../fonts/keyrune.eot?v=3.15.0");src:url("../fonts/keyrune.eot?#iefix&v=3.15.0") format("embedded-opentype"),url("../fonts/keyrune.woff2?v=3.15.0") format("woff2"),url("../fonts/keyrune.woff?v=3.15.0") format("woff"),url("../fonts/keyrune.ttf?v=3.15.0") format("truetype"),url("../fonts/keyrune.svg?v=3.15.0#keyrune") format("svg");font-weight:normal;font-style:normal}.ss{display:inline-block;font:normal normal normal 14px "Keyrune";font-size:inherit;line-height:1em;text-rendering:auto;transform:translate(0, 0);speak:none;text-transform:none;vertical-align:middle;-webkit-font-smoothing:antialiased;-moz-font-smoothing:grayscale}.ss:before{content:""}.ss-lea:before{content:""}.ss-leb:before{content:""}.ss-2ed:before{content:""}.ss-3ed:before{content:""}.ss-4ed:before{content:""}.ss-psum:before{content:""}.ss-5ed:before{content:""}.ss-6ed:before{content:""}.ss-7ed:before{content:""}.ss-8ed:before{content:""}.ss-9ed:before{content:""}.ss-10e:before{content:""}.ss-m10:before{content:""}.ss-m11:before{content:""}.ss-m12:before{content:""}.ss-m13:before{content:""}.ss-m14:before{content:""}.ss-m15:before{content:""}.ss-bcore:before{content:""}.ss-ori:before{content:""}.ss-m19:before{content:""}.ss-m20:before{content:""}.ss-1e:before{content:""}.ss-2e:before{content:""}.ss-2u:before{content:""}.ss-3e:before{content:""}.ss-m21:before{content:""}.ss-xdnd:before{content:""}.ss-afr:before{content:""}.ss-arn:before{content:""}.ss-atq:before{content:""}.ss-leg:before{content:""}.ss-drk:before{content:""}.ss-fem:before{content:""}.ss-hml:before{content:""}.ss-ice:before{content:""}.ss-ice2:before{content:""}.ss-all:before{content:""}.ss-csp:before{content:""}.ss-mir:before{content:""}.ss-vis:before{content:""}.ss-wth:before{content:""}.ss-tmp:before{content:""}.ss-sth:before{content:""}.ss-exo:before{content:""}.ss-usg:before{content:""}.ss-ulg:before{content:""}.ss-uds:before{content:""}.ss-mmq:before{content:""}.ss-nem:before{content:""}.ss-nms:before{content:""}.ss-pcy:before{content:""}.ss-inv:before{content:""}.ss-pls:before{content:""}.ss-apc:before{content:""}.ss-ody:before{content:""}.ss-tor:before{content:""}.ss-jud:before{content:""}.ss-ons:before{content:""}.ss-lgn:before{content:""}.ss-scg:before{content:""}.ss-mrd:before{content:""}.ss-dst:before{content:""}.ss-5dn:before{content:""}.ss-chk:before{content:""}.ss-bok:before{content:""}.ss-sok:before{content:""}.ss-rav:before{content:""}.ss-gpt:before{content:""}.ss-dis:before{content:""}.ss-tsp:before{content:""}.ss-plc:before{content:""}.ss-fut:before{content:""}.ss-lrw:before{content:""}.ss-mor:before{content:""}.ss-shm:before{content:""}.ss-eve:before{content:""}.ss-ala:before{content:""}.ss-con:before{content:""}.ss-arb:before{content:""}.ss-zen:before{content:""}.ss-wwk:before{content:""}.ss-roe:before{content:""}.ss-som:before{content:""}.ss-mbs:before{content:""}.ss-nph:before{content:""}.ss-isd:before{content:""}.ss-dka:before{content:""}.ss-avr:before{content:""}.ss-rtr:before{content:""}.ss-gtc:before{content:""}.ss-dgm:before{content:""}.ss-ths:before{content:""}.ss-bng:before{content:""}.ss-jou:before{content:""}.ss-ktk:before{content:""}.ss-frf:before{content:""}.ss-dtk:before{content:""}.ss-bfz:before{content:""}.ss-ogw:before{content:""}.ss-soi:before{content:""}.ss-emn:before{content:""}.ss-kld:before{content:""}.ss-aer:before{content:""}.ss-akh:before{content:""}.ss-hou:before{content:""}.ss-xln:before{content:""}.ss-rix:before{content:""}.ss-dom:before{content:""}.ss-grn:before{content:""}.ss-gk1:before{content:""}.ss-rna:before{content:""}.ss-gk2:before{content:""}.ss-war:before{content:""}.ss-eld:before{content:""}.ss-thb:before{content:""}.ss-iko:before{content:""}.ss-znr:before{content:""}.ss-khm:before{content:""}.ss-stx:before{content:""}.ss-mid:before{content:""}.ss-vow:before{content:""}.ss-neo:before{content:""}.ss-snc:before{content:""}.ss-dmu:before{content:""}.ss-bro:before{content:""}.ss-one:before{content:""}.ss-mom:before{content:""}.ss-mat:before{content:""}.ss-woe:before{content:""}.ss-lci:before{content:""}.ss-mkm:before{content:""}.ss-otj:before{content:""}.ss-blb:before{content:""}.ss-dsk:before{content:""}.ss-fdn:before{content:""}.ss-van:before{content:""}.ss-hop:before{content:""}.ss-arc:before{content:""}.ss-cmd:before{content:""}.ss-pc2:before{content:""}.ss-cm1:before{content:""}.ss-c13:before{content:""}.ss-cns:before{content:""}.ss-c14:before{content:""}.ss-c15:before{content:""}.ss-cn2:before{content:""}.ss-c16:before{content:""}.ss-pca:before{content:""}.ss-cma:before{content:""}.ss-e01:before{content:""}.ss-ann:before{content:""}.ss-e02:before{content:""}.ss-c17:before{content:""}.ss-cm2:before{content:""}.ss-bbd:before{content:""}.ss-c18:before{content:""}.ss-c19:before{content:""}.ss-c20:before{content:""}.ss-znc:before{content:""}.ss-cc1:before{content:""}.ss-cmr:before{content:""}.ss-cmc:before{content:""}.ss-khc:before{content:""}.ss-c21:before{content:""}.ss-afc:before{content:""}.ss-mic:before{content:""}.ss-voc:before{content:""}.ss-cc2:before{content:""}.ss-nec:before{content:""}.ss-ncc:before{content:""}.ss-clb:before{content:""}.ss-dmc:before{content:""}.ss-40k:before{content:""}.ss-brc:before{content:""}.ss-onc:before{content:""}.ss-moc:before{content:""}.ss-scd:before{content:""}.ss-cmm:before{content:""}.ss-ltc:before{content:""}.ss-woc:before{content:""}.ss-lcc:before{content:""}.ss-mkc:before{content:""}.ss-otc:before{content:""}.ss-blc:before{content:""}.ss-m3c:before{content:""}.ss-chr:before{content:""}.ss-ath:before{content:""}.ss-brb:before{content:""}.ss-btd:before{content:""}.ss-dkm:before{content:""}.ss-mma:before{content:""}.ss-mm2:before{content:""}.ss-ema:before{content:""}.ss-mm3:before{content:""}.ss-xren:before{content:""}.ss-xrin:before{content:""}.ss-ima:before{content:""}.ss-a25:before{content:""}.ss-uma:before{content:""}.ss-mh1:before{content:""}.ss-2xm:before{content:""}.ss-jmp:before{content:""}.ss-mb1:before{content:""}.ss-mh2:before{content:""}.ss-sta:before{content:""}.ss-j21:before{content:""}.ss-2x2:before{content:""}.ss-brr:before{content:""}.ss-j22:before{content:""}.ss-mul:before{content:""}.ss-wot:before{content:""}.ss-br:before{content:""}.ss-spg:before{content:""}.ss-otp:before{content:""}.ss-big:before{content:""}.ss-h2r:before{content:""}.ss-por:before{content:""}.ss-p02:before{content:""}.ss-po2:before{content:""}.ss-ptk:before{content:""}.ss-s99:before{content:""}.ss-s00:before{content:""}.ss-w16:before{content:""}.ss-w17:before{content:""}.ss-evg:before{content:""}.ss-dd2:before{content:""}.ss-ddc:before{content:""}.ss-ddd:before{content:""}.ss-dde:before{content:""}.ss-ddf:before{content:""}.ss-ddg:before{content:""}.ss-ddh:before{content:""}.ss-ddi:before{content:""}.ss-ddj:before{content:""}.ss-ddk:before{content:""}.ss-ddl:before{content:""}.ss-ddm:before{content:""}.ss-ddn:before{content:""}.ss-ddo:before{content:""}.ss-ddp:before{content:""}.ss-ddq:before{content:""}.ss-ddr:before{content:""}.ss-td2:before{content:""}.ss-dds:before{content:""}.ss-ddt:before{content:""}.ss-ddu:before{content:""}.ss-drb:before{content:""}.ss-v09:before{content:""}.ss-v10:before{content:""}.ss-v11:before{content:""}.ss-v12:before{content:""}.ss-v13:before{content:""}.ss-v14:before{content:""}.ss-v15:before{content:""}.ss-v16:before{content:""}.ss-v0x:before{content:""}.ss-v17:before{content:""}.ss-h09:before{content:""}.ss-pd2:before{content:""}.ss-pd3:before{content:""}.ss-md1:before{content:""}.ss-ss1:before{content:""}.ss-ss2:before{content:""}.ss-ss3:before{content:""}.ss-gs1:before{content:""}.ss-azorius:before{content:""}.ss-boros:before{content:""}.ss-dimir:before{content:""}.ss-golgari:before{content:""}.ss-gruul:before{content:""}.ss-izzet:before{content:""}.ss-orzhov:before{content:""}.ss-rakdos:before{content:""}.ss-selesnya:before{content:""}.ss-simic:before{content:""}.ss-gnt:before{content:""}.ss-gn2:before{content:""}.ss-tsr:before{content:""}.ss-dmr:before{content:""}.ss-gn3:before{content:""}.ss-ltr:before{content:""}.ss-who:before{content:""}.ss-rvr:before{content:""}.ss-pip:before{content:""}.ss-clu:before{content:""}.ss-acr:before{content:""}.ss-mh3:before{content:""}.ss-pgru:before{content:""}.ss-pmtg1:before{content:""}.ss-pmtg2:before{content:""}.ss-pleaf:before{content:""}.ss-pmei:before{content:""}.ss-parl:before{content:""}.ss-dpa:before{content:""}.ss-pbook:before{content:""}.ss-past:before{content:""}.ss-parl2:before{content:""}.ss-exp:before{content:""}.ss-psalvat05:before{content:""}.ss-psalvat11:before{content:""}.ss-mp1:before{content:""}.ss-mps:before{content:""}.ss-pxbox:before{content:""}.ss-pmps:before{content:""}.ss-pmpu:before{content:""}.ss-mp2:before{content:""}.ss-pidw:before{content:""}.ss-pdrc:before{content:""}.ss-pheart:before{content:""}.ss-h17:before{content:""}.ss-pdep:before{content:""}.ss-psega:before{content:""}.ss-ptsa:before{content:""}.ss-parl3:before{content:""}.ss-htr:before{content:""}.ss-med:before{content:""}.ss-ptg:before{content:""}.ss-htr17:before{content:""}.ss-j20:before{content:""}.ss-zne:before{content:""}.ss-bot:before{content:""}.ss-rex:before{content:""}.ss-slu:before{content:""}.ss-sld:before{content:""}.ss-psld:before{content:""}.ss-sld2:before{content:""}.ss-me1:before{content:""}.ss-me2:before{content:""}.ss-me3:before{content:""}.ss-me4:before{content:""}.ss-tpr:before{content:""}.ss-vma:before{content:""}.ss-xlcu:before{content:""}.ss-pz1:before{content:""}.ss-modo:before{content:""}.ss-pmodo:before{content:""}.ss-duels:before{content:""}.ss-xduels:before{content:""}.ss-xmods:before{content:""}.ss-pz2:before{content:""}.ss-ha1:before{content:""}.ss-akr:before{content:""}.ss-klr:before{content:""}.ss-y22:before{content:""}.ss-hbg:before{content:""}.ss-ydmu:before{content:""}.ss-sir:before{content:""}.ss-sis:before{content:""}.ss-ea1:before{content:""}.ss-ugl:before{content:""}.ss-unh:before{content:""}.ss-ust:before{content:""}.ss-und:before{content:""}.ss-unf:before{content:""}.ss-una:before{content:""}.ss-xcle:before{content:""}.ss-xice:before{content:""}.ss-x2ps:before{content:""}.ss-x4ea:before{content:""}.ss-papac:before{content:""}.ss-peuro:before{content:""}.ss-pfnm:before{content:""}.ss-30a:before{content:""}.ss.ss-common{color:#1a1718}.ss.ss-common.ss-grad{background:-webkit-gradient(linear, left top, right top, color-stop(0%, #302b2c), color-stop(50%, #474040), color-stop(100%, #302b2c));background:-webkit-linear-gradient(left, #302b2c 0%, #474040 50%, #302b2c 100%);-webkit-text-stroke:.03em #000;-webkit-text-fill-color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text}.ss.ss-common.ss-grad.ss-no-border,.ss.ss-common.ss-grad.ss-duo{-webkit-text-stroke:0}.ss.ss-common.ss-grad.ss-duo::after{-webkit-text-fill-color:inherit}.ss.ss-uncommon{color:#707883}.ss.ss-uncommon.ss-grad{background:-webkit-gradient(linear, left top, right top, color-stop(0%, #5a6572), color-stop(50%, #9e9e9e), color-stop(100%, #5a6572));background:-webkit-linear-gradient(left, #5a6572 0%, #9e9e9e 50%, #5a6572 100%);-webkit-text-stroke:.03em #111;-webkit-text-fill-color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text}.ss.ss-uncommon.ss-grad.ss-no-border,.ss.ss-uncommon.ss-grad.ss-duo{-webkit-text-stroke:0}.ss.ss-uncommon.ss-grad.ss-duo::after{-webkit-text-fill-color:inherit}.ss.ss-rare{color:#a58e4a}.ss.ss-rare.ss-grad{background:-webkit-gradient(linear, left top, right top, color-stop(0%, #876a3b), color-stop(50%, #dfbd6b), color-stop(100%, #876a3b));background:-webkit-linear-gradient(left, #876a3b 0%, #dfbd6b 50%, #876a3b 100%);-webkit-text-stroke:.03em #333;-webkit-text-fill-color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text}.ss.ss-rare.ss-grad.ss-no-border,.ss.ss-rare.ss-grad.ss-duo{-webkit-text-stroke:0}.ss.ss-rare.ss-grad.ss-duo::after{-webkit-text-fill-color:inherit}.ss.ss-mythic{color:#bf4427}.ss.ss-mythic.ss-grad{background:-webkit-gradient(linear, left top, right top, color-stop(0%, #b21f0f), color-stop(50%, #f38300), color-stop(100%, #b21f0f));background:-webkit-linear-gradient(left, #b21f0f 0%, #f38300 50%, #b21f0f 100%);-webkit-text-stroke:.03em #333;-webkit-text-fill-color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text}.ss.ss-mythic.ss-grad.ss-no-border,.ss.ss-mythic.ss-grad.ss-duo{-webkit-text-stroke:0}.ss.ss-mythic.ss-grad.ss-duo::after{-webkit-text-fill-color:inherit}.ss.ss-timeshifted{color:#652978}.ss.ss-timeshifted.ss-grad{background:-webkit-gradient(linear, left top, right top, color-stop(0%, #652978), color-stop(50%, #c09ac5), color-stop(100%, #652978));background:-webkit-linear-gradient(left, #652978 0%, #c09ac5 50%, #652978 100%);-webkit-text-stroke:.03em #333;-webkit-text-fill-color:rgba(0,0,0,0);-webkit-background-clip:text;background-clip:text}.ss.ss-timeshifted.ss-grad.ss-no-border,.ss.ss-timeshifted.ss-grad.ss-duo{-webkit-text-stroke:0}.ss.ss-timeshifted.ss-grad.ss-duo::after{-webkit-text-fill-color:inherit}.ss-foil{color:#a6dced}.ss-foil.ss-grad{background:-webkit-linear-gradient(-45deg, #ea8d66 0%, #ea8d66 10%, #fdef8a 17%, #8bcc93 33%, #a6dced 50%, #6f75aa 67%, #e599c2 83%, #eeeeee 100%);background:linear-gradient(135deg, #ea8d66 0%, #ea8d66 15%, #fdef8a 28%, #8bcc93 42%, #a6dced 55%, #6f75aa 68%, #e599c2 84%, #e599c2 100%);-webkit-text-stroke:.03em #333;-webkit-background-clip:text;-webkit-text-fill-color:rgba(0,0,0,0);background-clip:text}.ss-foil.ss-grad.ss-no-border,.ss-foil.ss-grad.ss-duo{-webkit-text-stroke:0}.ss-foil.ss-grad.ss-duo::after{-webkit-text-fill-color:inherit}.ss.ss-2x{font-size:2em}.ss.ss-3x{font-size:3em}.ss.ss-4x{font-size:4em}.ss.ss-5x{font-size:5em}.ss.ss-6x{font-size:6em}.ss.ss-fw{width:calc(18em/14);text-align:center}.ss.ss-no-border{-webkit-text-stroke:0;text-stroke:0}.ss.ss-border:after{content:"";position:absolute;left:-0.05em;top:0em;z-index:-1;color:#fff;font-size:1.15em;background:#fff;-webkit-text-stroke:.05em #fff;-webkit-background-clip:text;-webkit-text-fill-color:rgba(0,0,0,0)}.ss.ss-border.ss-van:after{content:""}.ss.ss-border.ss-arc:after{content:""}.ss.ss-border.ss-cmd:after{content:""}.ss.ss-border.ss-cm1:after{content:""}.ss.ss-border.ss-c13:after{content:""}.ss.ss-border.ss-c14:after{content:""}.ss.ss-border.ss-c15:after{content:""}.ss.ss-border.ss-hop:after{content:""}.ss.ss-border.ss-pc2:after{content:""}.ss.ss-border.ss-cns:after{content:""}.ss.ss-border.ss-sis:after{content:""}.ss.ss-border.ss-sis::before{content:""}.ss.ss-duo::after{color:#000;content:"";display:block;font-size:1em;height:100%;left:0;position:absolute;top:0;width:100%}.ss.ss-duo{color:#fff}.ss.ss-duo.ss-40k::after{content:""}.ss.ss-duo.ss-afc::after{content:""}.ss.ss-duo.ss-afr::after{content:""}.ss.ss-duo.ss-c21::after{content:""}.ss.ss-duo.ss-clb::after{content:""}.ss.ss-duo.ss-cc2::after{content:""}.ss.ss-duo.ss-dmc::after{content:""}.ss.ss-duo.ss-j21::after{content:""}.ss.ss-duo.ss-khc::after{content:""}.ss.ss-duo.ss-ltc::after{content:""}.ss.ss-duo.ss-m3c::after{content:""}.ss.ss-duo.ss-mid::after{content:""}.ss.ss-duo.ss-otc::after{content:""}.ss.ss-duo.ss-ncc::after{content:""}.ss.ss-duo.ss-scd::after{content:""}.ss.ss-duo.ss-una::after{content:""}.ss.ss-duo.ss-ncc::before{content:""}.ss.ss-duo.ss-40k::before{content:""}.ss.ss-duo.ss-dmc::before{content:""}.ss.ss-duo.ss-khc::before{content:""}.ss.ss-duo.ss-ltc::before{content:""}.ss.ss-duo.ss-common{color:#fff}.ss.ss-duo.ss-uncommon::after,.ss.ss-duo.ss-rare::after,.ss.ss-duo.ss-mythic::after{color:#000}/*# sourceMappingURL=keyrune.css.map */
+/**
+ * Global */
+@font-face {
+  font-family: 'Keyrune';
+  src: url('../fonts/keyrune.eot?v=3.15.1');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.15.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.15.1') format('woff2'), url('../fonts/keyrune.woff?v=3.15.1') format('woff'), url('../fonts/keyrune.ttf?v=3.15.1') format('truetype'), url('../fonts/keyrune.svg?v=3.15.1#keyrune') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.ss {
+  display: inline-block;
+  font: normal normal normal 14px/1 Keyrune;
+  font-size: inherit;
+  line-height: 1em;
+  text-rendering: auto;
+  transform: translate(0, 0);
+  speak: none;
+  text-transform: none;
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ss:before {
+  content: "\e684";
+}
+/**
+ * Larger sizes */
+.ss-2x {
+  font-size: 2em;
+}
+.ss-3x {
+  font-size: 3em;
+}
+.ss-4x {
+  font-size: 4em;
+}
+.ss-5x {
+  font-size: 5em;
+}
+.ss-6x {
+  font-size: 6em;
+}
+/**
+ * Handling for set symbols that use an inner and outer layer, like M21
+ *
+ * The inner layer is what gets colorized and is the traditional "set symbol"
+ * The outer layer takes over as the border, and is white for common cards
+ * but black for uncommon, rare, and mythic.
+ */
+.ss-duo {
+  color: #fff;
+  /**
+     * white sections are ::after
+     * color sections are ::before */
+}
+.ss-duo::after {
+  color: #000;
+  content: '';
+  display: block;
+  font-size: 1em;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ss-duo.ss-40k::before {
+  content: "\e999";
+  width: 100%;
+}
+.ss-duo.ss-40k::after {
+  content: "\e99b";
+  color: #fff !important;
+}
+.ss-duo.ss-xdnd::after,
+.ss-duo.ss-afr::after {
+  content: "\e973";
+}
+.ss-duo.ss-afc::after {
+  content: "\e982";
+}
+.ss-duo.ss-c21::after {
+  content: "\e97f";
+}
+.ss-duo.ss-clb::after {
+  content: "\e992";
+}
+.ss-duo.ss-cc2::after {
+  content: "\e988";
+}
+.ss-duo.ss-dmc::before {
+  content: "\e995";
+  width: 100%;
+}
+.ss-duo.ss-dmc::after {
+  content: "\e997";
+  color: #fff !important;
+}
+.ss-duo.ss-j21::after {
+  content: "\e984";
+}
+.ss-duo.ss-khc::before {
+  content: "\e9c5";
+  width: 100%;
+}
+.ss-duo.ss-khc::after {
+  content: "\e9c6";
+  color: #fff !important;
+}
+.ss-duo.ss-ltc::before {
+  content: "\e9b7";
+  width: 100%;
+}
+.ss-duo.ss-ltc::after {
+  content: "\e9b8";
+  color: #fff !important;
+}
+.ss-duo.ss-m3c::after {
+  content: "\e9d1";
+  color: #fff !important;
+}
+.ss-duo.ss-mid::after {
+  content: "\e979";
+}
+.ss-duo.ss-otc::after {
+  content: "\e9d3";
+  color: #fff !important;
+}
+.ss-duo.ss-scd::after {
+  content: "\e9ac";
+}
+.ss-duo.ss-ncc::before {
+  content: "\e98f";
+}
+.ss-duo.ss-ncc::after {
+  content: "\e990";
+}
+.ss-duo.ss-una::after {
+  content: "\e9bf";
+  color: #fff !important;
+}
+.ss-duo.ss-common:after {
+  color: #fff;
+}
+.ss-duo.ss-uncommon::after,
+.ss-duo.ss-rare::after,
+.ss-duo.ss-mythic::after {
+  color: #000;
+}
+.ss-duo.ss-uncommon.ss-clb::after,
+.ss-duo.ss-rare.ss-clb::after,
+.ss-duo.ss-mythic.ss-clb::after {
+  color: #fff;
+}
+/**
+ * Rarity colors */
+.ss-common {
+  color: #1A1718;
+}
+.ss-common.ss-grad {
+  background: -webkit-gradient(linear, left top, right top, color-stop(1%, #302b2c), color-stop(50%, #474040), color-stop(100%, #302b2c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #302b2c 1%, #474040 50%, #302b2c 100%);
+  -webkit-text-stroke: 0.03em #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-common.ss-grad.ss-no-border,
+.ss-common.ss-grad.ss-duo {
+  -webkit-text-stroke: 0;
+}
+.ss-uncommon {
+  color: #707883;
+}
+.ss-uncommon.ss-grad {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #5a6572), color-stop(50%, #9e9e9e), color-stop(100%, #5a6572));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #5a6572 0%, #9e9e9e 50%, #5a6572 100%);
+  -webkit-text-stroke: 0.03em #111;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-uncommon.ss-grad.ss-no-border,
+.ss-uncommon.ss-grad.ss-duo {
+  -webkit-text-stroke: 0;
+}
+.ss-uncommon.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
+}
+.ss-rare {
+  color: #A58E4A;
+}
+.ss-rare.ss-grad {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #876a3b), color-stop(50%, #dfbd6b), color-stop(100%, #876a3b));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #876a3b 0%, #dfbd6b 50%, #876a3b 100%);
+  -webkit-text-stroke: 0.03em #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-rare.ss-grad.ss-no-border,
+.ss-rare.ss-grad.ss-duo {
+  -webkit-text-stroke: 0;
+}
+.ss-rare.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
+}
+.ss-mythic {
+  color: #BF4427;
+}
+.ss-mythic.ss-grad {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #b21f0f), color-stop(50%, #f38300), color-stop(100%, #b21f0f));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #b21f0f 0%, #f38300 50%, #b21f0f 100%);
+  -webkit-text-stroke: 0.03em #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-mythic.ss-grad.ss-no-border,
+.ss-mythic.ss-grad.ss-duo {
+  -webkit-text-stroke: 0;
+}
+.ss-mythic.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
+}
+.ss-timeshifted {
+  color: #652978;
+}
+.ss-timeshifted.ss-grad {
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #652978), color-stop(50%, #c09ac5), color-stop(100%, #652978));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #652978 0%, #c09ac5 50%, #652978 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #652978 0%, #c09ac5 50%, #652978 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-text-stroke: 0.03em #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-timeshifted.ss-grad.ss-no-border,
+.ss-timeshifted.ss-grad.ss-duo {
+  -webkit-text-stroke: 0;
+}
+.ss-timeshifted.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
+}
+.ss-foil {
+  color: #a6dced;
+}
+.ss-foil.ss-grad {
+  background: -webkit-linear-gradient(-45deg, #ea8d66 0%, #ea8d66 10%, #fdef8a 17%, #8bcc93 33%, #a6dced 50%, #6f75aa 67%, #e599c2 83%, #eeeeee 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #ea8d66 0%, #ea8d66 15%, #fdef8a 28%, #8bcc93 42%, #a6dced 55%, #6f75aa 68%, #e599c2 84%, #e599c2 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  -webkit-text-stroke: 0.03em #333;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-foil.ss-grad.ss-no-border,
+.ss-foil.ss-grad.ss-duo {
+  -webkit-text-stroke: 0;
+}
+.ss-foil.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
+}
+/**
+ * Fixed width */
+.ss-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+/**
+ * Core */
+.ss-lea:before {
+  content: "\e600";
+}
+.ss-leb:before {
+  content: "\e601";
+}
+.ss-2ed:before {
+  content: "\e602";
+}
+.ss-3ed:before {
+  content: "\e603";
+}
+.ss-4ed:before {
+  content: "\e604";
+}
+.ss-psum:before {
+  content: "\e605";
+}
+.ss-5ed:before {
+  content: "\e606";
+}
+.ss-6ed:before {
+  content: "\e607";
+}
+.ss-7ed:before {
+  content: "\e608";
+}
+.ss-8ed:before {
+  content: "\e609";
+}
+.ss-9ed:before {
+  content: "\e60a";
+}
+.ss-10e:before {
+  content: "\e60b";
+}
+.ss-m10:before {
+  content: "\e60c";
+}
+.ss-m11:before {
+  content: "\e60d";
+}
+.ss-m12:before {
+  content: "\e60e";
+}
+.ss-m13:before {
+  content: "\e60f";
+}
+.ss-m14:before {
+  content: "\e610";
+}
+.ss-m15:before {
+  content: "\e611";
+}
+.ss-bcore:before {
+  content: "\e612";
+}
+.ss-ori:before {
+  content: "\e697";
+}
+.ss-m19:before {
+  content: "\e941";
+}
+.ss-m20:before {
+  content: "\e95d";
+}
+.ss-1e:before {
+  content: "\e947";
+}
+.ss-2e:before {
+  content: "\e948";
+}
+.ss-2u:before {
+  content: "\e949";
+}
+.ss-3e:before {
+  content: "\e94a";
+}
+.ss-m21:before {
+  content: "\e960";
+}
+.ss-xdnd:before,
+.ss-afr:before {
+  content: "\e972";
+}
+/**
+ * Expansions */
+/* Artifact Block */
+.ss-arn:before {
+  content: "\e613";
+}
+.ss-atq:before {
+  content: "\e614";
+}
+.ss-leg:before {
+  content: "\e615";
+}
+/* Wizards Block */
+.ss-drk:before {
+  content: "\e616";
+}
+.ss-fem:before {
+  content: "\e617";
+}
+.ss-hml:before {
+  content: "\e618";
+}
+/* Ice Age Block */
+.ss-ice:before {
+  content: "\e619";
+}
+.ss-ice2:before {
+  content: "\e925";
+}
+.ss-all:before {
+  content: "\e61a";
+}
+.ss-csp:before {
+  content: "\e61b";
+}
+/* Mirage Block */
+.ss-mir:before {
+  content: "\e61c";
+}
+.ss-vis:before {
+  content: "\e61d";
+}
+.ss-wth:before {
+  content: "\e61e";
+}
+/* Tempest Block */
+.ss-tmp:before {
+  content: "\e61f";
+}
+.ss-sth:before {
+  content: "\e620";
+}
+.ss-exo:before {
+  content: "\e621";
+}
+/* Urza's Block */
+.ss-usg:before {
+  content: "\e622";
+}
+.ss-ulg:before {
+  content: "\e623";
+}
+.ss-uds:before {
+  content: "\e624";
+}
+/* Mercadian Block */
+.ss-mmq:before {
+  content: "\e625";
+}
+.ss-nem:before,
+.ss-nms:before {
+  content: "\e626";
+}
+.ss-pcy:before {
+  content: "\e627";
+}
+/* Invasion Block */
+.ss-inv:before {
+  content: "\e628";
+}
+.ss-pls:before {
+  content: "\e629";
+}
+.ss-apc:before {
+  content: "\e62a";
+}
+/* Odyssey Block */
+.ss-ody:before {
+  content: "\e62b";
+}
+.ss-tor:before {
+  content: "\e62c";
+}
+.ss-jud:before {
+  content: "\e62d";
+}
+/* Onslaught Block */
+.ss-ons:before {
+  content: "\e62e";
+}
+.ss-lgn:before {
+  content: "\e62f";
+}
+.ss-scg:before {
+  content: "\e630";
+}
+/* Mirrodin Block */
+.ss-mrd:before {
+  content: "\e631";
+}
+.ss-dst:before {
+  content: "\e632";
+}
+.ss-5dn:before {
+  content: "\e633";
+}
+/* Kamigawa Block */
+.ss-chk:before {
+  content: "\e634";
+}
+.ss-bok:before {
+  content: "\e635";
+}
+.ss-sok:before {
+  content: "\e636";
+}
+/* Ravnica Block */
+.ss-rav:before {
+  content: "\e637";
+}
+.ss-gpt:before {
+  content: "\e638";
+}
+.ss-dis:before {
+  content: "\e639";
+}
+/* Time Spiral Block */
+.ss-tsp:before {
+  content: "\e63a";
+}
+.ss-plc:before {
+  content: "\e63b";
+}
+.ss-fut:before {
+  content: "\e63c";
+}
+/* Lorwyn Block */
+.ss-lrw:before {
+  content: "\e63d";
+}
+.ss-mor:before {
+  content: "\e63e";
+}
+/* Shadowmoor Block */
+.ss-shm:before {
+  content: "\e63f";
+}
+.ss-eve:before {
+  content: "\e640";
+}
+/* Alara Block */
+.ss-ala:before {
+  content: "\e641";
+}
+.ss-con:before {
+  content: "\e642";
+}
+.ss-arb:before {
+  content: "\e643";
+}
+/* Zendikar Block */
+.ss-zen:before {
+  content: "\e644";
+}
+.ss-wwk:before {
+  content: "\e645";
+}
+.ss-roe:before {
+  content: "\e646";
+}
+/* Scars Block */
+.ss-som:before {
+  content: "\e647";
+}
+.ss-mbs:before {
+  content: "\e648";
+}
+.ss-nph:before {
+  content: "\e649";
+}
+/* Innistrad Block */
+.ss-isd:before {
+  content: "\e64a";
+}
+.ss-dka:before {
+  content: "\e64b";
+}
+.ss-avr:before {
+  content: "\e64c";
+}
+/* RTR Block */
+.ss-rtr:before {
+  content: "\e64d";
+}
+.ss-gtc:before {
+  content: "\e64e";
+}
+.ss-dgm:before {
+  content: "\e64f";
+}
+/* Theros Block */
+.ss-ths:before {
+  content: "\e650";
+}
+.ss-bng:before {
+  content: "\e651";
+}
+.ss-jou:before {
+  content: "\e652";
+}
+/* Khans Block */
+.ss-ktk:before {
+  content: "\e653";
+}
+.ss-frf:before {
+  content: "\e654";
+}
+.ss-dtk:before {
+  content: "\e693";
+}
+/* Return to Zendikar Block */
+.ss-bfz:before {
+  content: "\e699";
+}
+.ss-ogw:before {
+  content: "\e901";
+}
+/* Return to Innistrad Block */
+.ss-soi:before {
+  content: "\e902";
+}
+.ss-emn:before {
+  content: "\e90b";
+}
+/* Kaladesh Block */
+.ss-kld:before {
+  content: "\e90e";
+}
+.ss-aer:before {
+  content: "\e90f";
+}
+/* Amonkhet Block */
+.ss-akh:before {
+  content: "\e914";
+}
+.ss-hou:before {
+  content: "\e924";
+}
+/* Ixalan Block */
+.ss-xln:before {
+  content: "\e92e";
+}
+.ss-rix:before {
+  content: "\e92f";
+}
+/* Dominaria Block */
+.ss-dom:before {
+  content: "\e93f";
+}
+/* Guilds of Ravnica Block */
+.ss-grn:before,
+.ss-gk1:before {
+  content: "\e94b";
+}
+.ss-rna:before,
+.ss-gk2:before {
+  content: "\e959";
+}
+.ss-war:before {
+  content: "\e95a";
+}
+/* Eldraine Block */
+.ss-eld:before {
+  content: "\e95e";
+}
+/* 2020 Sets */
+.ss-thb:before {
+  content: "\e961";
+}
+.ss-iko:before {
+  content: "\e962";
+}
+.ss-znr:before {
+  content: "\e963";
+}
+/* 2021 Sets */
+.ss-xkld:before,
+.ss-khm:before {
+  content: "\e974";
+}
+.ss-xssm:before,
+.ss-stx:before {
+  content: "\e975";
+}
+.ss-mid:before {
+  content: "\e978";
+}
+.ss-vow:before {
+  content: "\e977";
+}
+/* 2022 Sets */
+.ss-neo:before {
+  content: "\e98c";
+}
+.ss-snc:before {
+  content: "\e98b";
+}
+.ss-dmu:before {
+  content: "\e993";
+}
+.ss-bro:before {
+  content: "\e99d";
+}
+/* 2023 Sets */
+.ss-one:before {
+  content: "\e9a1";
+}
+.ss-mom:before {
+  content: "\e9a2";
+}
+.ss-mat:before {
+  content: "\e9a3";
+}
+.ss-woe:before {
+  content: "\e9ae";
+}
+.ss-lci:before {
+  content: "\e9c2";
+}
+/* 2024 Sets */
+.ss-mkm:before {
+  content: "\e9c9";
+}
+.ss-otj:before {
+  content: "\e9cc";
+}
+.ss-blb:before {
+  content: "\e9cd";
+}
+.ss-dsk:before {
+  content: "\e9d7";
+}
+.ss-fdn:before {
+  content: "\e9d8";
+}
+/**
+ * Command Zone */
+.ss-van:before {
+  content: "\e655";
+}
+.ss-hop:before {
+  content: "\e656";
+}
+.ss-arc:before {
+  content: "\e657";
+}
+.ss-cmd:before {
+  content: "\e658";
+}
+.ss-pc2:before {
+  content: "\e659";
+}
+.ss-cm1:before {
+  content: "\e65a";
+}
+.ss-c13:before {
+  content: "\e65b";
+}
+.ss-cns:before {
+  content: "\e65c";
+}
+.ss-c14:before {
+  content: "\e65d";
+}
+.ss-c15:before {
+  content: "\e900";
+}
+.ss-cn2:before {
+  content: "\e904";
+}
+.ss-c16:before {
+  content: "\e910";
+}
+.ss-pca:before {
+  content: "\e911";
+}
+.ss-cma:before {
+  content: "\e916";
+}
+.ss-e01:before,
+.ss-ann:before {
+  content: "\e92d";
+}
+.ss-e02:before {
+  content: "\e931";
+}
+.ss-c17:before {
+  content: "\e934";
+}
+.ss-cm2:before {
+  content: "\e940";
+}
+.ss-bbd:before {
+  content: "\e942";
+}
+.ss-c18:before {
+  content: "\e946";
+}
+.ss-c19:before {
+  content: "\e95f";
+}
+.ss-c20:before {
+  content: "\e966";
+}
+.ss-znc:before {
+  content: "\e967";
+}
+.ss-cc1:before {
+  content: "\e968";
+}
+.ss-cmr:before,
+.ss-cmc:before {
+  content: "\e969";
+}
+.ss-khc:before {
+  content: "\e97d";
+}
+.ss-c21:before {
+  content: "\e97e";
+}
+.ss-afc:before {
+  content: "\e981";
+}
+.ss-mic:before {
+  content: "\e985";
+}
+.ss-voc:before {
+  content: "\e986";
+}
+.ss-cc2:before {
+  content: "\e987";
+}
+.ss-nec:before {
+  content: "\e98d";
+}
+.ss-ncc:before {
+  content: "\e98e";
+}
+.ss-clb:before {
+  content: "\e991";
+}
+.ss-dmc:before {
+  content: "\e994";
+}
+.ss-40k:before {
+  content: "\e998";
+}
+.ss-brc:before {
+  content: "\e99f";
+}
+.ss-onc:before {
+  content: "\e9a8";
+}
+.ss-moc:before {
+  content: "\e9a9";
+}
+.ss-scd:before {
+  content: "\e9ab";
+}
+.ss-cmm:before {
+  content: "\e9b5";
+}
+.ss-ltc:before {
+  content: "\e9b6";
+}
+.ss-woc:before {
+  content: "\e9b9";
+}
+.ss-lcc:before {
+  content: "\e9c7";
+}
+.ss-mkc:before {
+  content: "\e9ca";
+}
+.ss-otc:before {
+  content: "\e9d2";
+}
+.ss-blc:before {
+  content: "\e9d4";
+}
+.ss-m3c:before {
+  content: "\e9d0";
+}
+/**
+ * Reprint */
+.ss-chr:before {
+  content: "\e65e";
+}
+.ss-ath:before {
+  content: "\e65f";
+}
+.ss-brb:before {
+  content: "\e660";
+}
+.ss-btd:before {
+  content: "\e661";
+}
+.ss-dkm:before {
+  content: "\e662";
+}
+.ss-mma:before {
+  content: "\e663";
+}
+.ss-mm2:before {
+  content: "\e695";
+}
+.ss-ema:before {
+  content: "\e903";
+}
+.ss-mm3:before {
+  content: "\e912";
+}
+.ss-xren:before {
+  content: "\e917";
+}
+.ss-xrin:before {
+  content: "\e918";
+}
+.ss-ima:before {
+  content: "\e935";
+}
+.ss-a25:before {
+  content: "\e93d";
+}
+.ss-uma:before {
+  content: "\e958";
+}
+.ss-mh1:before {
+  content: "\e95b";
+}
+.ss-2xm:before {
+  content: "\e96e";
+}
+.ss-jmp:before {
+  content: "\e96f";
+}
+.ss-mb1:before {
+  content: "\e971";
+}
+.ss-mh2:before {
+  content: "\e97b";
+}
+.ss-sta:before {
+  content: "\e980";
+}
+.ss-j21:before {
+  content: "\e983";
+}
+.ss-2x2:before {
+  content: "\e99c";
+}
+.ss-brr:before {
+  content: "\e9a0";
+}
+.ss-j22:before {
+  content: "\e9ad";
+}
+.ss-mul:before {
+  content: "\e9ba";
+}
+.ss-wot:before {
+  content: "\e9c0";
+}
+.ss-br:before {
+  content: "\e9c1";
+}
+.ss-spg:before {
+  content: "\e9c8";
+}
+.ss-otp:before {
+  content: "\e9d5";
+}
+.ss-big:before {
+  content: "\e9d6";
+}
+.ss-mb2:before {
+  content: "\e9d9";
+}
+/**
+ * Beginner */
+.ss-por:before {
+  content: "\e664";
+}
+.ss-p02:before,
+.ss-po2:before {
+  content: "\e665";
+}
+.ss-ptk:before {
+  content: "\e666";
+}
+.ss-s99:before {
+  content: "\e667";
+}
+.ss-s00:before {
+  content: "\e668";
+}
+.ss-w16:before {
+  content: "\e907";
+}
+.ss-w17:before {
+  content: "\e923";
+}
+/**
+ * Duel Decks */
+.ss-evg:before {
+  content: "\e669";
+}
+.ss-dd2:before {
+  content: "\e66a";
+}
+.ss-ddc:before {
+  content: "\e66b";
+}
+.ss-ddd:before {
+  content: "\e66c";
+}
+.ss-dde:before {
+  content: "\e66d";
+}
+.ss-ddf:before {
+  content: "\e66e";
+}
+.ss-ddg:before {
+  content: "\e66f";
+}
+.ss-ddh:before {
+  content: "\e670";
+}
+.ss-ddi:before {
+  content: "\e671";
+}
+.ss-ddj:before {
+  content: "\e672";
+}
+.ss-ddk:before {
+  content: "\e673";
+}
+.ss-ddl:before {
+  content: "\e674";
+}
+.ss-ddm:before {
+  content: "\e675";
+}
+.ss-ddn:before {
+  content: "\e676";
+}
+.ss-ddo:before {
+  content: "\e677";
+}
+.ss-ddp:before {
+  content: "\e698";
+}
+.ss-ddq:before {
+  content: "\e908";
+}
+.ss-ddr:before {
+  content: "\e90d";
+}
+.ss-td2:before {
+  content: "\e91c";
+}
+.ss-dds:before {
+  content: "\e921";
+}
+.ss-ddt:before {
+  content: "\e933";
+}
+.ss-ddu:before {
+  content: "\e93e";
+}
+/**
+ * From the Vault */
+.ss-drb:before {
+  content: "\e678";
+}
+.ss-v09:before {
+  content: "\e679";
+}
+.ss-v10:before {
+  content: "\e67a";
+}
+.ss-v11:before {
+  content: "\e67b";
+}
+.ss-v12:before {
+  content: "\e67c";
+}
+.ss-v13:before {
+  content: "\e67d";
+}
+.ss-v14:before {
+  content: "\e67e";
+}
+.ss-v15:before {
+  content: "\e905";
+}
+.ss-v16:before {
+  content: "\e906";
+}
+.ss-v0x:before {
+  content: "\e920";
+}
+.ss-v17:before {
+  content: "\e939";
+}
+/**
+ * Premium Deck Series */
+.ss-h09:before {
+  content: "\e67f";
+}
+.ss-pd2:before {
+  content: "\e680";
+}
+.ss-pd3:before {
+  content: "\e681";
+}
+.ss-md1:before {
+  content: "\e682";
+}
+/**
+ * Signature Spellbook */
+.ss-ss1:before {
+  content: "\e944";
+}
+.ss-ss2:before {
+  content: "\e95c";
+}
+.ss-ss3:before {
+  content: "\e96d";
+}
+/**
+ * Global Series */
+.ss-gs1:before {
+  content: "\e945";
+}
+/**
+ * Guild Kits */
+.ss-azorius:before {
+  content: "\e94e";
+}
+.ss-boros:before {
+  content: "\e94f";
+}
+.ss-dimir:before {
+  content: "\e950";
+}
+.ss-golgari:before {
+  content: "\e951";
+}
+.ss-gruul:before {
+  content: "\e952";
+}
+.ss-izzet:before {
+  content: "\e953";
+}
+.ss-orzhov:before {
+  content: "\e954";
+}
+.ss-rakdos:before {
+  content: "\e955";
+}
+.ss-selesnya:before {
+  content: "\e956";
+}
+.ss-simic:before {
+  content: "\e957";
+}
+/**
+ * Other Supplemental Products */
+.ss-gnt:before {
+  content: "\e94d";
+}
+.ss-gn2:before {
+  content: "\e964";
+}
+.ss-tsr:before {
+  content: "\e976";
+}
+.ss-dmr:before {
+  content: "\e9a4";
+}
+.ss-gn3:before {
+  content: "\e9a5";
+}
+.ss-ltr:before {
+  content: "\e9af";
+}
+.ss-who:before {
+  content: "\e9b0";
+}
+.ss-rvr:before {
+  content: "\e9bb";
+}
+.ss-pip:before {
+  content: "\e9c3";
+}
+.ss-clu:before {
+  content: "\e9cb";
+}
+.ss-acr:before {
+  content: "\e9ce";
+}
+.ss-mh3:before {
+  content: "\e9cf";
+}
+/**
+ * Promotional */
+.ss-pgru:before {
+  content: "\e683";
+}
+.ss-pmtg1:before {
+  content: "\e684";
+}
+.ss-pmtg2:before {
+  content: "\e685";
+}
+.ss-pleaf:before {
+  content: "\e686";
+}
+.ss-pmei:before,
+.ss-htr:before,
+.ss-htr17:before {
+  content: "\e687";
+}
+.ss-parl:before {
+  content: "\e688";
+}
+.ss-dpa:before {
+  content: "\e689";
+}
+.ss-pbook:before {
+  content: "\e68a";
+}
+.ss-past:before {
+  content: "\e68b";
+}
+.ss-parl2:before {
+  content: "\e68c";
+}
+.ss-exp:before {
+  content: "\e69a";
+}
+.ss-psalvat05:before {
+  content: "\e909";
+}
+.ss-psalvat11:before {
+  content: "\e90a";
+}
+.ss-mps:before,
+.ss-mp1:before {
+  content: "\e913";
+}
+.ss-pxbox:before {
+  content: "\e915";
+}
+.ss-pmps:before {
+  content: "\e919";
+}
+.ss-pmpu:before {
+  content: "\e91a";
+}
+.ss-mp2:before {
+  content: "\e922";
+}
+.ss-pidw:before {
+  content: "\e92c";
+}
+.ss-pdrc:before {
+  content: "\e932";
+}
+.ss-pheart:before {
+  content: "\e936";
+}
+.ss-h17:before {
+  content: "\e938";
+}
+.ss-pdep:before {
+  content: "\e93a";
+}
+.ss-psega:before {
+  content: "\e93b";
+}
+.ss-ptsa:before {
+  content: "\e93c";
+}
+.ss-parl3:before {
+  content: "\e943";
+}
+.ss-med:before {
+  content: "\e94c";
+}
+.ss-ptg:before {
+  content: "\e965";
+}
+.ss-j20:before {
+  content: "\e96a";
+}
+.ss-zne:before {
+  content: "\e97a";
+}
+.ss-bot:before {
+  content: "\e99e";
+}
+.ss-rex:before {
+  content: "\e9c4";
+}
+/**
+ * Secret Lairs */
+.ss-slu:before {
+  content: "\e687";
+}
+.ss-sld:before {
+  content: "\e687";
+}
+.ss-psld:before {
+  content: "\e687";
+}
+.ss-sld2:before {
+  content: "\e9bc";
+}
+/**
+ * Online */
+.ss-me1:before {
+  content: "\e68d";
+}
+.ss-me2:before {
+  content: "\e68e";
+}
+.ss-me3:before {
+  content: "\e68f";
+}
+.ss-me4:before {
+  content: "\e690";
+}
+.ss-tpr:before {
+  content: "\e694";
+}
+.ss-vma:before {
+  content: "\e696";
+}
+.ss-pz1:before,
+.ss-xlcu:before {
+  content: "\e90c";
+}
+.ss-modo:before,
+.ss-pmodo:before {
+  content: "\e91b";
+}
+.ss-duels:before,
+.ss-xduels:before {
+  content: "\e91d";
+}
+.ss-xmods:before {
+  content: "\e91e";
+}
+.ss-pz2:before {
+  content: "\e91f";
+}
+.ss-ha1:before {
+  content: "\e96b";
+}
+.ss-akr:before {
+  content: "\e970";
+}
+.ss-klr:before {
+  content: "\e97c";
+}
+.ss-y22:before {
+  content: "\e989";
+}
+.ss-hbg:before {
+  content: "\e9a6";
+}
+.ss-ydmu:before {
+  content: "\e9a7";
+}
+.ss-sir:before {
+  content: "\e9b1";
+}
+.ss-sis:before {
+  content: "\e9b2";
+}
+.ss-ea1:before {
+  content: "\e9b4";
+}
+.ss-y24:before {
+  content: "\e9bd";
+}
+/**
+ * Un-serious */
+.ss-ugl:before {
+  content: "\e691";
+}
+.ss-unh:before {
+  content: "\e692";
+}
+.ss-ust:before {
+  content: "\e930";
+}
+.ss-und:before {
+  content: "\e96c";
+}
+.ss-unf:before {
+  content: "\e98a";
+}
+.ss-una:before {
+  content: "\e9be";
+}
+/**
+ * Unofficial */
+.ss-xcle:before {
+  content: "\e926";
+}
+.ss-xice:before {
+  content: "\e927";
+}
+.ss-x2ps:before {
+  content: "\e928";
+}
+.ss-x4ea:before {
+  content: "\e929";
+}
+.ss-papac:before {
+  content: "\e92a";
+}
+.ss-peuro:before {
+  content: "\e92b";
+}
+.ss-pfnm:before {
+  content: "\e937";
+}
+.ss-30a:before {
+  content: "\e9aa";
+}
+.ss-border:not(.ss-duo)::after {
+  content: "";
+  position: absolute;
+  left: -0.05em;
+  top: 0em;
+  color: #fff;
+  font-size: 1.15em;
+  z-index: -1;
+  background: #fff;
+  -webkit-text-stroke: 0.05em #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.ss-border.ss-van:after {
+  content: "\e655";
+}
+.ss-border.ss-hop:after {
+  content: "\e656";
+}
+.ss-border.ss-arc:after {
+  content: "\e657";
+}
+.ss-border.ss-cmd:after {
+  content: "\e658";
+}
+.ss-border.ss-pc2:after {
+  content: "\e659";
+}
+.ss-border.ss-cm1:after {
+  content: "\e65a";
+}
+.ss-border.ss-c13:after {
+  content: "\e65b";
+}
+.ss-border.ss-cns:after {
+  content: "\e65c";
+}
+.ss-border.ss-c14:after {
+  content: "\e65d";
+}
+.ss-border.ss-c15:after {
+  content: "\e900";
+}
+.ss-border.ss-sis::before {
+  content: "\e9b3";
+}
+.ss-border.ss-sis::after {
+  content: "\e9b2";
+}
+.ss-border.ss-40k {
+  display: list-item;
+  list-style-position: inside;
+}
+.ss-border.ss-40k::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ss-border.ss-40k::marker {
+  content: "\e99a";
+  color: #000;
+}
+.ss-border.ss-dmc {
+  display: list-item;
+  list-style-position: inside;
+}
+.ss-border.ss-dmc::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ss-border.ss-dmc::marker {
+  content: "\e996";
+  color: #000;
+}

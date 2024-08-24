@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.15.0' !default;
+$keyrune_version: '3.15.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -331,6 +331,7 @@ $keyrune_sets: (
     ("Breaking News", "otp", "\e9d5"),
     ("The Big Score", "big", "\e9d6"),
     ("Modern Horizons 2 Timeshifts", "h2r", "\e97b"),
+    ("Mystery Booster 2", "mb2", "\e9d9"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
