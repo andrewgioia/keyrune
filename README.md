@@ -1,4 +1,4 @@
-# Keyrune v3.15.0
+# Keyrune v3.15.2
 
 ## The Magic: the Gathering set symbol font!
 
@@ -55,3 +55,8 @@ All set symbol images are trademarks of Wizards of the Coast ([http://magicthega
 ## Changelog
 
 The Changelog and todo items have been moved to a dedicated file, CHANGELOG.md.
+
+## Contributing
+
+If you'd like to contribute to Keyrune, please see the **[CONTRIBUTING.MD](./CONTRIBUTING.md)** file for guidelines. Thanks!
+

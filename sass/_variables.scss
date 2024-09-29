@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.15.1' !default;
+$keyrune_version: '3.15.2' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -298,6 +298,7 @@ $keyrune_sets: (
     ("Outlaws of Thunder Junction Commander", "otc", "\e9d2"),
     ("Bloomburrow Commander", "blc", "\e9d4"),
     ("Modern Horizons 3 Commander", "m3c", "\e9d0"),
+    ("Duskmourn: House of Horror Commander", "dsc", "\e9db"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
