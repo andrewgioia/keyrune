@@ -859,6 +859,9 @@
 .ss-m3c:before {
   content: "\e9d0";
 }
+.ss-dsc:before {
+  content: "\e9db";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -1361,8 +1364,14 @@
 .ss-ea1:before {
   content: "\e9b4";
 }
+.ss-y23:before {
+  content: "\e9a7";
+}
 .ss-y24:before {
   content: "\e9bd";
+}
+.ss-y25:before {
+  content: "\e9da";
 }
 /**
  * Un-serious */
