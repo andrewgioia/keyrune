@@ -96,6 +96,9 @@
   content: "\e997";
   color: #fff !important;
 }
+.ss-duo.ss-dsc::after {
+  content: "\e9de";
+}
 .ss-duo.ss-j21::after {
   content: "\e984";
 }
@@ -355,6 +358,9 @@
 .ss-xdnd:before,
 .ss-afr:before {
   content: "\e972";
+}
+.ss-fdn:before {
+  content: "\e9d8";
 }
 /**
  * Expansions */
@@ -708,9 +714,6 @@
 .ss-dsk:before {
   content: "\e9d7";
 }
-.ss-fdn:before {
-  content: "\e9d8";
-}
 /**
  * Command Zone */
 .ss-van:before {
@@ -859,6 +862,9 @@
 .ss-m3c:before {
   content: "\e9d0";
 }
+.ss-dsc:before {
+  content: "\e9dc";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -953,6 +959,12 @@
 }
 .ss-mb2:before {
   content: "\e9d9";
+}
+.ss-j25a:before {
+  content: "\e9db";
+}
+.ss-j25:before {
+  content: "\e9df";
 }
 /**
  * Beginner */
@@ -1364,6 +1376,10 @@
 .ss-y24:before {
   content: "\e9bd";
 }
+.ss-y25:before,
+.ss-yblb:before {
+  content: "\e9da";
+}
 /**
  * Un-serious */
 .ss-ugl:before {
@@ -1483,5 +1499,21 @@
 }
 .ss-border.ss-dmc::marker {
   content: "\e996";
+  color: #000;
+}
+.ss-border.ss-dsc {
+  display: list-item;
+  list-style-position: inside;
+}
+.ss-border.ss-dsc.ss-fw {
+  text-align: revert !important;
+}
+.ss-border.ss-dsc::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ss-border.ss-dsc::marker {
+  content: "\e9dd";
   color: #000;
 }

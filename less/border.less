@@ -50,7 +50,6 @@
             color: #000;
         }
     }
-
     &.@{ss-prefix}-dmc {
         display: list-item;
         list-style-position: inside;
@@ -62,6 +61,24 @@
         }
         &::marker {
             content: "\e996";
+            color: #000;
+        }
+    }
+    &.@{ss-prefix}-dsc {
+        display: list-item;
+        list-style-position: inside;
+        
+        &.@{ss-prefix}-fw {
+            text-align: revert !important; // not sure why we have to remove center
+        }
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker {
+            content: "\e9dd";
             color: #000;
         }
     }

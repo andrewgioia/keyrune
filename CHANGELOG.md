@@ -12,6 +12,19 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
+### [3.15.1]
+
+#### Added
+
+* Duskmourn Commander set symbol (DSC) (Uses changes from [#244](https://github.com/andrewgioia/keyrune/pull/244). There was an issue with the assets that made it easier just to manually pull them in, plus this version includes the multilayer style with inner layer handling.
+* Alchemy 2025 (Y25) set symbol, with alias for Alchemy Bloomburror (YBLB) ([#231](https://github.com/andrewgioia/keyrune/issues/231))
+* Jumpstart 2025 (J25) set symbol ([#236](https://github.com/andrewgioia/keyrune/issues/236)). This one suffers from most of the border adding to the set symbol itself and will be much better handled in v4, but for now we're shipping a "modified" version by default to convey the border as well as an alternate `.j25a` true to the rarity layer.
+
+#### Fixed
+
+* Moved FDN up to Core Sets in documentation
+* BLB unicode corrected in icons documentation ([#244](https://github.com/andrewgioia/keyrune/pull/244))
+
 ### [3.15.0] 2024-08-21 FDN, DSK, and other fixes
 
 Major thanks to @Horsty80 for the PR and patience! Thanks to @HeliumOctahelide as well for contributions.
