@@ -30,6 +30,10 @@ All notable changes to this project will be documented in this file.
 * Y23 alias added for YDMU
 * Cheatsheet now has better icon font rendering so things don't look so dark
 
+#### Removed
+
+* `.ss-border` has been removed after realizing 1. it wasn't functional for non-duo symbols and 2. it wasn't the correct way to do it anyway. Better automatica border support for non-duo symbols coming soon.
+
 ### [3.15.1] 2024-10-26 DSC, Y25, J25, and come cleanup
 
 #### Added
