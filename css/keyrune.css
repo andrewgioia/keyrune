@@ -160,111 +160,62 @@
 .ss-common {
   color: #1A1718;
 }
-.ss-common.ss-grad {
+.ss-grad::before {
   background: -webkit-gradient(linear, left top, right top, color-stop(1%, #302b2c), color-stop(50%, #474040), color-stop(100%, #302b2c));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(left, #302b2c 1%, #474040 50%, #302b2c 100%);
-  -webkit-text-stroke: 0.03em #000;
+  background: linear-gradient(90deg, #302b2c 0%, #474040 50%, #302b2c 100%);
   -webkit-background-clip: text;
+  background-clip: text !important;
   -webkit-text-fill-color: transparent;
 }
-.ss-common.ss-grad.ss-no-border,
-.ss-common.ss-grad.ss-duo {
-  -webkit-text-stroke: 0;
+.ss-grad.ss-duo::after {
+  -webkit-text-fill-color: inherit;
 }
 .ss-uncommon {
   color: #707883;
 }
-.ss-uncommon.ss-grad {
+.ss-uncommon.ss-grad::before {
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #5a6572), color-stop(50%, #9e9e9e), color-stop(100%, #5a6572));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(left, #5a6572 0%, #9e9e9e 50%, #5a6572 100%);
-  -webkit-text-stroke: 0.03em #111;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.ss-uncommon.ss-grad.ss-no-border,
-.ss-uncommon.ss-grad.ss-duo {
-  -webkit-text-stroke: 0;
-}
-.ss-uncommon.ss-grad.ss-duo::after {
-  -webkit-text-fill-color: inherit;
+  background: linear-gradient(90deg, #5a6572 0%, #9e9e9e 50%, #5a6572 100%);
 }
 .ss-rare {
   color: #A58E4A;
 }
-.ss-rare.ss-grad {
+.ss-rare.ss-grad::before {
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #876a3b), color-stop(50%, #dfbd6b), color-stop(100%, #876a3b));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(left, #876a3b 0%, #dfbd6b 50%, #876a3b 100%);
-  -webkit-text-stroke: 0.03em #333;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.ss-rare.ss-grad.ss-no-border,
-.ss-rare.ss-grad.ss-duo {
-  -webkit-text-stroke: 0;
-}
-.ss-rare.ss-grad.ss-duo::after {
-  -webkit-text-fill-color: inherit;
+  background: linear-gradient(90deg, #876a3b 0%, #dfbd6b 50%, #876a3b 100%);
 }
 .ss-mythic {
   color: #BF4427;
 }
-.ss-mythic.ss-grad {
+.ss-mythic.ss-grad::before {
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #b21f0f), color-stop(50%, #f38300), color-stop(100%, #b21f0f));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(left, #b21f0f 0%, #f38300 50%, #b21f0f 100%);
-  -webkit-text-stroke: 0.03em #333;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.ss-mythic.ss-grad.ss-no-border,
-.ss-mythic.ss-grad.ss-duo {
-  -webkit-text-stroke: 0;
-}
-.ss-mythic.ss-grad.ss-duo::after {
-  -webkit-text-fill-color: inherit;
+  background: linear-gradient(90deg, #b21f0f 0%, #f38300 50%, #b21f0f 100%);
 }
 .ss-timeshifted {
   color: #652978;
 }
-.ss-timeshifted.ss-grad {
+.ss-timeshifted.ss-grad::before {
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, #652978), color-stop(50%, #c09ac5), color-stop(100%, #652978));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(-45deg, #652978 0%, #c09ac5 50%, #652978 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(135deg, #652978 0%, #c09ac5 50%, #652978 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  -webkit-text-stroke: 0.03em #333;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.ss-timeshifted.ss-grad.ss-no-border,
-.ss-timeshifted.ss-grad.ss-duo {
-  -webkit-text-stroke: 0;
-}
-.ss-timeshifted.ss-grad.ss-duo::after {
-  -webkit-text-fill-color: inherit;
+  background: linear-gradient(90deg, #652978 0%, #c09ac5 50%, #652978 100%);
 }
 .ss-foil {
   color: #a6dced;
 }
-.ss-foil.ss-grad {
+.ss-foil.ss-grad::before {
   background: -webkit-linear-gradient(-45deg, #ea8d66 0%, #ea8d66 10%, #fdef8a 17%, #8bcc93 33%, #a6dced 50%, #6f75aa 67%, #e599c2 83%, #eeeeee 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #ea8d66 0%, #ea8d66 15%, #fdef8a 28%, #8bcc93 42%, #a6dced 55%, #6f75aa 68%, #e599c2 84%, #e599c2 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  -webkit-text-stroke: 0.03em #333;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.ss-foil.ss-grad.ss-no-border,
-.ss-foil.ss-grad.ss-duo {
-  -webkit-text-stroke: 0;
-}
-.ss-foil.ss-grad.ss-duo::after {
-  -webkit-text-fill-color: inherit;
 }
 /**
  * Fixed width */
@@ -1437,75 +1388,160 @@
 .ss-30a:before {
   content: "\e9aa";
 }
+/**
+ * 
+ * Border layer using ::after as well
+ * 
+ * Symbols cannot have both .duo and .border applied as both 
+ * make use of the same pseudoelement in v3.
+ * 
+ * For duo icons that have an inner white layer as well as a 
+ * border layer, we need to use all 3 available pseudoelements.
+ */
 .ss-border {
-  /*&:not(.ss-duo)::after {
-        content: "";
-        position: absolute;
-        left: -.05em;
-        top: 0em;
-        color: #fff;
-        font-size: 1.15em;
-        z-index: -1;
-        background: #fff;
-        -webkit-text-stroke: 0.05em #fff;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }*/
-  /*&:not(.ss-duo)::after { // this needs ::after to get the same content as ::before to work again
-        -webkit-text-stroke: 0.05em #fff;
-        text-stroke: 0.5em #fff;
-    }*/
+  /**
+     * specific border glyphs for these sets, handled via ::after
+     */
 }
-.ss-border.ss-van:after {
-  content: "\e655";
+.ss-border::before {
+  paint-order: stroke fill;
+  -webkit-text-stroke: 0.1em #000;
 }
-.ss-border.ss-hop:after {
-  content: "\e656";
+.ss-border.ss-common::before {
+  -webkit-text-stroke: 0.1em #fff;
 }
-.ss-border.ss-arc:after {
-  content: "\e657";
+.ss-border.ss-40k::before,
+.ss-border.ss-arc::before,
+.ss-border.ss-c13::before,
+.ss-border.ss-c14::before,
+.ss-border.ss-c15::before,
+.ss-border.ss-c16::before,
+.ss-border.ss-cm1::before,
+.ss-border.ss-cmd::before,
+.ss-border.ss-cns::before,
+.ss-border.ss-dft::before,
+.ss-border.ss-dmc::before,
+.ss-border.ss-dsc::before,
+.ss-border.ss-hop::before,
+.ss-border.ss-inr::before,
+.ss-border.ss-pc2::before,
+.ss-border.ss-sis::before,
+.ss-border.ss-van::before {
+  -webkit-text-stroke: 0 !important;
 }
-.ss-border.ss-cmd:after {
-  content: "\e658";
+.ss-border.ss-40k:not(.ss-duo)::after,
+.ss-border.ss-arc:not(.ss-duo)::after,
+.ss-border.ss-c13:not(.ss-duo)::after,
+.ss-border.ss-c14:not(.ss-duo)::after,
+.ss-border.ss-c15:not(.ss-duo)::after,
+.ss-border.ss-c16:not(.ss-duo)::after,
+.ss-border.ss-cm1:not(.ss-duo)::after,
+.ss-border.ss-cmd:not(.ss-duo)::after,
+.ss-border.ss-cns:not(.ss-duo)::after,
+.ss-border.ss-dft:not(.ss-duo)::after,
+.ss-border.ss-dmc:not(.ss-duo)::after,
+.ss-border.ss-dsc:not(.ss-duo)::after,
+.ss-border.ss-hop:not(.ss-duo)::after,
+.ss-border.ss-inr:not(.ss-duo)::after,
+.ss-border.ss-pc2:not(.ss-duo)::after,
+.ss-border.ss-sis:not(.ss-duo)::after,
+.ss-border.ss-van:not(.ss-duo)::after {
+  color: #fff;
+  content: '';
+  display: block;
+  font-size: 1em;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
-.ss-border.ss-pc2:after {
-  content: "\e659";
-}
-.ss-border.ss-cm1:after {
-  content: "\e65a";
-}
-.ss-border.ss-c13:after {
-  content: "\e65b";
-}
-.ss-border.ss-cns:after {
-  content: "\e65c";
-}
-.ss-border.ss-c14:after {
-  content: "\e65d";
-}
-.ss-border.ss-c15:after {
-  content: "\e900";
-}
-.ss-border.ss-inr:after {
-  content: "\e9e3";
-}
-.ss-border.ss-sis::before {
-  content: "\e9b3";
-}
-.ss-border.ss-sis::after {
-  content: "\e9b2";
-}
-.ss-border.ss-c16::before {
-  content: "\e910";
-}
-.ss-border.ss-c16::after {
-  content: "\e9e5";
-}
-.ss-border.ss-dft::before {
-  content: "\e9e1";
-}
-.ss-border.ss-dft::after {
-  content: "\e9e0";
+.ss-border.ss-40k:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-arc:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-c13:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-c14:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-c15:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-c16:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-cm1:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-cmd:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-cns:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-dft:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-dmc:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-dsc:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-hop:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-inr:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-pc2:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-sis:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-van:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-40k:not(.ss-duo).ss-rare::after,
+.ss-border.ss-arc:not(.ss-duo).ss-rare::after,
+.ss-border.ss-c13:not(.ss-duo).ss-rare::after,
+.ss-border.ss-c14:not(.ss-duo).ss-rare::after,
+.ss-border.ss-c15:not(.ss-duo).ss-rare::after,
+.ss-border.ss-c16:not(.ss-duo).ss-rare::after,
+.ss-border.ss-cm1:not(.ss-duo).ss-rare::after,
+.ss-border.ss-cmd:not(.ss-duo).ss-rare::after,
+.ss-border.ss-cns:not(.ss-duo).ss-rare::after,
+.ss-border.ss-dft:not(.ss-duo).ss-rare::after,
+.ss-border.ss-dmc:not(.ss-duo).ss-rare::after,
+.ss-border.ss-dsc:not(.ss-duo).ss-rare::after,
+.ss-border.ss-hop:not(.ss-duo).ss-rare::after,
+.ss-border.ss-inr:not(.ss-duo).ss-rare::after,
+.ss-border.ss-pc2:not(.ss-duo).ss-rare::after,
+.ss-border.ss-sis:not(.ss-duo).ss-rare::after,
+.ss-border.ss-van:not(.ss-duo).ss-rare::after,
+.ss-border.ss-40k:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-arc:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-c13:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-c14:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-c15:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-c16:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-cm1:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-cmd:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-cns:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-dft:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-dmc:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-dsc:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-hop:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-inr:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-pc2:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-sis:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-van:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-40k:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-arc:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-c13:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-c14:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-c15:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-c16:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-cm1:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-cmd:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-cns:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-dft:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-dmc:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-dsc:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-hop:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-inr:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-pc2:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-sis:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-van:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-40k:not(.ss-duo).ss-foil::after,
+.ss-border.ss-arc:not(.ss-duo).ss-foil::after,
+.ss-border.ss-c13:not(.ss-duo).ss-foil::after,
+.ss-border.ss-c14:not(.ss-duo).ss-foil::after,
+.ss-border.ss-c15:not(.ss-duo).ss-foil::after,
+.ss-border.ss-c16:not(.ss-duo).ss-foil::after,
+.ss-border.ss-cm1:not(.ss-duo).ss-foil::after,
+.ss-border.ss-cmd:not(.ss-duo).ss-foil::after,
+.ss-border.ss-cns:not(.ss-duo).ss-foil::after,
+.ss-border.ss-dft:not(.ss-duo).ss-foil::after,
+.ss-border.ss-dmc:not(.ss-duo).ss-foil::after,
+.ss-border.ss-dsc:not(.ss-duo).ss-foil::after,
+.ss-border.ss-hop:not(.ss-duo).ss-foil::after,
+.ss-border.ss-inr:not(.ss-duo).ss-foil::after,
+.ss-border.ss-pc2:not(.ss-duo).ss-foil::after,
+.ss-border.ss-sis:not(.ss-duo).ss-foil::after,
+.ss-border.ss-van:not(.ss-duo).ss-foil::after {
+  color: #000;
 }
 .ss-border.ss-40k {
   display: list-item;
@@ -1519,6 +1555,39 @@
 .ss-border.ss-40k::marker {
   content: "\e99a";
   color: #000;
+}
+.ss-border.ss-arc:after {
+  content: "\e657";
+}
+.ss-border.ss-c13:after {
+  content: "\e65b";
+}
+.ss-border.ss-c14:after {
+  content: "\e65d";
+}
+.ss-border.ss-c15:after {
+  content: "\e900";
+}
+.ss-border.ss-c16::before {
+  content: "\e910";
+}
+.ss-border.ss-c16::after {
+  content: "\e9e5";
+}
+.ss-border.ss-cm1:after {
+  content: "\e65a";
+}
+.ss-border.ss-cmd:after {
+  content: "\e658";
+}
+.ss-border.ss-cns:after {
+  content: "\e65c";
+}
+.ss-border.ss-dft::before {
+  content: "\e9e1";
+}
+.ss-border.ss-dft::after {
+  content: "\e9e0";
 }
 .ss-border.ss-dmc {
   display: list-item;
@@ -1548,4 +1617,22 @@
 .ss-border.ss-dsc::marker {
   content: "\e9dd";
   color: #000;
+}
+.ss-border.ss-hop:after {
+  content: "\e656";
+}
+.ss-border.ss-inr:after {
+  content: "\e9e3";
+}
+.ss-border.ss-pc2:after {
+  content: "\e659";
+}
+.ss-border.ss-sis::before {
+  content: "\e9b3";
+}
+.ss-border.ss-sis::after {
+  content: "\e9b2";
+}
+.ss-border.ss-van:after {
+  content: "\e655";
 }

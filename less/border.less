@@ -1,65 +1,75 @@
+/**
+ * 
+ * Border layer using ::after as well
+ * 
+ * Symbols cannot have both .duo and .border applied as both 
+ * make use of the same pseudoelement in v3.
+ * 
+ * For duo icons that have an inner white layer as well as a 
+ * border layer, we need to use all 3 available pseudoelements.
+ */
+
 .@{ss-prefix}-border {
-    /*&:not(.ss-duo)::after {
-        content: "";
-        position: absolute;
-        left: -.05em;
-        top: 0em;
-        color: #fff;
-        font-size: 1.15em;
-        z-index: -1;
-        background: #fff;
-        -webkit-text-stroke: 0.05em #fff;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }*/
-    /*&:not(.ss-duo)::after { // this needs ::after to get the same content as ::before to work again
-        -webkit-text-stroke: 0.05em #fff;
-        text-stroke: 0.5em #fff;
-    }*/
-
-    &.@{ss-prefix}-van:after { content: "\e655"; } // Vanguard
-    &.@{ss-prefix}-hop:after { content: "\e656"; } // Planechase 2009
-    &.@{ss-prefix}-arc:after { content: "\e657"; } // Archenemy
-    &.@{ss-prefix}-cmd:after { content: "\e658"; } // Commander
-    &.@{ss-prefix}-pc2:after { content: "\e659"; } // Planechase 2012
-    &.@{ss-prefix}-cm1:after { content: "\e65a"; } // Commander's Arsenal
-    &.@{ss-prefix}-c13:after { content: "\e65b"; } // Commander 2013
-    &.@{ss-prefix}-cns:after { content: "\e65c"; } // Conspiracy
-    &.@{ss-prefix}-c14:after { content: "\e65d"; } // Commander 2014
-    &.@{ss-prefix}-c15:after { content: "\e900"; } // Commander 2015
-    &.@{ss-prefix}-inr:after { content: "\e9e3"; } // Innistrad Remastered
-
-    // corrections for various duo icons
-    // SIS: the regular symbol becomes the border now
-    &.@{ss-prefix}-sis {
-        &::before {
-            content: "\e9b3";
-        }
-        &::after {
-            content: "\e9b2";
-        }
+    &::before {
+        paint-order: stroke fill;
+        -webkit-text-stroke: 0.1em #000;
     }
-    // c16: regular symbol becomes the border
-    &.@{ss-prefix}-c16 {
-        &::before {
-            content: "\e910"; // rarity
-        }
-        &::after {
-            content: "\e9e5"; // new border
-        }
+
+    &.@{ss-prefix}-common::before {
+        -webkit-text-stroke: 0.1em #fff;
     }
-    // dft: regular symbol becomes the border
-    &.@{ss-prefix}-dft {
+
+    /**
+     * specific border glyphs for these sets, handled via ::after
+     */
+    &.@{ss-prefix}-40k,
+    &.@{ss-prefix}-arc,
+    &.@{ss-prefix}-c13,
+    &.@{ss-prefix}-c14,
+    &.@{ss-prefix}-c15,
+    &.@{ss-prefix}-c16,
+    &.@{ss-prefix}-cm1,
+    &.@{ss-prefix}-cmd,
+    &.@{ss-prefix}-cns,
+    &.@{ss-prefix}-dft,
+    &.@{ss-prefix}-dmc,
+    &.@{ss-prefix}-dsc,
+    &.@{ss-prefix}-hop,
+    &.@{ss-prefix}-inr,
+    &.@{ss-prefix}-pc2,
+    &.@{ss-prefix}-sis,
+    &.@{ss-prefix}-van {
         &::before {
-            content: "\e9e1"; // rarity
+            -webkit-text-stroke: 0 !important;
         }
-        &::after {
-            content: "\e9e0"; // new border
+
+        &:not(.ss-duo) {
+            &::after {
+                color: #fff;
+                content: '';
+                display: block;
+                font-size: 1em;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+            }
+
+            // all non-common rarities get a black border
+            &.@{ss-prefix}-uncommon::after,
+            &.@{ss-prefix}-rare::after,
+            &.@{ss-prefix}-mythic::after,
+            &.@{ss-prefix}-timeshifted::after,
+            &.@{ss-prefix}-foil::after {
+                color: #000;
+            }
         }
     }
 
-    // experimental ::marker for 3 layer icons
-    &.@{ss-prefix}-40k {
+    // glyphs per set
+    //
+    &.@{ss-prefix}-40k { // experimental ::marker for 3 layer icons
         display: list-item;
         list-style-position: inside;
 
@@ -73,7 +83,30 @@
             color: #000;
         }
     }
-    &.@{ss-prefix}-dmc {
+    &.@{ss-prefix}-arc:after { content: "\e657"; } // Archenemy
+    &.@{ss-prefix}-c13:after { content: "\e65b"; } // Commander 2013
+    &.@{ss-prefix}-c14:after { content: "\e65d"; } // Commander 2014
+    &.@{ss-prefix}-c15:after { content: "\e900"; } // Commander 2015
+    &.@{ss-prefix}-c16 { // c16: regular symbol becomes the border
+        &::before {
+            content: "\e910"; // rarity
+        }
+        &::after {
+            content: "\e9e5"; // new border
+        }
+    }
+    &.@{ss-prefix}-cm1:after { content: "\e65a"; } // Commander's Arsenal
+    &.@{ss-prefix}-cmd:after { content: "\e658"; } // Commander
+    &.@{ss-prefix}-cns:after { content: "\e65c"; } // Conspiracy
+    &.@{ss-prefix}-dft { // dft: regular symbol becomes the border
+        &::before {
+            content: "\e9e1"; // rarity
+        }
+        &::after {
+            content: "\e9e0"; // new border
+        }
+    }
+    &.@{ss-prefix}-dmc { 
         display: list-item;
         list-style-position: inside;
 
@@ -87,7 +120,7 @@
             color: #000;
         }
     }
-    &.@{ss-prefix}-dsc {
+    &.@{ss-prefix}-dsc { // experimental ::marker for 3 layer icons
         display: list-item;
         list-style-position: inside;
 
@@ -105,4 +138,16 @@
             color: #000;
         }
     }
+    &.@{ss-prefix}-hop:after { content: "\e656"; } // Planechase 2009
+    &.@{ss-prefix}-inr:after { content: "\e9e3"; } // Innistrad Remastered
+    &.@{ss-prefix}-pc2:after { content: "\e659"; } // Planechase 2012
+    &.@{ss-prefix}-sis { // SIS: the regular symbol becomes the border now
+        &::before {
+            content: "\e9b3";
+        }
+        &::after {
+            content: "\e9b2";
+        }
+    }
+    &.@{ss-prefix}-van:after { content: "\e655"; } // Vanguard
 }
