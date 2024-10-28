@@ -277,13 +277,19 @@ blockquote {
 
     .utf i {
         display: inline-block;
-        font-family: keyrune;
-        font-style: normal;
-        font-size: 1.25em;
         vertical-align: top;
         padding: 0 5px 0 0;
         text-align: center;
         width: 1.25em;
+        font: normal normal normal 16px/1 Keyrune;
+        font-size: 1.25em;
+        text-rendering: auto;
+        transform: translate(0, 0);
+        speak: none;
+        text-transform: none;
+        vertical-align: middle;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 
     .utf code {

@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.15.1');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.15.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.15.1') format('woff2'), url('../fonts/keyrune.woff?v=3.15.1') format('woff'), url('../fonts/keyrune.ttf?v=3.15.1') format('truetype'), url('../fonts/keyrune.svg?v=3.15.1#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.16.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.16.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.16.0') format('woff2'), url('../fonts/keyrune.woff?v=3.16.0') format('woff'), url('../fonts/keyrune.ttf?v=3.16.0') format('truetype'), url('../fonts/keyrune.svg?v=3.16.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -714,6 +714,10 @@
 .ss-dsk:before {
   content: "\e9d7";
 }
+/* 2025 Sets */
+.ss-dft:before {
+  content: "\e9e0";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -750,7 +754,7 @@
   content: "\e904";
 }
 .ss-c16:before {
-  content: "\e910";
+  content: "\e9e5";
 }
 .ss-pca:before {
   content: "\e911";
@@ -864,6 +868,9 @@
 }
 .ss-dsc:before {
   content: "\e9dc";
+}
+.ss-fdc:before {
+  content: "\e9e4";
 }
 /**
  * Reprint */
@@ -1193,6 +1200,9 @@
 .ss-mh3:before {
   content: "\e9cf";
 }
+.ss-inr:before {
+  content: "\e9e2";
+}
 /**
  * Promotional */
 .ss-pgru:before {
@@ -1361,7 +1371,8 @@
 .ss-hbg:before {
   content: "\e9a6";
 }
-.ss-ydmu:before {
+.ss-ydmu:before,
+.ss-y23:before {
   content: "\e9a7";
 }
 .ss-sir:before {
@@ -1426,18 +1437,24 @@
 .ss-30a:before {
   content: "\e9aa";
 }
-.ss-border:not(.ss-duo)::after {
-  content: "";
-  position: absolute;
-  left: -0.05em;
-  top: 0em;
-  color: #fff;
-  font-size: 1.15em;
-  z-index: -1;
-  background: #fff;
-  -webkit-text-stroke: 0.05em #fff;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.ss-border {
+  /*&:not(.ss-duo)::after {
+        content: "";
+        position: absolute;
+        left: -.05em;
+        top: 0em;
+        color: #fff;
+        font-size: 1.15em;
+        z-index: -1;
+        background: #fff;
+        -webkit-text-stroke: 0.05em #fff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }*/
+  /*&:not(.ss-duo)::after { // this needs ::after to get the same content as ::before to work again
+        -webkit-text-stroke: 0.05em #fff;
+        text-stroke: 0.5em #fff;
+    }*/
 }
 .ss-border.ss-van:after {
   content: "\e655";
@@ -1469,11 +1486,26 @@
 .ss-border.ss-c15:after {
   content: "\e900";
 }
+.ss-border.ss-inr:after {
+  content: "\e9e3";
+}
 .ss-border.ss-sis::before {
   content: "\e9b3";
 }
 .ss-border.ss-sis::after {
   content: "\e9b2";
+}
+.ss-border.ss-c16::before {
+  content: "\e910";
+}
+.ss-border.ss-c16::after {
+  content: "\e9e5";
+}
+.ss-border.ss-dft::before {
+  content: "\e9e1";
+}
+.ss-border.ss-dft::after {
+  content: "\e9e0";
 }
 .ss-border.ss-40k {
   display: list-item;

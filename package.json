@@ -37,7 +37,8 @@
     "sassmin": "sass sass/keyrune.scss css/keyrune.css --style=compressed",
     "watch": "sass --no-source-map --watch sass/keyrune.scss css/keyrune.css --style=expanded",
     "build": "rsync -avzh ./fonts/* ./docs/fonts/ && rsync -avzh css/keyrune.min.css docs/assets/keyrune.min.css",
-    "rename": "for f in `find fonts/*`; do mv -v \"$f\" \"`echo $f | tr '[A-Z]' '[a-z]'`\"; done"
+    "rename": "for f in `find fonts/*`; do mv -v \"$f\" \"`echo $f | tr '[A-Z]' '[a-z]'`\"; done",
+    "publish": "npm run less && npm run lessmin && npm run rename && npm run build"
   },
   "ignore": [
     "*/.*",

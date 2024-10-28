@@ -53,6 +53,27 @@
         &::before {
             content: "\e9b3";
         }
+        &::after {
+            content: "\e9b2";
+        }
+    }
+    // c16: regular symbol becomes the border
+    &.#{$keyrune_prefix}-c16 {
+        &::before {
+            content: "\e910"; // rarity
+        }
+        &::after {
+            content: "\e9e5"; // new border
+        }
+    }
+    // dft: regular symbol becomes the border
+    &.#{$keyrune_prefix}-dft {
+        &::before {
+            content: "\e9e1"; // rarity
+        }
+        &::after {
+            content: "\e9e0"; // new border
+        }
     }
 }
 

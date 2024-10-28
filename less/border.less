@@ -1,5 +1,5 @@
 .@{ss-prefix}-border {
-    &:not(.ss-duo)::after {
+    /*&:not(.ss-duo)::after {
         content: "";
         position: absolute;
         left: -.05em;
@@ -11,7 +11,11 @@
         -webkit-text-stroke: 0.05em #fff;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-    }
+    }*/
+    /*&:not(.ss-duo)::after { // this needs ::after to get the same content as ::before to work again
+        -webkit-text-stroke: 0.05em #fff;
+        text-stroke: 0.5em #fff;
+    }*/
 
     &.@{ss-prefix}-van:after { content: "\e655"; } // Vanguard
     &.@{ss-prefix}-hop:after { content: "\e656"; } // Planechase 2009
@@ -23,6 +27,7 @@
     &.@{ss-prefix}-cns:after { content: "\e65c"; } // Conspiracy
     &.@{ss-prefix}-c14:after { content: "\e65d"; } // Commander 2014
     &.@{ss-prefix}-c15:after { content: "\e900"; } // Commander 2015
+    &.@{ss-prefix}-inr:after { content: "\e9e3"; } // Innistrad Remastered
 
     // corrections for various duo icons
     // SIS: the regular symbol becomes the border now
@@ -32,6 +37,24 @@
         }
         &::after {
             content: "\e9b2";
+        }
+    }
+    // c16: regular symbol becomes the border
+    &.@{ss-prefix}-c16 {
+        &::before {
+            content: "\e910"; // rarity
+        }
+        &::after {
+            content: "\e9e5"; // new border
+        }
+    }
+    // dft: regular symbol becomes the border
+    &.@{ss-prefix}-dft {
+        &::before {
+            content: "\e9e1"; // rarity
+        }
+        &::after {
+            content: "\e9e0"; // new border
         }
     }
 
@@ -67,7 +90,7 @@
     &.@{ss-prefix}-dsc {
         display: list-item;
         list-style-position: inside;
-        
+
         &.@{ss-prefix}-fw {
             text-align: revert !important; // not sure why we have to remove center
         }

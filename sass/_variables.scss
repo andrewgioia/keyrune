@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.15.1' !default;
+$keyrune_version: '3.16.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -48,7 +48,8 @@ $border-corrections: (
     ("Planechase 2009", "hop", "\e656"),
     ("Planechase 2012", "pc2", "\e659"),
     ("Conspiracy", "cns", "\e65c"),
-    ("Shadows of the Past", "sis", "\e9b2")
+    ("Shadows of the Past", "sis", "\e9b2"),
+    ("Innistrad Remastered", "inr", "\e9e3")
 ) !default;
 
 // dual-layered symbols (work in progress)
@@ -248,6 +249,8 @@ $keyrune_sets: (
     ("Outlaws of Thunder Junction", "otj", "\e9cc"),
     ("Bloomburrow", "blb", "\e9cd"),
     ("Duskmourn: House of Horror", "dsk", "\e9d7"),
+    // 2025 sets
+    ("Aetherdrift", "dft", "\e9e0"),
     // Command zone
     ("Vanguard", "van", "\e655"),
     ("Planechase 2009", "hop", "\e656"),
@@ -260,7 +263,7 @@ $keyrune_sets: (
     ("Commander 2014", "c14", "\e65d"),
     ("Commander 2015", "c15", "\e900"),
     ("Conspiracy 2, Take", "cn2", "\e904"),
-    ("Commander 2016", "c16", "\e910"),
+    ("Commander 2016", "c16", "\e9e5"),
     ("Planechase Anthology", "pca", "\e911"),
     ("Commander Anthology", "cma", "\e916"),
     ("Archenemy: Nicol Bolas", "e01", "\e92d"),
@@ -300,6 +303,7 @@ $keyrune_sets: (
     ("Bloomburrow Commander", "blc", "\e9d4"),
     ("Modern Horizons 3 Commander", "m3c", "\e9d0"),
     ("Duskmourn Commander", "dsc", "\e9dc"),
+    ("Foundations Commander", "fdc", "\e9e4"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
@@ -423,6 +427,7 @@ $keyrune_sets: (
     ("Ravnica: Clue Edition", "clu", "\e9cb"),
     ("Universes Beyond: Assassin's Creed", "acr", "\e9ce"),
     ("Modern Horizons 3", "mh3", "\e9cf"),
+    ("Innistrad Remastered", "inr", "\e9e2"),
     //
     // Promos
     ("Guru", "pgru", "\e683"),
@@ -487,10 +492,12 @@ $keyrune_sets: (
     ("Kaladesh Remastered", "klr", "\e97c"),
     ("Alchemy 2022", "y22", "\e989"),
     ("Alchemy Horizons: Baldur's Gate", "hbg", "\e9a6"),
+    ("Alchemy 2023", "y23", "\e9a7"),
     ("Alchemy: Dominaria", "ydmu", "\e9a7"),
     ("Shadows Over Innistrad", "sir", "\e9b1"),
     ("Shadows of the Past", "sis", "\e9b2"),
     ("Explorer Anthology 1", "ea1", "\e9b4"),
+    ("Alchemy 2024", "y24", "\e9bd"),
     ("Alchemy 2025", "y25", "\e9da"),
     ("Alchemy Bloomburrow", "yblb", "\e9da"),
     //

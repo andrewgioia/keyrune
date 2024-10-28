@@ -12,7 +12,25 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
-### [3.15.1]
+### [3.16.1] 2024-10-28 Aetherdrift
+
+#### Added
+
+* Aetherdrift (DFT) set symbol ([#248](https://github.com/andrewgioia/keyrune/issues/248))
+* Innistrad Remastered (INR) set symbol ([#248](https://github.com/andrewgioia/keyrune/issues/248))
+* Foundations Commander (FDC) set symbol ([#223](https://github.com/andrewgioia/keyrune/issues/233))
+
+#### Changed
+
+* Commander 2016 (C16) previously used the inner rarity layer as the monochrome/default set symbol. This unfortunately lost the sword pommel and much of the set symbols character, as WOTC uses nonstandard rarity/border styles for symbol images. The border is now the default monochrome set symbol and the symbol is now a dual-layered one with rarity as a separate glyph. ([#246](https://github.com/andrewgioia/keyrune/issues/246))
+
+#### Fixed
+
+* Y23 and Y24 were in the font but now are documented ([#247](https://github.com/andrewgioia/keyrune/issues/247))
+* Y23 alias added for YDMU
+* Cheatsheet now has better icon font rendering so things don't look so dark
+
+### [3.15.1] 2024-10-26 DSC, Y25, J25, and come cleanup
 
 #### Added
 
