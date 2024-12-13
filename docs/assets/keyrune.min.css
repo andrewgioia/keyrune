@@ -866,9 +866,11 @@
 .ss-mm3:before {
   content: "\e912";
 }
+.ss-ren:before,
 .ss-xren:before {
   content: "\e917";
 }
+.ss-rin:before,
 .ss-xrin:before {
   content: "\e918";
 }
