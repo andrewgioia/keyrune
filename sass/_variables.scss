@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.16.0' !default;
+$keyrune_version: '3.16.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -49,7 +49,8 @@ $border-corrections: (
     ("Planechase 2012", "pc2", "\e659"),
     ("Conspiracy", "cns", "\e65c"),
     ("Shadows of the Past", "sis", "\e9b2"),
-    ("Innistrad Remastered", "inr", "\e9e3")
+    ("Innistrad Remastered", "inr", "\e9e3"),
+    ("Aetherdrift Commander", "drc", "\e9ea")
 ) !default;
 
 // dual-layered symbols (work in progress)
@@ -61,6 +62,7 @@ $dual-layered: (
     'clb': '\e992',
     'cc2': '\e988',
     'dmc': '\e997',
+    'drc': '\e9eb',
     'dsc': '\e9de',
     'j21': '\e984',
     'khc': '\e9c6',
@@ -251,6 +253,7 @@ $keyrune_sets: (
     ("Duskmourn: House of Horror", "dsk", "\e9d7"),
     // 2025 sets
     ("Aetherdrift", "dft", "\e9e0"),
+    ("Tarkir: Dragonstorm", "tdm", "\e9e6"),
     // Command zone
     ("Vanguard", "van", "\e655"),
     ("Planechase 2009", "hop", "\e656"),
@@ -304,6 +307,7 @@ $keyrune_sets: (
     ("Modern Horizons 3 Commander", "m3c", "\e9d0"),
     ("Duskmourn Commander", "dsc", "\e9dc"),
     ("Foundations Commander", "fdc", "\e9e4"),
+    ("Aetherdrift Commander", "drc", "\e9e8"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
@@ -340,6 +344,7 @@ $keyrune_sets: (
     ("Mystery Booster 2", "mb2", "\e9d9"),
     ("Jumpstart 2025 (Alternate)", "j25a", "\e9db"),
     ("Jumpstart 2025", "j25", "\e9df"),
+    ("Pioneer Masters", "pio", "\e9e7"),
     //
     // Beginner
     ("Portal", "por", "\e664"),

@@ -12,7 +12,20 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
-### [3.16.1] 2024-10-28 Aetherdrift
+### [3.16.1] 2024-12-12
+
+#### Added
+
+* Pioneer Masters (PIO) set symbol ([#249](https://github.com/andrewgioia/keyrune/issues/249))
+* Preliminary icon for the Tarkir: Dragonstorm (TDM) set symbol; this will be replaced when the official one comes out ([#250](https://github.com/andrewgioia/keyrune/issues/250))
+* Aetherdrift Commander (DRC) set symbol with inner and border glyphs ([#251](https://github.com/andrewgioia/keyrune/issues/251))
+* SVGs are now up to date and the improper scale of DSK and MB2 is corrected ([#260](https://github.com/andrewgioia/keyrune/issues/260))
+
+#### Fixed
+
+* Re-adds support for text-stroke borders by default, and manual glyph borders as an override on specific symbols. Note that .ss-border is not working well when .ss-grad is also applied, due to the way that the gradient has to be applied to the glyph (via text-clip).
+
+### [3.16.0] 2024-10-28 Aetherdrift
 
 #### Added
 

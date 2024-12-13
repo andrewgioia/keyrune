@@ -33,6 +33,7 @@
     &.@{ss-prefix}-cns,
     &.@{ss-prefix}-dft,
     &.@{ss-prefix}-dmc,
+    &.@{ss-prefix}-drc,
     &.@{ss-prefix}-dsc,
     &.@{ss-prefix}-hop,
     &.@{ss-prefix}-inr,
@@ -117,6 +118,20 @@
         }
         &::marker {
             content: "\e996";
+            color: #000;
+        }
+    }
+    &.@{ss-prefix}-drc { 
+        display: list-item;
+        list-style-position: inside;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker {
+            content: "\e9ea";
             color: #000;
         }
     }

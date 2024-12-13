@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.16.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.16.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.16.0') format('woff2'), url('../fonts/keyrune.woff?v=3.16.0') format('woff'), url('../fonts/keyrune.ttf?v=3.16.0') format('truetype'), url('../fonts/keyrune.svg?v=3.16.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.16.1');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.16.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.16.1') format('woff2'), url('../fonts/keyrune.woff?v=3.16.1') format('woff'), url('../fonts/keyrune.ttf?v=3.16.1') format('truetype'), url('../fonts/keyrune.svg?v=3.16.1#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -94,6 +94,14 @@
 }
 .ss-duo.ss-dmc::after {
   content: "\e997";
+  color: #fff !important;
+}
+.ss-duo.ss-drc::before {
+  content: "\e9e9";
+  width: 100%;
+}
+.ss-duo.ss-drc::after {
+  content: "\e9eb";
   color: #fff !important;
 }
 .ss-duo.ss-dsc::after {
@@ -669,6 +677,9 @@
 .ss-dft:before {
   content: "\e9e0";
 }
+.ss-tdm:before {
+  content: "\e9e6";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -823,6 +834,9 @@
 .ss-fdc:before {
   content: "\e9e4";
 }
+.ss-drc:before {
+  content: "\e9e8";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -923,6 +937,9 @@
 }
 .ss-j25:before {
   content: "\e9df";
+}
+.ss-pio:before {
+  content: "\e9e7";
 }
 /**
  * Beginner */
@@ -1421,6 +1438,7 @@
 .ss-border.ss-cns::before,
 .ss-border.ss-dft::before,
 .ss-border.ss-dmc::before,
+.ss-border.ss-drc::before,
 .ss-border.ss-dsc::before,
 .ss-border.ss-hop::before,
 .ss-border.ss-inr::before,
@@ -1440,6 +1458,7 @@
 .ss-border.ss-cns:not(.ss-duo)::after,
 .ss-border.ss-dft:not(.ss-duo)::after,
 .ss-border.ss-dmc:not(.ss-duo)::after,
+.ss-border.ss-drc:not(.ss-duo)::after,
 .ss-border.ss-dsc:not(.ss-duo)::after,
 .ss-border.ss-hop:not(.ss-duo)::after,
 .ss-border.ss-inr:not(.ss-duo)::after,
@@ -1467,6 +1486,7 @@
 .ss-border.ss-cns:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-dft:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-dmc:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-drc:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-hop:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-inr:not(.ss-duo).ss-uncommon::after,
@@ -1484,6 +1504,7 @@
 .ss-border.ss-cns:not(.ss-duo).ss-rare::after,
 .ss-border.ss-dft:not(.ss-duo).ss-rare::after,
 .ss-border.ss-dmc:not(.ss-duo).ss-rare::after,
+.ss-border.ss-drc:not(.ss-duo).ss-rare::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-rare::after,
 .ss-border.ss-hop:not(.ss-duo).ss-rare::after,
 .ss-border.ss-inr:not(.ss-duo).ss-rare::after,
@@ -1501,6 +1522,7 @@
 .ss-border.ss-cns:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-dft:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-dmc:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-drc:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-hop:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-inr:not(.ss-duo).ss-mythic::after,
@@ -1518,6 +1540,7 @@
 .ss-border.ss-cns:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-dft:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-dmc:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-drc:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-hop:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-inr:not(.ss-duo).ss-timeshifted::after,
@@ -1535,6 +1558,7 @@
 .ss-border.ss-cns:not(.ss-duo).ss-foil::after,
 .ss-border.ss-dft:not(.ss-duo).ss-foil::after,
 .ss-border.ss-dmc:not(.ss-duo).ss-foil::after,
+.ss-border.ss-drc:not(.ss-duo).ss-foil::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-foil::after,
 .ss-border.ss-hop:not(.ss-duo).ss-foil::after,
 .ss-border.ss-inr:not(.ss-duo).ss-foil::after,
@@ -1600,6 +1624,19 @@
 }
 .ss-border.ss-dmc::marker {
   content: "\e996";
+  color: #000;
+}
+.ss-border.ss-drc {
+  display: list-item;
+  list-style-position: inside;
+}
+.ss-border.ss-drc::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ss-border.ss-drc::marker {
+  content: "\e9ea";
   color: #000;
 }
 .ss-border.ss-dsc {
