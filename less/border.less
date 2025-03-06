@@ -35,6 +35,8 @@
     &.@{ss-prefix}-dmc,
     &.@{ss-prefix}-drc,
     &.@{ss-prefix}-dsc,
+    &.@{ss-prefix}-fin,
+    &.@{ss-prefix}-tdm,
     &.@{ss-prefix}-hop,
     &.@{ss-prefix}-inr,
     &.@{ss-prefix}-pc2,
@@ -129,6 +131,7 @@
             position: absolute;
             left: 0;
             top: 0;
+            width: 100px;
         }
         &::marker {
             content: "\e9ea";
@@ -150,6 +153,38 @@
         }
         &::marker {
             content: "\e9dd";
+            color: #000;
+        }
+    }
+    &.@{ss-prefix}-fin { // Final Fantasy; I wish I didn't mess it up
+        display: list-item;
+        list-style-position: inside;
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker {
+            content: "\e9f1";
+            color: #000;
+        }
+    }
+    &.@{ss-prefix}-tdm { // Tarkir Dragonstorm
+        display: list-item;
+        list-style-position: inside;
+
+        &.@{ss-prefix}-fw {
+            text-align: revert !important; // not sure too but it works
+        }
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker {
+            content: "\e9f3";
             color: #000;
         }
     }

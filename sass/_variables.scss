@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.16.1' !default;
+$keyrune_version: '3.16.2' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -254,6 +254,8 @@ $keyrune_sets: (
     // 2025 sets
     ("Aetherdrift", "dft", "\e9e0"),
     ("Tarkir: Dragonstorm", "tdm", "\e9e6"),
+    ("Universe Beyond: Final Fantasy", "fin", "\e9f4"),
+    ("Edge of Eternities", "eoe", "\e9ed"),
     // Command zone
     ("Vanguard", "van", "\e655"),
     ("Planechase 2009", "hop", "\e656"),
@@ -308,7 +310,9 @@ $keyrune_sets: (
     ("Duskmourn Commander", "dsc", "\e9dc"),
     ("Foundations Commander", "fdc", "\e9e4"),
     ("Aetherdrift Commander", "drc", "\e9e8"),
-    //
+    ("Tarkir: Dragonstorm Commander", "tdc", "\e9f2"),
+    ("Universe Beyond: Final Fantasy Commander", "fic", "\e9f0"),
+    ("Edge of Eternities Commander", "eoc", "\e9ec"),
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
     ("Anthologies", "ath", "\e65f"),
@@ -470,6 +474,7 @@ $keyrune_sets: (
     ("Zendikar Rising Expeditions", "zne", "\e97a"),
     ("The Brothers' War Transformers", "bot", "\e99e"),
     ("Jurassic World", "rex", "\e9c4"),
+    ("Final Fantasy Through the Ages", "fca", "\e9ee"),
     //
     // Secret Lairs
     ("Secret Lair: Ultimate Edition", "slu", "\e687"),
