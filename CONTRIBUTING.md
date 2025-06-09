@@ -2,17 +2,15 @@
 
 ## Prerequisites
 
-You need to have a icomoon account: https://icomoon.io/app/
-For future steps, i recommande to import actual set of keyrune's icons in icomoon.
+The font files are generated with [IcoMoon](https://icomoon.io/app/) so please create an account there. You can import the font file itself into IcoMoon to load Keyrune and begin editing.
 
 ![import](./contributing/images/import-icon-btn.png)
 
-A model asking for "The glyphs in your SVG font were loaded.
-Use this font's metrics and metadata when exporting fonts?" will appear, click on "Yes".
+After importing, a model will ask if you want to "use this font's metrics and metadata when exporting fonts?" Click "Yes" to accept.
 
 ![modal-import](./contributing/images/import-icon-modal.png)
 
-🎉 Success, you have now all the keyrune's icons in your icomoon project. That will be useful for the next steps when we need to generate the font.
+🎉 Success! The icon font should be loaded in your IcoMoon project. That will be useful for the next steps when we need to generate the font.
 
 ## Summary
 

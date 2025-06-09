@@ -35,10 +35,12 @@
     &.@{ss-prefix}-dmc,
     &.@{ss-prefix}-drc,
     &.@{ss-prefix}-dsc,
+    &.@{ss-prefix}-fin,
     &.@{ss-prefix}-hop,
     &.@{ss-prefix}-inr,
     &.@{ss-prefix}-pc2,
     &.@{ss-prefix}-sis,
+    &.@{ss-prefix}-tdm,
     &.@{ss-prefix}-van {
         &::before {
             -webkit-text-stroke: 0 !important;
@@ -47,7 +49,6 @@
         &:not(.ss-duo) {
             &::after {
                 color: #fff;
-                content: '';
                 display: block;
                 font-size: 1em;
                 height: 100%;
@@ -153,6 +154,14 @@
             color: #000;
         }
     }
+    &.@{ss-prefix}-fin { // fin needs a new rarity for the border glyph
+        &::before {
+            content: "\e9ee"; // rarity
+        }
+        &::after {
+            content: "\e9ef"; // border
+        }
+    }
     &.@{ss-prefix}-hop:after { content: "\e656"; } // Planechase 2009
     &.@{ss-prefix}-inr:after { content: "\e9e3"; } // Innistrad Remastered
     &.@{ss-prefix}-pc2:after { content: "\e659"; } // Planechase 2012
@@ -164,5 +173,6 @@
             content: "\e9b2";
         }
     }
+    &.@{ss-prefix}-tdm:after { content: "\e9ec"; } // Tarkir Dragonstorm
     &.@{ss-prefix}-van:after { content: "\e655"; } // Vanguard
 }

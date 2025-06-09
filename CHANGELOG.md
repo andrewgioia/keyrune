@@ -10,7 +10,32 @@ All notable changes to this project will be documented in this file.
 * Update this changelog for better formatting 
 * Review DSK and FDN SVG files to make sure they're single layer, and update docs if needed
 
+
 ## Versions
+
+### [3.17.0] 2025-06-08
+
+#### Added
+
+* Tarkir Dragonstorm Commander (TDC) set symbol ([#250](https://github.com/andrewgioia/keyrune/issues/250))
+* Final Fantasy (FIN) set symbol ([#263](https://github.com/andrewgioia/keyrune/issues/263))
+* Final Fantasy Commander (FIC) set symbol ([#263](https://github.com/andrewgioia/keyrune/issues/263))
+* Final Fantasy Through the Ages (FCA) set symbol ([#263](https://github.com/andrewgioia/keyrune/issues/263))
+* Edge of Eternities (EOE) set symbol ([#264](https://github.com/andrewgioia/keyrune/issues/264))
+* Edge of Eternities Commander (EOC) set symbol ([#264](https://github.com/andrewgioia/keyrune/issues/264))
+* Marvel Spider-Man (SPM) set symbol ([#266](https://github.com/andrewgioia/keyrune/issues/266))
+* Marvel Spider-Man Scene cards (SPE) set symbol ([#266](https://github.com/andrewgioia/keyrune/issues/266))
+* Marvel (MAR) set symbol ([#266](https://github.com/andrewgioia/keyrune/issues/266))
+
+#### Changed
+
+* Icon for Tarkir Dragonstorm (TDM) is now official, with new border glyph ([#250](https://github.com/andrewgioia/keyrune/issues/250))
+
+#### Fixed
+
+* Missing SVGs for NEM, J22, LTC, and CMM are now available ([#267](https://github.com/andrewgioia/keyrune/issues/267))
+* All Alchemy aliases are now available ([#271](https://github.com/andrewgioia/keyrune/issues/271))
+
 
 ### [3.16.1] 2024-12-12
 

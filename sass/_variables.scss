@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.16.1' !default;
+$keyrune_version: '3.17.0' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -40,17 +40,24 @@ $keyrune_sizes: (
 $border-corrections: (
     ("Vanguard", "van", "\e655"),
     ("Archenemy", "arc", "\e657"),
-    ("Commander", "cmd", "\e658"),
-    ("Commander's Arsenal", "cm1", "\e65a"),
     ("Commander 2013", "c13", "\e65b"),
     ("Commander 2014", "c14", "\e65d"),
     ("Commander 2015", "c15", "\e900"),
-    ("Planechase 2009", "hop", "\e656"),
-    ("Planechase 2012", "pc2", "\e659"),
+    ("Commander 2016", "c16", "\e9e5"),
+    ("Commander's Arsenal", "cm1", "\e65a"),
+    ("Commander", "cmd", "\e658"),
     ("Conspiracy", "cns", "\e65c"),
-    ("Shadows of the Past", "sis", "\e9b2"),
+    ("Aetherdrift", "dft", "\e9e0"),
+    ("Dominaria United Commander", "dmc", "\e996"),
+    ("Aetherdrift Commander", "drc", "\e9ea"),
+    ("Duskmourn Commander", "dsc", "\e9dd"),
+    ("Final Fantasy", "fin", "\e9ef"),
+    ("Planechase 2009", "hop", "\e656"),
     ("Innistrad Remastered", "inr", "\e9e3"),
-    ("Aetherdrift Commander", "drc", "\e9ea")
+    ("Planechase 2012", "pc2", "\e659"),
+    ("Shadows of the Past", "sis", "\e9b2"),
+    ("Tarkir Dragonstorm", "tdm", "\e9ec"),
+    ("Vanguard", "van", "\e655")
 ) !default;
 
 // dual-layered symbols (work in progress)
@@ -68,10 +75,12 @@ $dual-layered: (
     'khc': '\e9c6',
     'ltc': '\e9b8',
     'm3c': '\e9d1',
+    'mar': '\e9fa',
     'mid': '\e979',
     'otc': '\e9d3',
     'ncc': '\e990',
     'scd': '\e9ac',
+    'spm': '\e9f2',
     'una': '\e9bf'
 ) !default;
 
@@ -254,6 +263,9 @@ $keyrune_sets: (
     // 2025 sets
     ("Aetherdrift", "dft", "\e9e0"),
     ("Tarkir: Dragonstorm", "tdm", "\e9e6"),
+    ("Final Fantasy", "fin", "\e9ed"),
+    ("Edge of Eternities", "eoe", "\e9f0"),
+    ("Marvel Spider-Man", "spm", "\e9f1"),
     // Command zone
     ("Vanguard", "van", "\e655"),
     ("Planechase 2009", "hop", "\e656"),
@@ -308,6 +320,9 @@ $keyrune_sets: (
     ("Duskmourn Commander", "dsc", "\e9dc"),
     ("Foundations Commander", "fdc", "\e9e4"),
     ("Aetherdrift Commander", "drc", "\e9e8"),
+    ("Tarkir Dragonstorm Commander", "tdc", "\e9f4"),
+    ("Final Fantasy Commander", "fic", "\e9f5"),
+    ("Edge of Eternities Commander", "eoc", "\e9f6"),
     //
     // Reprint sets
     ("Chronicles", "chr", "\e65e"),
@@ -345,6 +360,8 @@ $keyrune_sets: (
     ("Jumpstart 2025 (Alternate)", "j25a", "\e9db"),
     ("Jumpstart 2025", "j25", "\e9df"),
     ("Pioneer Masters", "pio", "\e9e7"),
+    ("Final Fantasy: Through the Ages", "fca", "\e9f8"),
+    ("Marvel (TBD)", "mar", "\e9f6"),
     //
     // Beginner
     ("Portal", "por", "\e664"),
@@ -433,6 +450,7 @@ $keyrune_sets: (
     ("Universes Beyond: Assassin's Creed", "acr", "\e9ce"),
     ("Modern Horizons 3", "mh3", "\e9cf"),
     ("Innistrad Remastered", "inr", "\e9e2"),
+    ("Marvel Spider-Man Scene", "spe", "\e9f3"),
     //
     // Promos
     ("Guru", "pgru", "\e683"),
