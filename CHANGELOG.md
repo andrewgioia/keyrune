@@ -15,6 +15,8 @@ All notable changes to this project will be documented in this file.
 
 ### [3.17.0] 2025-06-08
 
+Special thanks to @HeliumOctahelide for the PR and all of the work, thank you 🙏
+
 #### Added
 
 * Tarkir Dragonstorm Commander (TDC) set symbol ([#250](https://github.com/andrewgioia/keyrune/issues/250))
