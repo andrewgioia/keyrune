@@ -1374,14 +1374,19 @@
 .ss-klr:before {
   content: "\e97c";
 }
-.ss-y22:before {
+.ss-y22:before,
+.ss-ymid:before,
+.ss-yneo:before,
+.ss-ysnc:before {
   content: "\e989";
 }
 .ss-hbg:before {
   content: "\e9a6";
 }
+.ss-y23:before,
+.ss-ybro:before,
 .ss-ydmu:before,
-.ss-y23:before {
+.ss-yone:before {
   content: "\e9a7";
 }
 .ss-sir:before {
@@ -1393,11 +1398,18 @@
 .ss-ea1:before {
   content: "\e9b4";
 }
-.ss-y24:before {
+.ss-y24:before,
+.ss-ylci:before,
+.ss-ymkm:before,
+.ss-yotj:before,
+.ss-ywoe:before {
   content: "\e9bd";
 }
 .ss-y25:before,
-.ss-yblb:before {
+.ss-yblb:before,
+.ss-ydft:before,
+.ss-ydsk:before,
+.ss-ytdm:before {
   content: "\e9da";
 }
 /**
