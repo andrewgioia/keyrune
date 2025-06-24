@@ -1,7 +1,7 @@
 /**
  * Globals */
 
-$keyrune_version: '3.17.0' !default;
+$keyrune_version: '3.17.1' !default;
 $keyrune_font_path:  '../fonts' !default;
 
 // font specific
@@ -81,6 +81,7 @@ $dual-layered: (
     'ncc': '\e990',
     'scd': '\e9ac',
     'spm': '\e9f2',
+    'tla': '\e9fe',
     'una': '\e9bf'
 ) !default;
 
@@ -266,6 +267,7 @@ $keyrune_sets: (
     ("Final Fantasy", "fin", "\e9ed"),
     ("Edge of Eternities", "eoe", "\e9f0"),
     ("Marvel Spider-Man", "spm", "\e9f1"),
+    ("Avatar: the Last Airbender", "spm", "\e9fb"),
     // Command zone
     ("Vanguard", "van", "\e655"),
     ("Planechase 2009", "hop", "\e656"),
@@ -488,6 +490,7 @@ $keyrune_sets: (
     ("Zendikar Rising Expeditions", "zne", "\e97a"),
     ("The Brothers' War Transformers", "bot", "\e99e"),
     ("Jurassic World", "rex", "\e9c4"),
+    ("Edge of Eternities: Stellar Sights", "eos", "\ea00"),
     //
     // Secret Lairs
     ("Secret Lair: Ultimate Edition", "slu", "\e687"),
@@ -495,7 +498,7 @@ $keyrune_sets: (
     ("Secret Lair Drop Promos", "psld", "\e687"),
     ("Secret Lair Logo", "sld2", "\e9bc"),
     //
-    // Online only sets
+    // Digital
     ("Masters Edition", "me1", "\e68d"),
     ("Masters Edition II", "me2", "\e68e"),
     ("Masters Edition III", "me3", "\e68f"),
@@ -523,6 +526,9 @@ $keyrune_sets: (
     ("Alchemy 2024", "y24", "\e9bd"),
     ("Alchemy 2025", "y25", "\e9da"),
     ("Alchemy Bloomburrow", "yblb", "\e9da"),
+    ("Puzzle Masters", "pma", "\ea01"),
+    ("Puzzle Masters 2", "pm2", "\ea02"),
+    ("Daxos vs. Kalemne (Puzzle Masters)", "dvk", "\ea03"),
     //
     // Unsets
     ("Unglued", "ugl", "\e691"),

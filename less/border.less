@@ -35,12 +35,14 @@
     &.@{ss-prefix}-dmc,
     &.@{ss-prefix}-drc,
     &.@{ss-prefix}-dsc,
+    &.@{ss-prefix}-eos,
     &.@{ss-prefix}-fin,
     &.@{ss-prefix}-hop,
     &.@{ss-prefix}-inr,
     &.@{ss-prefix}-pc2,
     &.@{ss-prefix}-sis,
     &.@{ss-prefix}-tdm,
+    &.@{ss-prefix}-tla,
     &.@{ss-prefix}-van {
         &::before {
             -webkit-text-stroke: 0 !important;
@@ -154,6 +156,14 @@
             color: #000;
         }
     }
+    &.@{ss-prefix}-eos { // regular symbol becomes the border
+        &::before {
+            content: "\e9ff"; // rarity
+        }
+        &::after {
+            content: "\ea00"; // new border
+        }
+    }
     &.@{ss-prefix}-fin { // fin needs a new rarity for the border glyph
         &::before {
             content: "\e9ee"; // rarity
@@ -174,5 +184,20 @@
         }
     }
     &.@{ss-prefix}-tdm:after { content: "\e9ec"; } // Tarkir Dragonstorm
+    &.@{ss-prefix}-tla { // experimental ::marker for 3 layer icons
+        display: list-item;
+        list-style-position: inside;
+
+        &::before { // new rarity symbol
+            content: "\e9fc";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker { // border
+            content: "\e9fd";
+            color: #000;
+        }
+    }
     &.@{ss-prefix}-van:after { content: "\e655"; } // Vanguard
 }

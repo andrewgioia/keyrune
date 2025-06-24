@@ -178,6 +178,18 @@
         color: #fff !important;
     }
 
+    // Avatar the Last Airbender
+    &.@{ss-prefix}-tla {
+        &::before {
+            content: "\e9fc"; // new rarity
+            width: 100%;
+        }
+        &::after { // inner
+            content: "\e9fe";
+            color: #fff !important;
+        }
+    }
+
     // Unfinity Acorns
     &.@{ss-prefix}-una::after {
         content: "\e9bf";

@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.17.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.17.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.17.0') format('woff2'), url('../fonts/keyrune.woff?v=3.17.0') format('woff'), url('../fonts/keyrune.ttf?v=3.17.0') format('truetype'), url('../fonts/keyrune.svg?v=3.17.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.17.1');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.17.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.17.1') format('woff2'), url('../fonts/keyrune.woff?v=3.17.1') format('woff'), url('../fonts/keyrune.ttf?v=3.17.1') format('truetype'), url('../fonts/keyrune.svg?v=3.17.1#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -156,6 +156,14 @@
 }
 .ss-duo.ss-spm::after {
   content: "\e9f2";
+  color: #fff !important;
+}
+.ss-duo.ss-tla::before {
+  content: "\e9fc";
+  width: 100%;
+}
+.ss-duo.ss-tla::after {
+  content: "\e9fe";
   color: #fff !important;
 }
 .ss-duo.ss-una::after {
@@ -700,6 +708,9 @@
 }
 .ss-spm:before {
   content: "\e9f1";
+}
+.ss-tla:before {
+  content: "\e9fb";
 }
 /**
  * Command Zone */
@@ -1313,6 +1324,9 @@
 .ss-rex:before {
   content: "\e9c4";
 }
+.ss-eos:before {
+  content: "\ea00";
+}
 /**
  * Secret Lairs */
 .ss-slu:before {
@@ -1328,7 +1342,7 @@
   content: "\e9bc";
 }
 /**
- * Online */
+ * Digital */
 .ss-me1:before {
   content: "\e68d";
 }
@@ -1412,6 +1426,15 @@
 .ss-ytdm:before {
   content: "\e9da";
 }
+.ss-pma:before {
+  content: "\ea01";
+}
+.ss-pm2:before {
+  content: "\ea02";
+}
+.ss-dvk:before {
+  content: "\ea03";
+}
 /**
  * Un-serious */
 .ss-ugl:before {
@@ -1493,12 +1516,14 @@
 .ss-border.ss-dmc::before,
 .ss-border.ss-drc::before,
 .ss-border.ss-dsc::before,
+.ss-border.ss-eos::before,
 .ss-border.ss-fin::before,
 .ss-border.ss-hop::before,
 .ss-border.ss-inr::before,
 .ss-border.ss-pc2::before,
 .ss-border.ss-sis::before,
 .ss-border.ss-tdm::before,
+.ss-border.ss-tla::before,
 .ss-border.ss-van::before {
   -webkit-text-stroke: 0 !important;
 }
@@ -1515,12 +1540,14 @@
 .ss-border.ss-dmc:not(.ss-duo)::after,
 .ss-border.ss-drc:not(.ss-duo)::after,
 .ss-border.ss-dsc:not(.ss-duo)::after,
+.ss-border.ss-eos:not(.ss-duo)::after,
 .ss-border.ss-fin:not(.ss-duo)::after,
 .ss-border.ss-hop:not(.ss-duo)::after,
 .ss-border.ss-inr:not(.ss-duo)::after,
 .ss-border.ss-pc2:not(.ss-duo)::after,
 .ss-border.ss-sis:not(.ss-duo)::after,
 .ss-border.ss-tdm:not(.ss-duo)::after,
+.ss-border.ss-tla:not(.ss-duo)::after,
 .ss-border.ss-van:not(.ss-duo)::after {
   color: #fff;
   display: block;
@@ -1544,12 +1571,14 @@
 .ss-border.ss-dmc:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-drc:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-eos:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-fin:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-hop:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-inr:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-sis:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-tdm:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-tla:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-van:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-40k:not(.ss-duo).ss-rare::after,
 .ss-border.ss-arc:not(.ss-duo).ss-rare::after,
@@ -1564,12 +1593,14 @@
 .ss-border.ss-dmc:not(.ss-duo).ss-rare::after,
 .ss-border.ss-drc:not(.ss-duo).ss-rare::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-rare::after,
+.ss-border.ss-eos:not(.ss-duo).ss-rare::after,
 .ss-border.ss-fin:not(.ss-duo).ss-rare::after,
 .ss-border.ss-hop:not(.ss-duo).ss-rare::after,
 .ss-border.ss-inr:not(.ss-duo).ss-rare::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-rare::after,
 .ss-border.ss-sis:not(.ss-duo).ss-rare::after,
 .ss-border.ss-tdm:not(.ss-duo).ss-rare::after,
+.ss-border.ss-tla:not(.ss-duo).ss-rare::after,
 .ss-border.ss-van:not(.ss-duo).ss-rare::after,
 .ss-border.ss-40k:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-arc:not(.ss-duo).ss-mythic::after,
@@ -1584,12 +1615,14 @@
 .ss-border.ss-dmc:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-drc:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-eos:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-fin:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-hop:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-inr:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-sis:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-tdm:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-tla:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-van:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-40k:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-arc:not(.ss-duo).ss-timeshifted::after,
@@ -1604,12 +1637,14 @@
 .ss-border.ss-dmc:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-drc:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-eos:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-fin:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-hop:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-inr:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-sis:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-tdm:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-tla:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-van:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-40k:not(.ss-duo).ss-foil::after,
 .ss-border.ss-arc:not(.ss-duo).ss-foil::after,
@@ -1624,12 +1659,14 @@
 .ss-border.ss-dmc:not(.ss-duo).ss-foil::after,
 .ss-border.ss-drc:not(.ss-duo).ss-foil::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-foil::after,
+.ss-border.ss-eos:not(.ss-duo).ss-foil::after,
 .ss-border.ss-fin:not(.ss-duo).ss-foil::after,
 .ss-border.ss-hop:not(.ss-duo).ss-foil::after,
 .ss-border.ss-inr:not(.ss-duo).ss-foil::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-foil::after,
 .ss-border.ss-sis:not(.ss-duo).ss-foil::after,
 .ss-border.ss-tdm:not(.ss-duo).ss-foil::after,
+.ss-border.ss-tla:not(.ss-duo).ss-foil::after,
 .ss-border.ss-van:not(.ss-duo).ss-foil::after {
   color: #000;
 }
@@ -1721,6 +1758,12 @@
   content: "\e9dd";
   color: #000;
 }
+.ss-border.ss-eos::before {
+  content: "\e9ff";
+}
+.ss-border.ss-eos::after {
+  content: "\ea00";
+}
 .ss-border.ss-fin::before {
   content: "\e9ee";
 }
@@ -1744,6 +1787,20 @@
 }
 .ss-border.ss-tdm:after {
   content: "\e9ec";
+}
+.ss-border.ss-tla {
+  display: list-item;
+  list-style-position: inside;
+}
+.ss-border.ss-tla::before {
+  content: "\e9fc";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ss-border.ss-tla::marker {
+  content: "\e9fd";
+  color: #000;
 }
 .ss-border.ss-van:after {
   content: "\e655";

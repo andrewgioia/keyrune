@@ -13,7 +13,21 @@ All notable changes to this project will be documented in this file.
 
 ## Versions
 
-### [3.17.0] 2025-06-08
+### [3.17.1] 2025-06-23 Avatar: the Last Airbender
+
+#### Added
+
+* Edge of Eternities: Stellar Sights (EOS) set symbol ([#273](https://github.com/andrewgioia/keyrune/issues/273))
+* Avatar: The Last Airbender (TLA) set symbol, along with full rarity/border/inner variants ([#274](https://github.com/andrewgioia/keyrune/issues/274))
+* Puzzle Quest (PMA), Puzzle Quest 2 (PM2), and Daxos vs Kalemne digital set symbols ([#262](https://github.com/andrewgioia/keyrune/issues/262))
+
+#### Fixed
+
+* Documentation now correctly categorizes some UB sets (WHO and PIP) as Commander sets ([#230](https://github.com/andrewgioia/keyrune/issues/230))
+* FCA added to Cheatsheet ([#272](https://github.com/andrewgioia/keyrune/issues/272))
+
+
+### [3.17.0] 2025-06-08 Edge of Eternities
 
 Special thanks to @HeliumOctahelide for the PR and all of the work, thank you üôè
 
@@ -39,7 +53,7 @@ Special thanks to @HeliumOctahelide for the PR and all of the work, thank you ü
 * All Alchemy aliases are now available ([#271](https://github.com/andrewgioia/keyrune/issues/271))
 
 
-### [3.16.1] 2024-12-12
+### [3.16.1] 2024-12-12 Tarkir: Dragonstorm
 
 #### Added
 
@@ -55,6 +69,7 @@ Special thanks to @HeliumOctahelide for the PR and all of the work, thank you ü
 #### Fixed
 
 * Re-adds support for text-stroke borders by default, and manual glyph borders as an override on specific symbols. Note that .ss-border is not working well when .ss-grad is also applied, due to the way that the gradient has to be applied to the glyph (via text-clip).
+
 
 ### [3.16.0] 2024-10-28 Aetherdrift
 

@@ -75,6 +75,31 @@
             content: "\e9e0"; // new border
         }
     }
+    // eos: new rarity symbol
+    &.#{$keyrune_prefix}-eos {
+        &::before {
+            content: "\e9ff"; // rarity
+        }
+        &::after {
+            content: "\ea00"; // new border
+        }
+    }
+    // tla needs to swap the rarity and add the border as marker
+    &.#{$keyrune_prefix}-tla {
+        display: list-item;
+        list-style-position: inside;
+
+        &::before { // new rarity symbol
+            content: "\e9fc";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker { // border
+            content: "\e9fd";
+            color: #000;
+        }
+    }
 }
 
 /**
@@ -120,6 +145,9 @@
     }
     &.#{$keyrune_prefix}-ltc::before {
         content: "\e9b7";
+    }
+    &.#{$keyrune_prefix}-tla::before {
+        content: "\e9fc";
     }
 
     // rarity border colors
