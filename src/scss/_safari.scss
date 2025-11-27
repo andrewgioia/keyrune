@@ -1,0 +1,23 @@
+@supports (-webkit-hyphens: none) {
+    .#{$keyrune-prefix}.#{$keyrune-prefix}-inner {
+
+        // remove list style and setup for background image approach on the element itself
+        list-style: none !important;
+        background-repeat: no-repeat;
+        background-position: 50% 22.4375%; // no idea why this needs to be 22.4375%!
+
+        // revert the absolute positioning on ::before
+        &::before {
+            position: revert !important;
+        }
+
+        // iterate over each set and for those with an inner, add the svg as a background image
+        @each $set, $attributes in $keyrune-sets {
+            @if (map-get($attributes, inner_svg)) {
+                &.#{$keyrune-prefix}-#{$set} {
+                    background-image: url(glyph-content(map-get($attributes, inner_svg)));
+                }
+            }
+        }
+    }
+}

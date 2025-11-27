@@ -19,13 +19,6 @@
     }
 }
 
-// safari specific overrides
-_::-webkit-full-page-media, _:future, :root .safari_only {
-    .#{$keyrune-prefix}-inner {
-        display: none !important;
-    }
-}
-
 // set specific corrections
 //
 // 8ed alt
