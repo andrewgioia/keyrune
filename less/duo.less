@@ -95,6 +95,12 @@
         content: "\e9de";
     }
 
+    // Lorwyn Eclipsed Commander
+    &.@{ss-prefix}-ecc::after {
+        content: "\ea14";
+        color: #fff !important;
+    }
+
     // Edge of Eternities Commander
     &.@{ss-prefix}-eoc::after {
         content: "\e9f7";
@@ -178,16 +184,25 @@
         color: #fff !important;
     }
 
-    // Avatar the Last Airbender
-    &.@{ss-prefix}-tla {
-        &::before {
-            content: "\e9fc"; // new rarity
-            width: 100%;
-        }
+    // Avatar:; the Last Airbender
+    &.@{ss-prefix}-tla::after {
+        content: "\e9fe";
+        color: #fff !important;
+    }
+
+    // Avatar the Last Airbender: Eternal cards
+    &.@{ss-prefix}-tle {
+        /* no ::before, keeping the border as the rarity unless .ss-border is added */
         &::after { // inner
-            content: "\e9fe";
+            content: "\ea0c";
             color: #fff !important;
         }
+    }
+
+    // Teenage Mutant Ninja Turtles
+    &.@{ss-prefix}-tmt::after {
+        content: "\ea17";
+        color: #fff !important;
     }
 
     // Unfinity Acorns

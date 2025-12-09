@@ -35,14 +35,23 @@
     &.@{ss-prefix}-dmc,
     &.@{ss-prefix}-drc,
     &.@{ss-prefix}-dsc,
+    &.@{ss-prefix}-ecc,
+    &.@{ss-prefix}-ecl,
     &.@{ss-prefix}-eos,
     &.@{ss-prefix}-fin,
     &.@{ss-prefix}-hop,
     &.@{ss-prefix}-inr,
+    &.@{ss-prefix}-om1,
+    &.@{ss-prefix}-omb,
     &.@{ss-prefix}-pc2,
+    &.@{ss-prefix}-pza,
     &.@{ss-prefix}-sis,
+    &.@{ss-prefix}-tce,
     &.@{ss-prefix}-tdm,
     &.@{ss-prefix}-tla,
+    &.@{ss-prefix}-tle,
+    &.@{ss-prefix}-tmc,
+    &.@{ss-prefix}-tmt,
     &.@{ss-prefix}-van {
         &::before {
             -webkit-text-stroke: 0 !important;
@@ -156,6 +165,27 @@
             color: #000;
         }
     }
+    &.@{ss-prefix}-ecc { // 3 layers, rarity glyph changes here as well
+        display: list-item;
+        list-style-position: inside;
+
+        &.@{ss-prefix}-fw {
+            text-align: revert !important; // not sure why we have to remove center
+        }
+
+        &::before { // new rarity
+            content: "\ea12";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker { // border
+            content: "\ea13";
+            color: #000;
+        }
+        // ::after is in duo
+    }
+    &.@{ss-prefix}-ecl:after { content: "\ea05"; } // Lorwyn Eclipsed
     &.@{ss-prefix}-eos { // regular symbol becomes the border
         &::before {
             content: "\e9ff"; // rarity
@@ -174,7 +204,24 @@
     }
     &.@{ss-prefix}-hop:after { content: "\e656"; } // Planechase 2009
     &.@{ss-prefix}-inr:after { content: "\e9e3"; } // Innistrad Remastered
+    &.@{ss-prefix}-om1 { // rarity becomes the border
+        &::before {
+            content: "\ea0d"; // rarity (old border)
+        }
+        &::after {
+            content: "\ea0e"; // border
+        }
+    }
+    &.@{ss-prefix}-omb { // rarity becomes the border
+        &::before {
+            content: "\ea0f"; // rarity (old border)
+        }
+        &::after {
+            content: "\ea10"; // border
+        }
+    }
     &.@{ss-prefix}-pc2:after { content: "\e659"; } // Planechase 2012
+    &.@{ss-prefix}-pza:after { content: "\ea09"; } // TMT Source Material
     &.@{ss-prefix}-sis { // SIS: the regular symbol becomes the border now
         &::before {
             content: "\e9b3";
@@ -188,16 +235,64 @@
         display: list-item;
         list-style-position: inside;
 
-        &::before { // new rarity symbol
-            content: "\e9fc";
+        &::before {
             position: absolute;
-            left: 0;
+            left: 50%;
             top: 0;
+            translate: -50%;
+        }
+        &.@{ss-prefix}-fw {
+            text-align: revert !important; // not sure why we have to remove center
+
+            &::before {
+                left: 0;
+                translate: 0;
+            }
         }
         &::marker { // border
             content: "\e9fd";
             color: #000;
         }
+    }
+    &.@{ss-prefix}-tle { // rarity gets a new glyph; using marker because inner duo
+        display: list-item;
+        list-style-position: inside;
+
+        &.@{ss-prefix}-fw {
+            text-align: revert !important; // not sure why we have to remove center
+        }
+
+        &::before { // new rarity
+            content: "\ea0a";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker { // border
+            content: "\ea0b";
+            color: #000;
+        }
+        // ::after is in duo
+    }
+    &.@{ss-prefix}-tmc:after { content: "\ea16"; } // TMT Eternal-Legal
+    &.@{ss-prefix}-tmt { // 3 layers
+        display: list-item;
+        list-style-position: inside;
+
+        &.@{ss-prefix}-fw {
+            text-align: revert !important;
+        }
+
+        &::before {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::marker { // border
+            content: "\ea07";
+            color: #000;
+        }
+        // ::after is in duo as inner
     }
     &.@{ss-prefix}-van:after { content: "\e655"; } // Vanguard
 }

@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.17.1');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.17.1') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.17.1') format('woff2'), url('../fonts/keyrune.woff?v=3.17.1') format('woff'), url('../fonts/keyrune.ttf?v=3.17.1') format('truetype'), url('../fonts/keyrune.svg?v=3.17.1#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.18.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.18.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.18.0') format('woff2'), url('../fonts/keyrune.woff?v=3.18.0') format('woff'), url('../fonts/keyrune.ttf?v=3.18.0') format('truetype'), url('../fonts/keyrune.svg?v=3.18.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -107,6 +107,10 @@
 .ss-duo.ss-dsc::after {
   content: "\e9de";
 }
+.ss-duo.ss-ecc::after {
+  content: "\ea14";
+  color: #fff !important;
+}
 .ss-duo.ss-eoc::after {
   content: "\e9f7";
   color: #fff !important;
@@ -158,12 +162,19 @@
   content: "\e9f2";
   color: #fff !important;
 }
-.ss-duo.ss-tla::before {
-  content: "\e9fc";
-  width: 100%;
-}
 .ss-duo.ss-tla::after {
   content: "\e9fe";
+  color: #fff !important;
+}
+.ss-duo.ss-tle {
+  /* no ::before, keeping the border as the rarity unless .ss-border is added */
+}
+.ss-duo.ss-tle::after {
+  content: "\ea0c";
+  color: #fff !important;
+}
+.ss-duo.ss-tmt::after {
+  content: "\ea17";
   color: #fff !important;
 }
 .ss-duo.ss-una::after {
@@ -712,6 +723,13 @@
 .ss-tla:before {
   content: "\e9fb";
 }
+/* 2026 Sets */
+.ss-ecl:before {
+  content: "\ea04";
+}
+.ss-tmt:before {
+  content: "\ea06";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -877,6 +895,12 @@
 }
 .ss-eoc:before {
   content: "\e9f6";
+}
+.ss-ecc:before {
+  content: "\ea11";
+}
+.ss-tmc:before {
+  content: "\ea15";
 }
 /**
  * Reprint */
@@ -1223,6 +1247,12 @@
 .ss-spe:before {
   content: "\e9f3";
 }
+.ss-tle:before {
+  content: "\ea0b";
+}
+.ss-pza:before {
+  content: "\ea08";
+}
 /**
  * Promotional */
 .ss-pgru:before {
@@ -1327,6 +1357,9 @@
 .ss-eos:before {
   content: "\ea00";
 }
+.ss-sta-jpn:before {
+  content: "\e9fc";
+}
 /**
  * Secret Lairs */
 .ss-slu:before {
@@ -1423,7 +1456,8 @@
 .ss-yblb:before,
 .ss-ydft:before,
 .ss-ydsk:before,
-.ss-ytdm:before {
+.ss-ytdm:before,
+.ss-yeoe:before {
   content: "\e9da";
 }
 .ss-pma:before {
@@ -1434,6 +1468,12 @@
 }
 .ss-dvk:before {
   content: "\ea03";
+}
+.ss-om1:before {
+  content: "\ea0e";
+}
+.ss-omb:before {
+  content: "\ea10";
 }
 /**
  * Un-serious */
@@ -1516,14 +1556,23 @@
 .ss-border.ss-dmc::before,
 .ss-border.ss-drc::before,
 .ss-border.ss-dsc::before,
+.ss-border.ss-ecc::before,
+.ss-border.ss-ecl::before,
 .ss-border.ss-eos::before,
 .ss-border.ss-fin::before,
 .ss-border.ss-hop::before,
 .ss-border.ss-inr::before,
+.ss-border.ss-om1::before,
+.ss-border.ss-omb::before,
 .ss-border.ss-pc2::before,
+.ss-border.ss-pza::before,
 .ss-border.ss-sis::before,
+.ss-border.ss-tce::before,
 .ss-border.ss-tdm::before,
 .ss-border.ss-tla::before,
+.ss-border.ss-tle::before,
+.ss-border.ss-tmc::before,
+.ss-border.ss-tmt::before,
 .ss-border.ss-van::before {
   -webkit-text-stroke: 0 !important;
 }
@@ -1540,14 +1589,23 @@
 .ss-border.ss-dmc:not(.ss-duo)::after,
 .ss-border.ss-drc:not(.ss-duo)::after,
 .ss-border.ss-dsc:not(.ss-duo)::after,
+.ss-border.ss-ecc:not(.ss-duo)::after,
+.ss-border.ss-ecl:not(.ss-duo)::after,
 .ss-border.ss-eos:not(.ss-duo)::after,
 .ss-border.ss-fin:not(.ss-duo)::after,
 .ss-border.ss-hop:not(.ss-duo)::after,
 .ss-border.ss-inr:not(.ss-duo)::after,
+.ss-border.ss-om1:not(.ss-duo)::after,
+.ss-border.ss-omb:not(.ss-duo)::after,
 .ss-border.ss-pc2:not(.ss-duo)::after,
+.ss-border.ss-pza:not(.ss-duo)::after,
 .ss-border.ss-sis:not(.ss-duo)::after,
+.ss-border.ss-tce:not(.ss-duo)::after,
 .ss-border.ss-tdm:not(.ss-duo)::after,
 .ss-border.ss-tla:not(.ss-duo)::after,
+.ss-border.ss-tle:not(.ss-duo)::after,
+.ss-border.ss-tmc:not(.ss-duo)::after,
+.ss-border.ss-tmt:not(.ss-duo)::after,
 .ss-border.ss-van:not(.ss-duo)::after {
   color: #fff;
   display: block;
@@ -1571,14 +1629,23 @@
 .ss-border.ss-dmc:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-drc:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-ecc:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-ecl:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-eos:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-fin:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-hop:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-inr:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-om1:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-omb:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-pza:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-sis:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-tce:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-tdm:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-tla:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-tle:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-tmc:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-tmt:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-van:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-40k:not(.ss-duo).ss-rare::after,
 .ss-border.ss-arc:not(.ss-duo).ss-rare::after,
@@ -1593,14 +1660,23 @@
 .ss-border.ss-dmc:not(.ss-duo).ss-rare::after,
 .ss-border.ss-drc:not(.ss-duo).ss-rare::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-rare::after,
+.ss-border.ss-ecc:not(.ss-duo).ss-rare::after,
+.ss-border.ss-ecl:not(.ss-duo).ss-rare::after,
 .ss-border.ss-eos:not(.ss-duo).ss-rare::after,
 .ss-border.ss-fin:not(.ss-duo).ss-rare::after,
 .ss-border.ss-hop:not(.ss-duo).ss-rare::after,
 .ss-border.ss-inr:not(.ss-duo).ss-rare::after,
+.ss-border.ss-om1:not(.ss-duo).ss-rare::after,
+.ss-border.ss-omb:not(.ss-duo).ss-rare::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-rare::after,
+.ss-border.ss-pza:not(.ss-duo).ss-rare::after,
 .ss-border.ss-sis:not(.ss-duo).ss-rare::after,
+.ss-border.ss-tce:not(.ss-duo).ss-rare::after,
 .ss-border.ss-tdm:not(.ss-duo).ss-rare::after,
 .ss-border.ss-tla:not(.ss-duo).ss-rare::after,
+.ss-border.ss-tle:not(.ss-duo).ss-rare::after,
+.ss-border.ss-tmc:not(.ss-duo).ss-rare::after,
+.ss-border.ss-tmt:not(.ss-duo).ss-rare::after,
 .ss-border.ss-van:not(.ss-duo).ss-rare::after,
 .ss-border.ss-40k:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-arc:not(.ss-duo).ss-mythic::after,
@@ -1615,14 +1691,23 @@
 .ss-border.ss-dmc:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-drc:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-ecc:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-ecl:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-eos:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-fin:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-hop:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-inr:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-om1:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-omb:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-pza:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-sis:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-tce:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-tdm:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-tla:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-tle:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-tmc:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-tmt:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-van:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-40k:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-arc:not(.ss-duo).ss-timeshifted::after,
@@ -1637,14 +1722,23 @@
 .ss-border.ss-dmc:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-drc:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-ecc:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-ecl:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-eos:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-fin:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-hop:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-inr:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-om1:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-omb:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-pza:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-sis:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-tce:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-tdm:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-tla:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-tle:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-tmc:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-tmt:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-van:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-40k:not(.ss-duo).ss-foil::after,
 .ss-border.ss-arc:not(.ss-duo).ss-foil::after,
@@ -1659,14 +1753,23 @@
 .ss-border.ss-dmc:not(.ss-duo).ss-foil::after,
 .ss-border.ss-drc:not(.ss-duo).ss-foil::after,
 .ss-border.ss-dsc:not(.ss-duo).ss-foil::after,
+.ss-border.ss-ecc:not(.ss-duo).ss-foil::after,
+.ss-border.ss-ecl:not(.ss-duo).ss-foil::after,
 .ss-border.ss-eos:not(.ss-duo).ss-foil::after,
 .ss-border.ss-fin:not(.ss-duo).ss-foil::after,
 .ss-border.ss-hop:not(.ss-duo).ss-foil::after,
 .ss-border.ss-inr:not(.ss-duo).ss-foil::after,
+.ss-border.ss-om1:not(.ss-duo).ss-foil::after,
+.ss-border.ss-omb:not(.ss-duo).ss-foil::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-foil::after,
+.ss-border.ss-pza:not(.ss-duo).ss-foil::after,
 .ss-border.ss-sis:not(.ss-duo).ss-foil::after,
+.ss-border.ss-tce:not(.ss-duo).ss-foil::after,
 .ss-border.ss-tdm:not(.ss-duo).ss-foil::after,
 .ss-border.ss-tla:not(.ss-duo).ss-foil::after,
+.ss-border.ss-tle:not(.ss-duo).ss-foil::after,
+.ss-border.ss-tmc:not(.ss-duo).ss-foil::after,
+.ss-border.ss-tmt:not(.ss-duo).ss-foil::after,
 .ss-border.ss-van:not(.ss-duo).ss-foil::after {
   color: #000;
 }
@@ -1758,6 +1861,26 @@
   content: "\e9dd";
   color: #000;
 }
+.ss-border.ss-ecc {
+  display: list-item;
+  list-style-position: inside;
+}
+.ss-border.ss-ecc.ss-fw {
+  text-align: revert !important;
+}
+.ss-border.ss-ecc::before {
+  content: "\ea12";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ss-border.ss-ecc::marker {
+  content: "\ea13";
+  color: #000;
+}
+.ss-border.ss-ecl:after {
+  content: "\ea05";
+}
 .ss-border.ss-eos::before {
   content: "\e9ff";
 }
@@ -1776,8 +1899,23 @@
 .ss-border.ss-inr:after {
   content: "\e9e3";
 }
+.ss-border.ss-om1::before {
+  content: "\ea0d";
+}
+.ss-border.ss-om1::after {
+  content: "\ea0e";
+}
+.ss-border.ss-omb::before {
+  content: "\ea0f";
+}
+.ss-border.ss-omb::after {
+  content: "\ea10";
+}
 .ss-border.ss-pc2:after {
   content: "\e659";
+}
+.ss-border.ss-pza:after {
+  content: "\ea09";
 }
 .ss-border.ss-sis::before {
   content: "\e9b3";
@@ -1793,13 +1931,56 @@
   list-style-position: inside;
 }
 .ss-border.ss-tla::before {
-  content: "\e9fc";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  translate: -50%;
+}
+.ss-border.ss-tla.ss-fw {
+  text-align: revert !important;
+}
+.ss-border.ss-tla.ss-fw::before {
+  left: 0;
+  translate: 0;
+}
+.ss-border.ss-tla::marker {
+  content: "\e9fd";
+  color: #000;
+}
+.ss-border.ss-tle {
+  display: list-item;
+  list-style-position: inside;
+}
+.ss-border.ss-tle.ss-fw {
+  text-align: revert !important;
+}
+.ss-border.ss-tle::before {
+  content: "\ea0a";
   position: absolute;
   left: 0;
   top: 0;
 }
-.ss-border.ss-tla::marker {
-  content: "\e9fd";
+.ss-border.ss-tle::marker {
+  content: "\ea0b";
+  color: #000;
+}
+.ss-border.ss-tmc:after {
+  content: "\ea16";
+}
+.ss-border.ss-tmt {
+  display: list-item;
+  list-style-position: inside;
+}
+.ss-border.ss-tmt.ss-fw {
+  text-align: revert !important;
+}
+.ss-border.ss-tmt::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.ss-border.ss-tmt::marker {
+  content: "\ea07";
   color: #000;
 }
 .ss-border.ss-van:after {

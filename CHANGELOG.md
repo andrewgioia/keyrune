@@ -7,31 +7,53 @@ All notable changes to this project will be documented in this file.
 * Update ONC once official, higher resolution image comes out.
 * Support apparent "tri-layered" symbols, like SNC and CBL where there's a rarity layer, a fixed white layer, and a border. These are unlike the dual-layered symbols like AFR and MID.
 * Validate all class names to handle official set codes, MODO codes, and MTGJson/community fallbacks
-* Update this changelog for better formatting 
 * Review DSK and FDN SVG files to make sure they're single layer, and update docs if needed
 
 
-## Versions
+## [3.18.0] 2025-12-10 Lorwyn Eclipsed
 
-### [3.17.1] 2025-06-23 Avatar: the Last Airbender
+### NOTE: Sass and Bower deprecations
 
-#### Added
+* This is the last release where both LESS and Sass are going to be updated, barring anyone submitting a PR to handle Sass maintenance. I much prefer Sass, but LESS is in a better spot in this project and has been the primary tested build. I sadly just need to save time where I can and maintaining 2 CSS extensions. v4 will be all Sass or just pure CSS.
+* I also deleted the bower.json file as this wasn't used in a very long time.
+
+### Added
+
+* Lorwyn Eclipsed (ECL) and Commander (ECC) set symbols ([#283](https://github.com/andrewgioia/keyrune/issues/283))
+* Avatar: the Last Airbender Eternal (TCE) set symbol ([#278](https://github.com/andrewgioia/keyrune/issues/278))
+* Teenage Mutant Ninja Turtles (TMT), TMT Source Material Cards (PZA), and TMT Eternal Legal Cards (TMC) set symbols ([#284](https://github.com/andrewgioia/keyrune/issues/284))
+* Alias of `y25` for `yeoe` ([#281](https://github.com/andrewgioia/keyrune/issues/281))
+* Strixhaven Mystical Archives Japan promo set symbol, using STA-JPN as the set code ([#276](https://github.com/andrewgioia/keyrune/issues/276))
+
+### Changed
+
+* TLA set symbol now uses the official one; there is no need to have a standalone glyph either, the regular rarity is now the default set symbol ([#286](https://github.com/andrewgioia/keyrune/issues/286))
+
+### Fixed
+
+* Typo for TLA set code in Sass map ([#277](https://github.com/andrewgioia/keyrune/issues/277))
+* SPE name in documentation is now the corrected with the "Eternal-Legal" ending ([#282](https://github.com/andrewgioia/keyrune/issues/282))
+
+
+## [3.17.1] 2025-06-23 Avatar: the Last Airbender
+
+### Added
 
 * Edge of Eternities: Stellar Sights (EOS) set symbol ([#273](https://github.com/andrewgioia/keyrune/issues/273))
 * Avatar: The Last Airbender (TLA) set symbol, along with full rarity/border/inner variants ([#274](https://github.com/andrewgioia/keyrune/issues/274))
 * Puzzle Quest (PMA), Puzzle Quest 2 (PM2), and Daxos vs Kalemne digital set symbols ([#262](https://github.com/andrewgioia/keyrune/issues/262))
 
-#### Fixed
+### Fixed
 
 * Documentation now correctly categorizes some UB sets (WHO and PIP) as Commander sets ([#230](https://github.com/andrewgioia/keyrune/issues/230))
 * FCA added to Cheatsheet ([#272](https://github.com/andrewgioia/keyrune/issues/272))
 
 
-### [3.17.0] 2025-06-08 Edge of Eternities
+## [3.17.0] 2025-06-08 Edge of Eternities
 
 Special thanks to @HeliumOctahelide for the PR and all of the work, thank you 🙏
 
-#### Added
+### Added
 
 * Tarkir Dragonstorm Commander (TDC) set symbol ([#250](https://github.com/andrewgioia/keyrune/issues/250))
 * Final Fantasy (FIN) set symbol ([#263](https://github.com/andrewgioia/keyrune/issues/263))
@@ -43,70 +65,72 @@ Special thanks to @HeliumOctahelide for the PR and all of the work, thank you �
 * Marvel Spider-Man Scene cards (SPE) set symbol ([#266](https://github.com/andrewgioia/keyrune/issues/266))
 * Marvel (MAR) set symbol ([#266](https://github.com/andrewgioia/keyrune/issues/266))
 
-#### Changed
+### Changed
 
 * Icon for Tarkir Dragonstorm (TDM) is now official, with new border glyph ([#250](https://github.com/andrewgioia/keyrune/issues/250))
 
-#### Fixed
+### Fixed
 
 * Missing SVGs for NEM, J22, LTC, and CMM are now available ([#267](https://github.com/andrewgioia/keyrune/issues/267))
 * All Alchemy aliases are now available ([#271](https://github.com/andrewgioia/keyrune/issues/271))
 
 
-### [3.16.1] 2024-12-12 Tarkir: Dragonstorm
+## [3.16.1] 2024-12-12 Tarkir: Dragonstorm
 
-#### Added
+### Added
 
 * Pioneer Masters (PIO) set symbol ([#249](https://github.com/andrewgioia/keyrune/issues/249))
 * Preliminary icon for the Tarkir: Dragonstorm (TDM) set symbol; this will be replaced when the official one comes out ([#250](https://github.com/andrewgioia/keyrune/issues/250))
 * Aetherdrift Commander (DRC) set symbol with inner and border glyphs ([#251](https://github.com/andrewgioia/keyrune/issues/251))
 * SVGs are now up to date and the improper scale of DSK and MB2 is corrected ([#260](https://github.com/andrewgioia/keyrune/issues/260))
 
-#### Changed
+### Changed
 
 * REN and RIN are now added as set codes and class names for Renaissance and Rinascimento, respectively. Previously these were `xren` and `xrin`, which are maintained for backwards compatibility, but they now have the "official" MTGJSON/Scryfall codes.
 
-#### Fixed
+### Fixed
 
 * Re-adds support for text-stroke borders by default, and manual glyph borders as an override on specific symbols. Note that .ss-border is not working well when .ss-grad is also applied, due to the way that the gradient has to be applied to the glyph (via text-clip).
 
 
-### [3.16.0] 2024-10-28 Aetherdrift
+## [3.16.0] 2024-10-28 Aetherdrift
 
-#### Added
+### Added
 
 * Aetherdrift (DFT) set symbol ([#248](https://github.com/andrewgioia/keyrune/issues/248))
 * Innistrad Remastered (INR) set symbol ([#248](https://github.com/andrewgioia/keyrune/issues/248))
 * Foundations Commander (FDC) set symbol ([#223](https://github.com/andrewgioia/keyrune/issues/233))
 
-#### Changed
+### Changed
 
 * Commander 2016 (C16) previously used the inner rarity layer as the monochrome/default set symbol. This unfortunately lost the sword pommel and much of the set symbols character, as WOTC uses nonstandard rarity/border styles for symbol images. The border is now the default monochrome set symbol and the symbol is now a dual-layered one with rarity as a separate glyph. ([#246](https://github.com/andrewgioia/keyrune/issues/246))
 
-#### Fixed
+### Fixed
 
 * Y23 and Y24 were in the font but now are documented ([#247](https://github.com/andrewgioia/keyrune/issues/247))
 * Y23 alias added for YDMU
 * Cheatsheet now has better icon font rendering so things don't look so dark
 
-#### Removed
+### Removed
 
 * `.ss-border` has been removed after realizing 1. it wasn't functional for non-duo symbols and 2. it wasn't the correct way to do it anyway. Better automatica border support for non-duo symbols coming soon.
 
-### [3.15.1] 2024-10-26 DSC, Y25, J25, and come cleanup
 
-#### Added
+## [3.15.1] 2024-10-26 DSC, Y25, J25, and come cleanup
+
+### Added
 
 * Duskmourn Commander set symbol (DSC) (Uses changes from [#244](https://github.com/andrewgioia/keyrune/pull/244). There was an issue with the assets that made it easier just to manually pull them in, plus this version includes the multilayer style with inner layer handling.
 * Alchemy 2025 (Y25) set symbol, with alias for Alchemy Bloomburror (YBLB) ([#231](https://github.com/andrewgioia/keyrune/issues/231))
 * Jumpstart 2025 (J25) set symbol ([#236](https://github.com/andrewgioia/keyrune/issues/236)). This one suffers from most of the border adding to the set symbol itself and will be much better handled in v4, but for now we're shipping a "modified" version by default to convey the border as well as an alternate `.j25a` true to the rarity layer.
 
-#### Fixed
+### Fixed
 
 * Moved FDN up to Core Sets in documentation
 * BLB unicode corrected in icons documentation ([#244](https://github.com/andrewgioia/keyrune/pull/244))
 
-### [3.15.0] 2024-08-21 FDN, DSK, and other fixes
+
+## [3.15.0] 2024-08-21 FDN, DSK, and other fixes
 
 Major thanks to @Horsty80 for the PR and patience! Thanks to @HeliumOctahelide as well for contributions.
 
@@ -117,28 +141,33 @@ Major thanks to @Horsty80 for the PR and patience! Thanks to @HeliumOctahelide a
 * **Changed:** Development dependendies in `package.json` for lessc, sass, and clean-css.
 * **Added:** New contributing guide beginnings
 
-### [3.14.1] 2024-03-04 Fixes docs for BIG, fixes .ttf for embedding
+
+## [3.14.1] 2024-03-04 Fixes docs for BIG, fixes .ttf for embedding
 
 * **Fixed:** Moved BIG to Expansions in docs ([#227](https://github.com/andrewgioia/keyrune/issues/227))
 * **Changed:** keyrune.ttf should have the correct font embeddability setting, need to test to confirm ([#201](https://github.com/andrewgioia/keyrune/issues/201))
 
-### [3.14.0] 2024-03-02 Murders at Karlov Manner and the 2024 announced sets
+
+## [3.14.0] 2024-03-02 Murders at Karlov Manner and the 2024 announced sets
 
 * **Added:** Murders at Karlov Manor (MKM), MKM Commander (MKC), and Ravnica: Clue Edition (CLU) set symbols ([#223](https://github.com/andrewgioia/keyrune/issues/223))
 * **Added:** Outlaws of Thunder Junction (OTJ), OTJ Commander (OTC), Breaking News (OTP), The Big Score (BIG), Bloomburrow (BLB), BLB Commander (BLC), Universes Beyond: Assassin's Creed (ACR), Modern Horizons III (MH3), and MH3 Commander (M3C) ([#225](https://github.com/andrewgioia/keyrune/issues/225))
 
-### [3.13.1] 2023-11-21 Fixes Sass division syntax
+
+## [3.13.1] 2023-11-21 Fixes Sass division syntax
 
 * **Merged:** Fix for Dart Sass 2.0.0 changes to division ([PR #221](https://github.com/andrewgioia/keyrune/pull/221)); thank you [@nogweii](https://github.com/nogweii)
 
-### [3.13.0] 2023-11-21 Lost Caverns of Ixalan sets plus supplementals
+
+## [3.13.0] 2023-11-21 Lost Caverns of Ixalan sets plus supplementals
 
 * **Added:** Lost Caverns of Ixalan (LCI), Lost Caverns of Ixalan Ccmmander (LCC), Jurassic World (REX), and Special Guests (SPG) set symbols added ([#216](https://github.com/andrewgioia/keyrune/issues/216))
 * **Added:** Universes Beyond: Fallout (PIP) set symbol added ([#218](https://github.com/andrewgioia/keyrune/issues/218))
 * **Changed:** Kaldheim Commander now correctly has a dual-layered symbol variant to match the printed card ([#191](https://github.com/andrewgioia/keyrune/issues/191))
 * **Fixed:** CMM added to Cheatsheet, was missing ([#219](https://github.com/andrewgioia/keyrune/issues/219))
 
-### [3.12.3] 2023-10-02 WOE supplemental sets, early 2024 products, and some alternate symbols
+
+## [3.12.3] 2023-10-02 WOE supplemental sets, early 2024 products, and some alternate symbols
 
 * **Added:** Wilds of Eldraine Enchanting Tales (WOT) set symbol ([#208](https://github.com/andrewgioia/keyrune/issues/208))
 * **Added:** Alchemy 2024 (Alchemy Wilds of Eldraine) (Y24) set symbol ([#209](https://github.com/andrewgioia/keyrune/issues/209))
@@ -150,7 +179,8 @@ Major thanks to @Horsty80 for the PR and patience! Thanks to @HeliumOctahelide a
 * **Fixed:** SVG for LTR is now in the SVG directory, as well as other missing ones ([#207](https://github.com/andrewgioia/keyrune/issues/207) [#211](https://github.com/andrewgioia/keyrune/issues/211))
 * **Fixed:** UNF is now in the Sass variables file, it was missing previously 
 
-### [3.12.2] 2023-05-26 Spring 2023 updates
+
+## [3.12.2] 2023-05-26 Spring 2023 updates
 
 * **Added:** Shadows Over Innistrad (SIR) set symbol ([#202](https://github.com/andrewgioia/keyrune/issues/202))
 * **Added:** Shadows of the Past (SIS) set symbol ([#202](https://github.com/andrewgioia/keyrune/issues/202))
@@ -165,13 +195,15 @@ Major thanks to @Horsty80 for the PR and patience! Thanks to @HeliumOctahelide a
 * **Fixed:** March of the Machine spelled correctly everywhere now ([#204](https://github.com/andrewgioia/keyrune/issues/204))
 * **Fixed:** Y22 cheatsheet symbol is now the correct symbol ([#200](https://github.com/andrewgioia/keyrune/issues/200))
 
-### [3.12.1] 2023-02-04 Hotfix for missing supplementals
+
+## [3.12.1] 2023-02-04 Hotfix for missing supplementals
 
 * **Added:** Jumpstart 2022 (J22) set symbol
 * **Added:** Commander Starter Decks (SCD) set symbol; includes inner white layer
 * **Added:** 30th Anniversary Edition (30A) alternate symbol; @todo draw official text symbol used on the cards
 
-### [3.12.0] 2023-02-03 Phyrexia: All Will Be One
+
+## [3.12.0] 2023-02-03 Phyrexia: All Will Be One
 
 This was _very late_ and I apologize to everyone relying on this project. Some of these were slated for v3.11.1 but I just pushed them into v3.12.0.
 
@@ -185,14 +217,16 @@ This was _very late_ and I apologize to everyone relying on this project. Some o
 * **Fixed:** Alchemy 2022 (A22) set symbol corrected with Beleren font for the "22." Unsure what font was used in the previous glyph or how that even happened.
 * Happy birthday, James!
 
-### [3.11.0] 2022-11-15 Brothers' War sets
+
+## [3.11.0] 2022-11-15 Brothers' War sets
 
 * **Added:** The Brothers' War (BRO) set symbol ([#195](https://github.com/andrewgioia/keyrune/issues/195))
 * **Added:** The Brothers' War Commander (BRC) set symbol ([#195](https://github.com/andrewgioia/keyrune/issues/195))
 * **Added:** The Brothers' War Retro Artifacts (BRR) set symbol ([#195](https://github.com/andrewgioia/keyrune/issues/195))
 * **Added:** The Brothers' War Transformers (BOT) set symbol ([#195](https://github.com/andrewgioia/keyrune/issues/195))
 
-### [3.10.0] 2022-05-13 Summer 2022 set symbols and typo fixes
+
+## [3.10.0] 2022-05-13 Summer 2022 set symbols and typo fixes
 
 * **Added:** Dominaria United (DMU) set symbol
 * **Added:** Dominaria United Commander (DMC) set symbol
@@ -203,23 +237,26 @@ This was _very late_ and I apologize to everyone relying on this project. Some o
 * **Fixed:** SaSS reference to J21 is no longer AFR (thanks to @ThePieBandit in [PR #185](https://github.com/andrewgioia/keyrune/pull/185))
 * **Changed:** .ss-border now uses ::marker pseudo-element for a third glyph layer; this is an experimental test for the future 4.0 release that will normalize all symbol sizes and add 1-3 layer support to correctly represent them
 
-### [3.9.2] 2022-03-26 Commander Legends: Battle for Baldur's Gate and Streets of New Capenna Commander
+
+## [3.9.2] 2022-03-26 Commander Legends: Battle for Baldur's Gate and Streets of New Capenna Commander
 
 * **Added:** Commander Legends: Battle for Baldur's Gate (CBL) set symbol, along with it's white insert dual-layered symbol ([#186](https://github.com/andrewgioia/keyrune/issues/186))
 * **Added:** Streets of New Capenna Commander (NNC) set symbol and 2 additional dual-layered symbols as an alternate ([#184](https://github.com/andrewgioia/keyrune/issues/184))
 
-### [3.9.1] 2022-03-25 Kamigawa Commander and Streets of New Capenna
+
+## [3.9.1] 2022-03-25 Kamigawa Commander and Streets of New Capenna
 
 * **Added:** Kamigawa, Neon Dynasty Commander (NEC) set symbol ([#180](https://github.com/andrewgioia/keyrune/issues/180))
 * **Added:** Streets of New Capenna (SNC) set symbol ([#184](https://github.com/andrewgioia/keyrune/issues/184))
 
-### [3.9.0] 2022-01-26 Kamigawa: Neon Dynasty, Unfinity, and Alchemy 2022
+
+## [3.9.0] 2022-01-26 Kamigawa: Neon Dynasty, Unfinity, and Alchemy 2022
 
 * **Added:** Kamigawa, Neon Dynasty (NEO) set symbol ([#178](https://github.com/andrewgioia/keyrune/issues/178))
 * **Added:** Unfinity (UNF) set symbol ([#175](https://github.com/andrewgioia/keyrune/issues/175))
 * **Added:** Alchemy 2022 (Y22) set symbol ([#176](https://github.com/andrewgioia/keyrune/issues/176))
 
-### [3.8.4] 2021-11-12 Innistrad sets and cleanup
+## [3.8.4] 2021-11-12 Innistrad sets and cleanup
 
 * **Added:** Innistrad: Midnight Hunt Commander (MIC) set symbol ([#167](https://github.com/andrewgioia/keyrune/issues/167))
 * **Added:** Innistrad: Crimson Vow Commander (VOC) set symbol ([#171](https://github.com/andrewgioia/keyrune/issues/171))
@@ -227,36 +264,43 @@ This was _very late_ and I apologize to everyone relying on this project. Some o
 * **Fixed:** Individual SVG filenames corrected and missing images added ([#168](https://github.com/andrewgioia/keyrune/issues/168))
 * **Fixed:** CDN now at latest and font has the corrected/latest version
 
-### [3.8.3] 2021-07-31 Jumpstart: Historic Horizons
+
+## [3.8.3] 2021-07-31 Jumpstart: Historic Horizons
 
 * **Added:** preliminary trace of a very low res source J21 symbol
 
-### [3.8.2] 2021-07-15 Forgotten Realms Commander
+
+## [3.8.2] 2021-07-15 Forgotten Realms Commander
 
 * **Added:** Adventures in the Forgotten Realms Commander (AFC) set symbol ([#163](https://github.com/andrewgioia/keyrune/issues/163))
 
-### [3.8.1] 2021-07-06 Adds mising SVGs and corrects CDN
+
+## [3.8.1] 2021-07-06 Adds mising SVGs and corrects CDN
 
 * **Fixed:** added missing SVG files for recent set symbols
 * **Fixed:** the @latest url scheme in the CDN wasn't working well (caching issues), assets are loaded locally now for faster visual updates after releases ([#162](https://github.com/andrewgioia/keyrune/issues/162))
 
-### [3.8.0] 2021-07-06 Strixhaven Mystical Archives and Commander 2021
+
+## [3.8.0] 2021-07-06 Strixhaven Mystical Archives and Commander 2021
 
 * **Added:** Strixhaven Mystical Archive (STA) set symbol ([#156](https://github.com/andrewgioia/keyrune/issues/156))
 * **Added:** Commander 2021 (C21) set symbol ([#161](https://github.com/andrewgioia/keyrune/issues/161))
 * **Fixed:** dual-layer typo corrected
 
-### [3.7.2] 2021-02-19 Kaldheim Commander
+
+## [3.7.2] 2021-02-19 Kaldheim Commander
 
 * **Added:** Kaldheim Commander (KHC) ([#152](https://github.com/andrewgioia/keyrune/issues/152))
 * **Fixed:** MP1 had an errant stroke in the SVG, this is removed now! ([#154](https://github.com/andrewgioia/keyrune/issues/154))
 
-### [3.7.1] 2020-12-11 Kaladesh Remastered
+
+## [3.7.1] 2020-12-11 Kaladesh Remastered
 
 * **Added:** Kaladesh Remastered (KLR) ([#151](https://github.com/andrewgioia/keyrune/issues/151))
 * **Fixed:** Set codes for Kaldheim (KHM) and Strixhaven (STX) are now official ([#149](https://github.com/andrewgioia/keyrune/issues/149))
 
-### [3.7.0] 2020-09-02 2021 symbols and new dual-layered support!
+
+## [3.7.0] 2020-09-02 2021 symbols and new dual-layered support!
 
 This is a big update with all of the recently announced 2021 sets (major thanks to @csuhta and @scryfall). This also begins support for the dual-layered symbols (like M21, though that hasn't been fixed yet) where the border and fill are 2 separate layers.
 
@@ -270,54 +314,64 @@ This is a big update with all of the recently announced 2021 sets (major thanks 
 * **Added:** Innistrad Werewolves (preliminary code xIN4) ([#141](https://github.com/andrewgioia/keyrune/issues/141))
 * **Added:** new support for 2 dual-layered symbols, xDND and xIN4. Now if you add `.ss-duo` to these symboles they'll use the border glyph to properly represent these print layers (where the inner is the gradient/colorized portion and the border is black or white) (partly addressing [#119](https://github.com/andrewgioia/keyrune/issues/119))
 
-### [3.6.8] 2020-08-28 Adds all missing SVGs
+
+## [3.6.8] 2020-08-28 Adds all missing SVGs
 
 * **Fixed:** Forgot to add some SVGs, that folder is current now
 
-### [3.6.7] 2020-08-28 Amonkhet Remastered, Mystery Booster
+
+## [3.6.7] 2020-08-28 Amonkhet Remastered, Mystery Booster
 
 * **Added:** Arena's Amonkhet Remastered (AKR) added ([#132](https://github.com/andrewgioia/keyrune/issues/132))
 * **Added:** Mystery Booster (MB1) uses Scryfall's planeswalker symbol ([#130https://github.com/andrewgioia/keyrune/issues/130]())
 * **Changed:** aliases for Secret Lair sets (SLU and SLD) added to `.pmei` ([#131](https://github.com/andrewgioia/keyrune/issues/131))
 * **Fixed:** Zendikar Rising set code fixed to ZNR ([#135](https://github.com/andrewgioia/keyrune/issues/135))
 
-### [3.6.6] 2020-06-17 Core 2021, Jumpstart, Double Masters, Signature Spellbook: Chandra
+
+## [3.6.6] 2020-06-17 Core 2021, Jumpstart, Double Masters, Signature Spellbook: Chandra
 
 * **Added:** Long overdue, sorry! Core Set 2021 (M21) and Jumpstart symbols added ([#123](https://github.com/andrewgioia/Keyrune/issues/123))
 * **Added:** Signature Spellbook: Chandra (SS3) set symbol ([#124](https://github.com/andrewgioia/Keyrune/issues/124))
 * **Added:** Double Masters (2XM) set symbol added ([#121](https://github.com/andrewgioia/Keyrune/issues/121))
 * **Fixed:** I had the symbol (a while ago) for Jumpstart as M21 oddly, that's now fixed
 
-### [3.6.5] 2020-04-02 Unsanctioned
+
+## [3.6.5] 2020-04-02 Unsanctioned
 
 * **Added:** Unsanctioned (UND) set symbol added, traced from low-ish resolution image on Gatherer ([#112](https://github.com/andrewgioia/Keyrune/issues/112))
 
-### [3.6.4] 2020-04-02 Ikoria: Lair of Behemoths has the correct set code 
+
+## [3.6.4] 2020-04-02 Ikoria: Lair of Behemoths has the correct set code 
 
 * **Changed:** xIKR is now corrected to IKO as the set code for Ikoria: Lair of Behemoths.
 
-### [3.6.3] 2019-12-04 Judge Academy 2020 and Historic Anthology symbols 
+
+## [3.6.3] 2019-12-04 Judge Academy 2020 and Historic Anthology symbols 
 
 * **Added:** Judge Academy 2020 Promo (J20) set symbol, announced today ([#110](https://github.com/andrewgioia/Keyrune/issues/110))
 * **Added:** Historic Anthology (HA1) set symbol, Arena only currently; the code is unofficial ([#108](https://github.com/andrewgioia/Keyrune/issues/108))
 * **Added:** new aliases for Secret Lair Drop Series (SLD) and Heroes of the Realm 2017 (HTR17), for the PMEI symbol ([#109](https://github.com/andrewgioia/Keyrune/issues/109))
 
-### [3.6.2] 2019-10-31 Symbols for 2020 Commander products 👻
+
+## [3.6.2] 2019-10-31 Symbols for 2020 Commander products 👻
 
 * **Added:** Ikoria: Commander Decks (C20), for release 4/24/20
 * **Added:** Zendikar Rising: Commander Decks (ZNC), for release 2020 Q3
 * **Added:** Commander Collection: Green (CC1), for release 2020 Q3
 * **Added:** Commander Legends (CMR) and its accompanying decks (CMC), for release 2020 Q4
 
-### [3.6.1] 2019-10-30 License revisions
+
+## [3.6.1] 2019-10-30 License revisions
 
 * **Added:** CHANGELOG.md file added and changes removed from README.md.
 * **Changed:** Fonts now issued under OFL 1.1 and package under GPL 3.0.
 
-### [3.6.0] 2019-10-30 Unofficial symbols for 2020 main sets
+
+## [3.6.0] 2019-10-30 Unofficial symbols for 2020 main sets
 
 * **Added:** Unofficial symbols for Theros: Beyond Death (THB), Ikoria: Lair of Behemoths (placeholder xIKR), Core 2021 (placeholder M21), Zendikar Rising (placeholder xZNR), promo Ponies: the Gathering (PTG), and Game Night 2019 (GN2).
 * **Changed:** ELD updated with official symbols.
+
 
 ### Previous (to fix)
 
