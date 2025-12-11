@@ -1,0 +1,98 @@
+name: Docs Preview (PR)
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write
+
+concurrency:
+  group: docs-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build docs
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build docs (npm run publish)
+        run: npm run publish
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./docs
+
+  deploy:
+    name: Deploy PR preview
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages (preview)
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          # mark this as a preview deployment for a PR
+          preview: true
+
+  comment:
+    name: Comment preview URL on PR
+    needs: deploy
+    runs-on: ubuntu-latest
+    # only run if we actually got a URL, and only for same-repo PRs (forks have restricted tokens)
+    if: >
+      needs.deploy.outputs.page_url != '' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+
+    steps:
+      - name: Find existing docs preview comment
+        id: find-comment
+        uses: peter-evans/find-comment@v4
+        with:
+          issue-number: ${{ github.event.pull_request.number }}
+          comment-author: 'github-actions[bot]'
+          body-includes: 'Keyrune docs preview'
+
+      - name: Create or update docs preview comment
+        uses: peter-evans/create-or-update-comment@v5
+        with:
+          comment-id: ${{ steps.find-comment.outputs.comment-id }}
+          issue-number: ${{ github.event.pull_request.number }}
+          body: |
+            🔍 **Keyrune docs preview**
+
+            Preview URL: ${{ needs.deploy.outputs.page_url }}
+
+            - Source branch: `${{ github.head_ref }}`
+            - Target branch: `${{ github.base_ref }}`
+            - Commit: `${{ github.sha }}`
+            - Workflow run: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            _This comment will update automatically when new commits are pushed to this PR._
+          edit-mode: replace
