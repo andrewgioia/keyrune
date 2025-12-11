@@ -7,22 +7,20 @@ on:
       - master
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
-  pull-requests: write
+  contents: write         # push to gh-pages
+  pull-requests: write    # create/update PR comment
 
 concurrency:
   group: docs-preview-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build docs
+  build-and-deploy-preview:
+    name: Build & deploy PR preview
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout PR branch
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -34,41 +32,24 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build docs (npm run publish)
+      - name: Build docs
         run: npm run publish
 
-      - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy preview to gh-pages/pr-<number>/
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ./docs
-
-  deploy:
-    name: Deploy PR preview
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    outputs:
-      page_url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy to GitHub Pages (preview)
-        id: deployment
-        uses: actions/deploy-pages@v4
-        with:
-          # mark this as a preview deployment for a PR
-          preview: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./docs
+          destination_dir: pr-${{ github.event.pull_request.number }}
+          keep_files: true
 
   comment:
     name: Comment preview URL on PR
-    needs: deploy
+    needs: build-and-deploy-preview
     runs-on: ubuntu-latest
-    # only run if we actually got a URL, and only for same-repo PRs (forks have restricted tokens)
-    if: >
-      needs.deploy.outputs.page_url != '' &&
-      github.event.pull_request.head.repo.full_name == github.repository
+    # only for same-repo PRs (no forks)
+    if: github.event.pull_request.head.repo.full_name == github.repository
 
     steps:
       - name: Find existing docs preview comment
@@ -87,7 +68,7 @@ jobs:
           body: |
             🔍 **Keyrune docs preview**
 
-            Preview URL: ${{ needs.deploy.outputs.page_url }}
+            Preview URL: https://keyrune.andrewgioia.com/pr-${{ github.event.pull_request.number }}/
 
             - Source branch: `${{ github.head_ref }}`
             - Target branch: `${{ github.base_ref }}`
