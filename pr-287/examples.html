@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <title>Examples | Keyrune</title>
+    <link rel="stylesheet" href="assets/keyrune.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/docs.css" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+</head>
+<body>
+
+    <section id="banner">
+        <div class="wrapper">
+            <a href="index.html" class="logo"><i class="ss ss-leg"></i> Keyrune</a>
+            <a href="index.html" class="item">Home</a>
+            <a href="icons.html" class="item">Set Icons</a>
+            <a href="examples.html" class="item">Examples</a>
+            <a href="http://github.com/andrewgioia/Keyrune" class="item">GitHub Project</a>
+            <span class="item">
+                <iframe src="https://ghbtns.com/github-btn.html?user=andrewgioia&repo=keyrune&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px" style="margin-bottom: -4px;"></iframe>
+            </span>
+            <span class="item">
+                Created by
+                <a href="http://andrewgioia.com">Andrew Gioia</a>
+            </span>
+        </div>
+    </section>
+
+    <header>
+        <div class="wrapper">
+            <h1 class="sub">Options &amp; Examples</h1>
+            <a class="dl button float-right" href="https://github.com/andrewgioia/Keyrune/archive/master.zip">
+                <i class="ss ss-pmtg2"></i>
+                Download
+            </a>
+            <h2 class="sub">Built-in size, position, and rarity options</h2>
+        </div>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <section>
+                <h3><strong>Keyrune</strong> has some built in icon options to easily change the <strong>size, position, and rarity color</strong> of the set symbols. Take a look below at examples of each option with the class names to implement them.</h3>
+            </section>
+            <section class="content">
+                <h4>Displaying a Set Icon</h4>
+                <div class="example float-left">
+                    <i class="ss ss-zen"></i> ss-zen
+                </div>
+                <div class="explanation">
+                    <p>You can place Keyrune icons anywhere using the CSS classname prefix <code>ss</code> (for set symbol) and then the set icon's code. Inline elements like <code>&lt;i&gt;</code> and <code>&lt;span&gt;</code> are preferred, but any can be used.</p>
+                    <blockquote>
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-zen"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-zen
+                    </blockquote>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section class="content">
+                <h4>Icon Sizes</h4>
+                <div class="example float-left">
+                    <span class="each"><i class="ss ss-sth ss-2x"></i> ss-2x</span>
+                    <span class="each"><i class="ss ss-sth ss-3x"></i> ss-3x</span>
+                    <span class="each"><i class="ss ss-sth ss-4x"></i> ss-4x</span>
+                    <span class="each"><i class="ss ss-sth ss-5x"></i> ss-5x</span>
+                    <span class="each"><i class="ss ss-sth ss-6x"></i> ss-6x</span>
+                </div>
+                <div class="explanation">
+                    <p>To conveniently increase the size of a set symbol you can append the classes <code>ss-2x</code>, <code>ss-3x</code>, <code>ss-4x</code>, <code>ss-5x</code>, and <code>ss-6x</code>. These classes increase the size by a factor equal to class name number.</p>
+                    <blockquote>
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-sth ss-2x"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-2x<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-sth ss-3x"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-3x<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-sth ss-4x"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-4x<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-sth ss-5x"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-5x<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-sth ss-6x"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-6x
+                    </blockquote>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section class="content">
+                <h4>Fixed Width</h4>
+                <div class="example float-left">
+                    <div style="padding-bottom: 5px;">Fixed width:</div>
+                    <span class="each"><i class="ss ss-inv ss-fw"></i> Invasion</span>
+                    <span class="each"><i class="ss ss-nms ss-fw"></i> Nemesis</span>
+                    <div style="padding: 15px 0 5px;">Default (to compare):</div>
+                    <span class="each"><i class="ss ss-inv"></i> Invasion</span>
+                    <span class="each"><i class="ss ss-nms"></i> Nemesis</span>
+                </div>
+                <div class="explanation">
+                    <p>All of the set symbols are variable width by default, if you put them in a list they may stack irregularly. To fix their width just append the class <code>.ss-fw</code> and the set symbols will have a constant width and centered icon.</p>
+                    <blockquote>
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-inv ss-fw"</span>&gt;&lt;/<span class="e">i</span>&gt; Invasion<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-nms ss-fw"</span>&gt;&lt;/<span class="e">i</span>&gt; Nemesis
+                    </blockquote>
+                </div>
+                <div class="clear"></div>
+            </section>
+            <section class="content">
+                <h4>Rarity Colors</h4>
+                <div class="example float-left">
+                    <span class="each"><i class="ss ss-fw ss-ons ss-common"></i> ss-common</span>
+                    <span class="each"><i class="ss ss-fw ss-ons ss-uncommon"></i> ss-uncommon</span>
+                    <span class="each"><i class="ss ss-fw ss-ons ss-rare"></i> ss-rare</span>
+                    <span class="each"><i class="ss ss-fw ss-ons ss-mythic"></i> ss-mythic</span>
+                    <span class="each"><i class="ss ss-fw ss-tsp ss-timeshifted"></i> ss-timeshifted</span>
+                </div>
+                <div class="explanation">
+                    <p>You can add a rarity color to each set symbol by appending the classes <code>ss-common</code>, <code>ss-uncommon</code>, <code>ss-rare</code>, and <code>ss-mythic</code>.</p>
+                    <blockquote>
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-ons ss-common"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-common<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-ons ss-uncommon"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-uncommon<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-ons ss-rare"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-rare<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-ons ss-mythic"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-mythic<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-tsp ss-timeshifted"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-timeshifted
+                    </blockquote>
+                </div>
+                <div class="clear"></div>
+                <div class="example float-left">
+                    <span class="each"><i class="ss ss-mor ss-rare ss-grad ss-3x"></i> ss-grad</span>
+                    <span class="each">&nbsp;<i class="ss ss-tsp ss-timeshifted ss-grad ss-3x"></i> ss-grad</span>
+                    <span class="each"><i class="ss ss-isd ss-foil ss-grad ss-3x"></i> ss-foil</span>
+                </div>
+                <div class="explanation">
+                    <p>Webkit browsers suport the <code>background-clip: text</code> property which opens up some exciting options for rarities: true text gradients! Append the <code>.ss-grad</code> class to add a modern rarity gradient.</p>
+                    <blockquote>
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-mor ss-rare ss-grad ss-3x"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-grad<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-tsp ss-timeshifted ss-grad ss-3x"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-grad<br />
+                        &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-isd ss-foil ss-grad ss-3x"</span>&gt;&lt;/<span class="e">i</span>&gt; ss-foil<br />
+                    </blockquote>
+                    <p><strong>Note:</strong> You will only see a gradient while using a Webkit browser (i.e., Chrome or Safari).</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="float-left">
+                <p>Made with &hearts; by <a href="http://andrewgioia.com">Andrew Gioia</a></p>
+            </div>
+            <div class="float-right" style="text-align: right;">
+                <p>
+                    All set images &copy; <a href="http://magicthegathering.com">Wizards of the Coast</a><br />
+                    The Keyrune font is licensed under the the <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a><br />
+                    Keyrune CSS, LESS, and Sass files are licensed under the <a href="http://opensource.org/licenses/mit-license.html">MIT License</a><br />
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+
+</body>
+</html>
