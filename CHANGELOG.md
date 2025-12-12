@@ -24,6 +24,7 @@ All notable changes to this project will be documented in this file.
 * Teenage Mutant Ninja Turtles (TMT), TMT Source Material Cards (PZA), and TMT Eternal Legal Cards (TMC) set symbols ([#284](https://github.com/andrewgioia/keyrune/issues/284))
 * Alias of `y25` for `yeoe` ([#281](https://github.com/andrewgioia/keyrune/issues/281))
 * Strixhaven Mystical Archives Japan promo set symbol, using STA-JPN as the set code ([#276](https://github.com/andrewgioia/keyrune/issues/276))
+* New Github Actions workflows for handling the documentation website and PR previews.
 
 ### Changed
 
