@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <title>Keyrune | Andrew Gioia</title>
+    <link rel="stylesheet" href="assets/keyrune.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/docs.css" type="text/css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+</head>
+<body>
+    <section id="banner">
+        <div class="wrapper">
+            <a href="index.html" class="item">Home</a>
+            <a href="icons.html" class="item">Set Icons</a>
+            <a href="examples.html" class="item">Examples</a>
+            <a href="http://github.com/andrewgioia/Keyrune" class="item">GitHub Project</a>
+            <span class="item">
+                <iframe src="https://ghbtns.com/github-btn.html?user=andrewgioia&repo=keyrune&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px" style="margin-bottom: -4px;"></iframe>
+            </span>
+            <span class="item">
+                Created by
+                <a href="https://andrewgioia.com">Andrew Gioia</a>
+            </span>
+        </div>
+    </section>
+    <header class="main">
+        <div class="wrapper">
+            <div class="bigicon">
+                <i class="ss ss-leg"></i>
+            </div>
+            <h1>Keyrune</h1>
+            <h2>Magic: the Gathering set symbol font</h2>
+            <div class="actions">
+                <a class="dl button" href="https://github.com/andrewgioia/Keyrune/archive/master.zip">
+                    <i class="ss ss-pmtg2"></i>
+                    Download
+                </a>
+                <a class="vs button" href="icons.html">
+                    <i class="ss ss-mmq"></i>
+                    View Set Icons
+                </a>
+            </div>
+            <p>
+                Current version 3.18.0 includes all sets to Lorwyn Eclipsed.
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <section>
+                <h3><strong>Keyrune is a complete set of scalable vector icons for Magic set symbols.</strong> Drop them into your application, website, or custom cards (like this <i class="ss ss-tmp"></i>) and control their size, color, drop shadow, or any dimension just as you would with text!</h3>
+            </section>
+            <section class="content">
+                <h4>Using Keyrune in your project</h4>
+                <p>Keyrune is CSS and font package you can use in your project to easily display MTG set symbols as font icons. You can download the source and manually include it in your application, or include it via Bower or NPM (project name "keyrune" for both).</p>
+                <p>Each set symbol has its own font character. Display them in a manner similar to <a href="http://fontawesome.io">Font Awesome</a> using the <code>&lt;i class="ss ss-exp"&gt;&lt;/i&gt;</code> element. Class name codes are based on the expansion codes from <a href="http://mtgjson.com">MTG JSON</a>.</p>
+                <h5>Including Keyrune in your project</h5>
+                <p>To use Keyrune, move the font files to your /fonts directory and include the <code>keyrune.css</code> stylesheet in your <code>&lt;head&gt;</code>:</p>
+                <blockquote>
+                    &lt;<span class="e">link</span> <span class="a">href</span>=<span class="v">"css/keyrune.css"</span> <span class="a">rel</span>=<span class="v">"stylesheet"</span> <span class="a">type</span>=<span class="v">"text/css"</span> /&gt;
+                </blockquote>
+                <p><strong>New!</strong> You can also now use Keyrune via CDN thanks to the amazing <a href="https://jsdelivr.com">jsDelivr</a> project! Include the latest version, reference:</p>
+                <blockquote>
+                    &lt;<span class="e">link</span> <span class="a">href</span>=<span class="v">"//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.css"</span> <span class="a">rel</span>=<span class="v">"stylesheet"</span> <span class="a">type</span>=<span class="v">"text/css"</span> /&gt;
+                </blockquote>
+                <p><strong>Note:</strong> as of v3.1.1 (June 2017) the URL structure at jsDelivr changed to the above. Also, you do not need to explicitly include the font-family via @font-face, but if you still would like to here is the css ruleset:</p>                <blockquote>
+                    &lt;<span class="e">link</span> <span class="a">href</span>="<span class="v">//cdn.jsdelivr.net/npm/keyrune@latest/css/keyrune.min.css</span>" <span class="a">rel</span>="<span class="v">stylesheet</span>" <span class="a">type</span>="<span class="v">text/css</span>" /&gt;<br />
+                    &lt;<span class="e">style</span> <span class="a">type</span>="<span class="v">text/css</span>"&gt;<br />
+                    &nbsp;&nbsp;<span class="a">@font-face</span> {<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-family: '<span class="e">Keyrune</span>';<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;src: <span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.eot</span>');<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;src: <span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.eot?#iefix</span>') <span class="v">format</span>('<span class="e">embedded-opentype</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.woff2</span>') <span class="v">format</span>('<span class="e">woff2</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.woff</span>') <span class="v">format</span>('<span class="e">woff</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.ttf</span>') <span class="v">format</span>('<span class="e">truetype</span>'),<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="v">url</span>('<span class="e">//cdn.jsdelivr.net/npm/keyrune@latest/fonts/keyrune.svg</span>') <span class="v">format</span>('<span class="e">svg</span>');<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-weight: <span class="o">normal</span>;<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-style: <span class="o">normal</span>;<br />
+                    &nbsp;&nbsp;}<br />
+                    &lt;/<span class="e">style</span>&gt;
+                </blockquote>
+                <h5>Creating icons in your project</h5>
+                <p>Insert set symbol icons by using the <code>.ss</code> class and then the set code class, such as <code>.ss-mor</code> for Morningtide: <i class="ss ss-mor"></i></p>
+                <blockquote>
+                    &lt;<span class="e">i</span> <span class="a">class</span>=<span class="v">"ss ss-mor"</span>&gt;&lt;/<span class="e">i</span>&gt;
+                </blockquote>
+            </section>
+            <section class="content">
+                <h4>Using Keyrune in desktop software</h4>
+                <p>You can also install Keyrune just like you would with any font, for use in desktop applications like Word, Pages, or Illustrator. This can be useful if you're designing and printing binder covers or set dividers.</p>
+                <p><strong>Note:</strong> For those unfamiliar with CSS projects like this, none of the styling in the documentation will be available when using Keyrune in a desktop app&mdash;you have to style everything manually like you would with any other font or "Word Art", for instance.</p>
+                <p>Follow these steps to work with Keyrune on your desktop:</p>
+                <ol>
+                    <li><strong>Install the Keyrune font.</strong> To do this, click the "Download" button above, unzip the archive that downloads, then navigate to Keyrune-master/fonts. Double click on <strong>keyrune.ttf</strong> and install it.</li>
+                    <li><strong>Open up your desktop application.</strong> Check to see that "Keyrune" shows up in your list of available fonts.</li>
+                    <li><strong>Go to the <a href="cheatsheet.html">Cheatsheet</a>.</strong> Copy the symbol that you want to use and then paste it into the application you're using. You should see it show up correctly in there, with the font "Keyrune" active. You can't "type" this font like you would with any other (like Times New Roman), as it uses a reserved character set; you can only copy and paste from the Cheatsheet.</li>
+                    <li><strong>Style the symbol however you want.</strong> Unfortunately you're going to have to do this manually :( I've created a <a href="https://www.dropbox.com/s/gp45uuuejfy089n/Keyrune_desktop_example.docx?dl=1">sample Word document</a> that you can use as a reference with rare Urza's Saga, mythic Morningtide, and uncommon Mercadian Masques symbols as examples. In that doc, each symbol has a 2.5pt black border (on 144pt font) and a gradient applied to each one for their rarities.</li>
+                </ol>
+                <p>Every time new set symbols are added to Keyrune you need to reinstall the keyrune.ttf. If you don't see the updated glyphs, try uninstalling the font first and then installing it.</p>
+                <p>Feel free to use the font and symbols however you like in your project, subject to the license terms below.</p>
+            </section>
+            <section class="content">
+                <h4>Editing the Source</h4>
+                <p>Feel free to edit the source files and compile Keyrune to fit your needs. All SVG glyphs are compiled into font files using the wonderful <a href="http://icomoon.io">IcoMoon</a> app. For styling, currently LESS is supported with Sass coming soon.</p>
+            </section>
+            <section class="content">
+                <h4>License</h4>
+                <p>Please review the following licenses for each component of Keyrune:</p>
+                <ul>
+                    <li>All set symbol images are copyright Wizards of the Coast (<a href="http://magicthegathering.com">http://magicthegathering.com</a>)</li>
+                    <li>The Keyrune font is licensed under the the SIL OFL 1.1 (<a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a>)</li>
+                    <li>Keyrune CSS, LESS, Sass, and other project files are licensed under the GPL 3.0 License at (<a href="https://opensource.org/licenses/GPL-3.0">https://opensource.org/licenses/GPL-3.0</a>)</li>
+                </ul>
+                <p>Attribution is <strong>greatly appreciated</strong> but not required!</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="float-left">
+                <p>Made with &hearts; by <a href="http://andrewgioia.com">Andrew Gioia</a></p>
+            </div>
+            <div class="float-right" style="text-align: right;">
+                <p>
+                    All set images &copy; <a href="http://magicthegathering.com">Wizards of the Coast</a><br />
+                    The Keyrune font is licensed under the the <a href="http://scripts.sil.org/OFL">SIL OFL 1.1</a><br />
+                    Keyrune CSS, LESS, Sass, and other project files are licensed under the <a href="https://opensource.org/licenses/GPL-3.0">GPL 3.0 License</a><br />
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </footer>
+</body>
+</html>
