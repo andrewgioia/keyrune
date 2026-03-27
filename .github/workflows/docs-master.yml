@@ -4,19 +4,18 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: pages-production
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build docs
+  build-and-deploy:
+    name: Build and deploy docs
     runs-on: ubuntu-latest
 
     steps:
@@ -35,21 +34,11 @@ jobs:
       - name: Build docs site
         run: npm run publish
 
-      # upload the built docs as the GitHub Pages artifact
-      - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy production docs to gh-pages root
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ./docs
-
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./docs
+          keep_files: true
+          cname: keyrune.andrewgioia.com
