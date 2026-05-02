@@ -10,6 +10,16 @@ All notable changes to this project will be documented in this file.
 * Review DSK and FDN SVG files to make sure they're single layer, and update docs if needed
 
 
+## [3.19.0] 2026-05-02 Secrets of Strixhaven
+
+### Added
+
+* Secrets of Strixhaven (SOS), SOS Commander (SOC), and Mystical Archive bonus sheet (SOA) set symbols ([#289](https://github.com/andrewgioia/keyrune/issues/289))
+* The Hobbit (HOB), Hobbit Commander (HOC), and Reality Fracture (FRA) set symbols ([#296](https://github.com/andrewgioia/keyrune/issues/296))
+* Marvel Super Heroes (MSH) and MSH Commander (MSC) set symbols ([#288](https://github.com/andrewgioia/keyrune/issues/288))
+* Alchemy 2026 (y26) set symbol ([#291](https://github.com/andrewgioia/keyrune/issues/291))
+
+
 ## [3.18.0] 2025-12-10 Lorwyn Eclipsed
 
 ### NOTE: Sass and Bower deprecations

@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.18.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.18.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.18.0') format('woff2'), url('../fonts/keyrune.woff?v=3.18.0') format('woff'), url('../fonts/keyrune.ttf?v=3.18.0') format('truetype'), url('../fonts/keyrune.svg?v=3.18.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.19.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.19.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.19.0') format('woff2'), url('../fonts/keyrune.woff?v=3.19.0') format('woff'), url('../fonts/keyrune.ttf?v=3.19.0') format('truetype'), url('../fonts/keyrune.svg?v=3.19.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -152,11 +152,15 @@
   content: "\e990";
 }
 .ss-duo.ss-otc::after {
-  content: "\e9d3";
+  content: "\ea1d";
   color: #fff !important;
 }
 .ss-duo.ss-scd::after {
   content: "\e9ac";
+}
+.ss-duo.ss-soc::after {
+  content: "\ea1d";
+  color: #fff !important;
 }
 .ss-duo.ss-spm::after {
   content: "\e9f2";
@@ -730,6 +734,18 @@
 .ss-tmt:before {
   content: "\ea06";
 }
+.ss-sos:before {
+  content: "\ea18";
+}
+.ss-msh:before {
+  content: "\ea1a";
+}
+.ss-hob:before {
+  content: "\ea19";
+}
+.ss-fra:before {
+  content: "\ea22";
+}
 /**
  * Command Zone */
 .ss-van:before {
@@ -902,6 +918,15 @@
 .ss-tmc:before {
   content: "\ea15";
 }
+.ss-soc:before {
+  content: "\ea1c";
+}
+.ss-hoc:before {
+  content: "\ea1e";
+}
+.ss-msc:before {
+  content: "\ea1f";
+}
 /**
  * Reprint */
 .ss-chr:before {
@@ -1013,6 +1038,9 @@
 }
 .ss-mar:before {
   content: "\e9f9";
+}
+.ss-soa:before {
+  content: "\ea20";
 }
 /**
  * Beginner */
@@ -1360,6 +1388,9 @@
 .ss-sta-jpn:before {
   content: "\e9fc";
 }
+.ss-soa-jpn:before {
+  content: "\ea21";
+}
 /**
  * Secret Lairs */
 .ss-slu:before {
@@ -1474,6 +1505,9 @@
 }
 .ss-omb:before {
   content: "\ea10";
+}
+.ss-y26:before {
+  content: "\ea1b";
 }
 /**
  * Un-serious */
