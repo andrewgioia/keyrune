@@ -19,6 +19,10 @@ All notable changes to this project will be documented in this file.
 * Marvel Super Heroes (MSH) and MSH Commander (MSC) set symbols ([#288](https://github.com/andrewgioia/keyrune/issues/288))
 * Alchemy 2026 (y26) set symbol ([#291](https://github.com/andrewgioia/keyrune/issues/291))
 
+### Fixed
+
+* Aliases for PSAL and PHUK added for PSALVAT05 ([#292](https://github.com/andrewgioia/keyrune/issues/292))
+
 
 ## [3.18.0] 2025-12-10 Lorwyn Eclipsed
 
