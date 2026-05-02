@@ -1,7 +1,7 @@
 {
   "name": "keyrune",
   "description": "Keyrune",
-  "version": "3.18.0",
+  "version": "3.19.0",
   "author": {
     "name": "Andrew Gioia",
     "email": "andrew@gioia.email",
@@ -25,7 +25,6 @@
   "devDependencies": {
     "clean-css": "^5.3.3",
     "lessc": "^1.0.2",
-    "sass": "^1.77.8",
     "zepto": "^1.2.0"
   },
   "license": "(OFL-1.1 AND GPL-3.0-only)",
@@ -33,9 +32,6 @@
   "scripts": {
     "less": "lessc less/keyrune.less css/keyrune.css",
     "lessmin": "lessc --clean-css less/keyrune.less css/keyrune.min.css",
-    "sass": "sass sass/keyrune.scss css/keyrune.css --style=expanded",
-    "sassmin": "sass sass/keyrune.scss css/keyrune.css --style=compressed",
-    "watch": "sass --no-source-map --watch sass/keyrune.scss css/keyrune.css --style=expanded",
     "build": "rsync -avzh ./fonts/* ./docs/fonts/ && rsync -avzh css/keyrune.min.css docs/assets/keyrune.min.css",
     "rename": "for f in fonts/*; do lower=$(echo \"$f\" | tr '[:upper:]' '[:lower:]'); if [ \"$f\" != \"$lower\" ]; then mv -v \"$f\" \"$lower\"; fi; done",
     "publish": "npm run less && npm run lessmin && npm run rename && npm run build"
