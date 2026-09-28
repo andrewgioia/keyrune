@@ -21,11 +21,13 @@
   "keywords": [],
   "homepage": "https://keyrune.andrewgioia.com",
   "devDependencies": {
+    "ajv": "^8.20.0",
     "browser-sync": "^3.0.4",
     "chokidar": "^4.0.3",
     "clean-css": "^5.3.3",
     "concurrently": "^9.2.1",
-    "less": "^4.4.1"
+    "less": "^4.4.1",
+    "parse5": "^8.0.1"
   },
   "license": "(OFL-1.1 AND GPL-3.0-only)",
   "main": "css/keyrune.css",
@@ -41,7 +43,9 @@
     "test": "node --test scripts/*.test.mjs",
     "prepack": "npm run build && npm run check",
     "serve:valet": "browser-sync start --config scripts/browser-sync.valet.cjs",
-    "dev:valet": "npm run build && concurrently --kill-others --names watch,valet \"npm:watch\" \"npm:serve:valet\""
+    "dev:valet": "npm run build && concurrently --kill-others --names watch,valet \"npm:watch\" \"npm:serve:valet\"",
+    "manifest:check": "node scripts/manifest.mjs",
+    "manifest:import": "node scripts/import-manifest.mjs"
   },
   "bugs": {
     "url": "https://github.com/andrewgioia/keyrune/issues",

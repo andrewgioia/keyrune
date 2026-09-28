@@ -1,0 +1,4199 @@
+{
+  "phase": 1,
+  "policy": "Candidate metadata preserves rendered docs labels; glyph assignments preserve current LESS. Findings are recorded for review before phase 2 changes outputs.",
+  "sourceHashes": {
+    "less/icons.less": "02d92ecaa8175716f6b1c685becd556c6ac79b54dba09ac5e29899231cfaeecf",
+    "less/duo.less": "cc6e8d2bf6317ead57024a7030c70950ee8fa1bb838bbbcab5a02652212fe90e",
+    "less/border.less": "3fd29a79adfe1dec95490559bc8eb34f1c747d4d3ea122ac0461d27c35a638c9",
+    "docs/icons.html": "f7c69277fd2f55a127a51865d8bcf2acd20cada5897d94b60245f82b5cfb0a1d",
+    "docs/cheatsheet.html": "2416c0afc5d09b0f4301176a88e6c2f2f654a3e278ca2687bfac44d11570cca9"
+  },
+  "counts": {
+    "publicClasses": 429,
+    "iconCards": 396,
+    "cheatsheetEntries": 453,
+    "catalogEntries": 397
+  },
+  "issues": [
+    {
+      "id": "alias:slu:1",
+      "kind": "alias",
+      "code": "slu",
+      "source": "maintainer decision",
+      "observed": "slu",
+      "selected": "sld",
+      "reason": "Confirmed alias of SLD; preserve its public class without a separate icon card."
+    },
+    {
+      "id": "alias:psld:1",
+      "kind": "alias",
+      "code": "psld",
+      "source": "maintainer decision",
+      "observed": "psld",
+      "selected": "sld",
+      "reason": "Confirmed alias of SLD; preserve its public class without a separate icon card."
+    },
+    {
+      "id": "alias:xdnd:1",
+      "kind": "alias",
+      "code": "xdnd",
+      "source": "less/icons.less",
+      "observed": [
+        "xdnd",
+        "afr"
+      ],
+      "selected": "afr",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:nms:1",
+      "kind": "alias",
+      "code": "nms",
+      "source": "less/icons.less",
+      "observed": [
+        "nem",
+        "nms"
+      ],
+      "selected": "nem",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:xkld:1",
+      "kind": "alias",
+      "code": "xkld",
+      "source": "less/icons.less",
+      "observed": [
+        "xkld",
+        "khm"
+      ],
+      "selected": "khm",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:xssm:1",
+      "kind": "alias",
+      "code": "xssm",
+      "source": "less/icons.less",
+      "observed": [
+        "xssm",
+        "stx"
+      ],
+      "selected": "stx",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:ann:1",
+      "kind": "alias",
+      "code": "ann",
+      "source": "less/icons.less",
+      "observed": [
+        "e01",
+        "ann"
+      ],
+      "selected": "e01",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:xren:1",
+      "kind": "alias",
+      "code": "xren",
+      "source": "less/icons.less",
+      "observed": [
+        "ren",
+        "xren"
+      ],
+      "selected": "ren",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:xrin:1",
+      "kind": "alias",
+      "code": "xrin",
+      "source": "less/icons.less",
+      "observed": [
+        "rin",
+        "xrin"
+      ],
+      "selected": "rin",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "undocumented-class:j25a:1",
+      "kind": "undocumented-class",
+      "code": "j25a",
+      "source": "less/icons.less",
+      "observed": {
+        "comment": "Jumpstart 2025",
+        "heading": "Reprint",
+        "glyph": "e9db"
+      },
+      "selected": {
+        "name": "Jumpstart 2025",
+        "added": null,
+        "icon": false
+      },
+      "reason": "Preserve the public class; do not invent an added version or silently add a docs card."
+    },
+    {
+      "id": "alias:po2:1",
+      "kind": "alias",
+      "code": "po2",
+      "source": "less/icons.less",
+      "observed": [
+        "p02",
+        "po2"
+      ],
+      "selected": "p02",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:htr17:1",
+      "kind": "alias",
+      "code": "htr17",
+      "source": "less/icons.less",
+      "observed": [
+        "pmei",
+        "htr",
+        "htr17"
+      ],
+      "selected": "pmei",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:psal:1",
+      "kind": "alias",
+      "code": "psal",
+      "source": "less/icons.less",
+      "observed": [
+        "psal",
+        "phuk",
+        "psalvat05"
+      ],
+      "selected": "psalvat05",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:phuk:1",
+      "kind": "alias",
+      "code": "phuk",
+      "source": "less/icons.less",
+      "observed": [
+        "psal",
+        "phuk",
+        "psalvat05"
+      ],
+      "selected": "psalvat05",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:mps:1",
+      "kind": "alias",
+      "code": "mps",
+      "source": "less/icons.less",
+      "observed": [
+        "mps",
+        "mp1"
+      ],
+      "selected": "mp1",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:xlcu:1",
+      "kind": "alias",
+      "code": "xlcu",
+      "source": "less/icons.less",
+      "observed": [
+        "pz1",
+        "xlcu"
+      ],
+      "selected": "pz1",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:modo:1",
+      "kind": "alias",
+      "code": "modo",
+      "source": "less/icons.less",
+      "observed": [
+        "modo",
+        "pmodo"
+      ],
+      "selected": "pmodo",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:duels:1",
+      "kind": "alias",
+      "code": "duels",
+      "source": "less/icons.less",
+      "observed": [
+        "duels",
+        "xduels"
+      ],
+      "selected": "xduels",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:ymid:1",
+      "kind": "alias",
+      "code": "ymid",
+      "source": "less/icons.less",
+      "observed": [
+        "y22",
+        "ymid",
+        "yneo",
+        "ysnc"
+      ],
+      "selected": "y22",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:yneo:1",
+      "kind": "alias",
+      "code": "yneo",
+      "source": "less/icons.less",
+      "observed": [
+        "y22",
+        "ymid",
+        "yneo",
+        "ysnc"
+      ],
+      "selected": "y22",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:ysnc:1",
+      "kind": "alias",
+      "code": "ysnc",
+      "source": "less/icons.less",
+      "observed": [
+        "y22",
+        "ymid",
+        "yneo",
+        "ysnc"
+      ],
+      "selected": "y22",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:y23:1",
+      "kind": "alias",
+      "code": "y23",
+      "source": "less/icons.less",
+      "observed": [
+        "y23",
+        "ybro",
+        "ydmu",
+        "yone"
+      ],
+      "selected": "ydmu",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:ybro:1",
+      "kind": "alias",
+      "code": "ybro",
+      "source": "less/icons.less",
+      "observed": [
+        "y23",
+        "ybro",
+        "ydmu",
+        "yone"
+      ],
+      "selected": "ydmu",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:yone:1",
+      "kind": "alias",
+      "code": "yone",
+      "source": "less/icons.less",
+      "observed": [
+        "y23",
+        "ybro",
+        "ydmu",
+        "yone"
+      ],
+      "selected": "ydmu",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:ylci:1",
+      "kind": "alias",
+      "code": "ylci",
+      "source": "less/icons.less",
+      "observed": [
+        "y24",
+        "ylci",
+        "ymkm",
+        "yotj",
+        "ywoe"
+      ],
+      "selected": "y24",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:ymkm:1",
+      "kind": "alias",
+      "code": "ymkm",
+      "source": "less/icons.less",
+      "observed": [
+        "y24",
+        "ylci",
+        "ymkm",
+        "yotj",
+        "ywoe"
+      ],
+      "selected": "y24",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:yotj:1",
+      "kind": "alias",
+      "code": "yotj",
+      "source": "less/icons.less",
+      "observed": [
+        "y24",
+        "ylci",
+        "ymkm",
+        "yotj",
+        "ywoe"
+      ],
+      "selected": "y24",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:ywoe:1",
+      "kind": "alias",
+      "code": "ywoe",
+      "source": "less/icons.less",
+      "observed": [
+        "y24",
+        "ylci",
+        "ymkm",
+        "yotj",
+        "ywoe"
+      ],
+      "selected": "y24",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:yblb:1",
+      "kind": "alias",
+      "code": "yblb",
+      "source": "less/icons.less",
+      "observed": [
+        "y25",
+        "yblb",
+        "ydft",
+        "ydsk",
+        "ytdm",
+        "yeoe"
+      ],
+      "selected": "y25",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:ydft:1",
+      "kind": "alias",
+      "code": "ydft",
+      "source": "less/icons.less",
+      "observed": [
+        "y25",
+        "yblb",
+        "ydft",
+        "ydsk",
+        "ytdm",
+        "yeoe"
+      ],
+      "selected": "y25",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:ydsk:1",
+      "kind": "alias",
+      "code": "ydsk",
+      "source": "less/icons.less",
+      "observed": [
+        "y25",
+        "yblb",
+        "ydft",
+        "ydsk",
+        "ytdm",
+        "yeoe"
+      ],
+      "selected": "y25",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:ytdm:1",
+      "kind": "alias",
+      "code": "ytdm",
+      "source": "less/icons.less",
+      "observed": [
+        "y25",
+        "yblb",
+        "ydft",
+        "ydsk",
+        "ytdm",
+        "yeoe"
+      ],
+      "selected": "y25",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "alias:yeoe:1",
+      "kind": "alias",
+      "code": "yeoe",
+      "source": "less/icons.less",
+      "observed": [
+        "y25",
+        "yblb",
+        "ydft",
+        "ydsk",
+        "ytdm",
+        "yeoe"
+      ],
+      "selected": "y25",
+      "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
+    },
+    {
+      "id": "shared-symbol:gk1:1",
+      "kind": "shared-symbol",
+      "code": "gk1",
+      "source": "less/icons.less",
+      "observed": "grn",
+      "selected": "grn",
+      "reason": "Keep distinct product metadata; share only the glyph inventory, not rendering rules. Prefer the exported glyph name as the owner."
+    },
+    {
+      "id": "shared-symbol:gk2:1",
+      "kind": "shared-symbol",
+      "code": "gk2",
+      "source": "less/icons.less",
+      "observed": "rna",
+      "selected": "rna",
+      "reason": "Keep distinct product metadata; share only the glyph inventory, not rendering rules. Prefer the exported glyph name as the owner."
+    },
+    {
+      "id": "shared-symbol:cmc:1",
+      "kind": "shared-symbol",
+      "code": "cmc",
+      "source": "less/icons.less",
+      "observed": "cmr",
+      "selected": "cmr",
+      "reason": "Keep distinct product metadata; share only the glyph inventory, not rendering rules. Prefer the exported glyph name as the owner."
+    },
+    {
+      "id": "shared-symbol:sld:1",
+      "kind": "shared-symbol",
+      "code": "sld",
+      "source": "less/icons.less",
+      "observed": "pmei",
+      "selected": "pmei",
+      "reason": "Keep distinct product metadata; share only the glyph inventory, not rendering rules. Prefer the exported glyph name as the owner."
+    },
+    {
+      "id": "shared-symbol:htr:1",
+      "kind": "shared-symbol",
+      "code": "htr",
+      "source": "less/icons.less",
+      "observed": "pmei",
+      "selected": "pmei",
+      "reason": "Keep distinct product metadata; share only the glyph inventory, not rendering rules. Prefer the exported glyph name as the owner."
+    }
+  ],
+  "layerBindings": [
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-40k::before",
+      "code": "40k",
+      "role": "rarity",
+      "glyph": "e999"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-40k::after",
+      "code": "40k",
+      "role": "inner",
+      "glyph": "e99b"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-xdnd::after",
+      "code": "xdnd",
+      "role": "border",
+      "glyph": "e973"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-afr::after",
+      "code": "afr",
+      "role": "border",
+      "glyph": "e973"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-afc::after",
+      "code": "afc",
+      "role": "border",
+      "glyph": "e982"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-c21::after",
+      "code": "c21",
+      "role": "border",
+      "glyph": "e97f"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-clb::after",
+      "code": "clb",
+      "role": "inner",
+      "glyph": "e992"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-cc2::after",
+      "code": "cc2",
+      "role": "border",
+      "glyph": "e988"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-dmc::before",
+      "code": "dmc",
+      "role": "rarity",
+      "glyph": "e995"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-dmc::after",
+      "code": "dmc",
+      "role": "inner",
+      "glyph": "e997"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-drc::before",
+      "code": "drc",
+      "role": "rarity",
+      "glyph": "e9e9"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-drc::after",
+      "code": "drc",
+      "role": "inner",
+      "glyph": "e9eb"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-dsc::after",
+      "code": "dsc",
+      "role": "inner",
+      "glyph": "e9de"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-ecc::after",
+      "code": "ecc",
+      "role": "inner",
+      "glyph": "ea14"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-eoc::after",
+      "code": "eoc",
+      "role": "inner",
+      "glyph": "e9f7"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-j21::after",
+      "code": "j21",
+      "role": "inner",
+      "glyph": "e984"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-khc::before",
+      "code": "khc",
+      "role": "rarity",
+      "glyph": "e9c5"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-khc::after",
+      "code": "khc",
+      "role": "inner",
+      "glyph": "e9c6"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-ltc::before",
+      "code": "ltc",
+      "role": "rarity",
+      "glyph": "e9b7"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-ltc::after",
+      "code": "ltc",
+      "role": "inner",
+      "glyph": "e9b8"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-m3c::after",
+      "code": "m3c",
+      "role": "inner",
+      "glyph": "e9d1"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-mic::after",
+      "code": "mic",
+      "role": "inner",
+      "glyph": "ea23"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-mid::after",
+      "code": "mid",
+      "role": "border",
+      "glyph": "e979"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-mar::after",
+      "code": "mar",
+      "role": "inner",
+      "glyph": "e9fa"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-ncc::before",
+      "code": "ncc",
+      "role": "rarity",
+      "glyph": "e98f"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-ncc::after",
+      "code": "ncc",
+      "role": "inner",
+      "glyph": "e990"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-otc::after",
+      "code": "otc",
+      "role": "inner",
+      "glyph": "e9d3"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-scd::after",
+      "code": "scd",
+      "role": "inner",
+      "glyph": "e9ac"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-soc::after",
+      "code": "soc",
+      "role": "inner",
+      "glyph": "ea1d"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-spm::after",
+      "code": "spm",
+      "role": "inner",
+      "glyph": "e9f2"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-tla::after",
+      "code": "tla",
+      "role": "inner",
+      "glyph": "e9fe"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-tle::after",
+      "code": "tle",
+      "role": "inner",
+      "glyph": "ea0c"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-tmt::after",
+      "code": "tmt",
+      "role": "inner",
+      "glyph": "ea17"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-una::after",
+      "code": "una",
+      "role": "inner",
+      "glyph": "e9bf"
+    },
+    {
+      "file": "less/duo.less",
+      "selector": ".ss-duo.ss-voc::after",
+      "code": "voc",
+      "role": "inner",
+      "glyph": "ea24"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-40k::marker",
+      "code": "40k",
+      "role": "border",
+      "glyph": "e99a"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-arc:after",
+      "code": "arc",
+      "role": "border",
+      "glyph": "e657"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-c13:after",
+      "code": "c13",
+      "role": "border",
+      "glyph": "e65b"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-c14:after",
+      "code": "c14",
+      "role": "border",
+      "glyph": "e65d"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-c15:after",
+      "code": "c15",
+      "role": "border",
+      "glyph": "e900"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-c16::before",
+      "code": "c16",
+      "role": "rarity",
+      "glyph": "e910"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-c16::after",
+      "code": "c16",
+      "role": "border",
+      "glyph": "e9e5"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-cm1:after",
+      "code": "cm1",
+      "role": "border",
+      "glyph": "e65a"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-cmd:after",
+      "code": "cmd",
+      "role": "border",
+      "glyph": "e658"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-cns:after",
+      "code": "cns",
+      "role": "border",
+      "glyph": "e65c"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-dft::before",
+      "code": "dft",
+      "role": "rarity",
+      "glyph": "e9e1"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-dft::after",
+      "code": "dft",
+      "role": "border",
+      "glyph": "e9e0"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-dmc::marker",
+      "code": "dmc",
+      "role": "border",
+      "glyph": "e996"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-drc::marker",
+      "code": "drc",
+      "role": "border",
+      "glyph": "e9ea"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-dsc::marker",
+      "code": "dsc",
+      "role": "border",
+      "glyph": "e9dd"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-ecc::before",
+      "code": "ecc",
+      "role": "rarity",
+      "glyph": "ea12"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-ecc::marker",
+      "code": "ecc",
+      "role": "border",
+      "glyph": "ea13"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-ecl:after",
+      "code": "ecl",
+      "role": "border",
+      "glyph": "ea05"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-eos::before",
+      "code": "eos",
+      "role": "rarity",
+      "glyph": "e9ff"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-eos::after",
+      "code": "eos",
+      "role": "border",
+      "glyph": "ea00"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-fin::before",
+      "code": "fin",
+      "role": "rarity",
+      "glyph": "e9ee"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-fin::after",
+      "code": "fin",
+      "role": "border",
+      "glyph": "e9ef"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-hop:after",
+      "code": "hop",
+      "role": "border",
+      "glyph": "e656"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-inr:after",
+      "code": "inr",
+      "role": "border",
+      "glyph": "e9e3"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-om1::before",
+      "code": "om1",
+      "role": "rarity",
+      "glyph": "ea0d"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-om1::after",
+      "code": "om1",
+      "role": "border",
+      "glyph": "ea0e"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-omb::before",
+      "code": "omb",
+      "role": "rarity",
+      "glyph": "ea0f"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-omb::after",
+      "code": "omb",
+      "role": "border",
+      "glyph": "ea10"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-pc2:after",
+      "code": "pc2",
+      "role": "border",
+      "glyph": "e659"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-pza:after",
+      "code": "pza",
+      "role": "border",
+      "glyph": "ea09"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-sis::before",
+      "code": "sis",
+      "role": "rarity",
+      "glyph": "e9b3"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-sis::after",
+      "code": "sis",
+      "role": "border",
+      "glyph": "e9b2"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-tdm:after",
+      "code": "tdm",
+      "role": "border",
+      "glyph": "e9ec"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-tla::marker",
+      "code": "tla",
+      "role": "border",
+      "glyph": "e9fd"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-tle::before",
+      "code": "tle",
+      "role": "rarity",
+      "glyph": "ea0a"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-tle::marker",
+      "code": "tle",
+      "role": "border",
+      "glyph": "ea0b"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-tmc:after",
+      "code": "tmc",
+      "role": "border",
+      "glyph": "ea16"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-tmt::marker",
+      "code": "tmt",
+      "role": "border",
+      "glyph": "ea07"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-van:after",
+      "code": "van",
+      "role": "border",
+      "glyph": "e655"
+    }
+  ],
+  "cheatsheetEntries": [
+    {
+      "label": "ss-10e",
+      "glyph": "e60b",
+      "entity": "e60b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 56
+    },
+    {
+      "label": "ss-1e",
+      "glyph": "e947",
+      "entity": "e947",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 57
+    },
+    {
+      "label": "ss-2e",
+      "glyph": "e948",
+      "entity": "e948",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 58
+    },
+    {
+      "label": "ss-2ed",
+      "glyph": "e602",
+      "entity": "e602",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 59
+    },
+    {
+      "label": "ss-2u",
+      "glyph": "e949",
+      "entity": "e949",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 60
+    },
+    {
+      "label": "ss-2xm",
+      "glyph": "e96e",
+      "entity": "e96e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 61
+    },
+    {
+      "label": "ss-2x2",
+      "glyph": "e99c",
+      "entity": "e99c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 62
+    },
+    {
+      "label": "ss-30a",
+      "glyph": "e9aa",
+      "entity": "e9aa",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 63
+    },
+    {
+      "label": "ss-3e",
+      "glyph": "e94a",
+      "entity": "e94a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 64
+    },
+    {
+      "label": "ss-3ed",
+      "glyph": "e603",
+      "entity": "e603",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 65
+    },
+    {
+      "label": "ss-40k",
+      "glyph": "e998",
+      "entity": "e998",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 66
+    },
+    {
+      "label": "ss-4ed",
+      "glyph": "e604",
+      "entity": "e604",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 67
+    },
+    {
+      "label": "ss-5dn",
+      "glyph": "e633",
+      "entity": "e633",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 68
+    },
+    {
+      "label": "ss-5ed",
+      "glyph": "e606",
+      "entity": "e606",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 69
+    },
+    {
+      "label": "ss-6ed",
+      "glyph": "e607",
+      "entity": "e607",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 70
+    },
+    {
+      "label": "ss-7ed",
+      "glyph": "e608",
+      "entity": "e608",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 71
+    },
+    {
+      "label": "ss-8ed",
+      "glyph": "e609",
+      "entity": "e609",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 72
+    },
+    {
+      "label": "ss-9ed",
+      "glyph": "e60a",
+      "entity": "e60a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 73
+    },
+    {
+      "label": "ss-a25",
+      "glyph": "e93d",
+      "entity": "e93d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 74
+    },
+    {
+      "label": "ss-acr",
+      "glyph": "e9ce",
+      "entity": "e9ce",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 75
+    },
+    {
+      "label": "ss-aer",
+      "glyph": "e90f",
+      "entity": "e90f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 76
+    },
+    {
+      "label": "ss-afc",
+      "glyph": "e981",
+      "entity": "e981",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 77
+    },
+    {
+      "label": "ss-afr",
+      "glyph": "e972",
+      "entity": "e972",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 78
+    },
+    {
+      "label": "ss-akh",
+      "glyph": "e914",
+      "entity": "e914",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 79
+    },
+    {
+      "label": "ss-akr",
+      "glyph": "e970",
+      "entity": "e970",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 80
+    },
+    {
+      "label": "ss-ala",
+      "glyph": "e641",
+      "entity": "e641",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 81
+    },
+    {
+      "label": "ss-all",
+      "glyph": "e61a",
+      "entity": "e61a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 82
+    },
+    {
+      "label": "ss-ann",
+      "glyph": "e92d",
+      "entity": "e92d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 83
+    },
+    {
+      "label": "ss-apc",
+      "glyph": "e62a",
+      "entity": "e62a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 84
+    },
+    {
+      "label": "ss-arb",
+      "glyph": "e643",
+      "entity": "e643",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 85
+    },
+    {
+      "label": "ss-arc",
+      "glyph": "e657",
+      "entity": "e657",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 86
+    },
+    {
+      "label": "ss-arn",
+      "glyph": "e613",
+      "entity": "e613",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 87
+    },
+    {
+      "label": "ss-ath",
+      "glyph": "e65f",
+      "entity": "e65f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 88
+    },
+    {
+      "label": "ss-atq",
+      "glyph": "e614",
+      "entity": "e614",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 89
+    },
+    {
+      "label": "ss-avr",
+      "glyph": "e64c",
+      "entity": "e64c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 90
+    },
+    {
+      "label": "ss-bbd",
+      "glyph": "e942",
+      "entity": "e942",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 91
+    },
+    {
+      "label": "ss-bfz",
+      "glyph": "e699",
+      "entity": "e699",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 92
+    },
+    {
+      "label": "ss-big",
+      "glyph": "e9d6",
+      "entity": "e9d6",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 93
+    },
+    {
+      "label": "ss-blb",
+      "glyph": "e9cd",
+      "entity": "e9cd",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 94
+    },
+    {
+      "label": "ss-blc",
+      "glyph": "e9d4",
+      "entity": "e9d4",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 95
+    },
+    {
+      "label": "ss-bng",
+      "glyph": "e651",
+      "entity": "e651",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 96
+    },
+    {
+      "label": "ss-bok",
+      "glyph": "e635",
+      "entity": "e635",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 97
+    },
+    {
+      "label": "ss-bot",
+      "glyph": "e99e",
+      "entity": "e99e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 98
+    },
+    {
+      "label": "ss-br",
+      "glyph": "e9c1",
+      "entity": "e9c1",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 99
+    },
+    {
+      "label": "ss-brb",
+      "glyph": "e660",
+      "entity": "e660",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 100
+    },
+    {
+      "label": "ss-brc",
+      "glyph": "e99f",
+      "entity": "e99f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 101
+    },
+    {
+      "label": "ss-bro",
+      "glyph": "e99d",
+      "entity": "e99d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 102
+    },
+    {
+      "label": "ss-brr",
+      "glyph": "e9a0",
+      "entity": "e9a0",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 103
+    },
+    {
+      "label": "ss-btd",
+      "glyph": "e661",
+      "entity": "e661",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 104
+    },
+    {
+      "label": "ss-c13",
+      "glyph": "e65b",
+      "entity": "e65b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 105
+    },
+    {
+      "label": "ss-c14",
+      "glyph": "e65d",
+      "entity": "e65d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 106
+    },
+    {
+      "label": "ss-c15",
+      "glyph": "e900",
+      "entity": "e900",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 107
+    },
+    {
+      "label": "ss-c16",
+      "glyph": "e9e5",
+      "entity": "e9e5",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 108
+    },
+    {
+      "label": "ss-c17",
+      "glyph": "e934",
+      "entity": "e934",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 109
+    },
+    {
+      "label": "ss-c18",
+      "glyph": "e946",
+      "entity": "e946",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 110
+    },
+    {
+      "label": "ss-c19",
+      "glyph": "e95f",
+      "entity": "e95f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 111
+    },
+    {
+      "label": "ss-c20",
+      "glyph": "e966",
+      "entity": "e966",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 112
+    },
+    {
+      "label": "ss-c21",
+      "glyph": "e97e",
+      "entity": "e97e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 113
+    },
+    {
+      "label": "ss-clb",
+      "glyph": "e991",
+      "entity": "e991",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 114
+    },
+    {
+      "label": "ss-cc1",
+      "glyph": "e968",
+      "entity": "e968",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 115
+    },
+    {
+      "label": "ss-cc2",
+      "glyph": "e987",
+      "entity": "e987",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 116
+    },
+    {
+      "label": "ss-chk",
+      "glyph": "e634",
+      "entity": "e634",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 117
+    },
+    {
+      "label": "ss-chr",
+      "glyph": "e65e",
+      "entity": "e65e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 118
+    },
+    {
+      "label": "ss-clu",
+      "glyph": "e9cb",
+      "entity": "e9cb",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 119
+    },
+    {
+      "label": "ss-cm1",
+      "glyph": "e65a",
+      "entity": "e65a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 120
+    },
+    {
+      "label": "ss-cm2",
+      "glyph": "e940",
+      "entity": "e940",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 121
+    },
+    {
+      "label": "ss-cma",
+      "glyph": "e916",
+      "entity": "e916",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 122
+    },
+    {
+      "label": "ss-cmc",
+      "glyph": "e969",
+      "entity": "e969",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 123
+    },
+    {
+      "label": "ss-cmd",
+      "glyph": "e658",
+      "entity": "e658",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 124
+    },
+    {
+      "label": "ss-cmm",
+      "glyph": "e9b5",
+      "entity": "e9b5",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 125
+    },
+    {
+      "label": "ss-cmr",
+      "glyph": "e969",
+      "entity": "e969",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 126
+    },
+    {
+      "label": "ss-cns",
+      "glyph": "e65c",
+      "entity": "e65c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 127
+    },
+    {
+      "label": "ss-cn2",
+      "glyph": "e904",
+      "entity": "e904",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 128
+    },
+    {
+      "label": "ss-con",
+      "glyph": "e642",
+      "entity": "e642",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 129
+    },
+    {
+      "label": "ss-csp",
+      "glyph": "e61b",
+      "entity": "e61b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 130
+    },
+    {
+      "label": "ss-dd2",
+      "glyph": "e66a",
+      "entity": "e66a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 131
+    },
+    {
+      "label": "ss-ddc",
+      "glyph": "e66b",
+      "entity": "e66b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 132
+    },
+    {
+      "label": "ss-ddd",
+      "glyph": "e66c",
+      "entity": "e66c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 133
+    },
+    {
+      "label": "ss-dde",
+      "glyph": "e66d",
+      "entity": "e66d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 134
+    },
+    {
+      "label": "ss-ddf",
+      "glyph": "e66e",
+      "entity": "e66e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 135
+    },
+    {
+      "label": "ss-ddg",
+      "glyph": "e66f",
+      "entity": "e66f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 136
+    },
+    {
+      "label": "ss-ddh",
+      "glyph": "e670",
+      "entity": "e670",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 137
+    },
+    {
+      "label": "ss-ddi",
+      "glyph": "e671",
+      "entity": "e671",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 138
+    },
+    {
+      "label": "ss-ddj",
+      "glyph": "e672",
+      "entity": "e672",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 139
+    },
+    {
+      "label": "ss-ddk",
+      "glyph": "e673",
+      "entity": "e673",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 140
+    },
+    {
+      "label": "ss-ddl",
+      "glyph": "e674",
+      "entity": "e674",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 141
+    },
+    {
+      "label": "ss-ddm",
+      "glyph": "e675",
+      "entity": "e675",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 142
+    },
+    {
+      "label": "ss-ddn",
+      "glyph": "e676",
+      "entity": "e676",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 143
+    },
+    {
+      "label": "ss-ddo",
+      "glyph": "e677",
+      "entity": "e677",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 144
+    },
+    {
+      "label": "ss-ddp",
+      "glyph": "e698",
+      "entity": "e698",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 145
+    },
+    {
+      "label": "ss-ddq",
+      "glyph": "e908",
+      "entity": "e908",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 146
+    },
+    {
+      "label": "ss-ddr",
+      "glyph": "e90d",
+      "entity": "e90d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 147
+    },
+    {
+      "label": "ss-dds",
+      "glyph": "e921",
+      "entity": "e921",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 148
+    },
+    {
+      "label": "ss-ddt",
+      "glyph": "e933",
+      "entity": "e933",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 149
+    },
+    {
+      "label": "ss-ddu",
+      "glyph": "e93e",
+      "entity": "e93e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 150
+    },
+    {
+      "label": "ss-dft",
+      "glyph": "e9e0",
+      "entity": "e9e0",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 151
+    },
+    {
+      "label": "ss-dgm",
+      "glyph": "e64f",
+      "entity": "e64f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 152
+    },
+    {
+      "label": "ss-dis",
+      "glyph": "e639",
+      "entity": "e639",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 153
+    },
+    {
+      "label": "ss-dka",
+      "glyph": "e64b",
+      "entity": "e64b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 154
+    },
+    {
+      "label": "ss-dkm",
+      "glyph": "e662",
+      "entity": "e662",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 155
+    },
+    {
+      "label": "ss-dmr",
+      "glyph": "e9a4",
+      "entity": "e9a4",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 156
+    },
+    {
+      "label": "ss-dmu",
+      "glyph": "e993",
+      "entity": "e993",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 157
+    },
+    {
+      "label": "ss-dmc",
+      "glyph": "e994",
+      "entity": "e994",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 158
+    },
+    {
+      "label": "ss-drc",
+      "glyph": "e9e8",
+      "entity": "e9e8",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 159
+    },
+    {
+      "label": "ss-dom",
+      "glyph": "e93f",
+      "entity": "e93f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 160
+    },
+    {
+      "label": "ss-dpa",
+      "glyph": "e689",
+      "entity": "e689",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 161
+    },
+    {
+      "label": "ss-drb",
+      "glyph": "e678",
+      "entity": "e678",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 162
+    },
+    {
+      "label": "ss-drk",
+      "glyph": "e616",
+      "entity": "e616",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 163
+    },
+    {
+      "label": "ss-dsc",
+      "glyph": "e9dc",
+      "entity": "e9dc",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 164
+    },
+    {
+      "label": "ss-dsk",
+      "glyph": "e9d7",
+      "entity": "e9d7",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 165
+    },
+    {
+      "label": "ss-dst",
+      "glyph": "e632",
+      "entity": "e632",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 166
+    },
+    {
+      "label": "ss-dtk",
+      "glyph": "e693",
+      "entity": "e693",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 167
+    },
+    {
+      "label": "ss-dvk",
+      "glyph": "ea03",
+      "entity": "ea03",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 168
+    },
+    {
+      "label": "ss-e01",
+      "glyph": "e92d",
+      "entity": "e92d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 169
+    },
+    {
+      "label": "ss-e02",
+      "glyph": "e931",
+      "entity": "e931",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 170
+    },
+    {
+      "label": "ss-ea1",
+      "glyph": "e9b4",
+      "entity": "e9b4",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 171
+    },
+    {
+      "label": "ss-ecc",
+      "glyph": "ea11",
+      "entity": "ea11",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 172
+    },
+    {
+      "label": "ss-ecl",
+      "glyph": "ea04",
+      "entity": "ea04",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 173
+    },
+    {
+      "label": "ss-eld",
+      "glyph": "e95e",
+      "entity": "e95e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 174
+    },
+    {
+      "label": "ss-ema",
+      "glyph": "e903",
+      "entity": "e903",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 175
+    },
+    {
+      "label": "ss-emn",
+      "glyph": "e90b",
+      "entity": "e90b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 176
+    },
+    {
+      "label": "ss-eoc",
+      "glyph": "e9f6",
+      "entity": "e9f6",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 177
+    },
+    {
+      "label": "ss-eoe",
+      "glyph": "e9f0",
+      "entity": "e9f0",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 178
+    },
+    {
+      "label": "ss-eos",
+      "glyph": "ea00",
+      "entity": "ea00",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 179
+    },
+    {
+      "label": "ss-eve",
+      "glyph": "e640",
+      "entity": "e640",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 180
+    },
+    {
+      "label": "ss-evg",
+      "glyph": "e669",
+      "entity": "e669",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 181
+    },
+    {
+      "label": "ss-exo",
+      "glyph": "e621",
+      "entity": "e621",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 182
+    },
+    {
+      "label": "ss-exp",
+      "glyph": "e69a",
+      "entity": "e69a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 183
+    },
+    {
+      "label": "ss-fca",
+      "glyph": "e9f8",
+      "entity": "e9f8",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 184
+    },
+    {
+      "label": "ss-fem",
+      "glyph": "e617",
+      "entity": "e617",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 185
+    },
+    {
+      "label": "ss-fdc",
+      "glyph": "e9e4",
+      "entity": "e9e4",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 186
+    },
+    {
+      "label": "ss-fdn",
+      "glyph": "e9d8",
+      "entity": "e9d8",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 187
+    },
+    {
+      "label": "ss-fic",
+      "glyph": "e9f5",
+      "entity": "e9f5",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 188
+    },
+    {
+      "label": "ss-fin",
+      "glyph": "e9ed",
+      "entity": "e9ed",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 189
+    },
+    {
+      "label": "ss-fra",
+      "glyph": "ea22",
+      "entity": "ea22",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 190
+    },
+    {
+      "label": "ss-frf",
+      "glyph": "e654",
+      "entity": "e654",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 191
+    },
+    {
+      "label": "ss-fut",
+      "glyph": "e63c",
+      "entity": "e63c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 192
+    },
+    {
+      "label": "ss-gk1",
+      "glyph": "e94b",
+      "entity": "e94b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 193
+    },
+    {
+      "label": "ss-gk2",
+      "glyph": "e959",
+      "entity": "e959",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 194
+    },
+    {
+      "label": "ss-gn2",
+      "glyph": "e964",
+      "entity": "e964",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 195
+    },
+    {
+      "label": "ss-gn3",
+      "glyph": "e9a5",
+      "entity": "e9a5",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 196
+    },
+    {
+      "label": "ss-gnt",
+      "glyph": "e94d",
+      "entity": "e94d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 197
+    },
+    {
+      "label": "ss-gpt",
+      "glyph": "e638",
+      "entity": "e638",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 198
+    },
+    {
+      "label": "ss-grn",
+      "glyph": "e94b",
+      "entity": "e94b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 199
+    },
+    {
+      "label": "ss-gs1",
+      "glyph": "e945",
+      "entity": "e945",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 200
+    },
+    {
+      "label": "ss-gtc",
+      "glyph": "e64e",
+      "entity": "e64e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 201
+    },
+    {
+      "label": "ss-h09",
+      "glyph": "e67f",
+      "entity": "e67f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 202
+    },
+    {
+      "label": "ss-h17",
+      "glyph": "e938",
+      "entity": "e938",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 203
+    },
+    {
+      "label": "ss-ha1",
+      "glyph": "e96b",
+      "entity": "e96b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 204
+    },
+    {
+      "label": "ss-hbg",
+      "glyph": "e9a6",
+      "entity": "e9a6",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 205
+    },
+    {
+      "label": "ss-hml",
+      "glyph": "e618",
+      "entity": "e618",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 206
+    },
+    {
+      "label": "ss-hob",
+      "glyph": "ea19",
+      "entity": "ea19",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 207
+    },
+    {
+      "label": "ss-hoc",
+      "glyph": "ea1e",
+      "entity": "ea1e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 208
+    },
+    {
+      "label": "ss-hop",
+      "glyph": "e656",
+      "entity": "e656",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 209
+    },
+    {
+      "label": "ss-hou",
+      "glyph": "e924",
+      "entity": "e924",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 210
+    },
+    {
+      "label": "ss-ice",
+      "glyph": "e619",
+      "entity": "e619",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 211
+    },
+    {
+      "label": "ss-ice2",
+      "glyph": "e925",
+      "entity": "e925",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 212
+    },
+    {
+      "label": "ss-iko",
+      "glyph": "e962",
+      "entity": "e962",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 213
+    },
+    {
+      "label": "ss-ima",
+      "glyph": "e935",
+      "entity": "e935",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 214
+    },
+    {
+      "label": "ss-inr",
+      "glyph": "e9e2",
+      "entity": "e9e2",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 215
+    },
+    {
+      "label": "ss-inv",
+      "glyph": "e628",
+      "entity": "e628",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 216
+    },
+    {
+      "label": "ss-isd",
+      "glyph": "e64a",
+      "entity": "e64a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 217
+    },
+    {
+      "label": "ss-j20",
+      "glyph": "e96a",
+      "entity": "e96a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 218
+    },
+    {
+      "label": "ss-j21",
+      "glyph": "e983",
+      "entity": "e983",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 219
+    },
+    {
+      "label": "ss-j22",
+      "glyph": "e9ad",
+      "entity": "e9ad",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 220
+    },
+    {
+      "label": "ss-j25",
+      "glyph": "e9df",
+      "entity": "e9df",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 221
+    },
+    {
+      "label": "ss-jmp",
+      "glyph": "e96f",
+      "entity": "e96f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 222
+    },
+    {
+      "label": "ss-jou",
+      "glyph": "e652",
+      "entity": "e652",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 223
+    },
+    {
+      "label": "ss-jud",
+      "glyph": "e62d",
+      "entity": "e62d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 224
+    },
+    {
+      "label": "ss-khc",
+      "glyph": "e97d",
+      "entity": "e97d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 225
+    },
+    {
+      "label": "ss-khm",
+      "glyph": "e974",
+      "entity": "e974",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 226
+    },
+    {
+      "label": "ss-kld",
+      "glyph": "e90e",
+      "entity": "e90e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 227
+    },
+    {
+      "label": "ss-klr",
+      "glyph": "e97c",
+      "entity": "e97c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 228
+    },
+    {
+      "label": "ss-ktk",
+      "glyph": "e653",
+      "entity": "e653",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 229
+    },
+    {
+      "label": "ss-lcc",
+      "glyph": "e9c7",
+      "entity": "e9c7",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 230
+    },
+    {
+      "label": "ss-lci",
+      "glyph": "e9c2",
+      "entity": "e9c2",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 231
+    },
+    {
+      "label": "ss-lea",
+      "glyph": "e600",
+      "entity": "e600",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 232
+    },
+    {
+      "label": "ss-leb",
+      "glyph": "e601",
+      "entity": "e601",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 233
+    },
+    {
+      "label": "ss-leg",
+      "glyph": "e615",
+      "entity": "e615",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 234
+    },
+    {
+      "label": "ss-lgn",
+      "glyph": "e62f",
+      "entity": "e62f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 235
+    },
+    {
+      "label": "ss-lrw",
+      "glyph": "e63d",
+      "entity": "e63d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 236
+    },
+    {
+      "label": "ss-ltc",
+      "glyph": "e9b6",
+      "entity": "e9b6",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 237
+    },
+    {
+      "label": "ss-ltr",
+      "glyph": "e9af",
+      "entity": "e9af",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 238
+    },
+    {
+      "label": "ss-m10",
+      "glyph": "e60c",
+      "entity": "e60c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 239
+    },
+    {
+      "label": "ss-m11",
+      "glyph": "e60d",
+      "entity": "e60d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 240
+    },
+    {
+      "label": "ss-m12",
+      "glyph": "e60e",
+      "entity": "e60e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 241
+    },
+    {
+      "label": "ss-m13",
+      "glyph": "e60f",
+      "entity": "e60f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 242
+    },
+    {
+      "label": "ss-m14",
+      "glyph": "e610",
+      "entity": "e610",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 243
+    },
+    {
+      "label": "ss-m15",
+      "glyph": "e611",
+      "entity": "e611",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 244
+    },
+    {
+      "label": "ss-m19",
+      "glyph": "e941",
+      "entity": "e941",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 245
+    },
+    {
+      "label": "ss-m20",
+      "glyph": "e95d",
+      "entity": "e95d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 246
+    },
+    {
+      "label": "ss-m21",
+      "glyph": "e960",
+      "entity": "e960",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 247
+    },
+    {
+      "label": "ss-m3c",
+      "glyph": "e9d0",
+      "entity": "e9d0",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 248
+    },
+    {
+      "label": "ss-mar",
+      "glyph": "e9f9",
+      "entity": "e9f9",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 249
+    },
+    {
+      "label": "ss-mat",
+      "glyph": "e9a3",
+      "entity": "e9a3",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 250
+    },
+    {
+      "label": "ss-mb1",
+      "glyph": "e971",
+      "entity": "e971",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 251
+    },
+    {
+      "label": "ss-mb2",
+      "glyph": "e9d9",
+      "entity": "e9d9",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 252
+    },
+    {
+      "label": "ss-mbs",
+      "glyph": "e648",
+      "entity": "e648",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 253
+    },
+    {
+      "label": "ss-md1",
+      "glyph": "e682",
+      "entity": "e682",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 254
+    },
+    {
+      "label": "ss-me1",
+      "glyph": "e68d",
+      "entity": "e68d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 255
+    },
+    {
+      "label": "ss-me2",
+      "glyph": "e68e",
+      "entity": "e68e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 256
+    },
+    {
+      "label": "ss-me3",
+      "glyph": "e68f",
+      "entity": "e68f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 257
+    },
+    {
+      "label": "ss-me4",
+      "glyph": "e690",
+      "entity": "e690",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 258
+    },
+    {
+      "label": "ss-med",
+      "glyph": "e94c",
+      "entity": "e94c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 259
+    },
+    {
+      "label": "ss-mh1",
+      "glyph": "e95b",
+      "entity": "e95b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 260
+    },
+    {
+      "label": "ss-mh2",
+      "glyph": "e97b",
+      "entity": "e97b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 261
+    },
+    {
+      "label": "ss-mh3",
+      "glyph": "e9cf",
+      "entity": "e9cf",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 262
+    },
+    {
+      "label": "ss-mic",
+      "glyph": "e985",
+      "entity": "e985",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 263
+    },
+    {
+      "label": "ss-mid",
+      "glyph": "e978",
+      "entity": "e978",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 264
+    },
+    {
+      "label": "ss-mir",
+      "glyph": "e61c",
+      "entity": "e61c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 265
+    },
+    {
+      "label": "ss-mkc",
+      "glyph": "e9ca",
+      "entity": "e9ca",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 266
+    },
+    {
+      "label": "ss-mkm",
+      "glyph": "e9c9",
+      "entity": "e9c9",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 267
+    },
+    {
+      "label": "ss-mm2",
+      "glyph": "e695",
+      "entity": "e695",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 268
+    },
+    {
+      "label": "ss-mm3",
+      "glyph": "e912",
+      "entity": "e912",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 269
+    },
+    {
+      "label": "ss-mma",
+      "glyph": "e663",
+      "entity": "e663",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 270
+    },
+    {
+      "label": "ss-mmq",
+      "glyph": "e625",
+      "entity": "e625",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 271
+    },
+    {
+      "label": "ss-moc",
+      "glyph": "e9a9",
+      "entity": "e9a9",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 272
+    },
+    {
+      "label": "ss-mom",
+      "glyph": "e9a2",
+      "entity": "e9a2",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 273
+    },
+    {
+      "label": "ss-mor",
+      "glyph": "e63e",
+      "entity": "e63e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 274
+    },
+    {
+      "label": "ss-mp1",
+      "glyph": "e913",
+      "entity": "e913",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 275
+    },
+    {
+      "label": "ss-mp2",
+      "glyph": "e922",
+      "entity": "e922",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 276
+    },
+    {
+      "label": "ss-mps",
+      "glyph": "e913",
+      "entity": "e913",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 277
+    },
+    {
+      "label": "ss-mrd",
+      "glyph": "e631",
+      "entity": "e631",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 278
+    },
+    {
+      "label": "ss-msc",
+      "glyph": "ea1f",
+      "entity": "ea1f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 279
+    },
+    {
+      "label": "ss-msh",
+      "glyph": "ea1a",
+      "entity": "ea1a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 280
+    },
+    {
+      "label": "ss-mul",
+      "glyph": "e9ba",
+      "entity": "e9ba",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 281
+    },
+    {
+      "label": "ss-nem",
+      "glyph": "e626",
+      "entity": "e626",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 282
+    },
+    {
+      "label": "ss-nec",
+      "glyph": "e98d",
+      "entity": "e98d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 283
+    },
+    {
+      "label": "ss-neo",
+      "glyph": "e98c",
+      "entity": "e98c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 284
+    },
+    {
+      "label": "ss-nms",
+      "glyph": "e626",
+      "entity": "e626",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 285
+    },
+    {
+      "label": "ss-ncc",
+      "glyph": "e98e",
+      "entity": "e98e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 286
+    },
+    {
+      "label": "ss-nph",
+      "glyph": "e649",
+      "entity": "e649",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 287
+    },
+    {
+      "label": "ss-ody",
+      "glyph": "e62b",
+      "entity": "e62b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 288
+    },
+    {
+      "label": "ss-ogw",
+      "glyph": "e901",
+      "entity": "e901",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 289
+    },
+    {
+      "label": "ss-om1",
+      "glyph": "ea0e",
+      "entity": "ea0e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 290
+    },
+    {
+      "label": "ss-omb",
+      "glyph": "ea10",
+      "entity": "ea10",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 291
+    },
+    {
+      "label": "ss-onc",
+      "glyph": "e9a8",
+      "entity": "e9a8",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 292
+    },
+    {
+      "label": "ss-one",
+      "glyph": "e9a1",
+      "entity": "e9a1",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 293
+    },
+    {
+      "label": "ss-ons",
+      "glyph": "e62e",
+      "entity": "e62e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 294
+    },
+    {
+      "label": "ss-ori",
+      "glyph": "e697",
+      "entity": "e697",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 295
+    },
+    {
+      "label": "ss-otc",
+      "glyph": "e9d2",
+      "entity": "e9d2",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 296
+    },
+    {
+      "label": "ss-otj",
+      "glyph": "e9cc",
+      "entity": "e9cc",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 297
+    },
+    {
+      "label": "ss-otp",
+      "glyph": "e9d5",
+      "entity": "e9d5",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 298
+    },
+    {
+      "label": "ss-p02",
+      "glyph": "e665",
+      "entity": "e665",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 299
+    },
+    {
+      "label": "ss-pc2",
+      "glyph": "e659",
+      "entity": "e659",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 300
+    },
+    {
+      "label": "ss-pca",
+      "glyph": "e911",
+      "entity": "e911",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 301
+    },
+    {
+      "label": "ss-pcy",
+      "glyph": "e627",
+      "entity": "e627",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 302
+    },
+    {
+      "label": "ss-pd2",
+      "glyph": "e680",
+      "entity": "e680",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 303
+    },
+    {
+      "label": "ss-pd3",
+      "glyph": "e681",
+      "entity": "e681",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 304
+    },
+    {
+      "label": "ss-pio",
+      "glyph": "e9e7",
+      "entity": "e9e7",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 305
+    },
+    {
+      "label": "ss-pip",
+      "glyph": "e9c3",
+      "entity": "e9c3",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 306
+    },
+    {
+      "label": "ss-plc",
+      "glyph": "e63b",
+      "entity": "e63b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 307
+    },
+    {
+      "label": "ss-pls",
+      "glyph": "e629",
+      "entity": "e629",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 308
+    },
+    {
+      "label": "ss-pma",
+      "glyph": "ea01",
+      "entity": "ea01",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 309
+    },
+    {
+      "label": "ss-pm2",
+      "glyph": "ea02",
+      "entity": "ea02",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 310
+    },
+    {
+      "label": "ss-po2",
+      "glyph": "e665",
+      "entity": "e665",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 311
+    },
+    {
+      "label": "ss-por",
+      "glyph": "e664",
+      "entity": "e664",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 312
+    },
+    {
+      "label": "ss-ptg",
+      "glyph": "e965",
+      "entity": "e965",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 313
+    },
+    {
+      "label": "ss-ptk",
+      "glyph": "e666",
+      "entity": "e666",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 314
+    },
+    {
+      "label": "ss-pza",
+      "glyph": "ea08",
+      "entity": "ea08",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 315
+    },
+    {
+      "label": "ss-rav",
+      "glyph": "e637",
+      "entity": "e637",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 316
+    },
+    {
+      "label": "ss-ren",
+      "glyph": "e917",
+      "entity": "e917",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 317
+    },
+    {
+      "label": "ss-rex",
+      "glyph": "e9c4",
+      "entity": "e9c4",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 318
+    },
+    {
+      "label": "ss-rin",
+      "glyph": "e918",
+      "entity": "e918",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 319
+    },
+    {
+      "label": "ss-rix",
+      "glyph": "e92f",
+      "entity": "e92f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 320
+    },
+    {
+      "label": "ss-rna",
+      "glyph": "e959",
+      "entity": "e959",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 321
+    },
+    {
+      "label": "ss-roe",
+      "glyph": "e646",
+      "entity": "e646",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 322
+    },
+    {
+      "label": "ss-rtr",
+      "glyph": "e64d",
+      "entity": "e64d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 323
+    },
+    {
+      "label": "ss-rvr",
+      "glyph": "e9bb",
+      "entity": "e9bb",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 324
+    },
+    {
+      "label": "ss-s00",
+      "glyph": "e668",
+      "entity": "e668",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 325
+    },
+    {
+      "label": "ss-s99",
+      "glyph": "e667",
+      "entity": "e667",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 326
+    },
+    {
+      "label": "ss-scd",
+      "glyph": "e9ab",
+      "entity": "e9ab",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 327
+    },
+    {
+      "label": "ss-scg",
+      "glyph": "e630",
+      "entity": "e630",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 328
+    },
+    {
+      "label": "ss-shm",
+      "glyph": "e63f",
+      "entity": "e63f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 329
+    },
+    {
+      "label": "ss-sir",
+      "glyph": "e9b1",
+      "entity": "e9b1",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 330
+    },
+    {
+      "label": "ss-sis",
+      "glyph": "e9b2",
+      "entity": "e9b2",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 331
+    },
+    {
+      "label": "ss-sld",
+      "glyph": "e687",
+      "entity": "e687",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 332
+    },
+    {
+      "label": "ss-sld2",
+      "glyph": "e9bc",
+      "entity": "e9bc",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 333
+    },
+    {
+      "label": "ss-slu",
+      "glyph": "e687",
+      "entity": "e687",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 334
+    },
+    {
+      "label": "ss-snc",
+      "glyph": "e98b",
+      "entity": "e98b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 335
+    },
+    {
+      "label": "ss-soa",
+      "glyph": "ea20",
+      "entity": "ea20",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 336
+    },
+    {
+      "label": "ss-soa-jpn",
+      "glyph": "ea21",
+      "entity": "ea21",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 337
+    },
+    {
+      "label": "ss-soc",
+      "glyph": "ea1c",
+      "entity": "ea1c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 338
+    },
+    {
+      "label": "ss-soi",
+      "glyph": "e902",
+      "entity": "e902",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 339
+    },
+    {
+      "label": "ss-sok",
+      "glyph": "e636",
+      "entity": "e636",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 340
+    },
+    {
+      "label": "ss-som",
+      "glyph": "e647",
+      "entity": "e647",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 341
+    },
+    {
+      "label": "ss-sos",
+      "glyph": "ea18",
+      "entity": "ea18",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 342
+    },
+    {
+      "label": "ss-spe",
+      "glyph": "e9f3",
+      "entity": "e9f3",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 343
+    },
+    {
+      "label": "ss-spg",
+      "glyph": "e9c8",
+      "entity": "e9c8",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 344
+    },
+    {
+      "label": "ss-spm",
+      "glyph": "e9f1",
+      "entity": "e9f1",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 345
+    },
+    {
+      "label": "ss-ss1",
+      "glyph": "e944",
+      "entity": "e944",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 346
+    },
+    {
+      "label": "ss-ss2",
+      "glyph": "e95c",
+      "entity": "e95c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 347
+    },
+    {
+      "label": "ss-ss3",
+      "glyph": "e96d",
+      "entity": "e96d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 348
+    },
+    {
+      "label": "ss-sta",
+      "glyph": "e980",
+      "entity": "e980",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 349
+    },
+    {
+      "label": "ss-sta-jpn",
+      "glyph": "e9fc",
+      "entity": "e9fc",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 350
+    },
+    {
+      "label": "ss-sth",
+      "glyph": "e620",
+      "entity": "e620",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 351
+    },
+    {
+      "label": "ss-stx",
+      "glyph": "e975",
+      "entity": "e975",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 352
+    },
+    {
+      "label": "ss-td2",
+      "glyph": "e91c",
+      "entity": "e91c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 353
+    },
+    {
+      "label": "ss-tdc",
+      "glyph": "e9f4",
+      "entity": "e9f4",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 354
+    },
+    {
+      "label": "ss-tdm",
+      "glyph": "e9e6",
+      "entity": "e9e6",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 355
+    },
+    {
+      "label": "ss-thb",
+      "glyph": "e961",
+      "entity": "e961",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 356
+    },
+    {
+      "label": "ss-ths",
+      "glyph": "e650",
+      "entity": "e650",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 357
+    },
+    {
+      "label": "ss-tla",
+      "glyph": "e9fb",
+      "entity": "e9fb",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 358
+    },
+    {
+      "label": "ss-tle",
+      "glyph": "ea0b",
+      "entity": "ea0b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 359
+    },
+    {
+      "label": "ss-tmc",
+      "glyph": "ea15",
+      "entity": "ea15",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 360
+    },
+    {
+      "label": "ss-tmp",
+      "glyph": "e61f",
+      "entity": "e61f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 361
+    },
+    {
+      "label": "ss-tmt",
+      "glyph": "ea06",
+      "entity": "ea06",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 362
+    },
+    {
+      "label": "ss-tor",
+      "glyph": "e62c",
+      "entity": "e62c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 363
+    },
+    {
+      "label": "ss-tpr",
+      "glyph": "e694",
+      "entity": "e694",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 364
+    },
+    {
+      "label": "ss-tsp",
+      "glyph": "e63a",
+      "entity": "e63a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 365
+    },
+    {
+      "label": "ss-tsr",
+      "glyph": "e976",
+      "entity": "e976",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 366
+    },
+    {
+      "label": "ss-uds",
+      "glyph": "e624",
+      "entity": "e624",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 367
+    },
+    {
+      "label": "ss-ugl",
+      "glyph": "e691",
+      "entity": "e691",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 368
+    },
+    {
+      "label": "ss-ulg",
+      "glyph": "e623",
+      "entity": "e623",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 369
+    },
+    {
+      "label": "ss-uma",
+      "glyph": "e958",
+      "entity": "e958",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 370
+    },
+    {
+      "label": "ss-una",
+      "glyph": "e9be",
+      "entity": "e9be",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 371
+    },
+    {
+      "label": "ss-und",
+      "glyph": "e96c",
+      "entity": "e96c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 372
+    },
+    {
+      "label": "ss-unf",
+      "glyph": "e98a",
+      "entity": "e98a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 373
+    },
+    {
+      "label": "ss-unh",
+      "glyph": "e692",
+      "entity": "e692",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 374
+    },
+    {
+      "label": "ss-ust",
+      "glyph": "e930",
+      "entity": "e930",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 375
+    },
+    {
+      "label": "ss-usg",
+      "glyph": "e622",
+      "entity": "e622",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 376
+    },
+    {
+      "label": "ss-v09",
+      "glyph": "e679",
+      "entity": "e679",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 377
+    },
+    {
+      "label": "ss-v0x",
+      "glyph": "e920",
+      "entity": "e920",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 378
+    },
+    {
+      "label": "ss-v10",
+      "glyph": "e67a",
+      "entity": "e67a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 379
+    },
+    {
+      "label": "ss-v11",
+      "glyph": "e67b",
+      "entity": "e67b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 380
+    },
+    {
+      "label": "ss-v12",
+      "glyph": "e67c",
+      "entity": "e67c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 381
+    },
+    {
+      "label": "ss-v13",
+      "glyph": "e67d",
+      "entity": "e67d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 382
+    },
+    {
+      "label": "ss-v14",
+      "glyph": "e67e",
+      "entity": "e67e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 383
+    },
+    {
+      "label": "ss-v15",
+      "glyph": "e905",
+      "entity": "e905",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 384
+    },
+    {
+      "label": "ss-v16",
+      "glyph": "e906",
+      "entity": "e906",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 385
+    },
+    {
+      "label": "ss-v17",
+      "glyph": "e939",
+      "entity": "e939",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 386
+    },
+    {
+      "label": "ss-van",
+      "glyph": "e655",
+      "entity": "e655",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 387
+    },
+    {
+      "label": "ss-vis",
+      "glyph": "e61d",
+      "entity": "e61d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 388
+    },
+    {
+      "label": "ss-voc",
+      "glyph": "e986",
+      "entity": "e986",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 389
+    },
+    {
+      "label": "ss-vow",
+      "glyph": "e977",
+      "entity": "e977",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 390
+    },
+    {
+      "label": "ss-vma",
+      "glyph": "e696",
+      "entity": "e696",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 391
+    },
+    {
+      "label": "ss-w16",
+      "glyph": "e907",
+      "entity": "e907",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 392
+    },
+    {
+      "label": "ss-w17",
+      "glyph": "e923",
+      "entity": "e923",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 393
+    },
+    {
+      "label": "ss-war",
+      "glyph": "e95a",
+      "entity": "e95a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 394
+    },
+    {
+      "label": "ss-who",
+      "glyph": "e9b0",
+      "entity": "e9b0",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 395
+    },
+    {
+      "label": "ss-woc",
+      "glyph": "e9b9",
+      "entity": "e9b9",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 396
+    },
+    {
+      "label": "ss-woe",
+      "glyph": "e9ae",
+      "entity": "e9ae",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 397
+    },
+    {
+      "label": "ss-wot",
+      "glyph": "e9c0",
+      "entity": "e9c0",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 398
+    },
+    {
+      "label": "ss-wth",
+      "glyph": "e61e",
+      "entity": "e61e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 399
+    },
+    {
+      "label": "ss-wwk",
+      "glyph": "e645",
+      "entity": "e645",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 400
+    },
+    {
+      "label": "ss-xln",
+      "glyph": "e92e",
+      "entity": "e92e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 401
+    },
+    {
+      "label": "ss-y22",
+      "glyph": "e989",
+      "entity": "e989",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 402
+    },
+    {
+      "label": "ss-y23",
+      "glyph": "e9a7",
+      "entity": "e9a7",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 403
+    },
+    {
+      "label": "ss-y24",
+      "glyph": "e9bd",
+      "entity": "e9bd",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 404
+    },
+    {
+      "label": "ss-y25",
+      "glyph": "e9da",
+      "entity": "e9da",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 405
+    },
+    {
+      "label": "ss-y26",
+      "glyph": "ea1b",
+      "entity": "ea1b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 406
+    },
+    {
+      "label": "ss-ydmu",
+      "glyph": "e9a7",
+      "entity": "e9a7",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 407
+    },
+    {
+      "label": "ss-zen",
+      "glyph": "e644",
+      "entity": "e644",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 408
+    },
+    {
+      "label": "ss-znc",
+      "glyph": "e967",
+      "entity": "e967",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 409
+    },
+    {
+      "label": "ss-znr",
+      "glyph": "e963",
+      "entity": "e963",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 410
+    },
+    {
+      "label": "ss-azorius",
+      "glyph": "e94e",
+      "entity": "e94e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 414
+    },
+    {
+      "label": "ss-boros",
+      "glyph": "e94f",
+      "entity": "e94f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 415
+    },
+    {
+      "label": "ss-dimir",
+      "glyph": "e950",
+      "entity": "e950",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 416
+    },
+    {
+      "label": "ss-golgari",
+      "glyph": "e951",
+      "entity": "e951",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 417
+    },
+    {
+      "label": "ss-gruul",
+      "glyph": "e952",
+      "entity": "e952",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 418
+    },
+    {
+      "label": "ss-izzet",
+      "glyph": "e953",
+      "entity": "e953",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 419
+    },
+    {
+      "label": "ss-orzhov",
+      "glyph": "e954",
+      "entity": "e954",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 420
+    },
+    {
+      "label": "ss-rakdos",
+      "glyph": "e955",
+      "entity": "e955",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 421
+    },
+    {
+      "label": "ss-selesnya",
+      "glyph": "e956",
+      "entity": "e956",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 422
+    },
+    {
+      "label": "ss-simic",
+      "glyph": "e957",
+      "entity": "e957",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 423
+    },
+    {
+      "label": "ss-bcore",
+      "glyph": "e612",
+      "entity": "e612",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 427
+    },
+    {
+      "label": "ss-htr",
+      "glyph": "e687",
+      "entity": "e687",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 428
+    },
+    {
+      "label": "ss-htr17",
+      "glyph": "e687",
+      "entity": "e687",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 429
+    },
+    {
+      "label": "ss-j25a",
+      "glyph": "e9db",
+      "entity": "e9db",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 430
+    },
+    {
+      "label": "ss-papac",
+      "glyph": "e92a",
+      "entity": "e92a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 431
+    },
+    {
+      "label": "ss-parl",
+      "glyph": "e688",
+      "entity": "e688",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 432
+    },
+    {
+      "label": "ss-parl2",
+      "glyph": "e68c",
+      "entity": "e68c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 433
+    },
+    {
+      "label": "ss-parl3",
+      "glyph": "e943",
+      "entity": "e943",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 434
+    },
+    {
+      "label": "ss-past",
+      "glyph": "e68b",
+      "entity": "e68b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 435
+    },
+    {
+      "label": "ss-pbook",
+      "glyph": "e68a",
+      "entity": "e68a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 436
+    },
+    {
+      "label": "ss-pdep",
+      "glyph": "e93a",
+      "entity": "e93a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 437
+    },
+    {
+      "label": "ss-pdrc",
+      "glyph": "e932",
+      "entity": "e932",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 438
+    },
+    {
+      "label": "ss-peuro",
+      "glyph": "e92b",
+      "entity": "e92b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 439
+    },
+    {
+      "label": "ss-pfnm",
+      "glyph": "e937",
+      "entity": "e937",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 440
+    },
+    {
+      "label": "ss-pgru",
+      "glyph": "e683",
+      "entity": "e683",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 441
+    },
+    {
+      "label": "ss-pheart",
+      "glyph": "e936",
+      "entity": "e936",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 442
+    },
+    {
+      "label": "ss-pidw",
+      "glyph": "e92c",
+      "entity": "e92c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 443
+    },
+    {
+      "label": "ss-pleaf",
+      "glyph": "e686",
+      "entity": "e686",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 444
+    },
+    {
+      "label": "ss-pmei",
+      "glyph": "e687",
+      "entity": "e687",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 445
+    },
+    {
+      "label": "ss-pmodo",
+      "glyph": "e91b",
+      "entity": "e91b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 446
+    },
+    {
+      "label": "ss-pmps",
+      "glyph": "e919",
+      "entity": "e919",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 447
+    },
+    {
+      "label": "ss-pmpu",
+      "glyph": "e91a",
+      "entity": "e91a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 448
+    },
+    {
+      "label": "ss-pmtg1",
+      "glyph": "e684",
+      "entity": "e684",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 449
+    },
+    {
+      "label": "ss-pmtg2",
+      "glyph": "e685",
+      "entity": "e685",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 450
+    },
+    {
+      "label": "ss-psalvat05",
+      "glyph": "e909",
+      "entity": "e909",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 451
+    },
+    {
+      "label": "ss-psalvat11",
+      "glyph": "e90a",
+      "entity": "e90a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 452
+    },
+    {
+      "label": "ss-psega",
+      "glyph": "e93b",
+      "entity": "e93b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 453
+    },
+    {
+      "label": "ss-psld",
+      "glyph": "e687",
+      "entity": "e687",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 454
+    },
+    {
+      "label": "ss-psum",
+      "glyph": "e605",
+      "entity": "e605",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 455
+    },
+    {
+      "label": "ss-ptsa",
+      "glyph": "e93c",
+      "entity": "e93c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 456
+    },
+    {
+      "label": "ss-pxbox",
+      "glyph": "e915",
+      "entity": "e915",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 457
+    },
+    {
+      "label": "ss-pz1",
+      "glyph": "e90c",
+      "entity": "e90c",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 458
+    },
+    {
+      "label": "ss-pz2",
+      "glyph": "e91f",
+      "entity": "e91f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 459
+    },
+    {
+      "label": "ss-x2ps",
+      "glyph": "e928",
+      "entity": "e928",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 460
+    },
+    {
+      "label": "ss-x4ea",
+      "glyph": "e929",
+      "entity": "e929",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 461
+    },
+    {
+      "label": "ss-xcle",
+      "glyph": "e926",
+      "entity": "e926",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 462
+    },
+    {
+      "label": "ss-xduels",
+      "glyph": "e91d",
+      "entity": "e91d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 463
+    },
+    {
+      "label": "ss-xice",
+      "glyph": "e927",
+      "entity": "e927",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 464
+    },
+    {
+      "label": "ss-xmods",
+      "glyph": "e91e",
+      "entity": "e91e",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 465
+    },
+    {
+      "label": "ss-zne",
+      "glyph": "e97a",
+      "entity": "e97a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 466
+    },
+    {
+      "label": "40k border",
+      "glyph": "e99a",
+      "entity": "e99a",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 470
+    },
+    {
+      "label": "40k rarity",
+      "glyph": "e999",
+      "entity": "e999",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 471
+    },
+    {
+      "label": "40k white",
+      "glyph": "e99b",
+      "entity": "e99b",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 472
+    },
+    {
+      "label": "afc border",
+      "glyph": "e982",
+      "entity": "e982",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 473
+    },
+    {
+      "label": "afr border",
+      "glyph": "e973",
+      "entity": "e973",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 474
+    },
+    {
+      "label": "c16 rarity",
+      "glyph": "e910",
+      "entity": "e910",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 475
+    },
+    {
+      "label": "c21 border",
+      "glyph": "e97f",
+      "entity": "e97f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 476
+    },
+    {
+      "label": "cc2 border",
+      "glyph": "e988",
+      "entity": "e988",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 477
+    },
+    {
+      "label": "clb inner",
+      "glyph": "e992",
+      "entity": "e992",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 478
+    },
+    {
+      "label": "dft rarity",
+      "glyph": "e9e1",
+      "entity": "e9e1",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 479
+    },
+    {
+      "label": "dmc border",
+      "glyph": "e996",
+      "entity": "e996",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 480
+    },
+    {
+      "label": "dmc rarity",
+      "glyph": "e995",
+      "entity": "e995",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 481
+    },
+    {
+      "label": "dmc inner",
+      "glyph": "e997",
+      "entity": "e997",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 482
+    },
+    {
+      "label": "drc border",
+      "glyph": "e9ea",
+      "entity": "e9ea",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 483
+    },
+    {
+      "label": "drc rarity",
+      "glyph": "e9e9",
+      "entity": "e9e9",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 484
+    },
+    {
+      "label": "drc inner",
+      "glyph": "e9eb",
+      "entity": "e9eb",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 485
+    },
+    {
+      "label": "dsc border",
+      "glyph": "e9dd",
+      "entity": "e9dd",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 486
+    },
+    {
+      "label": "dsc inner",
+      "glyph": "e9de",
+      "entity": "e9de",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 487
+    },
+    {
+      "label": "ecc border",
+      "glyph": "ea13",
+      "entity": "ea13",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 488
+    },
+    {
+      "label": "ecc inner",
+      "glyph": "ea14",
+      "entity": "ea14",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 489
+    },
+    {
+      "label": "ecl border",
+      "glyph": "ea05",
+      "entity": "ea05",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 490
+    },
+    {
+      "label": "eoc inner",
+      "glyph": "e9f7",
+      "entity": "e9f7",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 491
+    },
+    {
+      "label": "eos rarity",
+      "glyph": "e9ff",
+      "entity": "e9ff",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 492
+    },
+    {
+      "label": "fin border",
+      "glyph": "e9ef",
+      "entity": "e9ef",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 493
+    },
+    {
+      "label": "fin rarity",
+      "glyph": "e9ee",
+      "entity": "e9ee",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 494
+    },
+    {
+      "label": "inr border",
+      "glyph": "e9e3",
+      "entity": "e9e3",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 495
+    },
+    {
+      "label": "j21 border",
+      "glyph": "e984",
+      "entity": "e984",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 496
+    },
+    {
+      "label": "khc rarity",
+      "glyph": "e9c5",
+      "entity": "e9c5",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 497
+    },
+    {
+      "label": "khc inner",
+      "glyph": "e9c6",
+      "entity": "e9c6",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 498
+    },
+    {
+      "label": "m3c inner",
+      "glyph": "e9d1",
+      "entity": "e9d1",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 499
+    },
+    {
+      "label": "mic inner",
+      "glyph": "ea23",
+      "entity": "ea23",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 500
+    },
+    {
+      "label": "mid border",
+      "glyph": "e979",
+      "entity": "e979",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 501
+    },
+    {
+      "label": "ncc inner color",
+      "glyph": "e98f",
+      "entity": "e98f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 502
+    },
+    {
+      "label": "ncc inner wing",
+      "glyph": "e990",
+      "entity": "e990",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 503
+    },
+    {
+      "label": "om1 rarity",
+      "glyph": "ea0d",
+      "entity": "ea0d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 504
+    },
+    {
+      "label": "omb rarity",
+      "glyph": "ea0f",
+      "entity": "ea0f",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 505
+    },
+    {
+      "label": "otc inner",
+      "glyph": "e9d3",
+      "entity": "e9d3",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 506
+    },
+    {
+      "label": "soc inner",
+      "glyph": "ea1d",
+      "entity": "ea1d",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 507
+    },
+    {
+      "label": "scd rarity",
+      "glyph": "e9ab",
+      "entity": "e9ab",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 508
+    },
+    {
+      "label": "scd inner",
+      "glyph": "e9ac",
+      "entity": "e9ac",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 509
+    },
+    {
+      "label": "spm inner",
+      "glyph": "e9f2",
+      "entity": "e9f2",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 510
+    },
+    {
+      "label": "tla border",
+      "glyph": "e9fd",
+      "entity": "e9fd",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 511
+    },
+    {
+      "label": "tla inner",
+      "glyph": "e9fe",
+      "entity": "e9fe",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 512
+    },
+    {
+      "label": "tmc border",
+      "glyph": "ea16",
+      "entity": "ea16",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 513
+    },
+    {
+      "label": "tmt border",
+      "glyph": "ea07",
+      "entity": "ea07",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 514
+    },
+    {
+      "label": "tmt inner",
+      "glyph": "ea17",
+      "entity": "ea17",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 515
+    },
+    {
+      "label": "una inner",
+      "glyph": "e9bf",
+      "entity": "e9bf",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 516
+    },
+    {
+      "label": "voc inner",
+      "glyph": "ea24",
+      "entity": "ea24",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 517
+    }
+  ]
+}

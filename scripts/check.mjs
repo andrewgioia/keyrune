@@ -1,7 +1,12 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { compile } from './build.mjs';
+import { legacySources, validateCatalog } from './manifest.mjs';
 
-const errors = [];
+const errors = validateCatalog(
+    JSON.parse(await readFile('data/sets.json', 'utf8')),
+    JSON.parse(await readFile('data/sets.schema.json', 'utf8')),
+    await legacySources(),
+);
 const read = path => readFile(path, 'utf8');
 const expect = (condition, message) => { if (!condition) errors.push(message); };
 const pkg = JSON.parse(await read('package.json'));

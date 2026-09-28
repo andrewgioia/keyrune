@@ -1,13 +1,4 @@
 {
   "reason": "Existing cheatsheet issues reserved for the current ticket work. Remove each entry when corrected; stale exceptions fail validation.",
-  "issues": [
-    "Cheatsheet ss-msc: ea14 differs from LESS ea1f.",
-    "Cheatsheet missing glyph for ss-msc (ea1f).",
-    "Cheatsheet missing glyph for ss-mar (e9f9).",
-    "Cheatsheet missing glyph for ss-pza (ea08).",
-    "Cheatsheet missing glyph for ss-sta-jpn (e9fc).",
-    "Cheatsheet drc border: character and label differ.",
-    "Cheatsheet drc rarity: character and label differ.",
-    "Cheatsheet drc inner: character and label differ."
-  ]
+  "issues": []
 }

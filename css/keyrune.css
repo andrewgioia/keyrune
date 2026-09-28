@@ -138,6 +138,9 @@
   content: "\e9d1";
   color: #fff !important;
 }
+.ss-duo.ss-mic::after {
+  content: "\ea23";
+}
 .ss-duo.ss-mid::after {
   content: "\e979";
 }
@@ -152,7 +155,7 @@
   content: "\e990";
 }
 .ss-duo.ss-otc::after {
-  content: "\ea1d";
+  content: "\e9d3";
   color: #fff !important;
 }
 .ss-duo.ss-scd::after {
@@ -184,6 +187,9 @@
 .ss-duo.ss-una::after {
   content: "\e9bf";
   color: #fff !important;
+}
+.ss-duo.ss-voc::after {
+  content: "\ea24";
 }
 .ss-duo.ss-common:after {
   color: #fff;

@@ -1,0 +1,3898 @@
+{
+  "$schema": "./sets.schema.json",
+  "schemaVersion": 1,
+  "groups": [
+    {
+      "id": "core",
+      "name": "Core Sets"
+    },
+    {
+      "id": "expansion",
+      "name": "Expansion Sets"
+    },
+    {
+      "id": "commander",
+      "name": "Command Zone Sets"
+    },
+    {
+      "id": "reprint",
+      "name": "Reprint Sets"
+    },
+    {
+      "id": "beginner",
+      "name": "Beginner Sets"
+    },
+    {
+      "id": "duel",
+      "name": "Duel Decks"
+    },
+    {
+      "id": "vault",
+      "name": "From the Vault Sets"
+    },
+    {
+      "id": "premium",
+      "name": "Premium Deck Series"
+    },
+    {
+      "id": "spellbook",
+      "name": "Signature Spellbooks"
+    },
+    {
+      "id": "global",
+      "name": "Global Series"
+    },
+    {
+      "id": "guild",
+      "name": "Guild Kits"
+    },
+    {
+      "id": "supplemental",
+      "name": "Other Supplemental Products"
+    },
+    {
+      "id": "promo",
+      "name": "Promotional Sets"
+    },
+    {
+      "id": "digital",
+      "name": "Digital Sets"
+    },
+    {
+      "id": "un",
+      "name": "Un-Serious Sets"
+    },
+    {
+      "id": "unofficial",
+      "name": "Unofficial Symbols"
+    }
+  ],
+  "sets": [
+    {
+      "code": "lea",
+      "name": "Alpha",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e600"
+      }
+    },
+    {
+      "code": "leb",
+      "name": "Beta",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e601"
+      }
+    },
+    {
+      "code": "2ed",
+      "name": "Unlimited",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e602"
+      }
+    },
+    {
+      "code": "3ed",
+      "name": "Revised",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e603"
+      }
+    },
+    {
+      "code": "1e",
+      "name": "Alpha (Online)",
+      "group": "core",
+      "added": "3.2.4",
+      "glyphs": {
+        "default": "e947"
+      }
+    },
+    {
+      "code": "2e",
+      "name": "Beta (Online)",
+      "group": "core",
+      "added": "3.2.4",
+      "glyphs": {
+        "default": "e948"
+      }
+    },
+    {
+      "code": "2u",
+      "name": "Unlimited (Online)",
+      "group": "core",
+      "added": "3.2.4",
+      "glyphs": {
+        "default": "e949"
+      }
+    },
+    {
+      "code": "3e",
+      "name": "Revised (Online)",
+      "group": "core",
+      "added": "3.2.4",
+      "glyphs": {
+        "default": "e94a"
+      }
+    },
+    {
+      "code": "4ed",
+      "name": "Fourth Edition",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e604"
+      }
+    },
+    {
+      "code": "psum",
+      "name": "Summer Magic",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e605"
+      }
+    },
+    {
+      "code": "5ed",
+      "name": "Fifth Edition",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e606"
+      }
+    },
+    {
+      "code": "6ed",
+      "name": "Sixth Edition",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e607"
+      }
+    },
+    {
+      "code": "7ed",
+      "name": "Seventh Edition",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e608"
+      }
+    },
+    {
+      "code": "8ed",
+      "name": "Eighth Edition",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e609"
+      }
+    },
+    {
+      "code": "9ed",
+      "name": "Ninth Edition",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e60a"
+      }
+    },
+    {
+      "code": "10e",
+      "name": "Tenth Edition",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e60b"
+      }
+    },
+    {
+      "code": "m10",
+      "name": "Magic 2010",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e60c"
+      }
+    },
+    {
+      "code": "m11",
+      "name": "Magic 2011",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e60d"
+      }
+    },
+    {
+      "code": "m12",
+      "name": "Magic 2012",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e60e"
+      }
+    },
+    {
+      "code": "m13",
+      "name": "Magic 2013",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e60f"
+      }
+    },
+    {
+      "code": "m14",
+      "name": "Magic 2014",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e610"
+      }
+    },
+    {
+      "code": "m15",
+      "name": "Magic 2015",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e611"
+      }
+    },
+    {
+      "code": "bcore",
+      "name": "Blank Core Set",
+      "group": "core",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e612"
+      }
+    },
+    {
+      "code": "ori",
+      "name": "Magic Origins",
+      "group": "core",
+      "added": "1.3.0",
+      "glyphs": {
+        "default": "e697"
+      }
+    },
+    {
+      "code": "m19",
+      "name": "Magic 2019",
+      "group": "core",
+      "added": "3.2.1",
+      "glyphs": {
+        "default": "e941"
+      }
+    },
+    {
+      "code": "m20",
+      "name": "Magic 2020",
+      "group": "core",
+      "added": "3.4.3",
+      "glyphs": {
+        "default": "e95d"
+      }
+    },
+    {
+      "code": "m21",
+      "name": "Core 2021",
+      "group": "core",
+      "added": "3.6.6",
+      "glyphs": {
+        "default": "e960"
+      }
+    },
+    {
+      "code": "afr",
+      "name": "Adventures in the Forgotten Realms",
+      "group": "core",
+      "added": "3.7.0",
+      "glyphs": {
+        "default": "e972",
+        "border": "e973"
+      },
+      "preview": {
+        "duo": true
+      },
+      "aliases": [
+        "xdnd"
+      ]
+    },
+    {
+      "code": "fdn",
+      "name": "Foundations",
+      "group": "core",
+      "added": "3.15.0",
+      "glyphs": {
+        "default": "e9d8"
+      }
+    },
+    {
+      "code": "arn",
+      "name": "Arabian Nights",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e613"
+      }
+    },
+    {
+      "code": "atq",
+      "name": "Antiquities",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e614"
+      }
+    },
+    {
+      "code": "leg",
+      "name": "Legends",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e615"
+      }
+    },
+    {
+      "code": "drk",
+      "name": "The Dark",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e616"
+      }
+    },
+    {
+      "code": "fem",
+      "name": "Fallen Empires",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e617"
+      }
+    },
+    {
+      "code": "hml",
+      "name": "Homelands",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e618"
+      }
+    },
+    {
+      "code": "ice",
+      "name": "Ice Age",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e619"
+      }
+    },
+    {
+      "code": "ice2",
+      "name": "Ice Age (Original)",
+      "group": "expansion",
+      "added": "3.0.0",
+      "glyphs": {
+        "default": "e925"
+      }
+    },
+    {
+      "code": "all",
+      "name": "Alliances",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e61a"
+      }
+    },
+    {
+      "code": "csp",
+      "name": "Coldsnap",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e61b"
+      }
+    },
+    {
+      "code": "mir",
+      "name": "Mirage",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e61c"
+      }
+    },
+    {
+      "code": "vis",
+      "name": "Visions",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e61d"
+      }
+    },
+    {
+      "code": "wth",
+      "name": "Weatherlight",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e61e"
+      }
+    },
+    {
+      "code": "tmp",
+      "name": "Tempest",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e61f"
+      }
+    },
+    {
+      "code": "sth",
+      "name": "Stronghold",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e620"
+      }
+    },
+    {
+      "code": "exo",
+      "name": "Exodus",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e621"
+      }
+    },
+    {
+      "code": "usg",
+      "name": "Urza's Saga",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e622"
+      }
+    },
+    {
+      "code": "ulg",
+      "name": "Urza's Legacy",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e623"
+      }
+    },
+    {
+      "code": "uds",
+      "name": "Urza's Destiny",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e624"
+      }
+    },
+    {
+      "code": "mmq",
+      "name": "Mercadian Masques",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e625"
+      }
+    },
+    {
+      "code": "nem",
+      "name": "Nemesis",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e626"
+      },
+      "aliases": [
+        "nms"
+      ]
+    },
+    {
+      "code": "pcy",
+      "name": "Prophecy",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e627"
+      }
+    },
+    {
+      "code": "inv",
+      "name": "Invasion",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e628"
+      }
+    },
+    {
+      "code": "pls",
+      "name": "Planeshift",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e629"
+      }
+    },
+    {
+      "code": "apc",
+      "name": "Apocalypse",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e62a"
+      }
+    },
+    {
+      "code": "ody",
+      "name": "Odyssey",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e62b"
+      }
+    },
+    {
+      "code": "tor",
+      "name": "Torment",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e62c"
+      }
+    },
+    {
+      "code": "jud",
+      "name": "Judgement",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e62d"
+      }
+    },
+    {
+      "code": "ons",
+      "name": "Onslaught",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e62e"
+      }
+    },
+    {
+      "code": "lgn",
+      "name": "Legions",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e62f"
+      }
+    },
+    {
+      "code": "scg",
+      "name": "Scourge",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e630"
+      }
+    },
+    {
+      "code": "mrd",
+      "name": "Mirrodin",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e631"
+      }
+    },
+    {
+      "code": "dst",
+      "name": "Darksteel",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e632"
+      }
+    },
+    {
+      "code": "5dn",
+      "name": "Fifth Dawn",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e633"
+      }
+    },
+    {
+      "code": "chk",
+      "name": "Champions of Kamigawa",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e634"
+      }
+    },
+    {
+      "code": "bok",
+      "name": "Betrayers of Kamigawa",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e635"
+      }
+    },
+    {
+      "code": "sok",
+      "name": "Saviors of Kamigawa",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e636"
+      }
+    },
+    {
+      "code": "rav",
+      "name": "Ravnica",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e637"
+      }
+    },
+    {
+      "code": "gpt",
+      "name": "Guildpact",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e638"
+      }
+    },
+    {
+      "code": "dis",
+      "name": "Dissension",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e639"
+      }
+    },
+    {
+      "code": "tsp",
+      "name": "Time Spiral",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e63a"
+      }
+    },
+    {
+      "code": "plc",
+      "name": "Planar Chaos",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e63b"
+      }
+    },
+    {
+      "code": "fut",
+      "name": "Future Sight",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e63c"
+      }
+    },
+    {
+      "code": "lrw",
+      "name": "Lorwyn",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e63d"
+      }
+    },
+    {
+      "code": "mor",
+      "name": "Morningtide",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e63e"
+      }
+    },
+    {
+      "code": "shm",
+      "name": "Shadowmoor",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e63f"
+      }
+    },
+    {
+      "code": "eve",
+      "name": "Eventide",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e640"
+      }
+    },
+    {
+      "code": "ala",
+      "name": "Shards of Alara",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e641"
+      }
+    },
+    {
+      "code": "con",
+      "name": "Conflux",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e642"
+      }
+    },
+    {
+      "code": "arb",
+      "name": "Alara Reborn",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e643"
+      }
+    },
+    {
+      "code": "zen",
+      "name": "Zendikar",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e644"
+      }
+    },
+    {
+      "code": "wwk",
+      "name": "Worldwake",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e645"
+      }
+    },
+    {
+      "code": "roe",
+      "name": "Rise of the Eldrazi",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e646"
+      }
+    },
+    {
+      "code": "som",
+      "name": "Scars of Mirrodin",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e647"
+      }
+    },
+    {
+      "code": "mbs",
+      "name": "Mirrodin Besieged",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e648"
+      }
+    },
+    {
+      "code": "nph",
+      "name": "New Phyrexia",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e649"
+      }
+    },
+    {
+      "code": "isd",
+      "name": "Innistrad",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e64a"
+      }
+    },
+    {
+      "code": "dka",
+      "name": "Dark Ascension",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e64b"
+      }
+    },
+    {
+      "code": "avr",
+      "name": "Avacyn Restored",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e64c"
+      }
+    },
+    {
+      "code": "rtr",
+      "name": "Return to Ravnica",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e64d"
+      }
+    },
+    {
+      "code": "gtc",
+      "name": "Gatecrash",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e64e"
+      }
+    },
+    {
+      "code": "dgm",
+      "name": "Dragon's Maze",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e64f"
+      }
+    },
+    {
+      "code": "ths",
+      "name": "Theros",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e650"
+      }
+    },
+    {
+      "code": "bng",
+      "name": "Born of the Gods",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e651"
+      }
+    },
+    {
+      "code": "jou",
+      "name": "Journey into Nyx",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e652"
+      }
+    },
+    {
+      "code": "ktk",
+      "name": "Khans of Tarkir",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e653"
+      }
+    },
+    {
+      "code": "frf",
+      "name": "Fate Reforged",
+      "group": "expansion",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e654"
+      }
+    },
+    {
+      "code": "dtk",
+      "name": "Dragons of Tarkir",
+      "group": "expansion",
+      "added": "1.0.0",
+      "glyphs": {
+        "default": "e693"
+      }
+    },
+    {
+      "code": "bfz",
+      "name": "Battle for Zendikar",
+      "group": "expansion",
+      "added": "1.4.0",
+      "glyphs": {
+        "default": "e699"
+      }
+    },
+    {
+      "code": "ogw",
+      "name": "Oath of the Gatewatch",
+      "group": "expansion",
+      "added": "1.5.0",
+      "glyphs": {
+        "default": "e901"
+      }
+    },
+    {
+      "code": "soi",
+      "name": "Shadows Over Innistrad",
+      "group": "expansion",
+      "added": "1.5.0",
+      "glyphs": {
+        "default": "e902"
+      }
+    },
+    {
+      "code": "emn",
+      "name": "Eldritch Moon",
+      "group": "expansion",
+      "added": "1.6.0",
+      "glyphs": {
+        "default": "e90b"
+      }
+    },
+    {
+      "code": "kld",
+      "name": "Kaladesh",
+      "group": "expansion",
+      "added": "1.7.0",
+      "glyphs": {
+        "default": "e90e"
+      }
+    },
+    {
+      "code": "aer",
+      "name": "Aether Revolt",
+      "group": "expansion",
+      "added": "1.7.0",
+      "glyphs": {
+        "default": "e90f"
+      }
+    },
+    {
+      "code": "akh",
+      "name": "Amonkhet",
+      "group": "expansion",
+      "added": "1.8.0",
+      "glyphs": {
+        "default": "e914"
+      }
+    },
+    {
+      "code": "hou",
+      "name": "Hour of Devastation",
+      "group": "expansion",
+      "added": "2.3.0",
+      "glyphs": {
+        "default": "e924"
+      }
+    },
+    {
+      "code": "xln",
+      "name": "Ixalan",
+      "group": "expansion",
+      "added": "3.1.0",
+      "glyphs": {
+        "default": "e92e"
+      }
+    },
+    {
+      "code": "rix",
+      "name": "Rivals of Ixalan",
+      "group": "expansion",
+      "added": "3.1.0",
+      "glyphs": {
+        "default": "e92f"
+      }
+    },
+    {
+      "code": "dom",
+      "name": "Dominaria",
+      "group": "expansion",
+      "added": "3.2.0",
+      "glyphs": {
+        "default": "e93f"
+      }
+    },
+    {
+      "code": "grn",
+      "name": "Guilds of Ravnica",
+      "group": "expansion",
+      "added": "3.3.0",
+      "glyphs": {
+        "default": "e94b"
+      }
+    },
+    {
+      "code": "rna",
+      "name": "Ravnica Allegiance",
+      "group": "expansion",
+      "added": "3.3.3",
+      "glyphs": {
+        "default": "e959"
+      }
+    },
+    {
+      "code": "war",
+      "name": "War of the Spark",
+      "group": "expansion",
+      "added": "3.4.0",
+      "glyphs": {
+        "default": "e95a"
+      }
+    },
+    {
+      "code": "eld",
+      "name": "Throne of Eldraine",
+      "group": "expansion",
+      "added": "3.5.0",
+      "glyphs": {
+        "default": "e95e"
+      }
+    },
+    {
+      "code": "thb",
+      "name": "Theros: Beyond Death",
+      "group": "expansion",
+      "added": "3.6.0",
+      "glyphs": {
+        "default": "e961"
+      }
+    },
+    {
+      "code": "iko",
+      "name": "Ikoria: Lair of Behemoths",
+      "group": "expansion",
+      "added": "3.6.0",
+      "glyphs": {
+        "default": "e962"
+      }
+    },
+    {
+      "code": "znr",
+      "name": "Zendikar Rising",
+      "group": "expansion",
+      "added": "3.6.0",
+      "glyphs": {
+        "default": "e963"
+      }
+    },
+    {
+      "code": "khm",
+      "name": "Kaldheim",
+      "group": "expansion",
+      "added": "3.7.0",
+      "glyphs": {
+        "default": "e974"
+      },
+      "aliases": [
+        "xkld"
+      ]
+    },
+    {
+      "code": "stx",
+      "name": "Strixhaven: School of Mages",
+      "group": "expansion",
+      "added": "3.7.0",
+      "glyphs": {
+        "default": "e975"
+      },
+      "aliases": [
+        "xssm"
+      ]
+    },
+    {
+      "code": "mid",
+      "name": "Innistrad: Midnight Hunt",
+      "group": "expansion",
+      "added": "3.7.0",
+      "glyphs": {
+        "default": "e978",
+        "border": "e979"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "vow",
+      "name": "Innistrad: Crimson Vow",
+      "group": "expansion",
+      "added": "3.7.0",
+      "glyphs": {
+        "default": "e977"
+      }
+    },
+    {
+      "code": "neo",
+      "name": "Kamigawa: Neon Dynasty",
+      "group": "expansion",
+      "added": "3.9.0",
+      "glyphs": {
+        "default": "e98c"
+      }
+    },
+    {
+      "code": "snc",
+      "name": "Streets of New Capenna",
+      "group": "expansion",
+      "added": "3.9.1",
+      "glyphs": {
+        "default": "e98b"
+      }
+    },
+    {
+      "code": "dmu",
+      "name": "Dominaria United",
+      "group": "expansion",
+      "added": "3.10.0",
+      "glyphs": {
+        "default": "e993"
+      }
+    },
+    {
+      "code": "bro",
+      "name": "The Brothers' War",
+      "group": "expansion",
+      "added": "3.11.0",
+      "glyphs": {
+        "default": "e99d"
+      }
+    },
+    {
+      "code": "one",
+      "name": "Phyrexia: All Will Be One",
+      "group": "expansion",
+      "added": "3.12.0",
+      "glyphs": {
+        "default": "e9a1"
+      }
+    },
+    {
+      "code": "mom",
+      "name": "March of the Machine",
+      "group": "expansion",
+      "added": "3.12.0",
+      "glyphs": {
+        "default": "e9a2"
+      }
+    },
+    {
+      "code": "mat",
+      "name": "March of the Machines: The Aftermath",
+      "group": "expansion",
+      "added": "3.12.0",
+      "glyphs": {
+        "default": "e9a3"
+      },
+      "display": "March of the Machine: The Aftermath"
+    },
+    {
+      "code": "woe",
+      "name": "Wilds of Eldraine",
+      "group": "expansion",
+      "added": "3.12.2",
+      "glyphs": {
+        "default": "e9ae"
+      }
+    },
+    {
+      "code": "lci",
+      "name": "Lost Caverns of Ixalan",
+      "group": "expansion",
+      "added": "3.13.0",
+      "glyphs": {
+        "default": "e9c2"
+      }
+    },
+    {
+      "code": "mkm",
+      "name": "Murders at Karlov Manor",
+      "group": "expansion",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9c9"
+      }
+    },
+    {
+      "code": "otj",
+      "name": "Outlaws of Thunder Junction",
+      "group": "expansion",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9cc"
+      }
+    },
+    {
+      "code": "big",
+      "name": "The Big Score",
+      "group": "expansion",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9d6"
+      }
+    },
+    {
+      "code": "blb",
+      "name": "Bloomburrow",
+      "group": "expansion",
+      "added": "3.15.0",
+      "glyphs": {
+        "default": "e9cd"
+      }
+    },
+    {
+      "code": "dsk",
+      "name": "Duskmourn: House of Horror",
+      "group": "expansion",
+      "added": "3.15.0",
+      "glyphs": {
+        "default": "e9d7"
+      }
+    },
+    {
+      "code": "dft",
+      "name": "Aetherdrift",
+      "group": "expansion",
+      "added": "3.16.0",
+      "glyphs": {
+        "default": "e9e0",
+        "rarity": "e9e1",
+        "border": "e9e0"
+      }
+    },
+    {
+      "code": "tdm",
+      "name": "Tarkir: Dragonstorm",
+      "group": "expansion",
+      "added": "3.16.1",
+      "glyphs": {
+        "default": "e9e6",
+        "border": "e9ec"
+      }
+    },
+    {
+      "code": "fin",
+      "name": "Final Fantasy",
+      "group": "expansion",
+      "added": "3.17.0",
+      "glyphs": {
+        "default": "e9ed",
+        "rarity": "e9ee",
+        "border": "e9ef"
+      }
+    },
+    {
+      "code": "eoe",
+      "name": "Edge of Eternities",
+      "group": "expansion",
+      "added": "3.17.0",
+      "glyphs": {
+        "default": "e9f0"
+      }
+    },
+    {
+      "code": "spm",
+      "name": "Marvel Spider-Man",
+      "group": "expansion",
+      "added": "3.17.0",
+      "glyphs": {
+        "default": "e9f1",
+        "inner": "e9f2"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "tla",
+      "name": "Avatar: The Last Airbender",
+      "group": "expansion",
+      "added": "3.17.1",
+      "glyphs": {
+        "default": "e9fb",
+        "inner": "e9fe",
+        "border": "e9fd"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "ecl",
+      "name": "Lorwyn Eclipsed",
+      "group": "expansion",
+      "added": "3.18.0",
+      "glyphs": {
+        "default": "ea04",
+        "border": "ea05"
+      }
+    },
+    {
+      "code": "tmt",
+      "name": "Teenage Mutant Ninja Turtles",
+      "group": "expansion",
+      "added": "3.18.0",
+      "glyphs": {
+        "default": "ea06",
+        "inner": "ea17",
+        "border": "ea07"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "sos",
+      "name": "Secrets of Strixhaven",
+      "group": "expansion",
+      "added": "3.19.0",
+      "glyphs": {
+        "default": "ea18"
+      }
+    },
+    {
+      "code": "msh",
+      "name": "Marvel Super Heroes",
+      "group": "expansion",
+      "added": "3.19.0",
+      "glyphs": {
+        "default": "ea1a"
+      }
+    },
+    {
+      "code": "hob",
+      "name": "The Hobbit",
+      "group": "expansion",
+      "added": "3.19.0",
+      "glyphs": {
+        "default": "ea19"
+      }
+    },
+    {
+      "code": "fra",
+      "name": "Reality Fracture",
+      "group": "expansion",
+      "added": "3.19.0",
+      "glyphs": {
+        "default": "ea22"
+      }
+    },
+    {
+      "code": "van",
+      "name": "Vanguard",
+      "group": "commander",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e655",
+        "border": "e655"
+      }
+    },
+    {
+      "code": "hop",
+      "name": "Planechase",
+      "group": "commander",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e656",
+        "border": "e656"
+      }
+    },
+    {
+      "code": "arc",
+      "name": "Archenemy",
+      "group": "commander",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e657",
+        "border": "e657"
+      }
+    },
+    {
+      "code": "cmd",
+      "name": "Commander",
+      "group": "commander",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e658",
+        "border": "e658"
+      }
+    },
+    {
+      "code": "pc2",
+      "name": "Planechase 2012",
+      "group": "commander",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e659",
+        "border": "e659"
+      }
+    },
+    {
+      "code": "cm1",
+      "name": "Commander's Arsenal",
+      "group": "commander",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e65a",
+        "border": "e65a"
+      }
+    },
+    {
+      "code": "c13",
+      "name": "Commander 2013",
+      "group": "commander",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e65b",
+        "border": "e65b"
+      }
+    },
+    {
+      "code": "cns",
+      "name": "Conspiracy",
+      "group": "commander",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e65c",
+        "border": "e65c"
+      }
+    },
+    {
+      "code": "c14",
+      "name": "Commander 2014",
+      "group": "commander",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e65d",
+        "border": "e65d"
+      }
+    },
+    {
+      "code": "c15",
+      "name": "Commander 2015",
+      "group": "commander",
+      "added": "1.4.2",
+      "glyphs": {
+        "default": "e900",
+        "border": "e900"
+      }
+    },
+    {
+      "code": "cn2",
+      "name": "Conspiracy 2: Take the Crown",
+      "group": "commander",
+      "added": "1.5.2",
+      "glyphs": {
+        "default": "e904"
+      }
+    },
+    {
+      "code": "c16",
+      "name": "Commander 2016",
+      "group": "commander",
+      "added": "1.7.0",
+      "glyphs": {
+        "default": "e9e5",
+        "rarity": "e910",
+        "border": "e9e5"
+      }
+    },
+    {
+      "code": "pca",
+      "name": "Planechase Anthology",
+      "group": "commander",
+      "added": "1.7.0",
+      "glyphs": {
+        "default": "e911"
+      }
+    },
+    {
+      "code": "cma",
+      "name": "Commander Anthology",
+      "group": "commander",
+      "added": "2.1.1",
+      "glyphs": {
+        "default": "e916"
+      }
+    },
+    {
+      "code": "e01",
+      "name": "Archenemy: Nicol Bolas",
+      "group": "commander",
+      "added": "3.0.3",
+      "glyphs": {
+        "default": "e92d"
+      },
+      "aliases": [
+        "ann"
+      ]
+    },
+    {
+      "code": "e02",
+      "name": "Explorers of Ixalan",
+      "group": "commander",
+      "added": "3.1.0",
+      "glyphs": {
+        "default": "e931"
+      }
+    },
+    {
+      "code": "c17",
+      "name": "Commander 2017",
+      "group": "commander",
+      "added": "3.1.4",
+      "glyphs": {
+        "default": "e934"
+      }
+    },
+    {
+      "code": "cm2",
+      "name": "Commander Anthology 2",
+      "group": "commander",
+      "added": "3.2.0",
+      "glyphs": {
+        "default": "e940"
+      }
+    },
+    {
+      "code": "bbd",
+      "name": "Battlebond",
+      "group": "commander",
+      "added": "3.2.1",
+      "glyphs": {
+        "default": "e942"
+      }
+    },
+    {
+      "code": "c18",
+      "name": "Commander 2018",
+      "group": "commander",
+      "added": "3.2.3",
+      "glyphs": {
+        "default": "e946"
+      }
+    },
+    {
+      "code": "c19",
+      "name": "Commander 2019",
+      "group": "commander",
+      "added": "3.5.0",
+      "glyphs": {
+        "default": "e95f"
+      }
+    },
+    {
+      "code": "c20",
+      "name": "Ikoria: Commander 2020",
+      "group": "commander",
+      "added": "3.6.2",
+      "glyphs": {
+        "default": "e966"
+      }
+    },
+    {
+      "code": "znc",
+      "name": "Zendikar Rising: Commander Decks",
+      "group": "commander",
+      "added": "3.6.2",
+      "glyphs": {
+        "default": "e967"
+      }
+    },
+    {
+      "code": "cc1",
+      "name": "Commander Collection: Green",
+      "group": "commander",
+      "added": "3.6.2",
+      "glyphs": {
+        "default": "e968"
+      }
+    },
+    {
+      "code": "cmr",
+      "name": "Commander Legends",
+      "group": "commander",
+      "added": "3.6.2",
+      "glyphs": {
+        "default": "e969"
+      }
+    },
+    {
+      "code": "cmc",
+      "name": "Commander Legends Decks",
+      "group": "commander",
+      "added": "3.6.2",
+      "symbolOf": "cmr"
+    },
+    {
+      "code": "khc",
+      "name": "Kaldheim Commander",
+      "group": "commander",
+      "added": "3.7.2",
+      "glyphs": {
+        "default": "e97d",
+        "rarity": "e9c5",
+        "inner": "e9c6"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "c21",
+      "name": "Commander 2021",
+      "group": "commander",
+      "added": "3.8.0",
+      "glyphs": {
+        "default": "e97e",
+        "border": "e97f"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "afc",
+      "name": "Forgotten Realms Commander",
+      "group": "commander",
+      "added": "3.8.2",
+      "glyphs": {
+        "default": "e981",
+        "border": "e982"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "mic",
+      "name": "Innistrad: Midnight Hunt Commander",
+      "group": "commander",
+      "added": "3.8.4",
+      "glyphs": {
+        "default": "e985",
+        "inner": "ea23"
+      },
+      "display": "Midnight Hunt Commander",
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "voc",
+      "name": "Innistrad: Crimson Vow Commander",
+      "group": "commander",
+      "added": "3.8.4",
+      "glyphs": {
+        "default": "e986",
+        "inner": "ea24"
+      },
+      "display": "Crimson Vow Commander",
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "cc2",
+      "name": "Commander Collection: Black",
+      "group": "commander",
+      "added": "3.8.4",
+      "glyphs": {
+        "default": "e987",
+        "border": "e988"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "nec",
+      "name": "Kamigawa: Neon Dynasty: Commander",
+      "group": "commander",
+      "added": "3.9.1",
+      "glyphs": {
+        "default": "e98d"
+      },
+      "display": "Kamigawa Commander"
+    },
+    {
+      "code": "ncc",
+      "name": "Streets of New Capenna: Commander",
+      "group": "commander",
+      "added": "3.9.2",
+      "glyphs": {
+        "default": "e98e",
+        "rarity": "e98f",
+        "inner": "e990",
+        "inner-color": "e98f",
+        "inner-wing": "e990"
+      },
+      "display": "Streets of New Capenna Commander",
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "clb",
+      "name": "Commander Legends: Battle for Baldur's Gate",
+      "group": "commander",
+      "added": "3.9.2",
+      "glyphs": {
+        "default": "e991",
+        "inner": "e992"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "dmc",
+      "name": "Dominaria United Commander",
+      "group": "commander",
+      "added": "3.10.0",
+      "glyphs": {
+        "default": "e994",
+        "rarity": "e995",
+        "inner": "e997",
+        "border": "e996"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "40k",
+      "name": "Warhammer 40K",
+      "group": "commander",
+      "added": "3.10.0",
+      "glyphs": {
+        "default": "e998",
+        "rarity": "e999",
+        "inner": "e99b",
+        "border": "e99a"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "brc",
+      "name": "The Brothers' War Commander",
+      "group": "commander",
+      "added": "3.11.0",
+      "glyphs": {
+        "default": "e99f"
+      }
+    },
+    {
+      "code": "onc",
+      "name": "Phyrexia: All Will Be One Commander",
+      "group": "commander",
+      "added": "3.12.0",
+      "glyphs": {
+        "default": "e9a8"
+      }
+    },
+    {
+      "code": "moc",
+      "name": "March of the Machine Commander",
+      "group": "commander",
+      "added": "3.12.0",
+      "glyphs": {
+        "default": "e9a9"
+      }
+    },
+    {
+      "code": "scd",
+      "name": "Starter Commander Decks",
+      "group": "commander",
+      "added": "3.12.1",
+      "glyphs": {
+        "default": "e9ab",
+        "inner": "e9ac",
+        "rarity": "e9ab"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "cmm",
+      "name": "Commander Masters",
+      "group": "commander",
+      "added": "3.12.2",
+      "glyphs": {
+        "default": "e9b5"
+      }
+    },
+    {
+      "code": "ltc",
+      "name": "The Lord of the Rings: Tales of Middle-Earth Commander",
+      "group": "commander",
+      "added": "3.12.2",
+      "glyphs": {
+        "default": "e9b6",
+        "rarity": "e9b7",
+        "inner": "e9b8"
+      },
+      "display": "Lord of the Rings Commander",
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "who",
+      "name": "Universes Beyond: Doctor Who",
+      "group": "commander",
+      "added": "3.12.2",
+      "glyphs": {
+        "default": "e9b0"
+      },
+      "display": "UB: Doctor Who"
+    },
+    {
+      "code": "woc",
+      "name": "Wilds of Eldraine Commander",
+      "group": "commander",
+      "added": "3.12.2",
+      "glyphs": {
+        "default": "e9b9"
+      }
+    },
+    {
+      "code": "lcc",
+      "name": "Lost Caverns of Ixalan Commander",
+      "group": "commander",
+      "added": "3.13.0",
+      "glyphs": {
+        "default": "e9c7"
+      },
+      "display": "LCI Commander"
+    },
+    {
+      "code": "pip",
+      "name": "Universes Beyond: Fallout",
+      "group": "commander",
+      "added": "3.13.0",
+      "glyphs": {
+        "default": "e9c3"
+      },
+      "display": "UB: Fallout"
+    },
+    {
+      "code": "mkc",
+      "name": "Murders at Karlov Manor Commander",
+      "group": "commander",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9ca"
+      },
+      "display": "MKM Commander"
+    },
+    {
+      "code": "otc",
+      "name": "Outlaws of Thunder Junction Commander",
+      "group": "commander",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9d2",
+        "inner": "e9d3"
+      },
+      "display": "OTJ Commander",
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "blc",
+      "name": "Bloomburrow Commander",
+      "group": "commander",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9d4"
+      }
+    },
+    {
+      "code": "m3c",
+      "name": "Modern Horizons 3 Commander",
+      "group": "commander",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9d0",
+        "inner": "e9d1"
+      },
+      "display": "MH3 Commander",
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "dsc",
+      "name": "Duskmourn Commander",
+      "group": "commander",
+      "added": "3.15.1",
+      "glyphs": {
+        "default": "e9dc",
+        "inner": "e9de",
+        "border": "e9dd"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "fdc",
+      "name": "Foundations Commander",
+      "group": "commander",
+      "added": "3.16.0",
+      "glyphs": {
+        "default": "e9e4"
+      }
+    },
+    {
+      "code": "drc",
+      "name": "Aetherdrift Commander",
+      "group": "commander",
+      "added": "3.16.1",
+      "glyphs": {
+        "default": "e9e8",
+        "rarity": "e9e9",
+        "inner": "e9eb",
+        "border": "e9ea"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "tdc",
+      "name": "Tarkir: Dragonstorm Commander",
+      "group": "commander",
+      "added": "3.17.0",
+      "glyphs": {
+        "default": "e9f4"
+      }
+    },
+    {
+      "code": "fic",
+      "name": "Final Fantasy Commander",
+      "group": "commander",
+      "added": "3.17.0",
+      "glyphs": {
+        "default": "e9f5"
+      }
+    },
+    {
+      "code": "eoc",
+      "name": "Edge of Eternities Commander",
+      "group": "commander",
+      "added": "3.17.0",
+      "glyphs": {
+        "default": "e9f6",
+        "inner": "e9f7"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "ecc",
+      "name": "Lorwyn Eclipsed Commander",
+      "group": "commander",
+      "added": "3.18.0",
+      "glyphs": {
+        "default": "ea11",
+        "inner": "ea14",
+        "rarity": "ea12",
+        "border": "ea13"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "tmc",
+      "name": "Teenage Mutant Ninja Turtles Eternal-Legal",
+      "group": "commander",
+      "added": "3.18.0",
+      "glyphs": {
+        "default": "ea15",
+        "border": "ea16"
+      },
+      "display": "TMT Eternal-Legal"
+    },
+    {
+      "code": "soc",
+      "name": "Secrets of Strixhaven Commander",
+      "group": "commander",
+      "added": "3.19.0",
+      "glyphs": {
+        "default": "ea1c",
+        "inner": "ea1d"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "hoc",
+      "name": "The Hobbit Eternal",
+      "group": "commander",
+      "added": "3.19.0",
+      "glyphs": {
+        "default": "ea1e"
+      }
+    },
+    {
+      "code": "msc",
+      "name": "Marvel Super Heroes Commander",
+      "group": "commander",
+      "added": "3.19.0",
+      "glyphs": {
+        "default": "ea1f"
+      }
+    },
+    {
+      "code": "chr",
+      "name": "Chronicles",
+      "group": "reprint",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e65e"
+      }
+    },
+    {
+      "code": "ath",
+      "name": "Anthologies",
+      "group": "reprint",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e65f"
+      }
+    },
+    {
+      "code": "brb",
+      "name": "Battle Royale",
+      "group": "reprint",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e660"
+      }
+    },
+    {
+      "code": "btd",
+      "name": "Beatdown",
+      "group": "reprint",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e661"
+      }
+    },
+    {
+      "code": "dkm",
+      "name": "Deckmasters",
+      "group": "reprint",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e662"
+      }
+    },
+    {
+      "code": "mma",
+      "name": "Modern Masters",
+      "group": "reprint",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e663"
+      }
+    },
+    {
+      "code": "mm2",
+      "name": "Modern Masters 2015",
+      "group": "reprint",
+      "added": "1.0.2",
+      "glyphs": {
+        "default": "e695"
+      }
+    },
+    {
+      "code": "ema",
+      "name": "Eternal Masters",
+      "group": "reprint",
+      "added": "1.5.1",
+      "glyphs": {
+        "default": "e903"
+      }
+    },
+    {
+      "code": "mm3",
+      "name": "Modern Masters 2017",
+      "group": "reprint",
+      "added": "1.7.0",
+      "glyphs": {
+        "default": "e912"
+      }
+    },
+    {
+      "code": "ren",
+      "name": "Renaissance",
+      "group": "reprint",
+      "added": "2.1.0",
+      "glyphs": {
+        "default": "e917"
+      },
+      "aliases": [
+        "xren"
+      ]
+    },
+    {
+      "code": "rin",
+      "name": "Rinascimento",
+      "group": "reprint",
+      "added": "2.1.0",
+      "glyphs": {
+        "default": "e918"
+      },
+      "aliases": [
+        "xrin"
+      ]
+    },
+    {
+      "code": "ima",
+      "name": "Iconic Masters",
+      "group": "reprint",
+      "added": "3.1.4",
+      "glyphs": {
+        "default": "e935"
+      }
+    },
+    {
+      "code": "a25",
+      "name": "Masters 25",
+      "group": "reprint",
+      "added": "3.1.9",
+      "glyphs": {
+        "default": "e93d"
+      }
+    },
+    {
+      "code": "uma",
+      "name": "Ultimate Masters",
+      "group": "reprint",
+      "added": "3.3.2",
+      "glyphs": {
+        "default": "e958"
+      }
+    },
+    {
+      "code": "mh1",
+      "name": "Modern Horizons",
+      "group": "reprint",
+      "added": "3.4.0",
+      "glyphs": {
+        "default": "e95b"
+      }
+    },
+    {
+      "code": "2xm",
+      "name": "Double Masters",
+      "group": "reprint",
+      "added": "3.6.6",
+      "glyphs": {
+        "default": "e96e"
+      }
+    },
+    {
+      "code": "jmp",
+      "name": "Jumpstart",
+      "group": "reprint",
+      "added": "3.6.6",
+      "glyphs": {
+        "default": "e96f"
+      }
+    },
+    {
+      "code": "mb1",
+      "name": "Mystery Booster",
+      "group": "reprint",
+      "added": "3.6.7",
+      "glyphs": {
+        "default": "e971"
+      }
+    },
+    {
+      "code": "mh2",
+      "name": "Modern Horizons 2",
+      "group": "reprint",
+      "added": "3.7.0",
+      "glyphs": {
+        "default": "e97b"
+      }
+    },
+    {
+      "code": "sta",
+      "name": "Strixhaven: Mystical Archives",
+      "group": "reprint",
+      "added": "3.8.0",
+      "glyphs": {
+        "default": "e980"
+      }
+    },
+    {
+      "code": "j21",
+      "name": "Jumpstart: Historic Horizons",
+      "group": "reprint",
+      "added": "3.8.3",
+      "glyphs": {
+        "default": "e983",
+        "inner": "e984",
+        "border": "e984"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "2x2",
+      "name": "Double Masters 2022",
+      "group": "reprint",
+      "added": "3.10.0",
+      "glyphs": {
+        "default": "e99c"
+      }
+    },
+    {
+      "code": "brr",
+      "name": "The Brothers' War Retro Artifacts",
+      "group": "reprint",
+      "added": "3.11.0",
+      "glyphs": {
+        "default": "e9a0"
+      }
+    },
+    {
+      "code": "j22",
+      "name": "Jumpstart 2022",
+      "group": "reprint",
+      "added": "3.12.1",
+      "glyphs": {
+        "default": "e9ad"
+      }
+    },
+    {
+      "code": "mul",
+      "name": "Multiverse Legends",
+      "group": "reprint",
+      "added": "3.12.2",
+      "glyphs": {
+        "default": "e9ba"
+      }
+    },
+    {
+      "code": "wot",
+      "name": "Wilds of Eldraine Enchanting Tales",
+      "group": "reprint",
+      "added": "3.12.3",
+      "glyphs": {
+        "default": "e9c0"
+      }
+    },
+    {
+      "code": "br",
+      "name": "Battle Royale (alternate)",
+      "group": "reprint",
+      "added": "3.12.3",
+      "glyphs": {
+        "default": "e9c1"
+      }
+    },
+    {
+      "code": "spg",
+      "name": "Special Guests",
+      "group": "reprint",
+      "added": "3.13.0",
+      "glyphs": {
+        "default": "e9c8"
+      }
+    },
+    {
+      "code": "otp",
+      "name": "Breaking News",
+      "group": "reprint",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9d5"
+      }
+    },
+    {
+      "code": "mb2",
+      "name": "Mystery Booster 2",
+      "group": "reprint",
+      "added": "3.15.1",
+      "glyphs": {
+        "default": "e9d9"
+      }
+    },
+    {
+      "code": "j25",
+      "name": "Jumpstart 2025",
+      "group": "reprint",
+      "added": "3.15.1",
+      "glyphs": {
+        "default": "e9df"
+      }
+    },
+    {
+      "code": "pio",
+      "name": "Pioneer Masters",
+      "group": "reprint",
+      "added": "3.16.1",
+      "glyphs": {
+        "default": "e9e7"
+      }
+    },
+    {
+      "code": "fca",
+      "name": "Final Fantasy: Through the Ages",
+      "group": "reprint",
+      "added": "3.17.0",
+      "glyphs": {
+        "default": "e9f8"
+      },
+      "display": "FF: Through the Ages"
+    },
+    {
+      "code": "mar",
+      "name": "Marvel (TBD)",
+      "group": "reprint",
+      "added": "3.17.0",
+      "glyphs": {
+        "default": "e9f9",
+        "inner": "e9fa"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "eos",
+      "name": "Edge of Eternities: Stellar Sights",
+      "group": "reprint",
+      "added": "3.17.1",
+      "glyphs": {
+        "default": "ea00",
+        "rarity": "e9ff",
+        "border": "ea00"
+      },
+      "display": "Stellar Sights"
+    },
+    {
+      "code": "j25a",
+      "name": "Jumpstart 2025",
+      "group": "reprint",
+      "added": null,
+      "glyphs": {
+        "default": "e9db"
+      },
+      "docs": {
+        "icon": false
+      },
+      "notes": "Not listed in the existing icon reference. Name and first-added version need review."
+    },
+    {
+      "code": "por",
+      "name": "Portal",
+      "group": "beginner",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e664"
+      }
+    },
+    {
+      "code": "p02",
+      "name": "Portal 2",
+      "group": "beginner",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e665"
+      },
+      "aliases": [
+        "po2"
+      ]
+    },
+    {
+      "code": "ptk",
+      "name": "Portal Three Kingdoms",
+      "group": "beginner",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e666"
+      }
+    },
+    {
+      "code": "s99",
+      "name": "Starter 1999",
+      "group": "beginner",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e667"
+      }
+    },
+    {
+      "code": "s00",
+      "name": "Starter 2000",
+      "group": "beginner",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e668"
+      }
+    },
+    {
+      "code": "w16",
+      "name": "Welcome Deck 2016",
+      "group": "beginner",
+      "added": "1.5.4",
+      "glyphs": {
+        "default": "e907"
+      }
+    },
+    {
+      "code": "w17",
+      "name": "Welcome Deck 2017",
+      "group": "beginner",
+      "added": "2.2.3",
+      "glyphs": {
+        "default": "e923"
+      }
+    },
+    {
+      "code": "evg",
+      "name": "Elves v. Goblins",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e669"
+      }
+    },
+    {
+      "code": "dd2",
+      "name": "Jace v. Chandra",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e66a"
+      }
+    },
+    {
+      "code": "ddc",
+      "name": "Divine v. Demonic",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e66b"
+      }
+    },
+    {
+      "code": "ddd",
+      "name": "Garruk v. Liliana",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e66c"
+      }
+    },
+    {
+      "code": "dde",
+      "name": "Phyrexia v. Coalition",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e66d"
+      }
+    },
+    {
+      "code": "ddf",
+      "name": "Elspeth v. Tezzeret",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e66e"
+      }
+    },
+    {
+      "code": "ddg",
+      "name": "Knights v. Dragons",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e66f"
+      }
+    },
+    {
+      "code": "ddh",
+      "name": "Ajani v. Nicol Bolas",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e670"
+      }
+    },
+    {
+      "code": "ddi",
+      "name": "Venser v. Koth",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e671"
+      }
+    },
+    {
+      "code": "ddj",
+      "name": "Izzet v. Golgari",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e672"
+      }
+    },
+    {
+      "code": "ddk",
+      "name": "Sorin v. Tibalt",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e673"
+      }
+    },
+    {
+      "code": "ddl",
+      "name": "Heroes v. Monsters",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e674"
+      }
+    },
+    {
+      "code": "ddm",
+      "name": "Jace v. Vraska",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e675"
+      }
+    },
+    {
+      "code": "ddn",
+      "name": "Speed v. Cunning",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e676"
+      }
+    },
+    {
+      "code": "ddo",
+      "name": "Kiora v. Elspeth",
+      "group": "duel",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e677"
+      }
+    },
+    {
+      "code": "ddp",
+      "name": "Zendikar v. Eldrazi",
+      "group": "duel",
+      "added": "1.3.1",
+      "glyphs": {
+        "default": "e698"
+      }
+    },
+    {
+      "code": "ddq",
+      "name": "Blessed v. Cursed",
+      "group": "duel",
+      "added": "1.5.5",
+      "glyphs": {
+        "default": "e908"
+      }
+    },
+    {
+      "code": "ddr",
+      "name": "Nissa v. Ob Nixilis",
+      "group": "duel",
+      "added": "1.7.0",
+      "glyphs": {
+        "default": "e90d"
+      }
+    },
+    {
+      "code": "td2",
+      "name": "New Phyrexia v. Mirrodin Pure",
+      "group": "duel",
+      "added": "2.1.0",
+      "glyphs": {
+        "default": "e91c"
+      }
+    },
+    {
+      "code": "dds",
+      "name": "Mind v. Might",
+      "group": "duel",
+      "added": "2.2.0",
+      "glyphs": {
+        "default": "e921"
+      }
+    },
+    {
+      "code": "ddt",
+      "name": "Merfolk v. Goblins",
+      "group": "duel",
+      "added": "3.1.4",
+      "glyphs": {
+        "default": "e933"
+      }
+    },
+    {
+      "code": "ddu",
+      "name": "Elves v. Inventors",
+      "group": "duel",
+      "added": "3.1.10",
+      "glyphs": {
+        "default": "e93e"
+      }
+    },
+    {
+      "code": "drb",
+      "name": "FTV: Dragons",
+      "group": "vault",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e678"
+      }
+    },
+    {
+      "code": "v09",
+      "name": "FTV: Exiled",
+      "group": "vault",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e679"
+      }
+    },
+    {
+      "code": "v0x",
+      "name": "FTV: Vaults",
+      "group": "vault",
+      "added": "2.1.5",
+      "glyphs": {
+        "default": "e920"
+      }
+    },
+    {
+      "code": "v10",
+      "name": "FTV: Relics",
+      "group": "vault",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e67a"
+      }
+    },
+    {
+      "code": "v11",
+      "name": "FTV: Legends",
+      "group": "vault",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e67b"
+      }
+    },
+    {
+      "code": "v12",
+      "name": "FTV: Realms",
+      "group": "vault",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e67c"
+      }
+    },
+    {
+      "code": "v13",
+      "name": "FTV: Twenty",
+      "group": "vault",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e67d"
+      }
+    },
+    {
+      "code": "v14",
+      "name": "FTV: Annihilation",
+      "group": "vault",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e67e"
+      }
+    },
+    {
+      "code": "v15",
+      "name": "FTV: Angels",
+      "group": "vault",
+      "added": "1.5.3",
+      "glyphs": {
+        "default": "e905"
+      }
+    },
+    {
+      "code": "v16",
+      "name": "FTV: Lore",
+      "group": "vault",
+      "added": "1.5.3",
+      "glyphs": {
+        "default": "e906"
+      }
+    },
+    {
+      "code": "v17",
+      "name": "FTV: Transform",
+      "group": "vault",
+      "added": "3.1.6",
+      "glyphs": {
+        "default": "e939"
+      }
+    },
+    {
+      "code": "h09",
+      "name": "PDS: Slivers",
+      "group": "premium",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e67f"
+      }
+    },
+    {
+      "code": "pd2",
+      "name": "PDS: Fire & Lightning",
+      "group": "premium",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e680"
+      }
+    },
+    {
+      "code": "pd3",
+      "name": "PDS: Graveborn",
+      "group": "premium",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e681"
+      }
+    },
+    {
+      "code": "md1",
+      "name": "Modern Event Deck",
+      "group": "premium",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e682"
+      }
+    },
+    {
+      "code": "ss1",
+      "name": "Signature Spellbook: Jace",
+      "group": "spellbook",
+      "added": "3.2.2",
+      "glyphs": {
+        "default": "e944"
+      },
+      "display": "Jace"
+    },
+    {
+      "code": "ss2",
+      "name": "Signature Spellbook: Gideon",
+      "group": "spellbook",
+      "added": "3.4.2",
+      "glyphs": {
+        "default": "e95c"
+      },
+      "display": "Gideon"
+    },
+    {
+      "code": "ss3",
+      "name": "Signature Spellbook: Chandra",
+      "group": "spellbook",
+      "added": "3.6.6",
+      "glyphs": {
+        "default": "e96d"
+      },
+      "display": "Chandra"
+    },
+    {
+      "code": "gs1",
+      "name": "Jiang Yanggu & Mu Yanling",
+      "group": "global",
+      "added": "3.2.2",
+      "glyphs": {
+        "default": "e945"
+      }
+    },
+    {
+      "code": "azorius",
+      "name": "Guild Kit: Azorius",
+      "group": "guild",
+      "added": "3.3.1",
+      "glyphs": {
+        "default": "e94e"
+      }
+    },
+    {
+      "code": "boros",
+      "name": "Guild Kit: Boros",
+      "group": "guild",
+      "added": "3.3.1",
+      "glyphs": {
+        "default": "e94f"
+      }
+    },
+    {
+      "code": "dimir",
+      "name": "Guild Kit: Dimir",
+      "group": "guild",
+      "added": "3.3.1",
+      "glyphs": {
+        "default": "e950"
+      }
+    },
+    {
+      "code": "golgari",
+      "name": "Guild Kit: Golgari",
+      "group": "guild",
+      "added": "3.3.1",
+      "glyphs": {
+        "default": "e951"
+      }
+    },
+    {
+      "code": "gruul",
+      "name": "Guild Kit: Gruul",
+      "group": "guild",
+      "added": "3.3.1",
+      "glyphs": {
+        "default": "e952"
+      }
+    },
+    {
+      "code": "izzet",
+      "name": "Guild Kit: Izzet",
+      "group": "guild",
+      "added": "3.3.1",
+      "glyphs": {
+        "default": "e953"
+      }
+    },
+    {
+      "code": "orzhov",
+      "name": "Guild Kit: Orzhov",
+      "group": "guild",
+      "added": "3.3.1",
+      "glyphs": {
+        "default": "e954"
+      }
+    },
+    {
+      "code": "rakdos",
+      "name": "Guild Kit: Rakdos",
+      "group": "guild",
+      "added": "3.3.1",
+      "glyphs": {
+        "default": "e955"
+      }
+    },
+    {
+      "code": "selesnya",
+      "name": "Guild Kit: Selesnya",
+      "group": "guild",
+      "added": "3.3.1",
+      "glyphs": {
+        "default": "e956"
+      }
+    },
+    {
+      "code": "simic",
+      "name": "Guild Kit: Simic",
+      "group": "guild",
+      "added": "3.3.1",
+      "glyphs": {
+        "default": "e957"
+      }
+    },
+    {
+      "code": "gnt",
+      "name": "Game Night",
+      "group": "supplemental",
+      "added": "3.3.0",
+      "glyphs": {
+        "default": "e94d"
+      }
+    },
+    {
+      "code": "gk1",
+      "name": "GRN Guild Kits",
+      "group": "supplemental",
+      "added": "3.3.0",
+      "symbolOf": "grn"
+    },
+    {
+      "code": "gk2",
+      "name": "RNA Guild Kits",
+      "group": "supplemental",
+      "added": "3.4.0",
+      "symbolOf": "rna"
+    },
+    {
+      "code": "gn2",
+      "name": "Game Night 2019",
+      "group": "supplemental",
+      "added": "3.6.0",
+      "glyphs": {
+        "default": "e964"
+      }
+    },
+    {
+      "code": "tsr",
+      "name": "Time Spiral Remastered",
+      "group": "supplemental",
+      "added": "3.7.0",
+      "glyphs": {
+        "default": "e976"
+      }
+    },
+    {
+      "code": "dmr",
+      "name": "Dominaria Remastered",
+      "group": "supplemental",
+      "added": "3.12.0",
+      "glyphs": {
+        "default": "e9a4"
+      }
+    },
+    {
+      "code": "gn3",
+      "name": "Game Night: Free for All",
+      "group": "supplemental",
+      "added": "3.12.0",
+      "glyphs": {
+        "default": "e9a5"
+      }
+    },
+    {
+      "code": "ltr",
+      "name": "The Lord of the Rings: Tales of Middle-Earth",
+      "group": "supplemental",
+      "added": "3.12.2",
+      "glyphs": {
+        "default": "e9af"
+      },
+      "display": "Lord of the Rings"
+    },
+    {
+      "code": "rvr",
+      "name": "Ravnica Remastered",
+      "group": "supplemental",
+      "added": "3.12.3",
+      "glyphs": {
+        "default": "e9bb"
+      }
+    },
+    {
+      "code": "sld",
+      "name": "Secret Lair",
+      "group": "supplemental",
+      "added": "3.12.3",
+      "symbolOf": "pmei",
+      "aliases": [
+        "slu",
+        "psld"
+      ]
+    },
+    {
+      "code": "sld2",
+      "name": "Secret Lair (logo)",
+      "group": "supplemental",
+      "added": "3.12.3",
+      "glyphs": {
+        "default": "e9bc"
+      }
+    },
+    {
+      "code": "clu",
+      "name": "Ravnica: Clue Edition",
+      "group": "supplemental",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9cb"
+      }
+    },
+    {
+      "code": "acr",
+      "name": "Universes Beyond: Assassin's Creed",
+      "group": "supplemental",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9ce"
+      },
+      "display": "UB: Assassin's Creed"
+    },
+    {
+      "code": "mh3",
+      "name": "Modern Horizons 3",
+      "group": "supplemental",
+      "added": "3.14.0",
+      "glyphs": {
+        "default": "e9cf"
+      }
+    },
+    {
+      "code": "inr",
+      "name": "Innistrad Remastered",
+      "group": "supplemental",
+      "added": "3.16.0",
+      "glyphs": {
+        "default": "e9e2",
+        "border": "e9e3"
+      }
+    },
+    {
+      "code": "spe",
+      "name": "Marvel Spider-Man Eternal-Legal",
+      "group": "supplemental",
+      "added": "3.17.0",
+      "glyphs": {
+        "default": "e9f3"
+      },
+      "display": "Marvel Spider-Man Scene"
+    },
+    {
+      "code": "tle",
+      "name": "Avatar: the Last Airbender Eternal-Legal",
+      "group": "supplemental",
+      "added": "3.18.0",
+      "glyphs": {
+        "default": "ea0b",
+        "inner": "ea0c",
+        "rarity": "ea0a",
+        "border": "ea0b"
+      },
+      "display": "Avatar Eternal-Legal",
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "pza",
+      "name": "Teenage Mutant Ninja Turtle Source Material Cards",
+      "group": "supplemental",
+      "added": "3.18.0",
+      "glyphs": {
+        "default": "ea08",
+        "border": "ea09"
+      },
+      "display": "TMT Source Material"
+    },
+    {
+      "code": "pgru",
+      "name": "Guru Lands",
+      "group": "promo",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e683"
+      }
+    },
+    {
+      "code": "pmtg1",
+      "name": "MtG Promo",
+      "group": "promo",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e684"
+      }
+    },
+    {
+      "code": "pmtg2",
+      "name": "MtG Promo (Alt)",
+      "group": "promo",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e685"
+      }
+    },
+    {
+      "code": "pleaf",
+      "name": "Leaf Promo",
+      "group": "promo",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e686"
+      }
+    },
+    {
+      "code": "pmei",
+      "name": "Media Insert",
+      "group": "promo",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e687"
+      },
+      "aliases": [
+        "htr17"
+      ]
+    },
+    {
+      "code": "parl",
+      "name": "Arena Promo (DCI)",
+      "group": "promo",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e688"
+      }
+    },
+    {
+      "code": "dpa",
+      "name": "Duels of the Planeswalkers",
+      "group": "promo",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e689"
+      }
+    },
+    {
+      "code": "pbook",
+      "name": "Book Inserts",
+      "group": "promo",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e68a"
+      }
+    },
+    {
+      "code": "past",
+      "name": "Astral",
+      "group": "promo",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e68b"
+      }
+    },
+    {
+      "code": "parl2",
+      "name": "Arena League",
+      "group": "promo",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e68c"
+      }
+    },
+    {
+      "code": "parl3",
+      "name": "Arena League (MODO)",
+      "group": "promo",
+      "added": "3.2.2",
+      "glyphs": {
+        "default": "e943"
+      }
+    },
+    {
+      "code": "exp",
+      "name": "Zendikar Expeditions",
+      "group": "promo",
+      "added": "1.4.1",
+      "glyphs": {
+        "default": "e69a"
+      }
+    },
+    {
+      "code": "psalvat05",
+      "name": "Salvat 2005",
+      "group": "promo",
+      "added": "1.5.6",
+      "glyphs": {
+        "default": "e909"
+      },
+      "aliases": [
+        "psal",
+        "phuk"
+      ]
+    },
+    {
+      "code": "psalvat11",
+      "name": "Salvat 2011",
+      "group": "promo",
+      "added": "1.5.6",
+      "glyphs": {
+        "default": "e90a"
+      }
+    },
+    {
+      "code": "mp1",
+      "name": "Kaladesh Inventions",
+      "group": "promo",
+      "added": "1.7.2",
+      "glyphs": {
+        "default": "e913"
+      },
+      "aliases": [
+        "mps"
+      ]
+    },
+    {
+      "code": "pxbox",
+      "name": "Xbox Media Promo",
+      "group": "promo",
+      "added": "2.0.1",
+      "glyphs": {
+        "default": "e915"
+      }
+    },
+    {
+      "code": "pmps",
+      "name": "Magic Premiere Shop",
+      "group": "promo",
+      "added": "2.1.0",
+      "glyphs": {
+        "default": "e919"
+      }
+    },
+    {
+      "code": "pmpu",
+      "name": "Mirrodin Pure",
+      "group": "promo",
+      "added": "2.1.0",
+      "glyphs": {
+        "default": "e91a"
+      }
+    },
+    {
+      "code": "mp2",
+      "name": "Amonkhet Invocations",
+      "group": "promo",
+      "added": "2.2.2",
+      "glyphs": {
+        "default": "e922"
+      }
+    },
+    {
+      "code": "pidw",
+      "name": "IDW Promo",
+      "group": "promo",
+      "added": "3.0.1",
+      "glyphs": {
+        "default": "e92c"
+      }
+    },
+    {
+      "code": "pdrc",
+      "name": "Dragon*Con Promo",
+      "group": "promo",
+      "added": "3.1.2",
+      "glyphs": {
+        "default": "e932"
+      }
+    },
+    {
+      "code": "pheart",
+      "name": "Phoenix Heart (card)",
+      "group": "promo",
+      "added": "3.1.5",
+      "glyphs": {
+        "default": "e936"
+      }
+    },
+    {
+      "code": "h17",
+      "name": "HasCon 2017",
+      "group": "promo",
+      "added": "3.1.6",
+      "glyphs": {
+        "default": "e938"
+      }
+    },
+    {
+      "code": "pdep",
+      "name": "Duelist: Extra Pulled",
+      "group": "promo",
+      "added": "3.1.7",
+      "glyphs": {
+        "default": "e93a"
+      }
+    },
+    {
+      "code": "psega",
+      "name": "SEGA Dreamcast",
+      "group": "promo",
+      "added": "3.1.7",
+      "glyphs": {
+        "default": "e93b"
+      }
+    },
+    {
+      "code": "ptsa",
+      "name": "The Sorcerer's Apprentice",
+      "group": "promo",
+      "added": "3.1.7",
+      "glyphs": {
+        "default": "e93c"
+      }
+    },
+    {
+      "code": "htr",
+      "name": "Heroes of the Realm",
+      "group": "promo",
+      "added": "3.2.5",
+      "symbolOf": "pmei"
+    },
+    {
+      "code": "med",
+      "name": "Mythic Edition",
+      "group": "promo",
+      "added": "3.3.0",
+      "glyphs": {
+        "default": "e94c"
+      }
+    },
+    {
+      "code": "ptg",
+      "name": "Ponies: the Galloping",
+      "group": "promo",
+      "added": "3.6.0",
+      "glyphs": {
+        "default": "e965"
+      }
+    },
+    {
+      "code": "j20",
+      "name": "Judge Academy 2020",
+      "group": "promo",
+      "added": "3.6.3",
+      "glyphs": {
+        "default": "e96a"
+      }
+    },
+    {
+      "code": "zne",
+      "name": "Zendikar Rising Expeditions",
+      "group": "promo",
+      "added": "3.7.0",
+      "glyphs": {
+        "default": "e97a"
+      }
+    },
+    {
+      "code": "bot",
+      "name": "The Brothers' War Transformers",
+      "group": "promo",
+      "added": "3.11.0",
+      "glyphs": {
+        "default": "e99e"
+      }
+    },
+    {
+      "code": "rex",
+      "name": "Jurassic World",
+      "group": "promo",
+      "added": "3.13.0",
+      "glyphs": {
+        "default": "e9c4"
+      }
+    },
+    {
+      "code": "sta-jpn",
+      "name": "Strixhaven Mystical Archives Japan Promos",
+      "group": "promo",
+      "added": "3.18.0",
+      "glyphs": {
+        "default": "e9fc"
+      },
+      "display": "STA Japan Promos"
+    },
+    {
+      "code": "soa",
+      "name": "Secrets of Strixhaven Mystical Archives",
+      "group": "promo",
+      "added": "3.19.0",
+      "glyphs": {
+        "default": "ea20"
+      },
+      "display": "SOS Mystical Archives"
+    },
+    {
+      "code": "soa-jpn",
+      "name": "SOS Mystical Archives (Japan)",
+      "group": "promo",
+      "added": "3.19.0",
+      "glyphs": {
+        "default": "ea21"
+      }
+    },
+    {
+      "code": "me1",
+      "name": "Masters Edition",
+      "group": "digital",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e68d"
+      }
+    },
+    {
+      "code": "me2",
+      "name": "Masters Edition II",
+      "group": "digital",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e68e"
+      }
+    },
+    {
+      "code": "me3",
+      "name": "Masters Edition III",
+      "group": "digital",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e68f"
+      }
+    },
+    {
+      "code": "me4",
+      "name": "Masters Edition IV",
+      "group": "digital",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e690"
+      }
+    },
+    {
+      "code": "vma",
+      "name": "Vintage Masters",
+      "group": "digital",
+      "added": "1.1.0",
+      "glyphs": {
+        "default": "e696"
+      }
+    },
+    {
+      "code": "tpr",
+      "name": "Tempest Remastered",
+      "group": "digital",
+      "added": "1.0.1",
+      "glyphs": {
+        "default": "e694"
+      }
+    },
+    {
+      "code": "pz1",
+      "name": "Legendary Cube",
+      "group": "digital",
+      "added": "1.6.2",
+      "glyphs": {
+        "default": "e90c"
+      },
+      "aliases": [
+        "xlcu"
+      ]
+    },
+    {
+      "code": "pmodo",
+      "name": "Magic Online",
+      "group": "digital",
+      "added": "2.1.0",
+      "glyphs": {
+        "default": "e91b"
+      },
+      "aliases": [
+        "modo"
+      ]
+    },
+    {
+      "code": "xduels",
+      "name": "Magic Duels",
+      "group": "digital",
+      "added": "2.1.0",
+      "glyphs": {
+        "default": "e91d"
+      },
+      "aliases": [
+        "duels"
+      ]
+    },
+    {
+      "code": "xmods",
+      "name": "Magic Online Deck Series",
+      "group": "digital",
+      "added": "2.1.0",
+      "glyphs": {
+        "default": "e91e"
+      }
+    },
+    {
+      "code": "pz2",
+      "name": "Treasure Chests",
+      "group": "digital",
+      "added": "2.1.2",
+      "glyphs": {
+        "default": "e91f"
+      }
+    },
+    {
+      "code": "ha1",
+      "name": "Historic Anthology 1",
+      "group": "digital",
+      "added": "3.6.3",
+      "glyphs": {
+        "default": "e96b"
+      }
+    },
+    {
+      "code": "akr",
+      "name": "Amonkhet Remastered",
+      "group": "digital",
+      "added": "3.6.7",
+      "glyphs": {
+        "default": "e970"
+      }
+    },
+    {
+      "code": "klr",
+      "name": "Kaladesh Remastered",
+      "group": "digital",
+      "added": "3.7.1",
+      "glyphs": {
+        "default": "e97c"
+      }
+    },
+    {
+      "code": "y22",
+      "name": "Alchemy 2022",
+      "group": "digital",
+      "added": "3.9.0",
+      "glyphs": {
+        "default": "e989"
+      },
+      "aliases": [
+        "ymid",
+        "yneo",
+        "ysnc"
+      ]
+    },
+    {
+      "code": "hbg",
+      "name": "Alchemy Horizons: Baldur's Gate",
+      "group": "digital",
+      "added": "3.12.0",
+      "glyphs": {
+        "default": "e9a6"
+      }
+    },
+    {
+      "code": "ydmu",
+      "name": "Alchemy: Dominaria",
+      "group": "digital",
+      "added": "3.12.0",
+      "glyphs": {
+        "default": "e9a7"
+      },
+      "aliases": [
+        "y23",
+        "ybro",
+        "yone"
+      ]
+    },
+    {
+      "code": "sir",
+      "name": "Shadows Over Innistrad",
+      "group": "digital",
+      "added": "3.12.2",
+      "glyphs": {
+        "default": "e9b1"
+      }
+    },
+    {
+      "code": "sis",
+      "name": "Shadows of the Past",
+      "group": "digital",
+      "added": "3.12.2",
+      "glyphs": {
+        "default": "e9b2",
+        "rarity": "e9b3",
+        "border": "e9b2"
+      }
+    },
+    {
+      "code": "ea1",
+      "name": "Explorer Anthology 1",
+      "group": "digital",
+      "added": "3.12.2",
+      "glyphs": {
+        "default": "e9b4"
+      }
+    },
+    {
+      "code": "y24",
+      "name": "Alchemy 2024",
+      "group": "digital",
+      "added": "3.12.3",
+      "glyphs": {
+        "default": "e9bd"
+      },
+      "aliases": [
+        "ylci",
+        "ymkm",
+        "yotj",
+        "ywoe"
+      ]
+    },
+    {
+      "code": "y25",
+      "name": "Alchemy 2025",
+      "group": "digital",
+      "added": "3.15.1",
+      "glyphs": {
+        "default": "e9da"
+      },
+      "aliases": [
+        "yblb",
+        "ydft",
+        "ydsk",
+        "ytdm",
+        "yeoe"
+      ]
+    },
+    {
+      "code": "pma",
+      "name": "Puzzle Masters",
+      "group": "digital",
+      "added": "3.17.1",
+      "glyphs": {
+        "default": "ea01"
+      }
+    },
+    {
+      "code": "pm2",
+      "name": "Puzzle Masters 2",
+      "group": "digital",
+      "added": "3.17.1",
+      "glyphs": {
+        "default": "ea02"
+      }
+    },
+    {
+      "code": "dvk",
+      "name": "Puzzle Masters: Daxos vs. Kalemne",
+      "group": "digital",
+      "added": "3.17.1",
+      "glyphs": {
+        "default": "ea03"
+      },
+      "display": "Daxos vs. Kalemne"
+    },
+    {
+      "code": "om1",
+      "name": "Through the Omenpaths",
+      "group": "digital",
+      "added": "3.18.0",
+      "glyphs": {
+        "default": "ea0e",
+        "rarity": "ea0d",
+        "border": "ea0e"
+      }
+    },
+    {
+      "code": "omb",
+      "name": "Through the Omenpaths Bonus Sheet",
+      "group": "digital",
+      "added": "3.18.0",
+      "glyphs": {
+        "default": "ea10",
+        "rarity": "ea0f",
+        "border": "ea10"
+      },
+      "display": "OM1 Bonus"
+    },
+    {
+      "code": "y26",
+      "name": "Alchemy 2026",
+      "group": "digital",
+      "added": "3.19.0",
+      "glyphs": {
+        "default": "ea1b"
+      }
+    },
+    {
+      "code": "ugl",
+      "name": "Unglued",
+      "group": "un",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e691"
+      }
+    },
+    {
+      "code": "unh",
+      "name": "Unhinged",
+      "group": "un",
+      "added": "0.1.0",
+      "glyphs": {
+        "default": "e692"
+      }
+    },
+    {
+      "code": "ust",
+      "name": "Unstable",
+      "group": "un",
+      "added": "3.1.0",
+      "glyphs": {
+        "default": "e930"
+      }
+    },
+    {
+      "code": "und",
+      "name": "Unsanctioned",
+      "group": "un",
+      "added": "3.6.5",
+      "glyphs": {
+        "default": "e96c"
+      }
+    },
+    {
+      "code": "unf",
+      "name": "Unfinity",
+      "group": "un",
+      "added": "3.9.0",
+      "glyphs": {
+        "default": "e98a"
+      }
+    },
+    {
+      "code": "una",
+      "name": "Unfinity Acorns",
+      "group": "un",
+      "added": "3.12.3",
+      "glyphs": {
+        "default": "e9be",
+        "inner": "e9bf"
+      },
+      "preview": {
+        "duo": true
+      }
+    },
+    {
+      "code": "xcle",
+      "name": "Collector's Edition",
+      "group": "unofficial",
+      "added": "3.0.0",
+      "glyphs": {
+        "default": "e926"
+      }
+    },
+    {
+      "code": "xice",
+      "name": "International Collector's Edition",
+      "group": "unofficial",
+      "added": "3.0.0",
+      "glyphs": {
+        "default": "e927"
+      }
+    },
+    {
+      "code": "x2ps",
+      "name": "Two Player Introductory Set",
+      "group": "unofficial",
+      "added": "3.0.0",
+      "glyphs": {
+        "default": "e928"
+      }
+    },
+    {
+      "code": "x4ea",
+      "name": "Alternate 4th Edition",
+      "group": "unofficial",
+      "added": "3.0.0",
+      "glyphs": {
+        "default": "e929"
+      }
+    },
+    {
+      "code": "papac",
+      "name": "APAC Lands",
+      "group": "unofficial",
+      "added": "3.0.0",
+      "glyphs": {
+        "default": "e92a"
+      }
+    },
+    {
+      "code": "peuro",
+      "name": "Euro Lands",
+      "group": "unofficial",
+      "added": "3.0.0",
+      "glyphs": {
+        "default": "e92b"
+      }
+    },
+    {
+      "code": "pfnm",
+      "name": "Friday Night Magic",
+      "group": "unofficial",
+      "added": "3.1.5",
+      "glyphs": {
+        "default": "e937"
+      }
+    },
+    {
+      "code": "30a",
+      "name": "30th Anniversary Edition",
+      "group": "unofficial",
+      "added": "3.12.1",
+      "glyphs": {
+        "default": "e9aa"
+      },
+      "display": "J30th Anniversary Edition"
+    }
+  ]
+}

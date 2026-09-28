@@ -8,7 +8,7 @@ import { spawnSync } from 'node:child_process';
 test('validation rejects new discrepancies and resolved exceptions', async () => {
     const directory = await mkdtemp(join(tmpdir(), 'keyrune-check-'));
     try {
-        for (const name of ['scripts', 'less', 'css', 'fonts', 'docs', 'package.json', 'README.md']) {
+        for (const name of ['scripts', 'data', 'less', 'css', 'fonts', 'docs', 'package.json', 'README.md']) {
             await cp(name, join(directory, name), { recursive: true });
         }
         await symlink(resolve('node_modules'), join(directory, 'node_modules'), 'junction');
@@ -21,7 +21,7 @@ test('validation rejects new discrepancies and resolved exceptions', async () =>
             ['docs/fonts/keyrune.woff2', () => 'stale font', /differs from fonts/],
             ['fonts/keyrune.svg', text => text.replace('unicode="&#xe600;"', 'unicode="&#xffff;"'), /missing SVG font glyph e600/],
             ['docs/cheatsheet.html', text => text.replace('<i>&#xe60b;</i> ss-10e', '<i>&#xffff;</i> ss-10e'), /ss-10e: ffff differs/],
-            ['docs/cheatsheet.html', text => text.replace('<i>&#xea14;</i> ss-msc <code>&amp;#xea14;', '<i>&#xea1f;</i> ss-msc <code>&amp;#xea1f;'), /Remove resolved check exception/],
+            ['scripts/check-exceptions.json', text => JSON.stringify({ ...JSON.parse(text), issues: ['Cheatsheet missing glyph for ss-msc (ea1f).'] }), /Remove resolved check exception/],
         ];
         for (const [file, mutate, message] of cases) {
             const path = join(directory, file);

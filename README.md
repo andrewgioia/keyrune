@@ -97,12 +97,26 @@ before creating the package. Use `npm publish` only when ready to release.
 The docs use a vendored copy of Zepto in `docs/assets/zepto.min.js`; npm does not
 manage it. Font generation remains in IcoMoon; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+### Symbol manifest (phase 1)
+
+The v3 catalog is in `data/sets.json`, with a JSON Schema and an import
+reconciliation report. See [the catalog guide](data/README.md) for the format
+and [the reconciliation findings](data/RECONCILIATION.md) for values that need
+review before documentation generation.
+
+Run `npm run manifest:check` to validate the catalog. `npm run check` includes
+this validation. In phase 1, existing LESS and docs remain the active sources;
+the manifest does not generate or overwrite them yet.
+
 ### Scripts
 
 This project contains the following build and test scripts. Test scripts are run via `npm test`:
 
 | File | Purpose |
 | --- | --- |
+| `manifest.mjs` | Loads and validates the catalog against its schema, SVG font, and current LESS mappings. |
+| `import-manifest.mjs` | Imports a candidate catalog and reconciliation evidence into a new directory without overwriting existing files. |
+| `manifest.test.mjs` | Tests v3 mapping preservation, manual glyph switches, aliases, shared symbols, and invalid catalog data. |
 | `build.mjs` | Compiles LESS, minifies CSS, and copies CSS/fonts into `docs/`. Supports building CSS or copying docs assets separately. |
 | `watch.mjs` | Watches LESS, fonts, and package metadata. Queues rebuilds to prevent overlap and retries after errors when files change. |
 | `browser-sync.valet.cjs` | Configures the HTTPS Valet proxy and live reload, using your existing certificate and port 4310. |

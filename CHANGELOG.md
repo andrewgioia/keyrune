@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 
 * `package.json` errors fixed and file slightly reorganized
+* OTC inner glyph was incorrectly using SOC's, this is now corrected with `e9d3`
 
 
 ## [3.19.0] 2026-05-02 Secrets of Strixhaven
