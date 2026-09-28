@@ -2376,7 +2376,9 @@
       "group": "reprint",
       "added": "3.15.1",
       "glyphs": {
-        "default": "e9df"
+        "default": "e9df",
+        "rarity": "e9db",
+        "border": "e9df"
       }
     },
     {
@@ -2422,19 +2424,6 @@
         "border": "ea00"
       },
       "display": "Stellar Sights"
-    },
-    {
-      "code": "j25a",
-      "name": "Jumpstart 2025",
-      "group": "reprint",
-      "added": null,
-      "glyphs": {
-        "default": "e9db"
-      },
-      "docs": {
-        "icon": false
-      },
-      "notes": "Not listed in the existing icon reference. Name and first-added version need review."
     },
     {
       "code": "por",

@@ -35,7 +35,7 @@ line numbers and hashes refer to the source snapshot at import time.
 Array order preserves category and icon-reference ordering. Undocumented entries
 are appended within their category. The future cheatsheet can sort by code
 independently. Different products with shared artwork retain separate entries.
-Aliases do not get separate product records. `slu` and `psld` are confirmed aliases of `sld`; SLD itself shares PMEI’s glyph inventory. `j25a` stays hidden for now. Release dates and search tags are
+Aliases do not get separate product records. `slu` and `psld` are confirmed aliases of `sld`; SLD itself shares PMEI’s glyph inventory. Release dates and search tags are
 not needed for this first migration and have not been backfilled.
 
 ### Default and layered glyphs

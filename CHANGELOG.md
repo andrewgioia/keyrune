@@ -20,8 +20,11 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 
+* Missing inner glyphs for MIC and VOC added now and documentation corrected for these
 * `package.json` errors fixed and file slightly reorganized
 * OTC inner glyph was incorrectly using SOC's, this is now corrected with `e9d3`
+* Many missing or incorrect symbols in the cheatsheet have been added or corrected following an audit
+* J25 is fixed with proper glyphs for the border and rarity, and the old j25a alternate has been removed
 
 
 ## [3.19.0] 2026-05-02 Secrets of Strixhaven

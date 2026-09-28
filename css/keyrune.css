@@ -1030,9 +1030,6 @@
 .ss-mb2:before {
   content: "\e9d9";
 }
-.ss-j25a:before {
-  content: "\e9db";
-}
 .ss-j25:before {
   content: "\e9df";
 }
@@ -1604,6 +1601,7 @@
 .ss-border.ss-fin::before,
 .ss-border.ss-hop::before,
 .ss-border.ss-inr::before,
+.ss-border.ss-j25::before,
 .ss-border.ss-om1::before,
 .ss-border.ss-omb::before,
 .ss-border.ss-pc2::before,
@@ -1637,6 +1635,7 @@
 .ss-border.ss-fin:not(.ss-duo)::after,
 .ss-border.ss-hop:not(.ss-duo)::after,
 .ss-border.ss-inr:not(.ss-duo)::after,
+.ss-border.ss-j25:not(.ss-duo)::after,
 .ss-border.ss-om1:not(.ss-duo)::after,
 .ss-border.ss-omb:not(.ss-duo)::after,
 .ss-border.ss-pc2:not(.ss-duo)::after,
@@ -1677,6 +1676,7 @@
 .ss-border.ss-fin:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-hop:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-inr:not(.ss-duo).ss-uncommon::after,
+.ss-border.ss-j25:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-om1:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-omb:not(.ss-duo).ss-uncommon::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-uncommon::after,
@@ -1708,6 +1708,7 @@
 .ss-border.ss-fin:not(.ss-duo).ss-rare::after,
 .ss-border.ss-hop:not(.ss-duo).ss-rare::after,
 .ss-border.ss-inr:not(.ss-duo).ss-rare::after,
+.ss-border.ss-j25:not(.ss-duo).ss-rare::after,
 .ss-border.ss-om1:not(.ss-duo).ss-rare::after,
 .ss-border.ss-omb:not(.ss-duo).ss-rare::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-rare::after,
@@ -1739,6 +1740,7 @@
 .ss-border.ss-fin:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-hop:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-inr:not(.ss-duo).ss-mythic::after,
+.ss-border.ss-j25:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-om1:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-omb:not(.ss-duo).ss-mythic::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-mythic::after,
@@ -1770,6 +1772,7 @@
 .ss-border.ss-fin:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-hop:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-inr:not(.ss-duo).ss-timeshifted::after,
+.ss-border.ss-j25:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-om1:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-omb:not(.ss-duo).ss-timeshifted::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-timeshifted::after,
@@ -1801,6 +1804,7 @@
 .ss-border.ss-fin:not(.ss-duo).ss-foil::after,
 .ss-border.ss-hop:not(.ss-duo).ss-foil::after,
 .ss-border.ss-inr:not(.ss-duo).ss-foil::after,
+.ss-border.ss-j25:not(.ss-duo).ss-foil::after,
 .ss-border.ss-om1:not(.ss-duo).ss-foil::after,
 .ss-border.ss-omb:not(.ss-duo).ss-foil::after,
 .ss-border.ss-pc2:not(.ss-duo).ss-foil::after,
@@ -1940,6 +1944,12 @@
 }
 .ss-border.ss-inr:after {
   content: "\e9e3";
+}
+.ss-border.ss-j25::before {
+  content: "\e9db";
+}
+.ss-border.ss-j25::after {
+  content: "\e9df";
 }
 .ss-border.ss-om1::before {
   content: "\ea0d";

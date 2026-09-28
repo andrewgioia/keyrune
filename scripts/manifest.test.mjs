@@ -40,11 +40,7 @@ test('import is deterministic and records disagreements without changing runtime
     assert.equal(otc.glyphs.inner, 'ea1d');
     assert.equal(otc.glyphs['inner-reference'], 'e9d3');
     assert.ok(conflict.report.issues.some(issue => issue.kind === 'layer-conflict' && issue.code === 'otc'));
-    for (const code of ['j25a']) {
-        const set = first.catalog.sets.find(set => set.code === code);
-        assert.equal(set.added, null);
-        assert.equal(set.docs.icon, false);
-    }
+    assert.equal(first.catalog.sets.some(set => set.code === 'j25a'), false);
 });
 
 test('HTML import decodes names and distinguishes copyable characters from code labels', () => {

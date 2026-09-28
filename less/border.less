@@ -41,6 +41,7 @@
     &.@{ss-prefix}-fin,
     &.@{ss-prefix}-hop,
     &.@{ss-prefix}-inr,
+    &.@{ss-prefix}-j25,
     &.@{ss-prefix}-om1,
     &.@{ss-prefix}-omb,
     &.@{ss-prefix}-pc2,
@@ -204,6 +205,14 @@
     }
     &.@{ss-prefix}-hop:after { content: "\e656"; } // Planechase 2009
     &.@{ss-prefix}-inr:after { content: "\e9e3"; } // Innistrad Remastered
+    &.@{ss-prefix}-j25 { // j25: regular symbol becomes the border
+        &::before {
+            content: "\e9db"; // rarity
+        }
+        &::after {
+            content: "\e9df"; // new border (the display/alt version)
+        }
+    }
     &.@{ss-prefix}-om1 { // rarity becomes the border
         &::before {
             content: "\ea0d"; // rarity (old border)

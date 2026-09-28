@@ -2,17 +2,17 @@
   "phase": 1,
   "policy": "Candidate metadata preserves rendered docs labels; glyph assignments preserve current LESS. Findings are recorded for review before phase 2 changes outputs.",
   "sourceHashes": {
-    "less/icons.less": "02d92ecaa8175716f6b1c685becd556c6ac79b54dba09ac5e29899231cfaeecf",
+    "less/icons.less": "63ce4cb7aa83aab92e58dc719bb81d3cb0158b455cec9016c0a298b69a57d9af",
     "less/duo.less": "cc6e8d2bf6317ead57024a7030c70950ee8fa1bb838bbbcab5a02652212fe90e",
-    "less/border.less": "3fd29a79adfe1dec95490559bc8eb34f1c747d4d3ea122ac0461d27c35a638c9",
+    "less/border.less": "3945d858245653db5de8ce107423dadc42f122cca2d05305112959042b3c3ad6",
     "docs/icons.html": "f7c69277fd2f55a127a51865d8bcf2acd20cada5897d94b60245f82b5cfb0a1d",
-    "docs/cheatsheet.html": "2416c0afc5d09b0f4301176a88e6c2f2f654a3e278ca2687bfac44d11570cca9"
+    "docs/cheatsheet.html": "dab75d5df1258951a7c389241d509982d6219369b2ffd1e96190bdfcafd56537"
   },
   "counts": {
-    "publicClasses": 429,
+    "publicClasses": 428,
     "iconCards": 396,
-    "cheatsheetEntries": 453,
-    "catalogEntries": 397
+    "cheatsheetEntries": 454,
+    "catalogEntries": 396
   },
   "issues": [
     {
@@ -116,23 +116,6 @@
       ],
       "selected": "rin",
       "reason": "Grouped default selectors; this does not imply shared duo/border overrides."
-    },
-    {
-      "id": "undocumented-class:j25a:1",
-      "kind": "undocumented-class",
-      "code": "j25a",
-      "source": "less/icons.less",
-      "observed": {
-        "comment": "Jumpstart 2025",
-        "heading": "Reprint",
-        "glyph": "e9db"
-      },
-      "selected": {
-        "name": "Jumpstart 2025",
-        "added": null,
-        "icon": false
-      },
-      "reason": "Preserve the public class; do not invent an added version or silently add a docs card."
     },
     {
       "id": "alias:po2:1",
@@ -916,6 +899,20 @@
       "code": "inr",
       "role": "border",
       "glyph": "e9e3"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-j25::before",
+      "code": "j25",
+      "role": "rarity",
+      "glyph": "e9db"
+    },
+    {
+      "file": "less/border.less",
+      "selector": ".ss-border.ss-j25::after",
+      "code": "j25",
+      "role": "border",
+      "glyph": "e9df"
     },
     {
       "file": "less/border.less",
@@ -3601,599 +3598,606 @@
       "line": 429
     },
     {
-      "label": "ss-j25a",
-      "glyph": "e9db",
-      "entity": "e9db",
-      "group": "Icons, CSS Class, and Unicode",
-      "line": 430
-    },
-    {
       "label": "ss-papac",
       "glyph": "e92a",
       "entity": "e92a",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 431
+      "line": 430
     },
     {
       "label": "ss-parl",
       "glyph": "e688",
       "entity": "e688",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 432
+      "line": 431
     },
     {
       "label": "ss-parl2",
       "glyph": "e68c",
       "entity": "e68c",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 433
+      "line": 432
     },
     {
       "label": "ss-parl3",
       "glyph": "e943",
       "entity": "e943",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 434
+      "line": 433
     },
     {
       "label": "ss-past",
       "glyph": "e68b",
       "entity": "e68b",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 435
+      "line": 434
     },
     {
       "label": "ss-pbook",
       "glyph": "e68a",
       "entity": "e68a",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 436
+      "line": 435
     },
     {
       "label": "ss-pdep",
       "glyph": "e93a",
       "entity": "e93a",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 437
+      "line": 436
     },
     {
       "label": "ss-pdrc",
       "glyph": "e932",
       "entity": "e932",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 438
+      "line": 437
     },
     {
       "label": "ss-peuro",
       "glyph": "e92b",
       "entity": "e92b",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 439
+      "line": 438
     },
     {
       "label": "ss-pfnm",
       "glyph": "e937",
       "entity": "e937",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 440
+      "line": 439
     },
     {
       "label": "ss-pgru",
       "glyph": "e683",
       "entity": "e683",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 441
+      "line": 440
     },
     {
       "label": "ss-pheart",
       "glyph": "e936",
       "entity": "e936",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 442
+      "line": 441
     },
     {
       "label": "ss-pidw",
       "glyph": "e92c",
       "entity": "e92c",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 443
+      "line": 442
     },
     {
       "label": "ss-pleaf",
       "glyph": "e686",
       "entity": "e686",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 444
+      "line": 443
     },
     {
       "label": "ss-pmei",
       "glyph": "e687",
       "entity": "e687",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 445
+      "line": 444
     },
     {
       "label": "ss-pmodo",
       "glyph": "e91b",
       "entity": "e91b",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 446
+      "line": 445
     },
     {
       "label": "ss-pmps",
       "glyph": "e919",
       "entity": "e919",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 447
+      "line": 446
     },
     {
       "label": "ss-pmpu",
       "glyph": "e91a",
       "entity": "e91a",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 448
+      "line": 447
     },
     {
       "label": "ss-pmtg1",
       "glyph": "e684",
       "entity": "e684",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 449
+      "line": 448
     },
     {
       "label": "ss-pmtg2",
       "glyph": "e685",
       "entity": "e685",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 450
+      "line": 449
     },
     {
       "label": "ss-psalvat05",
       "glyph": "e909",
       "entity": "e909",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 451
+      "line": 450
     },
     {
       "label": "ss-psalvat11",
       "glyph": "e90a",
       "entity": "e90a",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 452
+      "line": 451
     },
     {
       "label": "ss-psega",
       "glyph": "e93b",
       "entity": "e93b",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 453
+      "line": 452
     },
     {
       "label": "ss-psld",
       "glyph": "e687",
       "entity": "e687",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 454
+      "line": 453
     },
     {
       "label": "ss-psum",
       "glyph": "e605",
       "entity": "e605",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 455
+      "line": 454
     },
     {
       "label": "ss-ptsa",
       "glyph": "e93c",
       "entity": "e93c",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 456
+      "line": 455
     },
     {
       "label": "ss-pxbox",
       "glyph": "e915",
       "entity": "e915",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 457
+      "line": 456
     },
     {
       "label": "ss-pz1",
       "glyph": "e90c",
       "entity": "e90c",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 458
+      "line": 457
     },
     {
       "label": "ss-pz2",
       "glyph": "e91f",
       "entity": "e91f",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 459
+      "line": 458
     },
     {
       "label": "ss-x2ps",
       "glyph": "e928",
       "entity": "e928",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 460
+      "line": 459
     },
     {
       "label": "ss-x4ea",
       "glyph": "e929",
       "entity": "e929",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 461
+      "line": 460
     },
     {
       "label": "ss-xcle",
       "glyph": "e926",
       "entity": "e926",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 462
+      "line": 461
     },
     {
       "label": "ss-xduels",
       "glyph": "e91d",
       "entity": "e91d",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 463
+      "line": 462
     },
     {
       "label": "ss-xice",
       "glyph": "e927",
       "entity": "e927",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 464
+      "line": 463
     },
     {
       "label": "ss-xmods",
       "glyph": "e91e",
       "entity": "e91e",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 465
+      "line": 464
     },
     {
       "label": "ss-zne",
       "glyph": "e97a",
       "entity": "e97a",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 466
+      "line": 465
     },
     {
       "label": "40k border",
       "glyph": "e99a",
       "entity": "e99a",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 470
+      "line": 469
     },
     {
       "label": "40k rarity",
       "glyph": "e999",
       "entity": "e999",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 471
+      "line": 470
     },
     {
       "label": "40k white",
       "glyph": "e99b",
       "entity": "e99b",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 472
+      "line": 471
     },
     {
       "label": "afc border",
       "glyph": "e982",
       "entity": "e982",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 473
+      "line": 472
     },
     {
       "label": "afr border",
       "glyph": "e973",
       "entity": "e973",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 474
+      "line": 473
     },
     {
       "label": "c16 rarity",
       "glyph": "e910",
       "entity": "e910",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 475
+      "line": 474
     },
     {
       "label": "c21 border",
       "glyph": "e97f",
       "entity": "e97f",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 476
+      "line": 475
     },
     {
       "label": "cc2 border",
       "glyph": "e988",
       "entity": "e988",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 477
+      "line": 476
     },
     {
       "label": "clb inner",
       "glyph": "e992",
       "entity": "e992",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 478
+      "line": 477
     },
     {
       "label": "dft rarity",
       "glyph": "e9e1",
       "entity": "e9e1",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 479
+      "line": 478
     },
     {
       "label": "dmc border",
       "glyph": "e996",
       "entity": "e996",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 480
+      "line": 479
     },
     {
       "label": "dmc rarity",
       "glyph": "e995",
       "entity": "e995",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 481
+      "line": 480
     },
     {
       "label": "dmc inner",
       "glyph": "e997",
       "entity": "e997",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 482
+      "line": 481
     },
     {
       "label": "drc border",
       "glyph": "e9ea",
       "entity": "e9ea",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 483
+      "line": 482
     },
     {
       "label": "drc rarity",
       "glyph": "e9e9",
       "entity": "e9e9",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 484
+      "line": 483
     },
     {
       "label": "drc inner",
       "glyph": "e9eb",
       "entity": "e9eb",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 485
+      "line": 484
     },
     {
       "label": "dsc border",
       "glyph": "e9dd",
       "entity": "e9dd",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 486
+      "line": 485
     },
     {
       "label": "dsc inner",
       "glyph": "e9de",
       "entity": "e9de",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 487
+      "line": 486
     },
     {
       "label": "ecc border",
       "glyph": "ea13",
       "entity": "ea13",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 488
+      "line": 487
     },
     {
       "label": "ecc inner",
       "glyph": "ea14",
       "entity": "ea14",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 489
+      "line": 488
     },
     {
       "label": "ecl border",
       "glyph": "ea05",
       "entity": "ea05",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 490
+      "line": 489
     },
     {
       "label": "eoc inner",
       "glyph": "e9f7",
       "entity": "e9f7",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 491
+      "line": 490
     },
     {
       "label": "eos rarity",
       "glyph": "e9ff",
       "entity": "e9ff",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 492
+      "line": 491
     },
     {
       "label": "fin border",
       "glyph": "e9ef",
       "entity": "e9ef",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 493
+      "line": 492
     },
     {
       "label": "fin rarity",
       "glyph": "e9ee",
       "entity": "e9ee",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 494
+      "line": 493
     },
     {
       "label": "inr border",
       "glyph": "e9e3",
       "entity": "e9e3",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 495
+      "line": 494
     },
     {
       "label": "j21 border",
       "glyph": "e984",
       "entity": "e984",
       "group": "Icons, CSS Class, and Unicode",
+      "line": 495
+    },
+    {
+      "label": "j25 rarity",
+      "glyph": "e9db",
+      "entity": "e9db",
+      "group": "Icons, CSS Class, and Unicode",
       "line": 496
+    },
+    {
+      "label": "j25 border",
+      "glyph": "e9df",
+      "entity": "e9df",
+      "group": "Icons, CSS Class, and Unicode",
+      "line": 497
     },
     {
       "label": "khc rarity",
       "glyph": "e9c5",
       "entity": "e9c5",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 497
+      "line": 498
     },
     {
       "label": "khc inner",
       "glyph": "e9c6",
       "entity": "e9c6",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 498
+      "line": 499
     },
     {
       "label": "m3c inner",
       "glyph": "e9d1",
       "entity": "e9d1",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 499
+      "line": 500
     },
     {
       "label": "mic inner",
       "glyph": "ea23",
       "entity": "ea23",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 500
+      "line": 501
     },
     {
       "label": "mid border",
       "glyph": "e979",
       "entity": "e979",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 501
+      "line": 502
     },
     {
       "label": "ncc inner color",
       "glyph": "e98f",
       "entity": "e98f",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 502
+      "line": 503
     },
     {
       "label": "ncc inner wing",
       "glyph": "e990",
       "entity": "e990",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 503
+      "line": 504
     },
     {
       "label": "om1 rarity",
       "glyph": "ea0d",
       "entity": "ea0d",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 504
+      "line": 505
     },
     {
       "label": "omb rarity",
       "glyph": "ea0f",
       "entity": "ea0f",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 505
+      "line": 506
     },
     {
       "label": "otc inner",
       "glyph": "e9d3",
       "entity": "e9d3",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 506
+      "line": 507
     },
     {
       "label": "soc inner",
       "glyph": "ea1d",
       "entity": "ea1d",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 507
+      "line": 508
     },
     {
       "label": "scd rarity",
       "glyph": "e9ab",
       "entity": "e9ab",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 508
+      "line": 509
     },
     {
       "label": "scd inner",
       "glyph": "e9ac",
       "entity": "e9ac",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 509
+      "line": 510
     },
     {
       "label": "spm inner",
       "glyph": "e9f2",
       "entity": "e9f2",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 510
+      "line": 511
     },
     {
       "label": "tla border",
       "glyph": "e9fd",
       "entity": "e9fd",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 511
+      "line": 512
     },
     {
       "label": "tla inner",
       "glyph": "e9fe",
       "entity": "e9fe",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 512
+      "line": 513
     },
     {
       "label": "tmc border",
       "glyph": "ea16",
       "entity": "ea16",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 513
+      "line": 514
     },
     {
       "label": "tmt border",
       "glyph": "ea07",
       "entity": "ea07",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 514
+      "line": 515
     },
     {
       "label": "tmt inner",
       "glyph": "ea17",
       "entity": "ea17",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 515
+      "line": 516
     },
     {
       "label": "una inner",
       "glyph": "e9bf",
       "entity": "e9bf",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 516
+      "line": 517
     },
     {
       "label": "voc inner",
       "glyph": "ea24",
       "entity": "ea24",
       "group": "Icons, CSS Class, and Unicode",
-      "line": 517
+      "line": 518
     }
   ]
 }
