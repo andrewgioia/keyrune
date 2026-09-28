@@ -1,33 +1,13 @@
-# Update Codebase
+# Update the LESS source
 
-> Example with the set icon of the set "Foundation" (FDN)
+Add the set class and its assigned font codepoint to `less/icons.less`:
 
-## Prerequisites
+```less
+.@{ss-prefix}-fdn:before { content: "\e9d8"; } // Foundations
+```
 
-You need to have `lessc` or `sass` installed on your computer.
+Use the codepoint from your IcoMoon export and preserve existing assignments.
+Aliases may share a glyph. Where needed, update `less/duo.less` or
+`less/border.less` for the existing layered symbol support.
 
-## Steps
-
-### Updating Sass source
-
-1. Open the `sass/_variables.scss` file in the repository.
-
-2. Add the new set icon in the `@keyrune-icons` list. (You can see that i add the short code `fdn` and the unicode character `1f31f`)
-    ```diff
-    + ("Foundations", "fdn", "\1f31f"),
-    ```
-
-### Updating Less source
-
-3. Open the `less/icons.less` file in the repository.
-
-4. Add the new set icon in the `@keyrune-icons` list. (You can see that i add the short code `fdn` and the unicode character `1f31f`)
-    ```diff
-    + .@{ss-prefix}-fdn:before { content: "\1f31f"; } // Foundation
-    ```
-
-Yaay 🎉 you have update the codebase now everything is ready only one steps to use the new icon
-
----
-**Go to the next step: [Generate CSS](./GenerateCss.md)**
----
+Next: [Generate CSS](GenerateCss.md).

@@ -20,32 +20,38 @@
   },
   "keywords": [],
   "homepage": "https://keyrune.andrewgioia.com",
-  "dependencies": {
-  },
   "devDependencies": {
+    "browser-sync": "^3.0.4",
+    "chokidar": "^4.0.3",
     "clean-css": "^5.3.3",
-    "lessc": "^1.0.2",
-    "zepto": "^1.2.0"
+    "concurrently": "^9.2.1",
+    "less": "^4.4.1"
   },
   "license": "(OFL-1.1 AND GPL-3.0-only)",
   "main": "css/keyrune.css",
   "scripts": {
-    "less": "lessc less/keyrune.less css/keyrune.css",
-    "lessmin": "lessc --clean-css less/keyrune.less css/keyrune.min.css",
-    "build": "rsync -avzh ./fonts/* ./docs/fonts/ && rsync -avzh css/keyrune.min.css docs/assets/keyrune.min.css",
-    "rename": "for f in fonts/*; do lower=$(echo \"$f\" | tr '[:upper:]' '[:lower:]'); if [ \"$f\" != \"$lower\" ]; then mv -v \"$f\" \"$lower\"; fi; done",
-    "publish": "npm run less && npm run lessmin && npm run rename && npm run build"
+    "build:css": "node scripts/build.mjs css",
+    "build:docs": "node scripts/build.mjs docs",
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/watch.mjs",
+    "serve": "browser-sync start --server docs --files docs --listen 127.0.0.1 --port 4310 --no-open --no-ui --no-notify",
+    "dev": "npm run build && concurrently --kill-others --names watch,serve \"npm:watch\" \"npm:serve\"",
+    "fonts:normalize": "node scripts/normalize-fonts.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test scripts/*.test.mjs",
+    "prepack": "npm run build && npm run check",
+    "serve:valet": "browser-sync start --config scripts/browser-sync.valet.cjs",
+    "dev:valet": "npm run build && concurrently --kill-others --names watch,valet \"npm:watch\" \"npm:serve:valet\""
   },
-  "ignore": [
-    "*/.*",
-    "*.json",
-    "*.md"
-  ],
   "bugs": {
     "url": "https://github.com/andrewgioia/keyrune/issues",
     "email": "andrew@gioia.email"
   },
-  "engines": {
-    "node": "*"
-  }
+  "files": [
+    "css/",
+    "fonts/",
+    "less/",
+    "svg/",
+    "CHANGELOG.md"
+  ]
 }

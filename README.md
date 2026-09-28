@@ -38,11 +38,83 @@ To use Keyrune via source, NPM, or Bower, move the font files to your `/fonts` d
 }
 ```
 
-## Editing the Source
+## Editing the source
 
-Feel free to edit the source files and compile Keyrune to fit your needs. Both LESS and Sass are supported.
+Styles are maintained in LESS. Use Node 24 LTS (recorded in `.nvmrc`) and npm:
 
-## Using Keyrune on the Desktop
+```bash
+nvm use
+npm ci
+npm run dev
+```
+
+`dev` builds the assets, then watches LESS and font changes and serves the docs at
+http://127.0.0.1:4310 with browser reload. HTML and docs CSS edits reload directly.
+Build errors are printed in the terminal; fix the source and the watcher retries
+on the next change. Stop both processes with Ctrl+C.
+
+### Using Valet
+
+If Valet links `keyrune.lan` to this project's `docs/` directory and the site is
+secured, run:
+
+```bash
+npm run dev:valet
+```
+
+Open [https://keyrune.lan:4310](https://keyrune.lan:4310) for live reload.
+BrowserSync proxies Valet and reads the existing certificate and key from
+`~/.config/valet/Certificates/`; certificate files stay outside the repository.
+Run either `dev` or `dev:valet` at a time, since both use port 4310.
+If the port is occupied, BrowserSync selects the next available port; use the
+URL printed in the terminal.
+
+To use [https://keyrune.lan](https://keyrune.lan) without a port, run
+`npm run build && npm run watch` and refresh the browser manually after edits.
+Valet serves the rebuilt docs directly. No Valet configuration changes are needed.
+
+### Build and release commands
+
+```bash
+npm run build            # Compile, minify, and copy assets to docs
+npm run check            # Check symbols, versions, and generated files
+npm test                 # Test validation and filename collision handling
+npm run fonts:normalize  # Lowercase newly imported font filenames
+```
+
+`build:css` only compiles and minifies; `build:docs` only copies existing assets.
+Run the full build before committing, and commit the generated CSS and docs assets.
+`check` verifies glyph coverage against the exported SVG font; it does not verify
+that every binary font format contains identical outlines. Existing cheatsheet
+discrepancies are listed in `scripts/check-exceptions.json`; remove each exception
+when its ticket is fixed. New discrepancies and resolved exceptions fail validation.
+
+Before a release, update the package version and lockfile, `less/variables.less`,
+the README heading, and the version in `docs/index.html`. Run `npm run build`,
+`npm run check`, and `npm pack --dry-run`. npm runs `prepack` to build and check
+before creating the package. Use `npm publish` only when ready to release.
+
+The docs use a vendored copy of Zepto in `docs/assets/zepto.min.js`; npm does not
+manage it. Font generation remains in IcoMoon; see [CONTRIBUTING.md](CONTRIBUTING.md).
+
+### Scripts
+
+This project contains the following build and test scripts. Test scripts are run via `npm test`:
+
+| File | Purpose |
+| --- | --- |
+| `build.mjs` | Compiles LESS, minifies CSS, and copies CSS/fonts into `docs/`. Supports building CSS or copying docs assets separately. |
+| `watch.mjs` | Watches LESS, fonts, and package metadata. Queues rebuilds to prevent overlap and retries after errors when files change. |
+| `browser-sync.valet.cjs` | Configures the HTTPS Valet proxy and live reload, using your existing certificate and port 4310. |
+| `normalize-fonts.mjs` | Lowercases imported font filenames, checking for collisions before renaming anything. |
+| `check.mjs` | Validates versions, generated assets, SVG font glyph coverage, and cheatsheet codepoints. |
+| `check-exceptions.json` | Lists existing cheatsheet issues temporarily allowed by validation. Remove entries as you fix them. |
+| `check.test.mjs` | Tests that validation catches broken mappings, stale assets, missing glyphs, and resolved exceptions. |
+| `normalize-fonts.test.mjs` | Tests filename normalization and collision detection. |
+| `preview-cleanup.test.mjs` | Tests the GitHub workflow's preview cleanup logic, including preserving other previews and handling concurrent updates. |
+
+
+## Using Keyrune on the desktop
 
 To copy Keyrune symbols into your desktop software (or access to vectors directly), go to the [Cheatsheet](https://keyrune.andrewgioia.com/cheatsheet.html) on the documentation site, copy the character (not the unicode representation), and then paste it into your desktop application after installing keyrune.ttf.
 

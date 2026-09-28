@@ -1,0 +1,47 @@
+name: Remove closed PR preview
+on:
+  pull_request_target:
+    types: [closed]
+    branches: [master]
+permissions:
+  contents: write
+concurrency:
+  group: docs-preview-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  cleanup:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    steps:
+      # Only inspect gh-pages through the API; never execute PR code.
+      - uses: actions/github-script@v9
+        env:
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const prefix = `pr-${Number(process.env.PR_NUMBER)}/`;
+            for (let attempt = 0; attempt < 3; attempt++) {
+              let ref;
+              try {
+                ({ data: ref } = await github.rest.git.getRef({ owner, repo, ref: 'heads/gh-pages' }));
+              } catch (error) {
+                if (error.status === 404) return;
+                throw error;
+              }
+              const { data: commit } = await github.rest.git.getCommit({ owner, repo, commit_sha: ref.object.sha });
+              const { data: tree } = await github.rest.git.getTree({ owner, repo, tree_sha: commit.tree.sha, recursive: 'true' });
+              if (tree.truncated) throw new Error('Cannot safely clean up a truncated tree.');
+              const files = tree.tree.filter(entry => entry.type === 'blob' && entry.path.startsWith(prefix));
+              if (!files.length) return;
+              const { data: nextTree } = await github.rest.git.createTree({ owner, repo, base_tree: commit.tree.sha,
+                tree: files.map(({ path, mode, type }) => ({ path, mode, type, sha: null })) });
+              const { data: nextCommit } = await github.rest.git.createCommit({ owner, repo,
+                message: `Remove preview for PR #${process.env.PR_NUMBER}`, tree: nextTree.sha, parents: [ref.object.sha] });
+              try {
+                await github.rest.git.updateRef({ owner, repo, ref: 'heads/gh-pages', sha: nextCommit.sha, force: false });
+                return;
+              } catch (error) {
+                if (attempt === 2 || ![409, 422].includes(error.status)) throw error;
+              }
+            }

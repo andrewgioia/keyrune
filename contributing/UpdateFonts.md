@@ -52,3 +52,8 @@ Yaay 🎉 you have update the keyrune font! And have your new icon available.
 ## Extra steps
 
 One files is missing inside the generated fonts, it's the `keyrune.woff2`. To get it you need to convert the `keyrune.woff` with online tools like [Cloudconvert](https://cloudconvert.com/)
+
+After importing fonts, run `npm run fonts:normalize` to lowercase filenames.
+The command stops before renaming if two names would collide. Keep all five
+exported formats (`eot`, `svg`, `ttf`, `woff`, `woff2`) in sync, then run
+`npm run build` and `npm run check`.

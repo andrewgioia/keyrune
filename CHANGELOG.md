@@ -10,6 +10,19 @@ All notable changes to this project will be documented in this file.
 * Review DSK and FDN SVG files to make sure they're single layer, and update docs if needed
 
 
+## [3.20.0] 2026-09-28 Tooling updates, Star Trek
+
+### Added
+
+### Changed
+
+* Major internal updates with all new tooling. Building, watching changes, and new integrity check scripts will significantly speed things up and help minimize errors going forward.
+
+### Fixed
+
+* `package.json` errors fixed and file slightly reorganized
+
+
 ## [3.19.0] 2026-05-02 Secrets of Strixhaven
 
 ### Added
