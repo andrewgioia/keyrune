@@ -1318,6 +1318,8 @@
 .ss-exp:before {
   content: "\e69a";
 }
+.ss-psal:before,
+.ss-phuk:before,
 .ss-psalvat05:before {
   content: "\e909";
 }
