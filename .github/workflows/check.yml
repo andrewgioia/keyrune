@@ -19,5 +19,5 @@ jobs:
       - run: npm test
       - run: npm run check
       - run: npm run build
-      - run: git diff --exit-code -- css docs/assets/keyrune.min.css docs/fonts docs/icons.html docs/cheatsheet.html
+      - run: git diff --exit-code -- less/icons.less less/glyphs.less css docs/assets/keyrune.min.css docs/fonts docs/icons.html docs/cheatsheet.html
       - run: npm pack --dry-run

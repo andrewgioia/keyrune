@@ -44,9 +44,10 @@
     "prepack": "npm run build && npm run check",
     "serve:valet": "browser-sync start --config scripts/browser-sync.valet.cjs",
     "dev:valet": "npm run build && concurrently --kill-others --names watch,valet \"npm:watch\" \"npm:serve:valet\"",
-    "manifest:check": "node scripts/manifest.mjs",
+    "manifest:check": "node scripts/generate-less.mjs --check",
     "manifest:import": "node scripts/import-manifest.mjs",
-    "docs:generate": "node scripts/generate-docs.mjs"
+    "docs:generate": "node scripts/generate-docs.mjs",
+    "less:generate": "node scripts/generate-less.mjs"
   },
   "bugs": {
     "url": "https://github.com/andrewgioia/keyrune/issues",

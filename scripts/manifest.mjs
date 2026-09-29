@@ -47,11 +47,21 @@ export function contentRules(css) {
     }
     return rules;
 }
-export async function legacySources({ includeDocs = true } = {}) {
+export async function fontGlyphs() {
+    const font = new Map();
+    for (const match of (await read('fonts/keyrune.svg')).matchAll(/<glyph\b([^>]+)>/g)) {
+        const hex = match[1].match(/unicode="&#x([a-f\d]+);"/i)?.[1];
+        if (hex) font.set(hex.toLowerCase(), match[1].match(/glyph-name="([^"]+)"/)?.[1] ?? '');
+    }
+    return font;
+}
+
+export async function legacySources({ includeDocs = true, generatedFiles = {} } = {}) {
     const sources = {};
+    const glyphs = generatedFiles['less/glyphs.less'] ?? await read('less/glyphs.less');
     for (const file of ['icons', 'duo', 'border']) {
-        const source = await read(`less/${file}.less`);
-        const { css } = await less.render(`@ss-prefix: ss;\n${source}`, { filename: resolve(root, `less/${file}.less`) });
+        const source = generatedFiles[`less/${file}.less`] ?? await read(`less/${file}.less`);
+        const { css } = await less.render(`@ss-prefix: ss;\n${glyphs}\n${source}`, { filename: resolve(root, `less/${file}.less`) });
         sources[file] = { source, rules: contentRules(css) };
     }
     const defaults = new Map();
@@ -66,11 +76,7 @@ export async function legacySources({ includeDocs = true } = {}) {
             defaults.set(code, rule.glyph);
         }
     }
-    const font = new Map();
-    for (const match of (await read('fonts/keyrune.svg')).matchAll(/<glyph\b([^>]+)>/g)) {
-        const hex = match[1].match(/unicode="&#x([a-f\d]+);"/i)?.[1];
-        if (hex) font.set(hex.toLowerCase(), match[1].match(/glyph-name="([^"]+)"/)?.[1] ?? '');
-    }
+    const font = await fontGlyphs();
     return { ...sources, defaults, font, ...(includeDocs ? {
         iconsHtml: await read('docs/icons.html'), cheatsheetHtml: await read('docs/cheatsheet.html'),
     } : {}) };
@@ -123,12 +129,12 @@ export function validateCatalog(catalog, schema, legacy) {
             errors.push(`${entry.code}: unknown added version requires a hidden icon card and explanatory notes`);
         }
     }
-    // LESS remains handwritten; its public mappings must agree with the catalog.
-    for (const [code, hex] of legacy.defaults) {
+    // When compiled sources are supplied, verify their mappings and manual layer rules.
+    for (const [code, hex] of legacy.defaults ?? []) {
         if (mappings.get(code) !== hex) errors.push(`${code}: manifest default must match LESS ${hex}`);
     }
-    for (const code of mappings.keys()) if (!legacy.defaults.has(code)) errors.push(`${code}: no existing LESS class`);
-    for (const file of ['duo', 'border']) for (const rule of legacy[file].rules) {
+    for (const code of mappings.keys()) if (legacy.defaults && !legacy.defaults.has(code)) errors.push(`${code}: no existing LESS class`);
+    for (const file of ['duo', 'border']) for (const rule of legacy[file]?.rules ?? []) {
         if (!represented.has(rule.glyph)) errors.push(`${file}: unrecorded layer glyph ${rule.glyph}`);
         for (const selector of rule.selectors) {
             for (const [, code] of selector.matchAll(/\.ss-([\w-]+)/g)) {
@@ -139,12 +145,4 @@ export function validateCatalog(catalog, schema, legacy) {
         }
     }
     return [...new Set(errors)];
-}
-
-if (process.argv[1] === fileURLToPath(import.meta.url)) {
-    const catalog = JSON.parse(await read('data/sets.json'));
-    const schema = JSON.parse(await read('data/sets.schema.json'));
-    const errors = validateCatalog(catalog, schema, await legacySources({ includeDocs: false }));
-    if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
-    else console.log(`Manifest valid: ${catalog.sets.length} entries, ${catalog.groups.length} groups; all public LESS classes and layer glyphs covered.`);
 }

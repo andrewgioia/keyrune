@@ -1,6 +1,8 @@
 import { writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
-import { read, root, resolvedGlyphs, legacySources, validateCatalog } from './manifest.mjs';
+import { read, root, resolvedGlyphs } from './manifest.mjs';
+
+import { prepareLess } from './generate-less.mjs';
 
 const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
@@ -54,9 +56,7 @@ export function renderDocs(catalog, templates) {
 }
 
 export async function compileDocs() {
-    const catalog = JSON.parse(await read('data/sets.json'));
-    const errors = validateCatalog(catalog, JSON.parse(await read('data/sets.schema.json')), await legacySources({ includeDocs: false }));
-    if (errors.length) throw new Error(errors.join('\n'));
+    const { catalog } = await prepareLess();
     const templates = Object.fromEntries(await Promise.all(
         ['icons', 'cheatsheet', 'icon', 'section', 'glyph', 'vector'].map(async name =>
             [name, (await read(`templates/docs/${name}.html`)).replace(/\n$/, '')]),

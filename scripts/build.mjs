@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir, copyFile, readdir } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url';
 import less from 'less';
 import CleanCSS from 'clean-css';
+import { generateLess } from './generate-less.mjs';
 import { generateDocs } from './generate-docs.mjs';
 
 export const root = fileURLToPath(new URL('../', import.meta.url));
@@ -18,6 +19,7 @@ export async function compile() {
 
 export async function build(target) {
     if (target && !['css', 'docs'].includes(target)) throw new Error(`Unknown build target: ${target}`);
+    await generateLess();
     if (target !== 'docs') {
         const { css, min } = await compile();
         await mkdir('css', { recursive: true });

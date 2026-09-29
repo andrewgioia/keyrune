@@ -2,8 +2,8 @@
  * Global */
 @font-face {
   font-family: 'Keyrune';
-  src: url('../fonts/keyrune.eot?v=3.19.0');
-  src: url('../fonts/keyrune.eot?#iefix&v=3.19.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.19.0') format('woff2'), url('../fonts/keyrune.woff?v=3.19.0') format('woff'), url('../fonts/keyrune.ttf?v=3.19.0') format('truetype'), url('../fonts/keyrune.svg?v=3.19.0#keyrune') format('svg');
+  src: url('../fonts/keyrune.eot?v=3.20.0');
+  src: url('../fonts/keyrune.eot?#iefix&v=3.20.0') format('embedded-opentype'), url('../fonts/keyrune.woff2?v=3.20.0') format('woff2'), url('../fonts/keyrune.woff?v=3.20.0') format('woff'), url('../fonts/keyrune.ttf?v=3.20.0') format('truetype'), url('../fonts/keyrune.svg?v=3.20.0#keyrune') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -140,6 +140,7 @@
 }
 .ss-duo.ss-mic::after {
   content: "\ea23";
+  color: #fff !important;
 }
 .ss-duo.ss-mid::after {
   content: "\e979";
@@ -190,6 +191,7 @@
 }
 .ss-duo.ss-voc::after {
   content: "\ea24";
+  color: #fff !important;
 }
 .ss-duo.ss-common:after {
   color: #fff;
@@ -272,8 +274,6 @@
   width: 1.28571429em;
   text-align: center;
 }
-/**
- * Core */
 .ss-lea:before {
   content: "\e600";
 }
@@ -285,6 +285,18 @@
 }
 .ss-3ed:before {
   content: "\e603";
+}
+.ss-1e:before {
+  content: "\e947";
+}
+.ss-2e:before {
+  content: "\e948";
+}
+.ss-2u:before {
+  content: "\e949";
+}
+.ss-3e:before {
+  content: "\e94a";
 }
 .ss-4ed:before {
   content: "\e604";
@@ -340,31 +352,16 @@
 .ss-m20:before {
   content: "\e95d";
 }
-.ss-1e:before {
-  content: "\e947";
-}
-.ss-2e:before {
-  content: "\e948";
-}
-.ss-2u:before {
-  content: "\e949";
-}
-.ss-3e:before {
-  content: "\e94a";
-}
 .ss-m21:before {
   content: "\e960";
 }
-.ss-xdnd:before,
-.ss-afr:before {
+.ss-afr:before,
+.ss-xdnd:before {
   content: "\e972";
 }
 .ss-fdn:before {
   content: "\e9d8";
 }
-/**
- * Expansions */
-/* Artifact Block */
 .ss-arn:before {
   content: "\e613";
 }
@@ -374,7 +371,6 @@
 .ss-leg:before {
   content: "\e615";
 }
-/* Wizards Block */
 .ss-drk:before {
   content: "\e616";
 }
@@ -384,7 +380,6 @@
 .ss-hml:before {
   content: "\e618";
 }
-/* Ice Age Block */
 .ss-ice:before {
   content: "\e619";
 }
@@ -397,7 +392,6 @@
 .ss-csp:before {
   content: "\e61b";
 }
-/* Mirage Block */
 .ss-mir:before {
   content: "\e61c";
 }
@@ -407,7 +401,6 @@
 .ss-wth:before {
   content: "\e61e";
 }
-/* Tempest Block */
 .ss-tmp:before {
   content: "\e61f";
 }
@@ -417,7 +410,6 @@
 .ss-exo:before {
   content: "\e621";
 }
-/* Urza's Block */
 .ss-usg:before {
   content: "\e622";
 }
@@ -427,7 +419,6 @@
 .ss-uds:before {
   content: "\e624";
 }
-/* Mercadian Block */
 .ss-mmq:before {
   content: "\e625";
 }
@@ -438,7 +429,6 @@
 .ss-pcy:before {
   content: "\e627";
 }
-/* Invasion Block */
 .ss-inv:before {
   content: "\e628";
 }
@@ -448,7 +438,6 @@
 .ss-apc:before {
   content: "\e62a";
 }
-/* Odyssey Block */
 .ss-ody:before {
   content: "\e62b";
 }
@@ -458,7 +447,6 @@
 .ss-jud:before {
   content: "\e62d";
 }
-/* Onslaught Block */
 .ss-ons:before {
   content: "\e62e";
 }
@@ -468,7 +456,6 @@
 .ss-scg:before {
   content: "\e630";
 }
-/* Mirrodin Block */
 .ss-mrd:before {
   content: "\e631";
 }
@@ -478,7 +465,6 @@
 .ss-5dn:before {
   content: "\e633";
 }
-/* Kamigawa Block */
 .ss-chk:before {
   content: "\e634";
 }
@@ -488,7 +474,6 @@
 .ss-sok:before {
   content: "\e636";
 }
-/* Ravnica Block */
 .ss-rav:before {
   content: "\e637";
 }
@@ -498,7 +483,6 @@
 .ss-dis:before {
   content: "\e639";
 }
-/* Time Spiral Block */
 .ss-tsp:before {
   content: "\e63a";
 }
@@ -508,21 +492,18 @@
 .ss-fut:before {
   content: "\e63c";
 }
-/* Lorwyn Block */
 .ss-lrw:before {
   content: "\e63d";
 }
 .ss-mor:before {
   content: "\e63e";
 }
-/* Shadowmoor Block */
 .ss-shm:before {
   content: "\e63f";
 }
 .ss-eve:before {
   content: "\e640";
 }
-/* Alara Block */
 .ss-ala:before {
   content: "\e641";
 }
@@ -532,7 +513,6 @@
 .ss-arb:before {
   content: "\e643";
 }
-/* Zendikar Block */
 .ss-zen:before {
   content: "\e644";
 }
@@ -542,7 +522,6 @@
 .ss-roe:before {
   content: "\e646";
 }
-/* Scars Block */
 .ss-som:before {
   content: "\e647";
 }
@@ -552,7 +531,6 @@
 .ss-nph:before {
   content: "\e649";
 }
-/* Innistrad Block */
 .ss-isd:before {
   content: "\e64a";
 }
@@ -562,7 +540,6 @@
 .ss-avr:before {
   content: "\e64c";
 }
-/* RTR Block */
 .ss-rtr:before {
   content: "\e64d";
 }
@@ -572,7 +549,6 @@
 .ss-dgm:before {
   content: "\e64f";
 }
-/* Theros Block */
 .ss-ths:before {
   content: "\e650";
 }
@@ -582,7 +558,6 @@
 .ss-jou:before {
   content: "\e652";
 }
-/* Khans Block */
 .ss-ktk:before {
   content: "\e653";
 }
@@ -592,62 +567,51 @@
 .ss-dtk:before {
   content: "\e693";
 }
-/* Return to Zendikar Block */
 .ss-bfz:before {
   content: "\e699";
 }
 .ss-ogw:before {
   content: "\e901";
 }
-/* Return to Innistrad Block */
 .ss-soi:before {
   content: "\e902";
 }
 .ss-emn:before {
   content: "\e90b";
 }
-/* Kaladesh Block */
 .ss-kld:before {
   content: "\e90e";
 }
 .ss-aer:before {
   content: "\e90f";
 }
-/* Amonkhet Block */
 .ss-akh:before {
   content: "\e914";
 }
 .ss-hou:before {
   content: "\e924";
 }
-/* Ixalan Block */
 .ss-xln:before {
   content: "\e92e";
 }
 .ss-rix:before {
   content: "\e92f";
 }
-/* Dominaria Block */
 .ss-dom:before {
   content: "\e93f";
 }
-/* Guilds of Ravnica Block */
-.ss-grn:before,
-.ss-gk1:before {
+.ss-grn:before {
   content: "\e94b";
 }
-.ss-rna:before,
-.ss-gk2:before {
+.ss-rna:before {
   content: "\e959";
 }
 .ss-war:before {
   content: "\e95a";
 }
-/* Eldraine Block */
 .ss-eld:before {
   content: "\e95e";
 }
-/* 2020 Sets */
 .ss-thb:before {
   content: "\e961";
 }
@@ -657,13 +621,12 @@
 .ss-znr:before {
   content: "\e963";
 }
-/* 2021 Sets */
-.ss-xkld:before,
-.ss-khm:before {
+.ss-khm:before,
+.ss-xkld:before {
   content: "\e974";
 }
-.ss-xssm:before,
-.ss-stx:before {
+.ss-stx:before,
+.ss-xssm:before {
   content: "\e975";
 }
 .ss-mid:before {
@@ -672,7 +635,6 @@
 .ss-vow:before {
   content: "\e977";
 }
-/* 2022 Sets */
 .ss-neo:before {
   content: "\e98c";
 }
@@ -685,7 +647,6 @@
 .ss-bro:before {
   content: "\e99d";
 }
-/* 2023 Sets */
 .ss-one:before {
   content: "\e9a1";
 }
@@ -701,12 +662,14 @@
 .ss-lci:before {
   content: "\e9c2";
 }
-/* 2024 Sets */
 .ss-mkm:before {
   content: "\e9c9";
 }
 .ss-otj:before {
   content: "\e9cc";
+}
+.ss-big:before {
+  content: "\e9d6";
 }
 .ss-blb:before {
   content: "\e9cd";
@@ -714,7 +677,6 @@
 .ss-dsk:before {
   content: "\e9d7";
 }
-/* 2025 Sets */
 .ss-dft:before {
   content: "\e9e0";
 }
@@ -733,7 +695,6 @@
 .ss-tla:before {
   content: "\e9fb";
 }
-/* 2026 Sets */
 .ss-ecl:before {
   content: "\ea04";
 }
@@ -752,8 +713,6 @@
 .ss-fra:before {
   content: "\ea22";
 }
-/**
- * Command Zone */
 .ss-van:before {
   content: "\e655";
 }
@@ -827,7 +786,9 @@
 .ss-cc1:before {
   content: "\e968";
 }
-.ss-cmr:before,
+.ss-cmr:before {
+  content: "\e969";
+}
 .ss-cmc:before {
   content: "\e969";
 }
@@ -882,11 +843,17 @@
 .ss-ltc:before {
   content: "\e9b6";
 }
+.ss-who:before {
+  content: "\e9b0";
+}
 .ss-woc:before {
   content: "\e9b9";
 }
 .ss-lcc:before {
   content: "\e9c7";
+}
+.ss-pip:before {
+  content: "\e9c3";
 }
 .ss-mkc:before {
   content: "\e9ca";
@@ -933,8 +900,6 @@
 .ss-msc:before {
   content: "\ea1f";
 }
-/**
- * Reprint */
 .ss-chr:before {
   content: "\e65e";
 }
@@ -1024,9 +989,6 @@
 .ss-otp:before {
   content: "\e9d5";
 }
-.ss-big:before {
-  content: "\e9d6";
-}
 .ss-mb2:before {
   content: "\e9d9";
 }
@@ -1042,11 +1004,9 @@
 .ss-mar:before {
   content: "\e9f9";
 }
-.ss-soa:before {
-  content: "\ea20";
+.ss-eos:before {
+  content: "\ea00";
 }
-/**
- * Beginner */
 .ss-por:before {
   content: "\e664";
 }
@@ -1069,8 +1029,6 @@
 .ss-w17:before {
   content: "\e923";
 }
-/**
- * Duel Decks */
 .ss-evg:before {
   content: "\e669";
 }
@@ -1137,13 +1095,14 @@
 .ss-ddu:before {
   content: "\e93e";
 }
-/**
- * From the Vault */
 .ss-drb:before {
   content: "\e678";
 }
 .ss-v09:before {
   content: "\e679";
+}
+.ss-v0x:before {
+  content: "\e920";
 }
 .ss-v10:before {
   content: "\e67a";
@@ -1166,14 +1125,9 @@
 .ss-v16:before {
   content: "\e906";
 }
-.ss-v0x:before {
-  content: "\e920";
-}
 .ss-v17:before {
   content: "\e939";
 }
-/**
- * Premium Deck Series */
 .ss-h09:before {
   content: "\e67f";
 }
@@ -1186,8 +1140,6 @@
 .ss-md1:before {
   content: "\e682";
 }
-/**
- * Signature Spellbook */
 .ss-ss1:before {
   content: "\e944";
 }
@@ -1197,13 +1149,9 @@
 .ss-ss3:before {
   content: "\e96d";
 }
-/**
- * Global Series */
 .ss-gs1:before {
   content: "\e945";
 }
-/**
- * Guild Kits */
 .ss-azorius:before {
   content: "\e94e";
 }
@@ -1234,10 +1182,14 @@
 .ss-simic:before {
   content: "\e957";
 }
-/**
- * Other Supplemental Products */
 .ss-gnt:before {
   content: "\e94d";
+}
+.ss-gk1:before {
+  content: "\e94b";
+}
+.ss-gk2:before {
+  content: "\e959";
 }
 .ss-gn2:before {
   content: "\e964";
@@ -1254,14 +1206,16 @@
 .ss-ltr:before {
   content: "\e9af";
 }
-.ss-who:before {
-  content: "\e9b0";
-}
 .ss-rvr:before {
   content: "\e9bb";
 }
-.ss-pip:before {
-  content: "\e9c3";
+.ss-sld:before,
+.ss-slu:before,
+.ss-psld:before {
+  content: "\e687";
+}
+.ss-sld2:before {
+  content: "\e9bc";
 }
 .ss-clu:before {
   content: "\e9cb";
@@ -1284,8 +1238,6 @@
 .ss-pza:before {
   content: "\ea08";
 }
-/**
- * Promotional */
 .ss-pgru:before {
   content: "\e683";
 }
@@ -1299,7 +1251,6 @@
   content: "\e686";
 }
 .ss-pmei:before,
-.ss-htr:before,
 .ss-htr17:before {
   content: "\e687";
 }
@@ -1318,19 +1269,22 @@
 .ss-parl2:before {
   content: "\e68c";
 }
+.ss-parl3:before {
+  content: "\e943";
+}
 .ss-exp:before {
   content: "\e69a";
 }
+.ss-psalvat05:before,
 .ss-psal:before,
-.ss-phuk:before,
-.ss-psalvat05:before {
+.ss-phuk:before {
   content: "\e909";
 }
 .ss-psalvat11:before {
   content: "\e90a";
 }
-.ss-mps:before,
-.ss-mp1:before {
+.ss-mp1:before,
+.ss-mps:before {
   content: "\e913";
 }
 .ss-pxbox:before {
@@ -1366,8 +1320,8 @@
 .ss-ptsa:before {
   content: "\e93c";
 }
-.ss-parl3:before {
-  content: "\e943";
+.ss-htr:before {
+  content: "\e687";
 }
 .ss-med:before {
   content: "\e94c";
@@ -1387,31 +1341,15 @@
 .ss-rex:before {
   content: "\e9c4";
 }
-.ss-eos:before {
-  content: "\ea00";
-}
 .ss-sta-jpn:before {
   content: "\e9fc";
+}
+.ss-soa:before {
+  content: "\ea20";
 }
 .ss-soa-jpn:before {
   content: "\ea21";
 }
-/**
- * Secret Lairs */
-.ss-slu:before {
-  content: "\e687";
-}
-.ss-sld:before {
-  content: "\e687";
-}
-.ss-psld:before {
-  content: "\e687";
-}
-.ss-sld2:before {
-  content: "\e9bc";
-}
-/**
- * Digital */
 .ss-me1:before {
   content: "\e68d";
 }
@@ -1424,22 +1362,22 @@
 .ss-me4:before {
   content: "\e690";
 }
-.ss-tpr:before {
-  content: "\e694";
-}
 .ss-vma:before {
   content: "\e696";
+}
+.ss-tpr:before {
+  content: "\e694";
 }
 .ss-pz1:before,
 .ss-xlcu:before {
   content: "\e90c";
 }
-.ss-modo:before,
-.ss-pmodo:before {
+.ss-pmodo:before,
+.ss-modo:before {
   content: "\e91b";
 }
-.ss-duels:before,
-.ss-xduels:before {
+.ss-xduels:before,
+.ss-duels:before {
   content: "\e91d";
 }
 .ss-xmods:before {
@@ -1466,9 +1404,9 @@
 .ss-hbg:before {
   content: "\e9a6";
 }
+.ss-ydmu:before,
 .ss-y23:before,
 .ss-ybro:before,
-.ss-ydmu:before,
 .ss-yone:before {
   content: "\e9a7";
 }
@@ -1514,8 +1452,6 @@
 .ss-y26:before {
   content: "\ea1b";
 }
-/**
- * Un-serious */
 .ss-ugl:before {
   content: "\e691";
 }
@@ -1534,8 +1470,6 @@
 .ss-una:before {
   content: "\e9be";
 }
-/**
- * Unofficial */
 .ss-xcle:before {
   content: "\e926";
 }

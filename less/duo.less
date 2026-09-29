@@ -32,11 +32,11 @@
     // 2 glyphs b/c we have a custom color glyph
     &.@{ss-prefix}-40k {
         &::before {
-            content: "\e999";
+            content: @ss-glyph-40k-rarity;
             width: 100%;
         }
         &::after {
-            content: "\e99b";
+            content: @ss-glyph-40k-inner;
             color: #fff !important;
         }
     }
@@ -44,36 +44,36 @@
     // Adventures in the Forgotten Realms
     &.@{ss-prefix}-xdnd::after,
     &.@{ss-prefix}-afr::after {
-        content: "\e973";
+        content: @ss-glyph-afr-border;
     }
     &.@{ss-prefix}-afc::after {
-        content: "\e982";
+        content: @ss-glyph-afc-border;
     }
 
     // Commander 2021
     &.@{ss-prefix}-c21::after {
-        content: "\e97f";
+        content: @ss-glyph-c21-border;
     }
 
     // Commander Legends: Battle for Baldur's Gate
     &.@{ss-prefix}-clb::after {
-        content: "\e992";
+        content: @ss-glyph-clb-inner;
     }
 
     // Commander Collection: Black
     &.@{ss-prefix}-cc2::after {
-        content: "\e988";
+        content: @ss-glyph-cc2-border;
     }
 
     // Dominaria United Commander
     // 2 glyphs b/c we have a custom color glyph
     &.@{ss-prefix}-dmc {
         &::before {
-            content: "\e995";
+            content: @ss-glyph-dmc-rarity;
             width: 100%;
         }
         &::after {
-            content: "\e997";
+            content: @ss-glyph-dmc-inner;
             color: #fff !important;
         }
     }
@@ -81,46 +81,46 @@
     // Aetherdrift Commander (similar to DMC)
     &.@{ss-prefix}-drc {
         &::before {
-            content: "\e9e9";
+            content: @ss-glyph-drc-rarity;
             width: 100%;
         }
         &::after {
-            content: "\e9eb";
+            content: @ss-glyph-drc-inner;
             color: #fff !important;
         }
     }
 
     // Duskmourn Commander
     &.@{ss-prefix}-dsc::after {
-        content: "\e9de";
+        content: @ss-glyph-dsc-inner;
     }
 
     // Lorwyn Eclipsed Commander
     &.@{ss-prefix}-ecc::after {
-        content: "\ea14";
+        content: @ss-glyph-ecc-inner;
         color: #fff !important;
     }
 
     // Edge of Eternities Commander
     &.@{ss-prefix}-eoc::after {
-        content: "\e9f7";
+        content: @ss-glyph-eoc-inner;
         color: #fff !important;
     }
 
     // Jumpstart: Historic Horizons
     &.@{ss-prefix}-j21::after {
-        content: "\e984";
+        content: @ss-glyph-j21-inner;
     }
 
     // Kaldheim Commander
     // 2 glyphs to replace the non-dual version
     &.@{ss-prefix}-khc {
         &::before {
-            content: "\e9c5";
+            content: @ss-glyph-khc-rarity;
             width: 100%;
         }
         &::after {
-            content: "\e9c6";
+            content: @ss-glyph-khc-inner;
             color: #fff !important;
         }
     }
@@ -130,34 +130,35 @@
     // 2 glyphs b/c we have a custom color glyph
     &.@{ss-prefix}-ltc {
         &::before {
-            content: "\e9b7";
+            content: @ss-glyph-ltc-rarity;
             width: 100%;
         }
         &::after {
-            content: "\e9b8";
+            content: @ss-glyph-ltc-inner;
             color: #fff !important;
         }
     }
 
     // Modern Horizons 3 Commander
     &.@{ss-prefix}-m3c::after {
-        content: "\e9d1";
+        content: @ss-glyph-m3c-inner;
         color: #fff !important;
     }
 
     // Midnight Hunt Commander
     &.@{ss-prefix}-mic::after {
-        content: "\ea23";
+        content: @ss-glyph-mic-inner;
+        color: #fff !important;
     }
 
     // Innistrad Werewolves
     &.@{ss-prefix}-mid::after {
-        content: "\e979";
+        content: @ss-glyph-mid-border;
     }
 
     // Marvel
     &.@{ss-prefix}-mar::after {
-        content: "\e9fa";
+        content: @ss-glyph-mar-inner;
         color: #fff !important;
     }
 
@@ -165,39 +166,39 @@
     // uses 2 separate glyphs to construct this
     &.@{ss-prefix}-ncc {
         &::before {
-            content: "\e98f";
+            content: @ss-glyph-ncc-rarity;
         }
         &::after {
-            content: "\e990";
+            content: @ss-glyph-ncc-inner;
         }
     }
 
     // Outlaws of Thunder Junction Commander
     &.@{ss-prefix}-otc::after {
-        content: "\e9d3";
+        content: @ss-glyph-otc-inner;
         color: #fff !important;
     }
 
     // Starter Commander Decks
     &.@{ss-prefix}-scd::after {
-        content: "\e9ac";
+        content: @ss-glyph-scd-inner;
     }
 
     // Secrets of Strixhaven (SOC) inner
     &.@{ss-prefix}-soc::after {
-        content: "\ea1d";
+        content: @ss-glyph-soc-inner;
         color: #fff !important;
     }
 
     // Marvel Spider-Man
     &.@{ss-prefix}-spm::after {
-        content: "\e9f2";
+        content: @ss-glyph-spm-inner;
         color: #fff !important;
     }
 
     // Avatar:; the Last Airbender
     &.@{ss-prefix}-tla::after {
-        content: "\e9fe";
+        content: @ss-glyph-tla-inner;
         color: #fff !important;
     }
 
@@ -205,26 +206,27 @@
     &.@{ss-prefix}-tle {
         /* no ::before, keeping the border as the rarity unless .ss-border is added */
         &::after { // inner
-            content: "\ea0c";
+            content: @ss-glyph-tle-inner;
             color: #fff !important;
         }
     }
 
     // Teenage Mutant Ninja Turtles
     &.@{ss-prefix}-tmt::after {
-        content: "\ea17";
+        content: @ss-glyph-tmt-inner;
         color: #fff !important;
     }
 
     // Unfinity Acorns
     &.@{ss-prefix}-una::after {
-        content: "\e9bf";
+        content: @ss-glyph-una-inner;
         color: #fff !important;
     }
 
     // Crimson Vow Commander
     &.@{ss-prefix}-voc::after {
-        content: "\ea24";
+        content: @ss-glyph-voc-inner;
+        color: #fff !important;
     }
 
     //

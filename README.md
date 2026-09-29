@@ -78,14 +78,16 @@ Valet serves the rebuilt docs directly. No Valet configuration changes are neede
 ### Build and release commands
 
 ```bash
-npm run build            # Compile CSS, generate docs, and copy assets
+npm run build            # Generate LESS and docs, compile CSS, and copy assets
+npm run less:generate    # Generate default mappings and glyph variables only
 npm run docs:generate    # Generate icon reference and cheatsheet only
 npm run check            # Check symbols, versions, and generated files
 npm test                 # Test validation and filename collision handling
 npm run fonts:normalize  # Lowercase newly imported font filenames
 ```
 
-`build:css` only compiles and minifies; `build:docs` generates both docs pages and
+`build:css` generates LESS, then compiles and minifies; `build:docs` generates LESS
+and both docs pages and
 copies existing assets. Run the full build before committing, and commit the
 generated HTML, CSS, and docs assets.
 `check` verifies glyph coverage against the exported SVG font; it does not verify
@@ -114,9 +116,12 @@ lists every public class (including aliases) and every named layer. Group order
 and card order follow the manifest; cheatsheet entries sort by label within the
 existing sets, guilds, promos, and layers blocks.
 
-LESS mappings and overrides remain handwritten and must match the catalog.
-`npm run manifest:check` validates those mappings; `npm run check` also rejects
-outdated generated pages. See [the catalog guide](data/README.md) for the format
+The manifest also generates `less/icons.less` and `less/glyphs.less`. Edit
+`less/duo.less` and `less/border.less` for special rendering behavior, referencing
+named variables such as `@ss-glyph-c16-rarity`. Build and watch generate LESS
+before compiling CSS. Generated LESS files are excluded from watch triggers.
+`npm run manifest:check` validates the catalog and handwritten overrides;
+`npm run check` also rejects outdated generated LESS and HTML. See [the catalog guide](data/README.md) for the format
 and workflow.
 
 ### Scripts
@@ -125,10 +130,12 @@ This project contains the following build and test scripts. Test scripts are run
 
 | File | Purpose |
 | --- | --- |
-| `manifest.mjs` | Loads and validates the catalog against its schema, SVG font, and current LESS mappings. |
+| `manifest.mjs` | Loads the catalog and validates its schema, SVG font coverage, references, and compiled mappings. |
 | `import-manifest.mjs` | Imports a candidate catalog and reconciliation evidence into a new directory without overwriting existing files. |
 | `manifest.test.mjs` | Tests v3 mapping preservation, manual glyph switches, aliases, shared symbols, and invalid catalog data. |
-| `build.mjs` | Compiles LESS, minifies CSS, generates docs pages, and copies CSS/fonts into `docs/`. Supports CSS-only and docs-only builds. |
+| `generate-less.mjs` | Generates default LESS mappings and named glyph variables, validating handwritten layer rules before writing. |
+| `generate-less.test.mjs` | Tests prefixes, aliases, layer switches, manifest edits, and regeneration without existing outputs. |
+| `build.mjs` | Generates LESS, compiles and minifies CSS, generates docs pages, and copies CSS/fonts into `docs/`. Supports CSS-only and docs-only builds. |
 | `generate-docs.mjs` | Generates the icon reference and cheatsheet from the manifest and HTML templates. |
 | `generate-docs.test.mjs` | Checks card, alias, and layer coverage; metadata edits; HTML escaping; and template errors. |
 | `watch.mjs` | Watches LESS, fonts, the manifest, docs templates, and package metadata. Queues rebuilds to prevent overlap and retries after errors when files change. |

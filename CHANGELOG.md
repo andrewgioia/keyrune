@@ -16,6 +16,7 @@ All notable changes to this project will be documented in this file.
 
 * New `sets.json` icon manifest now drives the project! No more typing the saame thing 10 times! Keyrune now has a single source of truth for project/docs details that will make maintenance a lot easier going forward
 * Docs are now automatically generated based on the new icon manifest
+* New `glyph.less` contains all named variables mapping codepoints to set symbol layers; `border.less`, `duo.less`, and `icons.less` now all use these variables
 
 ### Changed
 

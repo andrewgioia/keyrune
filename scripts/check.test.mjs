@@ -16,6 +16,8 @@ test('validation rejects new discrepancies and resolved exceptions', async () =>
         const baseline = run();
         assert.equal(baseline.status, 0, baseline.stderr);
         const cases = [
+            ['less/icons.less', text => text + '\n', /less\/icons.less is stale/],
+            ['less/glyphs.less', text => text + '\n', /less\/glyphs.less is stale/],
             ['docs/icons.html', text => text.replace('Alpha', 'Outdated Alpha'), /docs\/icons.html is stale/],
             ['README.md', text => text.replace('v3.', 'v99.'), /README version differs/],
             ['css/keyrune.css', text => text + '\n', /is stale/],

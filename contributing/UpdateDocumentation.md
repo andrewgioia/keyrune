@@ -1,34 +1,18 @@
-# Update existing documentation
+# Review the generated documentation
 
-After you have added a new set icon, update the codebase and generate the new `keyrune.css` file, you need to update the documentation to reflect the changes.
+`npm run build` generates `docs/icons.html` and `docs/cheatsheet.html` from
+`data/sets.json`. You no longer need to add entries manually to either page.
+For docs-only generation, run `npm run docs:generate`.
 
-## Steps
+The icon reference uses the manifest's name, group, codepoint, added version,
+and preview settings. Use `display` for a shorter grid label or `docs.icon: false`
+to hide a card. Aliases appear in the cheatsheet without separate icon cards.
+The cheatsheet lists every public class and named glyph layer.
 
-1. Run this command
-    ```bash
-    npm run build
-    ```
-    This will compile LESS, minify CSS, and copy fonts and CSS files to the `docs` folder.
-2. Add the new icon usage inside the `cheatsheet.html`.
-    ```diff
-    + <span class="utf"><i>&#xe9d8;</i> ss-fdn <code>&amp;#xe9d8;</code></span>
-    ```
-    Replace `fdn` with the short code of the new icon.
-3. Add the new icon usage inside the `icons.html`.
-    ```diff
-    + <div class="icon" id="fdn" name="Foundation" data-name="Foundation" data-class="fdn" data-unicode="xe9d8" data-added="v3.14.0">
-    +    <span class="name"><i class="ss ss-fdn"></i> Foundation <em>(fdn)</em></span>
-    + </div>
-    ```
-    Replace `fdn` with the short code of the new icon.
+Edit `templates/docs/` to change page layout or modal behavior. Direct edits to
+the generated HTML will be overwritten on the next build.
 
-    `data-added` records the Keyrune version that introduced this symbol and appears in the icon details modal.
-
-Run `npm run dev` to preview the docs with automatic browser reload. Run `npm run check` to check codepoint mappings, versions, and generated assets.
-Normally you can see the changes in the `./cheatsheet.html` and `./icons.html` .
-
-![cheatsheet.html](./images/cheatsheet-html.png) ![icons.html](./images/icons-html.png)
-
-Yaay! You have successfully updated the documentation. 🎉
-
-You can now commit your changes and create a pull request.
+Preview with `npm run dev` or `npm run dev:valet`. Check the symbol in the grid,
+its modal rarity/border controls, and its copyable cheatsheet entries.
+Run `npm run check` to verify mappings and generated files, then commit your
+changes and create a pull request.

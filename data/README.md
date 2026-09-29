@@ -1,8 +1,8 @@
 # V3 symbol catalog
 
 `sets.json` is the v3 catalog and the source for the generated icon reference
-and cheatsheet. LESS mappings and overrides are still handwritten and validated
-against the catalog. No Hugo build is involved.
+and cheatsheet, default LESS mappings, and named glyph variables. Duo and border
+overrides remain handwritten and use those variables. No Hugo build is involved.
 
 ## Files
 
@@ -61,11 +61,12 @@ The default and border roles may share a codepoint. `rarity`, `inner`, and
 OTC's confirmed `inner` value is `e9d3`; the LESS and catalog now agree.
 If a future import finds conflicting layer assignments, it retains the alternate
 under a `-reference` role for review before generating variables. The manifest contains no CSS conditions or pseudo-element
-rules. `less/duo.less` and `less/border.less` remain handwritten.
+rules. `less/duo.less` and `less/border.less` remain handwritten and reference generated variables.
 
 ## Commands
 
 ```bash
+npm run less:generate
 npm run docs:generate
 npm run manifest:check
 npm run check
@@ -74,7 +75,7 @@ npm test
 
 `manifest:check` validates the schema, unique codes/groups, references and cycles,
 Unicode scalars, SVG font coverage, and agreement with every existing public
-LESS default and per-symbol layer glyph. `check` includes these checks, so the
+generated LESS default and handwritten layer rules, compiled with fresh variables in memory. `check` includes these checks, so the
 existing CI validation also covers the manifest. Glyph validation uses the SVG
 font export; it does not compare outlines across binary font formats.
 
@@ -92,7 +93,7 @@ behavior or guessing the intent of a manual override.
 
 ## Updating symbols and pages
 
-1. Export the font and update the handwritten LESS mappings or overrides as needed.
+1. Export the font. Add or adjust handwritten duo/border rules only when a symbol needs special rendering behavior.
 2. Add or edit the entry in `sets.json`. Use `preview.duo: true` for a layered
    preview, `display` for a shorter grid label, and `aliases` for additional class
    names. Shared products can use `symbolOf` without sharing preview settings.
@@ -119,8 +120,32 @@ no longer requires editing existing HTML before generation. The import command
 is a migration aid; ordinary updates should edit the catalog directly. Historical
 reconciliation files are not generation inputs and are not refreshed by builds.
 
-## Next slice
+## Generated LESS
 
-Generate default LESS mappings from the catalog, then named glyph variables for
-the handwritten duo and border overrides. Until then, validation requires every
-public LESS class and layer assignment to agree with the manifest.
+`less/icons.less` maps every canonical code and alias to its default glyph.
+`less/glyphs.less` defines `@ss-glyph-<code>-<role>` for every canonical entry and
+resolved glyph role, including shared inventories. Both files are generated and
+committed; update the manifest instead of editing them. LESS consumers can keep
+importing `less/keyrune.less` without Node or the manifest at runtime.
+
+For example, the handwritten C16 border rule uses:
+
+```less
+&.@{ss-prefix}-c16 {
+    &::before { content: @ss-glyph-c16-rarity; }
+    &::after { content: @ss-glyph-c16-border; }
+}
+```
+
+Aliases share the canonical default mapping, but do not automatically inherit
+its duo/border selectors. `symbolOf` shares glyph values while each canonical
+entry gets its own variable names. Import `glyphs.less` before using the partials
+in a custom LESS entry point; `keyrune.less` already does this. Variable names
+use the fixed `ss-glyph` prefix even when consumers customize `@ss-prefix`.
+
+`npm run build` generates LESS before compilation. The watcher ignores its two
+generated LESS outputs to avoid rebuild loops. `npm run less:generate` works
+even if those files are missing or stale. Invalid metadata, missing font glyphs,
+or undefined variables in handwritten rules fail before generated LESS is
+written. `npm run check` compares committed generated LESS with fresh output
+without rewriting it.

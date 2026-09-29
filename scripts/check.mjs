@@ -1,16 +1,16 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { compile } from './build.mjs';
+import { prepareLess } from './generate-less.mjs';
 import { compileDocs } from './generate-docs.mjs';
-import { legacySources, validateCatalog } from './manifest.mjs';
 
-const errors = validateCatalog(
-    JSON.parse(await readFile('data/sets.json', 'utf8')),
-    JSON.parse(await readFile('data/sets.schema.json', 'utf8')),
-    await legacySources({ includeDocs: false }),
-);
+const errors = [];
 const read = path => readFile(path, 'utf8');
 const expect = (condition, message) => { if (!condition) errors.push(message); };
 try {
+    const { files } = await prepareLess();
+    for (const [path, source] of Object.entries(files)) {
+        expect(await read(path) === source, `${path} is stale; run npm run less:generate.`);
+    }
     for (const [path, content] of Object.entries(await compileDocs())) {
         expect(await read(path) === content, `${path} is stale; run npm run docs:generate.`);
     }

@@ -23,6 +23,7 @@ async function rebuild() {
 }
 const watcher = chokidar.watch(['less', 'fonts', 'data/sets.json', 'data/sets.schema.json', 'templates/docs', 'package.json'], {
     ignoreInitial: true,
+    ignored: path => /(?:^|[/\\])less[/\\](?:icons|glyphs)\.less$/.test(path),
     awaitWriteFinish: { stabilityThreshold: 200, pollInterval: 50 },
 });
 watcher.on('all', () => {

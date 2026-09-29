@@ -93,31 +93,31 @@
             top: 0;
         }
         &::marker {
-            content: "\e99a";
+            content: @ss-glyph-40k-border;
             color: #000;
         }
     }
-    &.@{ss-prefix}-arc:after { content: "\e657"; } // Archenemy
-    &.@{ss-prefix}-c13:after { content: "\e65b"; } // Commander 2013
-    &.@{ss-prefix}-c14:after { content: "\e65d"; } // Commander 2014
-    &.@{ss-prefix}-c15:after { content: "\e900"; } // Commander 2015
+    &.@{ss-prefix}-arc:after { content: @ss-glyph-arc-border; } // Archenemy
+    &.@{ss-prefix}-c13:after { content: @ss-glyph-c13-border; } // Commander 2013
+    &.@{ss-prefix}-c14:after { content: @ss-glyph-c14-border; } // Commander 2014
+    &.@{ss-prefix}-c15:after { content: @ss-glyph-c15-border; } // Commander 2015
     &.@{ss-prefix}-c16 { // c16: regular symbol becomes the border
         &::before {
-            content: "\e910"; // rarity
+            content: @ss-glyph-c16-rarity; // rarity
         }
         &::after {
-            content: "\e9e5"; // new border
+            content: @ss-glyph-c16-border; // new border
         }
     }
-    &.@{ss-prefix}-cm1:after { content: "\e65a"; } // Commander's Arsenal
-    &.@{ss-prefix}-cmd:after { content: "\e658"; } // Commander
-    &.@{ss-prefix}-cns:after { content: "\e65c"; } // Conspiracy
+    &.@{ss-prefix}-cm1:after { content: @ss-glyph-cm1-border; } // Commander's Arsenal
+    &.@{ss-prefix}-cmd:after { content: @ss-glyph-cmd-border; } // Commander
+    &.@{ss-prefix}-cns:after { content: @ss-glyph-cns-border; } // Conspiracy
     &.@{ss-prefix}-dft { // dft: regular symbol becomes the border
         &::before {
-            content: "\e9e1"; // rarity
+            content: @ss-glyph-dft-rarity; // rarity
         }
         &::after {
-            content: "\e9e0"; // new border
+            content: @ss-glyph-dft-border; // new border
         }
     }
     &.@{ss-prefix}-dmc { 
@@ -130,7 +130,7 @@
             top: 0;
         }
         &::marker {
-            content: "\e996";
+            content: @ss-glyph-dmc-border;
             color: #000;
         }
     }
@@ -144,7 +144,7 @@
             top: 0;
         }
         &::marker {
-            content: "\e9ea";
+            content: @ss-glyph-drc-border;
             color: #000;
         }
     }
@@ -162,7 +162,7 @@
             top: 0;
         }
         &::marker {
-            content: "\e9dd";
+            content: @ss-glyph-dsc-border;
             color: #000;
         }
     }
@@ -175,71 +175,71 @@
         }
 
         &::before { // new rarity
-            content: "\ea12";
+            content: @ss-glyph-ecc-rarity;
             position: absolute;
             left: 0;
             top: 0;
         }
         &::marker { // border
-            content: "\ea13";
+            content: @ss-glyph-ecc-border;
             color: #000;
         }
         // ::after is in duo
     }
-    &.@{ss-prefix}-ecl:after { content: "\ea05"; } // Lorwyn Eclipsed
+    &.@{ss-prefix}-ecl:after { content: @ss-glyph-ecl-border; } // Lorwyn Eclipsed
     &.@{ss-prefix}-eos { // regular symbol becomes the border
         &::before {
-            content: "\e9ff"; // rarity
+            content: @ss-glyph-eos-rarity; // rarity
         }
         &::after {
-            content: "\ea00"; // new border
+            content: @ss-glyph-eos-border; // new border
         }
     }
     &.@{ss-prefix}-fin { // fin needs a new rarity for the border glyph
         &::before {
-            content: "\e9ee"; // rarity
+            content: @ss-glyph-fin-rarity; // rarity
         }
         &::after {
-            content: "\e9ef"; // border
+            content: @ss-glyph-fin-border; // border
         }
     }
-    &.@{ss-prefix}-hop:after { content: "\e656"; } // Planechase 2009
-    &.@{ss-prefix}-inr:after { content: "\e9e3"; } // Innistrad Remastered
+    &.@{ss-prefix}-hop:after { content: @ss-glyph-hop-border; } // Planechase 2009
+    &.@{ss-prefix}-inr:after { content: @ss-glyph-inr-border; } // Innistrad Remastered
     &.@{ss-prefix}-j25 { // j25: regular symbol becomes the border
         &::before {
-            content: "\e9db"; // rarity
+            content: @ss-glyph-j25-rarity; // rarity
         }
         &::after {
-            content: "\e9df"; // new border (the display/alt version)
+            content: @ss-glyph-j25-border; // new border (the display/alt version)
         }
     }
     &.@{ss-prefix}-om1 { // rarity becomes the border
         &::before {
-            content: "\ea0d"; // rarity (old border)
+            content: @ss-glyph-om1-rarity; // rarity (old border)
         }
         &::after {
-            content: "\ea0e"; // border
+            content: @ss-glyph-om1-border; // border
         }
     }
     &.@{ss-prefix}-omb { // rarity becomes the border
         &::before {
-            content: "\ea0f"; // rarity (old border)
+            content: @ss-glyph-omb-rarity; // rarity (old border)
         }
         &::after {
-            content: "\ea10"; // border
+            content: @ss-glyph-omb-border; // border
         }
     }
-    &.@{ss-prefix}-pc2:after { content: "\e659"; } // Planechase 2012
-    &.@{ss-prefix}-pza:after { content: "\ea09"; } // TMT Source Material
+    &.@{ss-prefix}-pc2:after { content: @ss-glyph-pc2-border; } // Planechase 2012
+    &.@{ss-prefix}-pza:after { content: @ss-glyph-pza-border; } // TMT Source Material
     &.@{ss-prefix}-sis { // SIS: the regular symbol becomes the border now
         &::before {
-            content: "\e9b3";
+            content: @ss-glyph-sis-rarity;
         }
         &::after {
-            content: "\e9b2";
+            content: @ss-glyph-sis-border;
         }
     }
-    &.@{ss-prefix}-tdm:after { content: "\e9ec"; } // Tarkir Dragonstorm
+    &.@{ss-prefix}-tdm:after { content: @ss-glyph-tdm-border; } // Tarkir Dragonstorm
     &.@{ss-prefix}-tla { // experimental ::marker for 3 layer icons
         display: list-item;
         list-style-position: inside;
@@ -259,7 +259,7 @@
             }
         }
         &::marker { // border
-            content: "\e9fd";
+            content: @ss-glyph-tla-border;
             color: #000;
         }
     }
@@ -272,18 +272,18 @@
         }
 
         &::before { // new rarity
-            content: "\ea0a";
+            content: @ss-glyph-tle-rarity;
             position: absolute;
             left: 0;
             top: 0;
         }
         &::marker { // border
-            content: "\ea0b";
+            content: @ss-glyph-tle-border;
             color: #000;
         }
         // ::after is in duo
     }
-    &.@{ss-prefix}-tmc:after { content: "\ea16"; } // TMT Eternal-Legal
+    &.@{ss-prefix}-tmc:after { content: @ss-glyph-tmc-border; } // TMT Eternal-Legal
     &.@{ss-prefix}-tmt { // 3 layers
         display: list-item;
         list-style-position: inside;
@@ -298,10 +298,10 @@
             top: 0;
         }
         &::marker { // border
-            content: "\ea07";
+            content: @ss-glyph-tmt-border;
             color: #000;
         }
         // ::after is in duo as inner
     }
-    &.@{ss-prefix}-van:after { content: "\e655"; } // Vanguard
+    &.@{ss-prefix}-van:after { content: @ss-glyph-van-border; } // Vanguard
 }
