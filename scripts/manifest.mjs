@@ -47,7 +47,7 @@ export function contentRules(css) {
     }
     return rules;
 }
-export async function legacySources() {
+export async function legacySources({ includeDocs = true } = {}) {
     const sources = {};
     for (const file of ['icons', 'duo', 'border']) {
         const source = await read(`less/${file}.less`);
@@ -71,7 +71,9 @@ export async function legacySources() {
         const hex = match[1].match(/unicode="&#x([a-f\d]+);"/i)?.[1];
         if (hex) font.set(hex.toLowerCase(), match[1].match(/glyph-name="([^"]+)"/)?.[1] ?? '');
     }
-    return { ...sources, defaults, font, iconsHtml: await read('docs/icons.html'), cheatsheetHtml: await read('docs/cheatsheet.html') };
+    return { ...sources, defaults, font, ...(includeDocs ? {
+        iconsHtml: await read('docs/icons.html'), cheatsheetHtml: await read('docs/cheatsheet.html'),
+    } : {}) };
 }
 
 export function resolvedGlyphs(entry, entries, seen = new Set()) {
@@ -116,16 +118,12 @@ export function validateCatalog(catalog, schema, legacy) {
             inventories.set(code, new Set(Object.values(glyphs)));
         }
     }
-    const documented = new Set(htmlRows(legacy.iconsHtml).map(row => row.id));
-    const visible = new Set(catalog.sets.filter(entry => entry.docs?.icon !== false).map(entry => entry.code));
-    for (const code of documented) if (!visible.has(code)) errors.push(`${code}: existing icon card must remain a distinct visible entry`);
-    for (const code of visible) if (!documented.has(code)) errors.push(`${code}: new icon card requires a phase 2 documentation decision`);
     for (const entry of catalog.sets) {
         if (entry.added === null && (entry.docs?.icon !== false || !entry.notes)) {
             errors.push(`${entry.code}: unknown added version requires a hidden icon card and explanatory notes`);
         }
     }
-    // During phase 1, existing LESS remains authoritative for runtime behavior.
+    // LESS remains handwritten; its public mappings must agree with the catalog.
     for (const [code, hex] of legacy.defaults) {
         if (mappings.get(code) !== hex) errors.push(`${code}: manifest default must match LESS ${hex}`);
     }
@@ -146,7 +144,7 @@ export function validateCatalog(catalog, schema, legacy) {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const catalog = JSON.parse(await read('data/sets.json'));
     const schema = JSON.parse(await read('data/sets.schema.json'));
-    const errors = validateCatalog(catalog, schema, await legacySources());
+    const errors = validateCatalog(catalog, schema, await legacySources({ includeDocs: false }));
     if (errors.length) { console.error(errors.join('\n')); process.exitCode = 1; }
     else console.log(`Manifest valid: ${catalog.sets.length} entries, ${catalog.groups.length} groups; all public LESS classes and layer glyphs covered.`);
 }

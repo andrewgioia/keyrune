@@ -1,8 +1,8 @@
 # V3 symbol catalog
 
-`sets.json` is the phase 1 catalog. It records the existing v3 symbols and glyph
-assignments. The documentation and LESS are still maintained in their existing
-files until phase 2 adds generation. No Hugo build is involved.
+`sets.json` is the v3 catalog and the source for the generated icon reference
+and cheatsheet. LESS mappings and overrides are still handwritten and validated
+against the catalog. No Hugo build is involved.
 
 ## Files
 
@@ -28,8 +28,8 @@ line numbers and hashes refer to the source snapshot at import time.
 | `glyphs` | Named hexadecimal Unicode assignments. `default` is required. Other roles describe artwork, not rendering states. |
 | `symbolOf` | Shares another entry's entire glyph inventory. Mutually exclusive with `glyphs`; does not inherit metadata, aliases, or rendering behavior. |
 | `aliases` | Additional public class suffixes from grouped LESS selectors or confirmed alias decisions. Does not promise identical border/duo behavior. |
-| `preview.duo` | Whether the existing icon preview enables `.ss-duo`. Defaults to false; it is not a declaration that a symbol has any particular layer. |
-| `docs.icon` | Defaults to true. False preserves a public class that was absent from the existing icon reference. |
+| `preview.duo` | Whether the icon preview enables `.ss-duo`. Defaults to false; it is not a declaration that a symbol has any particular layer. |
+| `docs.icon` | Defaults to true. False hides its icon card while retaining its public classes in the cheatsheet. |
 | `notes` | Maintenance context. |
 
 Array order preserves category and icon-reference ordering. Undocumented entries
@@ -66,6 +66,7 @@ rules. `less/duo.less` and `less/border.less` remain handwritten.
 ## Commands
 
 ```bash
+npm run docs:generate
 npm run manifest:check
 npm run check
 npm test
@@ -89,11 +90,37 @@ replace reviewed metadata by blindly reimporting. The importer retains current
 LESS assignments and reports conflicting docs values, rather than changing font
 behavior or guessing the intent of a manual override.
 
-## Next phase
+## Updating symbols and pages
 
-Review the reconciliation findings, then generate icon-reference HTML,
-cheatsheet HTML, and default LESS mappings from the catalog. Preserve page URLs,
-public class names, existing glyph assignments, and custom rendering rules.
-Generation should replace the current LESS agreement checks with generated-file
-checks. Add the manifest and templates to the watcher when generation exists.
-In phase 3, generate named glyph variables for the handwritten layer rules.
+1. Export the font and update the handwritten LESS mappings or overrides as needed.
+2. Add or edit the entry in `sets.json`. Use `preview.duo: true` for a layered
+   preview, `display` for a shorter grid label, and `aliases` for additional class
+   names. Shared products can use `symbolOf` without sharing preview settings.
+3. Run `npm run build` and `npm run check`, or leave `npm run dev` / `dev:valet`
+   running to regenerate while editing.
+4. Commit the manifest, source changes, and generated pages/assets together.
+
+`templates/docs/icons.html` and `cheatsheet.html` hold the page shells and modal
+script. The `icon`, `section`, `glyph`, and `vector` partials hold repeated HTML.
+Slots use `{{name}}` syntax; values are HTML-escaped, and only rendered fragments
+are inserted as HTML. Unknown or missing slots fail generation.
+
+Icon cards follow manifest group and entry order. Hidden cards are omitted;
+aliases never get separate cards. The cheatsheet includes all public classes,
+including hidden entries and aliases, plus every non-default glyph role for
+each canonical entry. Role names become labels (for example `inner-wing` becomes
+“inner wing”). Entries sort by label within the sets, guilds, promos/unofficial,
+and layers blocks. A layer can repeat a default codepoint because its named role
+is useful documentation.
+
+Generated pages are committed for static hosting. `npm run check` compares them
+with fresh output without rewriting them. Changing names, groups, or visibility
+no longer requires editing existing HTML before generation. The import command
+is a migration aid; ordinary updates should edit the catalog directly. Historical
+reconciliation files are not generation inputs and are not refreshed by builds.
+
+## Next slice
+
+Generate default LESS mappings from the catalog, then named glyph variables for
+the handwritten duo and border overrides. Until then, validation requires every
+public LESS class and layer assignment to agree with the manifest.

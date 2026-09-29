@@ -2,6 +2,7 @@ import { readFile, writeFile, mkdir, copyFile, readdir } from 'node:fs/promises'
 import { fileURLToPath } from 'node:url';
 import less from 'less';
 import CleanCSS from 'clean-css';
+import { generateDocs } from './generate-docs.mjs';
 
 export const root = fileURLToPath(new URL('../', import.meta.url));
 process.chdir(root);
@@ -24,6 +25,7 @@ export async function build(target) {
         await writeFile('css/keyrune.min.css', min);
     }
     if (target !== 'css') {
+        await generateDocs();
         await mkdir('docs/fonts', { recursive: true });
         await mkdir('docs/assets', { recursive: true });
         for (const entry of await readdir('fonts', { withFileTypes: true })) {

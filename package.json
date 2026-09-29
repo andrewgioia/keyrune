@@ -45,7 +45,8 @@
     "serve:valet": "browser-sync start --config scripts/browser-sync.valet.cjs",
     "dev:valet": "npm run build && concurrently --kill-others --names watch,valet \"npm:watch\" \"npm:serve:valet\"",
     "manifest:check": "node scripts/manifest.mjs",
-    "manifest:import": "node scripts/import-manifest.mjs"
+    "manifest:import": "node scripts/import-manifest.mjs",
+    "docs:generate": "node scripts/generate-docs.mjs"
   },
   "bugs": {
     "url": "https://github.com/andrewgioia/keyrune/issues",

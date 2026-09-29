@@ -48,8 +48,10 @@ npm ci
 npm run dev
 ```
 
-`dev` builds the assets, then watches LESS and font changes and serves the docs at
-http://127.0.0.1:4310 with browser reload. HTML and docs CSS edits reload directly.
+`dev` builds the assets and generated pages, then watches LESS, fonts, the manifest,
+and docs templates. It serves the docs at http://127.0.0.1:4310 with browser reload.
+Edit `templates/docs/` for the icon reference and cheatsheet; other HTML and docs CSS
+edits reload directly.
 Build errors are printed in the terminal; fix the source and the watcher retries
 on the next change. Stop both processes with Ctrl+C.
 
@@ -76,14 +78,16 @@ Valet serves the rebuilt docs directly. No Valet configuration changes are neede
 ### Build and release commands
 
 ```bash
-npm run build            # Compile, minify, and copy assets to docs
+npm run build            # Compile CSS, generate docs, and copy assets
+npm run docs:generate    # Generate icon reference and cheatsheet only
 npm run check            # Check symbols, versions, and generated files
 npm test                 # Test validation and filename collision handling
 npm run fonts:normalize  # Lowercase newly imported font filenames
 ```
 
-`build:css` only compiles and minifies; `build:docs` only copies existing assets.
-Run the full build before committing, and commit the generated CSS and docs assets.
+`build:css` only compiles and minifies; `build:docs` generates both docs pages and
+copies existing assets. Run the full build before committing, and commit the
+generated HTML, CSS, and docs assets.
 `check` verifies glyph coverage against the exported SVG font; it does not verify
 that every binary font format contains identical outlines. Existing cheatsheet
 discrepancies are listed in `scripts/check-exceptions.json`; remove each exception
@@ -97,16 +101,23 @@ before creating the package. Use `npm publish` only when ready to release.
 The docs use a vendored copy of Zepto in `docs/assets/zepto.min.js`; npm does not
 manage it. Font generation remains in IcoMoon; see [CONTRIBUTING.md](CONTRIBUTING.md).
 
-### Symbol manifest (phase 1)
+### Symbol manifest and generated docs
 
-The v3 catalog is in `data/sets.json`, with a JSON Schema and an import
-reconciliation report. See [the catalog guide](data/README.md) for the format
-and [the reconciliation findings](data/RECONCILIATION.md) for values that need
-review before documentation generation.
+Edit `data/sets.json` for symbol names, categories, aliases, previews, and glyph
+assignments. `npm run docs:generate` produces `docs/icons.html` and
+`docs/cheatsheet.html` from that catalog and `templates/docs/`. Build and watch
+run this automatically. Edit templates for page layout or modal changes; direct
+edits to these two generated HTML files will be overwritten.
 
-Run `npm run manifest:check` to validate the catalog. `npm run check` includes
-this validation. In phase 1, existing LESS and docs remain the active sources;
-the manifest does not generate or overwrite them yet.
+The icon reference has one card per visible canonical entry. The cheatsheet
+lists every public class (including aliases) and every named layer. Group order
+and card order follow the manifest; cheatsheet entries sort by label within the
+existing sets, guilds, promos, and layers blocks.
+
+LESS mappings and overrides remain handwritten and must match the catalog.
+`npm run manifest:check` validates those mappings; `npm run check` also rejects
+outdated generated pages. See [the catalog guide](data/README.md) for the format
+and workflow.
 
 ### Scripts
 
@@ -117,8 +128,10 @@ This project contains the following build and test scripts. Test scripts are run
 | `manifest.mjs` | Loads and validates the catalog against its schema, SVG font, and current LESS mappings. |
 | `import-manifest.mjs` | Imports a candidate catalog and reconciliation evidence into a new directory without overwriting existing files. |
 | `manifest.test.mjs` | Tests v3 mapping preservation, manual glyph switches, aliases, shared symbols, and invalid catalog data. |
-| `build.mjs` | Compiles LESS, minifies CSS, and copies CSS/fonts into `docs/`. Supports building CSS or copying docs assets separately. |
-| `watch.mjs` | Watches LESS, fonts, and package metadata. Queues rebuilds to prevent overlap and retries after errors when files change. |
+| `build.mjs` | Compiles LESS, minifies CSS, generates docs pages, and copies CSS/fonts into `docs/`. Supports CSS-only and docs-only builds. |
+| `generate-docs.mjs` | Generates the icon reference and cheatsheet from the manifest and HTML templates. |
+| `generate-docs.test.mjs` | Checks card, alias, and layer coverage; metadata edits; HTML escaping; and template errors. |
+| `watch.mjs` | Watches LESS, fonts, the manifest, docs templates, and package metadata. Queues rebuilds to prevent overlap and retries after errors when files change. |
 | `browser-sync.valet.cjs` | Configures the HTTPS Valet proxy and live reload, using your existing certificate and port 4310. |
 | `normalize-fonts.mjs` | Lowercases imported font filenames, checking for collisions before renaming anything. |
 | `check.mjs` | Validates versions, generated assets, SVG font glyph coverage, and cheatsheet codepoints. |

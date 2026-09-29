@@ -55,7 +55,6 @@ test('schema and semantic checks reject malformed or incompatible changes', () =
     const cases = [
         [draft => draft.sets[0].aliases = ['leb'], /Duplicate code or alias/],
         [draft => draft.sets[0].group = 'unknown', /unknown group/],
-        [draft => draft.sets[0].docs = { icon: false }, /existing icon card/],
         [draft => draft.sets[0].added = null, /unknown added version/],
         [draft => draft.sets[0].glyphs.default = 'e601', /manifest default must match LESS/],
         [draft => draft.sets[0].glyphs.inner = '110000', /invalid Unicode scalar/],

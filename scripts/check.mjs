@@ -1,14 +1,22 @@
 import { readFile, readdir } from 'node:fs/promises';
 import { compile } from './build.mjs';
+import { compileDocs } from './generate-docs.mjs';
 import { legacySources, validateCatalog } from './manifest.mjs';
 
 const errors = validateCatalog(
     JSON.parse(await readFile('data/sets.json', 'utf8')),
     JSON.parse(await readFile('data/sets.schema.json', 'utf8')),
-    await legacySources(),
+    await legacySources({ includeDocs: false }),
 );
 const read = path => readFile(path, 'utf8');
 const expect = (condition, message) => { if (!condition) errors.push(message); };
+try {
+    for (const [path, content] of Object.entries(await compileDocs())) {
+        expect(await read(path) === content, `${path} is stale; run npm run docs:generate.`);
+    }
+} catch (error) {
+    errors.push(error.message);
+}
 const pkg = JSON.parse(await read('package.json'));
 const variables = await read('less/variables.less');
 expect(variables.match(/@ss-version:\s*'([^']+)'/)?.[1] === pkg.version, 'Package and LESS versions differ.');

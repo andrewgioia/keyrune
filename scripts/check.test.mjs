@@ -8,7 +8,7 @@ import { spawnSync } from 'node:child_process';
 test('validation rejects new discrepancies and resolved exceptions', async () => {
     const directory = await mkdtemp(join(tmpdir(), 'keyrune-check-'));
     try {
-        for (const name of ['scripts', 'data', 'less', 'css', 'fonts', 'docs', 'package.json', 'README.md']) {
+        for (const name of ['scripts', 'templates', 'data', 'less', 'css', 'fonts', 'docs', 'package.json', 'README.md']) {
             await cp(name, join(directory, name), { recursive: true });
         }
         await symlink(resolve('node_modules'), join(directory, 'node_modules'), 'junction');
@@ -16,6 +16,7 @@ test('validation rejects new discrepancies and resolved exceptions', async () =>
         const baseline = run();
         assert.equal(baseline.status, 0, baseline.stderr);
         const cases = [
+            ['docs/icons.html', text => text.replace('Alpha', 'Outdated Alpha'), /docs\/icons.html is stale/],
             ['README.md', text => text.replace('v3.', 'v99.'), /README version differs/],
             ['css/keyrune.css', text => text + '\n', /is stale/],
             ['docs/fonts/keyrune.woff2', () => 'stale font', /differs from fonts/],

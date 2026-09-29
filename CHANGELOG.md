@@ -14,6 +14,9 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+* New `sets.json` icon manifest now drives the project! No more typing the saame thing 10 times! Keyrune now has a single source of truth for project/docs details that will make maintenance a lot easier going forward
+* Docs are now automatically generated based on the new icon manifest
+
 ### Changed
 
 * Major internal updates with all new tooling. Building, watching changes, and new integrity check scripts will significantly speed things up and help minimize errors going forward.
