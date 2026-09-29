@@ -1,11 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { read, htmlRows, legacySources, validateCatalog, resolvedGlyphs } from './manifest.mjs';
+import { readRelease } from './release.mjs';
+const release = await readRelease();
 import { renderDocs, renderTemplate, compileDocs } from './generate-docs.mjs';
 
 const catalog = JSON.parse(await read('data/sets.json'));
 const templates = Object.fromEntries(await Promise.all(
-    ['icons', 'cheatsheet', 'icon', 'section', 'glyph', 'vector'].map(async name =>
+    ['index', 'icons', 'cheatsheet', 'icon', 'section', 'glyph', 'vector'].map(async name =>
         [name, await read(`templates/docs/${name}.html`)]),
 ));
 
@@ -49,7 +51,7 @@ test('manifest edits control names, visibility, groups, and duo without consulti
     beta.docs = { icon: false };
     const legacy = await legacySources({ includeDocs: false });
     assert.deepEqual(validateCatalog(draft, JSON.parse(await read('data/sets.schema.json')), legacy), []);
-    const pages = renderDocs(draft, templates);
+    const pages = renderDocs(draft, templates, release);
     const cards = htmlRows(pages['docs/icons.html']);
     const card = cards.find(card => card.id === 'lea');
     assert.equal(card['data-name'], alpha.name);

@@ -8,6 +8,7 @@ overrides remain handwritten and use those variables. No Hugo build is involved.
 
 | File | Purpose |
 | --- | --- |
+| `site.json` | Shared “current through” set names; the release version comes from `package.json`. |
 | `sets.json` | Ordered categories and symbol entries. |
 | `sets.schema.json` | JSON Schema for validation and editor completion. |
 | `reconciliation.json` | Import evidence: source hashes, findings, exact layer selectors, and original cheatsheet entries. |
@@ -143,9 +144,19 @@ entry gets its own variable names. Import `glyphs.less` before using the partial
 in a custom LESS entry point; `keyrune.less` already does this. Variable names
 use the fixed `ss-glyph` prefix even when consumers customize `@ss-prefix`.
 
-`npm run build` generates LESS before compilation. The watcher ignores its two
+`npm run build` generates LESS before compilation. The watcher ignores its
 generated LESS outputs to avoid rebuild loops. `npm run less:generate` works
 even if those files are missing or stale. Invalid metadata, missing font glyphs,
 or undefined variables in handwritten rules fail before generated LESS is
 written. `npm run check` compares committed generated LESS with fresh output
 without rewriting it.
+
+
+## Release metadata
+
+Edit `site.json` to set `currentThrough`, the text shown in both the home page
+header and icon reference introduction. The package version comes from
+`package.json`; use `npm version <version> --no-git-tag-version` to keep the
+lockfile in sync. Build/watch updates the generated pages, README version
+heading, and `less/version.less`. The latter is imported by the editable
+`less/variables.less`. Edit `templates/docs/index.html` for home page layout.

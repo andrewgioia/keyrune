@@ -12,7 +12,7 @@ const catalog = JSON.parse(await read('data/sets.json'));
 
 test('generated mappings support custom prefixes, aliases, shared glyphs, and manual switches', async () => {
     const { files } = await prepareLess();
-    assert.deepEqual(renderLess(catalog), files);
+    assert.deepEqual(renderLess(catalog), Object.fromEntries(Object.entries(files).filter(([path]) => path !== 'less/version.less')));
     const { css } = await less.render(`@ss-prefix: test;\n${files['less/glyphs.less']}\n${files['less/icons.less']}\n${await read('less/duo.less')}\n${await read('less/border.less')}`);
     const mappings = new Map(contentRules(css).flatMap(rule => rule.selectors.map(selector => [selector, rule.glyph])));
     assert.equal(mappings.get('.test-sld:before'), 'e687');
@@ -38,7 +38,7 @@ test('generation rejects ambiguous variable names', () => {
 test('generation bootstraps missing outputs, follows manifest edits, and preserves files on failure', async () => {
     const directory = await mkdtemp(join(tmpdir(), 'keyrune-less-'));
     try {
-        for (const path of ['scripts', 'data', 'less', 'fonts']) await cp(path, join(directory, path), { recursive: true });
+        for (const path of ['scripts', 'data', 'less', 'fonts', 'package.json']) await cp(path, join(directory, path), { recursive: true });
         await symlink(resolve('node_modules'), join(directory, 'node_modules'), 'junction');
         await rm(join(directory, 'less/icons.less'));
         await rm(join(directory, 'less/glyphs.less'));

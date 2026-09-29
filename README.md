@@ -1,4 +1,4 @@
-# Keyrune v3.19.0
+# Keyrune v3.20.0
 
 ## The Magic: the Gathering set symbol font!
 
@@ -50,7 +50,7 @@ npm run dev
 
 `dev` builds the assets and generated pages, then watches LESS, fonts, the manifest,
 and docs templates. It serves the docs at http://127.0.0.1:4310 with browser reload.
-Edit `templates/docs/` for the icon reference and cheatsheet; other HTML and docs CSS
+Edit `templates/docs/` for the home page, icon reference, and cheatsheet; other HTML and docs CSS
 edits reload directly.
 Build errors are printed in the terminal; fix the source and the watcher retries
 on the next change. Stop both processes with Ctrl+C.
@@ -80,25 +80,43 @@ Valet serves the rebuilt docs directly. No Valet configuration changes are neede
 ```bash
 npm run build            # Generate LESS and docs, compile CSS, and copy assets
 npm run less:generate    # Generate default mappings and glyph variables only
-npm run docs:generate    # Generate icon reference and cheatsheet only
+npm run docs:generate    # Generate docs pages and README version
 npm run check            # Check symbols, versions, and generated files
 npm test                 # Test validation and filename collision handling
 npm run fonts:normalize  # Lowercase newly imported font filenames
 ```
 
 `build:css` generates LESS, then compiles and minifies; `build:docs` generates LESS
-and both docs pages and
-copies existing assets. Run the full build before committing, and commit the
+and all three docs pages, then copies existing assets. Run the full build before committing, and commit the
 generated HTML, CSS, and docs assets.
 `check` verifies glyph coverage against the exported SVG font; it does not verify
 that every binary font format contains identical outlines. Existing cheatsheet
 discrepancies are listed in `scripts/check-exceptions.json`; remove each exception
 when its ticket is fixed. New discrepancies and resolved exceptions fail validation.
 
-Before a release, update the package version and lockfile, `less/variables.less`,
-the README heading, and the version in `docs/index.html`. Run `npm run build`,
-`npm run check`, and `npm pack --dry-run`. npm runs `prepack` to build and check
-before creating the package. Use `npm publish` only when ready to release.
+### Release metadata
+
+Set the version once in `package.json`. For a release, use
+`npm version 3.20.0 --no-git-tag-version` (substitute the next version) to update
+both the package and lockfile without committing or tagging.
+
+Set the latest supported sets once in `data/site.json`:
+
+```json
+{
+  "currentThrough": "Reality Fracture and The Hobbit"
+}
+```
+
+`npm run build` uses these values for the home page version and set names, the
+icon reference introduction, the README version heading, and `@ss-version` in
+generated `less/version.less` (imported by `less/variables.less`). Font URL cache
+versions follow automatically. Watch mode also reacts to these two input files.
+The remaining LESS options in `variables.less` stay editable.
+
+Run `npm run check`, `npm test`, and `npm pack --dry-run` before release.
+npm runs `prepack` to build and check before creating the package. Use
+`npm publish` only when ready to release.
 
 The docs use a vendored copy of Zepto in `docs/assets/zepto.min.js`; npm does not
 manage it. Font generation remains in IcoMoon; see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -107,9 +125,10 @@ manage it. Font generation remains in IcoMoon; see [CONTRIBUTING.md](CONTRIBUTIN
 
 Edit `data/sets.json` for symbol names, categories, aliases, previews, and glyph
 assignments. `npm run docs:generate` produces `docs/icons.html` and
-`docs/cheatsheet.html` from that catalog and `templates/docs/`. Build and watch
+`docs/cheatsheet.html` from that catalog and `templates/docs/`. The home page is
+also generated, using release metadata. Build and watch
 run this automatically. Edit templates for page layout or modal changes; direct
-edits to these two generated HTML files will be overwritten.
+edits to these generated HTML files will be overwritten.
 
 The icon reference has one card per visible canonical entry. The cheatsheet
 lists every public class (including aliases) and every named layer. Group order
@@ -136,7 +155,9 @@ This project contains the following build and test scripts. Test scripts are run
 | `generate-less.mjs` | Generates default LESS mappings and named glyph variables, validating handwritten layer rules before writing. |
 | `generate-less.test.mjs` | Tests prefixes, aliases, layer switches, manifest edits, and regeneration without existing outputs. |
 | `build.mjs` | Generates LESS, compiles and minifies CSS, generates docs pages, and copies CSS/fonts into `docs/`. Supports CSS-only and docs-only builds. |
-| `generate-docs.mjs` | Generates the icon reference and cheatsheet from the manifest and HTML templates. |
+| `generate-docs.mjs` | Generates three docs pages and updates the README version heading. |
+| `release.mjs` | Reads and validates the package version and shared site metadata. |
+| `release.test.mjs` | Tests metadata propagation, HTML escaping, and invalid site config handling. |
 | `generate-docs.test.mjs` | Checks card, alias, and layer coverage; metadata edits; HTML escaping; and template errors. |
 | `watch.mjs` | Watches LESS, fonts, the manifest, docs templates, and package metadata. Queues rebuilds to prevent overlap and retries after errors when files change. |
 | `browser-sync.valet.cjs` | Configures the HTTPS Valet proxy and live reload, using your existing certificate and port 4310. |

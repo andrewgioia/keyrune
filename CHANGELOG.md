@@ -21,6 +21,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 * Major internal updates with all new tooling. Building, watching changes, and new integrity check scripts will significantly speed things up and help minimize errors going forward.
+* Docs use the `package.json` version number, and a new config file now has some other commonly updated strings that the docs will now pull from
 
 ### Fixed
 

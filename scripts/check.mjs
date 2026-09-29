@@ -18,7 +18,7 @@ try {
     errors.push(error.message);
 }
 const pkg = JSON.parse(await read('package.json'));
-const variables = await read('less/variables.less');
+const variables = await read('less/version.less');
 expect(variables.match(/@ss-version:\s*'([^']+)'/)?.[1] === pkg.version, 'Package and LESS versions differ.');
 expect((await read('README.md')).startsWith(`# Keyrune v${pkg.version}\n`), 'README version differs.');
 expect((await read('docs/index.html')).includes(`Current version ${pkg.version} `), 'Docs version differs.');

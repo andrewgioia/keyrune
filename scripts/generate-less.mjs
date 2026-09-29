@@ -2,6 +2,8 @@ import { writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { read, root, fontGlyphs, resolvedGlyphs, validateCatalog, legacySources } from './manifest.mjs';
 
+import { readVersion } from './release.mjs';
+
 export const glyphVariable = (code, role) => `@ss-glyph-${code}-${role}`;
 const comment = value => value.replace(/[\r\n]+/g, ' ');
 
@@ -36,7 +38,10 @@ export async function prepareLess() {
     const schema = JSON.parse(await read('data/sets.schema.json'));
     const errors = validateCatalog(catalog, schema, { font: await fontGlyphs() });
     if (errors.length) throw new Error(errors.join('\n'));
-    const files = renderLess(catalog);
+    const files = {
+        ...renderLess(catalog),
+        'less/version.less': `// Generated from package.json. Do not edit.\n@ss-version: '${await readVersion()}';\n`,
+    };
     // Compile with fresh variables in memory, so stale/missing generated files
     // cannot block a valid manifest change or a clean regeneration.
     const sources = await legacySources({ includeDocs: false, generatedFiles: files });

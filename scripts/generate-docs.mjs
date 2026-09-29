@@ -4,6 +4,8 @@ import { read, root, resolvedGlyphs } from './manifest.mjs';
 
 import { prepareLess } from './generate-less.mjs';
 
+import { readRelease } from './release.mjs';
+
 const escapeHtml = value => String(value).replace(/[&<>"']/g, char => ({
     '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
 }[char]));
@@ -21,7 +23,7 @@ export function renderTemplate(template, values, raw = []) {
     return html;
 }
 
-export function renderDocs(catalog, templates) {
+export function renderDocs(catalog, templates, release) {
     const icons = catalog.groups.flatMap(group => {
         const sets = catalog.sets.filter(set => set.group === group.id && set.docs?.icon !== false);
         if (!sets.length) return [];
@@ -50,7 +52,8 @@ export function renderDocs(catalog, templates) {
         return renderTemplate(templates.vector, { rows }, ['rows']);
     }).join('\n                ');
     return {
-        'docs/icons.html': renderTemplate(templates.icons, { sections: icons }, ['sections']),
+        'docs/index.html': renderTemplate(templates.index, release),
+        'docs/icons.html': renderTemplate(templates.icons, { sections: icons, through: release.through }, ['sections']),
         'docs/cheatsheet.html': renderTemplate(templates.cheatsheet, { vectors }, ['vectors']),
     };
 }
@@ -58,10 +61,14 @@ export function renderDocs(catalog, templates) {
 export async function compileDocs() {
     const { catalog } = await prepareLess();
     const templates = Object.fromEntries(await Promise.all(
-        ['icons', 'cheatsheet', 'icon', 'section', 'glyph', 'vector'].map(async name =>
+        ['index', 'icons', 'cheatsheet', 'icon', 'section', 'glyph', 'vector'].map(async name =>
             [name, (await read(`templates/docs/${name}.html`)).replace(/\n$/, '')]),
     ));
-    const pages = renderDocs(catalog, templates);
+    const release = await readRelease();
+    const pages = renderDocs(catalog, templates, release);
+    const readme = await read('README.md');
+    if (!/^# Keyrune v[^\n]+\n/.test(readme)) throw new Error('README.md is missing the Keyrune version heading.');
+    pages['README.md'] = readme.replace(/^# Keyrune v[^\n]+/, `# Keyrune v${release.version}`).replace(/\n$/, '');
     return Object.fromEntries(Object.entries(pages).map(([path, html]) => [path, `${html}\n`]));
 }
 
@@ -77,7 +84,7 @@ export async function generateDocs() {
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
     try {
         await generateDocs();
-        console.log('Generated icon reference and cheatsheet.');
+        console.log('Generated docs pages and README version.');
     } catch (error) {
         console.error(error.message);
         process.exitCode = 1;
