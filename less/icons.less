@@ -193,6 +193,9 @@
 .@{ss-prefix}-msh:before { content: "\ea1a"; } // Marvel Super Heroes
 .@{ss-prefix}-hob:before { content: "\ea19"; } // The Hobbit
 .@{ss-prefix}-fra:before { content: "\ea22"; } // Reality Fracture
+.@{ss-prefix}-trk:before { content: "\ea23"; } // Star Trek
+.@{ss-prefix}-nau:before { content: "\ea29"; } // Nauctis: The Sunken Realm
+.@{ss-prefix}-mdd:before { content: "\ea2b"; } // Marvel: Darkhold Destiny
 
 
 /**
@@ -259,6 +262,10 @@
 .@{ss-prefix}-soc:before { content: "\ea1c"; } // SOS Commander
 .@{ss-prefix}-hoc:before { content: "\ea1e"; } // HOB Commander
 .@{ss-prefix}-msc:before { content: "\ea1f"; } // MSH Commander
+.@{ss-prefix}-trc:before { content: "\ea24"; } // Star Trek Commander
+.@{ss-prefix}-frc:before { content: "\ea27"; } // Reality Fracture Commander
+.@{ss-prefix}-nac:before { content: "\ea2a"; } // Nauctis Commander
+.@{ss-prefix}-mdc:before { content: "\ea2c"; } // Darkhold Destiny Commander
 
 
 /**
@@ -283,6 +290,8 @@
 .@{ss-prefix}-mh1:before { content: "\e95b"; } // Modern Horizons
 .@{ss-prefix}-2xm:before { content: "\e96e"; } // Double Masters
 .@{ss-prefix}-jmp:before { content: "\e96f"; } // Jumpstart
+.@{ss-prefix}-planeswalker:before,                   // Planeswalker symbol (Scryfall icon)
+.@{ss-prefix}-punk:before,                           // Prismatic Pride
 .@{ss-prefix}-mb1:before { content: "\e971"; } // Mystery Booster
 .@{ss-prefix}-mh2:before { content: "\e97b"; } // Modern Horizons 2
 .@{ss-prefix}-sta:before { content: "\e980"; } // Strixhaven Mystical Archives
@@ -303,6 +312,8 @@
 .@{ss-prefix}-fca:before { content: "\e9f8"; } // Final Fantasy Through the Ages
 .@{ss-prefix}-mar:before { content: "\e9f9"; } // Marvel TBD
 .@{ss-prefix}-soa:before { content: "\ea20"; } // SOS Mystical Archives
+.@{ss-prefix}-sds:before { content: "\ea25"; } // Stardates (TRK)
+.@{ss-prefix}-mbc:before { content: "\ea26"; } // Mystery Booster Commander Edition
 
 
 /**
@@ -416,9 +427,11 @@
  * Promotional */
 
 .@{ss-prefix}-pgru:before { content: "\e683"; } // Guru
+.@{ss-prefix}-default:before,          // Generic icon (Scryfall/MTGJSON)
 .@{ss-prefix}-pmtg1:before { content: "\e684"; } // Magic symbol
 .@{ss-prefix}-pmtg2:before { content: "\e685"; } // Magic symbol (alt)
 .@{ss-prefix}-pleaf:before { content: "\e686"; } // Leaf
+.@{ss-prefix}-star:before,                       // Star (Scryfall icon, promos)
 .@{ss-prefix}-pmei:before,                       // Media Insert
 .@{ss-prefix}-htr:before,                        // Heroes of the Realm 2016
 .@{ss-prefix}-htr17:before { content: "\e687"; } // Heroes of the Realm 2017
@@ -443,11 +456,14 @@
 .@{ss-prefix}-pheart:before { content: "\e936"; } // Phoenix Heart celebration
 .@{ss-prefix}-h17:before { content: "\e938"; } // HasCon 2017
 .@{ss-prefix}-pdep:before { content: "\e93a"; } // Duelist Extra Pulled
+.@{ss-prefix}-psdg:before,             // Sega Dreamcast Cards
 .@{ss-prefix}-psega:before { content: "\e93b"; } // Sega Dreamcast
 .@{ss-prefix}-ptsa:before { content: "\e93c"; } // The Sorcerer's Apprentice
+.@{ss-prefix}-mtga:before,             // MTG Arena (Scryfall icon)
 .@{ss-prefix}-parl3:before { content: "\e943"; } // MTGO Arena
 .@{ss-prefix}-med:before { content: "\e94c"; } // Mythic Edition
 .@{ss-prefix}-ptg:before { content: "\e965"; } // Ponies: the Galloping
+.@{ss-prefix}-archie:before,           // Judge gift cards (Scryfall icon)
 .@{ss-prefix}-j20:before { content: "\e96a"; } // Judge Academy 2020
 .@{ss-prefix}-zne:before { content: "\e97a"; } // Zendikar Rising Expeditions
 .@{ss-prefix}-bot:before { content: "\e99e"; } // The Brothers' War Transformers
@@ -463,6 +479,7 @@
 .@{ss-prefix}-sld:before { content: "\e687"; } // Secret Lair Drop (alias of PMEI)
 .@{ss-prefix}-psld:before { content: "\e687"; } // Secret Lair Drop Promos (alias of PMEI)
 .@{ss-prefix}-sld2:before { content: "\e9bc"; } // Secret Lair (logo)
+.@{ss-prefix}-slz:before { content: "\ea28"; } // The Zeta Set
 
 /**
  * Digital */
@@ -475,10 +492,12 @@
 .@{ss-prefix}-vma:before { content: "\e696"; } // Vintage Masters
 .@{ss-prefix}-pz1:before,
 .@{ss-prefix}-xlcu:before { content: "\e90c"; } // Legendary Cube
+.@{ss-prefix}-mtgo:before,                           // Magic Online (Scryfall icon)
 .@{ss-prefix}-modo:before,
 .@{ss-prefix}-pmodo:before { content: "\e91b"; } // Magic Online promos
 .@{ss-prefix}-duels:before,
 .@{ss-prefix}-xduels:before { content: "\e91d"; } // Magic Duels
+.@{ss-prefix}-td0:before,              // Magic Online Theme Decks
 .@{ss-prefix}-xmods:before { content: "\e91e"; } // Magic Online Deck Series
 .@{ss-prefix}-pz2:before { content: "\e91f"; } // Treasure Chests
 .@{ss-prefix}-ha1:before { content: "\e96b"; } // Historic Anthology 1
@@ -527,7 +546,9 @@
 /**
  * Unofficial */
 
+.@{ss-prefix}-ced:before,              // Collectors' Edition
 .@{ss-prefix}-xcle:before { content: "\e926"; } // Collector's Edition
+.@{ss-prefix}-cei:before,              // Intl. Collectors' Edition
 .@{ss-prefix}-xice:before { content: "\e927"; } // International Collector's Edition
 .@{ss-prefix}-x2ps:before { content: "\e928"; } // Two Player Introductory Set
 .@{ss-prefix}-x4ea:before { content: "\e929"; } // Alternate 4th Edition

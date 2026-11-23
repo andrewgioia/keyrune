@@ -10,6 +10,21 @@ All notable changes to this project will be documented in this file.
 * Review DSK and FDN SVG files to make sure they're single layer, and update docs if needed
 
 
+## Unreleased additions (proposed)
+
+### Added
+
+* Star Trek (TRK), Star Trek Commander (TRC) and Stardates (SDS) set symbols
+* Reality Fracture Commander (FRC) and Mystery Booster Commander Edition (MBC) set symbols
+* The Zeta Set (SLZ) set symbol
+* Nauctis: The Sunken Realm (NAU), Nauctis Commander (NAC), Marvel: Darkhold Destiny (MDD) and Darkhold Destiny Commander (MDC) set symbols
+* Aliases for the set and icon codes Scryfall and MTGJSON use: `punk` and `planeswalker` (MB1 glyph), `default` (PMTG1), `star` (PMEI), `archie` (J20), `mtga` (PARL3), `mtgo` (PMODO), `td0` (XMODS), `psdg` (PSEGA), `ced` (XCLE), `cei` (XICE)
+
+### Fixed
+
+* `css/keyrune.css` regenerated: the PSAL and PHUK aliases from 3.19.0 were in `less/icons.less` but not in the published CSS
+
+
 ## [3.19.0] 2026-05-02 Secrets of Strixhaven
 
 ### Added
